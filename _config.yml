@@ -1,8 +1,17 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+remote-theme : aspirethemes/type
 title:       Type
 email:       ''
 description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
-url:         '' # The base hostname & protocol for your site
+url:         'https://tjrichard.github.io/' # The base hostname & protocol for your site
 twitter:     ''
 github:      ''
 instagram:   ''
@@ -10,12 +19,12 @@ facebook:    ''
 
 markdown:  kramdown
 permalink: pretty
-paginate:  60
+paginate:  10
 
 sass:
   style: compressed
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll/tagging
 
