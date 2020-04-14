@@ -3,7 +3,7 @@
 // *----------------------------------*/
 
 @font-face {
-  font-family: 'Noto Sans CJK KR';
+  font-family: 'Noto Sans CJK KR', 'Montserrat';
   src: url(source/font/) format('opentype');
 }
 
@@ -11,6 +11,7 @@ $font-base:
   //-apple-system,
   //BlinkMacSystemFont,
   'Noto Sans CJK KR',
+  'Montserrat'
   'Segoe UI',
   Helvetica,
   Arial,
