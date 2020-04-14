@@ -4,8 +4,41 @@ title: About
 image: '/images/pages/about.jpeg'
 ---
 
-You love Minimalism, and you also love writing, Type is designed for you. Type focus on showing your content in a clean and simple way, focus on images, typography, and white space.
+### 컨셉
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+**"사진 중심 커플 다이어리"**
 
-Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.
+## Painpoint, 해결하고자 하는 문제
+
+1. `우리만의` 공간에서
+2. 추억을 `간편하게` 기록
+3. `기분 좋게` 추억 둘러보기
+
+- 목표: 다른 사람들에게 공개되지 않은, 둘 만의 공간에 기록하고 싶음
+- `아이폰 메모`는 너무 글 위주라 사진과 함께 기록하기 불편함
+- `인스타그램`은 편리하게 기록하기 좋으나 다른 사람들에게 공유된 공간이기 때문에 개인 별 계정, 커플 계정을 따로 관리해야 해 불편함
+- `비트윈`은 안정적이지 못하고 느림. UI가 번잡함. 폴더, 스토리, 사진, 글 따로 클릭해서 작성할 수 있음
+- `Volo`는 작성된 글은 보기 좋은데 스타일 기능이 많아 모바일로 글 작성하기가 불편함
+- `Thumbday`는 하루의 글을 작성하기 불편함. 텍스트, 사진, 장소, 돈 등등을 따로따로 등록해서 입력해야 함
+2명보다 많은 사람과 공유 기능을 제공해 매 글을 공유할 때 공유할 사람을 찾고 공유하기가 불편함
+
+## UX Goal
+
+UX Goal을 잡는 이유 :: 어떤 기능을 적용하고 싶을 때 핵심 UX를 구현하는 데 우리의 리소스를 집중할 수 있는 판단 근거
+
+1. **기록이 쉬운가?**
+    - 사진 업로드 중심
+    - 텍스트 스타일 최소화
+    - 
+2. **탐색이 재미있는가?**
+    - 메인 페이지(Stream)에 핵심 요소 포함
+    - 
+3. **화면에 불필요한 요소는 없는가?**
+    - simple is best
+4. **다른 사람과 공유가 쉬운가?**
+    - 소셜 로그인
+    - 정확하고 빠른 동기화
+
+### Critical Event
+
+사진 및 글 등록
