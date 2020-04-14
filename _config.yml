@@ -8,13 +8,13 @@
 # Site settings
 # remote-theme : aspirethemes/type
 title:       Seunghwan
-email:       'tjrichard91@gmail.com'
+email:       tjrichard91@gmail.com
 description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
-url:         'https://tjrichard.github.io/' # The base hostname & protocol for your site
+url:         https://tjrichard.github.io/ # The base hostname & protocol for your site
 twitter:     ''
-github:      'https://github.com/tjrichard'
-instagram:   'instagram.com/nam.d.richard'
+github:      https://github.com/tjrichard
+instagram:   https://instagram.com/nam.d.richard
 facebook:    ''
 
 markdown:  kramdown
