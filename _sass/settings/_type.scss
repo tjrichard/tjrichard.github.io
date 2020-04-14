@@ -7,6 +7,11 @@
   src: url(source/font/) format('opentype');
 }
 
+@font-face {
+  font-family: 'IBM Plex Mono', 'Noto Sans Mono CJK KR';
+  src: url(source/font/) format('opentype');
+}
+
 $font-base:
   //-apple-system,
   //BlinkMacSystemFont,
@@ -19,7 +24,7 @@ $font-base:
   'Apple Color Emoji',
   'Segoe UI Emoji',
   'Segoe UI Symbol';
-$font-monospace:  Courier, monospace;
+$font-monospace:  'IBM Plex Mono', 'Noto Sans Mono CJK KR', monospace;
 
 $font-size-header: 19px;
 $font-size-base:   14px;
