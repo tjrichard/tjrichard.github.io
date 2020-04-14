@@ -2,7 +2,7 @@
 //  Settings > Type
 // *----------------------------------*/
 
-@font-face {
+/*font-face {
   font-family: 'Noto Sans CJK KR', 'Montserrat';
   src: url(source/font/) format('opentype');
 }
@@ -11,12 +11,12 @@
   font-family: 'IBM Plex Mono', 'Noto Sans Mono CJK KR';
   src: url(source/font/) format('opentype');
 }
-
+*/
 $font-base:
-  //-apple-system,
-  //BlinkMacSystemFont,
-  'Noto Sans CJK KR',
-  'Montserrat'
+  -apple-system,
+  BlinkMacSystemFont,
+  //'Noto Sans CJK KR',
+  //'Montserrat'
   'Segoe UI',
   Helvetica,
   Arial,
@@ -24,7 +24,7 @@ $font-base:
   'Apple Color Emoji',
   'Segoe UI Emoji',
   'Segoe UI Symbol';
-$font-monospace:  'IBM Plex Mono', 'Noto Sans Mono CJK KR', monospace;
+$font-monospace:  courier, monospace;
 
 $font-size-header: 19px;
 $font-size-base:   14px;
