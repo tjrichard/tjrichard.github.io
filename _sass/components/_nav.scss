@@ -5,6 +5,7 @@
 .c-nav {
   &__item {
     font-size: $font-size-header;
+    margin-bottom: $base-spacing-unit;
   }
 
   &__link {
