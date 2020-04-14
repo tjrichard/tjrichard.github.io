@@ -18,7 +18,7 @@
   }
 
   &__title {
-    margin-bottom: half($font-size-base);
+    margin-bottom: half($font-size-header);
     font-size: $font-size-base;
     font-weight: $font-weight-bold;
     transition: $global-transition;
@@ -29,7 +29,7 @@
   }
 
   &__excerpt {
-    margin-bottom: half($font-size-base);
+    margin-bottom: half($font-size-header);
   }
 
   &__date {

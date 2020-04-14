@@ -21,6 +21,7 @@ $font-base:
   'Segoe UI Symbol';
 $font-monospace:  Courier, monospace;
 
+$font-size-header: 19px;
 $font-size-base:   14px;
 $font-size-medium: 12px;
 $font-size-small:  11px;
@@ -31,6 +32,7 @@ $font-weight-regular: 400;
 $font-weight-bold:    600;
 $font-weight-bolder:  900;
 
+$line-height-header: round($font-size-header * 1.7);
 $line-height-base:   round($font-size-base   *  1.7);
 $line-height-medium: round($font-size-medium * 1.55);
 $line-height-small:  round($font-size-small  * 1.55);
