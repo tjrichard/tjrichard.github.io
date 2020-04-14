@@ -4,8 +4,5 @@ title: About
 image: '/images/pages/about.jpeg'
 ---
 
-You love Minimalism, and you also love writing, Type is designed for you. Type focus on showing your content in a clean and simple way, focus on images, typography, and white space.
-
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-Lorem ipsum dolor sit amet, vix ut case porro facilisis, alia possit neglegentur vis te. Has cu eirmod abhorreant, vel civibus efficiantur cu. Eu summo elitr vix, iusto putant maluisset per ut, ne etiam vivendum adipisci vel. Vis omnis tempor accusam ei, justo perpetua liberavisse cu qui. Saperet aliquando adipiscing ius ne, ne facer euripidis est. Pro mundi nostrum suavitate et.
+저는 데이터와 디테일 중심의 경험을 가진 서비스/UX 디자이너 입니다. 저는 사용자 리서치에서 얻은 인사이트로부터 디자인 하는 데 능숙합니다. 또한 저는 학습이 빠릅니다. 비록 제가 알지 못하는 영역의 어떤 업무라 하더라도 빠르게 배우고 완성도 높은 결과물을 낼 수 있습니다. 저는 다른 디자이너, 개발자와 원활히 일할 수 있으며 발전을 위한 피드백을 주고 받는데 익숙합니다.
+'항상 긍정적이고 적극적이자'를 삶의 목표로 하고 있습니다.
