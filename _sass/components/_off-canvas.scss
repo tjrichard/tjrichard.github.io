@@ -34,7 +34,7 @@ $off-canvas-width: 300px;
     &:after { transform: translateY(7px); }
 
     .c-off-canvas-toggle--close & {
-      height: 2px;
+      height: 1px;
       background-color: transparent;
       margin-bottom: half($base-spacing-unit);
 
