@@ -2,9 +2,15 @@
 //  Settings > Type
 // *----------------------------------*/
 
+@font-face {
+  font-family: 'Open Sans';
+  src: url(source/font/) format('opentype');
+}
+
 $font-base:
   -apple-system,
   BlinkMacSystemFont,
+  'Open Sans',
   'Segoe UI',
   Helvetica,
   Arial,
