@@ -3,14 +3,14 @@
 // *----------------------------------*/
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: 'Noto Sans CJK KR';
   src: url(source/font/) format('opentype');
 }
 
 $font-base:
-  -apple-system,
-  BlinkMacSystemFont,
-  'Open Sans',
+  //-apple-system,
+  //BlinkMacSystemFont,
+  'Noto Sans CJK KR',
   'Segoe UI',
   Helvetica,
   Arial,
