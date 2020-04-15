@@ -17,12 +17,11 @@
     animation-name: tag-hover;
     @keyframes tag-hover {
       100% {
-        transform: translateX(10px) translateY(-10px);
+        transform: translateX(4px) translateY(-4px);
+        box-shadow: -4px 4px 0 0 $color-key;
       }
     }
 
-    &:before {
-      background-color: $color-key;
     }
 
     @include attention() {
