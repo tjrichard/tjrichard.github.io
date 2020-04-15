@@ -5,7 +5,8 @@
 pre,
 code {
   font-family: $font-monospace;
-  background-color: $bg-color-gray;
+  background-color: $bg-color-code;
+  border-radius: 3px;
 }
 
 pre {
