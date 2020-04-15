@@ -14,12 +14,12 @@
 
     background-color: $bg-color-gray;
     transition: $global-transition;
-    animation-name: tag-hover;
-    @keyframes tag-hover {
-      100% {
+    
+      &:hover {
         transform: translateX(4px) translateY(-4px);
         box-shadow: -4px 4px 0 0 $color-key;
       }
+    
     }
 
     }
