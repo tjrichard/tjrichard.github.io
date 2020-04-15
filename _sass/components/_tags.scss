@@ -14,11 +14,11 @@
 
     background-color: $bg-color-gray;
     transition: $global-transition;
-    
-      &:hover {
-        transform: translateX(4px) translateY(-4px);
-        box-shadow: -4px 4px 0 0 $color-key;
-      }
+
+    &:hover {
+      transform: translateX(4px) translateY(-4px);
+      box-shadow: -4px 4px 0 0 $color-key;
+    }
     
     }
 
