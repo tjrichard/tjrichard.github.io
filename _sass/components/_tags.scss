@@ -20,9 +20,6 @@
       box-shadow: -4px 4px 0 0 $color-key;
     }
     
-    }
-
-
     @include attention() {
       text-decoration: none;
       background-color: $bg-color-gray;
