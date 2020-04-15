@@ -90,8 +90,8 @@ hr {
  */
 
 pre {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: Menlo, monospace; /* 1 */
+  font-size: $font-size-medium; /* 2 */
 }
 
 /* Text-level semantics
@@ -154,8 +154,8 @@ strong {
 code,
 kbd,
 samp {
-  font-family: monospace, monospace; /* 1 */
-  font-size: 1em; /* 2 */
+  font-family: Menlo, monospace; /* 1 */
+  font-size: $font-size-medium; /* 2 */
 }
 
 /**
