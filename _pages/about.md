@@ -8,6 +8,10 @@ image: '/images/pages/about.jpeg'
 
 '항상 긍정적이고 적극적이자'를 삶의 목표로 하고 있습니다.
 
+---
+
 #### [이력서 받기](/assets/Resume_Seunghwan_1908.pdf)   |   [포트폴리오 받기](/assets/Portfolio_Seunghwan_1906.pdf)
 
 `last update : 19.08`
+
+| [이력서 받기](/assets/Resume_Seunghwan_1908.pdf) | [포트폴리오 받기](/assets/Portfolio_Seunghwan_1906.pdf) |
