@@ -3,7 +3,8 @@
 \*------------------------------------*/
 
 .o-plain-list {
-  margin: $base-spacing-unit, 0px, 0px, 0px;
+  position: relative;
+  top: $base-spacing-unit;
   padding: 0;
   list-style: none;
 }
