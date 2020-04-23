@@ -10,6 +10,6 @@ image: '/images/pages/about.jpeg'
 
 ---
 
-##### [🧑🏻‍💻이력서 받기](/assets/Resume_Seunghwan_1908.pdf)   |   [😎포트폴리오 받기](/assets/Portfolio_Seunghwan_1906.pdf)
+##### [🧑🏻‍💻이력서 받기](/assets/Resume_Seunghwan_1908.pdf)   |   [🏄🏻‍♂️포트폴리오 받기](/assets/Portfolio_Seunghwan_1906.pdf)
 
 _last update : 19.08_
