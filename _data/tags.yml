@@ -1,8 +1,17 @@
-- slug: tag1
-  name: Tag1
+- slug: portfolio
+  name: Portfolio
 
-- slug: tag2
-  name: Tag2
+- slug: html
+  name: HTML
 
-- slug: tag3
-  name: Tag3
+- slug: css
+  name: CSS
+
+- slug: tool
+  name: Tool
+
+- slug: data
+  name: Data
+
+- slug: marketing
+  name: Marketing

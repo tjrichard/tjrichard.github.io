@@ -35,7 +35,7 @@ layout: default
             {% for post_tag in post.tags %}
               {% for data_tags in site.data.tags %}
                 {% if data_tags.slug == post_tag %}
-                  {% assign tag = data_tags.name %}
+                  {% assign tag = data_tags %}
                 {% endif %}
               {% endfor %}
               {% if tag %}
