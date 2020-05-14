@@ -2,7 +2,7 @@
 layout: post
 title: Let's test ul tag
 featured: true
-tags: [html, css, ul_tag]
+tags: [html, css, ul_tag, tag1]
 image: '/images/posts/4.jpg'
 ---
 
