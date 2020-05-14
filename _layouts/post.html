@@ -24,29 +24,9 @@ layout: default
         </div>
 
         <div class='c-tags'>
-          {% assign post = page %}
-          {% if post.tags.size > 0 %}
-            {% capture tag_content %}
-              Tags
-            {% if post.tags.size == 1 %}
-              {% else %}
-              {% endif %}: 
-            {% endcapture %}
-            {% for post_tag in post.tags %}
-              {% for data_tags in site.data.tags %}
-                {% if data_tags.slug == post_tag %}
-                  {% assign tag = data_tags %}
-                {% endif %}
-              {% endfor %}
-              {% if tag %}
-                {% for tag in page.tags %}
-                  <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
-                {% endfor %}
-              {% endif %}
-            {% endfor %}
-          {% else %}
-            {% assign tag_content = '' %}
-          {% endif %}
+          {% for tag in page.tags %}
+            <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag }}</a>
+          {% endfor %}
         </div>
 
 <!--        <hr>
