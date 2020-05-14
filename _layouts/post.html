@@ -34,7 +34,7 @@ layout: default
                 {% endif %}
               {% endfor %}
               {% if tag %}
-                {% capture tags_content_temp %}<a href="/tags//"></a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+                {% capture tags_content_temp %}<a href="/tags/{{ tag }}/">{{ tag }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
                 {% assign tags_content = tags_content_temp %}
               {% endif %}
             {% endfor %}
