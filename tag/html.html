@@ -1,5 +1,27 @@
 ---
-layout: page
+layout: default
 tag: html
 permalink: /tag/html
 ---
+
+<div class='o-wrapper'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-tags'>
+        <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ tag  }}</a>
+      </div>
+
+      <article class='c-post'>
+        <h1 class='c-post__title u-text-center'>{{ page.title }}</h1>
+
+        <div class='c-content'>
+          {% include page-image.html %}
+
+          {{ content }}
+        </div>
+      </article>
+    </div>
+  </div>
+
+</div>
