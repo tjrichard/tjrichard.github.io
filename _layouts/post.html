@@ -28,8 +28,8 @@ layout: default
           {% if post.tags.size > 0 %}
             {% capture tag_content %}Tags{% if post.tags.size == 1 %}{% else %}{% endif %}: {% endcapture %}
             {% for post_tag in post.tags %}
-              {% for data_tag in site.data.tags %}
-                {% if data_tag.slug == post_tag %}
+              {% for data_tags in site.data.tags %}
+                {% if data_tags.slug == post_tag %}
                   {% assign tag = data_tag %}
                 {% endif %}
               {% endfor %}
