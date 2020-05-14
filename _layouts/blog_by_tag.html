@@ -4,13 +4,13 @@ title: Tags
 ---
 <h2>#</h2>
 <div>
-  {.% if site.tags[page.tag] %}
+  {% if site.tags[page.tag] %}
     <ul class="tags">
-    {.% for post in site.tags[page.tag] %}
+    {% for post in site.tags[page.tag] %}
       <li class="tag"><a class="tag-link" href=""></a></li>
-    {.% endfor %}
+    {% endfor %}
     </ul>
-  {.% else %}
+  {% else %}
     <p>There are no posts for this tag.</p>
-  {.% endif %}
+  {% endif %}
 </div>
