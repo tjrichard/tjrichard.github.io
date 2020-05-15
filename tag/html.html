@@ -1,11 +1,19 @@
 ---
-layout: tag_page
+layout: default
 tags: html
 permalink: /tag/html
 ---
 
 
 <div class='o-wrapper'>
+    <div class='o-grid'>
+        <div class='o-grid__col'>
+          <div class='c-tags'>
+            <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ page.tag }}</a>
+          </div>
+        </div>
+      </div>
+      
     <div class='o-grid'>
       {% for post in paginator.posts %}
         {% include post-card.liquid %}
