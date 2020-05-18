@@ -1,7 +1,7 @@
 ---
 layout: post
 title: I think it is time we inform the senate that our ability
-tags: [html, css, portfolio]
+tags: [css, portfolio]
 image: '/images/posts/8.jpg'
 ---
 
