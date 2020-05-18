@@ -1,0 +1,9 @@
+{
+  "name": "tjrichard",
+  "version": "1.0.0",
+  "description": "blog",
+  "main": "index.js",
+  "repository": "https://github.com/Seunghwan180/tjrichard.github.io.git",
+  "author": "Seunghwan <seunghwan@ab180.co>",
+  "license": "MIT"
+}
