@@ -3,9 +3,10 @@ layout: default
 ---
 
 <div class='o-wrapper'>
-  <div class='o-grid'>
+  
   {% if site.tags[page.tag] %}
     {% for post in site.tags[page.tag] %}
+      <div class='o-grid'> 
         <div class='o-grid__col'>
           <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
             <h3 class='c-post-card__title'>{{ post.title }}</h3>
@@ -22,9 +23,11 @@ layout: default
           </a>
 
         </div>
+      </div>
     {% endfor %}
   {% else %}
-    <p class="c-text-center">There is no posts for this tag</p>
+    <p class="c-text-center">
+      There is no posts for this tag
+    </p>
   {% endif %}
-  </div>
 </div>
