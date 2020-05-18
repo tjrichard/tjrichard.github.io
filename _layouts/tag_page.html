@@ -2,31 +2,9 @@
 layout: default
 ---
 
-<!--
-<div class='o-wrapper'>
-
-  <div class='o-grid'>
-    <div class='o-grid__col'>
-      <div class='c-tags'>
-        <a href='{{ site.baseurl }}/tag/{{ tag }}'>{{ page.tag }}</a>
-      </div>
-    </div>
-  </div>
-
-  <div class='o-grid'>
-    {% for post in page.posts %}
-      {% include post-card.liquid %}
-    {% endfor %}
-  </div>
-
-  <div class='o-grid'>
-    {% include pagination.html %}
-  </div>
-</div>
--->
 <div class='o-wrapper'>
   <div class='o-grid'>
-  {% if site.tags[page.tag] %}
+  {% if site.tags contains site.tags[page.tag] %}
     {% for post in site.tags[page.tag] %}
         <div class='o-grid__col'>
           <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
