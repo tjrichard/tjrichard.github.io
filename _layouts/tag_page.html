@@ -4,7 +4,7 @@ layout: default
 
 <div class='o-wrapper'>
   <div class='o-grid'>
-  {% if site.tags contains site.tags[page.tag] %}
+  <!-- {% if site.tags contains site.tags[page.tag] %} -->
     {% for post in site.tags[page.tag] %}
         <div class='o-grid__col'>
           <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
@@ -26,7 +26,7 @@ layout: default
   <!-- {% else %}
         <p class="c-text-center">
           There is no posts for this tag
-        </p> -->
-  {% endif %}
+        </p>
+  {% endif %} -->
   </div>
 </div>
