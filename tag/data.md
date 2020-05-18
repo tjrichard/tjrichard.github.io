@@ -1,7 +1,7 @@
 ---
 layout: tag_page
-tags: tool
-permalink: /tag/tool
+tags: [data]
+permalink: /tag/data
 ---
 
 <div class='o-wrapper'>
