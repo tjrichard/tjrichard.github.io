@@ -25,6 +25,7 @@ layout: default
 </div>
 -->
 <div class='o-wrapper'>
+  <div class='o-grid'>
   {% for tag in site.tags %}
     {% assign t = tag | first %}
     {% assign posts = tag | last %}
@@ -50,6 +51,7 @@ layout: default
       </div>
       {% endif %}
     {% endfor %}
-
+  
   {% endfor %}
+  </div>
 </div>
