@@ -26,18 +26,29 @@ layout: default
 -->
 
 {% for tag in site.tags %}
-{% assign t = tag | first %}
-{% assign posts = tag | last %}
+  {% assign t = tag | first %}
+  {% assign posts = tag | last %}
 
-<h2>#</h2>
-<ul>
   {% for post in posts %}
-  {% if post.tags contains t %}
-  <li>
-    <a href=""></a>
-    <span class="post-meta"></span>
-  </li>
-  {% endif %}
+    {% if post.tags contains t %}
+
+    <div class='o-grid__col'>
+      <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
+        <h3 class='c-post-card__title'>{{ post.title }}</h3>
+
+        {% if post.image %}
+          <img src='{{ post.image | prepend: site.baseurl }}' class='c-post__image' alt='{{ post.title }}'>
+        {% endif %}
+
+        <p class='c-post-card__excerpt u-font-medium'>
+          {{ post.content | strip_html | truncatewords:35 }}
+        </p>
+
+        <span class='c-post-card__date'>{{ post.date | date: '%d %b %Y' }}</span>
+      </a>
+
+    </div>
+    {% endif %}
   {% endfor %}
-</ul>
+
 {% endfor %}
