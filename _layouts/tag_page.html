@@ -2,17 +2,17 @@
 layout: default
 ---
 <div class=='o-wrapper'>
-  {%for post in site %}
-  <p>{{ post.title }}</p>
+  {%for tag in page.tags %}
+  <p>{{ tag }}</p>
   {% endfor %}
-  <p>update 6</p>
+  <p>update 7</p>
 </div>
 
 <!--
 <div class='o-wrapper'>
   
-  {% if site.tag[page.tags] %}
-    {% for post in site.tag[page.tags] %}
+  {% if site.tags[page.tags] %}
+    {% for post in site.tags[page.tags] %}
       <div class='o-grid'> 
         <div class='o-grid__col'>
           <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
