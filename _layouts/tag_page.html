@@ -10,6 +10,9 @@ layout: default
     <p>{{ post.title }}</p>
   {% endfor %}
   <p>update 34</p>
+  {% for post in site.tags.current_tag %}
+  <p>{{ post.title }}</p>
+  {% endfor %}
 </div>
 
 
