@@ -3,12 +3,13 @@ layout: default
 ---
 
 <div class='o-wrapper'>
-  {% capture filtered_posts = site.posts | where: page.tags, site.tags %}
-  {% endcapture %}
+  {% assign current_tag = page.tags %}
+  <p>{{ current_tag }}</p>>
+  {% assign filtered_posts = site.posts | where: current_tag, site.tags %}
   {% for post in filtered_posts %}
     <p>{{ post.title }}</p>
   {% endfor %}
-  <p>update 33</p>
+  <p>update 34</p>
 </div>
 
 
