@@ -2,10 +2,10 @@
 layout: default
 ---
 <div class=='o-wrapper'>
-  {% if site.tags[page.tag] %}
+  {%for post in site.tag[page.tags] %}
   <p>{{ post.title }}</p>
-  {% endif %}
-  <p>update 2</p>
+  {% endfor %}
+  <p>update 3</p>
 </div>
 
 <!--
