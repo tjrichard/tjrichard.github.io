@@ -1,16 +1,17 @@
 ---
 layout: default
 ---
-<!--
+
 <div class='o-wrapper'>
-  {% assign filtered_posts = site.posts | where: page.tags, site.tags %}
+  {% capture filtered_posts = site.posts | where: page.tags, site.tags %}
+  {% endcapture %}
   {% for post in filtered_posts %}
     <p>{{ post.title }}</p>
   {% endfor %}
   <p>update 32</p>
   <p>{{ page.tags }} / {{ site.tags.html }} / {{ site.tags }}</p>
 </div>
--->
+
 
 <!--
   {% assign filtered_posts = site.posts | where: page.tags, site.tags %}

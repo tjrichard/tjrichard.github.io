@@ -3,7 +3,7 @@ layout: tag_page
 tags: [html]
 permalink: /tag/html
 ---
-
+<!--
 <div class='o-wrapper'>
     <div class='o-grid'>
     {% for post in tag[html] %}
@@ -21,3 +21,4 @@ permalink: /tag/html
         </div>
     {% endfor %}
     </div>
+-->
