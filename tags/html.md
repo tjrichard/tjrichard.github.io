@@ -1,5 +1,6 @@
 ---
 layout: tag_page
+title: "Tag: HTML"
 tags: [html]
 permalink: /tag/html
 ---

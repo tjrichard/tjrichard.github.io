@@ -1,5 +1,6 @@
 ---
 layout: tag_page
+title: "Tag: Data"
 tags: [data]
 permalink: /tag/data
 ---
