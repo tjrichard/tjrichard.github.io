@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class=='o-wrapper'>
-  {% assign filtered_posts = site.posts | where [page.tags], site.tags %}
+  {% assign filtered_posts = site.posts | where: [page.tags], site.tags %}
     {% for post in filtered_posts %}
       <p>{{ post.title }}</p>
     {% endfor %}
