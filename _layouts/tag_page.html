@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<div class=='o-wrapper'>
+<div class='o-wrapper'>
   {% assign filtered_posts = site.posts | where: page.tags, site.tags %}
   {% for post in filtered_posts %}
     <p>{{ post.title }}</p>
@@ -9,11 +9,6 @@ layout: default
   <p>update 25</p>
   <p>{{ page.tags }} / {{ site.tags }}</p>
 </div>
-<!--
-  {% assign filtered_posts = site.posts | where: page.tags, site.tags %}
-  {% for post in filtered_posts %}
-    <p>{{ post.title }}</p>
--->
 
 <!--
 <div class='o-wrapper'>
