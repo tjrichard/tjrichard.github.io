@@ -2,13 +2,18 @@
 layout: default
 ---
 <div class=='o-wrapper'>
-  {% assign filtered_posts = site.posts | where: page.tags == site.tags %}
-    {% for post in filtered_posts %}
+  {% if page.tags contains site.tags %}
+    {% for post in site.tags[page.tags] %}
       <p>{{ post.title }}</p>
     {% endfor %}
-  <p>update 23</p>
+  <p>update 24</p>
   <p>{{ page.tags }} / {{ site.tags }}</p>
 </div>
+<!--
+  {% assign filtered_posts = site.posts | where: page.tags, site.tags %}
+  {% for post in filtered_posts %}
+    <p>{{ post.title }}</p>
+-->
 
 <!--
 <div class='o-wrapper'>
