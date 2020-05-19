@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
+<div class=='o-wrapper'>
+  {% if site.tag[page.tags] %}
+  <p>{{ post.title }}</p>
+</div>
 
+<!--
 <div class='o-wrapper'>
   
   {% if site.tag[page.tags] %}
@@ -31,3 +36,4 @@ layout: default
     </p>
   {% endif %}
 </div>
+-->
