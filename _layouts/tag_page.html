@@ -2,11 +2,11 @@
 layout: default
 ---
 <div class=='o-wrapper'>
-  {% assign filtered_posts = site.posts | where: 'tag', page.tags %}
+  {% assign filtered_posts = site.posts | where: tag, page.tags | first %}
     {% for post in filtered_posts %}
       <p>{{ post.title }}</p>
     {% endfor %}
-  <p>update 18</p>
+  <p>update 19</p>
 </div>
 
 <!--
