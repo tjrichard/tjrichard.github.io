@@ -3,11 +3,10 @@ layout: default
 ---
 
 <div class='o-wrapper'>
-  {% assign filtered_posts = site.posts | where: tag, "page.tags" %}
-  {% for post in filtered_posts %}
+  {% for post in site.tags[page.tags] %}
     <p>{{ post.title }}</p>
   {% endfor %}
-  <p>update 38</p>
+  <p>update 39</p>
 </div>
 
 
