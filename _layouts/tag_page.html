@@ -2,11 +2,10 @@
 layout: default
 ---
 <div class=='o-wrapper'>
-  {%for post in site.tags[page.tags] %}
-  <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
+  {% if post in site.tags[page.tags] %}
     <h3 class='c-post-card__title'>{{ post.title }}</h3>
-  {% endfor %}
-  <p>update 11</p>
+  {% endif %}
+  <p>update 12</p>
 </div>
 
 <!--
