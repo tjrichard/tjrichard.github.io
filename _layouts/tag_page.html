@@ -6,6 +6,7 @@ layout: default
     {% for post in site.tags[page.tags] %}
       <p>{{ post.title }}</p>
     {% endfor %}
+  {% endif %}
   <p>update 25</p>
   <p>{{ page.tags }} / {{ site.tags }}</p>
 </div>
