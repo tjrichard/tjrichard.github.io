@@ -6,7 +6,10 @@ layout: default
     {% for post in filtered_posts %}
       <p>{{ post.title }}</p>
     {% endfor %}
-  <p>update 15</p>
+  {% for tag in site.tags %}
+    <p>{{ post.tags }}</p>
+  {% endfor %}
+  <p>update 16</p>
 </div>
 
 <!--
