@@ -3,9 +3,10 @@ layout: default
 ---
 <div class=='o-wrapper'>
   {%for post in site.tags[page.tags] %}
-  <p>{{ post.title }}</p>
+  <a href='{{ post.url | prepend: site.baseurl }}' class='c-post-card {% if forloop.first == true %} c-post-card--first {% endif %} {% if forloop.last == true %} c-post-card--last {% endif %}'>
+    <h3 class='c-post-card__title'>{{ post.title }}</h3>
   {% endfor %}
-  <p>update 10</p>
+  <p>update 11</p>
 </div>
 
 <!--
