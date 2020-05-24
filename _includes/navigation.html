@@ -1,5 +1,20 @@
 {% for page in site.pages %}
   {% unless page.name == '404.md' %}
+    {% case page.name == 'blog.md' %}
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='{{ site.baseurl }}/'>{{ page.title }}</a>
+      </li>
+    {% else %}
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
+        </li>
+    {% endcase %}
+  {% endunless %}
+{% endfor %}
+
+<!--
+{% for page in site.pages %}
+  {% unless page.name == '404.md' %}
     {% if page.name == 'blog.md' %}
       <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='{{ site.baseurl }}/'>{{ page.title }}</a>
@@ -11,10 +26,11 @@
     {% endif %}
   {% endunless %}
 {% endfor %}
+-->
 
 
 <!--
-  {% for page in site.pages %}
+{% for page in site.pages %}
   {% unless page.name == '404.md' %}
     {% if page.title %}
       <li class='c-nav__item' role='presentation'>
