@@ -2,7 +2,7 @@
   {% unless page.name == '404.md' %}
     {% if page.name =='blog.md' %}
       <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='{{ site.url | prepend: site.baseurl }}'>{{ page.title }}</a>
+        <a class='c-nav__link' href='{{ site.baseurl }}/'>{{ page.title }}</a>
       </li>
     {% endif %}
     {% unless page.name == 'blog.md' %}
