@@ -1,15 +1,17 @@
 {% for page in site.pages %}
   {% unless page.name == '404.md' %}
-    {% unless page.name =='blog.md' %}
+    {% if page.name =='blog.md' %}
       <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='{{ site.url | prepend: site.baseurl }}'>{{ page.title }}</a>
       </li>
-    {% endunless %}
+    {% endif %}
+    {% unless page.name == 'blog.md' %}
       {% if page.title %}
         <li class='c-nav__item' role='presentation'>
           <a class='c-nav__link' href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
         </li>
       {% endif %}
+    {% endunless %}
   {% endunless %}
 {% endfor %}
 
