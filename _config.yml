@@ -21,6 +21,9 @@ markdown:  kramdown
 permalink: pretty
 paginate:  10
 
+disqus:
+  shortname: tjrichard-github-io
+
 sass:
   style: compressed
 
@@ -47,5 +50,11 @@ defaults:
       path: '_pages'
     values:
       permalink: /:basename:output_ext
+
+  - scope:
+      path: ""
+      type: "_posts"
+    values:
+      comments: true
 
 favicon: assets/favicon_package_v0.16/favicon.ico
