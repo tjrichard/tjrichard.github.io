@@ -51,10 +51,10 @@ defaults:
     values:
       permalink: /:basename:output_ext
 
-  - scope:
-      path: ""
-      type: "_posts"
-    values:
-      comments: true
+  # - scope:
+  #     path: ""
+  #     type: "_posts"
+  #   values:
+  #     comments: true
 
 favicon: assets/favicon_package_v0.16/favicon.ico
