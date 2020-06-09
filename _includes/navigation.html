@@ -1,6 +1,6 @@
 {% for page in site.pages %}
   {% unless page.name == '404.md' %}
-    {% case page.name == 'blog.md' %}
+    {% if page.name == 'blog.md' %}
       <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='{{ site.baseurl }}/'>{{ page.title }}</a>
       </li>
@@ -8,7 +8,7 @@
         <li class='c-nav__item' role='presentation'>
           <a class='c-nav__link' href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
         </li>
-    {% endcase %}
+    {% endif %}
   {% endunless %}
 {% endfor %}
 
