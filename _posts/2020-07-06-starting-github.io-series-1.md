@@ -98,5 +98,7 @@ Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가
 ### Github.io로 나만의 블로그 만들기 시리즈
 
 [(1) 가입 및 초기 세팅](https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/)
+
 [(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법](#)
+
 (3) ???
