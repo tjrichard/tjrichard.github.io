@@ -68,24 +68,23 @@ Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가
 ![Create Repository](/images/posts/Starting_github.io_series_1/screenshot7.png)
 
 1. Create Repository
-
-    이 부분은 앞 단계에서 이미 완료했으니 넘어가자.
-
+   
+   이 부분은 앞 단계에서 이미 완료했으니 넘어가자.
+   
 2. What git client are you using?
+   
+   Git 클라이언트를 어떤 것으로 사용할 것인지 물어보는 선택지인데, 이 글을 보고 있는 사람들은 어짜피 터미널이나 CLI(Code Level Interface)로 깃을 사용하는 사람이 아니니, UI를 제공하는 `Github Desktop`을 선택하자.
 
-    Git 클라이언트를 어떤 것으로 사용할 것인지 물어보는 선택지인데, 이 글을 보고 있는 사람들은 어짜피 터미널이나 CLI(Code Level Interface)로 깃을 사용하는 사람이 아니니, UI를 제공하는 `Github Desktop`을 선택하자.
+   Github Desktop이 설치되어 있지 않은 사용자는 `I don't know`를 선택해 설치하고 다시 돌아오자.
 
-    Github Desktop이 설치되어 있지 않은 사용자는 `I don't know`를 선택해 설치하고 다시 돌아오자.
-
-![Clone repository](/images/posts/Starting_github.io_series_1/screenshot9.png)
+   ![Clone repository](/images/posts/Starting_github.io_series_1/screenshot9.png)
 
 3. Clone the repository
+   설치, 로그인 한 Github Desktop 에서 계정의 Repository를 본인의 컴퓨터에 복제해 관리할 수 있도록 한다. 나는 이미 세팅이 완료된 상태라 초기 화면은 아니지만 비슷한 설정 화면이 보일 것이다.
 
-    설치, 로그인 한 Github Desktop 에서 계정의 Repository를 본인의 컴퓨터에 복제해 관리할 수 있도록 한다. 나는 이미 세팅이 완료된 상태라 초기 화면은 아니지만 비슷한 설정 화면이 보일 것이다.
+   혹은 Github.com에서 생성한 Repository에서 Clone > Open with Github Desktop 버튼을 눌러 연동할 수 있다.
 
-    혹은 Github.com에서 생성한 Repository에서 Clone > Open with Github Desktop 버튼을 눌러 연동할 수 있다.
-    
-    ![Open with Github Desktop](/images/posts/Starting_github.io_series_1/screenshot10.png)
+   ![Open with Github Desktop](/images/posts/Starting_github.io_series_1/screenshot10.png)
 
 
 두 번째 Step에서 만든 Repository를 선택한 후, 본인의 컴퓨터에 보관 할 위치를 선택한다. 나는 icloud를 사용하고 있어 여러 컴퓨터에서 작업을 진행할 수 있도록 icloud에 복제해 두었다.
