@@ -52,7 +52,7 @@ Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가
 
 자 이제 [Github.io](http://github.io)를 위한 계정과 저장소를 만들었다. Github.io 에서 다음 스텝을 따라가 보자.
 
-[Github.io 페이지↗](https://pages.github.com/)
+[Github.io 페이지 ↗](https://pages.github.com/)
 
 ![User or organization site, Project site](/images/posts/Starting_github.io_series_1/screenshot6.png)
 
