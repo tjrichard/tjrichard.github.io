@@ -80,6 +80,7 @@ Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가
    ![Clone repository](/images/posts/Starting_github.io_series_1/screenshot9.png)
 
 3. Clone the repository
+   
    설치, 로그인 한 Github Desktop 에서 계정의 Repository를 본인의 컴퓨터에 복제해 관리할 수 있도록 한다. 나는 이미 세팅이 완료된 상태라 초기 화면은 아니지만 비슷한 설정 화면이 보일 것이다.
 
    혹은 Github.com에서 생성한 Repository에서 Clone > Open with Github Desktop 버튼을 눌러 연동할 수 있다.
