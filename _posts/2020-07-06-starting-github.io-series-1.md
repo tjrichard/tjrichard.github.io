@@ -6,6 +6,23 @@ tags: [Blog, Github.com, Github.io, Jekyll]
 image: '/images/posts/denise-hahn-8F4cfPjHhvM-unsplash.jpg'
 ---
 
+# Github.io란
+
+간략하게 설명하자면 Github.io는 Github에서 제공하는 블로그 서비스이다.
+
+
+Github.io는 본인 Github 계정의 저장소를 바탕으로 정적 호스팅을 제공해주는 Github Pages라는 서비스이다. 따로 웹 서버를 구축하거나 호스팅 서비스를 이용하지 않고서도 간단하게 웹페이지를 만들어 제공할 수 있다는 말이다.
+
+티스토리 블로그도 글을 올리면서 Github Pages로 블로그를 따로 만들고 있는 이유는 더 코드레벨에서 블로그를 운영할 수 있는 장점이 있기 때문이다.
+
+
+티스토리, 브런치, 네이버 블로그와 같이 기존 플랫폼에서 블로그를 운영하면 제공하는 스킨, 에디터, 관리자 페이지를 활용할 수 있지만 플랫폼의 틀 안에서만 커스터마이징 가능한 반면,
+Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 입맛에 맞게 커스터마이징 할 수 있는 장점이 있다.
+
+
+나는 간단한 HTML, CSS 코딩 공부도 할 겸 직접 내 입맛에 맞는 블로그를 만들면서 실습까지 진행해보고자 시작하게 되었다.
+
+
 # 1. Github.com 가입하기
 
 Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페이지를 사용하기 위해서는 Github.com에 가입되어 있어야 한다.
