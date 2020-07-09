@@ -21,6 +21,9 @@ markdown:  kramdown
 permalink: pretty
 paginate:  10
 
+# Google Analytics
+gtag: UA-172119466-2
+
 disqus:
   shortname: tjrichard-github-io
 
