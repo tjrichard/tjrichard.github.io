@@ -22,7 +22,22 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyll은 블로그가 어떻게 보일지, 어떤 구조로 쌓아서 표현할지에 대한 틀을 제공하는 테마이다.
 ```
 
->Jihye Lee 라는 분은 Tale[[테마 데모](https://chesterhow.github.io/tale/), [테마 Git](https://github.com/chesterhow/tale)]이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 [본인의 블로그](http://jihyeleee.com/)를 아주 새롭고 멋지게 만든 예시가 있다.
+# 💎 이 글을 읽는 우리의 목표
+
+나는 디자이너로 디자인 툴에서 이미지를 만들어 내는것을 넘어 원하는 디자인을 직접 구현해 보는데 관심이 있다. 반면 이 구현에 대한 관심은 취미 수준을 목표로 하기 때문에 모든 과정을 100% 나의 손으로 만들어 내는 것은 원하지 않는다.
+
+따라서 이 글과 나의 목표는 적은 개발 공수를 들이면서도 마음에 드는 디자인을 직접 코드 레벨에서 뚝딱뚝딱 만들어 보는 것으로 잡으려고 한다.
+
+1. 큰 노력 없이 간단하게 얻을 수 있는 결과
+   ```
+   괜찮은 테마를 가져와 Github Page를 통해 내 블로그를 웹에 띄워볼 수 있음
+   ```
+2. 큰 노력을 기울여 얻을 수 있는 멋진 결과
+   ```
+   괜찮은 테마를 가져와 이를 뜯어보고 내가 원하는 대로 구조, 스타일, 인터랙션을 커스터마이징 하고 서드파티 플러그인, 애널리틱스를 설치하고 방문자에 대한 분석까지 할 수 있음
+   ```
+   멋진 사례가 있어 이를 공유합니다.
+   >Jihye Lee 라는 분은 Tale[[테마 데모](https://chesterhow.github.io/tale/), [테마 Git](https://github.com/chesterhow/tale)]이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 [본인의 블로그](http://jihyeleee.com/)를 아주 새롭고 멋지게 만든 예시가 있다.
 
 나는 간단한 HTML, CSS 코딩 공부도 할 겸 직접 내 입맛에 맞는 블로그를 만들면서 실습까지 진행해보고자 시작하게 되었다.
 
@@ -62,7 +77,9 @@ Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가
 
 **❗️여기서 Repository name을 정확하게 설정하는 것이 가장 중요하다.❗️**
 
-``` Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username은 가입 시 입력한 사용자 이름이다. ```
+```
+Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username은 가입 시 입력한 사용자 이름이다.
+```
 
 위와 같이 정확하게 입력하지 않으면 이후 Github.io에서 페이지를 만들 때 이 Repository를 사용하지 못하기 때문에 **정.확.하.게** 입력해야 한다.
 
@@ -88,11 +105,11 @@ Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가
 
 ![Create Repository](/images/posts/Starting_github.io_series_1/screenshot7.png)
 
-1. Create Repository
+   **1. Create Repository**
    
    이 부분은 앞 단계에서 이미 완료했으니 넘어가자.
    
-2. What git client are you using?
+   **2. What git client are you using?**
    
    Git 클라이언트를 어떤 것으로 사용할 것인지 물어보는 선택지인데, 이 글을 보고 있는 사람들은 어짜피 터미널이나 CLI(Code Level Interface)로 깃을 사용하는 사람이 아니니, UI를 제공하는 `Github Desktop`을 선택하자.
 
@@ -100,7 +117,7 @@ Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가
 
    ![Clone repository](/images/posts/Starting_github.io_series_1/screenshot9.png)
 
-3. Clone the repository
+   **3. Clone the repository**
    
    설치, 로그인 한 Github Desktop 에서 계정의 Repository를 본인의 컴퓨터에 복제해 관리할 수 있도록 한다. 나는 이미 세팅이 완료된 상태라 초기 화면은 아니지만 비슷한 설정 화면이 보일 것이다.
 
