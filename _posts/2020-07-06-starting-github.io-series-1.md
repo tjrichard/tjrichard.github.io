@@ -17,7 +17,8 @@ Github.io는 본인 Github 계정의 저장소를 바탕으로 정적(static) �
 
 티스토리, 브런치, 네이버 블로그와 같이 기존 플랫폼에서 블로그를 운영하면 제공하는 스킨, 에디터, 관리자 페이지를 활용할 수 있지만 플랫폼의 틀 안에서만 커스터마이징 가능한 반면,
 Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 입맛에 맞게 커스터마이징 할 수 있는 장점이 있다.
-[^Jekyll]: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyll은 블로그가 어떻게 보일지, 어떤 구조로 쌓아서 표현할지에 대한 틀을 제공하는 테마이다.
+
+      Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyll은 블로그가 어떻게 보일지, 어떤 구조로 쌓아서 표현할지에 대한 틀을 제공하는 테마이다.
 
 >Jihye Lee 라는 분은 Tale[[테마 데모](https://chesterhow.github.io/tale/), [테마 Git](https://github.com/chesterhow/tale)]이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 [본인의 블로그](http://jihyeleee.com/)를 아주 새롭고 멋지게 만든 예시가 있다.
 
