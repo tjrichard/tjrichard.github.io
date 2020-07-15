@@ -2,7 +2,7 @@
 layout: post
 title: Github.io로 나만의 블로그 만들기 (1) 가입 및 초기 세팅
 featured: true
-tags: [Blog, Github.com, Github.io, Jekyll]
+tags: [Blog, Github.io, Jekyll, Development]
 image: '/images/posts/denise-hahn-8F4cfPjHhvM-unsplash.jpg'
 ---
 
