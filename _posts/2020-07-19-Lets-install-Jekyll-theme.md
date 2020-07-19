@@ -3,7 +3,7 @@ layout: post
 title: Github.io로 나만의 블로그 만들기 (2) Jekyll 테마 찾고 설치하는 법
 featured: true
 tags: [Blog, Github.io, Jekyll, Development]
-image: '/images/posts/Starting_github.io_series_2/Minimal%20Jekyll%20Structure.jpg'
+image: '/images/posts/Starting_github.io_series_2/Minimal%20Jekyll%20Structure.png'
 ---
 이전 글 → [Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅](https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/)
 
