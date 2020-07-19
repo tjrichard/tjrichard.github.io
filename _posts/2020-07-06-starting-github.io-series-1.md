@@ -140,6 +140,6 @@ Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username
 
 [(1) 가입 및 초기 세팅](https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/)
 
-[(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법](https://tjrichard.github.io/2020/07/06/starting-github.io-series-2/)
+[(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법](https://tjrichard.github.io/2020/07/19/Lets-install-Jekyll-theme/)
 
 (3) ???
