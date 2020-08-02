@@ -4,11 +4,11 @@
 
 .pager {
   margin: 20px 0 0 0;
-  display: flow-root;
+  display: flex;
 }
 
 .pager li {
-  width: 48%;
+  width: 49%;
   list-style: none;
 }
 
@@ -27,6 +27,7 @@
   font-family: $font-base;
   line-height: $line-height-medium;
   color: $color-key;
+  width: 100%;
 }
 
 .pager li > a:hover,
@@ -46,6 +47,7 @@
 
 .pager .next {
   float: right;
+  margin-left: auto;
 }
 
 .pager .previous {
