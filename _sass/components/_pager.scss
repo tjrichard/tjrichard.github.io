@@ -34,7 +34,7 @@
   color: $color-key;
 }
 
-.pager li > span {
+.pager li > a > span {
   font-size: $font-size-small;
   font-family: $font-base;
   line-height: $line-height-small;
