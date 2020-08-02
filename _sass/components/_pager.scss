@@ -5,79 +5,49 @@
 .pager {
   margin: 20px 0 0 0;
   display: flow-root;
-  list-style: none;
 }
 
 .pager li {
   width: 48%;
   display: inline;
-  &.next {
-    float: right;
-  }
-  &.previous {
-    float: left;
-  }
-  > a, span {
-    display: inline-block;
-    padding; 5px 14px;
-    background-color: $color-white;
-    border: 1px solid $color-border;
-    transition: $global-transition;
-  }
-  > a {
-    font-size: $font-size-medium;
-    font-family: $font-base;
-    line-height: $line-height-medium;
-    color: $color-key;
-    > span {
-      font-size: $font-size-small;
-      font-family: $font-base;
-      line-height: $line-height-small;
-      color: $color-gray;
-    }
-  }
-  > a:hover, a:focus {
-    box-shadow: 0 3px 30 rgba(0,0,0,0.15) ;
-  }
+  list-style: none;
 }
 
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: $color-white;
+  border: 1px solid $color-border;
+  transition: $global-transition;
+}
 
-// .pager li > a,
-// .pager li > span {
-//   display: inline-block;
-//   padding: 5px 14px;
-//   background-color: $color-white;
-//   border: 1px solid $color-border;
-//   border-radius: 15px;
-//   transition: $global-transition;
-// }
+.pager li > a {
+  font-size: $font-size-medium;
+  font-family: $font-base;
+  line-height: $line-height-medium;
+  color: $color-key;
+}
 
-// .pager li > a {
-//   font-size: $font-size-medium;
-//   font-family: $font-base;
-//   line-height: $line-height-medium;
-//   color: $color-key;
-// }
+.pager li > span {
+  font-size: $font-size-small;
+  font-family: $font-base;
+  line-height: $line-height-small;
+  color: $color-gray;
+}
 
-// .pager li > span {
-//   font-size: $font-size-small;
-//   font-family: $font-base;
-//   line-height: $line-height-small;
-//   color: $color-gray;
-// }
-
-// .pager li > a:hover,
-// .pager li > a:focus {
-//   box-shadow: 0 3px 30 rgba(0,0,0,0.15) ;
-// }
-// .pager .next > a,
-// .pager .next > span {
-//   float: right;
-// }
-// .pager .previous > a,
-// .pager .previous > span {
-//   float: left;
-// }
+.pager li > a:hover,
+.pager li > a:focus {
+  box-shadow: 0 3px 30 rgba(0,0,0,0.15) ;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
