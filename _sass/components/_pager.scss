@@ -13,6 +13,11 @@
   list-style: none;
 }
 
+.pager li:hover,
+.pager li:focus {
+  box-shadow: 0 3px 30 rgba(0,0,0,0.15) ;
+}
+
 .pager li > a,
 .pager li > span {
   display: inline-block;
@@ -36,18 +41,16 @@
   color: $color-gray;
 }
 
-.pager li > a:hover,
-.pager li > a:focus {
-  box-shadow: 0 3px 30 rgba(0,0,0,0.15) ;
-}
-.pager .next > a,
-.pager .next > span {
-  float: right;
-}
-.pager .previous > a,
-.pager .previous > span {
-  float: left;
-}
+
+// .pager .next > a,
+// .pager .next > span {
+//   float: right;
+// }
+// .pager .previous > a,
+// .pager .previous > span {
+//   float: left;
+// }
+
 .pager .disabled > a,
 .pager .disabled > a:hover,
 .pager .disabled > a:focus,
@@ -56,7 +59,6 @@
   background-color: $bg-color-gray;
   cursor: not-allowed;
 }
-
 
 // .c-tags {
 //   a {
