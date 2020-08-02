@@ -13,11 +13,6 @@
   list-style: none;
 }
 
-.pager li:hover,
-.pager li:focus {
-  box-shadow: 0 3px 30 rgba(0,0,0,0.15) ;
-}
-
 .pager li > a,
 .pager li > span {
   display: inline-block;
@@ -29,18 +24,34 @@
 
 .pager li > a {
   font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
   font-family: $font-base;
   line-height: $line-height-medium;
   color: $color-key;
 }
 
+.pager li > a:hover,
+.pager li > a:focus {
+  text-decoration: none;
+  transform: translateX(4px) translateY(-4px);
+  box-shadow: -4px 4px 0 0 $color-key;
+}
+
 .pager li > a > span {
   font-size: $font-size-small;
+  font-weight: $font-weight-regular;
   font-family: $font-base;
   line-height: $line-height-small;
   color: $color-gray;
 }
 
+.pager .next {
+  float: right;
+}
+
+.pager .previous {
+  float: left;
+}
 
 // .pager .next > a,
 // .pager .next > span {
