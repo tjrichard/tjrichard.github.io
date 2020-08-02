@@ -1,0 +1,78 @@
+/*------------------------------------*\
+  Components > Pager
+\*------------------------------------*/
+
+.pager li > a,
+.pager li > span {
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: $color-white;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  transition: $global-transition;
+}
+
+.pager li > a {
+  font-size: $font-size-medium;
+  font-family: $font-base;
+  line-height: $line-height-medium;
+  color: $color-key;
+}
+
+.pager li > span {
+  font-size: $font-size-small;
+  font-family: $font-base;
+  line-height: $line-height-small;
+  color: $color-gray;
+}
+
+.pager li > a:hover,
+.pager li > a:focus {
+  box-shadow: 0 3px 30 rgba(0,0,0,0.15) ;
+}
+.pager .next > a,
+.pager .next > span {
+  float: right;
+}
+.pager .previous > a,
+.pager .previous > span {
+  float: left;
+}
+.pager .disabled > a,
+.pager .disabled > a:hover,
+.pager .disabled > a:focus,
+.pager .disabled > span {
+  color: $color-gray;
+  background-color: $bg-color-gray;
+  cursor: not-allowed;
+}
+
+
+.c-tags {
+  a {
+    display: inline-block;
+    padding: quarter($base-spacing-unit) $base-spacing-unit;
+    margin: 0 half($base-spacing-unit) quarter($base-spacing-unit) 0;
+
+    font-size: $font-size-tiny;
+    font-family: $font-base;
+    line-height: $line-height-medium;
+
+    background-color: $bg-color-gray;
+    transition: $global-transition;
+
+    &:hover {
+      transform: translateX(4px) translateY(-4px);
+      box-shadow: -4px 4px 0 0 $color-key;
+    }
+    
+    @include attention() {
+      text-decoration: none;
+      background-color: $bg-color-gray;
+    }
+  }
+
+  @include mq($until: tablet) {
+    margin-bottom: $line-height-medium - half(quarter($line-height-medium));
+  }
+}
