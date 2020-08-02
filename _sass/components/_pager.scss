@@ -2,9 +2,15 @@
   Components > Pager
 \*------------------------------------*/
 
+.pager {
+  margin: 20px 0 0 0;
+  display: flow-root;
+  list-style: none;
+}
+
 .pager li {
   width: 48%;
-  display: inline-block;
+  display: inline;
   &.next {
     float: right;
   }
