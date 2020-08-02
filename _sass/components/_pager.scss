@@ -7,7 +7,7 @@
   display: inline-block;
   padding: 5px 14px;
   background-color: $color-white;
-  border: 1px solid #ddd;
+  border: 1px solid $color-border;
   border-radius: 15px;
   transition: $global-transition;
 }
