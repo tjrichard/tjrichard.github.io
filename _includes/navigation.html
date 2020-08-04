@@ -1,5 +1,5 @@
 {% for page in site.pages %}
-  {% unless page.name == '404.md' %}
+  {% unless page.name == '404.md', '/feed.xml' %}
     {% if page.name == 'blog.md' %}
       <li class='c-nav__item' role='presentation'>
         <a class='c-nav__link' href='{{ site.baseurl }}/'>{{ page.title }}</a>
