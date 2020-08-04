@@ -1,15 +1,15 @@
 {% assign current = page.url | downcase | split: '/' %} 
   <li role='presentation'>
-    <a class='c-nav__link' href='{{ site.baseurl }}/' {% if current[1] == "about" or current[1] == "blog" or current[1] == "project" %} class="normal" {% endif %} class="active">Home</a>
+    <a href='{{ site.baseurl }}/' {% if current[1] == "about" or current[1] == "blog" or current[1] == "project" %} class="c-nav__link normal" {% endif %} class="c-nav__link active">Home</a>
   </li>
   <li role='presentation'>
-    <a class='c-nav__link' href='{{ '/project' | prepend: site.baseurl }}' {% if current[1] == "project" %} class="active"{% endif %}>Project</a>
+    <a href='{{ '/project' | prepend: site.baseurl }}' {% if current[1] == "project" %} class="c-nav__link active"{% endif %}>Project</a>
   </li>
   <li role='presentation'>
-    <a class='c-nav__link' href='{{ '/blog' | prepend: site.baseurl }}' {% if current[1] == "blog" %} class="active"{% endif %}>Blog</a>
+    <a href='{{ '/blog' | prepend: site.baseurl }}' {% if current[1] == "blog" %} class="c-nav__link active"{% endif %}>Blog</a>
   </li>
   <li role='presentation'>
-    <a class='c-nav__link' href='{{ '/about' | prepend: site.baseurl }}' {% if current[1] == "about" %} class="active"{% endif %}>About</a>
+    <a href='{{ '/about' | prepend: site.baseurl }}' {% if current[1] == "about" %} class="c-nav__link active"{% endif %}>About</a>
   </li>
       
     
