@@ -3,6 +3,8 @@
 \*------------------------------------*/
 
 .c-nav {
+  margin: 0px;
+
   &__link {
     display: block;
     transition: $global-transition;
@@ -49,8 +51,15 @@
 }
 
 .active {
-  padding-bottom: 6px;
-  border-bottom: 2px solid $color-brand;
   color: $color-brand;
   font-weight: 600;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  top: $line-height-header;
+  width: 100%;
+  height: 2px;
+  background-color: $color-brand;
 }
