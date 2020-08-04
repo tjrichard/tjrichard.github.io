@@ -60,4 +60,4 @@ defaults:
   #   values:
   #     comments: true
 
-favicon: assets/favicon_package_v0.16/favicon.ico
+favicon: assets/favicon.ico
