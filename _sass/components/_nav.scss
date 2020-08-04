@@ -12,6 +12,7 @@
   &__link {
     display: block;
     transition: $global-transition;
+    width: max-content;
 
     &--current {
       color: $color-brand;
@@ -25,5 +26,20 @@
       color: $color-brand;
       text-decoration: none;
     }
+  }
+}
+
+.c-nav-list {
+  display: flex;
+  flex-direction: row;
+
+  li {
+  position: relative;
+  display: inline-block;
+  margin: 0 20px 0 0;
+  list-style: none;
+
+  &:last-child {
+    margin-right: 0;
   }
 }
