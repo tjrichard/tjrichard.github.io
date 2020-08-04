@@ -3,14 +3,6 @@
 \*------------------------------------*/
 
 .c-nav {
-  margin: 0px;
-
-  &__item {
-    font-size: $font-size-header;
-    margin-bottom: $base-spacing-unit;
-    font-weight: 600;
-  }
-
   &__link {
     display: block;
     transition: $global-transition;
@@ -34,14 +26,31 @@
 .c-nav-list {
   display: flex;
   flex-direction: row;
+  padding-bottom: 10px;
 
   li {
   position: relative;
   display: inline-block;
   margin: 0 20px 0 0;
   list-style: none;
+  font-size: $font-size-base;
+
   }
   &:last-child {
     margin-right: 0;
   }
+}
+
+.normal {
+  color: $color-text;
+  font-weight: 500;
+  border-style: none;
+  padding-bottom: 0;
+}
+
+.active {
+  padding-bottom: 6px;
+  border-bottom: 2px solid $color-brand;
+  color: $color-brand;
+  font-weight: 600;
 }

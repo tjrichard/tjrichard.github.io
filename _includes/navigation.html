@@ -1,17 +1,18 @@
-{% for page in site.pages %}
-  {% unless page.name == '404.md', '/feed.xml' %}
-    {% if page.name == 'blog.md' %}
-      <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='{{ site.baseurl }}/'>{{ page.title }}</a>
-      </li>
-    {% else %}
-        <li class='c-nav__item' role='presentation'>
-          <a class='c-nav__link' href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
-        </li>
-    {% endif %}
-  {% endunless %}
-{% endfor %}
-
+{% assign current = page.url | downcase | split: '/' %} 
+  <li role='presentation'>
+    <a class='c-nav__link' href='{{ site.baseurl }}/' {% if current[1] == "about" or current[1] == "blog" or current[1] == "project" %} class="normal" {% endif %} class="active">Home</a>
+  </li>
+  <li role='presentation'>
+    <a class='c-nav__link' href='{{ '/project' | prepend: site.baseurl }}' {% if current[1] == "project" %} class="active"{% endif %}>Project</a>
+  </li>
+  <li role='presentation'>
+    <a class='c-nav__link' href='{{ '/blog' | prepend: site.baseurl }}' {% if current[1] == "blog" %} class="active"{% endif %}>Blog</a>
+  </li>
+  <li role='presentation'>
+    <a class='c-nav__link' href='{{ '/about' | prepend: site.baseurl }}' {% if current[1] == "about" %} class="active"{% endif %}>About</a>
+  </li>
+      
+    
 <!--
 {% for page in site.pages %}
   {% unless page.name == '404.md' %}
