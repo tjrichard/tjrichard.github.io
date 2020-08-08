@@ -1,10 +1,15 @@
 ---
 layout: post
-title: 매일 마시는 물, 어떻게 마시고 있을까?
-featured: true
+title:  "매일 마시는 물, 어떻게 마시고 있을까?"
+subtitle: "물을 어떻게 마시고 얼마나 마시는게 좋을까? 🤔"
+type: "잡담과 생각"
 tags: [일상, 후기]
-image: '/images/posts/6.jpg'
+blog: true
+post-header: true
+header-img: "img/header.jpg"
+order: 2
 ---
+
 
 ### 하루에 마셔야 하는 물 양은?
 
