@@ -40,7 +40,7 @@
         background-color: $bg-color-dark;
         border-radius: 6px;
         
-        @media (max-width: $break-medium) {
+        @include mq($from: tablet) {
             margin: 10px 0;
         }
         
