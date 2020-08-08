@@ -6,7 +6,7 @@ project-header: true
 header-img: img/about.jpg
 ---
 
-<ul class="catalogue">
+<ul class="c-list">
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 
 {% for page in sorted %}

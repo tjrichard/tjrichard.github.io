@@ -1,0 +1,27 @@
+<li class="c-list__item">
+    <a href="{{ page.url | prepend: site.baseurl }}" >
+        {% if page.list-img == true %}
+        <img src="{{ page.post-img }}" class="c-list__img"/>
+        {% endif %}
+        {% if page.draft == true %}
+        <span class="c-list__tag">
+            Coming Soon
+        </span>
+        {% endif %}
+        <p class="c-list__type">
+            {{ page.type }}
+        </p>
+        <div class="c-list__info transition">
+            <h1 class="c-list__title">
+                {{ page.title }}
+            </h1>
+            <p class="c-list__sub">
+                {{ page.subtitle }}
+            </p>
+            <p class="c-list__body">
+                {{ page.content | truncatewords: 24 | strip_html }}
+            </p>
+            <span class='c-list__date'>{{ post.date | date: '%d %b %Y' }}</span>
+        </div>
+    </a>
+</li>    
