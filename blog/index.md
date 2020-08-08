@@ -11,7 +11,7 @@ header-img: img/about.jpg
 
 {% for page in sorted %}
     {% if page.blog == true %}
-        {% include post-card.liquid %}
+        {% include post-list.html %}
     {% endif %}
 {% endfor %}
 </ul>
