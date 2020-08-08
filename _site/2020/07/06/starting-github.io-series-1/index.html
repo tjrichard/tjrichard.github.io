@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <title>Github.io로 나만의 블로그 만들기 (1) 가입 및 초기 세팅</title>
+  <meta name='description' content="Github.io, 혹은 Github Pages란">
+  <link rel='canonical' href="http://localhost:4000/2020/07/06/starting-github.io-series-1/">
+  <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="http://localhost:4000/feed.xml">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;700&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+  
+  <link rel="shortcut icon" href="https://www.tjrichard.github.io/assets/favicon.ico">
+
+  <style>
+    
+
+    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html{font-family:'Work Sans', 'Noto Sans KR', sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:'Fira Mono', monospace;font-size:14px}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:'Fira Mono', monospace;font-size:14px}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:'Work Sans', 'Noto Sans KR', sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}body,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,dd,ol,ul,figure,hr,fieldset,legend{margin:0;padding:0}li>ol,li>ul{margin-bottom:0}table{border-collapse:collapse;border-spacing:0}address,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,ol,ul,figure,hr,table,fieldset{margin-bottom:32px}dd,ol,ul{list-style-position:inside;margin-left:16px}@-webkit-keyframes spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.icon{position:relative;display:inline-block;width:25px;height:25px;overflow:hidden;fill:currentColor}.icon__cnt{width:100%;height:100%;background:inherit;fill:inherit;pointer-events:none;transform:translateX(0);-ms-transform:translate(0.5px, -0.3px)}.icon--m{width:50px;height:50px}.icon--l{width:100px;height:100px}.icon--xl{width:150px;height:150px}.icon--xxl{width:200px;height:200px}.icon__spinner{position:absolute;top:0;left:0;width:100%;height:100%}.icon--ei-spinner .icon__spinner,.icon--ei-spinner-2 .icon__spinner{-webkit-animation:spin 1s steps(12) infinite;animation:spin 1s steps(12) infinite}.icon--ei-spinner-3 .icon__spinner{-webkit-animation:spin 1.5s linear infinite;animation:spin 1.5s linear infinite}.icon--ei-sc-facebook{fill:#3b5998}.icon--ei-sc-github{fill:#333}.icon--ei-sc-google-plus{fill:#dd4b39}.icon--ei-sc-instagram{fill:#3f729b}.icon--ei-sc-linkedin{fill:#0976b4}.icon--ei-sc-odnoklassniki{fill:#ed812b}.icon--ei-sc-skype{fill:#00aff0}.icon--ei-sc-soundcloud{fill:#f80}.icon--ei-sc-tumblr{fill:#35465c}.icon--ei-sc-twitter{fill:#55acee}.icon--ei-sc-vimeo{fill:#1ab7ea}.icon--ei-sc-vk{fill:#45668e}.icon--ei-sc-youtube{fill:#e52d27}.icon--ei-sc-pinterest{fill:#bd081c}.icon--ei-sc-telegram{fill:#0088cc}.highlight{margin:0;background:#fff}.highlighter-rouge .highlight{background:#F9F8Fa}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#aaa}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:#008080}.highlight .nb{color:#0086B3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:#008080}.highlight .ni{color:#800080}.highlight .ne{color:#900;font-weight:bold}.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:#000080}.highlight .nv{color:#008080}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:#008080}.highlight .vg{color:#008080}.highlight .vi{color:#008080}.highlight .il{color:#099}body{color:#1B2528;font-size:16px;font-family:"Work Sans","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:27px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*::selection{color:#fff;background:#605AF2}a{text-decoration:none;color:#1B2528;transition:.3s}a:hover,a:active,a:focus{text-decoration:underline}img{display:block;max-width:100%;font-style:italic}hr{height:1px;margin:32px 0;border:0;background-color:#F1F3F6}h1,h2,h3,h4,h5,h6{font-weight:inherit;line-height:initial;font-weight:600}h1{font-size:36px}h2{font-size:28px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}blockquote{padding-left:16px;border-left:3px solid #77868B}pre,code{font-family:"Fira Mono",monospace;background-color:#F9F8Fa;color:#4139EF;border-radius:3px}pre{overflow:auto;padding:32px;margin-bottom:16px;font-size:14px;line-height:22px;white-space:pre-wrap;word-wrap:break-word;word-break:break-all}li code,p code{padding:4px 8px}input[type='text'],input[type='tel'],input[type='number'],input[type='email'],select,textarea{width:100%;padding:16px;border:1px solid #F1F3F6;border-radius:0;outline:none;background-color:#fff;font-size:12px;appearance:none;transition:.3s}input[type='text']:hover,input[type='text']:active,input[type='text']:focus,input[type='tel']:hover,input[type='tel']:active,input[type='tel']:focus,input[type='number']:hover,input[type='number']:active,input[type='number']:focus,input[type='email']:hover,input[type='email']:active,input[type='email']:focus,select:hover,select:active,select:focus,textarea:hover,textarea:active,textarea:focus{border:1px solid #1B2528}.o-grid{margin:0 auto;display:flex;flex-wrap:wrap;max-width:700px}.o-grid:after{content:'';display:table;clear:both}.o-grid .o-grid{margin-right:-16px;margin-left:-16px;padding:0}.o-grid--full{max-width:100vw}.o-grid__col{float:left;padding-right:16px;padding-left:16px;margin:auto}.o-grid__col--1-4-s{width:25%}.o-grid__col--1-3-s{width:33.3333333333%}.o-grid__col--2-4-s{width:50%}.o-grid__col--3-4-s{width:75%}.o-grid__col--4-4-s{width:100%}@media (min-width: 40em){.o-grid__col--1-4-m{width:25%}.o-grid__col--1-3-m{width:33.3333333333%}.o-grid__col--2-4-m{width:50%}.o-grid__col--3-4-m{width:75%}}@media (min-width: 64em){.o-grid__col--1-4-l{width:25%}.o-grid__col--1-3-l{width:33.3333333333%}.o-grid__col--2-4-l{width:50%}.o-grid__col--3-4-l{width:75%}}.o-grid__col--full{width:100%}.o-grid__col--center{margin:0 auto}.o-grid__col--end{margin-left:auto;margin-top:20px}.o-wrapper{padding:32px 0}.c-off-canvas-container{display:flex;min-height:100vh;flex-direction:column}.c-off-canvas-container .o-wrapper{flex:1 0 auto}.o-plain-list{position:relative;top:16px;padding:0;list-style:none}.c-header__inner{padding:16px 0;border-bottom:1px solid #F1F3F6}.c-header__icon{vertical-align:middle}.c-logo__link{font-size:19px;font-weight:900;transition:.3s;position:relative;top:2px}.c-logo__link:hover,.c-logo__link:active,.c-logo__link:focus{color:#605AF2;text-decoration:none}.c-nav{margin:0px}.c-nav__link{display:block;transition:.3s;width:max-content}.c-nav__link--current{color:#605AF2}.home-template .c-nav__link--current:not(:hover){color:#1B2528}.c-nav__link:hover,.c-nav__link:active,.c-nav__link:focus{color:#605AF2;text-decoration:none}.c-nav-list{display:flex;flex-direction:row;padding-bottom:10px}.c-nav-list li{position:relative;display:inline-block;margin:0 20px 0 0;list-style:none;font-size:16px}.c-nav-list:last-child{margin-right:0}.normal{color:#1B2528;font-weight:500;border-style:none;padding-bottom:0}.active{color:#605AF2;font-weight:600}.active::before{content:"";position:absolute;top:32px;width:100%;height:2px;background-color:#605AF2}.c-off-canvas-toggle{float:right;position:relative;z-index:10;height:19px;width:25px;cursor:pointer}.c-off-canvas-toggle__icon{position:absolute;left:0;height:1px;width:25px;background:#1B2528;cursor:pointer}.c-off-canvas-toggle__icon:before,.c-off-canvas-toggle__icon:after{content:'';display:block;height:100%;background-color:inherit;transition:.3s}.c-off-canvas-toggle__icon:before{transform:translateY(16px)}.c-off-canvas-toggle__icon:after{transform:translateY(7px)}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon{height:1px;background-color:transparent;margin-bottom:8px}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:before,.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:after{position:relative;visibility:visible;background:#1B2528}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:before{top:11px;transform:rotate(-45deg)}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:after{top:9px;transform:rotate(45deg)}.c-off-canvas-toggle--close{top:0;float:none;display:block;margin-left:auto}html,body{overflow-x:hidden}.c-off-canvas-content{position:fixed;top:0;right:0;width:300px;height:100%;padding:24px 32px;background-color:#fff;transform:translate3d(300px, 0, 0)}.c-off-canvas-container{transform:translate3d(0, 0, 0);transition:transform .3s cubic-bezier(0.16, 0.68, 0.43, 0.99)}.c-off-canvas-container.is-active{transform:translate3d(-300px, 0, 0)}.c-off-canvas-container.is-active:after{position:fixed;top:0;right:0;bottom:0;left:0;content:'';background-color:rgba(0,0,0,0.2)}.c-tags a{display:inline-block;padding:4px 16px;margin:0 8px 4px 0;font-size:11px;font-family:"Work Sans","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:22px;background-color:#FAFAFA;transition:.3s}.c-tags a:hover{transform:translateX(4px) translateY(-4px);box-shadow:-4px 4px 0 0 #4139EF}.c-tags a:hover,.c-tags a:active,.c-tags a:focus{text-decoration:none;background-color:#FAFAFA}@media (max-width: 39.99em){.c-tags{margin-bottom:19px}}.c-btn{display:inline-block;padding:8px 32px;cursor:pointer;transition:.3s;text-align:center;vertical-align:middle;white-space:nowrap;line-height:inherit;border:0;border-radius:0;color:#fff;background-color:#207cdf;font-size:14px}.c-btn:hover,.c-btn:active,.c-btn:focus{text-decoration:none;background-color:#238cf6}.c-btn--full{width:100%}.c-btn--small{padding:4px 16px}.c-post-card{display:block;padding:32px 0;word-break:break-word;border-bottom:1px solid #F1F3F6}.c-post-card--first{padding-top:0}.c-post-card--last{padding-bottom:0;border-bottom:0}.c-post-card__title{margin-bottom:10px;font-size:16px;font-weight:600;transition:.3s}@media (min-width: 40em){.c-post-card__title{font-size:24px}}.c-post-card__excerpt{margin-bottom:10px}.c-post-card__date{display:block;color:#77868B;direction:ltr;font-size:11px;font-weight:600;line-height:19px;text-transform:uppercase}.c-post-card:hover{color:#1B2528;text-decoration:none}.c-post-card:hover .c-post-card__title{color:#605AF2}.c-pagination{text-transform:uppercase;transition:.3s}.c-pagination:hover,.c-pagination:active,.c-pagination:focus{color:#605AF2;text-decoration:none}.c-pagination__text{position:relative;font-size:12px;letter-spacing:2px}.c-pagination__text--prev{left:-16px}.c-pagination__text--next{right:-16px}.c-pagination__icon{vertical-align:text-top}.c-pagination__icon--prev{left:-8px}.c-pagination__icon--next{right:-8px}.pager{margin:20px 0 0 0;display:flex}.pager li{width:49%;list-style:none}.pager li>a,.pager li>span{display:inline-block;padding:5px 14px;background-color:#fff;border:1px solid #F1F3F6;transition:.3s}.pager li>a{font-size:14px;font-weight:600;font-family:"Work Sans","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:22px;color:#4139EF;width:100%;height:100%}.pager li>a:hover,.pager li>a:focus{text-decoration:none;transform:translateX(4px) translateY(-4px);box-shadow:-4px 4px 0 0 #4139EF}.pager li>a>span{font-size:12px;font-weight:400;font-family:"Work Sans","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:19px;color:#77868B}.pager .next{float:right;margin-left:auto}.pager .previous{float:left}.pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span{color:#77868B;background-color:#FAFAFA;cursor:not-allowed}.c-post{margin:0 auto;max-width:740px}.c-post__title{font-size:22px;margin-bottom:16px}@media (min-width: 40em){.c-post__title{font-size:24px}}.c-post__date{position:relative;padding-top:16px;display:block;text-align:center;margin-bottom:16px;font-size:12px;font-weight:600;line-height:19px;color:#77868B}.c-post__date:after{position:absolute;content:'';top:0;left:50%;height:1px;width:64px;background:#FAFAFA;transform:translateX(-50%)}.c-post__image{margin:0 auto 16px}.c-content a:not(.c-btn){text-decoration:underline;text-decoration-skip:ink}.c-content a:not(.c-btn):hover,.c-content a:not(.c-btn):active,.c-content a:not(.c-btn):focus{color:#605AF2}.c-text-center{text-align:center}.twitter-tweet,.fluid-width-video-wrapper{margin-bottom:16px !important}.c-social-nav__item{display:inline-block}.c-social-nav__icon{fill:#1B2528;vertical-align:middle;transition:.3s}.c-social-nav__icon:hover,.c-social-nav__icon:active,.c-social-nav__icon:focus{fill:#605AF2}.c-footer{padding:32px 0;background-color:#FAFAFA}.u-hidden{display:none}.u-hidden-visually{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.u-font-medium{font-size:14px;line-height:22px}.u-font-small{font-size:12px;line-height:19px}.u-font-tiny{font-size:11px;line-height:17px}.u-text-left{text-align:left}.u-text-right{text-align:right}.u-text-center{text-align:center}.u-text-justify{text-align:justify}.u-inline{display:inline}.u-block{display:block}.u-inline-block{display:inline-block}.u-left{float:left}.u-right{float:right}.u-clearfix:after{content:'';display:table;clear:both}
+
+  </style>
+</head>
+
+<body>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172119466-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172119466-2');
+</script>
+
+
+  <div>
+    <header class='c-header'>
+
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-header__inner'>
+
+        <div class='o-grid'>
+          <div class="o-grid__col o-grid__col--4-4-s">
+            <ul class="c-nav c-nav-list">
+                 
+  <li role='presentation'>
+    <a href='/'  class="c-nav__link active">Home</a>
+  </li>
+  <li role='presentation'>
+    <a href='/project' >Project</a>
+  </li>
+  <li role='presentation'>
+    <a href='/blog' >Blog</a>
+  </li>
+  <li role='presentation'>
+    <a href='/about' >About</a>
+  </li>
+      
+    
+<!--
+
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/about/about/'>About</a>
+        </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/'>Blog</a>
+      </li>
+    
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/feed.xml'></a>
+        </li>
+    
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/'></a>
+        </li>
+    
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/style-guide.html'>Style Guide</a>
+        </li>
+    
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/tag/blog/'></a>
+        </li>
+    
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/tag/github.io/'></a>
+        </li>
+    
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/tag/jekyll/'></a>
+        </li>
+    
+  
+
+  
+    
+        <li class='c-nav__item' role='presentation'>
+          <a class='c-nav__link' href='/tag/development/'></a>
+        </li>
+    
+  
+
+-->
+
+
+<!--
+
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/about/about/'>About</a>
+      </li>
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/blog/blog/'>Blog</a>
+      </li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+      <li class='c-nav__item' role='presentation'>
+        <a class='c-nav__link' href='/style-guide.html'>Style Guide</a>
+      </li>
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+  
+    
+  
+
+-->
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</header>
+
+    
+
+
+  <meta itemprop='og:image' content='http://localhost:4000/images/posts/denise-hahn-8F4cfPjHhvM-unsplash.jpg'>
+
+
+<div class='o-wrapper'>
+  <div class='o-grid'>
+    <div class='o-grid__col'>
+      <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
+
+        <h1 class='c-post__title u-text-center'>Github.io로 나만의 블로그 만들기 (1) 가입 및 초기 세팅</h1>
+
+        <time class='c-post__date' datetime='2020-07-06T00:00:00+09:00' itemprop='datePublished'>06 Jul 2020</time>
+
+        <div class='c-content' itemprop='articleBody'>
+          
+  <img src='/images/posts/denise-hahn-8F4cfPjHhvM-unsplash.jpg' class='c-post__image' alt='Github.io로 나만의 블로그 만들기 (1) 가입 및 초기 세팅'>
+
+
+          <h1 id="githubio-혹은-github-pages란">Github.io, 혹은 Github Pages란</h1>
+
+<p>간략하게 설명하자면 Github.io, Github Pages는 Github에서 제공하는 블로그 서비스이다.</p>
+
+<p>Github.io는 본인 Github 계정의 저장소를 바탕으로 정적(static) 호스팅을 제공해주는 Github Pages라는 서비스이다. 따로 웹 서버를 구축하거나 호스팅 서비스를 이용하지 않고서도 간단하게 웹페이지를 만들어 제공할 수 있다는 말이다.</p>
+
+<p>티스토리 블로그도 글을 올리면서 Github Pages로 블로그를 따로 만들고 있는 이유는 코드레벨에서 블로그를 운영할 수 있고, 이후 내가 원하는대로 커스터마이징을 할 수 있다는 장점이 있기 때문이다.</p>
+
+<p>티스토리, 브런치, 네이버 블로그와 같이 기존 플랫폼에서 블로그를 운영하면 제공하는 스킨, 에디터, 관리자 페이지를 활용할 수 있지만 플랫폼의 틀 안에서만 커스터마이징 가능한 반면,
+Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 입맛에 맞게 커스터마이징 할 수 있는 장점이 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyll은 블로그가 어떻게 보일지, 어떤 구조로 쌓아서 표현할지에 대한 틀을 제공하는 테마이다.
+</code></pre></div></div>
+
+<h1 id="-이-글을-읽는-우리의-목표">💎 이 글을 읽는 우리의 목표</h1>
+
+<p>나는 디자이너로 디자인 툴에서 이미지를 만들어 내는것을 넘어 원하는 디자인을 직접 구현해 보는데 관심이 있다. 반면 이 구현에 대한 관심은 취미 수준을 목표로 하기 때문에 모든 과정을 100% 나의 손으로 만들어 내는 것은 원하지 않는다.</p>
+
+<p>따라서 이 글과 나의 목표는 적은 개발 공수를 들이면서도 마음에 드는 디자인을 직접 코드 레벨에서 뚝딱뚝딱 만들어 보는 것으로 잡으려고 한다.</p>
+
+<ol>
+  <li>큰 노력 없이 간단하게 얻을 수 있는 결과
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>괜찮은 테마를 가져와 Github Page를 통해 내 블로그를 웹에 띄워볼 수 있음
+</code></pre></div>    </div>
+  </li>
+  <li>큰 노력을 기울여 얻을 수 있는 멋진 결과
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>괜찮은 테마를 가져와 이를 뜯어보고 내가 원하는 대로 구조, 스타일, 인터랙션을 커스터마이징 하고 서드파티 플러그인, 애널리틱스를 설치하고 방문자에 대한 분석까지 할 수 있음
+</code></pre></div>    </div>
+    <p>멋진 사례가 있어 이를 공유합니다.</p>
+    <blockquote>
+      <p>Jihye Lee 라는 분은 Tale[<a href="https://chesterhow.github.io/tale/">테마 데모</a>, <a href="https://github.com/chesterhow/tale">테마 Git</a>]이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 <a href="http://jihyeleee.com/">본인의 블로그</a>를 아주 새롭고 멋지게 만든 예시가 있다.</p>
+    </blockquote>
+  </li>
+</ol>
+
+<p>나는 간단한 HTML, CSS 코딩 공부도 할 겸 직접 내 입맛에 맞는 블로그를 만들면서 실습까지 진행해보고자 시작하게 되었다.</p>
+
+<h1 id="1-githubcom-가입하기">1. Github.com 가입하기</h1>
+
+<p>Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페이지를 사용하기 위해서는 Github.com에 가입되어 있어야 한다.</p>
+
+<p><a href="http://github.com">Github.com</a>으로 들어가서 가입을 해보자.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot1.png" alt="github.com 메인 화면" /></p>
+
+<p><a href="http://github.com">Github.com</a> 메인 화면이다. 화면 중간 우측에 바로 가입할 수 있는 필드가 있다. 혹은 우측 상단의 Sign-up 을 눌러 Sign-up 페이지에서도 가입을 할 수 있다.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot2.png" alt="Sign-up 페이지" /></p>
+
+<p>여기서 주의할 점은 <strong>Username</strong>이 이후 <a href="http://github.io">Github.io</a> 에서 블로그 페이지를 만들 때 사용될 주소의 첫 부분을 담당한다는 점이다.
+평소에 사용하던 읽을 수 없고 알아보기 힘든 <code class="highlighter-rouge">rhrnakaktxkd490000</code> 이나, 남들에게 보여주기 부끄러운 <code class="highlighter-rouge">cutie-jisu-94</code> 같은 아이디보단 만들고 싶은 블로그의 목적이나 본인을 잘 나타낼 수 있는 이름으로 만드는 것을 추천한다.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot3.png" alt="가입 완료 후 설문조사" /></p>
+
+<p>가입을 완료하면 간단한 설문이 있는데, 대강 입력하고 다음으로 넘어가보자.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot4.png" alt="이메일 인증 후 첫 온보딩 화면" /></p>
+
+<p>이후 이메일 인증을 완료하면 가장 먼저 어떤 것을 할 지 물어보는 페이지가 나온다. 우리는 Github.io 페이지의 저장소 역할을 할 Repository를 만들어야 한다. 가장 첫 번째에 있는Repository 만들기를 선택하자.</p>
+
+<hr />
+
+<h1 id="2-repository-만들기">2. Repository 만들기</h1>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot5.png" alt="Repository 만들기" /></p>
+
+<p>Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가입한 계정으로 선택된 상태일 것이다.</p>
+
+<p><strong>❗️여기서 Repository name을 정확하게 설정하는 것이 가장 중요하다.❗️</strong></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username은 가입 시 입력한 사용자 이름이다.
+</code></pre></div></div>
+
+<p>위와 같이 정확하게 입력하지 않으면 이후 Github.io에서 페이지를 만들 때 이 Repository를 사용하지 못하기 때문에 <strong>정.확.하.게</strong> 입력해야 한다.</p>
+
+<p>나머지 설정들은 당장 중요한게 아니니 적당히 입력하거나 무시하고 넘어가도록 하자.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot11.png" alt="environments - github-pages" /></p>
+
+<p>위 형식대로 정확하게 입력 했다면 Github.com &gt; 해당 Repository에 들어가면 우측 하단 environments 영역에 github-pages가 표시되고 있는 것을 확인할 수 있을 것이다.</p>
+
+<hr />
+
+<h1 id="3-git-client-연결해서-기초-작업-환경-세팅하기">3. Git Client 연결해서 기초 작업 환경 세팅하기</h1>
+
+<p>자 이제 <a href="http://github.io">Github.io</a>를 위한 계정과 저장소를 만들었다. Github.io 에서 다음 스텝을 따라가 보자.</p>
+
+<p><a href="https://pages.github.com/">Github.io 페이지 ↗</a></p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot6.png" alt="User or organization site, Project site" /></p>
+
+<p>가장 먼저 <code class="highlighter-rouge">User or organization site</code> 와 <code class="highlighter-rouge">Project site</code> 옵션이 있다. Project site를 선택하면 다른 절차 없이 Jekyll 테마를 입힐 수 있지만, 기본적으로 제공하는 테마 자체가 구리디 구려서 선택할 테마가 단 하나도 없다. 약간 더 번거로운 절차가 있을지라도 원하는 테마를 찾아 입힐 수 있도록 User or organization site를 선택 해주자.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot7.png" alt="Create Repository" /></p>
+
+<p><strong>1. Create Repository</strong></p>
+
+<p>이 부분은 앞 단계에서 이미 완료했으니 넘어가자.</p>
+
+<p><strong>2. What git client are you using?</strong></p>
+
+<p>Git 클라이언트를 어떤 것으로 사용할 것인지 물어보는 선택지인데, 이 글을 보고 있는 사람들은 어짜피 터미널이나 CLI(Code Level Interface)로 깃을 사용하는 사람이 아니니, UI를 제공하는 <code class="highlighter-rouge">Github Desktop</code>을 선택하자.</p>
+
+<p>Github Desktop이 설치되어 있지 않은 사용자는 <code class="highlighter-rouge">I don't know</code>를 선택해 설치하고 다시 돌아오자.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot9.png" alt="Clone repository" /></p>
+
+<p><strong>3. Clone the repository</strong></p>
+
+<p>설치, 로그인 한 Github Desktop 에서 계정의 Repository를 본인의 컴퓨터에 복제해 관리할 수 있도록 한다. 나는 이미 세팅이 완료된 상태라 초기 화면은 아니지만 비슷한 설정 화면이 보일 것이다.</p>
+
+<p>혹은 Github.com에서 생성한 Repository에서 Clone &gt; Open with Github Desktop 버튼을 눌러 연동할 수 있다.</p>
+
+<p><img src="/images/posts/Starting_github.io_series_1/screenshot10.png" alt="Open with Github Desktop" /></p>
+
+<p>두 번째 Step에서 만든 Repository를 선택한 후, 본인의 컴퓨터에 보관 할 위치를 선택한다. 나는 icloud를 사용하고 있어 여러 컴퓨터에서 작업을 진행할 수 있도록 icloud에 복제해 두었다.</p>
+
+<hr />
+
+<blockquote>
+  <p>여기까지 하면 테마 설정 이전 단계는 모두 끝난 것이라고 봐도 무방하다. Github.io 에서는 index.html 파일을 만들어 제대로 작동 하는지 확인하는 단계를 추가적으로 제공하고 있긴 한데, 이미 Repository를 만들 때 Readme.md를 생성했기 때문에 주소창에 {username}.github.io (나의 경우엔 <code class="highlighter-rouge">nam-d.github.io</code>)로 들어가면 Readme.md 내용이 보이는 것을 확인할 수 있다.</p>
+</blockquote>
+
+<p>다음 게시글에서는 원하는 Jekyll 테마를 찾고 설치하는 과정에 대해 알아보도록 하자.</p>
+
+<hr />
+
+<h3 id="githubio로-나만의-블로그-만들기-시리즈">Github.io로 나만의 블로그 만들기 시리즈</h3>
+
+<p><a href="https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/">(1) 가입 및 초기 세팅</a></p>
+
+<p><a href="https://tjrichard.github.io/2020/07/19/Lets-install-Jekyll-theme/">(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법</a></p>
+
+<p>(3) ???</p>
+
+        </div>
+
+        <div class='c-tags'>
+          
+            <a href='#'>Blog</a>
+            <!--<a href='/tag/Blog'>Blog</a>-->
+          
+            <a href='#'>Github.io</a>
+            <!--<a href='/tag/Github.io'>Github.io</a>-->
+          
+            <a href='#'>Jekyll</a>
+            <!--<a href='/tag/Jekyll'>Jekyll</a>-->
+          
+            <a href='#'>Development</a>
+            <!--<a href='/tag/Development'>Development</a>-->
+          
+        </div>
+        
+        <!--previous and next posts-->
+        <hr style="visibility:hidden;">
+          <ul class="pager">
+            
+            
+            <li class="next">
+              <a href="/2020/07/19/Lets-install-Jekyll-theme/" data-toggle="tooltip" data-placement="top" title="Github.io로 나만의 블로그 만들기 (2) Jekyll 테마 찾고 설치하는 법">
+              다음 글 👉<br>
+              <span>Github.io로 나만의 블로그 만들기 (2) Jekyll 테마 찾고 설치하는 법</span>
+              </a>
+            </li>
+            
+          </ul>
+        
+        <!--disqus-->
+        <hr>
+
+        <section class='disqus'>
+  <div id='disqus_thread'></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/2020/07/06/starting-github.io-series-1/';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      // Change `aspirethemes-demos` with your Disqus shortcode
+      s.src = '//tjrichard-github-io.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>
+</section>
+
+
+      </article>
+    </div>
+  </div>
+</div>
+
+
+    <footer class='c-footer'>
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+
+      <ul class='o-plain-list c-social-nav u-text-center'>
+        <!--
+        <li class='c-social-nav__item'>
+          <a href='' target='_blank'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-twitter' data-size='s'></span>
+          </a>
+        </li>
+        <li class='c-social-nav__item'>
+          <a href='' target='_blank'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-facebook' data-size='s'></span>
+          </a>
+        </li>
+        -->
+        <li class='c-social-nav__item'>
+          <a href='https://instagram.com/nam.d.richard' target='_blank'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-instagram' data-size='s'></span>
+          </a>
+        </li>
+        <li class='c-social-nav__item'>
+          <a href='https://github.com/tjrichard' target='_blank'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-github' data-size='s'></span>
+          </a>
+        </li>
+        <li class='c-social-nav__item'>
+          <a href='mailto:tjrichard91@gmail.com' target='_blank'>
+            <span class='c-social-nav__icon' data-icon='ei-envelope' data-size='s'></span>
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</footer>
+  </div>
+
+  <script src="/js/jquery-3.1.1.min.js"> </script>
+  <script src="/js/evil-icons.min.js">   </script>
+  <script src="/js/jquery.fitvids.js">   </script>
+  <script src="/js/app.js">              </script>
+</body>
+
+</html>

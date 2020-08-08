@@ -1,0 +1,617 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Seunghwan</title>
+    <description></description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 06 Aug 2020 19:25:45 +0900</pubDate>
+    <lastBuildDate>Thu, 06 Aug 2020 19:25:45 +0900</lastBuildDate>
+    <generator>Jekyll v4.0.0</generator>
+
+    
+      <item>
+        <title>매일 마시는 물, 어떻게 마시고 있을까?</title>
+        <description>&lt;p&gt;이전 글 → &lt;a href=&quot;https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/&quot;&gt;Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;지난-글과-다른-점&quot;&gt;지난 글과 다른 점&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;지난 글에서는 Github.io로 블로그 페이지를 만들 수 있는 틀을 구축했다면, 이번 글에서는 이미 잘 만들어진 블로그 테마를 찾고, 나의 블로그에 적용하는 과정을 다룬다.&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll-테마를-찾기-전&quot;&gt;Jekyll 테마를 찾기 전&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이 글을 읽는 우리의 1차 목표는 내 입맛에 맞는 디자인으로 Github 블로그를 만들어 보는 것이고, 2차 목표는 그렇게 만든 블로그로 실제 블로그를 운영하는 것이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Github.io로 나만의 블로그 만들기&lt;/code&gt; 시리즈는 내가 원하는 스타일과 인터랙션으로 커스터마이징 하는 과정이 포함되어 있다. 따라서 두 목표 모두 실현할 수 있기 위해서 우리가 고려해야 하는 것은 1. 테마의 디자인, 2. 테마의 기능 지원 여부, 3. 테마의 블로그 구조이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 테마의 디자인&lt;/strong&gt;에서 봐야할 것은 테마의 컨셉, 레이아웃, Table of Contents 지원, 포스트 검색 기능 지원, 코드 하이라이팅, 링크 하이라이팅, 모바일 혹은 반응형 대응 등이 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. 테마의 기능 지원 여부&lt;/strong&gt;에서는 애널리틱스 지원, 태그 페이지 지원, 인기 글 모아보기 지원 등이 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. 테마의 구조&lt;/strong&gt;는 아래👇에서 더 상세하게 알아보자.&lt;/p&gt;
+
+&lt;h1 id=&quot;-테마의-구조&quot;&gt;🧱 테마의 구조&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조를 어떻게 짤 것인가를 먼저 생각해봐야 한다. 왜냐하면 많은 수의 단순한, 미니멀한 Jekyll 테마는 다음과 같은 블로그 구조를 가지고 있기 때문이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Minimal%20Jekyll%20Structure.png&quot; alt=&quot;Minimal Jekyll theme Structure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;만약 당신이 만들고 싶은 블로그의 구조가 더 깊고 다양하다면 테마에서 제공하는 구조를 활용해도 어려울 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Your%20Blog%20Structure.png&quot; alt=&quot;Your Jekyll theme Structure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;테마 안에서 스타일과 인터랙션을 수정하는 것 보다 테마의 구조를 변경하는 것이 더 난이도가 높으므로 처음 테마를 결정할 때 본인의 블로그 구조를 먼저 구상 해두는 것이 필요하다.&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll-테마-찾기&quot;&gt;Jekyll 테마 찾기&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;위 기준들을 잘 생각하면서 테마를 찾아보자. 다음과 같이 무료 Jekyll 테마를 모아서 리스트를 제공하는 사이트들이 있으니 원하는 테마를 찾아보도록 하자.&lt;/p&gt;
+
+&lt;p&gt;개인적으로는 &lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;Github의 Jekyll-theme 토픽&lt;/a&gt; 이 가장 많은 테마를 제공하고 있고 정렬도 자유롭게 할 수 있지만, 리스트에서는 이름만 보이는 테마가 대부분이라 직접 들어가지 않는 한 어떤 테마인지 알 기 어렵다는 단점이 있다. &lt;a href=&quot;http://jekyllthemes.io&quot;&gt;Jekyllthemes.io&lt;/a&gt;는 start, last commit, fork 순으로 정렬할 수 있어 인기있는 테마를 빠르게 찾을 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllthemes.io/free&quot;&gt;https://jekyllthemes.io/free&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;https://github.com/topics/jekyll-theme&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;이외에도 다음과 같은 사이트들도 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyll-themes.com/free/&quot;&gt;https://jekyll-themes.com/free/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://themes.jekyllrc.org/&quot;&gt;http://themes.jekyllrc.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;http://jekyllthemes.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllthemes.dev/&quot;&gt;https://jekyllthemes.dev/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drjekyllthemes.github.io/new&quot;&gt;https://drjekyllthemes.github.io/new&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll-설치&quot;&gt;Jekyll 설치&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;위에서 정했던 테마 선택 기준에서 내가 원했던 태그 기능, Table of Contents 기능을 제공하는 &lt;a href=&quot;https://github.com/Huxpro/huxpro.github.io&quot;&gt;Huxpro&lt;/a&gt; 테마를 이용해 블로그를 만들어보기로 했다. &lt;del&gt;중국어로 되어있긴 하지만, 코드는 영어겠지..&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/screenshot1.png&quot; alt=&quot;Hupro Blog Demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Huxpro 테마로 만든 Hux Blog 페이지&lt;/p&gt;
+
+&lt;h2 id=&quot;1-설치-하고싶은-테마의-저장소-복사하기&quot;&gt;1. 설치 하고싶은 테마의 저장소&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 복사하기&lt;/h2&gt;
+
+&lt;p&gt;설치려고 하는 테마를 정했다면, 해당 테마의 github 저장소에 들어가자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Fork.png&quot; alt=&quot;Fork&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Fork_at.png&quot; alt=&quot;Fork at&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;우측 상단에 있는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Fork&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 버튼을 클릭 하면, 복사하기를 원하는 저장소를 선택할 수 있을 것이다. 준비된 블로그용 저장소를 선택해 테마의 코드를 복사하자.&lt;/p&gt;
+
+&lt;p&gt;❗️ 다른 사람의 저장소를 Fork 하면 본인의 저장소에서도 기존 저장소의 정보들이 표시되게 되는데, 이것이 싫은 경우 저장소를 .zip으로 컴퓨터에 다운로드 받은 후 본인의 저장소에 내용물을 풀면 새로운 내용으로 인식하게 할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-저장소-이름-변경&quot;&gt;2. 저장소 이름 변경&lt;/h2&gt;
+
+&lt;p&gt;테마를 Fork하니 1편에서 설정했던 저장소 이름과 다르게 개별 저장소로 생성이 되었다. 1편에서 만들었던 저장소는 다른 이름으로 변경 혹은 삭제 후, 복사 해온 저장소의 이름을 변경해주자. 1편에서 한 설명과 같이, 저장소의 이름을 본인의 &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt; 로 변경해야 한다. 각 저장소의 Settings 메뉴에 가면 기존 저장소를 삭제할 수 있고, 새로운 저장소 이름을 변경할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/repo_name_change.png&quot; alt=&quot;Repo name change&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;저장소 이름을 변경했으니, 해당 주소로 들어가면 우리가 Fork 한 테마가 그대로 보이는 것을 확인할 수 있다!&lt;/p&gt;
+
+&lt;h2 id=&quot;3-github-desktop-에서-열기&quot;&gt;3. Github Desktop 에서 열기&lt;/h2&gt;
+
+&lt;p&gt;자신의 깃헙 저장소에 테마 코드를 복사하고 저장소 이름도 내 username으로 변경도 완료했으니, 이를 불러오고 수정할 수 있도록 본인의 컴퓨터 로컬에 저장하고 편하게 수정할 수 있도록 Github Desktop에서 열도록 하자. 저장소를 Clone한 후 나의 경우엔 Fork 한 대상인 Huxpro에 contribute 할 것인지 나의 프로젝트로 사용할 것인지 물어보는데, 우리는 개인 블로그를 만들 것이기 때문에 아래 선택지인 개인 프로젝트 용으로 사용할 것으로 선택하자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/for_my_own_project.png&quot; alt=&quot;Select for my own project&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-configyml-수정하기&quot;&gt;4. config.yml 수정하기&lt;/h2&gt;
+
+&lt;p&gt;config.yml 파일은 테마의 가장 기본적인 설정들을 관리하는 파일이다. 보통 저장소의 가장 바깥에 있으니 찾기 쉬울 것이다. config 파일 내용은 테마마다 지원하는 기능, 구조가 달라 설정 가능한 항목들은 제각각이겠지만 나는 내가 복사한 Huxpro 테마의 설정들을 기준으로 설명해보겠다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/change_config_file.png&quot; alt=&quot;change config file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;블로그 안에 내용과 관계 없이 블로그 사이트를 구성하는 가장 기초적인 세팅만 변경해보자.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; : 본인의 블로그의 제목을 입력&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SEOTitle&lt;/code&gt; : 블로그 첫 페이지(Home)를 열었을 때 브라우저 탭에서 보일 문구&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;header-img&lt;/code&gt; : 블로그 첫 페이지(Home)에서 제공될 이미지. 지금은 변경하지 않고 유지하자&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt; : contact, 프로필 등에서 계속해서 제공 될 나의 contact 이메일 정보. 사용 여부에 따라 입력해두자.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; : 본인의 블로그를 나타내는 설명&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;keyword&lt;/code&gt; : 본인의 블로그에 담길 내용에 대한 키워드. 더 나은 검색에 사용되는듯 하다&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;url&lt;/code&gt; : 본인의 저장소 이름과 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt; 로 변경해두자. 이후 CNAME 등록, URL 호스팅 등으로 주소도 커스터마이징 가능하다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt; : 블로그가 다른 도메인의 하위에 속한다면 지정하는 영역. 우리는 블로그 주소를 가장 상위 주소로 사용할것이기 때문에 이 영역은 건드리지 않고 남겨두자.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;이제 테마를 설치하고 기본적인 세팅까지 완료하였다. 여기까지는 스텝에 따라서 설치, 클릭 정도만 하면 되기 때문에 생각보다 어렵지 않았을 것이다. 역시 문제는 원하는 대로 스타일을 수정 하고, 꾸준히 블로그에 올릴 글을 쓰는 것이겠지.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다음 글에서는 내가 쓴 글에 사람들의 반응을 받을 수 있는 댓글 기능인 Disqus를 연결하는 방법을 알아보자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;githubio로-나만의-블로그-만들기-시리즈&quot;&gt;&lt;strong&gt;Github.io로 나만의 블로그 만들기 시리즈&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/&quot;&gt;(1) 가입 및 초기 세팅&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(3) Disqus 연결하기&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Repository &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Fork는 해당 저장소에 있는 코드를 내 저장소에 복사 붙여넣기 하는 것이다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sat, 25 Jul 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2020/07/25/test/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/07/25/test/</guid>
+      </item>
+    
+      <item>
+        <title>Github.io로 나만의 블로그 만들기 (2) Jekyll 테마 찾고 설치하는 법</title>
+        <description>&lt;p&gt;이전 글 → &lt;a href=&quot;https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/&quot;&gt;Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;지난-글과-다른-점&quot;&gt;지난 글과 다른 점&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;지난 글에서는 Github.io로 블로그 페이지를 만들 수 있는 틀을 구축했다면, 이번 글에서는 이미 잘 만들어진 블로그 테마를 찾고, 나의 블로그에 적용하는 과정을 다룬다.&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll-테마를-찾기-전&quot;&gt;Jekyll 테마를 찾기 전&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이 글을 읽는 우리의 1차 목표는 내 입맛에 맞는 디자인으로 Github 블로그를 만들어 보는 것이고, 2차 목표는 그렇게 만든 블로그로 실제 블로그를 운영하는 것이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Github.io로 나만의 블로그 만들기&lt;/code&gt; 시리즈는 내가 원하는 스타일과 인터랙션으로 커스터마이징 하는 과정이 포함되어 있다. 따라서 두 목표 모두 실현할 수 있기 위해서 우리가 고려해야 하는 것은 1. 테마의 디자인, 2. 테마의 기능 지원 여부, 3. 테마의 블로그 구조이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. 테마의 디자인&lt;/strong&gt;에서 봐야할 것은 테마의 컨셉, 레이아웃, Table of Contents 지원, 포스트 검색 기능 지원, 코드 하이라이팅, 링크 하이라이팅, 모바일 혹은 반응형 대응 등이 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. 테마의 기능 지원 여부&lt;/strong&gt;에서는 애널리틱스 지원, 태그 페이지 지원, 인기 글 모아보기 지원 등이 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. 테마의 구조&lt;/strong&gt;는 아래👇에서 더 상세하게 알아보자.&lt;/p&gt;
+
+&lt;h1 id=&quot;-테마의-구조&quot;&gt;🧱 테마의 구조&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조를 어떻게 짤 것인가를 먼저 생각해봐야 한다. 왜냐하면 많은 수의 단순한, 미니멀한 Jekyll 테마는 다음과 같은 블로그 구조를 가지고 있기 때문이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Minimal%20Jekyll%20Structure.png&quot; alt=&quot;Minimal Jekyll theme Structure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;만약 당신이 만들고 싶은 블로그의 구조가 더 깊고 다양하다면 테마에서 제공하는 구조를 활용해도 어려울 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Your%20Blog%20Structure.png&quot; alt=&quot;Your Jekyll theme Structure&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;테마 안에서 스타일과 인터랙션을 수정하는 것 보다 테마의 구조를 변경하는 것이 더 난이도가 높으므로 처음 테마를 결정할 때 본인의 블로그 구조를 먼저 구상 해두는 것이 필요하다.&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll-테마-찾기&quot;&gt;Jekyll 테마 찾기&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;위 기준들을 잘 생각하면서 테마를 찾아보자. 다음과 같이 무료 Jekyll 테마를 모아서 리스트를 제공하는 사이트들이 있으니 원하는 테마를 찾아보도록 하자.&lt;/p&gt;
+
+&lt;p&gt;개인적으로는 &lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;Github의 Jekyll-theme 토픽&lt;/a&gt; 이 가장 많은 테마를 제공하고 있고 정렬도 자유롭게 할 수 있지만, 리스트에서는 이름만 보이는 테마가 대부분이라 직접 들어가지 않는 한 어떤 테마인지 알 기 어렵다는 단점이 있다. &lt;a href=&quot;http://jekyllthemes.io&quot;&gt;Jekyllthemes.io&lt;/a&gt;는 start, last commit, fork 순으로 정렬할 수 있어 인기있는 테마를 빠르게 찾을 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllthemes.io/free&quot;&gt;https://jekyllthemes.io/free&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/topics/jekyll-theme&quot;&gt;https://github.com/topics/jekyll-theme&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;이외에도 다음과 같은 사이트들도 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyll-themes.com/free/&quot;&gt;https://jekyll-themes.com/free/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://themes.jekyllrc.org/&quot;&gt;http://themes.jekyllrc.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://jekyllthemes.org/&quot;&gt;http://jekyllthemes.org/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://jekyllthemes.dev/&quot;&gt;https://jekyllthemes.dev/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://drjekyllthemes.github.io/new&quot;&gt;https://drjekyllthemes.github.io/new&lt;/a&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;jekyll-설치&quot;&gt;Jekyll 설치&lt;/h1&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;위에서 정했던 테마 선택 기준에서 내가 원했던 태그 기능, Table of Contents 기능을 제공하는 &lt;a href=&quot;https://github.com/Huxpro/huxpro.github.io&quot;&gt;Huxpro&lt;/a&gt; 테마를 이용해 블로그를 만들어보기로 했다. &lt;del&gt;중국어로 되어있긴 하지만, 코드는 영어겠지..&lt;/del&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/screenshot1.png&quot; alt=&quot;Hupro Blog Demo&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Huxpro 테마로 만든 Hux Blog 페이지&lt;/p&gt;
+
+&lt;h2 id=&quot;1-설치-하고싶은-테마의-저장소-복사하기&quot;&gt;1. 설치 하고싶은 테마의 저장소&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 복사하기&lt;/h2&gt;
+
+&lt;p&gt;설치려고 하는 테마를 정했다면, 해당 테마의 github 저장소에 들어가자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Fork.png&quot; alt=&quot;Fork&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Fork_at.png&quot; alt=&quot;Fork at&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;우측 상단에 있는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Fork&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 버튼을 클릭 하면, 복사하기를 원하는 저장소를 선택할 수 있을 것이다. 준비된 블로그용 저장소를 선택해 테마의 코드를 복사하자.&lt;/p&gt;
+
+&lt;p&gt;❗️ 다른 사람의 저장소를 Fork 하면 본인의 저장소에서도 기존 저장소의 정보들이 표시되게 되는데, 이것이 싫은 경우 저장소를 .zip으로 컴퓨터에 다운로드 받은 후 본인의 저장소에 내용물을 풀면 새로운 내용으로 인식하게 할 수 있다.&lt;/p&gt;
+
+&lt;h2 id=&quot;2-저장소-이름-변경&quot;&gt;2. 저장소 이름 변경&lt;/h2&gt;
+
+&lt;p&gt;테마를 Fork하니 1편에서 설정했던 저장소 이름과 다르게 개별 저장소로 생성이 되었다. 1편에서 만들었던 저장소는 다른 이름으로 변경 혹은 삭제 후, 복사 해온 저장소의 이름을 변경해주자. 1편에서 한 설명과 같이, 저장소의 이름을 본인의 &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt; 로 변경해야 한다. 각 저장소의 Settings 메뉴에 가면 기존 저장소를 삭제할 수 있고, 새로운 저장소 이름을 변경할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/repo_name_change.png&quot; alt=&quot;Repo name change&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;저장소 이름을 변경했으니, 해당 주소로 들어가면 우리가 Fork 한 테마가 그대로 보이는 것을 확인할 수 있다!&lt;/p&gt;
+
+&lt;h2 id=&quot;3-github-desktop-에서-열기&quot;&gt;3. Github Desktop 에서 열기&lt;/h2&gt;
+
+&lt;p&gt;자신의 깃헙 저장소에 테마 코드를 복사하고 저장소 이름도 내 username으로 변경도 완료했으니, 이를 불러오고 수정할 수 있도록 본인의 컴퓨터 로컬에 저장하고 편하게 수정할 수 있도록 Github Desktop에서 열도록 하자. 저장소를 Clone한 후 나의 경우엔 Fork 한 대상인 Huxpro에 contribute 할 것인지 나의 프로젝트로 사용할 것인지 물어보는데, 우리는 개인 블로그를 만들 것이기 때문에 아래 선택지인 개인 프로젝트 용으로 사용할 것으로 선택하자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/for_my_own_project.png&quot; alt=&quot;Select for my own project&quot; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;4-configyml-수정하기&quot;&gt;4. config.yml 수정하기&lt;/h2&gt;
+
+&lt;p&gt;config.yml 파일은 테마의 가장 기본적인 설정들을 관리하는 파일이다. 보통 저장소의 가장 바깥에 있으니 찾기 쉬울 것이다. config 파일 내용은 테마마다 지원하는 기능, 구조가 달라 설정 가능한 항목들은 제각각이겠지만 나는 내가 복사한 Huxpro 테마의 설정들을 기준으로 설명해보겠다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/change_config_file.png&quot; alt=&quot;change config file&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;블로그 안에 내용과 관계 없이 블로그 사이트를 구성하는 가장 기초적인 세팅만 변경해보자.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;title&lt;/code&gt; : 본인의 블로그의 제목을 입력&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SEOTitle&lt;/code&gt; : 블로그 첫 페이지(Home)를 열었을 때 브라우저 탭에서 보일 문구&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;header-img&lt;/code&gt; : 블로그 첫 페이지(Home)에서 제공될 이미지. 지금은 변경하지 않고 유지하자&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;email&lt;/code&gt; : contact, 프로필 등에서 계속해서 제공 될 나의 contact 이메일 정보. 사용 여부에 따라 입력해두자.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;description&lt;/code&gt; : 본인의 블로그를 나타내는 설명&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;keyword&lt;/code&gt; : 본인의 블로그에 담길 내용에 대한 키워드. 더 나은 검색에 사용되는듯 하다&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;url&lt;/code&gt; : 본인의 저장소 이름과 같이 &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt; 로 변경해두자. 이후 CNAME 등록, URL 호스팅 등으로 주소도 커스터마이징 가능하다.&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;baseurl&lt;/code&gt; : 블로그가 다른 도메인의 하위에 속한다면 지정하는 영역. 우리는 블로그 주소를 가장 상위 주소로 사용할것이기 때문에 이 영역은 건드리지 않고 남겨두자.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;이제 테마를 설치하고 기본적인 세팅까지 완료하였다. 여기까지는 스텝에 따라서 설치, 클릭 정도만 하면 되기 때문에 생각보다 어렵지 않았을 것이다. 역시 문제는 원하는 대로 스타일을 수정 하고, 꾸준히 블로그에 올릴 글을 쓰는 것이겠지.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다음 글에서는 내가 쓴 글에 사람들의 반응을 받을 수 있는 댓글 기능인 Disqus를 연결하는 방법을 알아보자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;githubio로-나만의-블로그-만들기-시리즈&quot;&gt;&lt;strong&gt;Github.io로 나만의 블로그 만들기 시리즈&lt;/strong&gt;&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/&quot;&gt;(1) 가입 및 초기 세팅&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;#&quot;&gt;(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(3) Disqus 연결하기&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;Repository &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Fork는 해당 저장소에 있는 코드를 내 저장소에 복사 붙여넣기 하는 것이다. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+        <pubDate>Sun, 19 Jul 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2020/07/19/Lets-install-Jekyll-theme/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/07/19/Lets-install-Jekyll-theme/</guid>
+      </item>
+    
+      <item>
+        <title>Github.io로 나만의 블로그 만들기 (1) 가입 및 초기 세팅</title>
+        <description>&lt;h1 id=&quot;githubio-혹은-github-pages란&quot;&gt;Github.io, 혹은 Github Pages란&lt;/h1&gt;
+
+&lt;p&gt;간략하게 설명하자면 Github.io, Github Pages는 Github에서 제공하는 블로그 서비스이다.&lt;/p&gt;
+
+&lt;p&gt;Github.io는 본인 Github 계정의 저장소를 바탕으로 정적(static) 호스팅을 제공해주는 Github Pages라는 서비스이다. 따로 웹 서버를 구축하거나 호스팅 서비스를 이용하지 않고서도 간단하게 웹페이지를 만들어 제공할 수 있다는 말이다.&lt;/p&gt;
+
+&lt;p&gt;티스토리 블로그도 글을 올리면서 Github Pages로 블로그를 따로 만들고 있는 이유는 코드레벨에서 블로그를 운영할 수 있고, 이후 내가 원하는대로 커스터마이징을 할 수 있다는 장점이 있기 때문이다.&lt;/p&gt;
+
+&lt;p&gt;티스토리, 브런치, 네이버 블로그와 같이 기존 플랫폼에서 블로그를 운영하면 제공하는 스킨, 에디터, 관리자 페이지를 활용할 수 있지만 플랫폼의 틀 안에서만 커스터마이징 가능한 반면,
+Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 입맛에 맞게 커스터마이징 할 수 있는 장점이 있다.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyll은 블로그가 어떻게 보일지, 어떤 구조로 쌓아서 표현할지에 대한 틀을 제공하는 테마이다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h1 id=&quot;-이-글을-읽는-우리의-목표&quot;&gt;💎 이 글을 읽는 우리의 목표&lt;/h1&gt;
+
+&lt;p&gt;나는 디자이너로 디자인 툴에서 이미지를 만들어 내는것을 넘어 원하는 디자인을 직접 구현해 보는데 관심이 있다. 반면 이 구현에 대한 관심은 취미 수준을 목표로 하기 때문에 모든 과정을 100% 나의 손으로 만들어 내는 것은 원하지 않는다.&lt;/p&gt;
+
+&lt;p&gt;따라서 이 글과 나의 목표는 적은 개발 공수를 들이면서도 마음에 드는 디자인을 직접 코드 레벨에서 뚝딱뚝딱 만들어 보는 것으로 잡으려고 한다.&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;큰 노력 없이 간단하게 얻을 수 있는 결과
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;괜찮은 테마를 가져와 Github Page를 통해 내 블로그를 웹에 띄워볼 수 있음
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;큰 노력을 기울여 얻을 수 있는 멋진 결과
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;괜찮은 테마를 가져와 이를 뜯어보고 내가 원하는 대로 구조, 스타일, 인터랙션을 커스터마이징 하고 서드파티 플러그인, 애널리틱스를 설치하고 방문자에 대한 분석까지 할 수 있음
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;멋진 사례가 있어 이를 공유합니다.&lt;/p&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;Jihye Lee 라는 분은 Tale[&lt;a href=&quot;https://chesterhow.github.io/tale/&quot;&gt;테마 데모&lt;/a&gt;, &lt;a href=&quot;https://github.com/chesterhow/tale&quot;&gt;테마 Git&lt;/a&gt;]이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 &lt;a href=&quot;http://jihyeleee.com/&quot;&gt;본인의 블로그&lt;/a&gt;를 아주 새롭고 멋지게 만든 예시가 있다.&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;나는 간단한 HTML, CSS 코딩 공부도 할 겸 직접 내 입맛에 맞는 블로그를 만들면서 실습까지 진행해보고자 시작하게 되었다.&lt;/p&gt;
+
+&lt;h1 id=&quot;1-githubcom-가입하기&quot;&gt;1. Github.com 가입하기&lt;/h1&gt;
+
+&lt;p&gt;Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페이지를 사용하기 위해서는 Github.com에 가입되어 있어야 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github.com&lt;/a&gt;으로 들어가서 가입을 해보자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot1.png&quot; alt=&quot;github.com 메인 화면&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github.com&lt;/a&gt; 메인 화면이다. 화면 중간 우측에 바로 가입할 수 있는 필드가 있다. 혹은 우측 상단의 Sign-up 을 눌러 Sign-up 페이지에서도 가입을 할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot2.png&quot; alt=&quot;Sign-up 페이지&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;여기서 주의할 점은 &lt;strong&gt;Username&lt;/strong&gt;이 이후 &lt;a href=&quot;http://github.io&quot;&gt;Github.io&lt;/a&gt; 에서 블로그 페이지를 만들 때 사용될 주소의 첫 부분을 담당한다는 점이다.
+평소에 사용하던 읽을 수 없고 알아보기 힘든 &lt;code class=&quot;highlighter-rouge&quot;&gt;rhrnakaktxkd490000&lt;/code&gt; 이나, 남들에게 보여주기 부끄러운 &lt;code class=&quot;highlighter-rouge&quot;&gt;cutie-jisu-94&lt;/code&gt; 같은 아이디보단 만들고 싶은 블로그의 목적이나 본인을 잘 나타낼 수 있는 이름으로 만드는 것을 추천한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot3.png&quot; alt=&quot;가입 완료 후 설문조사&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;가입을 완료하면 간단한 설문이 있는데, 대강 입력하고 다음으로 넘어가보자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot4.png&quot; alt=&quot;이메일 인증 후 첫 온보딩 화면&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;이후 이메일 인증을 완료하면 가장 먼저 어떤 것을 할 지 물어보는 페이지가 나온다. 우리는 Github.io 페이지의 저장소 역할을 할 Repository를 만들어야 한다. 가장 첫 번째에 있는Repository 만들기를 선택하자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;2-repository-만들기&quot;&gt;2. Repository 만들기&lt;/h1&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot5.png&quot; alt=&quot;Repository 만들기&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가입한 계정으로 선택된 상태일 것이다.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;❗️여기서 Repository name을 정확하게 설정하는 것이 가장 중요하다.❗️&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username은 가입 시 입력한 사용자 이름이다.
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;위와 같이 정확하게 입력하지 않으면 이후 Github.io에서 페이지를 만들 때 이 Repository를 사용하지 못하기 때문에 &lt;strong&gt;정.확.하.게&lt;/strong&gt; 입력해야 한다.&lt;/p&gt;
+
+&lt;p&gt;나머지 설정들은 당장 중요한게 아니니 적당히 입력하거나 무시하고 넘어가도록 하자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot11.png&quot; alt=&quot;environments - github-pages&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;위 형식대로 정확하게 입력 했다면 Github.com &amp;gt; 해당 Repository에 들어가면 우측 하단 environments 영역에 github-pages가 표시되고 있는 것을 확인할 수 있을 것이다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;3-git-client-연결해서-기초-작업-환경-세팅하기&quot;&gt;3. Git Client 연결해서 기초 작업 환경 세팅하기&lt;/h1&gt;
+
+&lt;p&gt;자 이제 &lt;a href=&quot;http://github.io&quot;&gt;Github.io&lt;/a&gt;를 위한 계정과 저장소를 만들었다. Github.io 에서 다음 스텝을 따라가 보자.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github.io 페이지 ↗&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot6.png&quot; alt=&quot;User or organization site, Project site&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;가장 먼저 &lt;code class=&quot;highlighter-rouge&quot;&gt;User or organization site&lt;/code&gt; 와 &lt;code class=&quot;highlighter-rouge&quot;&gt;Project site&lt;/code&gt; 옵션이 있다. Project site를 선택하면 다른 절차 없이 Jekyll 테마를 입힐 수 있지만, 기본적으로 제공하는 테마 자체가 구리디 구려서 선택할 테마가 단 하나도 없다. 약간 더 번거로운 절차가 있을지라도 원하는 테마를 찾아 입힐 수 있도록 User or organization site를 선택 해주자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot7.png&quot; alt=&quot;Create Repository&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;1. Create Repository&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;이 부분은 앞 단계에서 이미 완료했으니 넘어가자.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;2. What git client are you using?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Git 클라이언트를 어떤 것으로 사용할 것인지 물어보는 선택지인데, 이 글을 보고 있는 사람들은 어짜피 터미널이나 CLI(Code Level Interface)로 깃을 사용하는 사람이 아니니, UI를 제공하는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Github Desktop&lt;/code&gt;을 선택하자.&lt;/p&gt;
+
+&lt;p&gt;Github Desktop이 설치되어 있지 않은 사용자는 &lt;code class=&quot;highlighter-rouge&quot;&gt;I don't know&lt;/code&gt;를 선택해 설치하고 다시 돌아오자.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot9.png&quot; alt=&quot;Clone repository&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;3. Clone the repository&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;설치, 로그인 한 Github Desktop 에서 계정의 Repository를 본인의 컴퓨터에 복제해 관리할 수 있도록 한다. 나는 이미 세팅이 완료된 상태라 초기 화면은 아니지만 비슷한 설정 화면이 보일 것이다.&lt;/p&gt;
+
+&lt;p&gt;혹은 Github.com에서 생성한 Repository에서 Clone &amp;gt; Open with Github Desktop 버튼을 눌러 연동할 수 있다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot10.png&quot; alt=&quot;Open with Github Desktop&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;두 번째 Step에서 만든 Repository를 선택한 후, 본인의 컴퓨터에 보관 할 위치를 선택한다. 나는 icloud를 사용하고 있어 여러 컴퓨터에서 작업을 진행할 수 있도록 icloud에 복제해 두었다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;여기까지 하면 테마 설정 이전 단계는 모두 끝난 것이라고 봐도 무방하다. Github.io 에서는 index.html 파일을 만들어 제대로 작동 하는지 확인하는 단계를 추가적으로 제공하고 있긴 한데, 이미 Repository를 만들 때 Readme.md를 생성했기 때문에 주소창에 {username}.github.io (나의 경우엔 &lt;code class=&quot;highlighter-rouge&quot;&gt;nam-d.github.io&lt;/code&gt;)로 들어가면 Readme.md 내용이 보이는 것을 확인할 수 있다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;다음 게시글에서는 원하는 Jekyll 테마를 찾고 설치하는 과정에 대해 알아보도록 하자.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;githubio로-나만의-블로그-만들기-시리즈&quot;&gt;Github.io로 나만의 블로그 만들기 시리즈&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/&quot;&gt;(1) 가입 및 초기 세팅&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tjrichard.github.io/2020/07/19/Lets-install-Jekyll-theme/&quot;&gt;(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;(3) ???&lt;/p&gt;
+</description>
+        <pubDate>Mon, 06 Jul 2020 00:00:00 +0900</pubDate>
+        <link>http://localhost:4000/2020/07/06/starting-github.io-series-1/</link>
+        <guid isPermaLink="true">http://localhost:4000/2020/07/06/starting-github.io-series-1/</guid>
+      </item>
+    
+
+    
+      
+        
+      
+    
+      
+        
+          <item>
+            <title>About</title>
+            <description>&lt;p&gt;저는 데이터와 디테일 중심의 경험을 가진 서비스/UX 디자이너 입니다. 저는 사용자 리서치에서 얻은 인사이트로부터 디자인 하는 데 능숙합니다. 또한 저는 학습이 빠릅니다. 비록 제가 알지 못하는 영역의 어떤 업무라 하더라도 빠르게 배우고 완성도 높은 결과물을 낼 수 있습니다. 저는 다른 디자이너, 개발자와 원활히 일할 수 있으며 발전을 위한 피드백을 주고 받는데 익숙합니다.&lt;/p&gt;
+
+&lt;p&gt;‘항상 긍정적이고 적극적이자’를 삶의 목표로 하고 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h5 id=&quot;이력서------️포트폴리오&quot;&gt;&lt;a href=&quot;/assets/Resume_Seunghwan_1908.pdf&quot;&gt;🧑🏻‍💻이력서&lt;/a&gt;   |   &lt;a href=&quot;/assets/Portfolio_Seunghwan_1906.pdf&quot;&gt;🏄🏻‍♂️포트폴리오&lt;/a&gt;&lt;/h5&gt;
+
+&lt;p&gt;&lt;em&gt;last update : 19.08&lt;/em&gt;&lt;/p&gt;
+</description>
+            <link>http://localhost:4000/about/about/</link>
+          </item>
+        
+      
+    
+      
+        
+          <item>
+            <title>Blog</title>
+            <description>
+</description>
+            <link>http://localhost:4000/blog/blog/</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+        
+          <item>
+            <title>Style Guide</title>
+            <description>At [Aspire Themes](http://aspirethemes.com/) I use a lot of tools to help me create WordPress, Ghost and Jekyll themes. Tools will range from development, design, services, hosting and automation.
+
+Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. - George Santayana.
+
+---
+
+# Simple default styles for headings
+
+## Simple default styles for headings
+
+### Simple default styles for headings
+
+#### Simple default styles for headings
+
+##### Simple default styles for headings
+
+###### Simple default styles for headings
+
+---
+
+* Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
+* Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor.
+* Donec nibh massa, rutrum a sollicitudin eu, lacinia in lorem.
+
+---
+
+1. Ut at interdum nunc. Maecenas commodo turpis quis elementum gravida.
+2. Nunc ac sapien tellus. Quisque risus enim, tempus eget porttitor in.
+3. Donec nibh massa, rutrum a sollicitudin eu.
+
+---
+
+&gt; Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and humors. - George Santayana
+
+---
+
+{% highlight js %}
+'use strict';
+var markdown = require('markdown').markdown;
+function Editor(input, preview) {
+  this.update = function() {
+    preview.innerHTML = markdown.toHTML(input.value);
+  };
+  input.editor = this;
+  this.update();
+}
+{% endhighlight %}
+
+You can add inline code just like this, E.g. `.code { color: #fff; }`
+
+{% highlight css %}
+pre {
+  background-color: #f4f4f4;
+  max-width: 100%;
+  overflow: auto;
+}
+{% endhighlight %}
+
+---
+
+Cras sed sodales enim. Duis nec erat magna. Sed scelerisque pretium mi et [unsplash](https://unsplash.com/) ullamcorper mauris aliquam ornare fringilla. In luctus commodo quam eget posuere.
+
+---
+
+&lt;iframe src=&quot;https://player.vimeo.com/video/97202679&quot; frameborder=&quot;0&quot; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+&lt;iframe src=&quot;https://embed.ted.com/talks/ted_halstead_a_climate_solution_where_all_sides_can_win&quot; width=&quot;640&quot; height=&quot;360&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; allowfullscreen&gt;&lt;/iframe&gt;
+
+---
+
+&lt;iframe width=&quot;100%&quot; height=&quot;166&quot; scrolling=&quot;no&quot; frameborder=&quot;no&quot; src=&quot;https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/29738591&amp;amp;color=ff5500&amp;amp;auto_play=false&amp;amp;hide_related=false&amp;amp;show_comments=true&amp;amp;show_user=true&amp;amp;show_reposts=false&quot;&gt;&lt;/iframe&gt;
+
+---
+
+&lt;p data-height=&quot;265&quot; data-theme-id=&quot;light&quot; data-slug-hash=&quot;YWvpRo&quot; data-default-tab=&quot;css,result&quot; data-user=&quot;kharrop&quot; data-embed-version=&quot;2&quot; data-pen-title=&quot;Referral Form&quot; class=&quot;codepen&quot;&gt;See the Pen &lt;a href=&quot;http://codepen.io/kharrop/pen/YWvpRo/&quot;&gt;Referral Form&lt;/a&gt; by Kelly Harrop (&lt;a href=&quot;http://codepen.io/kharrop&quot;&gt;@kharrop&lt;/a&gt;) on &lt;a href=&quot;http://codepen.io&quot;&gt;CodePen&lt;/a&gt;.&lt;/p&gt;
+&lt;script async src=&quot;https://production-assets.codepen.io/assets/embed/ei.js&quot;&gt;&lt;/script&gt;
+
+---
+
+![about](/images/pages/about.jpeg)
+
+---
+
+&lt;input type=&quot;text&quot; placeholder=&quot;I'm an input field!&quot;&gt;
+
+---
+
+&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
+
+&lt;button class='c-btn'&gt;Button&lt;/button&gt;
+
+&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
+
+{% highlight html %}
+&lt;button class='c-btn c-btn--small'&gt;Button&lt;/button&gt;
+&lt;button class='c-btn'&gt;Button&lt;/button&gt;
+&lt;button class='c-btn c-btn--full'&gt;Button&lt;/button&gt;
+{% endhighlight %}
+</description>
+            <link>http://localhost:4000/style-guide.html</link>
+          </item>
+        
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+
+  </channel>
+</rss>
