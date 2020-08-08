@@ -12,7 +12,7 @@ header-img: "img/project_bg.jpg"
 
 {% for page in sorted %}
     {% if page.project == true %}
-        {% include post-list.html %}
+        {% include post-card.liquid %}
     {% endif %}
 {% endfor %}
 </ul>
