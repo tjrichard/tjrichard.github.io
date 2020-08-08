@@ -10,19 +10,11 @@
       padding: 36px 0;
       list-style: none;
 
-  &:last-child {
-      margin-bottom: 72px;
-      border: none;
-  }
-  .c-list a:hover {
-    color: $color-text;
-    text-decoration: none;
-
-    .c-post-card__title {
-      color: $color-brand;
+    &:last-child {
+        margin-bottom: 72px;
+        border: none;
     }
   }
-}
 
   &__type {
       color: $color-key;
@@ -33,84 +25,91 @@
   }
  
   &__info {
-      display: inline-block;
-      
-      .c-list__tag {
-          color: $color-white;
-          font-family: $font-base;
-          font-size: $font-size-small;
-          font-weight: $font-weight-bold;
-          display: inline-block;
-          text-transform: uppercase;
-          letter-spacing: 0.03em;
-          padding: 4px 12px;
-          margin-bottom: 10px;
-          background-color: $bg-color-dark;
-          border-radius: 6px;
-          
-          @media (max-width: $break-medium) {
-              margin: 10px 0;
-          }
-          
-      }
-      
-      .c-list__title {
-          font-size: $font-size-header;
-          font-weight: $font-weight-bold;
-          transition: $global-transition;
-          display: block;
-          font-family: $font-base;
-          line-height: $line-height-header;
-          letter-spacing: -0.009em;
-          position: relative;
-          margin-bottom: half($font-size-header);
+    display: inline-block;
+    
+    .c-list__tag {
+        color: $color-white;
+        font-family: $font-base;
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        padding: 4px 12px;
+        margin-bottom: 10px;
+        background-color: $bg-color-dark;
+        border-radius: 6px;
+        
+        @media (max-width: $break-medium) {
+            margin: 10px 0;
+        }
+        
+    }
+    
+    .c-list__title {
+        font-size: $font-size-header;
+        font-weight: $font-weight-bold;
+        transition: $global-transition;
+        display: block;
+        font-family: $font-base;
+        line-height: $line-height-header;
+        letter-spacing: -0.009em;
+        position: relative;
+        margin-bottom: half($font-size-header);
 
-          @include mq($from: tablet) {
-            font-size: double($font-size-small);
-          }
-      }
-      
-      @include mq($from: tablet) {
-          display: block;
-          width: 100%;
-      }
-      
-      .c-list__sub {
-          font-size: $font-size-base;
-          color: $color-gray;
-          line-height: $line-height-base;
-          padding-bottom: 24px;
-          margin-bottom: half($font-size-header);  
-      }
+        @include mq($from: tablet) {
+          font-size: double($font-size-small);
+        }
+    }
+    
+    @include mq($from: tablet) {
+        display: block;
+        width: 100%;
+    }
+    
+    .c-list__sub {
+        font-size: $font-size-base;
+        color: $color-gray;
+        line-height: $line-height-base;
+        padding-bottom: 24px;
+        margin-bottom: half($font-size-header);  
+    }
 
-      .c-list__body {
-          font-size: $font-size-medium;
-          color: $color-gray;
-          line-height: $line-height-medium;
-          padding-bottom: 24px;
-          margin-bottom: half($font-size-header);
-      }
+    .c-list__body {
+        font-size: $font-size-medium;
+        color: $color-gray;
+        line-height: $line-height-medium;
+        padding-bottom: 24px;
+        margin-bottom: half($font-size-header);
+    }
 
-      .c-list__date {
-          display: block;
-          color: $color-gray;
-          direction: ltr;
-          font-size: $font-size-tiny;
-          font-weight: $font-weight-bold;
-          line-height: $line-height-small;
-          text-transform: uppercase;
-      }
-      
+    .c-list__date {
+        display: block;
+        color: $color-gray;
+        direction: ltr;
+        font-size: $font-size-tiny;
+        font-weight: $font-weight-bold;
+        line-height: $line-height-small;
+        text-transform: uppercase;
+    }
   }
   
   .c-list-draft-message {
       text-align: center;
   }
-  
+}
+
+.c-list a:hover {
+  color: $color-text;
+  text-decoration: none;
+
+  .c-list__title {
+    color: $color-brand;
+  }
 }
 
 .c-list__item:hover
-.c-list__info {     
+.c-list__info {
   cursor: pointer;
   opacity: .6;
 }
