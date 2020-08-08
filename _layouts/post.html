@@ -52,11 +52,10 @@ layout: default
           </ul>
         
         <!--disqus-->
+        {% unless page.about == true %}
         <hr>
-
-        {% include disqus.html %}
-
-
+          {% include disqus.html %}
+        {% endunless %}
       </article>
     </div>
   </div>
