@@ -6,7 +6,7 @@ type: "블로그 만들기"
 tags: [Blog, Github.io, Jekyll, Development]
 blog: true
 post-header: true
-header-img: "img/header.jpg"
+header-img: "./img/header.jpg"
 order: 1
 ---
 
