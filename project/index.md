@@ -4,7 +4,7 @@ work: true
 title: Selected Projects
 description: 지금까지 작업한 프로젝트
 project-header: true
-header-img: "img/project_bg.jpg"
+header-img: "img/header.jpg"
 ---
 
 <ul class='o-grid'>
