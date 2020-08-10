@@ -6,9 +6,9 @@ type: "잡담과 생각"
 tags: [일상, 후기]
 project: true
 list-img: true
-post-img: "img/header.jpg"
+post-img: "./img/header.jpg"
 post-header: true
-header-img: "img/header.jpg"
+header-img: "./img/header.jpg"
 order: 1
 ---
 
