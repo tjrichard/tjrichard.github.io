@@ -9,6 +9,7 @@ blog: true
 post-header: true
 header-img: "./img/header.jpg"
 order: 3
+draft: true
 ---
 
 
