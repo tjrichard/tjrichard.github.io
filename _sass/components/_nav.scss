@@ -11,7 +11,7 @@
     width: max-content;
 
     &--current {
-      color: $color-brand;
+      color: $color-link-hover;
 
       .home-template &:not(:hover) {
         color: $color-link;
@@ -36,10 +36,19 @@
   margin: 0 20px 0 0;
   list-style: none;
   font-size: $font-size-base;
-
+  
+    &:last-child {
+      margin-right: 0;
+    }
   }
-  &:last-child {
-    margin-right: 0;
+
+  li:hover {
+    cursor: pointer;
+    opacity: .6;
+
+    a {
+      text-decoration: none;
+    }
   }
 }
 

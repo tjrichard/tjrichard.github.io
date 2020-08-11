@@ -4,6 +4,7 @@
 
 .c-list {
   margin: 0 auto;
+  transition: $gloabl-transition;
 
   &__item {
       border-bottom: 1px solid rgba(0,0,0,.07);
