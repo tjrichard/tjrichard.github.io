@@ -24,27 +24,27 @@
       font-weight: $font-weight-bold;
       margin: 10px 0;
   }
- 
+
+  &__tag {
+    color: $color-white;
+    font-family: $font-base;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    padding: 4px 12px;
+    margin: 10px 0;
+    background-color: $bg-color-dark;
+    border-radius: 6px;
+    
+    @include mq($from: tablet) {
+        margin: 10px 0;
+    }
+  }
+
   &__info {
     display: inline-block;
-    
-    .c-list__tag {
-        color: $color-white;
-        font-family: $font-base;
-        font-size: $font-size-small;
-        font-weight: $font-weight-bold;
-        display: inline-block;
-        text-transform: uppercase;
-        letter-spacing: 0.03em;
-        padding: 4px 12px;
-        margin: 10px 0;
-        background-color: $bg-color-dark;
-        border-radius: 6px;
-        
-        @include mq($from: tablet) {
-            margin: 10px 0;
-        }
-    }
     
     .c-list__title {
         font-size: $font-size-header;
