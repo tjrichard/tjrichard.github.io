@@ -19,7 +19,7 @@
                 {{ page.subtitle }}
             </p>
             <p class="c-list__body">
-                {{ page.content | truncatewords: 24 | strip_html }}
+                {{ page.content | truncatewords: 160 | strip_html }}
             </p>
             <span class='c-list__date'>{{ post.date | date: '%d %b %Y' }}</span>
         </div>
