@@ -4,7 +4,7 @@
 
 .c-list {
   margin: 0 auto;
-  transition: $gloabl-transition;
+  transition: $global-transition;
 
   &__item {
       border-bottom: 1px solid rgba(0,0,0,.07);
@@ -44,7 +44,6 @@
         @include mq($from: tablet) {
             margin: 10px 0;
         }
-        
     }
     
     .c-list__title {
@@ -104,6 +103,7 @@
   a {
     text-decoration: none;
   }
+
   .c-list__info {
     cursor: pointer;
     opacity: .6;
