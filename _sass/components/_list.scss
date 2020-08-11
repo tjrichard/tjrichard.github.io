@@ -99,19 +99,14 @@
   }
 }
 
-.c-list a:hover {
-  color: $color-text;
-  text-decoration: none;
-
-  .c-list__title {
-    color: $color-brand;
+.c-list__item:hover {
+  a {
+    text-decoration: none;
   }
-}
-
-.c-list__item:hover
-.c-list__info {
-  cursor: pointer;
-  opacity: .6;
+  .c-list__info {
+    cursor: pointer;
+    opacity: .6;
+  }
 }
 
 .c-list__img {
