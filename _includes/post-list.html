@@ -1,4 +1,4 @@
-<li {% if page.draft == true %} class="c-list__draftitem" {% endif %} class="c-list__item">
+<li {% if page.draft == true %} class="c-list__item draft" {% endif %} class="c-list__item">
     <a href="{{ page.url | prepend: site.baseurl }}" >
         {% if page.list-img == true %}
         <img src="{{ page.post-img }}" class="c-list__img" alt='{{ post.title }}'>

@@ -110,14 +110,14 @@
 }
 
 
-.c-list__draftitm:hover, .c-list__draftitem:focus {
+.draft:hover, .draft:focus {
   a {
-    text-decoration: none;
+    text-decoration: none !important;
   }
 
   .c-list__info {
-    cursor: not-allowed;
-    opacity: 1;
+    cursor: not-allowed !important;
+    opacity: 1 !important;
   }
 }
 
