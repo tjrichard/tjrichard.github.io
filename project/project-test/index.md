@@ -5,7 +5,7 @@ subtitle: "물을 어떻게 마시고 얼마나 마시는게 좋을까? 🤔"
 type: "잡담과 생각"
 tags: [일상, 후기]
 date: 2020-07-15 14:40:45
-category: project
+category: "project"
 list-img: true
 post-img: "project-test/img/header.jpg" 
 post-header: true
