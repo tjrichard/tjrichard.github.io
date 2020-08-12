@@ -10,7 +10,7 @@ header-img: img/about.jpg
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 
 {% for page in sorted %}
-    {% if page.category == blog %}
+    {% if page.folder == blog %}
         {% include post-list.html %}
     {% endif %}
 {% endfor %}
