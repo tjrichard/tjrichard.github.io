@@ -1,12 +1,7 @@
-<li class="c-list__item">
+<li {% if page.draft == true %} class="c-list__item draft" {% endif %} class="c-list__item">
     <a href="{{ page.url | prepend: site.baseurl }}" >
         {% if page.list-img == true %}
         <img src="{{ page.post-img }}" class="c-list__img" alt='{{ post.title }}'>
-        {% endif %}
-        {% if page.draft == true %}
-        <span class="c-list__tag">
-            Coming Soon
-        </span>
         {% endif %}
         <p class="c-list__type">
             {{ page.type }}
@@ -18,10 +13,16 @@
             <p class="c-list__sub">
                 {{ page.subtitle }}
             </p>
-            <p class="c-list__body">
-                {{ page.content | truncatewords: 40 | strip_html }}
-            </p>
-            <span class='c-list__date'>{{ post.date }}</span>
+            {% if page.draft == true %}
+                <span class="c-list__tag">
+                    Coming Soon
+                </span>
+            {% else %}
+                <p class="c-list__body">
+                    {{ page.content | truncatewords: 40 | strip_html }}
+                </p>
+                <span class='c-list__date'>{{ post.date }}</span>
+            {% endif %}
         </div>
     </a>
 </li>    
