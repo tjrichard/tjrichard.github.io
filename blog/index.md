@@ -10,7 +10,11 @@ header-img: img/about.jpg
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 
 {% for page in sorted %}
+<<<<<<< HEAD
     {% if page.folder == blog %}
+=======
+    {% if page.blog == true %}
+>>>>>>> parent of c6ff17c... blog, project as type
         {% include post-list.html %}
     {% endif %}
 {% endfor %}

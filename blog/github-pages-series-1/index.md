@@ -5,7 +5,11 @@ subtitle: "Github.io로 나만의 블로그 만들기 시리즈 1"
 type: "블로그 만들기"
 tags: [Blog, Github.io, Jekyll, Development]
 date: 2020-07-04 14:40:45
+<<<<<<< HEAD
 folder: blog
+=======
+blog: true
+>>>>>>> parent of c6ff17c... blog, project as type
 post-header: true
 header-img: "./img/header.jpg"
 order: 1
