@@ -64,22 +64,23 @@ layout: default
             {% if page.order == next_post %}
               {% assign next == page %}
             {% endif %}
-            {% if prev %}
-              <li class="previous">
-                <a href="{{ prev.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{prev.title}}">
-                👈 이전 글<br>
-                <span>{{prev.title}}</span>
-                </a>
-              </li>
-            {% endif %}
-            {% if next %}
-              <li class="next">
-                <a href="{{ next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{next.title}}">
-                다음 글 👉<br>
-                <span>{{next.title}}</span>
-                </a>
-              </li>
-            {% endif %}
+          {% endfor %}
+          {% if prev %}
+            <li class="previous">
+              <a href="{{ prev.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{prev.title}}">
+              👈 이전 글<br>
+              <span>{{prev.title}}</span>
+              </a>
+            </li>
+          {% endif %}
+          {% if next %}
+            <li class="next">
+              <a href="{{ next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{next.title}}">
+              다음 글 👉<br>
+              <span>{{next.title}}</span>
+              </a>
+            </li>
+          {% endif %}
         </ul>
         
         <!--disqus-->
