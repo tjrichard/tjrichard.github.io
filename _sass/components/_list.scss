@@ -28,7 +28,7 @@
   &__tag {
     font-size: $font-size-tiny;
     font-weight: $font-weight-bold;
-    color: $color-gray;
+    color: $color-text;
     display: block;
     text-align: center;
     text-transform: uppercase;
@@ -109,17 +109,9 @@
   }
 }
 
-
-.draft:hover, .draft:focus {
-  a {
-    text-decoration: none !important;
-    pointer-events: none !important;
-  }
-
-  .c-list__info {
-    cursor: not-allowed !important;
-    opacity: 1 !important;
-  }
+.draft {
+  opacity: 0,6 !important;
+  pointer-events: none !important;
 }
 
 .c-list__img {
