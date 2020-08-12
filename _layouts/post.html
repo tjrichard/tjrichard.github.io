@@ -30,7 +30,7 @@ layout: default
           {% endfor %}
         </div>
         
-        <!--previous and next posts-->
+        <!--previous and next posts 구 버전-->
         <hr style="visibility:hidden;">
           <ul class="pager">
             {% if page.previous.url %}
@@ -50,6 +50,37 @@ layout: default
             </li>
             {% endif %}
           </ul>
+
+        <!--previous and next posts 신 버전-->
+        <hr style="visibility:hidden;">
+        <ul class="pager">
+          {% assign sorted = site.pages | sort: 'order' | reverse %}
+          {% assign prev_post = page.order | minus: 1 %}
+          {% assign next_post = page.order | plus: 1 %}
+          {% for pages in sorted %}
+            {% if page.order == prev_post %}
+              {% assign prev == page %}
+            {% endif %}
+            {% if page.order == next_post %}
+              {% assign next == page %}
+            {% endif %}
+            {% if prev %}
+              <li class="previous">
+                <a href="{{ prev.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{prev.title}}">
+                👈 이전 글<br>
+                <span>{{prev.title}}</span>
+                </a>
+              </li>
+            {% endif %}
+            {% if next %}
+              <li class="next">
+                <a href="{{ next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{next.title}}">
+                다음 글 👉<br>
+                <span>{{next.title}}</span>
+                </a>
+              </li>
+            {% endif %}
+        </ul>
         
         <!--disqus-->
         {% unless page.about == true %}
