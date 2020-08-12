@@ -11,7 +11,7 @@ header-img: "./img/project-header.jpg"
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 
 {% for page in sorted %}
-    {% if page.project == true %}
+    {% if page.type == project %}
         {% include post-list.html %}
     {% endif %}
 {% endfor %}

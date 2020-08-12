@@ -5,7 +5,7 @@ subtitle: "Github.io로 나만의 블로그 만들기 시리즈 1"
 type: "블로그 만들기"
 tags: [Blog, Github.io, Jekyll, Development]
 date: 2020-07-04 14:40:45
-blog: true
+type: blog
 post-header: true
 header-img: "./img/header.jpg"
 order: 1
