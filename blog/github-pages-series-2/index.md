@@ -4,7 +4,7 @@ title:  "Jekyll 테마 찾고 설치하는 법"
 subtitle: "Github.io로 나만의 블로그 만들기 시리즈 2"
 type: "블로그 만들기"
 tags: [Blog, Github.io, Jekyll, Development]
-date: "Jul 05 2020"
+date: 2020-07-05 14:40:45
 blog: true
 post-header: true
 header-img: "./img/header.jpg"
