@@ -1,4 +1,4 @@
-I"C*<p>이전 글 → <a href="https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/">Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅</a></p>
+I"�*<p>이전 글 → <a href="https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/">Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅</a></p>
 
 <h1 id="지난-글과-다른-점">지난 글과 다른 점</h1>
 
@@ -68,7 +68,7 @@
 
 <p>Huxpro 테마로 만든 Hux Blog 페이지</p>
 
-<h2 id="1-설치-하고싶은-테마의-저장소-복사하기">1. 설치 하고싶은 테마의 저장소<sup id="fnref:1"><a href="#fn:1" class="footnote">1</a></sup> 복사하기</h2>
+<h2 id="1-설치-하고싶은-테마의-저장소-복사하기">1. 설치 하고싶은 테마의 저장소<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> 복사하기</h2>
 
 <p>설치려고 하는 테마를 정했다면, 해당 테마의 github 저장소에 들어가자.</p>
 
@@ -76,7 +76,7 @@
 
 <p><img src="/images/posts/Starting_github.io_series_2/Fork_at.png" alt="Fork at" /></p>
 
-<p>우측 상단에 있는 <code class="highlighter-rouge">Fork</code><sup id="fnref:2"><a href="#fn:2" class="footnote">2</a></sup> 버튼을 클릭 하면, 복사하기를 원하는 저장소를 선택할 수 있을 것이다. 준비된 블로그용 저장소를 선택해 테마의 코드를 복사하자.</p>
+<p>우측 상단에 있는 <code class="highlighter-rouge">Fork</code><sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote">2</a></sup> 버튼을 클릭 하면, 복사하기를 원하는 저장소를 선택할 수 있을 것이다. 준비된 블로그용 저장소를 선택해 테마의 코드를 복사하자.</p>
 
 <p>❗️ 다른 사람의 저장소를 Fork 하면 본인의 저장소에서도 기존 저장소의 정보들이 표시되게 되는데, 이것이 싫은 경우 저장소를 .zip으로 컴퓨터에 다운로드 받은 후 본인의 저장소에 내용물을 풀면 새로운 내용으로 인식하게 할 수 있다.</p>
 
@@ -131,13 +131,13 @@
 
 <hr />
 
-<div class="footnotes">
+<div class="footnotes" role="doc-endnotes">
   <ol>
-    <li id="fn:1">
-      <p>Repository <a href="#fnref:1" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:1" role="doc-endnote">
+      <p>Repository <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
-    <li id="fn:2">
-      <p>Fork는 해당 저장소에 있는 코드를 내 저장소에 복사 붙여넣기 하는 것이다. <a href="#fnref:2" class="reversefootnote">&#8617;</a></p>
+    <li id="fn:2" role="doc-endnote">
+      <p>Fork는 해당 저장소에 있는 코드를 내 저장소에 복사 붙여넣기 하는 것이다. <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
 </div>

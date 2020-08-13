@@ -1,0 +1,108 @@
+I"4<ul class="o-grid">
+
+
+
+    
+        <li class="c-list__item draft">
+    <a href="/blog/how-we-drink-water/">
+        
+        <p class="c-list__type">
+            잡담과 생각
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                매일 마시는 물, 어떻게 마시고 있을까?
+            </h1>
+            <p class="c-list__sub">
+                물을 어떻게 마시고 얼마나 마시는게 좋을까? 🤔
+            </p>
+            
+                <span class="c-list__tag">
+                    Coming Soon
+                </span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/blog/github-pages-series-2/">
+        
+        <p class="c-list__type">
+            블로그 만들기
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                Jekyll 테마 찾고 설치하는 법
+            </h1>
+            <p class="c-list__sub">
+                Github.io로 나만의 블로그 만들기 시리즈 2
+            </p>
+            
+                <p class="c-list__body">
+                    이전 글 → [Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅](https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/) # 지난 글과 다른 점 --- 지난 글에서는 Github.io로 블로그 페이지를 만들 수 있는 틀을 구축했다면, 이번 글에서는 이미 잘 만들어진 블로그 테마를 찾고, 나의 블로그에 적용하는 과정을...
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/blog/github-pages-series-1/">
+        
+        <p class="c-list__type">
+            블로그 만들기
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                Github Pages 가입 및 초기 세팅
+            </h1>
+            <p class="c-list__sub">
+                Github.io로 나만의 블로그 만들기 시리즈 1
+            </p>
+            
+                <p class="c-list__body">
+                    # Github.io, 혹은 Github Pages란 간략하게 설명하자면 Github.io, Github Pages는 Github에서 제공하는 블로그 서비스이다. Github.io는 본인 Github 계정의 저장소를 바탕으로 정적(static) 호스팅을 제공해주는 Github Pages라는 서비스이다. 따로 웹 서버를 구축하거나 호스팅 서비스를 이용하지 않고서도 간단하게 웹페이지를 만들어 제공할 수 있다는...
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+</ul>
+:ET

@@ -53,8 +53,10 @@ layout: default
 
         <!--previous and next posts 신 버전-->
         <hr style="visibility:hidden;">
-        <ul class="pager">
+        <ul class="pager">         
           {% assign sorted = site.pages | sort: 'order' | reverse %}
+          {% if page.blog %}
+          {% endif %}
           {% assign prev_post = page.order | minus: 1 %}
           {% assign next_post = page.order | plus: 1 %}
           {% for pages in sorted %}
