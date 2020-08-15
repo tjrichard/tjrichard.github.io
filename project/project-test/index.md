@@ -7,9 +7,9 @@ tags: [일상, 후기]
 date: 2020-07-15 14:40:45
 project: true
 list-img: true
-post-img: "project-test/img/header.jpg" 
+list-img: "project-test/img/header.jpg" 
 post-header: true
-header-img: "img/header.jpg"
+header-img: "img/boxed-water-is-better.jpg"
 order: 1
 ---
 

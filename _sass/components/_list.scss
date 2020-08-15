@@ -81,7 +81,6 @@
         font-size: $font-size-medium;
         color: $color-gray;
         line-height: $line-height-medium;
-        padding-bottom: $font-size-header;
         margin-bottom: half($font-size-header);
     }
 
@@ -93,6 +92,7 @@
         font-weight: $font-weight-bold;
         line-height: $line-height-small;
         text-transform: uppercase;
+        padding-bottom: half($font-size-header);
     }
   }
   

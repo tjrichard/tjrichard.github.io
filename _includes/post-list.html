@@ -1,8 +1,8 @@
 <li {% if page.draft == true %} class="c-list__item draft" {% else %} class="c-list__item" {% endif %}>
     <a href="{{ page.url | prepend: site.baseurl }}" >
         <div class="c-list__info">
-            {% if page.list-img == true %}
-                <img src="{{ page.post-img }}" class="c-list__img" alt='{{ post.title }}'>
+            {% if page.list-img %}
+                <img src="{{ page.list-img }}" class="c-list__img" alt='{{ post.title }}'>
             {% endif %}
             <p class="c-list__type">
                 {{ page.type }}
@@ -21,7 +21,7 @@
                 <p class="c-list__body">
                     {{ page.content | truncatewords: 40 | strip_html }}
                 </p>
-                <span class='c-list__date'>{{ post.date }}</span>
+                <time class='c-list__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
             {% endif %}
         </div>
     </a>

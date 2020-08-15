@@ -9,8 +9,8 @@ layout: default
 {% endif %}
 
 <div class='o-wrapper'>
-  {% if page.post-header == true %}
-  <img src="{{ page.header-img }}" class="c-post__header-img" alt="{{ post.title }}">
+  {% if page.header-img %}
+    <img src="{{ page.header-img }}" class="c-post__header-img" alt="{{ page.title }}">
   {% endif %}
   <div class='o-grid'>
     <div class='o-grid__col'>
