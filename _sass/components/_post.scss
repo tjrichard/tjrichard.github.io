@@ -6,6 +6,15 @@
   margin: 0 auto;
   max-width: 740px;
 
+  &__header-img {
+    margin: 0 0 20px 0;
+    width: 100%;
+    height: 440px;
+    object-fit: cover;
+    object-position: center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 100%), $color-brand;
+  }
+
   &__type {
     color: $color-key;
     font-size: $font-size-base;
@@ -55,5 +64,57 @@
 
   &__image {
     margin: 0 auto $base-spacing-unit;
+  }
+}
+
+.footnotes {
+  background-color: #fafafa;
+  padding: 20px 20px;
+  line-height: 1.2;
+  margin-bottom:  36px;
+
+  ol {
+    margin: 0px;
+    color: $color-gray;
+  }
+
+  p {
+    display: inline-block;
+    font-size: $font-size-medium;
+    margin-bottom: 0px;
+  }
+
+  li {
+    font-size: $font-size-medium;
+    padding-right: 8px;
+    margin-bottom: $line-height-medium;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+  
+  .reversefootnote {
+    color: $color-gray;
+    text-decoration: none !important;
+    position: relative;
+    top: 2px;
+
+    &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0px;
+    background-color: $color-gray;
+    }
+
+    &:hover {
+      color: $color-key;
+
+    &::before {
+      background-color: $color-key;
+    }
+    }
   }
 }

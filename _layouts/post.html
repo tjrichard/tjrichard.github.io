@@ -9,6 +9,9 @@ layout: default
 {% endif %}
 
 <div class='o-wrapper'>
+  {% if page.post-header == true %}
+  <img src="{{ page.header-img }}" class="c-post__header-img" alt="{{ post.title }}">
+  {% endif %}
   <div class='o-grid'>
     <div class='o-grid__col'>
       <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>

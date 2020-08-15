@@ -9,7 +9,7 @@ project: true
 list-img: true
 post-img: "project-test/img/header.jpg" 
 post-header: true
-header-img: "images/pages/styleguide.jpg"
+header-img: "project-test/img/boxed-water-is-better.jpg"
 order: 1
 ---
 
