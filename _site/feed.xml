@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 15 Aug 2020 20:01:12 +0900</pubDate>
-    <lastBuildDate>Sat, 15 Aug 2020 20:01:12 +0900</lastBuildDate>
+    <pubDate>Sat, 15 Aug 2020 20:54:00 +0900</pubDate>
+    <lastBuildDate>Sat, 15 Aug 2020 20:54:00 +0900</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
 
     
@@ -251,11 +251,11 @@
 
 &lt;p&gt;Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조를 어떻게 짤 것인가를 먼저 생각해봐야 한다. 왜냐하면 많은 수의 단순한, 미니멀한 Jekyll 테마는 다음과 같은 블로그 구조를 가지고 있기 때문이다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Minimal%20Jekyll%20Structure.png&quot; alt=&quot;Minimal Jekyll theme Structure&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Minimal Jekyll theme Structure]&lt;/p&gt;
 
 &lt;p&gt;만약 당신이 만들고 싶은 블로그의 구조가 더 깊고 다양하다면 테마에서 제공하는 구조를 활용해도 어려울 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Your%20Blog%20Structure.png&quot; alt=&quot;Your Jekyll theme Structure&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Your Jekyll theme Structure]&lt;/p&gt;
 
 &lt;p&gt;테마 안에서 스타일과 인터랙션을 수정하는 것 보다 테마의 구조를 변경하는 것이 더 난이도가 높으므로 처음 테마를 결정할 때 본인의 블로그 구조를 먼저 구상 해두는 것이 필요하다.&lt;/p&gt;
 
@@ -289,7 +289,7 @@
 
 &lt;p&gt;위에서 정했던 테마 선택 기준에서 내가 원했던 태그 기능, Table of Contents 기능을 제공하는 &lt;a href=&quot;https://github.com/Huxpro/huxpro.github.io&quot;&gt;Huxpro&lt;/a&gt; 테마를 이용해 블로그를 만들어보기로 했다. &lt;del&gt;중국어로 되어있긴 하지만, 코드는 영어겠지..&lt;/del&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/screenshot1.png&quot; alt=&quot;Hupro Blog Demo&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Hupro Blog Demo]&lt;/p&gt;
 
 &lt;p&gt;Huxpro 테마로 만든 Hux Blog 페이지&lt;/p&gt;
 
@@ -297,9 +297,9 @@
 
 &lt;p&gt;설치려고 하는 테마를 정했다면, 해당 테마의 github 저장소에 들어가자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Fork.png&quot; alt=&quot;Fork&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Fork]&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/Fork_at.png&quot; alt=&quot;Fork at&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Fork at]&lt;/p&gt;
 
 &lt;p&gt;우측 상단에 있는 &lt;code class=&quot;highlighter-rouge&quot;&gt;Fork&lt;/code&gt;&lt;sup id=&quot;fnref:2&quot; role=&quot;doc-noteref&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; 버튼을 클릭 하면, 복사하기를 원하는 저장소를 선택할 수 있을 것이다. 준비된 블로그용 저장소를 선택해 테마의 코드를 복사하자.&lt;/p&gt;
 
@@ -309,7 +309,7 @@
 
 &lt;p&gt;테마를 Fork하니 1편에서 설정했던 저장소 이름과 다르게 개별 저장소로 생성이 되었다. 1편에서 만들었던 저장소는 다른 이름으로 변경 혹은 삭제 후, 복사 해온 저장소의 이름을 변경해주자. 1편에서 한 설명과 같이, 저장소의 이름을 본인의 &lt;code class=&quot;highlighter-rouge&quot;&gt;username.github.io&lt;/code&gt; 로 변경해야 한다. 각 저장소의 Settings 메뉴에 가면 기존 저장소를 삭제할 수 있고, 새로운 저장소 이름을 변경할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/repo_name_change.png&quot; alt=&quot;Repo name change&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Repo name change]&lt;/p&gt;
 
 &lt;p&gt;저장소 이름을 변경했으니, 해당 주소로 들어가면 우리가 Fork 한 테마가 그대로 보이는 것을 확인할 수 있다!&lt;/p&gt;
 
@@ -317,13 +317,13 @@
 
 &lt;p&gt;자신의 깃헙 저장소에 테마 코드를 복사하고 저장소 이름도 내 username으로 변경도 완료했으니, 이를 불러오고 수정할 수 있도록 본인의 컴퓨터 로컬에 저장하고 편하게 수정할 수 있도록 Github Desktop에서 열도록 하자. 저장소를 Clone한 후 나의 경우엔 Fork 한 대상인 Huxpro에 contribute 할 것인지 나의 프로젝트로 사용할 것인지 물어보는데, 우리는 개인 블로그를 만들 것이기 때문에 아래 선택지인 개인 프로젝트 용으로 사용할 것으로 선택하자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/for_my_own_project.png&quot; alt=&quot;Select for my own project&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Select for my own project]&lt;/p&gt;
 
 &lt;h2 id=&quot;4-configyml-수정하기&quot;&gt;4. config.yml 수정하기&lt;/h2&gt;
 
 &lt;p&gt;config.yml 파일은 테마의 가장 기본적인 설정들을 관리하는 파일이다. 보통 저장소의 가장 바깥에 있으니 찾기 쉬울 것이다. config 파일 내용은 테마마다 지원하는 기능, 구조가 달라 설정 가능한 항목들은 제각각이겠지만 나는 내가 복사한 Huxpro 테마의 설정들을 기준으로 설명해보겠다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_2/change_config_file.png&quot; alt=&quot;change config file&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![change config file]&lt;/p&gt;
 
 &lt;p&gt;블로그 안에 내용과 관계 없이 블로그 사이트를 구성하는 가장 기초적인 세팅만 변경해보자.&lt;/p&gt;
 
@@ -417,20 +417,20 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 
 &lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github.com&lt;/a&gt;으로 들어가서 가입을 해보자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot1.png&quot; alt=&quot;github.com 메인 화면&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![github.com 메인 화면]&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;Github.com&lt;/a&gt; 메인 화면이다. 화면 중간 우측에 바로 가입할 수 있는 필드가 있다. 혹은 우측 상단의 Sign-up 을 눌러 Sign-up 페이지에서도 가입을 할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot2.png&quot; alt=&quot;Sign-up 페이지&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Sign-up 페이지]&lt;/p&gt;
 
 &lt;p&gt;여기서 주의할 점은 &lt;strong&gt;Username&lt;/strong&gt;이 이후 &lt;a href=&quot;http://github.io&quot;&gt;Github.io&lt;/a&gt; 에서 블로그 페이지를 만들 때 사용될 주소의 첫 부분을 담당한다는 점이다.
 평소에 사용하던 읽을 수 없고 알아보기 힘든 &lt;code class=&quot;highlighter-rouge&quot;&gt;rhrnakaktxkd490000&lt;/code&gt; 이나, 남들에게 보여주기 부끄러운 &lt;code class=&quot;highlighter-rouge&quot;&gt;cutie-jisu-94&lt;/code&gt; 같은 아이디보단 만들고 싶은 블로그의 목적이나 본인을 잘 나타낼 수 있는 이름으로 만드는 것을 추천한다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot3.png&quot; alt=&quot;가입 완료 후 설문조사&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![가입 완료 후 설문조사]&lt;/p&gt;
 
 &lt;p&gt;가입을 완료하면 간단한 설문이 있는데, 대강 입력하고 다음으로 넘어가보자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot4.png&quot; alt=&quot;이메일 인증 후 첫 온보딩 화면&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![이메일 인증 후 첫 온보딩 화면]&lt;/p&gt;
 
 &lt;p&gt;이후 이메일 인증을 완료하면 가장 먼저 어떤 것을 할 지 물어보는 페이지가 나온다. 우리는 Github.io 페이지의 저장소 역할을 할 Repository를 만들어야 한다. 가장 첫 번째에 있는Repository 만들기를 선택하자.&lt;/p&gt;
 
@@ -438,7 +438,7 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 
 &lt;h1 id=&quot;2-repository-만들기&quot;&gt;2. Repository 만들기&lt;/h1&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot5.png&quot; alt=&quot;Repository 만들기&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Repository 만들기]&lt;/p&gt;
 
 &lt;p&gt;Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가입한 계정으로 선택된 상태일 것이다.&lt;/p&gt;
 
@@ -451,7 +451,7 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 
 &lt;p&gt;나머지 설정들은 당장 중요한게 아니니 적당히 입력하거나 무시하고 넘어가도록 하자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot11.png&quot; alt=&quot;environments - github-pages&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![environments - github-pages]&lt;/p&gt;
 
 &lt;p&gt;위 형식대로 정확하게 입력 했다면 Github.com &amp;gt; 해당 Repository에 들어가면 우측 하단 environments 영역에 github-pages가 표시되고 있는 것을 확인할 수 있을 것이다.&lt;/p&gt;
 
@@ -463,11 +463,11 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 
 &lt;p&gt;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github.io 페이지 ↗&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot6.png&quot; alt=&quot;User or organization site, Project site&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![User or organization site, Project site]&lt;/p&gt;
 
 &lt;p&gt;가장 먼저 &lt;code class=&quot;highlighter-rouge&quot;&gt;User or organization site&lt;/code&gt; 와 &lt;code class=&quot;highlighter-rouge&quot;&gt;Project site&lt;/code&gt; 옵션이 있다. Project site를 선택하면 다른 절차 없이 Jekyll 테마를 입힐 수 있지만, 기본적으로 제공하는 테마 자체가 구리디 구려서 선택할 테마가 단 하나도 없다. 약간 더 번거로운 절차가 있을지라도 원하는 테마를 찾아 입힐 수 있도록 User or organization site를 선택 해주자.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot7.png&quot; alt=&quot;Create Repository&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Create Repository]&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;1. Create Repository&lt;/strong&gt;&lt;/p&gt;
 
@@ -487,7 +487,7 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 
 &lt;p&gt;혹은 Github.com에서 생성한 Repository에서 Clone &amp;gt; Open with Github Desktop 버튼을 눌러 연동할 수 있다.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;/images/posts/Starting_github.io_series_1/screenshot10.png&quot; alt=&quot;Open with Github Desktop&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;![Open with Github Desktop]&lt;/p&gt;
 
 &lt;p&gt;두 번째 Step에서 만든 Repository를 선택한 후, 본인의 컴퓨터에 보관 할 위치를 선택한다. 나는 icloud를 사용하고 있어 여러 컴퓨터에서 작업을 진행할 수 있도록 icloud에 복제해 두었다.&lt;/p&gt;
 

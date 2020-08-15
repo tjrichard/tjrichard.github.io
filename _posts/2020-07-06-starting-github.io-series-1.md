@@ -48,21 +48,21 @@ Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페
 
 [Github.com](http://github.com)으로 들어가서 가입을 해보자.
 
-![github.com 메인 화면](/images/posts/Starting_github.io_series_1/screenshot1.png)
+![github.com 메인 화면]
 
 [Github.com](http://github.com) 메인 화면이다. 화면 중간 우측에 바로 가입할 수 있는 필드가 있다. 혹은 우측 상단의 Sign-up 을 눌러 Sign-up 페이지에서도 가입을 할 수 있다.
 
-![Sign-up 페이지](/images/posts/Starting_github.io_series_1/screenshot2.png)
+![Sign-up 페이지]
 
 여기서 주의할 점은 **Username**이 이후 [Github.io](http://github.io) 에서 블로그 페이지를 만들 때 사용될 주소의 첫 부분을 담당한다는 점이다.
 평소에 사용하던 읽을 수 없고 알아보기 힘든 `rhrnakaktxkd490000` 이나, 남들에게 보여주기 부끄러운 `cutie-jisu-94` 같은 아이디보단 만들고 싶은 블로그의 목적이나 본인을 잘 나타낼 수 있는 이름으로 만드는 것을 추천한다.
 
 
-![가입 완료 후 설문조사](/images/posts/Starting_github.io_series_1/screenshot3.png)
+![가입 완료 후 설문조사]
 
 가입을 완료하면 간단한 설문이 있는데, 대강 입력하고 다음으로 넘어가보자.
 
-![이메일 인증 후 첫 온보딩 화면](/images/posts/Starting_github.io_series_1/screenshot4.png)
+![이메일 인증 후 첫 온보딩 화면]
 
 
 이후 이메일 인증을 완료하면 가장 먼저 어떤 것을 할 지 물어보는 페이지가 나온다. 우리는 Github.io 페이지의 저장소 역할을 할 Repository를 만들어야 한다. 가장 첫 번째에 있는Repository 만들기를 선택하자.
@@ -71,7 +71,7 @@ Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페
 
 # 2. Repository 만들기
 
-![Repository 만들기](/images/posts/Starting_github.io_series_1/screenshot5.png)
+![Repository 만들기]
 
 Repository를 만들기 위한 간단한 설정이다. Owner는 자동으로 가입한 계정으로 선택된 상태일 것이다.
 
@@ -87,7 +87,7 @@ Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username
 나머지 설정들은 당장 중요한게 아니니 적당히 입력하거나 무시하고 넘어가도록 하자.
 
 
-![environments - github-pages](/images/posts/Starting_github.io_series_1/screenshot11.png)
+![environments - github-pages]
 
 위 형식대로 정확하게 입력 했다면 Github.com > 해당 Repository에 들어가면 우측 하단 environments 영역에 github-pages가 표시되고 있는 것을 확인할 수 있을 것이다.
 
@@ -99,11 +99,11 @@ Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username
 
 [Github.io 페이지 ↗](https://pages.github.com/)
 
-![User or organization site, Project site](/images/posts/Starting_github.io_series_1/screenshot6.png)
+![User or organization site, Project site]
 
 가장 먼저 `User or organization site` 와 `Project site` 옵션이 있다. Project site를 선택하면 다른 절차 없이 Jekyll 테마를 입힐 수 있지만, 기본적으로 제공하는 테마 자체가 구리디 구려서 선택할 테마가 단 하나도 없다. 약간 더 번거로운 절차가 있을지라도 원하는 테마를 찾아 입힐 수 있도록 User or organization site를 선택 해주자.
 
-![Create Repository](/images/posts/Starting_github.io_series_1/screenshot7.png)
+![Create Repository]
 
    **1. Create Repository**
    
@@ -123,7 +123,7 @@ Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username
 
    혹은 Github.com에서 생성한 Repository에서 Clone > Open with Github Desktop 버튼을 눌러 연동할 수 있다.
 
-   ![Open with Github Desktop](/images/posts/Starting_github.io_series_1/screenshot10.png)
+   ![Open with Github Desktop]
 
 
 두 번째 Step에서 만든 Repository를 선택한 후, 본인의 컴퓨터에 보관 할 위치를 선택한다. 나는 icloud를 사용하고 있어 여러 컴퓨터에서 작업을 진행할 수 있도록 icloud에 복제해 두었다.

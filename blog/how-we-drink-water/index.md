@@ -7,7 +7,7 @@ tags: [일상, 후기]
 date: 2020-07-15 14:40:45
 blog: true
 post-header: true
-header-img: "./img/header.jpg"
+header-img: "img/header.jpg"
 order: 3
 draft: true
 ---
@@ -57,12 +57,12 @@ onclick=" window.open('[https://coupa.ng/bGSBg5','_blank](https://coupa.ng/bGSBg
 
 각자 물을 얼마나, 어떤 환경에서 마시는지를 먼저 확인하고, 자신에게 가장 잘 맞는 방법을 찾아가는것이 중요하겠다.
 
+---
+
+파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있습니다.
+
 참고문헌
 
 [1]: Medicine Io (2005) Panel on Dietary Reference Intakes for Electrolytes and Water, Dietary Reference Intakes for Water, Potassium, Sodium, Chloride and Sulfate. The National Academies Press
 
 [2]: EFSA Panel on Dietetic Products N, and Allergies (NDA). (2010) Scientific opinion on dietary reference values for water. EFSA J 8:1-48
-
----
-
-파트너스 활동을 통해 일정액의 수수료를 제공받을 수 있습니다.

@@ -9,7 +9,7 @@ project: true
 list-img: true
 post-img: "project-test/img/header.jpg" 
 post-header: true
-header-img: "project-test/img/boxed-water-is-better.jpg"
+header-img: "img/header.jpg"
 order: 1
 ---
 
@@ -20,7 +20,7 @@ order: 1
 
 사람의 80%는 수분으로 이루어져있다고 한다면, 키와 몸무게에 따라 다른 양의 수분이 필요할 것이다. 보통 우리가 알고 있는 물 하루 권장 섭취량을 계산하는 방법은 `(키+몸무게)/100` 으로 계산하는 방법이 있다. 이 계산법을 통한다면 175cm, 70kg인 남성은 2.45L를 섭취해야 한다고 나온다. 그런데 이 계산법도 믿을 수 있을까? (~~의심에 의심을 거듭~~)
 
-2004년 미국의 Institute of Medicine (IOM) 에서 제시한 기준은 평균 신체의 19세-30세 성인 기준, 남자는 하루 3.7리터, 여자는 하루 2.7리터의 수분을 섭취할 것을 제안했다. 2010년 유럽의 European food safety authority (EFSA) 에서는 남자는 하루 2.5리터, 여자는 하루 2리터 수분 섭취를 제안했다. 더 최근의 연구와 우리가 알고 있는 
+2004년 미국의 Institute of Medicine (IOM)[^1] 에서 제시한 기준은 평균 신체의 19세-30세 성인 기준, 남자는 하루 3.7리터, 여자는 하루 2.7리터의 수분을 섭취할 것을 제안했다. 2010년 유럽의 European food safety authority (EFSA)[^2] 에서는 남자는 하루 2.5리터, 여자는 하루 2리터 수분 섭취를 제안했다. 더 최근의 연구와 우리가 알고 있는 
 
 하지만 우리가 보통 알고 있는 물 하루 권장 섭취량은 사실 하루 '수분' 섭취량에 대한 말에 더 가깝다. 우리는 순수한 물뿐만 아니라 음식에서도 많은 양의 수분을 섭취하고 있다. 앞선 연구에서 음식을 통한 수분 섭취의 비율은 미국은 18%, 스웨덴은 23%, 프랑스는 35%, 독일은 29%로 대개 20~30% 정도로 보면 된다. 따라서 하루 권장 섭취량의 1/4는 정도는 음식으로, 3/4 정도는 물을 섭취하면 된다는 계산이 나온다.
 
@@ -41,18 +41,16 @@ order: 1
 두 종류의 물을 구매하고 있다. 일반 생수와 탄산수. 일반적인 경우에 마시는 물과 톡 쏘는 탄산 감을 느끼고 싶거나 액기스와 함께 스파클링 주스를 만들어 먹거나 스파클링 칵테일을 만들어 먹을 때 탄산수를 먹는다.
 
 물의 경우는 동원 샘물 500ml 20팩을 2개로 구매하고, 탄산수는 쿠팡의 고유 브랜드인 탐사 스파클링 500ml 20개 상품을 구매한다. 물 소비량과 ml당 가격을 계산해 봤을 때 가장 저렴하고 효과적인 상품이었다.
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b62e2d5c-518f-4b2b-ab3a-ee9c88607de0/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/b62e2d5c-518f-4b2b-ab3a-ee9c88607de0/Untitled.png)
-
-물 500ml 최저가 구매하기: [https://coupa.ng/bGSz6M](https://coupa.ng/bGSz6M)
-
-onclick=" window.open('[https://coupa.ng/bGSz6M','_blank](https://coupa.ng/bGSz6M','_blank)')"
-
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dfa7fd8d-a7ae-4fd4-9010-b52883bbbb28/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dfa7fd8d-a7ae-4fd4-9010-b52883bbbb28/Untitled.png)
-
-탄산수 500ml 최저가 구매하기: [https://coupa.ng/bGSBg5](https://coupa.ng/bGSBg5)
-
-onclick=" window.open('[https://coupa.ng/bGSBg5','_blank](https://coupa.ng/bGSBg5','_blank)')"
+<div style="display:flex; flex-direction: row; place-content:center;">
+<div style="display:flex; flex-direction:column; align-items:center; margin-right: 24px;">
+<img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/825a/1f8d5da79423383f1291272ce2d027d49c2e4579c6607a36a3df31d1646b.jpg">
+<button style="padding: 6px 24px; background-color: #2c85ff; border-color: rgba(0, 0, 0, 0.12); border-radius: 4px; color: #ffffff; margin: 4px 0 4px 0; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); cursor: pointer;" onclick=" window.open('https://coupa.ng/bGSz6M','_blank')">물 500ml 최저가 구매하기 👉</button>
+</div>
+<div style="display:flex; flex-direction:column; align-items:center;">
+<img src="https://thumbnail8.coupangcdn.com/thumbnails/remote/230x230ex/image/retail/images/171624124729720-21da10b3-92fa-4dc2-af28-06ecb23745a7.jpg">
+<button style="padding: 6px 24px; background-color: #2c85ff; border-color: rgba(0, 0, 0, 0.12); border-radius: 4px; color: #ffffff; margin: 4px 0 4px 0; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); cursor: pointer;" onclick=" window.open('https://coupa.ng/bGSBg5','_blank')">탄산수 500ml 최저가 구매하기 👉</button>
+</div>
+</div>
 
 ---
 
@@ -60,9 +58,9 @@ onclick=" window.open('[https://coupa.ng/bGSBg5','_blank](https://coupa.ng/bGSBg
 
 참고문헌
 
-[1]: Medicine Io (2005) Panel on Dietary Reference Intakes for Electrolytes and Water, Dietary Reference Intakes for Water, Potassium, Sodium, Chloride and Sulfate. The National Academies Press
+[^1]:Medicine Io (2005) Panel on Dietary Reference Intakes for Electrolytes and Water, Dietary Reference Intakes for Water, Potassium, Sodium, Chloride and Sulfate. The National Academies Press
 
-[2]: EFSA Panel on Dietetic Products N, and Allergies (NDA). (2010) Scientific opinion on dietary reference values for water. EFSA J 8:1-48
+[^2]:EFSA Panel on Dietetic Products N, and Allergies (NDA). (2010) Scientific opinion on dietary reference values for water. EFSA J 8:1-48
 
 ---
 
