@@ -1,4 +1,4 @@
-I"4<ul class="o-grid">
+I"X<ul class="o-grid">
 
 
 
@@ -6,10 +6,10 @@
         <li class="c-list__item draft">
     <a href="/blog/how-we-drink-water/">
         
-        <p class="c-list__type">
-            잡담과 생각
-        </p>
         <div class="c-list__info">
+            <p class="c-list__type">
+                잡담과 생각
+            </p>
             <h1 class="c-list__title">
                 매일 마시는 물, 어떻게 마시고 있을까?
             </h1>
@@ -30,10 +30,10 @@
         <li class="c-list__item">
     <a href="/blog/github-pages-series-2/">
         
-        <p class="c-list__type">
-            블로그 만들기
-        </p>
         <div class="c-list__info">
+            <p class="c-list__type">
+                블로그 만들기
+            </p>
             <h1 class="c-list__title">
                 Jekyll 테마 찾고 설치하는 법
             </h1>
@@ -55,10 +55,10 @@
         <li class="c-list__item">
     <a href="/blog/github-pages-series-1/">
         
-        <p class="c-list__type">
-            블로그 만들기
-        </p>
         <div class="c-list__info">
+            <p class="c-list__type">
+                블로그 만들기
+            </p>
             <h1 class="c-list__title">
                 Github Pages 가입 및 초기 세팅
             </h1>

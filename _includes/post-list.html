@@ -1,9 +1,9 @@
 <li {% if page.draft == true %} class="c-list__item draft" {% else %} class="c-list__item" {% endif %}>
     <a href="{{ page.url | prepend: site.baseurl }}" >
-        {% if page.list-img == true %}
-        <img src="{{ page.post-img }}" class="c-list__img" alt='{{ post.title }}'>
-        {% endif %}
         <div class="c-list__info">
+            {% if page.list-img == true %}
+                <img src="{{ page.post-img }}" class="c-list__img" alt='{{ post.title }}'>
+            {% endif %}
             <p class="c-list__type">
                 {{ page.type }}
             </p>

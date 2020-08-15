@@ -1,4 +1,4 @@
-I"�<ul class="o-grid">
+I"�<ul class="o-grid">
 
 
 
@@ -14,10 +14,10 @@
         
         <img src="project-test/img/header.jpg" class="c-list__img" alt="" />
         
-        <p class="c-list__type">
-            잡담과 생각
-        </p>
         <div class="c-list__info">
+            <p class="c-list__type">
+                잡담과 생각
+            </p>
             <h1 class="c-list__title">
                 매일 마시는 물, 어떻게 마시고 있을까?
             </h1>
