@@ -22,7 +22,8 @@
       color: $color-key;
       font-size: $font-size-base;
       font-weight: $font-weight-bold;
-      margin: 10px 0;
+      padding: 10px 0;
+      margin: 0;
   }
 
   &__tag {
@@ -46,6 +47,8 @@
 
   &__info {
     display: inline-block;
+    padding: 0 10px;
+    transition: $global-transition;
     
     .c-list__title {
         font-size: $font-size-header;
@@ -78,7 +81,7 @@
         font-size: $font-size-medium;
         color: $color-gray;
         line-height: $line-height-medium;
-        padding-bottom: 24px;
+        padding-bottom: $font-size-header;
         margin-bottom: half($font-size-header);
     }
 
@@ -105,7 +108,9 @@
 
   .c-list__info {
     cursor: pointer;
-    opacity: .6;
+    // opacity: .6;
+    box-shadow: -10px 10px $color-key;
+    transform: translate(10px -10px);
   }
 }
 
