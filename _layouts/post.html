@@ -10,7 +10,7 @@ layout: default
 
 <div class='o-wrapper'>
   {% if page.header-img %}
-    <img src="{{ page.header-img }}" class="c-post__header-img" alt="{{ page.title }}">
+    <img src='{{ page.header-img }}' class='c-post__header-img' alt='{{ page.title }}'>
   {% endif %}
   <div class='o-grid'>
     <div class='o-grid__col'>
@@ -24,7 +24,7 @@ layout: default
 
         <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
 
-        <hr>
+        <hr style='visibility: hidden;'>
         
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}

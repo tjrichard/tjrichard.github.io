@@ -1,7 +1,9 @@
 ---
-layout: post
-title: About
-image: '/images/pages/about.jpeg'
+layout: page
+title: Seunghwan Jang
+subtitle: "장승환"
+type: "About"
+header-img: 'img/about.jpeg'
 about: true
 ---
 

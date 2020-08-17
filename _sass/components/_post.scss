@@ -34,7 +34,7 @@
 
   &__subtitle {
     font-size: $font-size-base;
-    margin-bottom: $base-spacing-unit;
+    margin-bottom: double($base-spacing-unit);
     color: $color-gray;
 
     @include mq($from: tablet) {
