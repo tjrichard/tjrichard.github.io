@@ -15,21 +15,21 @@ layout: default
   <div class='o-grid'>
     <div class='o-grid__col'>
       <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
-
         <p class="c-post__type">{{ page.type }}</p>
 
-        <h1 class='c-post__title u-text-left'>{{ page.title }}</h1>
-
-        <p class='c-post__subtitle u-text-left'>{{ page.subtitle }}</p>
-
-        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
-
-        <hr style='visibility: hidden;'>
+        <h1 class='c-post__title u-text-left'>{{ page.title }}</h1>    
         
+        <p class='c-post__subtitle u-text-left'>{{ page.subtitle }}</p>
+        
+        <time class='c-post__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
+        
+        <hr>
+
         <div class='c-content' itemprop='articleBody'>
           {% include page-image.html %}
 
           {{ content }}
+
         </div>
 
         <div class='c-tags'>

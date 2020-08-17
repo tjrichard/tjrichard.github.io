@@ -24,21 +24,23 @@
   }
 
   &__title {
-    font-size: double($font-size-small);
+    font-size: double($font-size-medium);
     margin-bottom: half($base-spacing-unit);
+    font-weight: $font-weight-bolder;
 
     @include mq($from: tablet) {
-      font-size: double($font-size-medium);
+      font-size: double($font-size-base);
     }
   }
 
   &__subtitle {
-    font-size: $font-size-base;
+    font-size: $font-size-medium;
     margin-bottom: double($base-spacing-unit);
     color: $color-gray;
+    font-weight: $font-weight-bold;
 
     @include mq($from: tablet) {
-      font-size: $font-size-header;
+      font-size: $font-size-base;
     }
   }
 

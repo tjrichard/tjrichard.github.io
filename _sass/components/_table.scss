@@ -1,0 +1,61 @@
+/*------------------------------------*\
+  Components > Table
+\*------------------------------------*/
+
+.c-table {
+  margin: 0 auto;
+  width: 100%;
+  list-style-type: none;
+
+  &__thead {
+    font-size: $font-size-header;
+    margin-bottom: half($base-spacing-unit);
+    font-weight: $font-weight-bold;
+    border-bottom: 1px solid $color-brand;
+  }
+
+  &__tbody {
+    font-size: $font-size-medium;
+    margin-bottom: double($base-spacing-unit);
+    color: $color-text;
+    font-weight: $font-weight-regular;
+
+    .company {
+      font-size: $font-size-header;
+      color: $color-text;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: half($base-spacing-unit);
+  }
+}
+
+.company {
+  width: 30vw !important;
+  min-width: 140px;
+  margin-bottom: 0;
+  padding: 10px;
+}
+
+.brief {
+  width: 70vw !important;
+  min-width: 340px;
+  margin-bottom: 0;
+  padding: 10px;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.date {
+  font-size: $font-size-small;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-small;
+  color: $color-gray;
+  margin-bottom: 0;
+}
