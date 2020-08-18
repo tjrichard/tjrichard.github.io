@@ -1,0 +1,350 @@
+I"5 <ul class="o-grid">
+
+
+
+    
+
+    
+
+    
+
+    
+
+    
+        <li class="c-list__item">
+    <a href="/tag/github.io/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/tag/blog/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/style-guide.html">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                Style Guide
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    At [Aspire Themes](http://aspirethemes.com/) I use a lot of tools to help me create WordPress, Ghost and Jekyll themes. Tools will range from development, design, services, hosting and automation. Graphic design is the paradise of individuality, eccentricity, heresy, abnormality, hobbies, and...
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/project/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                Selected Projects
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+{% assign sorted = site.pages | sort: 'order' | reverse %}
+
+{% for page in sorted %}
+    {% if page.post-type == project %}
+        {% include post-list.html %}
+    {% endif %}
+{% endfor %}
+
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/404.html">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                Page Not Found
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+    Sorry, but the page you were trying to view does not exist.
+
+
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/tag/%EC%9D%BC%EC%83%81/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/tag/development/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/tag/jekyll/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/blog/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                Thoughts and Intrests
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                                            ...
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/about/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                About
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    저는 데이터와 디테일 중심의 경험을 가진 서비스/UX 디자이너 입니다. 저는 사용자 리서치에서 얻은 인사이트로부터 디자인 하는 데 능숙합니다. 또한 저는 학습이 빠릅니다. 비록 제가 알지 못하는 영역의 어떤 업무라 하더라도 빠르게 배우고 완성도 높은 결과물을 낼 수 있습니다. 저는 다른...
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                      sadfasdf   Destructive CTA 버튼 레이블 규칙   문제점 대시보드에서 특정 행동을 취소 하는 것을 확인하는 모달 팝업이나, 파괴적인...
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/feed.xml">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                       Seunghwan  http://localhost:4000/  Thu, 13 Aug 2020 13:56:56 +0900 Thu, 13 Aug 2020 13:56:56 +0900 Jekyll v4.0.0  Destructive CTA 버튼 레이블 규칙 &lt;h3 id=&quot;문제점&quot;&gt;문제점&lt;/h3&gt; &lt;p&gt;대시보드에서 특정 행동을 &lt;strong&gt;취소&lt;/strong&gt;...
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+    
+        <li class="c-list__item">
+    <a href="/tag/%ED%9B%84%EA%B8%B0/">
+        
+        <p class="c-list__type">
+            
+        </p>
+        <div class="c-list__info">
+            <h1 class="c-list__title">
+                
+            </h1>
+            <p class="c-list__sub">
+                
+            </p>
+            
+                <p class="c-list__body">
+                    
+                </p>
+                <span class="c-list__date"></span>
+            
+        </div>
+    </a>
+</li>    
+    
+
+</ul>
+:ET
