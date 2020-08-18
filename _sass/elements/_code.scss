@@ -12,7 +12,7 @@ code {
 
 pre {
   overflow: auto;
-  padding: double($base-spacing-unit);
+  padding: $base-spacing-unit;
   margin-bottom: $base-spacing-unit;
   font-size: $font-size-medium;
   line-height: $line-height-medium;
