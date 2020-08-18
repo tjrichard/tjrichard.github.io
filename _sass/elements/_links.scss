@@ -8,6 +8,6 @@ a {
   transition: $global-transition;
 
   @include attention() {
-    text-decoration: underline;
+    text-decoration: none;
   }
 }
