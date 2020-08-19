@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 18 Aug 2020 23:47:01 +0900</pubDate>
-    <lastBuildDate>Tue, 18 Aug 2020 23:47:01 +0900</lastBuildDate>
+    <pubDate>Tue, 18 Aug 2020 23:53:34 +0900</pubDate>
+    <lastBuildDate>Tue, 18 Aug 2020 23:53:34 +0900</lastBuildDate>
     <generator>Jekyll v4.0.0</generator>
 
     
@@ -546,7 +546,7 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 
 ---
 
-##### [🧑🏻‍💻이력서](/assets/Resume_Seunghwan_1908.pdf)   |   [🏄🏻‍♂️포트폴리오](/assets/Portfolio_Seunghwan_1906.pdf)
+[🧑🏻‍💻이력서](/assets/Resume_Seunghwan_1908.pdf) / [🏄🏻‍♂️포트폴리오](/assets/Portfolio_Seunghwan_1906.pdf)
 
 _last update : 19.08_</description>
             <link>http://localhost:4000/about/</link>

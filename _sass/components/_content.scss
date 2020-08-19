@@ -6,7 +6,6 @@
   a:not(.c-btn) {
     transition: $global-transition;
     text-decoration: none;
-    text-decoration-skip: ink;
     background-image: linear-gradient(to bottom, $color-gray-100 75%, transparent 75%);
     background-position: 0 1.4em;
     background-repeat: repeat-x;

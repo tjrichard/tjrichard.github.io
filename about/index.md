@@ -13,6 +13,6 @@ about: true
 
 ---
 
-##### [🧑🏻‍💻이력서](/assets/Resume_Seunghwan_1908.pdf)   |   [🏄🏻‍♂️포트폴리오](/assets/Portfolio_Seunghwan_1906.pdf)
+[🧑🏻‍💻이력서](/assets/Resume_Seunghwan_1908.pdf) / [🏄🏻‍♂️포트폴리오](/assets/Portfolio_Seunghwan_1906.pdf)
 
 _last update : 19.08_
