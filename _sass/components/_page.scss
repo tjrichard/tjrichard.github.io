@@ -53,6 +53,10 @@
 
   &__keyword {
     color: $color-gray;
+
+    a {
+      color: $color-gray;
+    }
   }
 
   &__favicon {
@@ -61,5 +65,37 @@
     margin-right: 8px;
     position: relative;
     top: 1px;
+  }
+
+  &__pebble {
+    display: inline-block !important;
+    padding: quarter($base-spacing-unit) $base-spacing-unit;
+    margin: 0 half($base-spacing-unit) ($base-spacing-unit) 0 !important;
+
+    font-size: $font-size-small;
+    font-family: $font-base;
+    line-height: $line-height-medium;
+
+    background-color: $bg-color-gray;
+    transition: $global-transition;
+
+    &:hover {
+      transform: translateX(4px) translateY(-4px);
+      box-shadow: -4px 4px 0 0 $color-key;
+    }
+    
+    @include attention() {
+      text-decoration: none;
+      background-color: $bg-color-gray;
+    }
+    
+
+    @include mq($until: tablet) {
+      margin-bottom: $line-height-medium - half(quarter($line-height-medium));
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
