@@ -1,0 +1,12 @@
+first:
+  - fav: https://ifworlddesignguide.com/favicon.ico
+    name: iF Design
+    role: App Award
+    keyword: 인공지능 일기장 앱 Hawayou로 iF 디자인 어워드
+    date: Mar 2018
+second:
+  - fav: https://www.samsung.com//etc/designs/smg/global/imgs/app_ico.png
+    name: Gearfit2
+    role: Gearfit2 Watchface Design Award
+    keyword: 기어핏2 워치페이스 디자인 공모전
+    date: Nov 2016

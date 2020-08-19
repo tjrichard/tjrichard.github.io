@@ -1,0 +1,22 @@
+<ul class='c-table'>
+    {% for first in site.data.awards.first %}
+        <li class='c-table__tbody'>
+        <p class='company'><img src='{{ first.fav }}' class='c-page__favicon'>{{ first.name }}</p>
+        <div class='brief'>
+        <p class='c-page__role'>{{ first.role }}</p>
+            <p class='c-page__keyword'>{{ first.keyword }}</p>
+            <p class='date'>{{ first.date }}</p>
+        </div>
+        </li>
+    {% endfor %}
+    {% for second in site.data.awards.second %}
+    <li class='c-table__tbody'>
+    <p class='company'><img src='{{ second.fav }}' class='c-page__favicon'>{{ second.name }}</p>
+    <div class='brief'>
+    <p class='c-page__role'>{{ second.role }}</p>
+        <p class='c-page__keyword'>{{ second.keyword }}</p>
+        <p class='date'>{{ second.date }}</p>
+    </div>
+    </li>
+    {% endfor %}
+</ul>
