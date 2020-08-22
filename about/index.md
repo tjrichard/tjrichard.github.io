@@ -3,7 +3,7 @@ layout: page
 title: Seunghwan Jang
 subtitle: "장승환"
 type: "About"
-header-img: 'img/about.jpeg'
+header-img: 'img/about.jpg'
 about: true
 ---
 
