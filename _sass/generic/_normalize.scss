@@ -59,7 +59,16 @@ h1 {
  * 1. Add the correct display in IE.
  */
 
-figcaption,
+figcaption {
+  position: relative;
+  top: -29px;
+  text-align: center;
+  margin-bottom: $base-spacing-unit;
+  color: $color-gray;
+  font-size: $font-size-medium;
+}
+
+
 figure,
 main { /* 1 */
   display: block;

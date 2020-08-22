@@ -3,6 +3,8 @@
 \*------------------------------------*/
 
 .c-content {
+  margin-bottom: double($base-spacing-unit);
+
   a:not(.c-btn) {
     transition: $global-transition;
     text-decoration: none;

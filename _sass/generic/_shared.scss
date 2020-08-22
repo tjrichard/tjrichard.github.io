@@ -18,6 +18,10 @@ fieldset {
   margin-bottom: double($base-spacing-unit);
 }
 
+blockquote dd, blockquote ol, blockquote ul {
+  margin-bottom: 0;
+}
+
 /**
  * Consistent indentation for lists.
  */
@@ -25,3 +29,4 @@ dd, ol, ul {
   list-style-position: inside;
   margin-left: $base-spacing-unit;
 }
+

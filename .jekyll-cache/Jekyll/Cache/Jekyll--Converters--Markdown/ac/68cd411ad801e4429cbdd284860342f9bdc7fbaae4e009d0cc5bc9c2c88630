@@ -1,0 +1,23 @@
+I"*<p><a href="https://abit.ly/article_11">🔗 독립 집단 설계 vs 반복 측정 설계 (원문 링크)</a></p>
+
+<h2 id="️요약">⚡️요약</h2>
+
+<blockquote>
+  <p>사용자 리서치에서 독립 집단 설계는 학습 효과를 줄이고,<br />
+반복 측정 설계는 더 적은 참여자를 요구하며 랜덤 노이즈를 최소화 한다.</p>
+</blockquote>
+
+<h2 id="용어-정리">용어 정리</h2>
+
+<ul>
+  <li><code class="highlighter-rouge">Between-Subjects Study Design</code>: 독립 집단 설계</li>
+  <li><code class="highlighter-rouge">Within-Subject Study Design</code>: 반복 측정 설계</li>
+</ul>
+
+<p>한 조사에서 여러 사용자 인터페이스를 비교하려 할 때, 다음과 같은 조건들로 실험 참가자에게 태스크를 부여할 수 있다.</p>
+
+<ul>
+  <li>독립 집단 설계: 각 실험 조건에 각기 다른 사람이 참여함. 한 사람은 한 인터페이스에만 노출될 수 있도록 함</li>
+  <li>반복 측정 설계: 동일한 사람이 모든 실험 조건에 노출되도록 함</li>
+</ul>
+:ET
