@@ -3,11 +3,11 @@ layout: post
 type: "Design"
 title:  "디자인 조사 방법: 독립 집단 설계 vs 반복 측정 설계"
 subtitle: "번역 및 요약 👉 Between-Subjects vs. Within-Subjects Study Design"
-tags: [아티클 요약, Research, Analytics]
+tags: [아티클 요약, UX, Design, Research, Analytics]
 date: 2020-08-28 14:40:45
 blog: true
 post-header: false
-order: 1
+order: 3
 ---
 
 [🔗 독립 집단 설계 vs 반복 측정 설계 (원문 링크)](https://abit.ly/article_11)
