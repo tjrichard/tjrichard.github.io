@@ -3,6 +3,8 @@
 \*------------------------------------*/
 
 .c-social-nav {
+  margin: 0;
+
   &__item {
     display: inline-block;
   }
@@ -15,5 +17,17 @@
     @include attention() {
       fill: $color-brand;
     }
+  }
+
+  &__title {
+    padding-left: 5px;
+    font-weight: $font-weight-bold;
+    color: $color-gray;
+  }
+
+  &__copyright {
+    margin: 0 0 0 auto;
+    font-size: $font-size-medium;
+    color: $color-gray;
   }
 }

@@ -12,9 +12,10 @@ email:       tjrichard91@gmail.com
 description: ''
 baseurl:     '' # The subpath of your site, e.g. /blog
 url:         https://tjrichard.github.io/ # The base hostname & protocol for your site
-twitter:     ''
 github:      https://github.com/tjrichard
 instagram:   https://instagram.com/nam.d.richard
+linkedin:    https://www.linkedin.com/in/tjrichard91/
+twitter:     ''
 facebook:    ''
 
 markdown:  kramdown
