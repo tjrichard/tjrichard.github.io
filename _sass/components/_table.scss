@@ -6,6 +6,7 @@
   margin: 0 auto double($base-spacing-unit) auto;
   width: 100%;
   list-style-type: none;
+  overflow: auto;
 
   &__thead {
     font-size: $font-size-header;

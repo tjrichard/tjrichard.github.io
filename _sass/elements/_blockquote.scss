@@ -6,9 +6,9 @@ blockquote {
   padding: 10px $base-spacing-unit;
   border-left: 2px solid $color-key;
   background-color: $bg-color-gray;
-  width: calc(100% + 32px);
+  // width: calc(100% + 32px);
   position: relative;
-  left: -16px;
+  // left: -16px;
 
   p {
     margin-bottom: 0px;

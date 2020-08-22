@@ -6,7 +6,7 @@ project-header: true
 header-img: img/about.jpg
 ---
 
-<ul class='o-grid'>
+<ul class='o-grid o-grid__col'>
 {% assign sorted = site.pages | sort: 'order' | reverse %}
 
 {% for page in sorted %}
