@@ -238,13 +238,13 @@
 
           <p>이전 글 → <a rel="nofollow noopener noreferrer" target="_blank" href="https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/">Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅</a></p>
 
-<h1 id="지난-글과-다른-점">지난 글과 다른 점</h1>
+<h3 id="지난-글과-다른-점">지난 글과 다른 점</h3>
 
 <p>지난 글에서는 Github.io로 블로그 페이지를 만들 수 있는 틀을 구축했다면, 이번 글에서는 이미 잘 만들어진 블로그 테마를 찾고, 나의 블로그에 적용하는 과정을 다룬다.</p>
 
 <hr />
 
-<h1 id="jekyll-테마를-찾기-전">Jekyll 테마를 찾기 전</h1>
+<h3 id="jekyll-테마를-찾기-전">Jekyll 테마를 찾기 전</h3>
 
 <p>이 글을 읽는 우리의 1차 목표는 내 입맛에 맞는 디자인으로 Github 블로그를 만들어 보는 것이고, 2차 목표는 그렇게 만든 블로그로 실제 블로그를 운영하는 것이다.</p>
 
@@ -258,7 +258,7 @@
 
 <hr />
 
-<h1 id="-테마의-구조">🧱 테마의 구조</h1>
+<h3 id="-테마의-구조">🧱 테마의 구조</h3>
 
 <p>Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조를 어떻게 짤 것인가를 먼저 생각해봐야 한다. 왜냐하면 많은 수의 단순한, 미니멀한 Jekyll 테마는 다음과 같은 블로그 구조를 가지고 있기 때문이다.</p>
 
@@ -272,7 +272,7 @@
 
 <hr />
 
-<h1 id="jekyll-테마-찾기">Jekyll 테마 찾기</h1>
+<h3 id="jekyll-테마-찾기">Jekyll 테마 찾기</h3>
 
 <p>위 기준들을 잘 생각하면서 테마를 찾아보자. 다음과 같이 무료 Jekyll 테마를 모아서 리스트를 제공하는 사이트들이 있으니 원하는 테마를 찾아보도록 하자.</p>
 
@@ -296,7 +296,7 @@
 
 <hr />
 
-<h1 id="jekyll-설치">Jekyll 설치</h1>
+<h3 id="jekyll-설치">Jekyll 설치</h3>
 
 <p>위에서 정했던 테마 선택 기준에서 내가 원했던 태그 기능, Table of Contents 기능을 제공하는 <a rel="nofollow noopener noreferrer" target="_blank" href="https://github.com/Huxpro/huxpro.github.io">Huxpro</a> 테마를 이용해 블로그를 만들어보기로 했다. <del>중국어로 되어있긴 하지만, 코드는 영어겠지..</del></p>
 
@@ -304,7 +304,7 @@
 
 <p>Huxpro 테마로 만든 Hux Blog 페이지</p>
 
-<h2 id="1-설치-하고싶은-테마의-저장소-복사하기">1. 설치 하고싶은 테마의 저장소<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> 복사하기</h2>
+<h4 id="1-설치-하고싶은-테마의-저장소-복사하기">1. 설치 하고싶은 테마의 저장소<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote">1</a></sup> 복사하기</h4>
 
 <p>설치려고 하는 테마를 정했다면, 해당 테마의 github 저장소에 들어가자.</p>
 
@@ -316,7 +316,7 @@
 
 <p>❗️ 다른 사람의 저장소를 Fork 하면 본인의 저장소에서도 기존 저장소의 정보들이 표시되게 되는데, 이것이 싫은 경우 저장소를 .zip으로 컴퓨터에 다운로드 받은 후 본인의 저장소에 내용물을 풀면 새로운 내용으로 인식하게 할 수 있다.</p>
 
-<h2 id="2-저장소-이름-변경">2. 저장소 이름 변경</h2>
+<h4 id="2-저장소-이름-변경">2. 저장소 이름 변경</h4>
 
 <p>테마를 Fork하니 1편에서 설정했던 저장소 이름과 다르게 개별 저장소로 생성이 되었다. 1편에서 만들었던 저장소는 다른 이름으로 변경 혹은 삭제 후, 복사 해온 저장소의 이름을 변경해주자. 1편에서 한 설명과 같이, 저장소의 이름을 본인의 <code class="highlighter-rouge">username.github.io</code> 로 변경해야 한다. 각 저장소의 Settings 메뉴에 가면 기존 저장소를 삭제할 수 있고, 새로운 저장소 이름을 변경할 수 있다.</p>
 
@@ -324,13 +324,13 @@
 
 <p>저장소 이름을 변경했으니, 해당 주소로 들어가면 우리가 Fork 한 테마가 그대로 보이는 것을 확인할 수 있다!</p>
 
-<h2 id="3-github-desktop-에서-열기">3. Github Desktop 에서 열기</h2>
+<h4 id="3-github-desktop-에서-열기">3. Github Desktop 에서 열기</h4>
 
 <p>자신의 깃헙 저장소에 테마 코드를 복사하고 저장소 이름도 내 username으로 변경도 완료했으니, 이를 불러오고 수정할 수 있도록 본인의 컴퓨터 로컬에 저장하고 편하게 수정할 수 있도록 Github Desktop에서 열도록 하자. 저장소를 Clone한 후 나의 경우엔 Fork 한 대상인 Huxpro에 contribute 할 것인지 나의 프로젝트로 사용할 것인지 물어보는데, 우리는 개인 블로그를 만들 것이기 때문에 아래 선택지인 개인 프로젝트 용으로 사용할 것으로 선택하자.</p>
 
 <p><img src="img/for_my_own_project.png" alt="Select for my own project" /></p>
 
-<h2 id="4-configyml-수정하기">4. config.yml 수정하기</h2>
+<h4 id="4-configyml-수정하기">4. config.yml 수정하기</h4>
 
 <p>config.yml 파일은 테마의 가장 기본적인 설정들을 관리하는 파일이다. 보통 저장소의 가장 바깥에 있으니 찾기 쉬울 것이다. config 파일 내용은 테마마다 지원하는 기능, 구조가 달라 설정 가능한 항목들은 제각각이겠지만 나는 내가 복사한 Huxpro 테마의 설정들을 기준으로 설명해보겠다.</p>
 
@@ -357,13 +357,11 @@
 
 <hr />
 
-<h3 id="githubio로-나만의-블로그-만들기-시리즈"><strong>Github.io로 나만의 블로그 만들기 시리즈</strong></h3>
+<h4 id="githubio로-나만의-블로그-만들기-시리즈">Github.io로 나만의 블로그 만들기 시리즈</h4>
 
-<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/">(1) 가입 및 초기 세팅</a></p>
-
-<p><a href="#">(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법</a></p>
-
-<p>(3) Disqus 연결하기</p>
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://tjrichard.github.io/blog/github-pages-series-1/">(1) 가입 및 초기 세팅</a><br />
+<a href="###">(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법</a><br />
+(3) ???</p>
 
 <hr />
 

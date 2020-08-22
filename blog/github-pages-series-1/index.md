@@ -1,8 +1,8 @@
 ---
 layout: post
+type: "블로그 만들기"
 title:  "Github Pages 가입 및 초기 세팅"
 subtitle: "Github.io로 나만의 블로그 만들기 시리즈 1"
-type: "블로그 만들기"
 tags: [Blog, Github.io, Jekyll, Development]
 date: 2020-07-07 14:40:45
 blog: true
@@ -11,7 +11,7 @@ order: 1
 ---
 
 
-# Github.io, 혹은 Github Pages란
+### Github.io, 혹은 Github Pages란
 
 간략하게 설명하자면 Github.io, Github Pages는 Github에서 제공하는 블로그 서비스이다.
 
@@ -27,7 +27,7 @@ Github Pages로 만든 블로그는 다양한 Jekyll 테마를 설치하고 내 
 Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyll은 블로그가 어떻게 보일지, 어떤 구조로 쌓아서 표현할지에 대한 틀을 제공하는 테마이다.
 ```
 
-# 💎 이 글을 읽는 우리의 목표
+### 💎 이 글을 읽는 우리의 목표
 
 나는 디자이너로 디자인 툴에서 이미지를 만들어 내는것을 넘어 원하는 디자인을 직접 구현해 보는데 관심이 있다. 반면 이 구현에 대한 관심은 취미 수준을 목표로 하기 때문에 모든 과정을 100% 나의 손으로 만들어 내는 것은 원하지 않는다.
 
@@ -41,13 +41,13 @@ Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyl
    ```
    괜찮은 테마를 가져와 이를 뜯어보고 내가 원하는 대로 구조, 스타일, 인터랙션을 커스터마이징 하고 서드파티 플러그인, 애널리틱스를 설치하고 방문자에 대한 분석까지 할 수 있음
    ```
-   멋진 사례가 있어 이를 공유합니다.
-   >Jihye Lee 라는 분은 Tale[[테마 데모](https://chesterhow.github.io/tale/), [테마 Git](https://github.com/chesterhow/tale)]이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 [본인의 블로그](http://jihyeleee.com/)를 아주 새롭고 멋지게 만든 예시가 있다.
+우리의 목표에 맞는 아주 멋진 사례로 Jihye Lee 님의 블로그를 소개하겠다.
+> Jihye Lee 님은 Tale ([테마 데모](https://chesterhow.github.io/tale/), [테마 Git](https://github.com/chesterhow/tale)) 이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 [본인의 블로그](http://jihyeleee.com/)를 아주 새롭고 멋지게 만든 예시가 있다.
 
 나는 간단한 HTML, CSS 코딩 공부도 할 겸 직접 내 입맛에 맞는 블로그를 만들면서 실습까지 진행해보고자 시작하게 되었다.
 
 
-# 1. Github.com 가입하기
+### 1. Github.com 가입하기
 
 Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페이지를 사용하기 위해서는 Github.com에 가입되어 있어야 한다.
 
@@ -74,7 +74,7 @@ Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페
 
 ---
 
-# 2. Repository 만들기
+### 2. Repository 만들기
 
 ![Repository 만들기](img/screenshot5.png)
 
@@ -98,7 +98,7 @@ Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username
 
 ---
 
-# 3. Git Client 연결해서 기초 작업 환경 세팅하기
+### 3. Git Client 연결해서 기초 작업 환경 세팅하기
 
 자 이제 [Github.io](http://github.io)를 위한 계정과 저장소를 만들었다. Github.io 에서 다음 스텝을 따라가 보자.
 
@@ -141,10 +141,8 @@ Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username
 
 ---
 
-### Github.io로 나만의 블로그 만들기 시리즈
+#### Github.io로 나만의 블로그 만들기 시리즈
 
-[(1) 가입 및 초기 세팅](https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/)
-
-[(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법](https://tjrichard.github.io/2020/07/19/Lets-install-Jekyll-theme/)
-
+[(1) 가입 및 초기 세팅](#)<br>
+[(2) 원하는 Jekyll 테마 찾는 법, 설치하는 법](https://tjrichard.github.io/blog/github-pages-series-2/)<br>
 (3) ???
