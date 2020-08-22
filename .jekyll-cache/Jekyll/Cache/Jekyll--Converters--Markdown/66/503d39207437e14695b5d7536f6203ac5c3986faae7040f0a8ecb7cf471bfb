@@ -1,0 +1,110 @@
+I"�<div class="o-grid">
+  <div class="o-grid__col o-grid__col--full">
+    <article class="c-page">
+      <hr style="visibility:hidden" />
+      <h1 class="c-page__title">Hi, I’m Seunghwan</h1>
+      <h1 class="c-page__title">A UX Designer at <a href="https://www.ab180.co" target="blank" ref="nofollow">AB180</a></h1>
+      <p class="c-page__subtitle">AB180에서 에어브릿지 솔루션의 UX 디자이너, 서비스 디자이너로 일하고 있습니다.</p>
+      <hr style="visibility:hidden" />
+      <p class="c-page__type">👨‍🚀 Where I've worked</p>
+        <ul class="c-table">
+    
+        <li class="c-table__tbody">
+        <p class="company"><img src="https://assets.website-files.com/5eccc23534031ced48168fa9/5ed5ab366170c9822f049707_favicon-32x32.png" class="c-page__favicon" />AB180</p>
+        <div class="brief">
+        <p class="c-page__role">UX Designer</p>
+            <p class="c-page__keyword c-content"><a href="https://airbridge.io/" target="_blank" rel="nofollow">Airbridge</a>, B2B Dashboard</p>
+            <p class="date">Sep 2019 ~ Present 🚀</p>
+        </div>
+        </li>
+    
+    
+    <li class="c-table__tbody">
+    <p class="company"><img src="https://iacryl.com/acryl/images/icon/favicon_acryl.ico" class="c-page__favicon" />Acryl</p>
+    <div class="brief">
+    <p class="c-page__role">UX Designer, Service Designer</p>
+        <p class="c-page__keyword">인공지능 UX, B2B Dashboard, B2C App, 서비스 기획, UX 디자인</p>
+        <p class="date">Feb 2017 ~ Sep 2019</p>
+    </div>
+    </li>
+    
+    
+    <li class="c-table__tbody">
+    <p class="company"><img src="https://www.sap.com/favicon.ico" class="c-page__favicon" />SAP DCC</p>
+    <div class="brief">
+    <p class="c-page__role">UX Design Intern</p>
+        <p class="c-page__keyword">B2B Dashboard PoC, Design Thinking Facilitation</p>
+        <p class="date">Dec 2015 ~ Nov 2016</p>
+    </div>
+    </li>
+    
+</ul>
+      <p class="c-page__type">🏅 Awards</p>
+        <ul class="c-table">
+    
+        <li class="c-table__tbody">
+        <p class="company"><img src="https://ifworlddesignguide.com/favicon.ico" class="c-page__favicon" />iF Design</p>
+        <div class="brief">
+        <p class="c-page__role">App Award</p>
+            <p class="c-page__keyword">인공지능 일기장 앱 Hawayou로 iF 디자인 어워드</p>
+            <p class="date">Mar 2018</p>
+        </div>
+        </li>
+    
+    
+    <li class="c-table__tbody">
+    <p class="company"><img src="https://www.samsung.com//etc/designs/smg/global/imgs/app_ico.png" class="c-page__favicon" />Gearfit2</p>
+    <div class="brief">
+    <p class="c-page__role">Gearfit2 Watchface Design Award</p>
+        <p class="c-page__keyword">기어핏2 워치페이스 디자인 공모전</p>
+        <p class="date">Nov 2016</p>
+    </div>
+    </li>
+    
+</ul>
+      <p class="c-page__type">🔭 Interest</p>
+      <div style="padding: 10px 0;">
+          <ul class="c-table">
+    
+        <li class="c-page__pebble">
+            Digital Product Design
+        </li>
+    
+        <li class="c-page__pebble">
+            UX Design
+        </li>
+    
+        <li class="c-page__pebble">
+            UX Writing
+        </li>
+    
+        <li class="c-page__pebble">
+            Product Ownership
+        </li>
+    
+        <li class="c-page__pebble">
+            Data &amp; Analytics
+        </li>
+    
+        <li class="c-page__pebble">
+            Performance Marketing
+        </li>
+    
+        <li class="c-page__pebble">
+            Figma
+        </li>
+    
+        <li class="c-page__pebble">
+            Light Web Coding
+        </li>
+    
+        <li class="c-page__pebble">
+            Photo taking &amp; Color Manipulation
+        </li>
+    
+</ul>
+      </div>
+    </article>
+  </div>
+</div>
+:ET
