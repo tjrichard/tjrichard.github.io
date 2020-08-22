@@ -12,7 +12,6 @@ order: 2
 
 이전 글 → [Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅](https://tjrichard.github.io/2020/07/06/starting-github.io-series-1/)
 
----
 
 # 지난 글과 다른 점
 

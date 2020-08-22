@@ -5,13 +5,13 @@ description: 관심 분야의 글을 올려요
 project-header: true
 header-img: img/about.jpg
 ---
-
-<ul class='o-grid o-grid__col'>
-{% assign sorted = site.pages | sort: 'order' | reverse %}
-
-{% for page in sorted %}
-    {% if page.blog == true %}
-        {% include post-list.html %}
-    {% endif %}
-{% endfor %}
-</ul>
+<div class='o-grid'>
+    <ul class='o-grid__col'>
+    {% assign sorted = site.pages | sort: 'order' | reverse %}
+    {% for page in sorted %}
+        {% if page.blog == true %}
+            {% include post-list.html %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</div>
