@@ -4,7 +4,6 @@ layout: default
 
 <div class='o-grid'>
   <div class='o-grid__col o-grid__col--full'>
-    <article class='c-page'>
       <hr style='visibility:hidden'>
       <h1 class='c-page__title'>Hi, I’m Seunghwan</h1>
       <h1 class='c-page__title'>A UX Designer at <a href='https://www.ab180.co' target='blank' ref='nofollow'>AB180</a></h1>
@@ -18,6 +17,5 @@ layout: default
       <div style='padding: 10px 0;'>
           {% include interest.html %}
       </div>
-    </article>
   </div>
 </div>
