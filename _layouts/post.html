@@ -15,7 +15,7 @@ layout: default
   <div class='o-grid'>
     <div class='o-grid__col'>
       <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
-        <p class="c-post__type">{{ page.type }}</p>
+        <p class="c-post__type">{{ page.type | upcase }}</p>
 
         <h1 class='c-post__title u-text-left'>{{ page.title }}</h1>    
         
