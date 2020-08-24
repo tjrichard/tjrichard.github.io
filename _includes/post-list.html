@@ -5,7 +5,7 @@
                 <img src="{{ page.list-img }}" class="c-list__img" alt='{{ post.title }}'>
             {% endif %}
             <p class="c-list__type">
-                {{ page.type }}
+                {{ page.type | upcase }}
             </p>
             <h1 class="c-list__title">
                 {{ page.title }}
