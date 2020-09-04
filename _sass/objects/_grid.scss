@@ -99,3 +99,12 @@ $grid-gutter: $base-spacing-unit;
     margin-top: 20px;
   }
 }
+
+.o-grid__head {
+  display: inline-block;
+  padding: 0 $base-spacing-unit;
+
+  &--full {
+    width: 100%;
+  }
+}

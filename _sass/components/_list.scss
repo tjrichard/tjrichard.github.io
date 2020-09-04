@@ -7,8 +7,8 @@
   transition: $global-transition;
 
   &__item {
-      border-bottom: 1px solid rgba(0,0,0,.07);
-      padding: 32px 0;
+      // border-bottom: 1px solid rgba(0,0,0,.07);
+      padding: 16px 0;
       list-style: none;
       width: 100%;
 
@@ -47,7 +47,7 @@
 
   &__info {
     display: inline-block;
-    padding: 0 10px;
+    padding: 10px 20px;
     transition: $global-transition;
     
     .c-list__title {
@@ -109,8 +109,12 @@
   .c-list__info {
     cursor: pointer;
     // opacity: .6;
-    box-shadow: -10px 10px $color-key;
-    transform: translate(10px, -10px);
+    // transform: translate(10px, -10px);
+    box-shadow: 0px 20px 30px 0px rgba(0,0,0,0.12);
+  }
+
+  .c-list__title {
+    color: $color-key;
   }
 }
 
@@ -122,7 +126,7 @@
 .c-list__img {
   width: 100%;
   height: 16em;
-  border-radius: .5em;
+  // border-radius: .5em;
 //    box-shadow: 6px 0 40px 8px rgba(0,0,0,.05);
   object-fit: cover;
   object-position: center;
