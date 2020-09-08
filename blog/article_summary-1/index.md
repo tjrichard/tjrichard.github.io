@@ -10,13 +10,16 @@ post-header: false
 order: 3
 ---
 
-[🔗 독립 집단 설계 vs 반복 측정 설계 (원문 링크)](https://abit.ly/article_11)
+<p class="text-gray">
+🔗 이 글은 Raluca Budiu가 <a href='https://www.nngroup.com/' target='blank' rel='nofollow'>Nielsen Norman Group</a>에 올린 <a href="https://abit.ly/article_11" target='blank' rel='nofollow'>아티클</a>을 번역, 요약한 글입니다.
+</p>
 
 ### ⚡️요약
 
 > 사용자 리서치에서 크게 두 가지 방법이 있고, 두 방법의 특징을 알고 더 좋은 방법을 선택해야 한다
 - 반복 측정 설계는 참가자 간 차이를 상쇄할 수 있지만, 학습 효과를 방지하기 위해 랜덤화를 사용해야 하고
 - 독립 집단 설계에서는 조건 간 학습 효과를 상쇄할 수 있지만, 참가자 간 차이를 상쇄할 수는 없음
+
 
 ### 용어 정리
 

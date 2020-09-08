@@ -16,3 +16,11 @@ body {
   color: $color-white;
   background: $color-brand;
 }
+
+.text-gray {
+  color: $color-gray;
+
+  a {
+    color: $color-gray;
+  }
+}

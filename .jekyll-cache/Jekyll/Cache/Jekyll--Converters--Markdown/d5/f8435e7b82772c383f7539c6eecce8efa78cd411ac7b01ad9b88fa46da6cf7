@@ -1,0 +1,63 @@
+I"<h1 id="오류-상황-오류-메세지-문장-작성법-간단히-살펴보기">오류 상황: 오류 메세지 문장 작성법 간단히 살펴보기</h1>
+
+<p>이 글은 Json Fox가 <a href="https://uxdesign.cc/">UX Collective</a>에 올린 <a href="https://abit.ly/article_16">미디엄 글</a>을 번역, 요약한 글입니다.</p>
+
+<h2 id="오류-메세지-작성을-위한-건축-블록">오류 메세지 작성을 위한 건축 블록</h2>
+
+<p>디지털 프로덕트를 만드는 과정에서 오류 메세지는 끊임 없이 작성되어야 하는 것이다. 오류 메세지 작성의 핵심 건축 블록으로 오류 상황에서 제공되어야 할 정보를 경제적이고 사용자 중심적으로 디자인할 수 있다.</p>
+
+<p>모든 오류 메세지는 두 가지 종류의 핵심 컴포넌트로 구분할 수 있다.</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Constant Components
+</code></pre></div></div>
+
+<p>Constant Component는 필수 요소이다. 여기엔 사용자에게 어떤 일이 일어났고, 왜 일어났고, 어떻게 진행할 수 있는지에 대한 정보를 제공한다.</p>
+
+<p>이 컴포넌트는 다음 정보를 포함할 수 있을 것이다:</p>
+
+<ul>
+  <li>사용자가 취할 수 있는 액션 경로 (Action path)</li>
+  <li>무엇/왜 를 설명하는 문장 (What/why statements)</li>
+</ul>
+
+<p><br /></p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Dynamic Components
+</code></pre></div></div>
+
+<p>이 컴포넌트는 오류 상황의 심각성, 원인, 다른 요소 등에 의해 조절 될 오류 메세지의 톤을 조정하는 역할을 한다.</p>
+
+<p>이 컴포넌트는 다음 정보를 포함할 수 있을 것이다:</p>
+
+<ul>
+  <li>초래된 결과 (Impact statements)</li>
+  <li>상황 확인/사과 (Acknowledgements/apologies)</li>
+  <li>다른 해결 방안 (Alternate resolution paths)</li>
+  <li>의례 어구 (Politeness markers)</li>
+  <li>담화 어구 (Discourse markers)</li>
+</ul>
+
+<p><img src="https://miro.medium.com/max/1400/1*xZlzjnNGRorReOSq3H_-Pg.png" alt="Good Error message example 1" /></p>
+
+<p><img src="https://miro.medium.com/max/1400/1*cnuSLNYWGBjAp0G0gm5M9A.png" alt="Good Error message example 2" /></p>
+
+<h2 id="오류-메세지-문장이-잘못된-경우">오류 메세지 문장이 잘못된 경우</h2>
+
+<p>오류 메세지가 기본 구성에서 벗어나 있다면 사용자들은 오류 상황을 명확하게 인지하지 못하게 될 것이고, 그 오류 메세지는 곧 SNS에서 까이게 될 것이다.</p>
+
+<p><img src="https://miro.medium.com/max/1400/1*iYDqQSuGT2Lku9tUMg6y7A.png" alt="Bad Error message example 1" /></p>
+
+<p><img src="https://miro.medium.com/max/1400/1*IGdrWARpuHYbnqWF_9xG-w.png" alt="Bad Error message example 2" /></p>
+
+<p><img src="https://miro.medium.com/max/1400/1*MIwPQ_SpUGDZ7_rr3iVvXg.png" alt="Bad Error message example 3" /></p>
+
+<h2 id="이-문장을-활용하는-방법">이 문장을 활용하는 방법</h2>
+
+<ul>
+  <li>오류 메세지를 작성할 때 Constant Component를 작성하는 것을 목표로 하기</li>
+  <li>오류 발생한 컨텍스트의 살을 붙이기 위해 Dynamic Component를 작성하기</li>
+  <li>어떤 종류의 오류 메세지들은 왜 제구실을 하지 못하는지에 대한 가설을 생각해보기</li>
+  <li>작성한 오류 메세지를 한 번 더 검수하기</li>
+  <li>깊게 파고들 수 없는 작은 프로젝트 더라도 매번 유용한 오류 메세지를 작성하는 패턴을 만들기</li>
+</ul>
+:ET
