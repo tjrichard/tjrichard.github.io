@@ -11,7 +11,7 @@ order: 3
 ---
 
 <p class="text-gray">
-🔗 이 글은 Raluca Budiu가 <a href='https://www.nngroup.com/' target='blank' rel='nofollow'>Nielsen Norman Group</a>에 올린 <a href="https://abit.ly/article_11" target='blank' rel='nofollow'>아티클</a>을 번역, 요약한 글입니다.
+🔗 이 글은 Raluca Budiu가 <a href='https://www.nngroup.com/' target='blank' rel='nofollow'><img src='https://www.google.com/s2/favicons?sz=24&domain=https://www.nngroup.com/' style='display:inline; height: 1em; position: relative; bottom: -2px;'> Nielsen Norman Group</a>에 올린 <a href="https://abit.ly/article_11" target='blank' rel='nofollow'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 ### ⚡️요약
@@ -23,8 +23,8 @@ order: 3
 
 ### 용어 정리
 
-- `Between-Subjects Study Design`: 독립 집단 설계
-- `Within-Subject Study Design`: 반복 측정 설계
+`Between-Subjects Study Design`: 독립 집단 설계  
+`Within-Subject Study Design`: 반복 측정 설계
 
 한 조사에서 여러 사용자 인터페이스를 비교하려 할 때, 다음과 같은 조건들로 실험 참가자에게 태스크를 부여할 수 있다.
 
@@ -35,10 +35,10 @@ order: 3
 
 주로 정량적 사용성 조사는 비교하는데 핵심 목표를 둔다. 예를 들어 경쟁사의 웹사이트, 다른 두가지 버전의 디자인, 사용자 그룹의 두 종류(experts vs. novices) 간 비교가 있다. 이 때 정량적 분석에서는 두 가지 변수가 있다.
 
-- **독립 변수(Independent variables)**: 리서처에 의해 직접적으로 조정되는 것
-- **종속 변수(Dependent variables)**: 측정되는 것 (그리고 독립 변수의 조정에 따라 결과가 달라질 것으로 예상되는 것)
+**독립 변수(Independent variables)**: 리서처에 의해 직접적으로 조정되는 것  
+**종속 변수(Dependent variables)**: 측정되는 것 (그리고 독립 변수의 조정에 따라 결과가 달라질 것으로 예상되는 것)
 
-> 만약 조사가 통계적으로 유의미한 결과를 만든다고 했을 때,<br>
+> 만약 조사가 통계적으로 유의미한 결과를 만든다고 했을 때,  
 `독립 변수의 조정`이 `종속 변수의 변화`를 `야기했다`고 할 수 있다.
 
 자동차 렌트 사이트의 예시로 돌아가보자.
@@ -111,7 +111,7 @@ order: 3
   - 더 짧은 세션 시간
   - 더 쉬운 설계와 더 쉬운 분석
 
-덧, 이 아티클의 내용을 읽으니 [📕원인과 결과의 경제학](https://coupa.ng/bICmrN) 책이 연상되었다 👇
+덧, 이 아티클의 내용을 읽으니 [📕 원인과 결과의 경제학](https://coupa.ng/bICmrN) 책이 연상되었다 👇
 
 > 이 아티클과 원인과 결과의 경제학은 독립 변수를 조정하여 실험한 결과에서 종속 변수가 변화 했을 때, 독립 변수가 정말로 종속 변수의 변화를 야기 했는지 통계적 유의미성을 확보하기 위한 방법에 대해 말하고 있는 점이 유사했다. 이 아티클에서는 조사 방법론 측면에서 두 방법과 각 방법의 유의점을 소개했고, 원인과 결과의 경제학에서는 통계적으로 유의미성을 증명할 수 있는 방법에 대한 소개가 담겨있다.<br>
 <br>

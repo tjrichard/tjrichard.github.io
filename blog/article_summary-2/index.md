@@ -17,7 +17,7 @@ order: 4
 ### ⚡️요약
 
 > 1. Constant Component에 제공되어야 할 정보를 작성하기
-2. Dynamic Component에서 오류 상황의 컨텍스트를 더 잘 이해시킬 수 있도록 보강하기
+2. Dynamic Component에서 오류 상황의 컨텍스트를 더 잘 이해시킬 수 있도록 보강하기  
 *최소 요구 조건은 Constant Component이다. 잘 작성된 Constant Component만 있어도 유저의 오류 상황을 명확히 인지시키고 해결할 수 있다.
 * Constant Component는 사용자가 취할 수 있는 액션 경로와 무엇이 왜 발생했는지 명시
 * Dynamic Component는 오류 상황에 대한 
