@@ -1,7 +1,7 @@
 ---
 layout: post
 type: "Design"
-title:  "직감에서부터 계획 세우기: Toughtful Execution Framework"
+title:  "디자인 솔루션은 직감적이 아니라 계획적이어야 한다: Toughtful Execution Framework"
 subtitle: "번역 및 요약 👉 From Gut to Plan: The Thoughtful Execution Framework"
 tags: [아티클 요약, Design Process, 가추사고]
 date: 2020-09-25 14:40:45
