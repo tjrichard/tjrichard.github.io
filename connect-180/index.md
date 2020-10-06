@@ -1,7 +1,11 @@
 ---
 layout: default
 ---
-
+<script>
+    window.onload = function() {
+        var input = document.getElementById("gsc-i-id1").focus();
+    }
+</script>
 <div>
     <div class="o-grid">
         <script async src="https://cse.google.com/cse.js?cx=d423c88702dea9eb7"></script>

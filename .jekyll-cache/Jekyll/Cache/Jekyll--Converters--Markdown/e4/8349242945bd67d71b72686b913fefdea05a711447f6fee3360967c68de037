@@ -1,7 +1,13 @@
-I"*<div>
+I"›<script>
+    window.onload = function() {
+        var input = document.getElementById("gsc-i-id1").focus();
+    }
+</script>
+
+<div>
     <div class="o-grid">
         <script async="" src="https://cse.google.com/cse.js?cx=d423c88702dea9eb7"></script>
-        <div class="gcse-searchresults-only"></div>
+        <div class="gcse-search"></div>
     </div>
     <div>
         <iframe src="https://www.surfit.io/" class="surit-io"></iframe>
