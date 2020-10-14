@@ -10,6 +10,8 @@ post-header: false
 order: 5
 ---
 
+youtube://watch?v=ccR7cIOh6no&feature=youtu.be
+
 <p class="text-gray">
 🔗이 글은 Annina Koskinen이 <a href='https://spotify.design/' target='blank' rel='nofollow'><img src='https://www.google.com/s2/favicons?sz=24&domain=https://www.spotify.design/' style='display:inline; height: 1em; position: relative; bottom: -2px;'> Spotify.design</a>에 올린 <a href='https://abit.ly/article_18' target='blank' rel='nofollow'>아티클</a>을 번역, 요약한 글입니다.
 </p>
