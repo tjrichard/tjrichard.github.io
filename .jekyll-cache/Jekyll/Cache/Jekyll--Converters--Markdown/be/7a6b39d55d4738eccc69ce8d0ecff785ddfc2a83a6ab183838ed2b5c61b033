@@ -1,4 +1,4 @@
-I"�<div class="o-grid">
+I"�<div class="o-grid">
     <div class="o-grid__col o-grid__col--full">
         <div class="o-grid__head o-grid__head--full">
             <hr style="visibility:hidden" />
@@ -8,6 +8,31 @@
         </div>
         <ul class="c-list">
             
+            
+                
+                    <li class="c-list__item">
+    <a href="/blog/article_summary-4/">
+        
+        <div class="c-list__info">
+            <p class="c-list__type">
+                DESIGN
+            </p>
+            <h1 class="c-list__title">
+                모든 프로덕트는 북극성 지표가 필요하다. 우리 북극성 지표는 어떻게 찾을까?
+            </h1>
+            <p class="c-list__sub">
+                번역 및 요약 👉 Every Product Needs a North Star Metric: Here’s How to Find Yours
+            </p>
+            
+                <p class="c-list__body">
+                     🔗이 글은 Sandhya Hegde가  Amplitude Blog에 올린 아티클을 번역, 요약한 글입니다.  ⚡️요약  음.. 요약..!  Intro 프로덕트 북극성 지표는 오늘날...
+                </p>
+                <time class="c-list__date" datetime="2020-10-18T23:40:45+09:00" itemprop="datePublished">18 Oct 2020</time>
+            
+        </div>
+    </a>
+</li>
+                
             
                 
                     <li class="c-list__item">
@@ -110,8 +135,6 @@
                 
             
                 
-            
-                
                     <li class="c-list__item">
     <a href="/blog/github-pages-series-1/">
         
@@ -134,6 +157,8 @@
         </div>
     </a>
 </li>
+                
+            
                 
             
                 
