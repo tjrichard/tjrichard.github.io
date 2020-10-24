@@ -187,3 +187,17 @@ Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley 
 
 ### 프로덕트 전략 운영에 북극성 지표를 사용하는 방법
 
+프로덕트 전략을 수행하는데 북극성 지표 프레임워크를 사용하는 것은 임팩트 중심 조직에게 필수적인 투자이다. 또 이것은 프로덕트 주도형 기업으로 가는 길이다.
+
+![Product-led Company using the North Star Metric](https://images.ctfassets.net/vrkkgjbn4fsk/3hNgILdWYE2cYOkoEgI4My/22b0d5da4ac88610f3d8eff8450516d7/product-initiatives-north-star-metric-revenue.png?q=90&w=2336)
+
+<figcaption>Product-led Company using the North Star Metric</figcaption>
+
+이 시리즈에서 이후 이어지는 아티클들은 다음 질문들에 대한 답을 찾아볼 것이다.
+
+- 북극성 지표를 도입하려면 어떤 **인프라와 문화**가 필요한가?
+- **프로덕트 생애 주기**에 북극성 지표를 어떻게 최적화 하는가?
+- 북극성 지표 트리를 **고객 여정**에 어떻게 매핑할 것인가?
+- PM, 엔지니어링, 디자인과 같은 다른 프로덕트 조직에 위해 신뢰도와 **오너십**을 어떻게 제공하는가?
+
+만약 사용자의 행동을 어떻게 분석하고 북극성 지표를 수행하는 방법을 더 배우고 싶다면 이를 시작하기 위한 [리소스들](https://amplitude.com/understand-user-behavior)도 있습니다!
