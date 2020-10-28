@@ -26,7 +26,11 @@ blockquote dd, blockquote ol, blockquote ul {
  * Consistent indentation for lists.
  */
 dd, ol, ul {
-  list-style-position: inside;
+  list-style-position: outside;
   margin-left: $base-spacing-unit;
+
+  li {
+    margin-left: $base-spacing-unit; 
+  }
 }
 

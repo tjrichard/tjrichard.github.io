@@ -69,6 +69,7 @@
   }
 }
 
+
 sup a {
     color: $color-brand !important;
 }
@@ -95,6 +96,8 @@ sup a {
     font-size: $font-size-medium;
     padding-right: 8px;
     margin-bottom: $line-height-medium;
+    margin-left: 16px;
+    text-indent: -16px;
 
     &:last-child {
       margin-bottom: 0px;

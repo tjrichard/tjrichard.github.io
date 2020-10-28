@@ -16,6 +16,14 @@
         margin-bottom: ($base-spacing-unit)*3;
         border: none;
     }
+    
+    a {
+      background-image: none !important;
+
+      :hover {
+        background-image: none !important;
+      }
+    }
   }
 
   &__type {
