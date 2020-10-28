@@ -8,9 +8,9 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <title>디자인 조사 방법: 독립 집단 설계 vs 반복 측정 설계</title>
+  <title>모든 프로덕트는 북극성 지표가 필요하다. 우리 북극성 지표는 어떻게 찾을까?</title>
   <meta name='description' content="">
-  <link rel='canonical' href="http://localhost:4000/blog/article_summary-1/">
+  <link rel='canonical' href="http://localhost:4000/blog/article_summary-4/">
   <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="http://localhost:4000/feed.xml">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;700&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet">
   
@@ -285,11 +285,11 @@
       <article class='c-post' itemscope itemtype='http://schema.org/BlogPosting'>
         <p class="c-post__type">DESIGN</p>
 
-        <h1 class='c-post__title u-text-left'>디자인 조사 방법: 독립 집단 설계 vs 반복 측정 설계</h1>    
+        <h1 class='c-post__title u-text-left'>모든 프로덕트는 북극성 지표가 필요하다. 우리 북극성 지표는 어떻게 찾을까?</h1>    
         
-        <p class='c-post__subtitle u-text-left'>번역 및 요약 👉 Between-Subjects vs. Within-Subjects Study Design</p>
+        <p class='c-post__subtitle u-text-left'>번역 및 요약 👉 Every Product Needs a North Star Metric: Here’s How to Find Yours</p>
         
-        <time class='c-post__date' datetime='2020-08-28T23:40:45+09:00' itemprop='datePublished'>28 Aug 2020</time>
+        <time class='c-post__date' datetime='2020-10-18T23:40:45+09:00' itemprop='datePublished'>18 Oct 2020</time>
         
         <hr>
 
@@ -297,136 +297,218 @@
           
 
           <p class="text-gray">
-🔗 이 글은 Raluca Budiu가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.nngroup.com/" target="blank" rel="nofollow"><img src="https://www.google.com/s2/favicons?sz=24&amp;domain=https://www.nngroup.com/" style="display:inline; height: 1em; position: relative; bottom: -2px;" /> Nielsen Norman Group</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://abit.ly/article_11" target="blank" rel="nofollow">아티클</a>을 번역, 요약한 글입니다.
+🔗이 글은 Sandhya Hegde가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://amplitude.com/blog/" target="blank" rel="nofollow"><img src="https://amplitude.com/favicon.svg" style="display:inline; height: 1em; position: relative; bottom: -2px;" /> Amplitude Blog</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://abit.ly/article_25" target="blank" rel="nofollow">아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 <h3 id="️요약">⚡️요약</h3>
 
 <blockquote>
-  <p>사용자 리서치에서 크게 두 가지 방법이 있고, 두 방법의 특징을 알고 더 좋은 방법을 선택해야 한다</p>
-  <ul>
-    <li>반복 측정 설계는 참가자 간 차이를 상쇄할 수 있지만, 학습 효과를 방지하기 위해 랜덤화를 사용해야 하고</li>
-    <li>독립 집단 설계에서는 조건 간 학습 효과를 상쇄할 수 있지만, 참가자 간 차이를 상쇄할 수는 없음</li>
-  </ul>
+  <p>음.. 요약..!</p>
 </blockquote>
 
-<h3 id="용어-정리">용어 정리</h3>
+<h3 id="intro">Intro</h3>
 
-<p><code class="highlighter-rouge">Between-Subjects Study Design</code>: 독립 집단 설계<br />
-<code class="highlighter-rouge">Within-Subject Study Design</code>: 반복 측정 설계</p>
+<p>프로덕트 북극성 지표는 오늘날 가장 강력하면서 사람들이 잘못 이해하고 있는 프로덕트 전략 프레임워크이다. 많은 프로덕트 팀이 북극성 지표를 수립하지 않거나 잘못 수립해 의도하지 않은 결과를 맞이하고 있다.</p>
 
-<p>한 조사에서 여러 사용자 인터페이스를 비교하려 할 때, 다음과 같은 조건들로 실험 참가자에게 태스크를 부여할 수 있다.</p>
+<p>이 아티클은 북극성 지표에 대해 파고드는 시리즈 중 첫 번째다. 이 아티클이 프로덕트 리드와 매니저에게 이 지표가 왜 중요한지, 어떻게 정의하고 프로덕트 전략과 성장을 위해 어떻게 사용하는지 가이드가 되길 바란다. 이 아티클에서 다음에 대해 이야기한다:</p>
 
 <ul>
-  <li>독립 집단 설계: 각 실험 조건에 각기 다른 사람이 참여함. 한 사람은 한 인터페이스에만 노출될 수 있도록 함</li>
-  <li>반복 측정 설계: 동일한 사람이 모든 실험 조건에 노출되도록 함</li>
+  <li><a href="#북극성-지표는-무엇이며-왜-중요한가">북극성 지표는 무엇이며 왜 중요한가?</a></li>
+  <li><a href="#질문-1-좋은-북극성-지표의-좋은-예">좋은 북극성 지표의 좋은 예</a></li>
+  <li><a href="#질문-2-회사에서-북극성-지표는-하나만-가져야-하는가">회사에서 북극성 지표는 하나만 가져야 하는가?</a></li>
+  <li><a href="#질문-3-좋은-북극성-지표를-선택하는-방법">좋은 북극성 지표를 선택하는 방법</a></li>
+  <li><a href="#프로덕트-전략-운영에-북극성-지표를-사용하는-방법">프로덕트 전략 운영에 북극성 지표를 사용하는 방법</a></li>
 </ul>
 
-<h4 id="정량적-조사에서-실험-디자인">정량적 조사에서 실험 디자인</h4>
+<div class="c-list">
+    <div class="c-list__item">
+        <a rel="nofollow noopener noreferrer" target="_blank" href="https://amplitude.com/north-star?utm_source=blog&amp;utm_medium=onsite&amp;utm_campaign=download-north-star-playbook" target="_blank" rel="nofollow">
+            <div class="c-list__info" style="border: 1px solid rgba(0, 0, 0, 0.04); border-radius: 3px;">
+                <div class="c-list__type">
+                ⭐️ The North Star Playbook
+                </div>
+                <div class="c-list__sub">
+                📕 Playbook PDF 다운로드 &gt;&gt;
+                </div>
+                <div class="c-list__body">
+                The North Star Playbook은 북극성 지표를 발견할 수 있도록 더 디테일한 가이드를 제공하고 있다
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
 
-<p>주로 정량적 사용성 조사는 비교하는데 핵심 목표를 둔다. 예를 들어 경쟁사의 웹사이트, 다른 두가지 버전의 디자인, 사용자 그룹의 두 종류(experts vs. novices) 간 비교가 있다. 이 때 정량적 분석에서는 두 가지 변수가 있다.</p>
+<h3 id="북극성-지표는-무엇이며-왜-중요한가">북극성 지표는 무엇이며 왜 중요한가?</h3>
 
-<p><strong>독립 변수(Independent variables)</strong>: 리서처에 의해 직접적으로 조정되는 것<br />
-<strong>종속 변수(Dependent variables)</strong>: 측정되는 것 (그리고 독립 변수의 조정에 따라 결과가 달라질 것으로 예상되는 것)</p>
+<p>북극성 지표는 프로덕트 팀의 성공을 측정하는 지표이다. 북극성 지표는 프로덕트 팀이 풀고자 하는 고객의 문제와 비즈니스가 목표로하는 수익의 관계를 정의한다.</p>
+
+<p><img src="https://images.ctfassets.net/vrkkgjbn4fsk/oUxh6lTfLa28sEKyAUSuo/b233ce2534db23544414c48ff0956cc3/what-is-north-star-metric.png?q=90&amp;w=1168" alt="Relationship between Vision and Revenue" /></p>
+
+<p>따라서 어떤 회사든 세 가지 중요한 목적을 가진다.</p>
+
+<ul>
+  <li>프로덕트 팀이 어떤 것에 최적화 하거나 무엇을 트레이드 오프할 지 <strong>명확하게(clarity)</strong>하고 조직 내에서 <strong>일치(alignment)</strong>시킨다</li>
+  <li>프로덕트 조직의 <strong>임팩트</strong>와 <strong>진행 과정</strong>을 회사의 다른 조직에 전달하여 프로덕트 전략 계획을 가속하고 더 많은 지원을 받을 수 있도록 한다</li>
+  <li>가장 중요한 것은, <strong>프로덕트의 결과에 대해 책임</strong>을 질 수 있다는 것이다</li>
+</ul>
+
+<p>많은 회사에서 프로덕트 팀은 비즈니스에서 얼마나 임팩트를 주고 있냐가 아닌, 그들이 얼마나 결과물을 전달하는지에 따라 평가받는다. 프로덕트에 임팩트 중심적인 문화가 없다면, 당신은 비즈니스의 운명에 영향을 줄 수 없다. 즉 북극성 지표가 없다면, <a rel="nofollow noopener noreferrer" target="_blank" href="https://amplitude.com/blog/2017/10/04/thrive-product-led-era">프로덕트 중심 회사</a>가 될 수 없다는 말이다.</p>
 
 <blockquote>
-  <p>만약 조사가 통계적으로 유의미한 결과를 만든다고 했을 때,<br />
-<code class="highlighter-rouge">독립 변수의 조정</code>이 <code class="highlighter-rouge">종속 변수의 변화</code>를 <code class="highlighter-rouge">야기했다</code>고 할 수 있다.</p>
+  <p>책임 없이는 리더십도 없다</p>
 </blockquote>
 
-<p>자동차 렌트 사이트의 예시로 돌아가보자.</p>
+<p>다음은 프로덕트 전략이나 실행에 책임이 있는 사람이 프로덕트 북극성 지표에 대해 대답해야 할 세 질문이다.</p>
 
-<p>두 렌탈 사이트중 자동차를 렌트하는데 더 나은쪽이 어디인지 알고 싶다면, 사이트를 독립 변수로, 태스크를 수행하는데 걸리는 시간과 정확도를 종속 변수로 둘 수 있다. 이 때 조사의 결과는 종속 변수인 시간과 정확도가 사이트를 다르게 할 때 달라지거나 동일하게 유지되는 것으로 나올 수 있을 것이다(만약 동일하게 유지된다면, 두 사이트 중 더 나은 곳은 없다는 의미)</p>
+<h3 id="질문-1-좋은-북극성-지표의-좋은-예">질문 1: 좋은 북극성 지표의 좋은 예</h3>
 
-<p>이 때 조사를 위한 실험 방법을 선택하는 것은 데이터를 통계적으로 분석하는 방법에 영향을 준다.</p>
-
-<p><img src="https://media.nngroup.com/media/editor/2018/03/15/between-within-watermark.jpg" alt="Within-subjects and Between-subjects Design image" /></p>
-
-<figcaption>독립 집단 설계와 반복 측정 설계 방법에 대한 설명</figcaption>
-
-<p>실험 방법은 독립 집단 설계이면서 반복 측정 설계일 수 있다.<br />
-30살 미만 사용자와 그렇지 않은 참가자 간 비교를 하고 싶을 때, 독립 변수는 두가지가 된다</p>
+<p>북극성 지표는 두 가지 파트로 나뉘어져 있다.</p>
 
 <ol>
-  <li><strong>나이</strong> - 2가지 타입: 30살 미만, 30살 이상</li>
-  <li><strong>사이트</strong> - 2가지 타입: A, B</li>
+  <li>프로덕트의 비전에 대한 정의</li>
+  <li>현재 프로덕트 전략을 측정할 수 있는 주요 지표</li>
 </ol>
 
-<p>예를 들어, 각 연령 그룹에 동일한 숫자의 참가자를 모집하고 각 참가자를 A와 B 사이트 모두에서 자동차 렌탈을 수행한다고 하자.</p>
+<p><img src="https://images.ctfassets.net/vrkkgjbn4fsk/32oOmrJcmkUoQA8goGK2CW/8201f0905344fe35ee353eb8217dfcce/amplitude-b2b-north-star-metric-example-1024x401.png?q=90&amp;w=2336" alt="Amplitude's Product North Star" /></p>
 
-<p>그렇다면 이 조사는 독립 변수 <strong>사이트</strong>에 대해서는 반복 측정 설계이고(각 참가자는 두가지 사이트 모두를 보게 되니까),<br />
-독립 변수 <strong>나이</strong>에 대해서는 독립 집단 설계가 된다(각 참가자는 30살 미만이거나 30살 이상이며, 둘 다일 수 없음).</p>
+<figcaption>Amplitude의 현재 프로덕트 북극성 지표</figcaption>
 
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>30살 미만의 참가자를 30살 이상이될 때 까지 기다렸다가 다시 조사를 한다면 반복 측정 설계가 될 수 있겠지만, 현실적으로 말이 되지 않음
-</code></pre></div></div>
+<p>우리가 끌어내고 싶은 고객 가치는 <code class="highlighter-rouge">"무엇이 행동을 이끌어 내는지 더 쉽게 답변하고, 더 나은 고객 경험을 제공하는 것"</code>이다.</p>
 
-<p>일부 <strong>독립 변수의 종류</strong>는 디자인 방법에 영향을 준다.<br />
-예를 들면 위와 같이 나이, 전문성, 사용자 타입 (business traveler, leisure traveler), 성별 (한 사람이 한 성별만 가지고 있다고 가정하면)과 같은 변수가 그렇다.</p>
+<p>우리는 현재 빠른 성장 단계에 있기 때문에, 우리의 Weekly Quering Users (WQUs) 지표 - 예를 들어 최소 주 1회 이상 데이터를 조회한 고객 수 - 는 ‘넓이(breadth)’를 반영한다. 이 지표는 시간이 지남에 따라 사용자가 다시 방문하게 하고(Retain) 사용자를 확장할 수 있는 선행 지표이다.</p>
 
-<p>사용성 뿐 만 아니라 <strong>약물 실험</strong>과 같은 경우도 독립 집단 설계일 수 밖에 없다. 각 참가자는 두 가지 모든 약에 노출되지 못하고, 한 종류의 약물에만 노출되어야 한다.</p>
+<h4 id="좋은-북극성-지표는-가치와-일치한다-">좋은 북극성 지표는 가치와 일치한다 <!-- omit in toc --></h4>
 
-<p>또 <strong>변수의 조작</strong> 자체가 참가자에게 영향을 줄 수도 있다. 읽기에 더 도움되는 교수법을 확인하고 싶을 때, 한 사용자는 이전의 교수법에서 읽기 능력이 향상되었을 수 있으므로 두 가지 방법을 모두 사용할 수 없다.</p>
+<p>당신의 북극성 지표는 <strong>고객이 인지하는 가치</strong>를 제공하는 행동이 무엇인지에 대한 이해로부터 나와야 한다. 임팩트에 가장 가까워질 수 있도록 해야 한다. 이것은 “일간 활성 사용자 수 (Daily Active USers, DAU)”나 “등록 사용자 수 (Registered Users)”가 좋은 KPI가 아니라는 뜻이다. 만약 이 지표가 프로덕트의 KPI라면 팀에 명확성을 제공할 큰 기회를 날리고 있는 것이다.</p>
 
-<h4 id="독립-집단-설계-vs-반복-측정-설계-어느-것이-더-나을까">독립 집단 설계 vs 반복 측정 설계 어느 것이 더 나을까</h4>
+<p>팀이 고객 가치를 북극성 지표와 연결하지 못한다면, 비즈니스를 잘못된 길로 이끌게될 수 있다.</p>
 
-<p>답은 <del>언제나 그렇듯</del> “때에 따라서 다르다” 이다.</p>
+<hr />
+
+<h4 id="linkedin의-북극성-지표-예시-">LinkedIn의 북극성 지표 예시 <!-- omit in toc --></h4>
+
+<p>LinkedIn의 데이터 사이언티스트는 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.linkedin.com/2012/09/24/introducing-endorsements-give-kudos-with-just-one-click">“추천 (endorsements)” 기능</a>에 대한 그들의 북극성 지표를 개선하는 것이 더 나은 프로덕트 경험을 제공하지 않았다는 <a rel="nofollow noopener noreferrer" target="_blank" href="http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p617.pdf">멋진 케이스 스터디</a>를 공유하였다. 그들의 지표 정의는 추천이 만들어지고/받아들여진 액션 이었고, 채용 담당자는 이러한 지지가 잘못된 정보를 제공하고 있을지 우려해 비즈니스를 실제로 개선하지 못했다.</p>
+
+<p>Reforge 또한 최근 프로덕트 지표를 제대로 설정하지 않았을 경우 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.reforge.com/blog/north-star-metric-growth">일반적으로 발생하는 위험</a>에 대한 훌륭한 아티클을 개제하였다.</p>
+
+<hr />
+
+<h4 id="좋은-북극성-지표는-성공에-대한-선행-지표이다-">좋은 북극성 지표는 성공에 대한 선행 지표이다 <!-- omit in toc --></h4>
+
+<blockquote>
+  <p>프로덕트 북극성 지표는 프로덕트와 고객 가치가 무엇인지에 대해 상세해야 한다</p>
+</blockquote>
+
+<p>이 지표의 중요한 부분은 미래 성공에 대한 선행 지표가 되어야 한다는 것이다. 월간 매출이나 ARPU(사용자 별 평균 매출, Average Revenue Per User)와 같은 후행 지표는 프로덕트 임팩트의 신호를 빠르게 줄 수 없다. 이러한 지표는 미래 수익에 대한 예측을 제공하는 것이 아니라 과거에 발생한 일에 대해 말해줄 뿌니다. 미래에 발생할 수익과 시장 가치가 더 늘어나도록 지표를 가져갈 수 있다면, 임팩트 또한 더 많이 가져갈 수 있다.</p>
+
+<hr />
+
+<h4 id="ecommerce-산업의-북극성-지표-예시-">eCommerce 산업의 북극성 지표 예시 <!-- omit in toc --></h4>
+
+<p>Amplitude의 고객 중 하나인 Fourtune 100 리테일러는 회사의 미래에 모바일 커머스 비즈니스가 전략적으로 우선순위가 높다는 것을 발견해 이를 성장시키려고 하고 있다.</p>
+
+<p>그 팀의 북극성 지표는 아마 <span style="color: #4139EF;"><strong>“모바일 주문이 배송 완료된 수”</strong> </span>일 것이다. 이 지표는 배송이 지불, 물류 문제, 반송 문제 없이 완료 되었다는 것이기 때문에 그들의 모바일 앱에서 주문하는 사람을 포착하고 (현재 전략이 집중하는 바), 좋은 경험을 한 사람(가치를 얻는 고객)을 포착한다.</p>
+
+<hr />
+
+<p>프로덕트의 세계에서, 이것은 종종 “고객의 아하 모먼트”를 찾는 것으로 비유되곤 한다. 고객이 다시 돌아오는(리텐션) 초기 행동을 찾을 수 있다면, 강한 선행 지표가 되는 효과적인 북극성 지표를 가지게 되는 것이다.</p>
+
+<blockquote>
+  <p>북극성 지표는 미래 비즈니스 결과에 대한 선행 지표여야 한다</p>
+</blockquote>
+
+<h4 id="facebook-북극성-지표-예시-">Facebook 북극성 지표 예시 <!-- omit in toc --></h4>
+
+<p>최근 Facebook은 “첫 10일 동안 7명의 친구를 등록한 사용자 수”를 주요 지표로 선정하고 있다는 것이 잘 알려져 있다. 이러한 주요 액션을 어떻게 발견하는지 궁금하다면 <a rel="nofollow noopener noreferrer" target="_blank" href="https://help.amplitude.com/hc/en-us/articles/115001526027-How-to-Use-Compass-to-Find-Your-Company-s-Inflection-Metrics">다음 가이드 👉</a>를 확인해볼 수 있다.</p>
+
+<hr />
+
+<h4 id="b2b의-북극성-지표-예시-">B2B의 북극성 지표 예시 <!-- omit in toc --></h4>
+
+<p>만약 SaaS 회사가 Dropbox나 Hubspot과 같은 셀프 서브 비즈니스 모델을 가지고 있다면, 그들의 지표는 아마 “첫 주에 활성 사용자가 3명인 트라이얼 계정” 일 수 있다. 이 지표는 가치를 발견하고 있는 모든 신규 뮤료 계정을 포착하고, 트라이얼 전환과 구독으로 인한 매출이 발생할 것이라는 프로덕트 팀이 예측하고 활성화 할 수 있는 신호를 제공해준다.</p>
+
+<p>Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley Carroll은 자신의 웨비나에서 더 나은 프로덕트를 만드는데 <span style="color: #4139EF;"><strong>“non-revenue” 프로덕트 북극성 지표</strong></span>의 중요성을 이야기했다.</p>
+
+<p>비슷하게, Instacart와 같이 빠르게 성장하는 회사들은 그들 프로덕트 북극성 지표를 종종 “주 별 첫 주문을 완료하는 사용자”와 같은 <span style="color: #4139EF;"><strong>새로운 사용자 활성화(New user activation)</strong></span> 지표에 집중하기도 한다. 한 번 활성화 된 사용자가 유지된다는 것을 알기 때문에, 회사가 미래 수익에 대한 선행 지표에 집중할 수 있도록 해준다.</p>
+
+<hr />
+
+<h4 id="요약하자면-좋은-북극성-지표는-다음-세-가지-특징을-가진다-">요약하자면, 좋은 북극성 지표는 다음 세 가지 특징을 가진다: <!-- omit in toc --></h4>
+
+<p><img src="https://images.ctfassets.net/vrkkgjbn4fsk/6xuFgiHMhq0sK0cGyKikWe/f88f0774f052ced056cea9494d7a79cc/attributes-good-north-star-metric.png?q=90&amp;w=2336" alt="Three Good North Star Metric Attributes" /></p>
+
+<figcaption>Three Good North Star Metric Attributes</figcaption>
+
+<ol>
+  <li>고객이 당신의 프로덕트에서 가치를 발견하는 순간을 측정한다</li>
+  <li>현재 프로덕트 전략의 핵심을 대변한다</li>
+  <li>회사가 중요하게 여기는 미래 비즈니스 결과물에 대한 선행(후행이 아닌) 지표이다</li>
+</ol>
+
+<h3 id="질문-2-회사에서-북극성-지표는-하나만-가져야-하는가">질문 2: 회사에서 북극성 지표는 하나만 가져야 하는가?</h3>
+
+<p>꼭 그런것은 아니다. “하나의 핵심 지표”라는 생각은 비즈니스 저변에서 커뮤니케이션을 단순화하는데 용이하지만 보통 충분하지 않다. 보통 규모가 큰 회사들은 복잡한 생태계를 가지고 있고 1-3개의 핵심 프로덕트 지표에서 최적의 균형을 찾기 위해 노력한다. 핵심 지표가 하나라면 무엇이 더 중요한지 알 수 없고, 중요한 트레이드 오프를 눈치채지 못할 수 있다.</p>
+
+<p>거기에 더해, 지표는 각 프로덕트 팀의 목표와 지표를 도출하는데도 사용된다. 모든 팀은 프로덕트 조직의 북극성 지표를 발전시키는 그들만의 구체적인 목표를 만들어야 한다.</p>
+
+<blockquote>
+  <p>북극성 없는 KPI들은 그냥 지표 수프가 되기 마련이다</p>
+</blockquote>
+
+<p>예를 들어, Amplitude에서 우리의 프로덕트 북극성 지표는 주 별 Amplitude에서 한 번 이상 쿼리를 치는 사용자의 수이다. 우리는 이것을 주별 쿼리하는 사용자(Weekly Querying Users, WQUs) 라고 부른다. 거기에 더해, 우리는 이전에 백엔드 엔지니어링 팀이 가지고 있던 인프라의 퍼포먼스에 대한 지표도 가지고 있다.</p>
+
+<p>모든 북극성 지표는 <span style="color: #4139EF;"><strong>4가지 차원</strong></span> -  <span style="color: #4139EF;"><strong>폭, 깊이, 빈도, 효율성</strong></span> - 으로 쪼갤 수 있다. Amplitude의 핵심 지표는, 이 중 세 가지 차원을 높은 우선순위를 부여해 프로덕트 팀이 발전하는 데 쓰고 있다.</p>
+
+<p>아래는 식료품 주문과 배달 앱에 대한 북극성 지표 트리 예시이다. 트리는 12개의 프로덕트 개선 계획을 북극성 지표의 각의 차원을 발전시킬 수 있는 하나의 프레임워크로 묶은 것이다.</p>
+
+<p><img src="https://images.ctfassets.net/vrkkgjbn4fsk/1mEKe0EY6QIWICyokeiu2g/a4328e19435979a92118585463160bcd/north-star-metric-tree.png?q=90&amp;w=2336" alt="Example of 4 North Star Metric Dimensions for Grocery Delivery App" /></p>
+
+<figcaption>Example of 4 North Star Metric Dimensions for Grocery Delivery App</figcaption>
+
+<h3 id="질문-3-좋은-북극성-지표를-선택하는-방법">질문 3: 좋은 북극성 지표를 선택하는 방법</h3>
+
+<p>이 아티클이 그 방법을 배우기에 딱 알맞은 곳입니다! 조직과 프로덕트 분야에 적합한 북극성 지표를 선택하는 데 가장 중요한 것은 당신이 어떤 게임을 하고 있는지 아는 것이다.이 게임은 핵심 고객 관여 모델에 대한 것이다. 11,000개가 넘는 회사와 3조가 넘는 사용자 액션을 분석한 결과, 모든 디지털 제품은 다음 세 종류 중 하나에 대한 게임을 하고 있다는 것을 알게 되었다.</p>
+
+<ol>
+  <li><span style="color: #4139EF;"><strong>관심 게임(Attention)</strong></span> : 프로덕트가 사용자의 시간을 얼마나 가져갈 수 있는가</li>
+  <li><span style="color: #4139EF;"><strong>트랜잭션 게임(Transaction)</strong></span> : 플랫폼 안에서 사용자가 상업적 트랜잭션을 얼마나 만드는가</li>
+  <li><span style="color: #4139EF;"><strong>생산성 게임(Productivity)</strong></span> : 프로덕트 내에서 사용자가 얼마나 고가치 디지털 업무를 수행할 수 있는가</li>
+</ol>
+
+<p><img src="https://images.ctfassets.net/vrkkgjbn4fsk/46J74JVEBqSgEkQ0SeGKO0/baaf247a501c6a1cf74e1becd82cb92e/product-engagement-game.png?q=90&amp;w=2336" alt="The 3 Games in Product" /></p>
+
+<figcaption>The 3 Games in Product</figcaption>
+
+<p><img src="https://images.ctfassets.net/vrkkgjbn4fsk/58AQcYMZfimWsQmK8QMyAe/c8740feb5c15f050c6e0623e725f6106/examples-hypothetical-north-star-metric.png?q=90&amp;w=2336" alt="Hypothetical North Star Example for each Game" /></p>
+
+<figcaption>Hypothetical North Star Example for each Game</figcaption>
+
+<p><strong>Facebook</strong>과 <strong>Netflix</strong>는 둘 다 관심 게임을 하고 있지만, 비즈니스 모델은 근본에서 부터 다르다. Facebook의 수익은 광고 수익을 창출하기 위한 피드 관여도와 비례한다.</p>
+
+<p>반면 Netflix는 구독 모델을 가지고 있고 콘텐츠의 양이 정해져 있다(점점 많아지고 있지만). 이는 그들의 북극성 지표는 콘텐츠를 시청하는 시간이 아니라 구독자들의 수를 극대화 하는데 있어야 한다는 것을 의미한다.</p>
+
+<p>유사하게 <strong>Amazon Retail</strong>과 <strong>Walmart</strong>는 동일한 트랜잭션 게임을 수행하지만 다른 북극성 지표를 가질 수 있다. Amazon은 그들의 구독 모델이 충성도와 LTV에 대한 가시성을 제공하기 때문에 아마존 프라임 구독자들의 수와 그들이 만들어 내는 가치를 최적화 하는데 있을 것이다. Walmart는 반대로 비용 우위를 가지기 때문에 고객이 방문할 때 마다 고객의 지갑 점유율에 집중할 것이다.</p>
+
+<p><strong>Salesforce</strong>는 B2B 회사들에게 고객 정보에 대한 Source of Truth 중심지 역할을 하고자 한다. 그들의 새로운 전략은 세일즈 시 의사결정을 위한 AI 와 관련되어 있다. 이것은 그들의 북극성 지표는 사용자 확보 보다는 그들 계정에 고객 데이터가 얼마나 저장되는가에 더 집중하고 있다는 것을 의미한다. 이런 모델과는 다르게, <strong>Adobe Creative Cloud</strong>는 개별 구독자와 그들이 구독을 유지하도록 충분한 인게이지먼트를 제공하는 것에 집중할 것이다.</p>
+
+<h3 id="프로덕트-전략-운영에-북극성-지표를-사용하는-방법">프로덕트 전략 운영에 북극성 지표를 사용하는 방법</h3>
+
+<p>프로덕트 전략을 수행하는데 북극성 지표 프레임워크를 사용하는 것은 임팩트 중심 조직에게 필수적인 투자이다. 또 이것은 프로덕트 주도형 기업으로 가는 길이다.</p>
+
+<p><img src="https://images.ctfassets.net/vrkkgjbn4fsk/3hNgILdWYE2cYOkoEgI4My/22b0d5da4ac88610f3d8eff8450516d7/product-initiatives-north-star-metric-revenue.png?q=90&amp;w=2336" alt="Product-led Company using the North Star Metric" /></p>
+
+<figcaption>Product-led Company using the North Star Metric</figcaption>
+
+<p>이 시리즈에서 이후 이어지는 아티클들은 다음 질문들에 대한 답을 찾아볼 것이다.</p>
 
 <ul>
-  <li><strong>독립 집단 설계는 학습 효과와 조건 간 방해 효과를 최소화 할 수 있다</strong><br />
-  한 사이트에서 자동차를 빌려 본 참가자는 자동차 렌탈 과정에 대해 더 잘 알게될 것이다. 이러한 지식은 두 번째 사이트에서 더 효율적으로 태스크를 수행할 수 있도록 할 것이다.</li>
-  <li><strong>독립 집단 설계는 반복 측정 설계보다 더 짧은 세션 시간이 소요된다</strong><br />
-  두 번 측정하는 것 보다 짧은 시간이 소요되는 것이 덜 지치고 덜 지루할 것이다. 또 원격 조사나 연구자가 함께하지 않는 조사에서 더 유용할 수 있다.</li>
-  <li><strong>독립 집단 설계는 더 많은 독립 변수가 있을 때 더 설계하기 쉽다</strong><br />
-  설계 순서에 따른 노이즈를 최소화 하기 위해 랜덤화를 사용해야 한다. 모든 사용자에게 사이트 A 다음 사이트 B를 수행하도록 하지 않아야 할 것이다. 두 개 사이트에 대한 실험은 설계하기 쉽지만, 독립 변수가 많거나 한 변수의 레벨이 다양해지는 경우 현존하는 정량적 조사 플랫폼에서 랜덤화를 도입하기 어려울 것이다.</li>
-  <li><strong>반복 측정 설계는 더 적은 참가자로 더 저렴하게 수행할 수 있다</strong><br />
-  정량적 조사 방법에서는 보통 각 조건 별로 30개 이상의 데이터 포인트를 가져야 통계적 유의성을 확보할 수 있다. 독립 집단 설계에서는 두 사이트 모두에서 30명의 참가자가 필요하지만, 반복 측정 설계에서는 두 사이트를 합쳐 30명의 참가자만 있으면 된다. 두 배나 저렴하다</li>
-  <li><strong>반복 측정 설계는 랜덤 노이즈를 최소화 한다</strong><br />
-  💎이것은 반복 측정 설계의 가장 큰 장점이다.<br />
-  모든 참가자들은 각자 자신의 백그라운드, 컨텍스트, 상황을 가지고 있을 것이다. 동일한 참가자가 변수의 모든 레벨과 상호작용 하면, 전체에 대해 모두 동일하게 영향을 주고받게될 것이다.<br />
-  독립 집단 설계일 경우 만약 행복한 사람과 피곤한 사람이 실험에 참여했을 경우 결과가 원하는대로 나오지 않을 수 있다. 독립 집단 설계에서 각 집단 참가자들을 다른 집단 참가자들과 성향, 백그라운드, 컨텍스트, 상황을 일치시키는게 좋지만, 이 모든것을 예측해서 참가자를 구하기란 불가능하다.</li>
+  <li>북극성 지표를 도입하려면 어떤 <strong>인프라와 문화</strong>가 필요한가?</li>
+  <li><strong>프로덕트 생애 주기</strong>에 북극성 지표를 어떻게 최적화 하는가?</li>
+  <li>북극성 지표 트리를 <strong>고객 여정</strong>에 어떻게 매핑할 것인가?</li>
+  <li>PM, 엔지니어링, 디자인과 같은 다른 프로덕트 조직에 위해 신뢰도와 <strong>오너십</strong>을 어떻게 제공하는가?</li>
 </ul>
 
-<h4 id="랜덤화는-두-방법-모두에서-필요">랜덤화는 두 방법 모두에서 필요</h4>
-
-<p>반복 측정 설계에서 랜덤화가 필요한 이유는 실험의 순서에서 오는 학습 효과와 조건 간 전이 효과를 반감시키기 위한 것이다.</p>
-
-<p>독립 집단 설계에서 랜덤화는, 참가자가 각 조건에 랜덤하게 배정되어야 한다는 의미이다. 리서처가 좋아하는 사람들을 사이트 A에 배정하고 그 결과가 B보다 좋았다고 하면 안된다는 것이다.</p>
-
-<h4 id="결론">결론</h4>
-
-<p>사용자 조사는 독립 집단 설계일 수 도 있고, 반복 측정 설계일 수도 있다. 둘 다 일 수도 있고. 각각의 조사 방법은 장단점이 있으니 이를 잘 고려해 방법을 선택해야 할 것이다.</p>
-
-<p>요약하자면, 다음과 같다</p>
-
-<blockquote>
-  <ul>
-    <li>반복 측정 설계
-      <ul>
-        <li>더 적은 참가자</li>
-        <li>더 싼 실험 가격</li>
-        <li>조건 간 진짜 차이를 알 수 있음</li>
-      </ul>
-    </li>
-    <li>독립 집단 설계
-      <ul>
-        <li>조건 간 학습 효과의 최소화</li>
-        <li>더 짧은 세션 시간</li>
-        <li>더 쉬운 설계와 더 쉬운 분석</li>
-      </ul>
-    </li>
-  </ul>
-</blockquote>
-
-<p>덧, 이 아티클의 내용을 읽으니 <a rel="nofollow noopener noreferrer" target="_blank" href="https://coupa.ng/bICmrN">📕 원인과 결과의 경제학</a> 책이 연상되었다 👇</p>
-
-<blockquote>
-  <p>이 아티클과 원인과 결과의 경제학은 독립 변수를 조정하여 실험한 결과에서 종속 변수가 변화 했을 때, 독립 변수가 정말로 종속 변수의 변화를 야기 했는지 통계적 유의미성을 확보하기 위한 방법에 대해 말하고 있는 점이 유사했다. 이 아티클에서는 조사 방법론 측면에서 두 방법과 각 방법의 유의점을 소개했고, 원인과 결과의 경제학에서는 통계적으로 유의미성을 증명할 수 있는 방법에 대한 소개가 담겨있다.<br />
-<br />
-이상적으로는 반복 측정 설계 + 랜덤화를 사용하는 것이겠지만, 독립 변수의 개수가 많아진다거나, 조사 설계와 분석 방법에서 걸림돌이 있을 수 있겠다. 통계학에 대한 궁금증이 늘어간다.</p>
-</blockquote>
-
-<p><br /></p>
-<figcaption>책 링크를 통해 구매하시면 저에게 일정액의 수수료가 제공될 수 있습니다.</figcaption>
+<p>만약 사용자의 행동을 어떻게 분석하고 북극성 지표를 수행하는 방법을 더 배우고 싶다면 이를 시작하기 위한 <a rel="nofollow noopener noreferrer" target="_blank" href="https://amplitude.com/understand-user-behavior">리소스들</a>도 있습니다!</p>
 
 
         </div>
@@ -436,17 +518,11 @@
             <a href='#'>아티클 요약</a>
             <!--<a href='/tag/아티클 요약'>아티클 요약</a>-->
           
-            <a href='#'>UX</a>
-            <!--<a href='/tag/UX'>UX</a>-->
+            <a href='#'>North Star Metric</a>
+            <!--<a href='/tag/North Star Metric'>North Star Metric</a>-->
           
-            <a href='#'>Design</a>
-            <!--<a href='/tag/Design'>Design</a>-->
-          
-            <a href='#'>Research</a>
-            <!--<a href='/tag/Research'>Research</a>-->
-          
-            <a href='#'>Analytics</a>
-            <!--<a href='/tag/Analytics'>Analytics</a>-->
+            <a href='#'>북극성 지표</a>
+            <!--<a href='/tag/북극성 지표'>북극성 지표</a>-->
           
         </div>
         
@@ -476,7 +552,7 @@
   <div id='disqus_thread'></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'http://localhost:4000/blog/article_summary-1/';
+      this.page.url = 'http://localhost:4000/blog/article_summary-4/';
     };
 
     (function() {
