@@ -1,4 +1,4 @@
-I"r<div class="o-grid">
+I"|<div class="o-grid">
   <div class="o-grid__col o-grid__col--full">
       <hr style="visibility:hidden" />
       <h1 class="c-page__title">Hi, I’m Seunghwan</h1>
@@ -9,7 +9,7 @@
         <ul class="c-table">
     
         <li class="c-table__tbody">
-        <p class="company"><img src="https://www.google.com/s2/favicons?sz=24&amp;domain=https://www.ab180.co/" class="c-page__favicon" />AB180</p>
+        <p class="company"><img src="https://favicons.githubusercontent.com/www.ab180.co" class="c-page__favicon" />AB180</p>
         <div class="brief">
         <p class="c-page__role">UX Designer</p>
             <p class="c-page__keyword c-content"><a href="https://airbridge.io/" target="_blank" rel="nofollow">Airbridge</a>, B2B Dashboard</p>
@@ -19,7 +19,7 @@
     
     
     <li class="c-table__tbody">
-    <p class="company"><img src="https://www.iacryl.com/favicon_acryl.ico" class="c-page__favicon" />Acryl</p>
+    <p class="company"><img src="https://favicons.githubusercontent.com/www.iacryl.com" class="c-page__favicon" />Acryl</p>
     <div class="brief">
     <p class="c-page__role">UX &amp; Service Design Lead</p>
         <p class="c-page__keyword">인공지능 UX, B2B Dashboard, B2C App, 서비스 기획, UX 디자인</p>
@@ -29,7 +29,7 @@
     
     
     <li class="c-table__tbody">
-    <p class="company"><img src="https://www.sap.com/favicon.ico" class="c-page__favicon" />SAP DCC</p>
+    <p class="company"><img src="https://favicons.githubusercontent.com/www.sap.com" class="c-page__favicon" />SAP DCC</p>
     <div class="brief">
     <p class="c-page__role">UX Design Intern</p>
         <p class="c-page__keyword">B2B Dashboard PoC, Design Thinking Facilitation</p>
