@@ -3,15 +3,15 @@ layout: post
 type: "Design"
 title:  "모든 프로덕트는 북극성 지표가 필요하다. 우리 북극성 지표는 어떻게 찾을까?"
 subtitle: "번역 및 요약 👉 Every Product Needs a North Star Metric: Here’s How to Find Yours"
-tags: [아티클 요약, North Star Metric, 북극성 지표]
-date: 2020-10-18 14:40:45
+tags: [아티클 요약, North Star Metric, 북극성 지표, KPI]
+date: 2020-10-30 12:20:45
 blog: true
 post-header: false
 order: 6
 ---
 
 <p class="text-gray">
-🔗이 글은 Sandhya Hegde가 <a href='https://amplitude.com/blog/' target='blank' rel='nofollow'><img src='https://amplitude.com/favicon.svg' style='display:inline; height: 1em; position: relative; bottom: -2px;'> Amplitude Blog</a>에 올린 <a href='https://abit.ly/article_25' target='blank' rel='nofollow'>아티클</a>을 번역, 요약한 글입니다.
+🔗 이 글은 Sandhya Hegde가 <a href='https://amplitude.com/blog/' target='blank' rel='nofollow'><img src='https://amplitude.com/favicon.svg' style='display:inline; height: 1em; position: relative; bottom: -2px;'> Amplitude Blog</a>에 올린 <a href='https://abit.ly/article_25' target='blank' rel='nofollow'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 ### ⚡️요약
@@ -20,7 +20,7 @@ order: 6
 - 북극성 지표는 회사 내 조직들의 목표와 전략을 하나로 일치시키는 역할을 한다  
 - 북극성 지표는 고객의 가치를 대변하는 `프로덕트의 비전` 과 고객의 가치를 측정할 수 있는 `프로덕트 전략에 대한 선행 지표` 로 나뉜다  
 - 북극성 지표는 트리로 만들 수 있는데,  
-  1. 북극성 지표를 `폭, 깊이, 빈도, 효율성` 4가지 차원으로 구성하고  
+  1. 북극성 지표를 `넓이, 깊이, 빈도, 효율성` 4가지 차원으로 구성하고  
   2. 각각의 차원을 개선할 수 있는 KPI를 설정하고  
   3. 각 KPI를 만족할 수 있는 전략을 구성하여 만들 수 있다  
 - 또 각 회사는 `Attention`, `Transaction`, `Productivity` 게임 중 하나에서 플레이하는데, 각 게임 종류와 프로덕트의 비즈니스 구조에 따라 가져야 할 북극성 지표를 어느정도 방향을 잡을 수 있다
@@ -42,7 +42,7 @@ order: 6
 <div class="c-list">
     <div class="c-list__item">
         <a href="https://amplitude.com/north-star?utm_source=blog&utm_medium=onsite&utm_campaign=download-north-star-playbook" target="_blank" rel="nofollow">
-            <div class="c-list__info" style="border: 1px solid rgba(0, 0, 0, 0.04); border-radius: 3px;">
+            <div class="c-list__info" style="border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 3px;">
                 <div class="c-list__type">
                 ⭐️ The North Star Playbook
                 </div>
@@ -100,7 +100,7 @@ order: 6
 
 #### LinkedIn의 북극성 지표 예시 <!-- omit in toc -->  
 
-LinkedIn의 데이터 사이언티스트는 ["추천 (endorsements)" 기능](https://blog.linkedin.com/2012/09/24/introducing-endorsements-give-kudos-with-just-one-click)에 대한 그들의 북극성 지표를 개선하는 것이 더 나은 프로덕트 경험을 제공하지 않았다는 [멋진 케이스 스터디](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p617.pdf)를 공유하였다. 그들의 지표 정의는 추천이 만들어지고/받아들여진 액션 이었고, 채용 담당자는 이러한 지지가 잘못된 정보를 제공하고 있을지 우려해 비즈니스를 실제로 개선하지 못했다.
+LinkedIn의 데이터 사이언티스트는 ["추천 (endorsements)" 기능](https://blog.linkedin.com/2012/09/24/introducing-endorsements-give-kudos-with-just-one-click)에 대한 그들의 북극성 지표를 개선하는 것이 더 나은 프로덕트 경험을 제공하지 **않았다는** [멋진 케이스 스터디](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p617.pdf)를 공유하였다. 그들의 지표 정의는 추천이 만들어지고/받아들여진 액션에 관한 것 이었고, 채용 담당자는 이러한 지지가 잘못된 정보를 제공하고 있을지 우려한다는 고객이 인지하는 가치를 대변하지 못해 LinkedIn의 비즈니스를 실제로 개선하지 못했다.
 
 Reforge 또한 최근 프로덕트 지표를 제대로 설정하지 않았을 경우 [일반적으로 발생하는 위험](https://www.reforge.com/blog/north-star-metric-growth)에 대한 훌륭한 아티클을 개제하였다.
 
@@ -110,7 +110,7 @@ Reforge 또한 최근 프로덕트 지표를 제대로 설정하지 않았을 �
 
 > 프로덕트 북극성 지표는 프로덕트와 고객 가치가 무엇인지에 대해 상세해야 한다
 
-이 지표의 중요한 부분은 미래 성공에 대한 선행 지표가 되어야 한다는 것이다. 월간 매출이나 ARPU(사용자 별 평균 매출, Average Revenue Per User)와 같은 후행 지표는 프로덕트 임팩트의 신호를 빠르게 줄 수 없다. 이러한 지표는 미래 수익에 대한 예측을 제공하는 것이 아니라 과거에 발생한 일에 대해 말해줄 뿌니다. 미래에 발생할 수익과 시장 가치가 더 늘어나도록 지표를 가져갈 수 있다면, 임팩트 또한 더 많이 가져갈 수 있다.
+이 지표의 중요한 부분은 미래 성공에 대한 선행 지표가 되어야 한다는 것이다. 월간 매출이나 ARPU(사용자 별 평균 매출, Average Revenue Per User)와 같은 후행 지표는 프로덕트 임팩트의 신호를 빠르게 줄 수 없다. 이러한 지표는 미래 수익에 대한 예측을 제공하는 것이 아니라 과거에 발생한 일에 대해 말해줄 뿐이다. 미래에 발생할 수익과 시장 가치가 더 늘어나도록 지표를 가져갈 수 있다면, 임팩트 또한 더 많이 가져갈 수 있다.
 
 ---
 
@@ -134,7 +134,7 @@ Amplitude의 고객 중 하나인 Fourtune 100 리테일러는 회사의 미래�
 
 #### B2B의 북극성 지표 예시 <!-- omit in toc -->  
 
-만약 SaaS 회사가 Dropbox나 Hubspot과 같은 셀프 서브 비즈니스 모델을 가지고 있다면, 그들의 지표는 아마 "첫 주에 활성 사용자가 3명인 트라이얼 계정" 일 수 있다. 이 지표는 가치를 발견하고 있는 모든 신규 뮤료 계정을 포착하고, 트라이얼 전환과 구독으로 인한 매출이 발생할 것이라는 프로덕트 팀이 예측하고 활성화 할 수 있는 신호를 제공해준다.
+만약 SaaS 회사가 Dropbox나 Hubspot과 같은 셀프 서브 비즈니스 모델을 가지고 있다면, 그들의 지표는 아마 "첫 주에 활성 사용자가 3명인 트라이얼 계정" 일 수 있다. 이 지표는 가치를 발견하고 있는 모든 신규 무료 계정을 포착하고, 트라이얼 전환과 구독으로 인한 매출이 발생할 것이라는 프로덕트 팀이 예측하고 활성화 할 수 있는 신호를 제공해준다.
 
 Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley Carroll은 자신의 웨비나에서 더 나은 프로덕트를 만드는데 <span style="color: #4139EF;">**"non-revenue" 프로덕트 북극성 지표**</span>의 중요성을 이야기했다.
 
@@ -158,11 +158,11 @@ Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley 
 
 거기에 더해, 지표는 각 프로덕트 팀의 목표와 지표를 도출하는데도 사용된다. 모든 팀은 프로덕트 조직의 북극성 지표를 발전시키는 그들만의 구체적인 목표를 만들어야 한다.
 
-> 북극성 없는 KPI들은 그냥 지표 수프가 되기 마련이다
+> 북극성 없는 KPI들은 그냥 지표 국밥이 되기 마련이다
 
 예를 들어, Amplitude에서 우리의 프로덕트 북극성 지표는 주 별 Amplitude에서 한 번 이상 쿼리를 치는 사용자의 수이다. 우리는 이것을 주별 쿼리하는 사용자(Weekly Querying Users, WQUs) 라고 부른다. 거기에 더해, 우리는 이전에 백엔드 엔지니어링 팀이 가지고 있던 인프라의 퍼포먼스에 대한 지표도 가지고 있다.
 
-모든 북극성 지표는 <span style="color: #4139EF;">**4가지 차원**</span> -  <span style="color: #4139EF;">**폭, 깊이, 빈도, 효율성**</span> - 으로 쪼갤 수 있다. Amplitude의 핵심 지표는, 이 중 세 가지 차원을 높은 우선순위를 부여해 프로덕트 팀이 발전하는 데 쓰고 있다.
+모든 북극성 지표는 <span style="color: #4139EF;">**4가지 차원**</span> -  <span style="color: #4139EF;">**넓이, 깊이, 빈도, 효율성**</span> - 으로 쪼갤 수 있다. Amplitude의 핵심 지표는, 이 중 세 가지 차원을 높은 우선순위를 부여해 프로덕트 팀이 발전하는 데 쓰고 있다.
 
 아래는 식료품 주문과 배달 앱에 대한 북극성 지표 트리 예시이다. 트리는 12개의 프로덕트 개선 계획을 북극성 지표의 각의 차원을 발전시킬 수 있는 하나의 프레임워크로 묶은 것이다.
 
