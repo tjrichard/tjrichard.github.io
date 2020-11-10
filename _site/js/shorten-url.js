@@ -1,5 +1,5 @@
 function UrlShorten() {
-    var suffixUrl = "http://tinyurl.com/api-create.php?url=";
+    var suffixUrl = "https://tinyurl.com/api-create.php?url=";
     var longUrl = document.getElementById('long_url').value;
     var requestUrl = suffixUrl + longUrl;
     fetch(requestUrl)

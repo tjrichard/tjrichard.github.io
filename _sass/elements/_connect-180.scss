@@ -5,6 +5,7 @@
 form {
     display: flex;
     margin-bottom: $base-spacing-unit;
+    width: 100%;
 }
 
 #long_url {
@@ -19,7 +20,8 @@ form {
     color: $color-white;
     border-radius: 3px;
     border: none;
-    transition: $global-transition;
+    min-width: 69px;
+    margin-left:2px;
 }
 
 
