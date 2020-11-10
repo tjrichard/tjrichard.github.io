@@ -7,7 +7,7 @@ layout: default
         var input = document.getElementById("long_url").focus();
     };
 </script>
-<!-- 'http://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
+<!-- 'https://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
 <div class="o-grid">
     <div class="o-grid__col o-grid__col--2-4-l">
         <form autocomplete="off">
