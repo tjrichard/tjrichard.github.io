@@ -2,6 +2,27 @@
   Elements > connect-180
 \*------------------------------------*/
 
+form {
+    display: flex;
+    margin-bottom: $base-spacing-unit;
+}
+
+#long_url {
+    margin-right: $base-spacing-unit;
+    height: 29px;
+    padding: 8px;
+}
+
+#submit {
+    font-size: 13px;
+    background-color: $color-brand;
+    color: $color-white;
+    border-radius: 3px;
+    border: none;
+    transition: $global-transition;
+}
+
+
 #___gcse_0 {
     width: 100%;
 
@@ -20,6 +41,15 @@
     td {
         line-height: 14px;
     }
+}
+
+.gsc-control-cse {
+    margin-bottom: $base-spacing-unit;
+    padding: 0px !important;
+}
+
+.gsc-search-box-tools {
+    margin: 0px !important;
 }
 
 .gsc-results-wrapper-nooverlay {
