@@ -7,12 +7,12 @@
   max-width: 740px;
 
   &__title {
-    font-size: double($font-size-medium);
+    font-size: double($font-size-header);
     margin-bottom: half($base-spacing-unit);
     font-weight: $font-weight-heavy;
 
     @include mq($from: tablet) {
-      font-size: double($font-size-base);
+      font-size: double($font-size-header);
     }
     
     a {
@@ -27,13 +27,13 @@
   }
 
   &__subtitle {
-    font-size: $font-size-medium;
+    font-size: $font-size-header;
     margin-bottom: double($base-spacing-unit);
     color: $color-gray;
     font-weight: $font-weight-regular;
 
     @include mq($from: tablet) {
-      font-size: $font-size-base;
+      font-size: $font-size-header;
     }
   }
 
@@ -52,6 +52,7 @@
   }
 
   &__keyword {
+    font-size: $font-size-base;
     color: $color-gray;
 
     a {

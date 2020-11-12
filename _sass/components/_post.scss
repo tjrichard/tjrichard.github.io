@@ -24,7 +24,7 @@
   }
 
   &__title {
-    font-size: double($font-size-medium);
+    font-size: double($font-size-base);
     margin-bottom: half($base-spacing-unit);
     font-weight: $font-weight-bold;
 
@@ -47,9 +47,9 @@
   &__date {
     position: relative;
     display: block;
-    font-size: $font-size-small;
+    font-size: $font-size-medium;
     font-weight: $font-weight-bold;
-    line-height: $line-height-small;
+    line-height: $line-height-medium;
     color: $color-gray;
 
     &:after {
