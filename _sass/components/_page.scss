@@ -39,15 +39,15 @@
 
   &__type {
     color: $color-key;
-    font-size: $font-size-header;
+    font-size: double($font-size-small);
     font-weight: $font-weight-bold;
     padding: 10px 0;
-    border-bottom: 1px solid $color-brand;
+    // border-bottom: 1px solid $color-brand;
     margin-bottom: half($base-spacing-unit);
   }
 
   &__role {
-    font-size: $font-size-base;
+    font-size: $font-size-header;
     font-weight: $font-weight-bold;
   }
 
@@ -73,9 +73,9 @@
     padding: quarter($base-spacing-unit) $base-spacing-unit;
     margin: 0 half($base-spacing-unit) ($base-spacing-unit) 0 !important;
 
-    font-size: $font-size-small;
+    font-size: $font-size-medium;
     font-family: $font-base;
-    line-height: $line-height-medium;
+    line-height: $line-height-base;
 
     background-color: $bg-color-gray;
     transition: $global-transition;
