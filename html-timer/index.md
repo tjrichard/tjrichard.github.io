@@ -35,13 +35,14 @@ function setTenMinutes() {
 };
 </script>
 
-<body style="font-family:'Noto Sans KR' background-color: #ececec;">
-    <div style="margin-bottom: 4px; font-size: 24px;">종료까지 <span id="time">00:00</span> 남았습니다.</div>
-  <div>
-    <div style="display:inline-flex; ">
-        <button class="startTwoMinutes" style="font-size: 16px; min-width:4em; height: 2em; border-radius:3px; border:1px solid rgba(0, 0, 0, 0.06); color:#575a5e; box-shadow: rgba(67, 90, 111, 0.03) 0px 0px 1px, rgba(67, 90, 111, 0.2) 0px 2px 2px -2px;" onclick="startTwoMinutes()">2 min</button>
-        <button class="startFiveMinutes" style="font-size: 16px; margin-left: 8px; min-width:4em; height: 2em; border-radius:3px; border:1px solid rgba(0, 0, 0, 0.06); color:#575a5e; box-shadow: rgba(67, 90, 111, 0.03) 0px 0px 1px, rgba(67, 90, 111, 0.2) 0px 2px 2px -2px;" onclick="setFiveMinutes()">5 min</button>
-        <button class="startTenMinutes" style="font-size: 16px; margin-left: 8px; min-width:4em; height: 2em; border-radius:3px; border:1px solid rgba(0, 0, 0, 0.06); color:#575a5e; box-shadow: rgba(67, 90, 111, 0.03) 0px 0px 1px, rgba(67, 90, 111, 0.2) 0px 2px 2px -2px;" onclick="setTenMinutes()">10 min</button>
+<div style="background-color: #ececec;">
+    <div style="margin-bottom: 4px; font-size: 24px;">종료까지 <span id="time">00:00</span> 남았습니다.
+    </div>
+    <div>
+        <div style="display:inline-flex; ">
+            <button class="startTwoMinutes" style="font-size: 16px; min-width:4em; height: 2em; border-radius:3px; border:1px solid rgba(0, 0, 0, 0.06); color:#575a5e; box-shadow: rgba(67, 90, 111, 0.03) 0px 0px 1px, rgba(67, 90, 111, 0.2) 0px 2px 2px -2px;" onclick="startTwoMinutes()">2 min</button>
+            <button class="startFiveMinutes" style="font-size: 16px; margin-left: 8px; min-width:4em; height: 2em; border-radius:3px; border:1px solid rgba(0, 0, 0, 0.06); color:#575a5e; box-shadow: rgba(67, 90, 111, 0.03) 0px 0px 1px, rgba(67, 90, 111, 0.2) 0px 2px 2px -2px;" onclick="setFiveMinutes()">5 min</button>
+            <button class="startTenMinutes" style="font-size: 16px; margin-left: 8px; min-width:4em; height: 2em; border-radius:3px; border:1px solid rgba(0, 0, 0, 0.06); color:#575a5e; box-shadow: rgba(67, 90, 111, 0.03) 0px 0px 1px, rgba(67, 90, 111, 0.2) 0px 2px 2px -2px;" onclick="setTenMinutes()">10 min</button>
+        </div>
     </div>
 </div>
-</body>
