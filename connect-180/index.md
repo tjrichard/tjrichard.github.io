@@ -10,15 +10,22 @@ layout: default
         document.getElementsbyClassName("c-header").style.display = "none";
     }
 
-    function tabChange(tabName) {
+    function tabChange(event, tabName) {
         var i;
         var x = document.getElementsByClassName("tabContent");
         for (i = 0; i < x.length; i++) {
             x[i].style.display = "none";
         }
         document.getElementById(tabName).style.display = "block";
+        event.currentTarget.calssName += "active";
+
+        // Get all elements with class="tablinks" and remove the class "active"
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
     }
-}
+    
 </script>
 <!-- 'https://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
 <div class="o-grid">
@@ -27,29 +34,29 @@ layout: default
         <input type="button" id="submit" value="Shorten" onclick="UrlShorten()">
     </form>
 </div>
+<div class="o-grid">
+    <script async src="https://cse.google.com/cse.js?cx=d423c88702dea9eb7"></script>
+    <div class="gcse-search"></div>
+</div>
 <header class="c-header">
     <div class="o-grid">
-        <div class="o-grid__col o-grid__col--full" style="">
-            <div class="c-header__inner" style="">
-                <ul class="c-nav c-nav-list" style="">
+        <div class="o-grid__col o-grid__col--full">
+            <div class="c-header__inner">
+                <ul class="c-nav c-nav-list">
                     <li role="presentation">
-                        <button class="tablinks c-nav__link active" onclick="tabChange('surfit')">Surfit</button>
+                        <div class="tablinks c-nav__link normal" onclick="tabChange(event, 'surfit')">Surfit</div>
                     </li>
                     <li role="presentation">
-                        <button class="tablinks c-nav__link normal" onclick="tabChange('rabbit')">Rabbit</button>
+                        <div class="tablinks c-nav__link normal" onclick="tabChange(event, 'rabbit')">Rabbit</div>
                     </li>
                 </ul> 
             </div>
         </div>
     </div>
 </header>
-<div class="o-grid">
-    <script async src="https://cse.google.com/cse.js?cx=d423c88702dea9eb7"></script>
-    <div class="gcse-search"></div>
-</div>
-<div id="surfit" class="tabContent" style="display: block">
+<div id="surfit" class="tabContent">
     <iframe src="https://surfit.io/" class="surit-io"></iframe>
 </div>
-<div id="rabbit" class="tabContent" style="display: none">
+<div id="rabbit" class="tabContent">
     <iframe src="https://rabbit.so/" class="surit-io"></iframe>
 </div>
