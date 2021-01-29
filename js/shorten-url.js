@@ -25,6 +25,25 @@ function UrlShorten() {
             document.getElementById('submit').setAttribute("onclick", "CopyUrlToClipboard()");
         })
     }
+    
+    /* 구한 Scheme이 figma일 경우 figma 딥링크 url로 변경하여 요청합니다 */
+    else if (scheme = "figma") {
+        var figmaUrl = longUrl;
+        figmaUrl = figmaUrl.split("/file/")[3]
+        var requestUrl = suffixUrl + "figma://file/" + figmaUrl;
+
+        fetch(requestUrl)
+        .then((response) => {
+            return response.text();
+        })
+        .then((myJson) => {
+            console.log(myJson);
+            document.getElementById('long_url').value = myJson;
+            document.getElementById('submit').setAttribute("value", "Copy");
+            document.getElementById('submit').setAttribute("onclick", "CopyUrlToClipboard()");
+        })
+    }
+
     /* 이외의 경우 받은 url을 그대로 사용해 요청합니다 */
     else {
             var requestUrl = suffixUrl + longUrl;
