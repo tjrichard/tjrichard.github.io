@@ -29,7 +29,7 @@ function UrlShorten() {
     /* 구한 Scheme이 figma일 경우 figma 딥링크 url로 변경하여 요청합니다 */
     else if (scheme = "figma") {
         var figmaUrl = longUrl;
-        figmaUrl = figmaUrl.split("/file/")[3]
+        figmaUrl = figmaUrl.split("/file/")[1]
         var requestUrl = suffixUrl + "figma://file/" + figmaUrl;
 
         fetch(requestUrl)
