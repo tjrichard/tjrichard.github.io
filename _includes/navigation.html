@@ -11,33 +11,3 @@
   <li role='presentation'>
     <a href='{{ '/about' | prepend: site.baseurl }}' {% if current[1] == "about" %} class="c-nav__link active"{% endif %} class="c-nav__link normal">About</a>
   </li>
-      
-    
-<!--
-{% for page in site.pages %}
-  {% unless page.name == '404.md' %}
-    {% if page.name == 'blog.md' %}
-      <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='{{ site.baseurl }}/'>{{ page.title }}</a>
-      </li>
-    {% else %}
-        <li class='c-nav__item' role='presentation'>
-          <a class='c-nav__link' href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
-        </li>
-    {% endif %}
-  {% endunless %}
-{% endfor %}
--->
-
-
-<!--
-{% for page in site.pages %}
-  {% unless page.name == '404.md' %}
-    {% if page.title %}
-      <li class='c-nav__item' role='presentation'>
-        <a class='c-nav__link' href='{{ page.url | prepend: site.baseurl }}'>{{ page.title }}</a>
-      </li>
-    {% endif %}
-  {% endunless %}
-{% endfor %}
--->
