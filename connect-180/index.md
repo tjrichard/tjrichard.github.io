@@ -45,10 +45,10 @@ layout: default
             <div class="c-header__inner">
                 <ul class="c-nav c-nav-list">
                     <li role="presentation">
-                        <div class="tablinks c-nav__link" onclick="tabChange(event, 'surfit')">Surfit</div>
+                        <div class="tablinks c-nav__link active" onclick="tabChange(event, 'surfit')">Surfit</div>
                     </li>
                     <li role="presentation">
-                        <div class="tablinks c-nav__link" onclick="tabChange(event, 'rabbit')">Rabbit</div>
+                        <div class="tablinks c-nav__link normal" onclick="tabChange(event, 'rabbit')">Rabbit</div>
                     </li>
                 </ul> 
             </div>
@@ -56,8 +56,8 @@ layout: default
     </div>
 </header>
 <div id="surfit" class="tabContent">
-    <iframe src="https://surfit.io/" class="surit-io"></iframe>
+    <iframe src="https://surfit.io/" class="surit-io" style="display: block"></iframe>
 </div>
-<div id="rabbit" class="tabContent">
+<div id="rabbit" class="tabContent" style="display: none">
     <iframe src="https://rabbit.so/" class="surit-io"></iframe>
 </div>
