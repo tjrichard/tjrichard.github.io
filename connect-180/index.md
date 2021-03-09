@@ -19,8 +19,8 @@ layout: default
         document.getElementById(tabName).style.display = "block";
         
         // Get all elements with class="tablinks" and replace the class "active" to "normal"
-        tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i <= tablinks.length; i++) {
+        var tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
             // tablinks[i].className = tablinks[i].className.replace("active", "normal");
             tablinks[i].setAttribute("class", "tablinks c-nav__link normal");
         }
