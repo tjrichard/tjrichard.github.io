@@ -22,12 +22,12 @@ layout: default
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i <= tablinks.length; i++) {
             // tablinks[i].className = tablinks[i].className.replace("active", "normal");
-            tablinks[i].setAttribute("class", "normal");
+            tablinks[i].setAttribute("class", "tablinks c-nav__link normal");
         }
         
         // event.currentTarget.calssName += "active";
         var tabId = "tab_" + tabName;
-        document.getElementById(tabId).setAttribute("class", "active");
+        document.getElementById(tabId).setAttribute("class", "tablinks c-nav__link active");
     }
 
 </script>
