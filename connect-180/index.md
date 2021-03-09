@@ -20,7 +20,7 @@ layout: default
         
         // Get all elements with class="tablinks" and replace the class "active" to "normal"
         tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
+        for (i = 0; i <= tablinks.length; i++) {
             // tablinks[i].className = tablinks[i].className.replace("active", "normal");
             tablinks[i].setAttribute("class", "normal");
         }
