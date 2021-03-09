@@ -6,9 +6,7 @@ layout: default
         // var input = document.getElementById("gsc-i-id1").focus();
         var input = document.getElementById("long_url").focus();
     };
-    window.onload = function() {
-        document.getElementsbyClassName("c-header").style.display = "none";
-    }
+    window.onload = tabChange(event, 'surfit');
 
     function tabChange(event, tabName) {
         var i;
@@ -45,10 +43,10 @@ layout: default
             <div class="c-header__inner">
                 <ul class="c-nav c-nav-list">
                     <li role="presentation">
-                        <div class="tablinks c-nav__link" onclick="tabChange(event, 'surfit')">Surfit</div>
+                        <div class="tablinks c-nav__link active" onclick="tabChange(event, 'surfit')">Surfit</div>
                     </li>
                     <li role="presentation">
-                        <div class="tablinks c-nav__link" onclick="tabChange(event, 'rabbit')">Rabbit</div>
+                        <div class="tablinks c-nav__link active" onclick="tabChange(event, 'rabbit')">Rabbit</div>
                     </li>
                 </ul> 
             </div>
