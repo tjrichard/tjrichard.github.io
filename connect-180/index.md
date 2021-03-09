@@ -21,10 +21,13 @@ layout: default
         // Get all elements with class="tablinks" and replace the class "active" to "normal"
         tablinks = document.getElementsByClassName("tablinks");
         for (i = 0; i < tablinks.length; i++) {
-            tablinks[i].className = tablinks[i].className.replace("active", "normal");
+            // tablinks[i].className = tablinks[i].className.replace("active", "normal");
+            tablinks[i].setAttribute("class", "normal");
         }
         
-        event.currentTarget.calssName += "active";
+        // event.currentTarget.calssName += "active";
+        var tabId = "tab_" + tabName;
+        document.getElementById(tabId).setAttribute("class", "active");
     }
 
 </script>
@@ -45,10 +48,10 @@ layout: default
             <div class="c-header__inner">
                 <ul class="c-nav c-nav-list">
                     <li role="presentation">
-                        <div class="tablinks c-nav__link active" onclick="tabChange(event, 'surfit')">Surfit</div>
+                        <div class="tablinks c-nav__link active" onclick="tabChange(event, 'surfit')" id="tab_surfit">Surfit</div>
                     </li>
                     <li role="presentation">
-                        <div class="tablinks c-nav__link normal" onclick="tabChange(event, 'rabbit')">Rabbit</div>
+                        <div class="tablinks c-nav__link normal" onclick="tabChange(event, 'rabbit')" id="tab_rabbit">Rabbit</div>
                     </li>
                 </ul> 
             </div>
