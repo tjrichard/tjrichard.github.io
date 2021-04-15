@@ -14,9 +14,11 @@
     background-repeat: repeat-x;
     background-size: 1.5px 1.5px;
     color: $color-brand;
-
+    opacity: 1;
+    
     @include attention() {
       text-decoration: none;
+      opacity: .8;
       background-image: linear-gradient(to bottom, $color-link-hover 75%, transparent 75%);
     }
   }
