@@ -9,7 +9,7 @@
     transition: $global-transition;
     text-decoration: none;
     padding-bottom: 2px;
-    background-image: linear-gradient(to bottom, $color-gray 35%, transparent 35%);
+    // background-image: linear-gradient(to bottom, $color-gray 35%, transparent 35%);
     background-position: 0 1.2em;
     background-repeat: repeat-x;
     background-size: 1.5px 1.5px;
@@ -18,7 +18,7 @@
     
     @include attention() {
       text-decoration: none;
-      opacity: .8;
+      opacity: .7;
       background-image: linear-gradient(to bottom, $color-link-hover 75%, transparent 75%);
     }
   }
