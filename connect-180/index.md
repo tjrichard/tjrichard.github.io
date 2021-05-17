@@ -42,25 +42,6 @@ layout: default
     <script async src="https://cse.google.com/cse.js?cx=d423c88702dea9eb7"></script>
     <div class="gcse-search"></div>
 </div>
-<header class="c-header">
-    <div class="o-grid">
-        <div class="o-grid__col o-grid__col--full">
-            <div class="c-header__inner">
-                <ul class="c-nav c-nav-list">
-                    <li role="presentation">
-                        <div class="tablinks c-nav__link active" onclick="tabChange(event, 'surfit')" id="tab_surfit">Surfit</div>
-                    </li>
-                    <li role="presentation">
-                        <div class="tablinks c-nav__link normal" onclick="tabChange(event, 'rabbit')" id="tab_rabbit">Rabbit</div>
-                    </li>
-                </ul> 
-            </div>
-        </div>
-    </div>
-</header>
 <div id="surfit" class="tabContent">
     <iframe src="https://surfit.io/" class="surit-io" style="display: block"></iframe>
-</div>
-<div id="rabbit" class="tabContent" style="display: none">
-    <iframe src="https://rabbit.so/" class="surit-io"></iframe>
 </div>
