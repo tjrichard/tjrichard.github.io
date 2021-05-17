@@ -9,27 +9,6 @@ layout: default
     window.onload = function() {
         document.getElementsbyClassName("c-header").style.display = "none";
     }
-
-    function tabChange(event, tabName) {
-        var i;
-        var x = document.getElementsByClassName("tabContent");
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-        }
-        document.getElementById(tabName).style.display = "block";
-        
-        // Get all elements with class="tablinks" and replace the class "active" to "normal"
-        var tablinks = document.getElementsByClassName("tablinks");
-        for (i = 0; i < tablinks.length; i++) {
-            // tablinks[i].className = tablinks[i].className.replace("active", "normal");
-            tablinks[i].setAttribute("class", "tablinks c-nav__link normal");
-        }
-        
-        // event.currentTarget.calssName += "active";
-        var tabId = "tab_" + tabName;
-        document.getElementById(tabId).setAttribute("class", "tablinks c-nav__link active");
-    }
-
 </script>
 <!-- 'https://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
 <div class="o-grid">
