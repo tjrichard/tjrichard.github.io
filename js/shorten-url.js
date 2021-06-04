@@ -3,13 +3,19 @@ function UrlShorten() {
     var longUrl = document.getElementById('long_url').value;
 
     /* 받은 url에서 www 다음을 scheme으로, path 부터 링크로 붙입니다 */
-    var splitUrl = longUrl.split("www.")[1];
+    // www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다
+    if (longUrl.split("://")[1].substring(0, 2) = "www" ) {
+        var splitUrl = longUrl.split("www.")[1];
+    }
+    else {
+        var splitUrl = longUrl.split("://")[1];
+    }
     var schemeName = splitUrl.split(".")[0];
     var pathUrl = splitUrl.split("/")[0].length;
     var requestUrl = schemeName + ":/" + splitUrl.substring(pathUrl);
 
     /* URL과 Scheme URL을 리턴합니다 */
-    var updatedUrl = "Link: " + longUrl + "\n" + "Shceme: " + requestUrl;
+    var updatedUrl = "Web: " + longUrl + "\n" + "Scheme: " + requestUrl;
     console.log(updatedUrl);
     document.getElementById('long_url').value = updatedUrl;
     document.getElementById('submit').setAttribute("value", "Copy");
