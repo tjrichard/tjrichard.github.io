@@ -10,7 +10,7 @@ layout: default
 <!-- 'https://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
 <div class="o-grid">
     <form autocomplete="off">
-        <textarea id="long_url" name="long_url" placeholder="Enter long url">
+        <textarea id="long_url" name="long_url" placeholder="Enter long url"></textarea>
         <input type="button" id="submit" value="Scheme it!" onclick="UrlShorten()">
     </form>
 </div>
