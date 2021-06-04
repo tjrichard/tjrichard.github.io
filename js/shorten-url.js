@@ -6,7 +6,7 @@ function UrlShorten() {
     var splitUrl = longUrl.split("www.")[1];
     var schemeName = splitUrl.split(".")[0];
     var pathUrl = splitUrl.split("/")[0].length;
-    var requestUrl = schemeName + "://" + splitUrl.substring(pathUrl);
+    var requestUrl = schemeName + ":/" + splitUrl.substring(pathUrl);
 
     /* URL과 Scheme URL을 리턴합니다 */
     var updatedUrl = "Link: " + longUrl + "\n" + "Shceme: " + requestUrl;
