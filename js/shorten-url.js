@@ -4,7 +4,7 @@ function UrlShorten() {
 
     /* 받은 url에서 www 다음을 scheme으로, path 부터 링크로 붙입니다 */
     // www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다
-    if (longUrl.split("://")[1].substring(0, 2) == "www") {
+    if (longUrl.split("://")[1].substring(0, 3) == "www") {
         var splitUrl = longUrl.split("www.")[1];
     }
     else {
