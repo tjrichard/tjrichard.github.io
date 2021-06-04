@@ -8,7 +8,7 @@ function UrlShorten() {
     var requestUrl = schemeName + "://" + splitUrl.split("/")[1];
 
     /* URL과 Scheme URL을 리턴합니다 */
-    var updatedUrl = "Link: " + longUrl + \n + "Shceme: " + requestUrl;
+    var updatedUrl = "Link: " + longUrl + "\n" + "Shceme: " + requestUrl;
     console.log(updatedUrl);
     document.getElementById('long_url').value = updatedUrl;
     document.getElementById('submit').setAttribute("value", "Copy");
