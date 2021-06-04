@@ -5,7 +5,8 @@ function UrlShorten() {
     /* 받은 url에서 www 다음을 scheme으로, path 부터 링크로 붙입니다 */
     var splitUrl = longUrl.split("www.")[1];
     var schemeName = splitUrl.split(".")[0];
-    var requestUrl = schemeName + "://" + splitUrl.split("/")[1];
+    var pathUrl = splitUrl.split("/")[0].length;
+    var requestUrl = schemeName + "://" + splitUrl.substring(pathUrl);
 
     /* URL과 Scheme URL을 리턴합니다 */
     var updatedUrl = "Link: " + longUrl + "\n" + "Shceme: " + requestUrl;
