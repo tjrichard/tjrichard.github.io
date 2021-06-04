@@ -14,7 +14,7 @@ layout: default
 <div class="o-grid">
     <form autocomplete="off">
         <input type="text" id="long_url" name="long_url" placeholder="Enter long url">
-        <input type="button" id="submit" value="Shorten" onclick="UrlShorten()">
+        <input type="button" id="submit" value="Scheme it!" onclick="UrlShorten()">
     </form>
 </div>
 <div class="o-grid">
