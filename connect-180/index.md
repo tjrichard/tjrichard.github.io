@@ -6,9 +6,6 @@ layout: default
         // var input = document.getElementById("gsc-i-id1").focus();
         var input = document.getElementById("long_url").focus();
     };
-    window.onload = function() {
-        document.getElementsbyClassName("c-header").style.display = "none";
-    }
 </script>
 <!-- 'https://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
 <div class="o-grid">
