@@ -95,7 +95,7 @@ order: 8
 
 <figcaption>HEART Framework</figcaption>
 
-⭐️ **[북극성 지표](https://blog.growthhackers.com/what-is-a-north-star-metric-b31a8512923f)**. 이 프레임워크는 좀 더 급진적이고, 모든 프로덕트 노이즈를 가장 중요한 지표를 위해 제거해야 한다고 본다. 이 때 가장 중요한 지표는 장기적인 비즈니스 결과와 사용자에게 제공되는 핵심 가치의 관계를 가장 잘 나타내는 선행 지표를 말한다. 하지만 이 프레임워크도 북극성 지표에 가장 직접적인 영향을 주는 3에서 5개 보완적 지표를 포함하고 있다.
+**[⭐️ 북극성 지표](https://blog.growthhackers.com/what-is-a-north-star-metric-b31a8512923f)**. 이 프레임워크는 좀 더 급진적이고, 모든 프로덕트 노이즈를 가장 중요한 지표를 위해 제거해야 한다고 본다. 이 때 가장 중요한 지표는 장기적인 비즈니스 결과와 사용자에게 제공되는 핵심 가치의 관계를 가장 잘 나타내는 선행 지표를 말한다. 하지만 이 프레임워크도 북극성 지표에 가장 직접적인 영향을 주는 3에서 5개 보완적 지표를 포함하고 있다.
 
 ![North Star Framework](https://miro.medium.com/max/2400/1*OO76SNnTgQIQkWAgqMQ-3A.png)
 
@@ -163,6 +163,8 @@ order: 8
 작업 혹은 행동이 성공적인지 트래킹 하기 위해, 우리는 사용자가 해당 행동을 하기가 얼마나 용이한지를 알 수 있는 지표가 필요하다. 바로 사용성이다.
 
 ![Task Success](https://miro.medium.com/max/2400/1*nZx5_xkUGZpBIe8dITRlUg.png)
+
+<figcaption>Task Success</figcaption>
 
 - **성공률(Success Rate)**은 의도한 최종 상태에 도달하기까지 걸린 행동의 수를 측정한다. 이를 통해 효과를 측정할 수 있다.
 - **행동에 걸린 시간(Time on Action)**과 **낭비(Lostness)**는 행동을 얼마나 빠르게 수행할 수 있는지를 알고, 사용자가 행동을 수행하다 길을 잃었는지에 대해 이해할 수 있다. 이를 통해 효율을 측정할 수 있다.  
