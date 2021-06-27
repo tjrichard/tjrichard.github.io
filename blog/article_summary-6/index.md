@@ -150,7 +150,7 @@ order: 8
 
 ![Engagement](https://miro.medium.com/max/2400/1*nBEsztZCHWXSulgrkBJdWw.png)
 
-<ficaption>Engagement</figcaption>
+<figcaption>Engagement</figcaption>
 
 - **활성 사용자(Active Users)**는 프로덕트 내에서 얼마나 많은 사용자가 활성 상태였는지를 의미한다.
 ⚠️ 이 때 우리는 활성 상태가 어떤 것인지를 정의해야 한다. 이 경우, 핵심 행동을 한번 이상 수행한 것을 의미한다. 하지만 프로덕트의 성질에 맞게 각자가 정의해야 하는 부분이다.
