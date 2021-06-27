@@ -1,6 +1,6 @@
 ---
 layout: post
-type: "Design"
+type: "Product"
 title:  "모든 프로덕트는 북극성 지표가 필요하다. 우리 북극성 지표는 어떻게 찾을까?"
 subtitle: "번역 및 요약 👉 Every Product Needs a North Star Metric: Here’s How to Find Yours"
 tags: [아티클 요약, North Star Metric, 북극성 지표, KPI]
