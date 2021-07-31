@@ -48,7 +48,7 @@ order: 1
 
 ![](https://miro.medium.com/max/1400/1*gvb6sp5LW4CTvghCSrviLQ.png)
 
-<figcatption>서비스를 사용하는 트래픽을 각 그룹에 할당하는 설정 예시<br>출처: 핵클 대시보드</figcatption>
+<figcaption>서비스를 사용하는 트래픽을 각 그룹에 할당하는 설정 예시<br>출처: 핵클 대시보드</figcaption>
 
 ![](https://miro.medium.com/max/1400/1*fsa_BxdAiu9ku_eed29i3Q.png)
 
