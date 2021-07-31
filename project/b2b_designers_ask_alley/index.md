@@ -13,12 +13,12 @@ header-img: "img/notion_header.png"
 order: 1
 ---
 
-<p class="text-gray">🔗 이 글은 <a href="https://abit.ly/b2b-designers_ask_alley" target='blank' rel='nofollow'><img src='https://medium.com/favicon.ico' style='display:inline; height: 1em; position: relative; bottom: -2px;'>B2B 디자이너들의 모임 Medium</a>에도 개제되었습니다</p>
+<p class="text-gray">🔗 이 글은 <a href="https://abit.ly/b2b-designers_ask_alley" target='blank' rel='nofollow'><img src='https://medium.com/favicon.ico' style='display:inline; height: 1em; position: relative; bottom: -2px;'> B2B 디자이너들의 모임 Medium</a>에도 개제되었습니다</p>
 
 ### B2B 디자이너들의 모임 첫 '멤버들에게 질문' 세션으로 A/B 테스팅 솔루션을 제공중인 스타트업 'Hackle'의 프로덕트 디자이너 Alley님과 함께합니다.
 
 <p class="text-gray">
-[핵클](Hackle.io)이 어떤 서비스인지 궁금하시다면? >>](https://www.hackle.io/service)
+<a href='https://www.hackle.io/service' target='blank' ref='nofollow'>핵클(Hackle.io)이 어떤 서비스인지 궁금하시다면? >></a>
 </p>
 
 
@@ -30,7 +30,7 @@ order: 1
 
 ![](https://miro.medium.com/max/1400/1*4teEAvTZj-6C-wI2GC5_Sw.png)
 
-<figcaption>Alley님이 제작한 [‘가슴속 3천원’ 앱이 궁금하시다면? >>](https://medium.com/depromeet/%EA%B0%80%EC%8A%B4%EC%86%8D-3%EC%B2%9C%EC%9B%90-%EB%B6%95%EC%96%B4%EB%B9%B5%EC%97%90-%EB%88%84%EA%B5%AC%EB%B3%B4%EB%8B%A4-%EC%A7%84%EC%8B%AC%EC%9D%B4%EC%97%88%EB%8D%98-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9D%98-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2a3f714026b3)</figcaption>
+<figcaption><a href='https://medium.com/depromeet/%EA%B0%80%EC%8A%B4%EC%86%8D-3%EC%B2%9C%EC%9B%90-%EB%B6%95%EC%96%B4%EB%B9%B5%EC%97%90-%EB%88%84%EA%B5%AC%EB%B3%B4%EB%8B%A4-%EC%A7%84%EC%8B%AC%EC%9D%B4%EC%97%88%EB%8D%98-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9D%98-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2a3f714026b3' target='blank' ref='nofollow'>Alley님이 제작한 ‘가슴속 3천원’ 앱이 궁금하시다면? >></a></figcaption>
 
 **Alley:** 핵클은 현재 A/B 테스트 플랫폼을 주력으로 제공하고 있습니다. 저희 핵클은 다양한 고객분들이 안정정이고, 빠르게 데이터 기반의 성장을 할 수 있도록 돕는 것을 목표로 서비스를 확장해나가고 있습니다. 핵클의 A/B 테스트 플랫폼은 웹 대시보드 형태로 제공되어 사용자들이 쉽게 접근해 사용할 수 있습니다.
 
@@ -44,15 +44,15 @@ order: 1
 
 ![](https://miro.medium.com/max/1400/1*fQ19pbItqsY0NBtzHXN4Zw.png)
 
-CTA에 사용할 후크 레이블에 대한 테스트 그룹 설정 예시 출처: 핵클 대시보드
+<figcaption>CTA에 사용할 후크 레이블에 대한 테스트 그룹 설정 예시<br>출처: 핵클 대시보드</figcaption>
 
 ![](https://miro.medium.com/max/1400/1*gvb6sp5LW4CTvghCSrviLQ.png)
 
-서비스를 사용하는 트래픽을 각 그룹에 할당하는 설정 예시 출처: 핵클 대시보드
+<figcatption>서비스를 사용하는 트래픽을 각 그룹에 할당하는 설정 예시<br>출처: 핵클 대시보드</figcatption>
 
 ![](https://miro.medium.com/max/1400/1*fsa_BxdAiu9ku_eed29i3Q.png)
 
-테스트 결과 리포트 예시 출처: 핵클 이용 가이드
+<figcaption>테스트 결과 리포트 예시<br>출처: 핵클 이용 가이드</figcaption>
 
 사용자들은 자신이 운영하는 서비스에 중요한 이벤트나 지표를 확인하거나, 테스트 과정에서 영향을 받을 수 있는 데이터를 모두 확인하여, 각 테스트 그룹이 결과 지표에 미치는 영향력을 확인할 수 있습니다.
 
@@ -68,11 +68,11 @@ CTA에 사용할 후크 레이블에 대한 테스트 그룹 설정 예시 출�
 
 ![](https://miro.medium.com/max/1400/1*R0AKliqr97_moHtYgyHxIQ.png)
 
-스파르타 코딩클럽 기존 시안 예시. 실제 테스트에 적용된 이미지와 다를 수 있습니다. 출처: 스파르타 코딩클럽
+<figcaption>스파르타 코딩클럽 기존 시안 예시. 실제 테스트에 적용된 이미지와 다를 수 있습니다.<br>출처: 스파르타 코딩클럽</figcaption>
 
 ![](https://miro.medium.com/max/1400/1*ywfDzszUdirHBZ0qvju2qg.png)
 
-스파르타 코딩클럽 실험 시안 예시. 실제 테스트에 적용된 이미지와 다를 수 있습니다. 출처: 스파르타 코딩클럽
+<figcaption>스파르타 코딩클럽 실험 시안 예시. 실제 테스트에 적용된 이미지와 다를 수 있습니다.<br>출처: 스파르타 코딩클럽</figcaption>
 
 하지만 설계자의 예상과 달리, 기존 시안이 제공된 그룹 A에 노출된 사용자보다, 새로운 시안이 제공된 그룹 B 사용자의 구매 전환율이 47%가 더 낮았습니다. 이처럼 개선했다고 생각한 디자인이 항상 예상대로 긍정적인 결과로 이어지지는 않는다는 사례가 될 수 있겠습니다.
 
@@ -82,11 +82,10 @@ CTA에 사용할 후크 레이블에 대한 테스트 그룹 설정 예시 출�
 
 ![](https://miro.medium.com/max/1400/1*9Hr-3mRcNNcmNCAw4Q2nzA.png)
 
-배송비를 각기 다르게 제공했을 때 구매 전환율, 평균 구매 금액, 구매 횟수는 어떻게 변할지에 대한 테스트 예시
+<figcaption>배송비를 각기 다르게 제공했을 때 구매 전환율, 평균 구매 금액, 구매 횟수는 어떻게 변할지에 대한 테스트 예시</figcaption>
 
 테스트 결과를 해석할 때는 목표로 설정한 핵심 이벤트 지표를 종합적으로 고려해야 올바른 결정을 내릴 수 있습니다.
 
-배송비를 각기 다르게 제공했을 때 구매 전환율, 평균 구매 금액, 구매 횟수는 어떻게 변할지에 대한 테스트 예시
 
 예를 들어 A안은 ‘배송비를 기존 금액으로 안내’, B안은 ‘배송비를 2천원 더 올린 금액으로 안내’로 나누어 테스트하여, 구매 전환율, 평균 구매금액, 구매 횟수 등 데이터를 비교하는 시나리오를 생각해보겠습니다. 만약 B안의 결과가 A안 대비 구매 전환율 `-3%`, 평균 구매 금액 `+5,000원`, 구매 횟수 `-0.3%`이라고 했을 때 어떤 결정을 해야할까요?
 
@@ -108,7 +107,7 @@ A/B 테스트는 서비스의 특성이나 비즈니스 방향성, 현재 사용
 
 그 중 프로덕트 디자이너 입장에서는 A/B 테스트에 대한 경험이 없거나 필요성을 인지하지 못한 예비 고객들에게 어떻게 다가가고 이해시킬 것인가를 가장 중요한 문제로 보고 있습니다. 이 문제를 해결하기 위해 디자인 작업 전반에서 각 기능이나 단어들을 고객들이 이해가 쉬운 내용으로 구성하고, 핵클 A/B 테스트를 사용했을 때 얻을 수 있는 장점을 더 많이, 그리고 쉽게 느낄 수 있도록 노력하고 있습니다.  
 
-**AARRR 프레임워크란?**  
+**👇 AARRR 프레임워크란?**  
 > - Acquisition : 사용자 모객 단계  
 > - Activation : SDK 설치, 최초 아하 모먼트 경험, 사용자 교육 및 온보딩 단계  
 > - Retention : 서비스의 반복 사용, 능숙한 사용 단계  
