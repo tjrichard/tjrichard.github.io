@@ -1,4 +1,4 @@
-<li {% if page.draft==t rue %} class="c-list__item draft" {% else %} class="c-list__item" {% endif %}>
+<li {% if page.draft==true %} class="c-list__item draft" {% else %} class="c-list__item" {% endif %}>
     <a href="{{ page.url | prepend: site.baseurl }}">
         <div class="c-list__info">
             {% if page.list-img %}
