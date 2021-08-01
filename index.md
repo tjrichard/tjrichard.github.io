@@ -15,7 +15,7 @@ layout: default
         {% include award.html %}
       <p class='c-page__type'>🔭 Interest</p>
       <div style='padding: 10px 0;'>
-          {% include interest.html %}
+        {% include interest.html %}
       </div>
   </div>
 </div>
