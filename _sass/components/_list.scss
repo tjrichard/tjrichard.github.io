@@ -10,7 +10,8 @@
         padding: 16px 0;
         list-style: none;
         width: 100%;
-        margin-left: 0px;
+        border-radius: 8px;
+        margin: 0 0 20px 0;
         &:last-child {
             margin-bottom: ($base-spacing-unit)*3;
             border: none;
@@ -100,15 +101,13 @@
     a {
         text-decoration: none;
     }
-    .c-list__info {
-        cursor: pointer;
-        // opacity: .6;
-        // transform: translate(10px, -10px);
-        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.12);
-    }
     .c-list__title {
         color: $color-key;
     }
+    cursor: pointer;
+    // opacity: .6;
+    // transform: translate(10px, -10px);
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.12);
 }
 
 .draft {
