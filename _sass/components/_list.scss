@@ -49,7 +49,7 @@
     }
     &__info {
         display: inline-block;
-        padding: 10px 20px;
+        padding: 10px 20px 0;
         transition: $global-transition;
         .c-list__title {
             font-size: $font-size-header;
