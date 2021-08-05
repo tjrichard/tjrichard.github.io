@@ -6,6 +6,8 @@ subtitle: "번역 및 요약 👉 Between-Subjects vs. Within-Subjects Study Des
 tags: [아티클 요약, UX, Design, Research, Analytics]
 date: 2020-08-28 14:40:45
 blog: true
+list-img: false
+list-img: "img/between-within-watermark.jpeg" 
 post-header: false
 order: 3
 ---

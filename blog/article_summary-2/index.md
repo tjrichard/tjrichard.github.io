@@ -6,6 +6,8 @@ subtitle: "번역 및 요약 👉 Error state stasis: a quick visit to the synta
 tags: [아티클 요약, UX, UX Writing, Design]
 date: 2020-09-08 22:37:45
 blog: true
+list-img: false
+list-img: "img/error message example.png" 
 post-header: false
 order: 4
 ---
