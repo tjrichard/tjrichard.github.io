@@ -1,29 +1,56 @@
 <head>
-  <meta charset='utf-8'>
-  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-  <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
-  <!--Google Search Console Verification-->
-  <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!--Google Search Console Verification-->
+    <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name='description' content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel='canonical' href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel='alternate' type='application/rss+xml' title='{{ site.title }}' href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;700&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet"> -->
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name='description' content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    {% if page.title %}
+        <meta content="{{ page.title }}" property="og:title">
+    {% else %}
+        <meta content="{{ site.title }}" property="og:title">
+    {% endif %}
+    {% if page.subtitle %}
+        <meta content="{{ page.description }}" property="og:description">
+    {% else %}
+        <meta content="{{ site.description }}" property="og:description">
+    {% endif %}
+    {% if page.list-img %}
+        <meta content="{{ site.url }}/assets/img/posts/{{ page.image }}" property="og:image">
+    {% else %}
+        <meta content="{{ site.url }}/assets/img/logo-high-resolution.png" property="og:image">
+    {% endif %}
+    <link rel='canonical' href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel='alternate' type='application/rss+xml' title='{{ site.title }}' href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;700&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet"> -->
 
-  <link rel="shortcut icon" href="https://tjrichard.github.io/favicon.ico">
+    <link rel="shortcut icon" href="https://tjrichard.github.io/favicon.ico">
 
-  <!-- <script src="https://unpkg.com/phosphor-icons"></script> -->
+    <!-- <script src="https://unpkg.com/phosphor-icons"></script> -->
 
-  <style>
-    {% capture inlineCSS %}
-      {% include app.scss %}
-    {% endcapture %}
-
-    {{ inlineCSS | scssify }}
-  </style>
+    <style>
+        {
+            % capture inlineCSS %
+        }
+        
+        {
+            % include app.scss %
+        }
+        
+        {
+            % endcapture %
+        }
+        
+        {
+            {
+                inlineCSS | scssify
+            }
+        }
+    </style>
 </head>
