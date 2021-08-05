@@ -12,6 +12,7 @@ post-header: true
 header-img: "img/notion_header.png"
 order: 1
 ---
+![](https://images.ctfassets.net/c1zhnszcah7h/6YoyPiCk1Gcj0ciOO2Bi0l/c8b2170ef28a55397e87789b1614ca82/Square_-_Thoughtful_Execcution.png?w=1648&h=1648&q=96&fm=webp)
 
 <p class="text-gray">🔗 이 글은 <a href="https://abit.ly/b2b-designers_ask_alley" target='blank' rel='nofollow'><img src='https://medium.com/favicon.ico' style='display:inline; height: 1em; position: relative; bottom: -2px;'> B2B 디자이너들의 모임 Medium</a>에도 게재되었습니다</p>
 
