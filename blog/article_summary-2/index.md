@@ -7,7 +7,7 @@ tags: [아티클 요약, UX, UX Writing, Design]
 date: 2020-09-08 22:37:45
 blog: true
 list-img: false
-list-img: "img/error message example.png" 
+list-img: "article_summary-2/img/error message example.png" 
 post-header: false
 order: 4
 ---

@@ -7,7 +7,7 @@ tags: [아티클 요약, North Star Metric, 북극성 지표, KPI]
 date: 2020-10-30 12:20:45
 blog: true
 list-img: false
-list-img: "img/what-is-north-star-metric.png" 
+list-img: "article_summary-4/img/what-is-north-star-metric.png" 
 post-header: false
 order: 6
 ---
