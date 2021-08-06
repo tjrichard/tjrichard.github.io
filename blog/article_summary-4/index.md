@@ -6,7 +6,7 @@ subtitle: "번역 및 요약 👉 Every Product Needs a North Star Metric: Here�
 tags: [아티클 요약, North Star Metric, 북극성 지표, KPI]
 date: 2020-10-30 12:20:45
 blog: true
-list-img: false
+is_list-img: false
 list-img: "article_summary-4/img/what-is-north-star-metric.png" 
 post-header: false
 order: 6
