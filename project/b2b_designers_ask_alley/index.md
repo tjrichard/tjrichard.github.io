@@ -6,7 +6,7 @@ type: "B2B 디자이너들의 모임"
 tags: [B2B, 프로덕트 디자이너, 인터뷰, A/B테스트]
 date: 2021-07-31 19:40:45
 project: true
-list-img: true
+is_list-img: true
 list-img: "b2b_designers_ask_alley/img/notion_header.png" 
 post-header: true
 header-img: "img/notion_header.png"

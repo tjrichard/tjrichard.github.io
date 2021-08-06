@@ -1,7 +1,7 @@
 <li {% if page.draft==true %} class="c-list__item draft" {% else %} class="c-list__item" {% endif %}>
     <a href="{{ page.url | prepend: site.baseurl }}">
         <div class="c-list__info">
-            {% if page.list-img %}
+            {% if page.is_list-img == true %}
             <img src="{{ page.list-img }}" class="c-list__img" alt='{{ post.title }}'> {% endif %}
             <p class="c-list__type">
                 {{ page.type | upcase }}
