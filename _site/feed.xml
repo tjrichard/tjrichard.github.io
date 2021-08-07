@@ -5,15 +5,19 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 15 Jan 2021 14:01:27 +0900</pubDate>
-    <lastBuildDate>Fri, 15 Jan 2021 14:01:27 +0900</lastBuildDate>
-    <generator>Jekyll v4.0.0</generator>
+    <pubDate>Sat, 07 Aug 2021 22:39:52 +0900</pubDate>
+    <lastBuildDate>Sat, 07 Aug 2021 22:39:52 +0900</lastBuildDate>
+    <generator>Jekyll v3.9.1</generator>
 
     
 
     
       
         
+      
+    
+      
+    
       
     
       
@@ -46,7 +50,7 @@
 
 ---
 
-[🧑🏻‍💻이력서](/assets/Resume_Seunghwan_1908.pdf) / [🏄🏻‍♂️포트폴리오](/assets/Portfolio_Seunghwan_1906.pdf)
+&lt;a href='https://tjrichard.github.io/assets/Resume_Seunghwan_1908.pdf' target='_blank' rel='nofollow' id='resume' onclick='downloadResume(resume)'&gt;🧑🏻‍💻이력서&lt;/a&gt; / &lt;a href='https://tjrichard.github.io/assets/Portfolio_Seunghwan_1906.pdf' target='_blank' rel='nofollow' id='portfolio' onclick='downloadPortfolio(portfolio)'&gt;🏄🏻‍♂️포트폴리오&lt;/a&gt;
 
 _last update : 19.08_</description>
             <link>http://localhost:4000/about/</link>
