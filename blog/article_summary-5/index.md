@@ -11,7 +11,7 @@ order: 7
 ---
 
 <p class="text-gray">
-🔗 이 글은 Robert Turner가 본인의 <a href='https://trtphd.medium.com/' target='blank' rel='nofollow'><img src='https://medium.com/favicon.ico' style='display:inline; height: 1em; position: relative; bottom: -2px;'>미디엄 블로그</a>에 올린 <a href='https://abit.ly/article_36' target='blank' rel='nofollow'>아티클</a>을 번역, 요약한 글입니다.
+🔗 이 글은 Robert Turner가 본인의 <a href='https://trtphd.medium.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://medium.com/favicon.ico' style='display:inline; height: 1em; position: relative; bottom: -2px;'>미디엄 블로그</a>에 올린 <a href='https://abit.ly/article_36' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 ## ⚡️ 요약

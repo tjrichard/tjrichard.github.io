@@ -13,7 +13,7 @@ order: 4
 ---
 
 <p class="text-gray">
-🔗 이 글은 Jason Fox가 <a href='https://uxdesign.cc/' target='blank' rel='nofollow'>UX Collective</a>에 올린 <a href="https://abit.ly/article_16" target='blank' rel='nofollow'>미디엄 글</a>을 번역, 요약한 글입니다.
+🔗 이 글은 Jason Fox가 <a href='https://uxdesign.cc/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'>UX Collective</a>에 올린 <a href="https://abit.ly/article_16" target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>미디엄 글</a>을 번역, 요약한 글입니다.
 </p>
 
 ### ⚡️요약

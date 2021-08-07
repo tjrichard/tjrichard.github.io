@@ -35,4 +35,13 @@
       "target": href
     })
   }
+  function clickedOutlink(target) {
+    var href = target.href;
+    console.log(target);
+    console.log(href);
+      analytics.track("Click Outlink",{
+        "url": "{{ page.url }}",
+        "target": href
+      })
+  };
 </script>

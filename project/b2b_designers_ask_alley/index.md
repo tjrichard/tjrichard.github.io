@@ -13,12 +13,12 @@ header-img: "img/notion_header.png"
 order: 1
 ---
 
-<p class="text-gray">🔗 이 글은 <a href="https://abit.ly/b2b-designers_ask_alley" target='blank' rel='nofollow'><img src='https://medium.com/favicon.ico' style='display:inline; height: 1em; position: relative; bottom: -2px;'> B2B 디자이너들의 모임 Medium</a>에도 게재되었습니다</p>
+<p class="text-gray">🔗 이 글은 <a href="https://abit.ly/b2b-designers_ask_alley_m" target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://medium.com/favicon.ico' style='display:inline; height: 1em; position: relative; bottom: -2px;'> B2B 디자이너들의 모임 Medium</a>에도 게재되었습니다</p>
 
 ### B2B 디자이너들의 모임 첫 '멤버들에게 질문' 세션으로 A/B 테스팅 솔루션을 제공 중인 스타트업 'Hackle'의 프로덕트 디자이너 Alley님과 함께합니다.
 
 <p class="text-gray">
-<a href='https://www.hackle.io/service' target='blank' ref='nofollow'>핵클(Hackle.io)이 어떤 서비스인지 궁금하시다면? >></a>
+<a href='https://www.hackle.io/service' target='blank' ref='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>핵클(Hackle.io)이 어떤 서비스인지 궁금하시다면? >></a>
 </p>
 
 
@@ -30,7 +30,7 @@ order: 1
 
 ![](https://miro.medium.com/max/1400/1*4teEAvTZj-6C-wI2GC5_Sw.png)
 
-<figcaption><a href='https://medium.com/depromeet/%EA%B0%80%EC%8A%B4%EC%86%8D-3%EC%B2%9C%EC%9B%90-%EB%B6%95%EC%96%B4%EB%B9%B5%EC%97%90-%EB%88%84%EA%B5%AC%EB%B3%B4%EB%8B%A4-%EC%A7%84%EC%8B%AC%EC%9D%B4%EC%97%88%EB%8D%98-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9D%98-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2a3f714026b3' target='blank' ref='nofollow'>Alley님이 제작한 ‘가슴속 3천원’ 앱이 궁금하시다면? >></a></figcaption>
+<figcaption><a href='https://medium.com/depromeet/%EA%B0%80%EC%8A%B4%EC%86%8D-3%EC%B2%9C%EC%9B%90-%EB%B6%95%EC%96%B4%EB%B9%B5%EC%97%90-%EB%88%84%EA%B5%AC%EB%B3%B4%EB%8B%A4-%EC%A7%84%EC%8B%AC%EC%9D%B4%EC%97%88%EB%8D%98-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9D%98-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2a3f714026b3' target='blank' ref='nofollow' id='outlink3' onclick='clickedOutlink(outlink3)'>Alley님이 제작한 ‘가슴속 3천원’ 앱이 궁금하시다면? >></a></figcaption>
 
 **Alley:** 핵클은 현재 A/B 테스트 플랫폼을 주력으로 제공하고 있습니다. 저희 핵클은 다양한 고객분들이 안정적이고, 빠르게 데이터 기반의 성장을 할 수 있도록 돕는 것을 목표로 서비스를 확장해나가고 있습니다. 핵클의 A/B 테스트 플랫폼은 웹 대시보드 형태로 제공되어 사용자들이 쉽게 접근해 사용할 수 있습니다.
 

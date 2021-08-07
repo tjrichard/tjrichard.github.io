@@ -69,6 +69,15 @@
       "target": href
     })
   }
+  function clickedOutlink(target) {
+    var href = target.href;
+    console.log(target);
+    console.log(href);
+      analytics.track("Click Outlink",{
+        "url": "/project/",
+        "target": href
+      })
+  };
 </script>
 
   <div>
@@ -140,7 +149,7 @@
             </p>
             
             <p class="c-list__body">
-                🔗 이 글은  B2B 디자이너들의 모임 Medium에도 게재되었습니다 B2B 디자이너들의 모임 첫 ‘멤버들에게 질문’ 세션으로 A/B 테스팅 솔루션을 제공 중인 스타트업 ‘Hackle’의 프로덕트 디자이너 Alley님과...
+                🔗 이 글은  B2B 디자이너들의 모임 Medium에도 게재되었습니다 B2B 디자이너들의 모임 첫 ‘멤버들에게 질문’ 세션으로 A/B 테스팅 솔루션을 제공 중인 스타트업 ‘Hackle’의 프로덕트...
             </p>
             <time class="c-list__date" datetime="2021-08-01T04:40:45+09:00" itemprop="datePublished">31 Jul 2021</time> 
         </div>

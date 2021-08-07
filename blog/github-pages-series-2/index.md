@@ -10,7 +10,9 @@ post-header: false
 order: 2
 ---
 
-이전 글 → [Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅](https://tjrichard.github.io/blog/github-pages-series-1/)
+<p class="text-gray">
+이전 글 → <a href="https://tjrichard.github.io/blog/github-pages-series-1/" id='outlink' onclick='clickedOutlink(outlink)'>Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅</a>
+</p>
 
 
 ### 지난 글과 다른 점
