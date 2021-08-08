@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Pomodoro Timer</title>
+   <link href='https://fonts.googleapis.com/css?family=Arimo:700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./script.js"></script>
+</head>
+
+<body>
+   <button id="toggleTheme" class="btn" type="button" onclick="toggleTheme()"></button>
+   <div id="centerContainer">
+      <div id="columnContainer">
+         <div id="CountArea">⏱</div>
+         <h1 id="time">25:00</h1>
+         <div id="inputArea"></div>
+         <div id="focusArea">
+            <div id="focusTask"></div>
+            <div id="buttonArea"></div>
+         </div>
+      </div>
+      <div id="focusHistory">
+         <div class="flex__row__spacebetween">
+            <h3>🍅 오늘의 Task 내역</h3>
+            <button id="resetAllTasks" class="btn icon_btn" type="button" onclick="resetAllTasks()"  data-tooltip="한 일 초기화하기">🗑</button>
+         </div>
+         <ul id="historyUl">
+         </ul>
+      </div>
+   </div>
+</body>
+
+</html>

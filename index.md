@@ -17,5 +17,9 @@ layout: default
       <div style='padding: 10px 0;'>
         {% include interest.html %}
       </div>
+      <p class='c-page__type'>🍄 Side Hustle</p>
+      <div style='padding: 10px 0;'>
+        {% include hustle.html %}
+      </div>
   </div>
 </div>

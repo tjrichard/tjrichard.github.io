@@ -61,3 +61,32 @@
   color: $color-gray;
   margin-bottom: 0;
 }
+
+.hustle {
+  list-style: none;
+  margin: 0;
+
+  &__list {
+    display: flex;
+    padding: 20px;
+    margin: 0 0 20px 0;
+    align-items: center;
+  }
+
+  &__img {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    margin-right: 20px;
+
+    img {
+      max-width: 48px;
+    }
+  }
+
+  &__name {
+    font-size: $font-size-header;
+    color: $color-text;
+    font-weight: $font-weight-bold;
+  }
+}

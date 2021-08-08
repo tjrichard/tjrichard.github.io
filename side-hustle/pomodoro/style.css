@@ -1,0 +1,294 @@
+/* Global Color Token */
+:root {
+  --color_grey100: #f3f4f5;
+  --color_grey200: #eff2f5;
+  --color_accent: #5b53ed;
+  --color_accent_tint: #9c97ef;
+  --color_focus: #e86666;
+  --color_break: #00a469;
+  --color_longBreak: #039158;
+}
+
+* {
+  transition: 150ms;
+  word-break: break-word;
+}
+
+body {
+  --background_color_theme: white;
+  --background_color_z100: #eff2f5;
+  --background_color_z200: #cfcfd8;
+  --background_color_z900: #252627;
+  --color_normal: #41414e;
+  --color_light: #6b6b77;
+  font-family: sans-serif;
+  
+  background-color: var(--background_color_theme);
+  color: var(--color_normal);
+}
+
+body.dark {
+    --background_color_theme: black;
+    --background_color_z100: #1e1e22;
+    --background_color_z200: #3f4647;
+    --background_color_z900: #eff2f5;
+    --color_normal: #f3f4f5;
+    --color_light: #b4bbc3;
+}
+
+[data-tooltip]:before {
+  content: attr(data-tooltip);
+  transition: all 150ms ease;
+  position: absolute;
+  top: 5px;
+  right: 100%;
+  padding: 4px 8px;
+  line-height: 1;
+  color: var(--color_normal);
+  background-color: var(--background_color_z200);
+  border-radius: 4px;
+  width: max-content;
+  font-size: 11px;
+  opacity: 0;
+}
+
+[data-tooltip]:after {
+  content: "";
+  transition: all 150ms ease;
+  position: absolute;
+  top: 11px;
+  right: calc(100% - 7px);
+  border-width: 4px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--background_color_z200);
+  width: max-content;
+  opacity: 0;
+}
+
+[data-tooltip]:hover:before, [data-tooltip]:hover:after {
+  opacity: 1;
+}
+
+input:focus {
+  border: 2px solid var(--color_accent);
+  outline-style: revert;
+}
+
+#centerContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#columnContainer {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+#columnContainer:hover #buttonArea {
+  opacity: 1;
+}
+
+#centerContainer:hover #focusHistory {
+  opacity: 1;
+}
+
+#rowContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+#inputArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#focusArea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  place-content: space-around;  
+}
+
+#focusTask {
+  width: 100%;
+  min-height: 30px;
+  margin-bottom: 12px;
+  text-align: center;
+  font-size: 1.2em;
+  color: #b4bbc3;
+}
+
+#focusHistory {
+  width: 368px;
+  height: 220px;
+  overflow-y: auto;
+  padding: 10px 16px;
+  margin: 0 0 0 20px;
+  transition: opacity 200ms ease-out;
+  outline: 1px solid var(--background_color_z100);
+  color: var(--color_light);
+}
+
+#focusHistory ul {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-inline-start: 0px;
+  line-height: 24px;
+  margin: 0;
+}
+
+#focusHistory li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.8em;
+  line-height: 1.4;
+  list-style: none;
+  min-height: 38px;
+  padding: 6px 12px;
+  margin-bottom: 6px;
+  border-radius: 4px;
+}
+
+#focusHistory li:hover {
+  background-color: var(--background_color_z100);
+}
+
+#CountArea {
+  width: 100%;
+  min-height: 30px;
+  text-align: center;
+  font-size: 0.8em;
+  color: var(--color_light);
+  line-height: 30px;
+}
+
+#breakCount {
+  margin-left: 10px;
+}
+
+#buttonArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  place-content: space-around;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+h1 {
+  font-size: 6em;
+  text-align: center;
+  margin: 0 0 10px 0;
+  height: 126px;
+}
+
+h3 {
+  font-size: 1em;
+  line-height: 20px;
+  margin: 0;
+}
+
+.flex__row__spacebetween {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+}
+
+.flex__row__spacebetween > h3 {
+  display: inline-block;
+
+}
+
+#task {
+  width: 384px;
+  min-height: 26px;
+  margin-bottom: 12px;
+  padding: 0 6px;
+}
+
+.btn {
+  height: 26px;
+  padding: 1px 2px;
+  border-radius: 4px;
+  box-sizing: unset;
+  cursor: pointer;
+  background-color: var(--background_color_z200);
+  border: 2px solid var(--background_color_z200);
+  color: var(--color_normal);
+}
+
+.btn:hover {
+  filter: opacity(.8);
+}
+
+.btn:focus {
+  outline-color: var(--color_accent_tint);
+}
+
+.icon_btn {
+  padding: 2px 8px;
+  width: 1em;
+  border-radius: 8px;
+  color: var(--color_normal);
+  background-color: transparent;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+#startButton {
+  width: 392px;
+  background-color: var(--color_accent);
+  border: 2px solid var(--color_accent);
+  color: var(--color_grey100);
+}
+
+#pauseButton, #resumeButton {
+  width: 190px;
+}
+
+#stopButton {
+  width: 190px;
+  margin-left: 4px;
+}
+
+#toggleTheme {
+  position: absolute;
+  top: 1.2em;
+  right: 1.2em;
+  border-radius: 10px;
+  width: 120px;
+  padding: 4px;
+  background-color: var(--color_normal);
+  color: var(--background_color_z100);
+  border: none;
+  text-align: center;
+  transition: all .2s ease;
+}
+
+#toggleTheme:hover {
+  filter: opacity(.8);
+}
+
+#toggleTheme:focus {
+  outline: none;
+}
+
+#continueButton {
+  opacity: 0;
+}
+
+#focusHistory li:hover #continueButton {
+  opacity: 1;
+}

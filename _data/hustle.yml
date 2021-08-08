@@ -1,0 +1,30 @@
+first:
+  - img: https://www.google.com/s2/favicons?sz=64&domain=https://www.notion.so/b2b-designers/B2B-5927e66246034f378116de45b180c040
+    link: https://www.notion.so/b2b-designers/B2B-5927e66246034f378116de45b180c040
+    name: B2B 디자이너들의 모임 →
+    description: 커뮤니티 관리 운영, 컨텐츠 제작, 데일리 아티클 공유
+    date: Jun 2021 ~ Present 🚀
+second:
+  - img: images/icons/pomodoro.png
+    link: /side-hustle/pomodoro
+    name: Pomodoro Timer →
+    description: 포모도로 타이머, Local Storage 활용, Task 이어하기
+    date: Apr 2021 ~ Present 🚀
+third:
+  - img: images/icons/api.png
+    link: /side-hustle/api-practice
+    name: API Practice →
+    description: 퍼블릭 API로 API Request & Response 실습 (Ip Info, Open Weather)
+    date: May 2021
+fourth:
+  - img: images/icons/custom.png
+    link: /side-hustle/timer
+    name: Custom Timer →
+    description: 입력한 분으로 타이머 만들기
+    date: Feb 2021
+fifth:
+  - img: images/icons/clock.png
+    link: /side-hustle/clock_theme
+    name: Themed Clock →
+    description: 현재 시간을 반영하는 아날로그 시계, Light & Dark Theme 토글
+    date: Jul 2020

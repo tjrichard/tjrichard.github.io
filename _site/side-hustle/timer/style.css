@@ -1,0 +1,92 @@
+/* Light mode */
+@media (prefers-color-scheme: light) {
+  body {
+    background-color: white;
+    color: #41414e;
+  }
+  input :focus {
+    border: 2px solid #5b53ed;
+    outlint: 0;
+  }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #2F3638;
+    color: #f3f4f5;
+  }
+  input {
+    background-color: #f3f4f5;
+    border-color: #1e1e22;
+  }
+  input:focus {
+    border: 2px solid #5b53ed;
+    outline: 0;
+  }
+}
+
+
+body {
+  font-family: 'Arimo', sans-serif;
+}
+
+#container {
+  width: 200px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -50px;
+}
+
+#inputArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+  margin-bottom: 6px;
+}
+
+#buttonArea {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+}
+
+h1 {
+  display: inline-block;
+  font-size: 4em;
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+  line-height: .8em;
+  margin: 5px 0 10px 0;
+}
+
+#minutes {
+  width: 36px;
+  height: 22px;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+
+.btn {
+  margin-left: 10px;
+  width: 36px;
+  height: 22px;
+  padding: 1px 2px;
+  background-color: #5b53ed;
+  color: white;
+  border-radius: 4px;
+  border: 2px solid #5b53ed;
+  box-sizing: unset;
+  font-weight: 600;
+}
+

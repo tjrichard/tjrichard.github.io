@@ -1,0 +1,62 @@
+<ul class='hustle c-content'>
+    {% for first in site.data.hustle.first %}
+    <li class='hustle__list'>
+      <div class='hustle__img'>
+        <img src='{{ first.img }}'>
+      </div>
+      <div class='brief'>
+        <p class='hustle__name'><a href='{{ first.link }}' target='blank' ref='nofollow'>{{ first.name }}</a></p>
+        <p class='c-page__keyword c-content'>{{ first.description }}</p>
+        <p class='date'>{{ first.date }}</p>
+      </div>
+    </li>
+    {% endfor %}
+    {% for first in site.data.hustle.second %}
+    <li class='hustle__list'>
+      <div class='hustle__img'>
+        <img src='{{ first.img }}'>
+      </div>
+      <div class='brief'>
+        <p class='hustle__name'><a href='{{ first.link }}' target='blank' ref='nofollow'>{{ first.name }}</a></p>
+        <p class='c-page__keyword c-content'>{{ first.description }}</p>
+        <p class='date'>{{ first.date }}</p>
+      </div>
+    </li>
+    {% endfor %}
+    {% for first in site.data.hustle.third %}
+    <li class='hustle__list'>
+      <div class='hustle__img'>
+        <img src='{{ first.img }}'>
+      </div>
+      <div class='brief'>
+        <p class='hustle__name'><a href='{{ first.link }}' target='blank' ref='nofollow'>{{ first.name }}</a></p>
+        <p class='c-page__keyword c-content'>{{ first.description }}</p>
+        <p class='date'>{{ first.date }}</p>
+      </div>
+    </li>
+    {% endfor %}
+    {% for first in site.data.hustle.fourth %}
+    <li class='hustle__list'>
+      <div class='hustle__img'>
+        <img src='{{ first.img }}'>
+      </div>
+      <div class='brief'>
+        <p class='hustle__name'><a href='{{ first.link }}' target='blank' ref='nofollow'>{{ first.name }}</a></p>
+        <p class='c-page__keyword c-content'>{{ first.description }}</p>
+        <p class='date'>{{ first.date }}</p>
+      </div>
+    </li>
+    {% endfor %}
+    {% for first in site.data.hustle.fifth %}
+    <li class='hustle__list'>
+      <div class='hustle__img'>
+        <img src='{{ first.img }}'>
+      </div>
+      <div class='brief'>
+        <p class='hustle__name'><a href='{{ first.link }}' target='blank' ref='nofollow'>{{ first.name }}</a></p>
+        <p class='c-page__keyword c-content'>{{ first.description }}</p>
+        <p class='date'>{{ first.date }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>

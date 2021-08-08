@@ -5,8 +5,8 @@
     <description></description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 07 Aug 2021 23:33:48 +0900</pubDate>
-    <lastBuildDate>Sat, 07 Aug 2021 23:33:48 +0900</lastBuildDate>
+    <pubDate>Sun, 08 Aug 2021 23:41:30 +0900</pubDate>
+    <lastBuildDate>Sun, 08 Aug 2021 23:41:30 +0900</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
 
     
@@ -46,11 +46,11 @@
             <title>Seunghwan Jang</title>
             <description>저는 데이터와 디테일 중심의 경험을 가진 서비스/UX 디자이너 입니다. 저는 사용자 리서치에서 얻은 인사이트로부터 디자인 하는 데 능숙합니다. 또한 저는 학습이 빠릅니다. 비록 제가 알지 못하는 영역의 어떤 업무라 하더라도 빠르게 배우고 완성도 높은 결과물을 낼 수 있습니다. 저는 다른 디자이너, 개발자와 원활히 일할 수 있으며 발전을 위한 피드백을 주고 받는데 익숙합니다.
 
-'항상 긍정적이고 적극적이자'를 삶의 목표로 하고 있습니다.
+&apos;항상 긍정적이고 적극적이자&apos;를 삶의 목표로 하고 있습니다.
 
 ---
 
-&lt;a href='https://tjrichard.github.io/assets/Resume_Seunghwan_1908.pdf' target='_blank' rel='nofollow' id='resume' onclick='downloadResume(resume)'&gt;🧑🏻‍💻이력서&lt;/a&gt; / &lt;a href='https://tjrichard.github.io/assets/Portfolio_Seunghwan_1906.pdf' target='_blank' rel='nofollow' id='portfolio' onclick='downloadPortfolio(portfolio)'&gt;🏄🏻‍♂️포트폴리오&lt;/a&gt;
+&lt;a href=&apos;https://tjrichard.github.io/assets/Resume_Seunghwan_1908.pdf&apos; target=&apos;_blank&apos; rel=&apos;nofollow&apos; id=&apos;resume&apos; onclick=&apos;downloadResume(resume)&apos;&gt;🧑🏻‍💻이력서&lt;/a&gt; / &lt;a href=&apos;https://tjrichard.github.io/assets/Portfolio_Seunghwan_1906.pdf&apos; target=&apos;_blank&apos; rel=&apos;nofollow&apos; id=&apos;portfolio&apos; onclick=&apos;downloadPortfolio(portfolio)&apos;&gt;🏄🏻‍♂️포트폴리오&lt;/a&gt;
 
 _last update : 19.08_</description>
             <link>http://localhost:4000/about/</link>
