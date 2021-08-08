@@ -42,9 +42,9 @@ order: 6
 - [프로덕트 전략 운영에 북극성 지표를 사용하는 방법](#프로덕트-전략-운영에-북극성-지표를-사용하는-방법)
 
 <div class="c-list">
-    <div class="c-list__item">
+    <div class="c-list__item" style="border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 3px;">
         <a href="https://amplitude.com/north-star?utm_source=blog&utm_medium=onsite&utm_campaign=download-north-star-playbook" target="_blank" rel="nofollow" id='outlink3' onclick='clickedOutlink(outlink3)'>
-            <div class="c-list__info" style="border: 1px solid rgba(0, 0, 0, 0.08); border-radius: 3px;">
+            <div class="c-list__info">
                 <div class="c-list__type">
                 ⭐️ The North Star Playbook
                 </div>
