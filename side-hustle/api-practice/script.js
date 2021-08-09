@@ -136,6 +136,30 @@ function appendList(json) {
     }
 }
 
+function responseToAnalytics(json) {
+    var x = Object.keys(json).length;
+    // console.log("Key: 총 " + x + "개");
+    // console.log(JSON.stringify(json));
+    var responseObject = {}
+
+    for (i = 0; i < x; i++) {
+        var key = Object.keys(json)[i];
+        var value;
+        if (typeof(Object.values(json)[i]) == "object") {
+            var y = Object.values(json)[i];
+            value = JSON.stringify(y);
+        }
+        else {
+            var y = Object.values(json)[i];
+            value = y;
+        }
+        responseObject[key] = value;
+    }
+    analytics.track('Fetch API Response', {
+        responseObject
+    })
+}
+
 /*
 =================== API Fetch functoins ===================
 */
@@ -161,6 +185,7 @@ function getApi_ipInfo() {
         getCurrentTime();
         // appendList(json);
         CreateTableFromJSON(json);
+        responseToAnalytics(json);
     })
 }
 
@@ -197,6 +222,7 @@ function getApi_currentWeather() {
             getCurrentTime();
             // appendList(json);
             CreateTableFromJSON(json);
+            responseToAnalytics(json);
         })
     })
 }

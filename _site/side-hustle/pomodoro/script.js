@@ -6,9 +6,9 @@ var focusCount = 0;
 var breakCount = 0;
 var taskCount = localStorage.getItem("taskCount");
 var phaseCount = 1;
-var faviconClock = 'https://projectshj.github.io/html-timer/pomodoro/icons/clock.png'
-var faviconPomodoro = 'https://projectshj.github.io/html-timer/pomodoro/icons/pomodoro.png'
-var faviconBath = 'https://projectshj.github.io/html-timer/pomodoro/icons/bath.png'
+var faviconClock = 'https://tjrichard.github.io/side-hustle/pomodoro/icons/clock.png'
+var faviconPomodoro = 'https://tjrichard.github.io/side-hustle/pomodoro/icons/pomodoro.png'
+var faviconBath = 'https://tjrichard.github.io/side-hustle/pomodoro/icons/bath.png'
 
 /*
 =================== Common functoins ===================
@@ -317,6 +317,16 @@ function tick() {
 			breakCount++;
 			setTaskInfo("timerCount", timerCount);
 			setTaskInfo("breakCount", breakCount);
+
+			// Track Segment Event
+			analytics.track('Complete Countdown', {
+				'Task': taskName,
+				'Focus Count': focusCount,
+				'Break Count': breakCount,
+				'Timer Count': timerCount,
+				'Task Count': taskCount,
+				'Phase Count': phaseCount
+			})
 			
 			// Reset Timer, & Show Statistics
 			resetCountdown();
@@ -495,6 +505,13 @@ function startCountdown() {
 		localStorage.setObj("task1p1", b);
 	};
 
+	// Track Segment Event
+	analytics.track('Start Countdown', {
+		'Task': taskValue,
+		'Task Count': taskCount,
+		'Phase Count': phaseCount
+	})
+
 	// start pomodoro
 	focus25min();
 
@@ -524,6 +541,12 @@ function startCountdown() {
 }
 
 function resetCountdown() {
+	// Track Segment Event
+	analytics.track('Reset Countdown', {
+		'Task Count': taskCount,
+		'Phase Count': phaseCount
+	})
+
 	// alert("timer stopped");
 	clearInterval(intervalHandle);
 	resetPage();
@@ -567,6 +590,12 @@ function resetCountdown() {
 }
 
 function pauseCountdown() {
+	// Track Segment Event
+	analytics.track('Pause Countdown', {
+		'Task Count': taskCount,
+		'Phase Count': phaseCount
+	})
+
 	// 일시정지 duration 만큼 timerStartTime에 더해주는 작업
 	var timerPauseTime = Date.now();
 	localStorage.setItem("timerPauseTime", timerPauseTime);
@@ -599,6 +628,13 @@ function resumeCountdown() {
 	timerStartTime = timerStartTime + pauseDuration;
 	// console.log("변경 Start Time: ", timerStartTime);
 	localStorage.setItem("timerStartTime", timerStartTime);
+
+	// Track Segment Event
+	analytics.track('Resume Countdown', {
+		'Task Count': taskCount,
+		'Phase Count': phaseCount,
+		'Paused Duration': pauseDuration
+	})
 
 	// restart timer
 	intervalHandle = setInterval(tick, 500);
@@ -676,6 +712,13 @@ function continueCountdown(this_id) {
 	console.log(taskId);
 	console.log(taskInfo);
 
+	// Track Segment Event
+	analytics.track('Continue Countdown', {
+		'Task': taskInfo.taskValue,
+		'Task Count': taskCount,
+		'Phase Count': phaseCount
+	})
+
 	// clear timer
 	clearTimer();
 
@@ -728,6 +771,12 @@ function createFocusTask() {
 function resetAllTasks() {
 	clearInterval(intervalHandle);
 	
+	// Track Segment Event
+	var x = document.getElementById("historyUl").querySelectorAll("li").length;
+	analytics.track('Reset All Task', {
+		'Task Count': x
+	})
+	
 	// clear all
 	localStorage.clear();
 	taskCount = "";
@@ -752,7 +801,7 @@ function resetAllTasks() {
 */
 
 function focus25min() {
-	var minutes = 25;
+	var minutes = .25;
 
 	// how many seconds
 	totalSeconds = minutes * 60;
@@ -767,7 +816,7 @@ function focus25min() {
 }
 
 function break5min() {
-	var minutes = 5;
+	var minutes = .5;
 	
 	// how many seconds
 	totalSeconds = minutes * 60;
@@ -782,7 +831,7 @@ function break5min() {
 }
 
 function break15min() {
-	var minutes = 15;
+	var minutes = .15;
 	
 	// how many seconds
 	totalSeconds = minutes * 60;
@@ -805,11 +854,21 @@ function toggleTheme() {
 		document.getElementById("toggleTheme").setAttribute("class", "btn dark");
 		document.getElementById("toggleTheme").innerHTML = "🌞 Light Theme";
 		document.body.setAttribute("class", "dark");
+		// Track Segment Event
+		analytics.track('Toggle Theme', {
+			'Previous Theme': 'Light',
+			'Current Theme': 'Dark'
+		})
 	}
 	else {
 		document.getElementById("toggleTheme").setAttribute("class", "btn");
 		document.getElementById("toggleTheme").innerHTML = "🌘 Dark Theme";
 		document.body.setAttribute("class", "");
+		// Track Segment Event
+		analytics.track('Toggle Theme', {
+			'Previous Theme': 'Dark',
+			'Current Theme': 'Light'
+		})
 	}
 }
 
