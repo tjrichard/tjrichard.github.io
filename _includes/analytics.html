@@ -10,6 +10,10 @@
 
 <!-- Segment -->
 <script>
+  var referrer;
+  var referrerHost
+  var userAgent;
+  var browser;
   /*
   받은 referrer url에서 www에서 / 까지를 host로 리턴합니다
   www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다.
@@ -18,16 +22,15 @@
   window.onload = function () {
     var referrer = document.referrer;
     if (referrer.split("://")[1].substring(0, 3) == "www") {
-        var referrerHost = referrer.split("www.")[1];
+        referrerHost = referrer.split("www.")[1];
         referrerHost = referrerHost.split("/")[0];
     }
     else {
-        var referrerHost = referrer.split("://")[1];
+        referrerHost = referrer.split("://")[1];
         referrerHost = referrerHost.split("/")[0];
     }
   
-    var userAgent = navigator.userAgent.toLowerCase();
-    var browser;
+    userAgent = navigator.userAgent.toLowerCase();
     if(userAgent.indexOf('edge')>-1){
       browser='Microsoft Edge';
     }else if(userAgent.indexOf('whale')>-1){
