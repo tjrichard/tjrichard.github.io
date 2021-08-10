@@ -20,7 +20,7 @@
   User Agent의 값에서 값을 분리해 
   */
   window.onload = function () {
-    var referrer = document.referrer;
+    referrer = document.referrer;
     if (referrer.split("://")[1].substring(0, 3) == "www") {
         referrerHost = referrer.split("www.")[1];
         referrerHost = referrerHost.split("/")[0];
