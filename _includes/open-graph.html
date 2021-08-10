@@ -10,7 +10,8 @@
     {% endif %}
 {% else %}
     {% if page.header-img == nil %}
-        <meta name="og:image" content="{{ page.url }}img/{{ page.list-img }}">
+        <meta name="og:image" content="{{ page.url }}blog/{{ page.list-img }}">
+        <script>console.log('{{ page.url }}blog/{{ page.list-img }}')</script>
     {% else %}
         <meta name="og:image" content="{{ page.url }}img/{{ page.header-img }}">
     {% endif %}

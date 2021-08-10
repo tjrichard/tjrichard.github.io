@@ -7,7 +7,7 @@ tags: [아티클 요약, 프로덕트 지표, 프로덕트 개선, 프로덕트 
 date: 2021-06-27 17:39:45
 blog: true
 is_list-img: false
-list-img: "article_summary-6/img/product management after product metrics.png" 
+list-img: "article_summary-6/img/product_management_after_product_metrics.png" 
 post-header: false
 order: 8
 ---
