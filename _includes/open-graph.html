@@ -5,15 +5,18 @@
 {% if page.list-img == nil %}
     {% if page.header-img == nil %}
         <meta name="og:image" content="{{ site.url }}/images/blog_ogimg.png">
+        <!-- <script>console.log('{{ site.url }}/images/blog_ogimg.png')</script> -->
     {% else %}
-        <meta name="og:image" content="{{ page.url }}img/{{ page.header-img }}">
+        <meta name="og:image" content="{{ site.url }}{{ page.url }}{{ page.header-img }}">
+        <!-- <script>console.log('{{ site.url }}{{ page.url }}{{ page.header-img }}')</script> -->
     {% endif %}
 {% else %}
     {% if page.header-img == nil %}
-        <meta name="og:image" content="{{ page.url }}blog/{{ page.list-img }}">
-        <script>console.log('{{ page.url }}blog/{{ page.list-img }}')</script>
+        <meta name="og:image" content="{{ site.url }}blog/{{ page.list-img }}">
+        <!-- <script>console.log('{{ site.url }}blog/{{ page.list-img }}')</script> -->
     {% else %}
-        <meta name="og:image" content="{{ page.url }}img/{{ page.header-img }}">
+        <meta name="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
+        <!-- <script>console.log('{{ site.url}}{{ page.url }}{{ page.header-img }}')</script> -->
     {% endif %}
 {% endif %}
 

@@ -4,7 +4,6 @@ work: true
 title: Selected Projects
 description: 🎁 지금까지 작업한 프로젝트
 project-header: true
-header-img: "./img/project-header.jpg"
 ---
 <div class='o-grid'>
     <div class='o-grid__col o-grid__col--full'>

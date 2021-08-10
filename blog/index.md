@@ -3,7 +3,6 @@ layout: default
 title: Thoughts and Intrests
 description: 🤔 관심 분야에 대한 생각
 project-header: true
-header-img: img/about.jpg
 ---
 <div class='o-grid'>
     <div class='o-grid__col o-grid__col--full'>
