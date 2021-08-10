@@ -6,7 +6,7 @@ subtitle: "번역 및 요약 👉 Product Metrcs That Matter"
 tags: [아티클 요약, 프로덕트 지표, 프로덕트 개선, 프로덕트 관리]
 date: 2021-06-27 17:39:45
 blog: true
-is_list-img: false
+is_list-img: true
 list-img: "article_summary-6/img/product management after product metrics.png" 
 post-header: false
 order: 8

@@ -3,11 +3,13 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 {% if page.list-img %}
-<meta name="og:image" content="{{ site.url }}/images/{{ page.list-img }}">
+    <meta name="og:image" content="{{ page.url }}img/{{ page.list-img }}">
 {% else %}
-<meta name="og:image" content="{{ site.url }}/images/blog_ogimg.png{% endif %}">
+    <meta name="og:image" content="{{ site.url }}/images/blog_ogimg.png">
 {% endif %}
 
-{% if page.excerpt %}<meta property="og:description" content="{{ page.excerpt | strip_html }}">{% endif %}
+{% if page.excerpt %}
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+{% endif %}
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">
