@@ -14,9 +14,49 @@ var faviconBath = 'https://tjrichard.github.io/side-hustle/pomodoro/icons/bath.p
 =================== Common functoins ===================
 */
 
+var referrer;
+var referrerHost
+var userAgent;
+var browser;
+/*
+받은 referrer url에서 www에서 / 까지를 host로 리턴합니다
+www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다.
+User Agent의 값에서 값을 분리해 
+*/
+window.onload = function () {
+  referrer = document.referrer;
+  if (referrer.split("://")[1].substring(0, 3) == "www") {
+	  referrerHost = referrer.split("www.")[1];
+	  referrerHost = referrerHost.split("/")[0];
+  }
+  else {
+	  referrerHost = referrer.split("://")[1];
+	  referrerHost = referrerHost.split("/")[0];
+  }
+
+  userAgent = navigator.userAgent.toLowerCase();
+  if(userAgent.indexOf('edge')>-1){
+	browser='Microsoft Edge';
+  }else if(userAgent.indexOf('whale')>-1){
+	browser='Naver Whale';
+  }else if(userAgent.indexOf('chrome')>-1){
+	browser='Google Chrome';
+  }else if(userAgent.indexOf('firefox')>-1){
+	browser='Mozilla Firefox';
+  }else{
+	browser='Internet Explorer';
+  }
+}
+
 !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";analytics.SNIPPET_VERSION="4.13.2";
 analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
-analytics.page();
+analytics.page({
+  'Referrer Host': referrerHost
+});
+analytics.identify({
+  'User Agent': userAgent,
+  'Browser': browser
+});
 }}();
 
 Storage.prototype.setObj = function(key, obj) {
