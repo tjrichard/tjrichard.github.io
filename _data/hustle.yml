@@ -24,7 +24,7 @@ fourth:
     date: Feb 2021
 fifth:
   - img: images/icons/clock.png
-    link: /side-hustle/clock_theme
+    link: /side-hustle/clock_theme/clock
     name: Themed Clock →
     description: 현재 시간을 반영하는 아날로그 시계, Light & Dark Theme 토글
     date: Jul 2020
