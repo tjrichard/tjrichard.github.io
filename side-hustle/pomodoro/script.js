@@ -361,11 +361,13 @@ function tick() {
 			// Track Segment Event
 			analytics.track('Complete Countdown', {
 				'Task': taskName,
-				'Focus Count': focusCount,
-				'Break Count': breakCount,
-				'Timer Count': timerCount,
-				'Task Count': taskCount,
-				'Phase Count': phaseCount
+				'Timer Info': {
+					'Focus Count': focusCount,
+					'Break Count': breakCount,
+					'Timer Count': timerCount,
+					'Task Count': taskCount,
+					'Phase Count': phaseCount
+				}
 			})
 			
 			// Reset Timer, & Show Statistics
@@ -548,8 +550,10 @@ function startCountdown() {
 	// Track Segment Event
 	analytics.track('Start Countdown', {
 		'Task': taskValue,
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// start pomodoro
@@ -583,8 +587,10 @@ function startCountdown() {
 function resetCountdown() {
 	// Track Segment Event
 	analytics.track('Reset Countdown', {
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// alert("timer stopped");
@@ -632,8 +638,10 @@ function resetCountdown() {
 function pauseCountdown() {
 	// Track Segment Event
 	analytics.track('Pause Countdown', {
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// 일시정지 duration 만큼 timerStartTime에 더해주는 작업
@@ -671,9 +679,11 @@ function resumeCountdown() {
 
 	// Track Segment Event
 	analytics.track('Resume Countdown', {
-		'Task Count': taskCount,
-		'Phase Count': phaseCount,
-		'Paused Duration': pauseDuration
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount,
+			'Paused Duration': pauseDuration
+		}
 	})
 
 	// restart timer
@@ -699,7 +709,7 @@ function continueCountdown(this_id) {
 	var taskNo = buttonId.split("p")[0];
 	var phaseNo = buttonId.split("p")[1];
 	
-	// grab task information
+	// grab Task Information
 	var taskId = "task" + taskNo + "p" + phaseNo;
 	var taskLi = document.getElementById(taskId);
 	var taskInfo = localStorage.getObj(taskId);
@@ -755,8 +765,10 @@ function continueCountdown(this_id) {
 	// Track Segment Event
 	analytics.track('Continue Countdown', {
 		'Task': taskInfo.taskValue,
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// clear timer
@@ -814,7 +826,9 @@ function resetAllTasks() {
 	// Track Segment Event
 	var x = document.getElementById("historyUl").querySelectorAll("li").length;
 	analytics.track('Reset All Task', {
-		'Task Count': x
+		'Timer Info': {
+			'Task Count': x
+		}
 	})
 	
 	// clear all
