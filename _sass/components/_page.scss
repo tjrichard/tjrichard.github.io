@@ -10,6 +10,7 @@
     font-size: double($font-size-header);
     margin-bottom: half($base-spacing-unit);
     font-weight: $font-weight-heavy;
+    word-break: keep-all;
 
     @include mq($from: tablet) {
       font-size: double($font-size-header);
