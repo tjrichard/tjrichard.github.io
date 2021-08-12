@@ -14,9 +14,49 @@ var faviconBath = 'https://tjrichard.github.io/side-hustle/pomodoro/icons/bath.p
 =================== Common functoins ===================
 */
 
+var referrer;
+var referrerHost
+var userAgent;
+var browser;
+/*
+받은 referrer url에서 www에서 / 까지를 host로 리턴합니다
+www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다.
+User Agent의 값에서 값을 분리해 
+*/
+window.onload = function () {
+  referrer = document.referrer;
+  if (referrer.split("://")[1].substring(0, 3) == "www") {
+	  referrerHost = referrer.split("www.")[1];
+	  referrerHost = referrerHost.split("/")[0];
+  }
+  else {
+	  referrerHost = referrer.split("://")[1];
+	  referrerHost = referrerHost.split("/")[0];
+  }
+
+  userAgent = navigator.userAgent.toLowerCase();
+  if(userAgent.indexOf('edge')>-1){
+	browser='Microsoft Edge';
+  }else if(userAgent.indexOf('whale')>-1){
+	browser='Naver Whale';
+  }else if(userAgent.indexOf('chrome')>-1){
+	browser='Google Chrome';
+  }else if(userAgent.indexOf('firefox')>-1){
+	browser='Mozilla Firefox';
+  }else{
+	browser='Internet Explorer';
+  }
+}
+
 !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";analytics.SNIPPET_VERSION="4.13.2";
 analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
-analytics.page();
+analytics.page({
+  'Referrer Host': referrerHost
+});
+analytics.identify({
+  'User Agent': userAgent,
+  'Browser': browser
+});
 }}();
 
 Storage.prototype.setObj = function(key, obj) {
@@ -321,11 +361,13 @@ function tick() {
 			// Track Segment Event
 			analytics.track('Complete Countdown', {
 				'Task': taskName,
-				'Focus Count': focusCount,
-				'Break Count': breakCount,
-				'Timer Count': timerCount,
-				'Task Count': taskCount,
-				'Phase Count': phaseCount
+				'Timer Info': {
+					'Focus Count': focusCount,
+					'Break Count': breakCount,
+					'Timer Count': timerCount,
+					'Task Count': taskCount,
+					'Phase Count': phaseCount
+				}
 			})
 			
 			// Reset Timer, & Show Statistics
@@ -508,8 +550,10 @@ function startCountdown() {
 	// Track Segment Event
 	analytics.track('Start Countdown', {
 		'Task': taskValue,
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// start pomodoro
@@ -543,8 +587,10 @@ function startCountdown() {
 function resetCountdown() {
 	// Track Segment Event
 	analytics.track('Reset Countdown', {
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// alert("timer stopped");
@@ -592,8 +638,10 @@ function resetCountdown() {
 function pauseCountdown() {
 	// Track Segment Event
 	analytics.track('Pause Countdown', {
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// 일시정지 duration 만큼 timerStartTime에 더해주는 작업
@@ -631,9 +679,11 @@ function resumeCountdown() {
 
 	// Track Segment Event
 	analytics.track('Resume Countdown', {
-		'Task Count': taskCount,
-		'Phase Count': phaseCount,
-		'Paused Duration': pauseDuration
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount,
+			'Paused Duration': pauseDuration
+		}
 	})
 
 	// restart timer
@@ -659,7 +709,7 @@ function continueCountdown(this_id) {
 	var taskNo = buttonId.split("p")[0];
 	var phaseNo = buttonId.split("p")[1];
 	
-	// grab task information
+	// grab Task Information
 	var taskId = "task" + taskNo + "p" + phaseNo;
 	var taskLi = document.getElementById(taskId);
 	var taskInfo = localStorage.getObj(taskId);
@@ -715,8 +765,10 @@ function continueCountdown(this_id) {
 	// Track Segment Event
 	analytics.track('Continue Countdown', {
 		'Task': taskInfo.taskValue,
-		'Task Count': taskCount,
-		'Phase Count': phaseCount
+		'Timer Info': {
+			'Task Count': taskCount,
+			'Phase Count': phaseCount
+		}
 	})
 
 	// clear timer
@@ -774,7 +826,9 @@ function resetAllTasks() {
 	// Track Segment Event
 	var x = document.getElementById("historyUl").querySelectorAll("li").length;
 	analytics.track('Reset All Task', {
-		'Task Count': x
+		'Timer Info': {
+			'Task Count': x
+		}
 	})
 	
 	// clear all
@@ -801,7 +855,7 @@ function resetAllTasks() {
 */
 
 function focus25min() {
-	var minutes = .25;
+	var minutes = 25;
 
 	// how many seconds
 	totalSeconds = minutes * 60;
@@ -816,7 +870,7 @@ function focus25min() {
 }
 
 function break5min() {
-	var minutes = .5;
+	var minutes = 5;
 	
 	// how many seconds
 	totalSeconds = minutes * 60;
@@ -831,7 +885,7 @@ function break5min() {
 }
 
 function break15min() {
-	var minutes = .15;
+	var minutes = 15;
 	
 	// how many seconds
 	totalSeconds = minutes * 60;
