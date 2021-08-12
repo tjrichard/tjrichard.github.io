@@ -59,7 +59,7 @@
             line-height: $line-height-header;
             letter-spacing: -0.009em;
             position: relative;
-            margin-bottom: half($font-size-header);
+            margin-bottom: half($font-size-tiny);
             @include mq($from: tablet) {
                 font-size: double($font-size-small);
             }
