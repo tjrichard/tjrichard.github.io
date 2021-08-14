@@ -9,9 +9,9 @@ layout: null
             <url>
             <loc>{{ site.url }}{{ page.url }}</loc>
             {% if page.date == null %}
-                <date>{{ page.date | date_to_xmlschema }}</date>
+                <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
             {% else %}
-                <date>{{ page.date | date_to_xmlschema }}</date>
+                <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
             {% endif %}
 
             {% if page.sitemap.changefreq == null %}
@@ -34,9 +34,9 @@ layout: null
             <url>
             <loc>{{ site.url }}{{ page.url }}</loc>
             {% if page.date == null %}
-                <date>{{ page.date | date_to_xmlschema }}</date>
+                <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
             {% else %}
-                <date>{{ page.date | date_to_xmlschema }}</date>
+                <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
             {% endif %}
 
             {% if page.sitemap.changefreq == null %}
