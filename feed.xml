@@ -12,43 +12,43 @@ layout: null
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
 
-    {% assign sorted = site.pages | sort: 'order' | reverse %}
-    {% for page in sorted %}
-        {% if page.project == true %}
+    {% assign sorted = site.pages | sort: 'order' | reverse -%}
+    {%- for page in sorted %}
+        {%- if page.project == true -%}
         <item>
           <title>{{ page.title | xml_escape }}</title>
-          <description>{{ page.content | xml_escape }}</description>
+          <description>{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | truncate: 160 }}</description>
           <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
           <link>{{ page.url | prepend: site.baseurl | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ page.url | prepend: site.baseurl | prepend: site.url }}</guid>
         </item>
-        {% endif %}
-    {% endfor %}
+        {%- endif %}
+    {%- endfor %}
 
-    {% assign sorted = site.pages | sort: 'order' | reverse %}
-    {% for page in sorted %}
-        {% if page.blog == true %}
+    {%- assign sorted = site.pages | sort: 'order' | reverse %}
+    {%- for page in sorted %}
+        {%- if page.blog == true -%}
         <item>
           <title>{{ page.title | xml_escape }}</title>
-          <description>{{ page.content | xml_escape }}</description>
+          <description>{{ page.content | markdownify | strip_html | strip_newlines | xml_escape | truncate: 160 }}</description>
           <pubDate>{{ page.date | date_to_rfc822 }}</pubDate>
           <link>{{ page.url | prepend: site.baseurl | prepend: site.url }}</link>
           <guid isPermaLink="true">{{ page.url | prepend: site.baseurl | prepend: site.url }}</guid>
         </item>
-        {% endif %}
-    {% endfor %}
+        {%- endif %}
+    {%- endfor %}
 
-    {% for page in site.pages %}
-      {% if page.layout == 'page' %}
-        {% if page.name != '404.md' %}
+    {%- for page in site.pages %}
+      {%- if page.layout == 'page' -%}
+        {%- if page.name != '404.md' -%}
           <item>
             <title>{{ page.title | xml_escape }}</title>
             <description>{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | xml_escape | truncate: 160 }}{% else %}{{ site.description | xml_escape }}{% endif %}</description>
             <link>{{ page.url | prepend: site.baseurl | prepend: site.url }}</link>
           </item>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
+        {%- endif %}
+      {%- endif %}
+    {%- endfor %}
 
   </channel>
 </rss>
