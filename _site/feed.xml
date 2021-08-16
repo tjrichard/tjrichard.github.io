@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Seunghwan</title>
-    <description></description>
+    <description>AB180의 UX 디자이너 장승환의 블로그입니다.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Aug 2021 18:11:07 +0900</pubDate>
-    <lastBuildDate>Sat, 14 Aug 2021 18:11:07 +0900</lastBuildDate>
+    <pubDate>Mon, 16 Aug 2021 18:51:22 +0900</pubDate>
+    <lastBuildDate>Mon, 16 Aug 2021 18:51:22 +0900</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
 
     
