@@ -2,26 +2,28 @@
 <meta property="og:locale" content="{{ site.locale }}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-{% if page.list-img == nil %}
-    {% if page.header-img == nil %}
+{% if page.list-img == nil -%}
+    {%- if page.header-img == nil -%}
         <meta name="og:image" content="{{ site.url }}/images/blog_ogimg.png">
         <!-- <script>console.log('{{ site.url }}/images/blog_ogimg.png')</script> -->
-    {% else %}
+    {%- else -%}
         <meta name="og:image" content="{{ site.url }}{{ page.url }}{{ page.header-img }}">
         <!-- <script>console.log('{{ site.url }}{{ page.url }}{{ page.header-img }}')</script> -->
-    {% endif %}
-{% else %}
-    {% if page.header-img == nil %}
+    {%- endif %}
+{%- else -%}
+    {%- if page.header-img == nil -%}
         <meta name="og:image" content="{{ site.url }}/blog/{{ page.list-img }}">
         <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
-    {% else %}
+    {%- else -%}
         <meta name="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
         <!-- <script>console.log('{{ site.url}}{{ page.url }}{{ page.header-img }}')</script> -->
-    {% endif %}
-{% endif %}
+    {%- endif %}
+{%- endif %}
 
-{% if page.excerpt %}
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-{% endif %}
+{% if page.subtitle == nil or page.subtitle == '장승환' -%}
+    <meta property="og:description" content="{{ site.description }}">
+{%- else -%}
+    <meta property="og:description" content="{{ page.subtitle }}">
+{%- endif %}
 <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.url }}">
 <meta property="og:site_name" content="{{ site.title }}">

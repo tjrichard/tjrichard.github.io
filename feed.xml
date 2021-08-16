@@ -43,7 +43,7 @@ layout: null
         {%- if page.name != '404.md' -%}
           <item>
             <title>{{ page.title | xml_escape }}</title>
-            <description>{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | xml_escape | truncate: 160 }}{% else %}{{ site.description | xml_escape }}{% endif %}</description>
+            <description>{%- if page.subtitle == nil -%}{%- if page.content -%}{{ page.content | strip_html | strip_newlines | xml_escape | truncate: 40 }}{% else %}{{ site.description | xml_escape }}{%- endif -%}{%- else -%}{{ page.subtitle }}{%- endif -%}</description>
             <link>{{ page.url | prepend: site.baseurl | prepend: site.url }}</link>
           </item>
         {%- endif %}
