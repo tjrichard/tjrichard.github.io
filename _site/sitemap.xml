@@ -1,63 +1,238 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>https://tjrichard.github.io/project/b2b_designers_ask_alley/</loc>
-        <lastmod>2021-07-31T19:40:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>1.0</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/article_summary-7/</loc>
-        <lastmod>2021-08-13T23:37:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/article_summary-6/</loc>
-        <lastmod>2021-06-27T17:39:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/article_summary-5/</loc>
-        <lastmod>2021-01-21T12:20:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/article_summary-4/</loc>
-        <lastmod>2020-10-30T12:20:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/article_summary-3/</loc>
-        <lastmod>2020-09-25T14:40:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/article_summary-2/</loc>
-        <lastmod>2020-09-08T22:37:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/article_summary-1/</loc>
-        <lastmod>2020-08-28T14:40:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/github-pages-series-2/</loc>
-        <lastmod>2020-07-20T14:40:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
-    <url>
-        <loc>https://tjrichard.github.io/blog/github-pages-series-1/</loc>
-        <lastmod>2020-07-07T14:40:45+00:00</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.5</priority>
-    </url>
+<?xml version='1.0' encoding='UTF-8'?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+     xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+       http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd
+       http://www.google.com/schemas/sitemap-news/0.9
+       http://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
+
+    
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/project/b2b_designers_ask_alley/</loc>
+            
+            <lastmod>2021-08-01T04:40:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>1.0</priority>
+            
+        </url>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+    
+    
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/article_summary-7/</loc>
+            
+            <lastmod>2021-08-14T08:37:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/article_summary-6/</loc>
+            
+            <lastmod>2021-06-28T02:39:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/article_summary-5/</loc>
+            
+            <lastmod>2021-01-21T21:20:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/article_summary-4/</loc>
+            
+            <lastmod>2020-10-30T21:20:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/article_summary-3/</loc>
+            
+            <lastmod>2020-09-25T23:40:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/article_summary-2/</loc>
+            
+            <lastmod>2020-09-09T07:37:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/article_summary-1/</loc>
+            
+            <lastmod>2020-08-28T23:40:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/github-pages-series-2/</loc>
+            
+            <lastmod>2020-07-20T23:40:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+        <url>
+            <loc>http://localhost:4000/blog/github-pages-series-1/</loc>
+            
+            <lastmod>2020-07-07T23:40:45+09:00</lastmod>
+            
+
+            
+            <changefreq>weekly</changefreq>
+            
+
+            
+            <priority>0.5</priority>
+            
+        </url>
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
 </urlset>
