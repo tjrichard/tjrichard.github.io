@@ -3,57 +3,56 @@ layout: null
 ---
 
 <?xml version='1.0' encoding='UTF-8'?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd http://www.google.com/schemas/sitemap-news/0.9 http://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
-    {% assign sorted = site.pages | sort: 'order' | reverse %}
-    {% for page in sorted %}
-        {% if page.project == true %}
-        <url>
-            <loc>{{ site.url }}{{ page.url }}</loc>
-            {% if page.date == null %}
-            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-            {% else %}
-            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-            {% endif %}
-
-            {% if page.sitemap.changefreq == null %}
-            <changefreq>weekly</changefreq>
-            {% else %}
-            <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-            {% endif %}
-
-            {% if page.sitemap.priority == null %}
-            <priority>1.0</priority>
-            {% else %}
-            <priority>{{ page.sitemap.priority }}</priority>
-            {% endif %}
-        </url>
+    {% assign sorted = site.pages | sort: 'order' | reverse -%}
+    {%- for page in sorted -%}
+    {%- if page.project == true -%}
+    <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        {% if page.date == null -%}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {%- else -%}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
         {% endif %}
-    {% endfor %}
+
+        {%- if page.sitemap.changefreq == null -%}
+        <changefreq>weekly</changefreq>
+        {%- else -%}
+        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+        {% endif %}
+
+        {%- if page.sitemap.priority == null %}
+        <priority>1.0</priority>
+        {%- else -%}
+        <priority>{{ page.sitemap.priority }}</priority>
+        {% endif %}
+    </url>
+    {%- endif %}
+    {%- endfor -%}
     
-    {% assign sorted = site.pages | sort: 'order' | reverse %}
-    {% for page in sorted %}
-        {% if page.blog == true %}
-        <url>
-            <loc>{{ site.url }}{{ page.url }}</loc>
-            {% if page.date == null %}
-            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-            {% else %}
-            <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-            {% endif %}
-
-            {% if page.sitemap.changefreq == null %}
-            <changefreq>weekly</changefreq>
-            {% else %}
-            <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-            {% endif %}
-
-            {% if page.sitemap.priority == null %}
-            <priority>0.5</priority>
-            {% else %}
-            <priority>{{ page.sitemap.priority }}</priority>
-            {% endif %}
-        </url>
+    {% assign sorted = site.pages | sort: 'order' | reverse -%}
+    {%- for page in sorted -%}
+    {% if page.blog == true -%}
+    <url>
+        <loc>{{ site.url }}{{ page.url }}</loc>
+        {% if page.date == null -%}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {%- else -%}
+        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
         {% endif %}
-    {% endfor %}
+
+        {%- if page.sitemap.changefreq == null -%}
+        <changefreq>weekly</changefreq>
+        {%- else -%}
+        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+        {% endif %}
+
+        {%- if page.sitemap.priority == null %}
+        <priority>0.5</priority>
+        {%- else -%}
+        <priority>{{ page.sitemap.priority }}</priority>
+        {% endif %}
+    </url>
+    {%- endif %}
+    {%- endfor %}
 </urlset>
