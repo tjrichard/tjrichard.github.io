@@ -11,10 +11,10 @@ title:       Seunghwan
 email:       tjrichard91@gmail.com
 description: 'AB180의 UX 디자이너 장승환의 블로그입니다.'
 baseurl:     '' # The subpath of your site, e.g. /blog
-url:         https://tjrichard.github.io/ # The base hostname & protocol for your site
+url:         https://tjrichard.github.io # The base hostname & protocol for your site
 github:      https://github.com/tjrichard
 instagram:   https://instagram.com/nam.d.richard
-linkedin:    https://www.linkedin.com/in/tjrichard91/
+linkedin:    https://www.linkedin.com/in/tjrichard91
 twitter:     ''
 facebook:    ''
 
