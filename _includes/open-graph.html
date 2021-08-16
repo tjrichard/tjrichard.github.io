@@ -12,8 +12,8 @@
     {% endif %}
 {% else %}
     {% if page.header-img == nil %}
-        <meta name="og:image" content="{{ site.url }}blog/{{ page.list-img }}">
-        <!-- <script>console.log('{{ site.url }}blog/{{ page.list-img }}')</script> -->
+        <meta name="og:image" content="{{ site.url }}/blog/{{ page.list-img }}">
+        <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
     {% else %}
         <meta name="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
         <!-- <script>console.log('{{ site.url}}{{ page.url }}{{ page.header-img }}')</script> -->
