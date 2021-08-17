@@ -27,7 +27,7 @@ layout: null
         <priority>{{ page.sitemap.priority }}</priority>
         {% endif %}
     </url>
-    {%- endif %}
+    {% endif %}
     {%- endfor -%}
     
     {% assign sorted = site.pages | sort: 'order' | reverse -%}
