@@ -1,7 +1,7 @@
 ---
 layout: post
 type: "Product"
-title:  "B2B SaaS 프로덕트를 디자인하면서 느낀 점"
+title:  "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
 subtitle: "번역 및 요약 👉 Designing for B2B and Enterprise SaaS"
 tags: [아티클 요약, B2B, SaaS, 디자이너 마인드셋]
 date: 2021-08-13 23:37:45
