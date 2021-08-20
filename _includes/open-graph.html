@@ -4,18 +4,18 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 {% if page.list-img == nil -%}
     {%- if page.header-img == nil -%}
-        <meta name="og:image" content="{{ site.url }}/images/blog_ogimg.png">
+        <meta property="og:image" content="{{ site.url }}/images/blog_ogimg.png">
         <!-- <script>console.log('{{ site.url }}/images/blog_ogimg.png')</script> -->
     {%- else -%}
-        <meta name="og:image" content="{{ site.url }}{{ page.url }}{{ page.header-img }}">
+        <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ page.header-img }}">
         <!-- <script>console.log('{{ site.url }}{{ page.url }}{{ page.header-img }}')</script> -->
     {%- endif %}
 {%- else -%}
     {%- if page.header-img == nil -%}
-        <meta name="og:image" content="{{ site.url }}/blog/{{ page.list-img }}">
+        <meta property="og:image" content="{{ site.url }}/blog/{{ page.list-img }}">
         <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
     {%- else -%}
-        <meta name="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
+        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
         <!-- <script>console.log('{{ site.url}}{{ page.url }}{{ page.header-img }}')</script> -->
     {%- endif %}
 {%- endif %}
