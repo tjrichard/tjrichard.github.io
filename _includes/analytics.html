@@ -60,31 +60,34 @@
   function downloadResume(target) {
     var href = target.href;
       analytics.track("Download Resume",{
-        "url": "{{ page.url }}",
-        "target": href
+        url: "{{ page.url }}",
+        target: href
       })
   };
   function downloadPortfolio(target) {
     var href = target.href;
     analytics.track("Download Portfolio",{
-      "url": "{{ page.url }}",
-      "target": href
+      url: "{{ page.url }}",
+      target: href
     })
   }
   function socialLink(target) {
     var href = target.href;
     analytics.track("Click Social Link",{
-      "url": "{{ page.url }}",
-      "target": href
+      url: "{{ page.url }}",
+      target: href
     })
   }
   function clickedOutlink(target) {
     var href = target.href;
-    console.log(target);
-    console.log(href);
       analytics.track("Click Outlink",{
-        "url": "{{ page.url }}",
-        "target": href
+        url: "{{ page.url }}",
+        target: href
+      })
+  }
+  function scrollComplete() {
+    analytics.track("Scroll Complete",{
+        url: "{{ page.url }}"
       })
   };
 </script>

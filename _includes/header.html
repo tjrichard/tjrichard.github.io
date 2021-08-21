@@ -1,13 +1,16 @@
 <header class='c-header'>
-
   <div class='o-grid'>
     <div class='o-grid__col o-grid__col--full'>
       <div class='c-header__inner'>
         <ul class="c-nav c-nav-list">
-            {% include navigation.html %}
+          {% include navigation.html %}
         </ul>
       </div>
     </div>
+  </div>  
+  {% if page.layout == "post" %}
+  <div class='progress-container'>
+    <div class='progress-bar' id='progress-bar'></div>
   </div>
-
+  {% endif %}
 </header>

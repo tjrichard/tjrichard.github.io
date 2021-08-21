@@ -1,0 +1,39 @@
+<script>
+  var scrollTop;
+  var totalHeight;
+  var viewportHeight;
+  var progressBar;
+  var scrolled;
+  var scrollPercent;
+  var scrollEventCount = 1;
+  
+  window.addEventListener('scroll', () =>{
+    scrollTop = window.scrollY;
+    totalHeight = document.documentElement.scrollHeight;
+    viewportHeight = window.innerHeight;
+    progressBar = document.getElementById('progress-bar');
+    scrolled = (scrollTop / (totalHeight - viewportHeight * 2)) * 100
+    var x;
+    function getPercent() {
+      if (scrolled >= 100){
+        x = "100%";
+      }
+      else {
+        x = scrolled + "%";
+      }
+    }
+    getPercent();
+    scrollPercent = x;
+    if (progressBar) {
+      progressBar.style.width = scrollPercent;
+    }
+    // console.log(document.documentElement.scrollTop || document.body.scrollTop);
+    
+    if (scrolled >= 100) {
+      scrollEventCount++;
+      if (scrollEventCount == 2 ) {
+        scrollComplete();
+      }
+    }
+  });
+</script>
