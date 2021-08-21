@@ -17,7 +17,7 @@
                     Coming Soon
                 </span> {% else %}
             <p class="c-list__body">
-                {{ page.content | truncatewords: 40 | strip_html }}
+                {{ page.content | truncatewords: 70 | strip_html }}
             </p>
             <time class='c-list__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time> {% endif %}
         </div>

@@ -14,7 +14,6 @@
         margin: 0 0 20px 0;
         &:last-child {
             margin-bottom: ($base-spacing-unit)*3;
-            border: none;
         }
         a {
             background-image: none !important;
@@ -79,6 +78,10 @@
             color: $color-gray;
             line-height: $line-height-medium;
             margin-bottom: half($font-size-header);
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
         }
         .c-list__date {
             display: block;
