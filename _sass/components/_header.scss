@@ -3,10 +3,16 @@
 \*------------------------------------*/
 
 .c-header {
+  position: -webkit-sticky; // 사파리 지원
+  position: sticky;
+  background-color: $color-white;
+  border-bottom: 1px solid $color-border;
+  z-index: 100;
+  top: 0;
+
   &__inner {
     padding: $base-spacing-unit 0;
-    width: 100%
-    // border-bottom: 1px solid $color-border;
+    width: 100%;
   }
 
   &__icon {

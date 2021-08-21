@@ -5,6 +5,7 @@
 .c-list {
     margin: 0 auto;
     transition: $global-transition;
+
     &__item {
         // border-bottom: 1px solid rgba(0,0,0,.07);
         padding: 16px 0;
@@ -123,7 +124,7 @@
     height: 16em;
     // border-radius: .5em;
     // box-shadow: 6px 0 40px 8px rgba(0,0,0,.05);
-    object-fit: cover;
+    object-fit: scale-down;
     object-position: center;
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08);

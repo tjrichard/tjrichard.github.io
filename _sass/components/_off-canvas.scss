@@ -70,6 +70,8 @@ $off-canvas-width: 300px;
 html,
 body {
   overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
 }
 
 .c-off-canvas-content {
