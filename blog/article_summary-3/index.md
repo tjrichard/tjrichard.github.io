@@ -6,6 +6,8 @@ subtitle: "번역 및 요약 👉 From Gut to Plan: The Thoughtful Execution Fra
 tags: [아티클 요약, Design Process, 가추사고]
 date: 2020-09-25 14:40:45
 blog: true
+is_list-img: false
+list-img: "article_summary-3/img/Thoughtful_Execcution.webp" 
 post-header: false
 order: 5
 ---
