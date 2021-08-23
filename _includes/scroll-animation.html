@@ -12,7 +12,7 @@
     totalHeight = document.documentElement.scrollHeight;
     viewportHeight = window.innerHeight;
     progressBar = document.getElementById('progress-bar');
-    scrolled = (scrollTop / (totalHeight - viewportHeight * 2)) * 100
+    scrolled = (scrollTop / (totalHeight - viewportHeight - 930)) * 100
     var x;
     function getPercent() {
       if (scrolled >= 100){
