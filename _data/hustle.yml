@@ -1,28 +1,34 @@
 first:
-  - img: https://www.google.com/s2/favicons?sz=64&domain=https://www.notion.so/b2b-designers/B2B-5927e66246034f378116de45b180c040
+  - img: https://www.google.com/s2/favicons?sz=256&domain=https://www.notion.so/b2b-designers/B2B-5927e66246034f378116de45b180c040
     link: https://www.notion.so/b2b-designers/B2B-5927e66246034f378116de45b180c040
     name: B2B 디자이너들의 모임 →
     description: 커뮤니티 관리 운영, 컨텐츠 제작, 데일리 아티클 공유
     date: Jun 2021 ~ Present 🚀
 second:
+  - img: https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/logo.svg
+    link: https://mixpanel.com/p/Qwn5iySDsyDRqAZpHZXyB6
+    name: Mixpanel 대시보드 →
+    description: Segment, Mixpanel을 활용하여 이벤트 설계 및 블로그 방문자 분석 실습
+    date: Aug 2021 ~ Present 🚀
+third:
   - img: images/icons/pomodoro.png
     link: /side-hustle/pomodoro
     name: Pomodoro Timer →
-    description: 포모도로 타이머, Local Storage 활용, Task 이어하기
+    description: 포모도로 타이머, Vanilla JS, Local Storage 활용
     date: Apr 2021 ~ Present 🚀
-third:
+fourth:
   - img: images/icons/api.png
     link: /side-hustle/api-practice
     name: API Practice →
     description: 퍼블릭 API로 API Request & Response 실습 (Ip Info, Open Weather)
     date: May 2021
-fourth:
+fifth:
   - img: images/icons/custom.png
     link: /side-hustle/timer
     name: Custom Timer →
     description: 입력한 분으로 타이머 만들기
     date: Feb 2021
-fifth:
+sixth:
   - img: images/icons/clock.png
     link: /side-hustle/clock_theme/clock
     name: Themed Clock →

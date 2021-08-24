@@ -67,8 +67,8 @@
   margin: 0;
 
   &__img {
-    display: inline-block;
-    width: 48px;
+    display: flex;
+    min-width: 48px;
     height: 48px;
     margin-right: 20px;
 
