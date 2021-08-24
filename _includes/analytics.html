@@ -61,33 +61,38 @@
     var href = target.href;
       analytics.track("Download Resume",{
         url: "{{ page.url }}",
-        target: href
+        target: href,
+        title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
       })
   };
   function downloadPortfolio(target) {
     var href = target.href;
     analytics.track("Download Portfolio",{
       url: "{{ page.url }}",
-      target: href
+      target: href,
+      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
     })
   }
   function socialLink(target) {
     var href = target.href;
     analytics.track("Click Social Link",{
       url: "{{ page.url }}",
-      target: href
+      target: href,
+      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
     })
   }
   function clickedOutlink(target) {
     var href = target.href;
       analytics.track("Click Outlink",{
         url: "{{ page.url }}",
-        target: href
+        target: href,
+        title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
       })
   }
   function scrollComplete() {
     analytics.track("Scroll Complete",{
-        url: "{{ page.url }}"
+        url: "{{ page.url }}",
+        title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
       })
   };
 </script>
