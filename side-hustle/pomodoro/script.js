@@ -51,8 +51,8 @@ window.onload = function () {
 !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";analytics.SNIPPET_VERSION="4.13.2";
 analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
 analytics.page({
-  'Referrer Host': referrerHost,
-  title: "Pomodoro Timer"
+	'Referrer Host': referrerHost,
+	title: "Pomodoro Timer"
 });
 analytics.identify({
   'User Agent': userAgent,
@@ -367,7 +367,7 @@ function tick() {
 					'Break Count': breakCount,
 					'Timer Count': timerCount,
 					'Task Count': taskCount,
-					'Phase Count': phaseCount
+					'Phase Count': phaseCount,
 				},
 				title: "API Practice"
 			})
@@ -554,7 +554,7 @@ function startCountdown() {
 		'Task': taskValue,
 		'Timer Info': {
 			'Task Count': taskCount,
-			'Phase Count': phaseCount
+			'Phase Count': phaseCount,
 		},
 		title: "API Practice"
 	})
@@ -592,7 +592,7 @@ function resetCountdown() {
 	analytics.track('Reset Countdown', {
 		'Timer Info': {
 			'Task Count': taskCount,
-			'Phase Count': phaseCount
+			'Phase Count': phaseCount,
 		},
 		title: "API Practice"
 	})
@@ -644,7 +644,7 @@ function pauseCountdown() {
 	analytics.track('Pause Countdown', {
 		'Timer Info': {
 			'Task Count': taskCount,
-			'Phase Count': phaseCount
+			'Phase Count': phaseCount,
 		},
 		title: "API Practice"
 	})
@@ -687,7 +687,7 @@ function resumeCountdown() {
 		'Timer Info': {
 			'Task Count': taskCount,
 			'Phase Count': phaseCount,
-			'Paused Duration': pauseDuration
+			'Paused Duration': pauseDuration,
 		},
 		title: "API Practice"
 	})
@@ -773,9 +773,9 @@ function continueCountdown(this_id) {
 		'Task': taskInfo.taskValue,
 		'Timer Info': {
 			'Task Count': taskCount,
-			'Phase Count': phaseCount
-		},
-		title: "API Practice"
+			'Phase Count': phaseCount,
+			title: "API Practice"
+		}
 	})
 
 	// clear timer
@@ -834,9 +834,9 @@ function resetAllTasks() {
 	var x = document.getElementById("historyUl").querySelectorAll("li").length;
 	analytics.track('Reset All Task', {
 		'Timer Info': {
-			'Task Count': x
-		},
-		title: "API Practice"
+			'Task Count': x,
+			title: "API Practice"
+		}
 	})
 	
 	// clear all
@@ -919,10 +919,9 @@ function toggleTheme() {
 		// Track Segment Event
 		analytics.track('Toggle Theme', {
 			'Previous Theme': 'Light',
-			'Current Theme': 'Dark'
-		},
-		title: "API Practice"
-		)
+			'Current Theme': 'Dark',
+			title: "API Practice"
+		})
 	}
 	else {
 		document.getElementById("toggleTheme").setAttribute("class", "btn");
@@ -931,10 +930,9 @@ function toggleTheme() {
 		// Track Segment Event
 		analytics.track('Toggle Theme', {
 			'Previous Theme': 'Dark',
-			'Current Theme': 'Light'
-		},
-		title: "API Practice"
-		)
+			'Current Theme': 'Light',
+			title: "API Practice"
+		})
 	}
 }
 
