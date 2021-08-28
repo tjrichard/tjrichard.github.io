@@ -13,7 +13,7 @@ order: 9
 ---
 
 <p class="text-gray">
- 🔗 이 글은 Varun Mohapatra가 <a href='https://uxdesign.cc/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://uxdesign.cc' style='display:inline; height: 1em; position: relative; bottom: -2px;'>UX Collective</a>에 올린 <a href='https://abit.ly/article_45' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
+ 🔗 이 글은 Varun Mohapatra가 <a href='https://uxdesign.cc/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://uxdesign.cc' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>UX Collective</a>에 올린 <a href='https://abit.ly/article_45' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 저자는 B2B 프로덕트와 기업용 애플리케이션을 동일하게 간주하여 말하고 있습니다. 저자는 B2B를 Enterprise로 표현하고 있지만 번역 후 해석의 용이성을 위해 이 글에서는 모두 B2B로 표현합니다.

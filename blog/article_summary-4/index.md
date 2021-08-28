@@ -13,7 +13,7 @@ order: 6
 ---
 
 <p class="text-gray">
-🔗 이 글은 Sandhya Hegde가 <a href='https://amplitude.com/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://blog.amplitude.com/wp-content/uploads/2020/10/favicon-big.png' style='display:inline; height: 1em; position: relative; bottom: -2px;'> Amplitude Blog</a>에 올린 <a href='https://abit.ly/article_25' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
+🔗 이 글은 Sandhya Hegde가 <a href='https://amplitude.com/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://blog.amplitude.com/wp-content/uploads/2020/10/favicon-big.png' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'> Amplitude Blog</a>에 올린 <a href='https://abit.ly/article_25' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 ### ⚡️요약
