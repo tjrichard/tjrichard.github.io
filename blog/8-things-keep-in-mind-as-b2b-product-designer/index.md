@@ -211,3 +211,4 @@ B2B 프로덕트를 만들고있는 B2B 디자이너들은 B2C 디자이너보�
 - <a href='https://brunch.co.kr/@uxgongbang/15' target='blank' rel='nofollow' id='outlink8' onclick='clickedOutlink(outlink8)'>시작부터 다른 B2B UX</a>  
 - <a href='https://cxdojo.com/whats-the-difference-b2b-and-b2c-product-management' target='blank' rel='nofollow' id='outlink9' onclick='clickedOutlink(outlink9)'>WHAT’S THE DIFFERENCE: B2B AND B2C DIGITAL PRODUCT MANAGEMENT</a>  
 - <a href='https://blog.relate.kr/how-to-sell-b2b-product/' target='blank' rel='nofollow' id='outlink10' onclick='clickedOutlink(outlink10)'>B2B 제품을 파는 법</a>
+- <a href='https://www.chrischae.kr/switching-costs/' target='blank' rel='nofollow' id='outlink11' onclick='clickedOutlink(outlink11)'>7 Powers | 전환비용(Switching Costs)</a>
