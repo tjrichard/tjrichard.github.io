@@ -5,8 +5,8 @@
     <description>AB180의 UX 디자이너 장승환의 블로그입니다.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 28 Aug 2021 18:33:53 +0900</pubDate>
-    <lastBuildDate>Sat, 28 Aug 2021 18:33:53 +0900</lastBuildDate>
+    <pubDate>Mon, 30 Aug 2021 22:13:06 +0900</pubDate>
+    <lastBuildDate>Mon, 30 Aug 2021 22:13:06 +0900</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
 
     <item>
@@ -15,6 +15,12 @@
           <pubDate>Sun, 01 Aug 2021 04:40:45 +0900</pubDate>
           <link>http://localhost:4000/project/b2b_designers_ask_alley/</link>
           <guid isPermaLink="true">http://localhost:4000/project/b2b_designers_ask_alley/</guid>
+        </item><item>
+          <title>B2B 프로덕트 디자이너가 신경써야 할 8가지 #2 - 디자이너가 고려해야 하는 점</title>
+          <description>이 글은 이전 글(B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징)과 이어집니다.이전 글에서는 B2B 프로덕트가 가지는 특징을 알아보았습니다. 이번 글에서는 B2B 프로덕트의 특징을 고려해 B2B 프로덕트 디자이너가 어떤 점을 더 신경써야 하는지 그 ...</description>
+          <pubDate>Wed, 01 Sep 2021 20:54:45 +0900</pubDate>
+          <link>http://localhost:4000/blog/8-things-keep-in-mind-as-b2b-product-designer_2/</link>
+          <guid isPermaLink="true">http://localhost:4000/blog/8-things-keep-in-mind-as-b2b-product-designer_2/</guid>
         </item><item>
           <title>B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징</title>
           <description>저는 Airbridge라는 B2B 프로덕트를 디자인하고 있습니다. 에어브릿지는  광고•마케팅 데이터를 매체와 서비스로부터 수집하여 분석한 데이터를 대시보드를 통해 제공하여 퍼포먼스 마케터의 업무를 돕는 역할을 합니다. 디자인하기 위해서는 사용자에게 깊은 이해가 필수적인데, 퍼포먼스...</description>

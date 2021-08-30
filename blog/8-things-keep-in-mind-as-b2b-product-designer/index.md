@@ -2,7 +2,7 @@
 layout: post
 type: "Designer"
 title:  "B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징"
-subtitle: "B2B 프로덕트는 B2C 프로덕트와 어떻게 다를까"
+subtitle: "B2B 프로덕트는 B2C 프로덕트와 어떻게 다를까?"
 tags: [B2B, 디자이너 마인드셋, 프로덕트 디자인, 스타트업]
 date: 2021-08-25 11:54:45
 blog: true
