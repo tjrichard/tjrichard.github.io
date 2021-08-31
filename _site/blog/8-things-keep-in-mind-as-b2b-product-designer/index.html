@@ -103,18 +103,36 @@
 }}();
   function downloadResume(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
       analytics.track("Download Resume",{
         url: "/blog/8-things-keep-in-mind-as-b2b-product-designer/",
         target: href,
         title: "B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징"
       })
+      analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
+      })
   };
   function downloadPortfolio(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
     analytics.track("Download Portfolio",{
       url: "/blog/8-things-keep-in-mind-as-b2b-product-designer/",
       target: href,
       title: "B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징"
+    })
+    analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
     })
   }
   function socialLink(target) {
@@ -350,7 +368,7 @@
 
 <p>제가 이야기 하고는 프로덕트는 특정 사용자군이 메인으로 사용하는 프로덕트입니다. 하지만 이런 종류의 프로덕트더라도 B2B 프로덕트는 필수적으로 여러 종류의 사용자나 유관자가 존재할 수밖에 없는 구조입니다.</p>
 
-<p>B2B 프로덕트를 실제로 사용하는 <span style="color: #4139EF;"><strong>사용자</strong></span>, 해당 프로덕트를 구매하는 <span style="color: #4139EF;"><strong>구매자</strong></span>, 비용 책정 방식과 지불 방식을 알아야 하는 <span style="color: #4139EF;"><strong>재무팀</strong></span>, 사용자로부터 보고를 받을 <span style="color: #4139EF;"><strong>매니저</strong></span>, 매니저의 보고를 받을 더 <span style="color: #4139EF;"><strong>상위 매니저</strong></span>, 고객 서비스의 데이터를 관리하는 <span style="color: #4139EF;"><strong>데이터팀</strong></span>, 데이터 보안을 신경쓰는 <span style="color: #4139EF;"><strong>보안팀</strong></span>, 프로덕트 사용이 법률을 준수하는지 확인해야 할 <strong>법률팀</strong> 등 다양한 사용자군이 한 프로덕트를 사용하고, B2B 프로덕트는 이런 사용자들에게 적절한 정보를 전달해줄 방법을 구비해야 합니다.</p>
+<p>B2B 프로덕트를 실제로 사용하는 <span style="color: #4139EF;"><strong>사용자</strong></span>, 해당 프로덕트를 구매하는 <span style="color: #4139EF;"><strong>구매자</strong></span>, 비용 책정 방식과 지불 방식을 알아야 하는 <span style="color: #4139EF;"><strong>재무팀</strong></span>, 사용자로부터 보고를 받을 <span style="color: #4139EF;"><strong>매니저</strong></span>, 매니저의 보고를 받을 더 <span style="color: #4139EF;"><strong>상위 매니저</strong></span>, 고객 서비스의 데이터를 관리하는 <span style="color: #4139EF;"><strong>데이터팀</strong></span>, 데이터 보안을 신경쓰는 <span style="color: #4139EF;"><strong>보안팀</strong></span>, 프로덕트 사용이 법률을 준수하는지 확인해야 할 <span style="color: #4139EF;"><strong>법률팀</strong></span> 등 다양한 사용자군이 한 프로덕트를 사용하고, B2B 프로덕트는 이런 사용자들에게 적절한 정보를 전달해줄 방법을 구비해야 합니다.</p>
 
 <h2 id="2-프로덕트-관점">2. 프로덕트 관점</h2>
 
@@ -436,6 +454,7 @@
     <li><a rel="nofollow noopener noreferrer" target="_blank" href="https://brunch.co.kr/@uxgongbang/15" target="blank" rel="nofollow" id="outlink8" onclick="clickedOutlink(outlink8)">시작부터 다른 B2B UX</a></li>
     <li><a rel="nofollow noopener noreferrer" target="_blank" href="https://cxdojo.com/whats-the-difference-b2b-and-b2c-product-management" target="blank" rel="nofollow" id="outlink9" onclick="clickedOutlink(outlink9)">WHAT’S THE DIFFERENCE: B2B AND B2C DIGITAL PRODUCT MANAGEMENT</a></li>
     <li><a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.relate.kr/how-to-sell-b2b-product/" target="blank" rel="nofollow" id="outlink10" onclick="clickedOutlink(outlink10)">B2B 제품을 파는 법</a></li>
+    <li><a rel="nofollow noopener noreferrer" target="_blank" href="https://www.chrischae.kr/switching-costs/" target="blank" rel="nofollow" id="outlink11" onclick="clickedOutlink(outlink11)">7 Powers | 전환비용(Switching Costs)</a></li>
   </ul>
 </blockquote>
 

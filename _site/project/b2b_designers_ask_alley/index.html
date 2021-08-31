@@ -103,18 +103,36 @@
 }}();
   function downloadResume(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
       analytics.track("Download Resume",{
         url: "/project/b2b_designers_ask_alley/",
         target: href,
         title: "Alley @Hackle, “데이터로 검증해야 올바른 의사결정이 가능해요”"
       })
+      analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
+      })
   };
   function downloadPortfolio(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
     analytics.track("Download Portfolio",{
       url: "/project/b2b_designers_ask_alley/",
       target: href,
       title: "Alley @Hackle, “데이터로 검증해야 올바른 의사결정이 가능해요”"
+    })
+    analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
     })
   }
   function socialLink(target) {

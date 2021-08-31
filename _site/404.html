@@ -96,18 +96,36 @@
 }}();
   function downloadResume(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
       analytics.track("Download Resume",{
         url: "/404.html",
         target: href,
         title: "Page Not Found"
       })
+      analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
+      })
   };
   function downloadPortfolio(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
     analytics.track("Download Portfolio",{
       url: "/404.html",
       target: href,
       title: "Page Not Found"
+    })
+    analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
     })
   }
   function socialLink(target) {
