@@ -103,18 +103,36 @@
 }}();
   function downloadResume(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
       analytics.track("Download Resume",{
         url: "/blog/article_summary-7/",
         target: href,
         title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
       })
+      analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
+      })
   };
   function downloadPortfolio(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
     analytics.track("Download Portfolio",{
       url: "/blog/article_summary-7/",
       target: href,
       title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
+    })
+    analytics.identify({
+        "interests": "장승환",
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
     })
   }
   function socialLink(target) {
