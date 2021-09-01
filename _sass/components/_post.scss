@@ -109,14 +109,14 @@ sup a {
     position: relative;
     top: 2px;
 
-    &::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0px;
-    background-color: $color-gray;
-    }
+    // &::before {
+    // content: "";
+    // position: absolute;
+    // width: 100%;
+    // height: 1px;
+    // bottom: 0px;
+    // background-color: $color-gray;
+    // }
 
     &:hover {
       color: $color-key;
