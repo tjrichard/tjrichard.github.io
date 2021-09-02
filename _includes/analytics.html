@@ -71,13 +71,14 @@
     var href = target.href;
     var len = document.getElementsByTagName('p').length;
     var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
+    interests.push("장승환");
       analytics.track("Download Resume",{
         url: "{{ page.url }}",
         target: href,
         title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
       })
       analytics.identify({
-        "interests": "장승환",
+        "interests": interests,
         "download": {
           "Category": "이력서",
           "last updated": date
@@ -88,13 +89,14 @@
     var href = target.href;
     var len = document.getElementsByTagName('p').length;
     var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
+    interests.push("장승환");
     analytics.track("Download Portfolio",{
       url: "{{ page.url }}",
       target: href,
       title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
     })
     analytics.identify({
-        "interests": "장승환",
+        "interests": interests,
         "download": {
           "Category": "이력서",
           "last updated": date
