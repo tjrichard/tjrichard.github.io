@@ -160,7 +160,7 @@ B2B 프로덕트 사용자들은 업무 시간 외에는 일반 서비스를 사
 2. <span style="color: #4139EF;">경쟁자보다 확연히 더 나은 장점을 가져야 함</span> (90점, 선택받을 이유)
 3. <span style="color: #4139EF;">전환 비용을 낮출 수 있는 방법을 제공해야 함</span> (98점, 망설이지 않을 이유)
 
-### (8). 프로덕트의 성장 단계를 고려해야 한다
+### (8) 프로덕트의 성장 단계를 고려해야 한다
 
 ![프로덕트 라이프 사이클](../8-things-keep-in-mind-as-b2b-product-designer_2/img/product_life_cycle.png)
 
