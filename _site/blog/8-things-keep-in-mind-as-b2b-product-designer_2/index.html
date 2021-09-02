@@ -103,18 +103,36 @@
 }}();
   function downloadResume(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
       analytics.track("Download Resume",{
         url: "/blog/8-things-keep-in-mind-as-b2b-product-designer_2/",
         target: href,
         title: "B2B 프로덕트 디자이너가 신경써야 할 8가지 #2 - 디자이너가 고려해야 하는 점"
       })
+      analytics.identify({
+        "contact": true,
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
+      })
   };
   function downloadPortfolio(target) {
     var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
     analytics.track("Download Portfolio",{
       url: "/blog/8-things-keep-in-mind-as-b2b-product-designer_2/",
       target: href,
       title: "B2B 프로덕트 디자이너가 신경써야 할 8가지 #2 - 디자이너가 고려해야 하는 점"
+    })
+    analytics.identify({
+        "contact": true,
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
     })
   }
   function socialLink(target) {
