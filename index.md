@@ -11,7 +11,7 @@ layout: default
       <hr style='visibility:hidden'>
       <p class='c-page__type'>👨‍🚀 Where I've worked</p>
         {% include career.html %}
-      <p class='c-page__type'>🏅 Awards</p>
+      <p class='c-page__type'>🏅 Awards & Certificates</p>
         {% include award.html %}
       <p class='c-page__type'>🔭 Interest</p>
       <div style='padding: 10px 0;'>
