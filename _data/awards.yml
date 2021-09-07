@@ -1,12 +1,18 @@
 first:
+  - fav: https://www.google.com/s2/favicons?sz=64&domain=https://productschool.teachable.com/
+    company: Product School
+    title: Product Analytics Certificate with Mixpanel 
+    keyword: Mixpanel을 활용한 프로덕트 분석
+    date: Sep 2019
+second:
   - fav: https://ifworlddesignguide.com/favicon.ico
-    name: iF Design
-    role: App Award
+    company: iF Design
+    title: App Award
     keyword: 인공지능 일기장 앱 Hawayou로 iF 디자인 어워드
     date: Mar 2018
-second:
+third:
   - fav: https://www.samsung.com/etc/designs/smg/global/imgs/app_ico.png
-    name: Gearfit2
-    role: Gearfit2 Watchface Design Award
+    company: Watchmaster
+    title: Gearfit2 Watchface Design Award
     keyword: 기어핏2 워치페이스 디자인 공모전
     date: Nov 2016
