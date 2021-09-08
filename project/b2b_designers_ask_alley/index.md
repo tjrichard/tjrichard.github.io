@@ -129,7 +129,7 @@ A/B 테스트는 서비스의 특성이나 비즈니스 방향성, 현재 사용
 
 또 빠른 성장이 중요한 스타트업인 만큼 한정적인 업무 리소스를 효율적으로 사용하기 위해 비즈니스 우선순위가 높고, 고객에게 더 많은 임팩트를 제공할 수 있는 업무를 우선하여 진행하고 있습니다. 뛰어난 실력을 갖춘 인재도 좋지만, 성장 가능성이 큰 인재를 선호하며 함께 성장할 인재를 찾고 있습니다!
 
-### [🙋🏻‍♀️ 핵클에서 함께 일할 동료를 찾습니다! >>](https://www.notion.so/Careers-956e26a7796e4e6dbaa1bee043947045)
+### <a href="https://www.notion.so/Careers-956e26a7796e4e6dbaa1bee043947045" target='blank' rel='nofollow' id='outlink4' onclick='clickedOutlink(outlink4)'>🙋🏻‍♀️ 핵클에서 함께 일할 동료를 찾습니다! >></a>
 
 ---
 
@@ -138,4 +138,4 @@ B2B 프로덕트를 만들고있는 B2B 디자이너들은 B2C 디자이너보�
 
 더 많은 B2B 프로덕트 디자이너들이 한 자리에서 어려운 점, 배운 점을 공유하고 서로 도움이 되기 위해 커뮤니티를 운영중입니다.
 
-[🔗 B2B 디자이너들의 모임 노션 바로가기](https://abit.ly/b2b-designers)
+<a href="https://abit.ly/b2b-designers" target='blank' rel='nofollow' id='outlink5' onclick='clickedOutlink(outlink5)'>🔗 B2B 디자이너들의 모임 노션 바로가기</a>
