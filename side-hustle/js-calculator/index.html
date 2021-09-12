@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class='calculator'>
+        <div class='calculator__display'>0</div>
+        <div class='calculator__keys'>
+            <button class='key--operator__sub' data-action='clear'>AC</button>
+            <button class='key--operator__sub' data-action='turnover'>+/-</button>
+            <button class='key--operator__sub' data-action='percent'>%</button>
+            <button class='key--operator__main' data-action='divide'>/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class='key--operator__main' data-action='multiply'>X</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class='key--operator__main' data-action='subtract'>-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class='key--operator__main' data-action='add'>+</button>
+            <button class='key__0'>0</button>
+            <button data-action='decimal'>.</button>
+            <button class='key--operator__main' data-action='calculate'>=</button>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>

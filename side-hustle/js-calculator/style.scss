@@ -1,0 +1,117 @@
+/**
+* A very simple reset that sits on top of Normalize.css.
+*/
+body,
+h1, h2, h3, h4, h5, h6,
+blockquote, p, pre,
+dl, dd, ol, ul,
+figure,
+hr,
+fieldset, legend {
+    margin:  0;
+    padding: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+input,
+textarea,
+button {
+  border: 0;
+  border-radius: 0;
+  background-color: transparent;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  outline: none;
+  appearance: none;
+}
+
+input:hover,
+input:active,
+input:focus,
+textarea:hover,
+textarea:active,
+textarea:focus,
+button:hover,
+button:active,
+button:focus {
+  outline: none;
+}
+
+
+body {
+    margin: 0;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-family: 'Urbanist';
+}
+
+.calculator {
+    width: 256px;
+    height: auto;
+    border-radius: 16px;
+    &__display {
+        background-color: rgb(40, 36, 36);
+        height: 100px;
+        color: rgba(255, 255, 255, 0.88);
+        text-align: right;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 36px;
+        font-weight: 300;
+        padding: 6px 12px;
+        border-radius: 16px 16px 0 0;
+    }
+    &__keys {
+        display: grid;
+        grid-gap: 0px;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        button {
+            height: 56px;
+            background-color: rgb(131, 128, 128);
+            color: rgba(255, 255, 255, 0.88);
+            font-weight: 400;
+            font-size: 22px;
+            border: 1px solid rgb(103, 93, 93);
+            &:hover {
+                
+            }
+            &:active {
+                opacity: 0.8;
+            }
+        }
+        .key__0 {
+            grid-column: 1 / span 2;
+            grid-row: 5;
+            border-bottom-left-radius: 16px;
+        }
+        .key--operator {
+            &__sub {
+                background-color: rgb(104, 103, 104);
+            }
+            &__main {
+                background-color: rgb(255, 155, 48);
+                &:last-child {
+                    border-bottom-right-radius: 16px;
+                }
+            }
+        }
+    }
+}
+
+.is-pressed {
+    box-shadow: inset 0px 0px 4px 1px rgba(0,0,0,0.3) !important;
+}
