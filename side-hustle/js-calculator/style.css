@@ -166,6 +166,7 @@ body {
   font-size: 22px;
   -webkit-box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.25);
           box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
 }
 
 .calculator__keys button:hover {
@@ -174,8 +175,8 @@ body {
 }
 
 .calculator__keys button:active {
-  -webkit-box-shadow: 1px 1px 2px rgba(170, 166, 166, 0.3), -1px -1px 2px rgba(92, 90, 90, 0.5), inset -1px 1px 2px rgba(92, 90, 90, 0.2), inset 1px -1px 2px rgba(92, 90, 90, 0.2), inset -1px -1px 2px rgba(170, 166, 166, 0.9), inset 1px 1px 3px rgba(92, 90, 90, 0.9);
-          box-shadow: 1px 1px 2px rgba(170, 166, 166, 0.3), -1px -1px 2px rgba(92, 90, 90, 0.5), inset -1px 1px 2px rgba(92, 90, 90, 0.2), inset 1px -1px 2px rgba(92, 90, 90, 0.2), inset -1px -1px 2px rgba(170, 166, 166, 0.9), inset 1px 1px 3px rgba(92, 90, 90, 0.9);
+  -webkit-box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.25), 1px 1px 2px rgba(170, 166, 166, 0.3), -1px -1px 2px rgba(92, 90, 90, 0.5), inset -1px 1px 2px rgba(92, 90, 90, 0.2), inset 1px -1px 2px rgba(92, 90, 90, 0.2), inset -1px -1px 2px rgba(170, 166, 166, 0.9), inset 1px 1px 3px rgba(92, 90, 90, 0.9);
+          box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.25), 1px 1px 2px rgba(170, 166, 166, 0.3), -1px -1px 2px rgba(92, 90, 90, 0.5), inset -1px 1px 2px rgba(92, 90, 90, 0.2), inset 1px -1px 2px rgba(92, 90, 90, 0.2), inset -1px -1px 2px rgba(170, 166, 166, 0.9), inset 1px 1px 3px rgba(92, 90, 90, 0.9);
 }
 
 .calculator__keys .key__0 {
@@ -192,8 +193,8 @@ body {
 }
 
 .calculator__keys .key--operator__sub:active {
-  -webkit-box-shadow: 1px 1px 2px rgba(135, 134, 135, 0.3), -1px -1px 2px rgba(73, 72, 73, 0.5), inset -1px 1px 2px rgba(73, 72, 73, 0.2), inset 1px -1px 2px rgba(73, 72, 73, 0.2), inset -1px -1px 2px rgba(135, 134, 135, 0.9), inset 1px 1px 3px rgba(73, 72, 73, 0.9);
-          box-shadow: 1px 1px 2px rgba(135, 134, 135, 0.3), -1px -1px 2px rgba(73, 72, 73, 0.5), inset -1px 1px 2px rgba(73, 72, 73, 0.2), inset 1px -1px 2px rgba(73, 72, 73, 0.2), inset -1px -1px 2px rgba(135, 134, 135, 0.9), inset 1px 1px 3px rgba(73, 72, 73, 0.9);
+  -webkit-box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.25), 1px 1px 2px rgba(135, 134, 135, 0.3), -1px -1px 2px rgba(73, 72, 73, 0.5), inset -1px 1px 2px rgba(73, 72, 73, 0.2), inset 1px -1px 2px rgba(73, 72, 73, 0.2), inset -1px -1px 2px rgba(135, 134, 135, 0.9), inset 1px 1px 3px rgba(73, 72, 73, 0.9);
+          box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 0px rgba(0, 0, 0, 0.25), 1px 1px 2px rgba(135, 134, 135, 0.3), -1px -1px 2px rgba(73, 72, 73, 0.5), inset -1px 1px 2px rgba(73, 72, 73, 0.2), inset 1px -1px 2px rgba(73, 72, 73, 0.2), inset -1px -1px 2px rgba(135, 134, 135, 0.9), inset 1px 1px 3px rgba(73, 72, 73, 0.9);
 }
 
 .calculator__keys .key--operator__main {
@@ -202,13 +203,18 @@ body {
           box-shadow: inset 0px -1px 0px rgba(0, 0, 0, 0.25);
 }
 
+.calculator__keys .key--operator__main:active {
+  -webkit-box-shadow: 1px 1px 2px rgba(255, 202, 62, 0.3), -1px -1px 2px rgba(179, 109, 34, 0.5), inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset -1px 1px 2px rgba(179, 109, 34, 0.2), inset 1px -1px 2px rgba(179, 109, 34, 0.2), inset -1px -1px 2px rgba(255, 202, 62, 0.9), inset 1px 1px 3px rgba(179, 109, 34, 0.9);
+          box-shadow: 1px 1px 2px rgba(255, 202, 62, 0.3), -1px -1px 2px rgba(179, 109, 34, 0.5), inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset -1px 1px 2px rgba(179, 109, 34, 0.2), inset 1px -1px 2px rgba(179, 109, 34, 0.2), inset -1px -1px 2px rgba(255, 202, 62, 0.9), inset 1px 1px 3px rgba(179, 109, 34, 0.9);
+}
+
 .calculator__keys .key--operator__main:last-child {
   border-bottom-right-radius: 16px;
 }
 
 .is-pressed {
-  -webkit-box-shadow: 1px 1px 2px rgba(255, 202, 62, 0.3), -1px -1px 2px rgba(174, 109, 34, 0.5), inset -1px 1px 2px rgba(174, 109, 34, 0.2), inset 1px -1px 2px rgba(174, 109, 34, 0.2), inset -1px -1px 2px rgba(255, 202, 62, 0.9), inset 1px 1px 3px rgba(174, 109, 34, 0.9) !important;
-          box-shadow: 1px 1px 2px rgba(255, 202, 62, 0.3), -1px -1px 2px rgba(174, 109, 34, 0.5), inset -1px 1px 2px rgba(174, 109, 34, 0.2), inset 1px -1px 2px rgba(174, 109, 34, 0.2), inset -1px -1px 2px rgba(255, 202, 62, 0.9), inset 1px 1px 3px rgba(174, 109, 34, 0.9) !important;
+  -webkit-box-shadow: 1px 1px 2px rgba(255, 202, 62, 0.3), -1px -1px 2px rgba(179, 109, 34, 0.5), inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset -1px 1px 2px rgba(179, 109, 34, 0.2), inset 1px -1px 2px rgba(179, 109, 34, 0.2), inset -1px -1px 2px rgba(255, 202, 62, 0.9), inset 1px 1px 3px rgba(179, 109, 34, 0.9) !important;
+          box-shadow: 1px 1px 2px rgba(255, 202, 62, 0.3), -1px -1px 2px rgba(179, 109, 34, 0.5), inset 0px -1px 0px rgba(0, 0, 0, 0.25), inset -1px 1px 2px rgba(179, 109, 34, 0.2), inset 1px -1px 2px rgba(179, 109, 34, 0.2), inset -1px -1px 2px rgba(255, 202, 62, 0.9), inset 1px 1px 3px rgba(179, 109, 34, 0.9) !important;
 }
 
 .window--button {
