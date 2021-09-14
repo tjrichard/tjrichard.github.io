@@ -23,14 +23,14 @@ fourth:
     description: 퍼블릭 API로 API Request & Response 실습 (Ip Info, Open Weather)
     date: May 2021
 fifth:
+  - img: images/icons/calculator.png
+    link: /side-hustle/js-calculator
+    name: Javascript 계산기 →
+    description: Vanilla JS로 사칙연산 게산기 구현
+    date: Sep 2021
+sixth:
   - img: images/icons/custom.png
     link: /side-hustle/timer
     name: Custom Timer →
     description: 입력한 분으로 타이머 만들기
     date: Feb 2021
-sixth:
-  - img: images/icons/clock.png
-    link: /side-hustle/clock_theme/clock
-    name: Themed Clock →
-    description: 현재 시간을 반영하는 아날로그 시계, Light & Dark Theme 토글
-    date: Jul 2020
