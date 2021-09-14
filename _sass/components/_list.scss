@@ -13,6 +13,7 @@
         width: 100%;
         border-radius: 8px;
         margin: 0 0 20px 0;
+        transition: $global-transition;
         &:last-child {
             margin-bottom: ($base-spacing-unit)*3;
         }
@@ -102,7 +103,7 @@
 
 .c-list__item:hover,
 .c-list__item:focus {
-    a {
+    a { 
         text-decoration: none;
     }
     .c-list__title {
@@ -111,7 +112,7 @@
     cursor: pointer;
     // opacity: .6;
     // transform: translate(10px, -10px);
-    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 51px 143px rgba(27, 37, 40, 0.07), 0px 17.9529px 59.582px rgba(27, 37, 40, 0.0347751), 0px 9.97283px 32.3937px rgba(27, 37, 40, 0.024173), 0px 5.49113px 17.8057px rgba(27, 37, 40, 0.0167152), 0px 2.39375px 7.89857px rgba(27, 37, 40, 0.00941464);;
 }
 
 .draft {
