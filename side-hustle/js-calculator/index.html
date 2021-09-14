@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>JS Calculator</title>
+    <script src="https://tjrichard.github.io/js/evil-icons.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@100;200;300;400;500&display=swap" rel="stylesheet">
@@ -11,8 +12,19 @@
 </head>
 
 <body>
+    <a href="https://tjrichard.github.io">
+        <div class='back--button'>
+            <span class='icon--button' data-icon='ei-chevron-left' data-size='s'></span>
+            <p>돌아가기</p>
+        </div>
+    </a>
     <div class='calculator'>
-        <div class='calculator__display'>0</div>
+        <div class='window--button'>
+            <div class='window--button__close'></div>
+            <div class='window--button__minimize'></div>
+            <div class='window--button__maximize'></div>
+        </div>
+        <div class='calculator__display' onclick='copyResult()' data-tooltip="결과값 복사">0</div>
         <div class='calculator__keys'>
             <button class='key--operator__sub' data-action='clear'>AC</button>
             <button class='key--operator__sub' data-action='turnover'>+/-</button>
@@ -35,6 +47,7 @@
             <button class='key--operator__main' data-action='calculate'>=</button>
         </div>
     </div>
+    <div id='snackbar'>복사 완료</div>
 </body>
 <script src="./script.js"></script>
 </html>
