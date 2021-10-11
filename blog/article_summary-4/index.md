@@ -7,7 +7,7 @@ tags: [아티클 요약, North Star Metric, 북극성 지표, KPI]
 date: 2020-10-30 12:20:45
 blog: true
 is_list-img: false
-list-img: "article_summary-4/img/what-is-north-star-metric.png" 
+list-img: "article_summary-4/img/amplitude-b2b-north-star-metric-example.png" 
 post-header: false
 order: 6
 ---
@@ -16,25 +16,23 @@ order: 6
 🔗 이 글은 Sandhya Hegde가 <a href='https://amplitude.com/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://blog.amplitude.com/wp-content/uploads/2020/10/favicon-big.png' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'> Amplitude Blog</a>에 올린 <a href='https://abit.ly/article_25' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-### ⚡️요약
+### ⚡️요약 <!-- omit in toc -->
 
 > - 북극성 지표는 프로덕트 팀이 목표로하는 고객의 문제와 비즈니스가 목표로하는 수익을 연결한다  
 - 북극성 지표는 회사 내 조직들의 목표와 전략을 하나로 일치시키는 역할을 한다  
-- 북극성 지표는 고객의 가치를 대변하는 `프로덕트의 비전` 과 고객의 가치를 측정할 수 있는 `프로덕트 전략에 대한 선행 지표` 로 나뉜다  
+- 북극성 지표는 고객의 가치를 대변하는 **`프로덕트의 비전`** 과 고객의 가치를 측정할 수 있는 **`프로덕트 전략에 대한 선행 지표`** 로 나뉜다  
 - 북극성 지표는 트리로 만들 수 있는데,  
-  1. 북극성 지표를 `넓이, 깊이, 빈도, 효율성` 4가지 차원으로 구성하고  
+  1. 북극성 지표를 **`넓이, 깊이, 빈도, 효율성`** 4가지 차원으로 구성하고  
   2. 각각의 차원을 개선할 수 있는 KPI를 설정하고  
   3. 각 KPI를 만족할 수 있는 전략을 구성하여 만들 수 있다  
-- 또 각 회사는 `Attention`, `Transaction`, `Productivity` 게임 중 하나에서 플레이하는데, 각 게임 종류와 프로덕트의 비즈니스 구조에 따라 가져야 할 북극성 지표를 어느정도 방향을 잡을 수 있다
+- 또 각 회사는 **`Attention`**, **`Transaction`**, **`Productivity`** 게임 중 하나에서 플레이하는데, 각 게임 종류와 프로덕트의 비즈니스 구조에 따라 가져야 할 북극성 지표를 어느정도 방향을 잡을 수 있다
 
-### Intro
+### Intro <!-- omit in toc -->
 
 프로덕트 북극성 지표는 오늘날 가장 강력하면서 사람들이 잘못 이해하고 있는 프로덕트 전략 프레임워크이다. 많은 프로덕트 팀이 북극성 지표를 수립하지 않거나 잘못 수립해 의도하지 않은 결과를 맞이하고 있다.
 
 이 아티클은 북극성 지표에 대해 파고드는 시리즈 중 첫 번째다. 이 아티클이 프로덕트 리드와 매니저에게 이 지표가 왜 중요한지, 어떻게 정의하고 프로덕트 전략과 성장을 위해 어떻게 사용하는지 가이드가 되길 바란다. 이 아티클에서 다음에 대해 이야기한다:
 
-- [⚡️요약](#️요약)
-- [Intro](#intro)
 - [북극성 지표는 무엇이며 왜 중요한가?](#북극성-지표는-무엇이며-왜-중요한가)
 - [질문 1: 좋은 북극성 지표의 좋은 예](#질문-1-좋은-북극성-지표의-좋은-예)
 - [질문 2: 회사에서 북극성 지표는 하나만 가져야 하는가?](#질문-2-회사에서-북극성-지표는-하나만-가져야-하는가)
@@ -52,7 +50,7 @@ order: 6
                 📕 Playbook PDF 다운로드 >>
                 </div>
                 <div class="c-list__body">
-                The North Star Playbook은 북극성 지표를 발견할 수 있도록 더 디테일한 가이드를 제공하고 있다
+                Amplitude의 The North Star Playbook은 북극성 지표를 발견할 수 있도록 더 디테일한 가이드를 제공하고 있습니다
                 </div>
             </div>
         </a>
@@ -102,7 +100,7 @@ order: 6
 
 #### LinkedIn의 북극성 지표 예시 <!-- omit in toc -->  
 
-LinkedIn의 데이터 사이언티스트는 ["추천 (endorsements)" 기능](https://blog.linkedin.com/2012/09/24/introducing-endorsements-give-kudos-with-just-one-click)에 대한 그들의 북극성 지표를 개선하는 것이 더 나은 프로덕트 경험을 제공하지 **않았다는** [멋진 케이스 스터디](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p617.pdf)를 공유하였다. 그들의 지표 정의는 추천이 만들어지고/받아들여진 액션에 관한 것 이었고, 채용 담당자는 이러한 지지가 잘못된 정보를 제공하고 있을지 우려한다는 고객이 인지하는 가치를 대변하지 못해 LinkedIn의 비즈니스를 실제로 개선하지 못했다.
+LinkedIn의 데이터 사이언티스트는 ["추천(endorsements)" 기능](https://blog.linkedin.com/2012/09/24/introducing-endorsements-give-kudos-with-just-one-click)에 대한 그들의 북극성 지표를 개선하는 것이 더 나은 프로덕트 경험을 제공하지 **않았다는** [멋진 케이스 스터디](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p617.pdf)를 공유하였다. 그들의 지표 정의는 추천이 만들어지고/받아들여진 액션에 관한 것 이었고, 채용 담당자는 이러한 지지가 잘못된 정보를 제공하고 있을지 우려한다는 고객이 인지하는 가치를 대변하지 못해 LinkedIn의 비즈니스를 실제로 개선하지 못했다.
 
 Reforge 또한 최근 프로덕트 지표를 제대로 설정하지 않았을 경우 [일반적으로 발생하는 위험](https://www.reforge.com/blog/north-star-metric-growth)에 대한 훌륭한 아티클을 개제하였다.
 
