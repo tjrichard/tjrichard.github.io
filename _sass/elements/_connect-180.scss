@@ -37,10 +37,10 @@ form {
 
         .gsc-input-box {
             border-color: $color-border;
-        }
-        
-        .gsc-input-box-hover, .gsc-input-box-focus {
-            border-color: $color-key;
+            
+            &:hover, &:focus {   
+                border-color: $color-key;
+            }
         }
 
         table {
