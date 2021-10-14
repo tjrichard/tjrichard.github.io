@@ -39,7 +39,7 @@ form {
             border-color: $color-border;
             
             &:hover, &:focus {   
-                border-color: $color-key;
+                border-color: $color-key !important;
             }
         }
 
