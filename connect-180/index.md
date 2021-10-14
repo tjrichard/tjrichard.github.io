@@ -8,7 +8,7 @@ layout: default
     };
 </script>
 <!-- 'https://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
-<div class="o-grid">
+<div class="o-grid" style="margin-top:16px;">
     <form autocomplete="off">
         <textarea id="long_url" name="long_url" placeholder="Enter long url"></textarea>
         <input type="button" id="submit" value="Scheme it!" onclick="UrlShorten()">
