@@ -28,8 +28,20 @@ form {
 #___gcse_0 {
     width: 100%;
 
+    .gsc-control-cse {
+        border: none;
+    }
+
     .gsc-input {
         height: 29px;
+
+        .gsc-input-box {
+            border-color: $color-border;
+        }
+        
+        .gsc-input-box-hover, .gsc-input-box-focus {
+            border-color: $color-key;
+        }
 
         table {
             margin-bottom: 0 !important;
@@ -42,6 +54,10 @@ form {
 
     td {
         line-height: 14px;
+        
+        button {
+            width: 90px;
+        }
     }
 }
 
