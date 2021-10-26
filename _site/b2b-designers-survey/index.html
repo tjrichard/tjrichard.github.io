@@ -10,19 +10,19 @@
   <!--Google Search Console Verification-->
   <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
   
-  <title>Thoughts and Intrests</title>
+  <title>Seunghwan</title>
   <meta name="description" content="AB180의 UX 디자이너 장승환의 블로그입니다.">
   <!-- Open Graph -->
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Thoughts and Intrests">
+<meta property="og:title" content="Seunghwan">
 <meta property="og:image" content="http://localhost:4000/images/blog_ogimg.png">
         <!-- <script>console.log('http://localhost:4000/images/blog_ogimg.png')</script> -->
 
 <meta property="og:description" content="AB180의 UX 디자이너 장승환의 블로그입니다.">
-<meta property="og:url" content="http://localhost:4000/blog/">
+<meta property="og:url" content="http://localhost:4000/b2b-designers-survey/">
 <meta property="og:site_name" content="Seunghwan">
-  <link rel='canonical' href="http://localhost:4000/blog/">
+  <link rel='canonical' href="http://localhost:4000/b2b-designers-survey/">
   <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="http://localhost:4000/feed.xml">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
@@ -107,9 +107,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var len = document.getElementsByTagName('p').length;
     var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
       analytics.track("Download Resume",{
-        url: "/blog/",
+        url: "/b2b-designers-survey/",
         target: href,
-        title: "Thoughts and Intrests"
+        title: "Seunghwan"
       })
       analytics.identify({
         "contact": true,
@@ -124,9 +124,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var len = document.getElementsByTagName('p').length;
     var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
     analytics.track("Download Portfolio",{
-      url: "/blog/",
+      url: "/b2b-designers-survey/",
       target: href,
-      title: "Thoughts and Intrests"
+      title: "Seunghwan"
     })
     analytics.identify({
         "contact": true,
@@ -139,23 +139,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function socialLink(target) {
     var href = target.href;
     analytics.track("Click Social Link",{
-      url: "/blog/",
+      url: "/b2b-designers-survey/",
       target: href,
-      title: "Thoughts and Intrests"
+      title: "Seunghwan"
     })
   }
   function clickedOutlink(target) {
     var href = target.href;
       analytics.track("Click Outlink",{
-        url: "/blog/",
+        url: "/b2b-designers-survey/",
         target: href,
-        title: "Thoughts and Intrests"
+        title: "Seunghwan"
       })
   }
   function scrollComplete() {
     analytics.track("Scroll Complete",{
-        url: "/blog/",
-        title: "Thoughts and Intrests"
+        url: "/b2b-designers-survey/",
+        title: "Seunghwan"
       })
   };
 </script>
@@ -194,13 +194,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <ul class="c-nav c-nav-list">
            
   <li role='presentation'>
-    <a href='/'  class="c-nav__link normal"  class="c-nav__link active">Home</a>
+    <a href='/'  class="c-nav__link active">Home</a>
   </li>
   <li role='presentation'>
     <a href='/project'  class="c-nav__link normal">Project</a>
   </li>
   <li role='presentation'>
-    <a href='/blog'  class="c-nav__link active" class="c-nav__link normal">Blog</a>
+    <a href='/blog'  class="c-nav__link normal">Blog</a>
   </li>
   <li role='presentation'>
     <a href='/about'  class="c-nav__link normal">About</a>
@@ -212,302 +212,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   
 </header>
 
+    <script>
+    window.onload = function() {
+        document.getElementById('c-header').remove();
+        document.getElementById('c-footer').remove();
+    };
+</script>
+
+<div class="o-wrapper">
     <div class="o-grid">
-    <div class="o-grid__col o-grid__col--full">
-        <div class="o-grid__head o-grid__head--full">
-            <hr style="visibility:hidden" />
-                <h1 class="c-page__title">Thoughts and Intrests</h1>
-                <p class="c-page__subtitle">🤔 관심 분야에 대한 생각</p>
-            <hr style="visibility:hidden" />
+        <div class="m-center">
+            <img src="./lock-left.png" class="survey-image" />
+            <p class="survey-title">B2B 디자이너들의 모임 설문 결과</p>
+            <input id="passwordInput" name="passwordInput" placeholder="비밀번호를 입력해주세요" type="password" />
+            <input type="button" id="passwordSubmit" value="🔒 잠금 해제ㅤ" onclick="verification()" />
         </div>
-        <ul class="c-list">
-            
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/8-things-keep-in-mind-as-b2b-product-designer_2/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                B2B DESIGN
-            </p>
-            <h1 class="c-list__title">
-                B2B 프로덕트 디자이너가 신경써야 할 8가지 #2 - 디자이너가 고려해야 하는 점
-            </h1>
-            <p class="c-list__sub">
-                그래서, B2B 프로덕트 디자이너는 어떻게 일해야 할까?
-            </p>
-            
-            <p class="c-list__body">
-                이전 글(B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징)과 이어집니다. 이전 글에서는 B2B 프로덕트가 가지는 특징을 알아보았습니다. 이번 글에서는 B2B 프로덕트의 특징을 고려해 B2B 프로덕트 디자이너가 어떤 점을 더 신경 써야 하는지 그 요소와 마인드 셋에 대해 알아보겠습니다. 👀 빠르게 훑어보기 1. 사용자를 명확히 알아야 한다 (1) 더 나은 사용자 리서치를 할 수 있도록 환경을 준비해야 한다 (2) 내가 제공할 가치가 사용자에게 정말로 필요한 것인지 확신할 수...
-            </p>
-            <time class="c-list__date" datetime="2021-09-01T19:59:45+09:00" itemprop="datePublished">01 Sep 2021</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/8-things-keep-in-mind-as-b2b-product-designer/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                B2B DESIGN
-            </p>
-            <h1 class="c-list__title">
-                B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징
-            </h1>
-            <p class="c-list__sub">
-                B2B 프로덕트는 B2C 프로덕트와 어떻게 다를까?
-            </p>
-            
-            <p class="c-list__body">
-                저는 Airbridge라는 B2B 프로덕트를 디자인하고 있습니다. 에어브릿지는 광고•마케팅 데이터를 매체와 서비스로부터 수집하여 분석한 데이터를 대시보드를 통해 제공하여 퍼포먼스 마케터의 업무를 돕는 역할을 합니다. 디자인하기 위해서는 사용자에게 깊은 이해가 필수적인데, 퍼포먼스 마케터의 실제 업무와 페인포인트를 공감하기 어려웠습니다. 프로덕트는 도메인 종사자가 아니면 이해하기도 어렵고, 디자인하기도 어렵고, 심지어는 사용자를 만나기도 어렵습니다. 아마 다른 B2B SaaS 솔루션을 디자인하는 프로덕트 디자이너들도 똑같은 고민을 하고 있을 거라고 생각합니다. 도데체 B2B 프로덕트는 왜 이렇게 디자인하기 어려울까요? B2B...
-            </p>
-            <time class="c-list__date" datetime="2021-08-25T20:54:45+09:00" itemprop="datePublished">25 Aug 2021</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/article_summary-7/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                PRODUCT
-            </p>
-            <h1 class="c-list__title">
-                B2B SaaS 프로덕트를 디자인하면서 느낀 것들
-            </h1>
-            <p class="c-list__sub">
-                번역 및 요약 👉 Designing for B2B and Enterprise SaaS
-            </p>
-            
-            <p class="c-list__body">
-                🔗 이 글은 Varun Mohapatra가 UX Collective에 올린 아티클을 번역, 요약한 글입니다. 저자는 B2B 프로덕트와 기업용 애플리케이션을 동일하게 간주하여 말하고 있습니다. 저자는 B2B를 Enterprise로 표현하고 있지만 번역 후 해석의 용이성을 위해 이 글에서는 모두 B2B로 표현합니다. 2018년 1월 글이지만 제가 B2B, SaaS를 디자인하면서 공감이 되는 글이라 번역에 옮깁니다. ⚡️ 요약 1. 기능적 복잡도 😓 B2B 프로덕트는 복잡합니다. 사용자도 B2B 프로덕트를 익혀 잘 사용하기까지 리소스를 투자해야 합니다. 이 말은 B2B 프로덕트의...
-            </p>
-            <time class="c-list__date" datetime="2021-08-14T08:37:45+09:00" itemprop="datePublished">13 Aug 2021</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/article_summary-6/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                PRODUCT
-            </p>
-            <h1 class="c-list__title">
-                프로덕트에 맞는 지표 발견하기
-            </h1>
-            <p class="c-list__sub">
-                번역 및 요약 👉 Product Metrcs That Matter
-            </p>
-            
-            <p class="c-list__body">
-                🔗 이 글은 Claudia Delago가 본인의 미디엄 블로그에 올린 아티클을 번역, 요약한 글입니다. ⚡️ 요약 프로덕트 관리를 위해 프로덕트 선행 지표는 반드시 필요합니다. 이 때 프로덕트 지표는 모든 것을 측정하려 해서는 안되고, 프로덕트를 더 나은 방향으로 만들기 위한 의사결정이나 액션을 할 수 있는 지표 중에서 선택해야 합니다. AARRR, HEART, 북극성 지표 세 종류를 적절히 혼합해 프로덕트 지표의 예시를 만들고 이에 대해 설명 합니다. 아래는 사용자의 각 단계 별 성공을 측정하기...
-            </p>
-            <time class="c-list__date" datetime="2021-06-28T02:39:45+09:00" itemprop="datePublished">27 Jun 2021</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/article_summary-5/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                DESIGN
-            </p>
-            <h1 class="c-list__title">
-                프로덕트를 사용자 친화적으로 만드는 것은 무엇일까?
-            </h1>
-            <p class="c-list__sub">
-                번역 및 요약 👉 What makes a product user-friendly?
-            </p>
-            
-            <p class="c-list__body">
-                🔗 이 글은 Robert Turner가 본인의 미디엄 블로그에 올린 아티클을 번역, 요약한 글입니다. ⚡️ 요약 사용성을 정량적으로 평가하려고 하면 큰 결함이나 딜 브레이커가 되는 핵심 이유를 알려주긴 하지만, 정성적인 조사 방법으로는 제품 사용성에 대한 정성적인 지표로서 역할은 하지만 개선에 대한 방향은 알기 어렵다. 제품 개발자들에게 사용성에 대한 유의미한 인사이트를 위해서는 추가적인 컨텍스트가 필요하다. 사용성을 구성하는 5가지 차원은 다음과 같다. - 학습 용이성 - 효율성 - 기억 용이성 - 오류 대처...
-            </p>
-            <time class="c-list__date" datetime="2021-01-21T21:20:45+09:00" itemprop="datePublished">21 Jan 2021</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/article_summary-4/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                PRODUCT
-            </p>
-            <h1 class="c-list__title">
-                모든 프로덕트는 북극성 지표가 필요하다. 우리 북극성 지표는 어떻게 찾을까?
-            </h1>
-            <p class="c-list__sub">
-                번역 및 요약 👉 Every Product Needs a North Star Metric: Here’s How to Find Yours
-            </p>
-            
-            <p class="c-list__body">
-                🔗 이 글은 Sandhya Hegde가 Amplitude Blog에 올린 아티클을 번역, 요약한 글입니다. ⚡️요약 북극성 지표는 프로덕트 팀이 목표로하는 고객의 문제와 비즈니스가 목표로하는 수익을 연결한다 북극성 지표는 회사 내 조직들의 목표와 전략을 하나로 일치시키는 역할을 한다 북극성 지표는 고객의 가치를 대변하는 프로덕트의 비전 과 고객의 가치를 측정할 수 있는 프로덕트 전략에 대한 선행 지표 로 나뉜다 북극성 지표는 트리로 만들 수 있는데, 북극성 지표를 넓이, 깊이, 빈도, 효율성 4가지 차원으로 구성하고...
-            </p>
-            <time class="c-list__date" datetime="2020-10-30T21:20:45+09:00" itemprop="datePublished">30 Oct 2020</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/article_summary-3/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                DESIGN
-            </p>
-            <h1 class="c-list__title">
-                디자인 솔루션은 직감적이 아니라 계획적이어야 한다: Toughtful Execution Framework
-            </h1>
-            <p class="c-list__sub">
-                번역 및 요약 👉 From Gut to Plan: The Thoughtful Execution Framework
-            </p>
-            
-            <p class="c-list__body">
-                🔗이 글은 Annina Koskinen이 Spotify.design에 올린 아티클을 번역, 요약한 글입니다. ⚡️요약 이 글은 디자인 프로세스에 대해 공부한 사람이라면 모두 알고 있는 Empathy - Design - Prototype - Test - Iteration 단계를 Spotify만의 언어로 다시 쓴 내용이라고 볼 수 있다. 이 때 중요한 점은 데이터를 바탕으로 해야 한다는 점이다. 팀은 비즈니스 목표를 달성하기 위한 역할을 하며, 디자인이 설정된 목표를 증명할 수 있는 지표를 움직이는 것을 확인해야 한다. 이 프레임워크는 다음과 같은...
-            </p>
-            <time class="c-list__date" datetime="2020-09-25T23:40:45+09:00" itemprop="datePublished">25 Sep 2020</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/article_summary-2/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                DESIGN
-            </p>
-            <h1 class="c-list__title">
-                오류 메세지 문장 작성법 간단히 살펴보기
-            </h1>
-            <p class="c-list__sub">
-                번역 및 요약 👉 Error state stasis: a quick visit to the syntax of an error message
-            </p>
-            
-            <p class="c-list__body">
-                🔗 이 글은 Jason Fox가 UX Collective에 올린 미디엄 글을 번역, 요약한 글입니다. ⚡️요약 Constant Component에 제공되어야 할 정보를 작성하기 Dynamic Component에서 오류 상황의 컨텍스트를 더 잘 이해시킬 수 있도록 보강하기 *최소 요구 조건은 Constant Component이다. 잘 작성된 Constant Component만 있어도 유저의 오류 상황을 명확히 인지시키고 해결할 수 있다. Constant Component는 사용자가 취할 수 있는 액션 경로와 무엇이 왜 발생했는지 명시 Dynamic Component는 오류 상황에 대한 오류 메세지 작성을 위한...
-            </p>
-            <time class="c-list__date" datetime="2020-09-09T07:37:45+09:00" itemprop="datePublished">08 Sep 2020</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/article_summary-1/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                DESIGN
-            </p>
-            <h1 class="c-list__title">
-                디자인 조사 방법: 독립 집단 설계 vs 반복 측정 설계
-            </h1>
-            <p class="c-list__sub">
-                번역 및 요약 👉 Between-Subjects vs. Within-Subjects Study Design
-            </p>
-            
-            <p class="c-list__body">
-                🔗 이 글은 Raluca Budiu가 Nielsen Norman Group에 올린 아티클을 번역, 요약한 글입니다. ⚡️요약 사용자 리서치에서 크게 두 가지 방법이 있고, 두 방법의 특징을 알고 더 좋은 방법을 선택해야 한다 반복 측정 설계는 참가자 간 차이를 상쇄할 수 있지만, 학습 효과를 방지하기 위해 랜덤화를 사용해야 하고 독립 집단 설계에서는 조건 간 학습 효과를 상쇄할 수 있지만, 참가자 간 차이를 상쇄할 수는 없음 용어 정리 Between-Subjects Study Design: 독립 집단 설계...
-            </p>
-            <time class="c-list__date" datetime="2020-08-28T23:40:45+09:00" itemprop="datePublished">28 Aug 2020</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/github-pages-series-2/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                블로그 만들기
-            </p>
-            <h1 class="c-list__title">
-                Jekyll 테마 찾고 설치하는 법
-            </h1>
-            <p class="c-list__sub">
-                Github.io로 나만의 블로그 만들기 시리즈 2
-            </p>
-            
-            <p class="c-list__body">
-                이전 글 → Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅 지난 글과 다른 점 지난 글에서는 Github.io로 블로그 페이지를 만들 수 있는 틀을 구축했다면, 이번 글에서는 이미 잘 만들어진 블로그 테마를 찾고, 나의 블로그에 적용하는 과정을 다룬다. Jekyll 테마를 찾기 전 이 글을 읽는 우리의 1차 목표는 내 입맛에 맞는 디자인으로 Github 블로그를 만들어 보는 것이고, 2차 목표는 그렇게 만든 블로그로 실제 블로그를 운영하는 것이다. Github.io로 나만의 블로그...
-            </p>
-            <time class="c-list__date" datetime="2020-07-20T23:40:45+09:00" itemprop="datePublished">20 Jul 2020</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/github-pages-series-1/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                블로그 만들기
-            </p>
-            <h1 class="c-list__title">
-                Github Pages 가입 및 초기 세팅
-            </h1>
-            <p class="c-list__sub">
-                Github.io로 나만의 블로그 만들기 시리즈 1
-            </p>
-            
-            <p class="c-list__body">
-                Github.io, 혹은 Github Pages란 간략하게 설명하자면 Github.io, Github Pages는 Github에서 제공하는 블로그 서비스이다. Github.io는 본인 Github 계정의 저장소를 바탕으로 정적(static) 호스팅을 제공해주는 Github Pages라는 서비스이다. 따로 웹 서버를 구축하거나 호스팅 서비스를 이용하지 않고서도 간단하게 웹페이지를 만들어 제공할 수 있다는 말이다. 티스토리 블로그도 글을 올리면서 Github Pages로 블로그를 따로 만들고 있는 이유는 코드레벨에서 블로그를 운영할 수 있고, 이후 내가 원하는대로 커스터마이징을 할 수 있다는 장점이 있기 때문이다. 티스토리, 브런치, 네이버 블로그와...
-            </p>
-            <time class="c-list__date" datetime="2020-07-07T23:40:45+09:00" itemprop="datePublished">07 Jul 2020</time> 
-        </div>
-    </a>
-</li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-        </ul>
     </div>
 </div>
 
