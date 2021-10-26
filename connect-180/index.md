@@ -18,6 +18,10 @@ layout: default
     <script async src="https://cse.google.com/cse.js?cx=d423c88702dea9eb7"></script>
     <div class="gcse-search"></div>
 </div>
+<div>
+    <textarea id="passwordInput" name="passwordInput" placeholder="Enter password" type="password"></textarea>
+    <input type="button" id="passwordSubmit" value="Enter page" onclick="verification()">
+</div>
 <div id="surfit" class="tabContent">
     <iframe src="https://surfit.io/" class="surit-io" style="display: block"></iframe>
 </div>
