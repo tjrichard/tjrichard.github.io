@@ -154,7 +154,7 @@ function createModal() {
     document.body.appendChild(modalContainer);
     
     var modal = document.createElement("iframe");
-    modal.setAttribute("src", "https://docs.google.com/spreadsheets/d/1GjduqSwzAZJw-Rj_yQgtN_wBK-6Spt78Vi0bYB5Stlc/edit?resourcekey#gid=477781850");
+    modal.setAttribute("src", "https://datastudio.google.com/embed/reporting/94ddea9a-5522-4058-aa74-2f16fc565d44/page/kazdC");
     modal.setAttribute("class", "modal__content");
     
     document.getElementById("modalContainer").appendChild(modal);
@@ -184,6 +184,6 @@ function verification() {
         
         var passwordInput = document.getElementById("passwordInput");
         passwordInput.select();
-        passwordInput.setSelectionRange(0, 99999); /*For mobile devices*/
+        // passwordInput.setSelectionRange(0, 99999); /*For mobile devices*/
     }
 }
