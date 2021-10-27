@@ -1,8 +1,8 @@
 ---
 layout: default
 title: "🔍 B2B 디자이너들의 모임 설문 결과"
-subtitle: "B2B 디자이너들의 모임 멤버들에게만 공개되었습니다"
-header-img: "lock-left.png"
+subtitle: "멤버만 접근 가능합니다"
+header-img: "b2b_graphic_cover_600x300.png"
 ---
 <script>
     window.onload = function() {
