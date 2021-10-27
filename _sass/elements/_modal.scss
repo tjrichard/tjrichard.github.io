@@ -53,7 +53,7 @@
   height: 44px;
   border: 1px solid black;
   border-radius: 4px;
-  padding: 2px 8px;
+  padding: 2px 10px;
   font-size: $font-size-medium;
 }
 
@@ -100,7 +100,7 @@
   text-align: center;
   border-radius: 6px;
   z-index: 1;
-  bottom: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, 0);
   &.show {
@@ -111,18 +111,18 @@
 }
 
 @-webkit-keyframes fadein {
-  from {bottom: 40%; opacity: 0;}
-  to {bottom: 50%; opacity: 1;}
+  from {top: 0; opacity: 0;}
+  to {top: 10%; opacity: 1;}
 }
 @keyframes fadein {
-  from {bottom: 40%; opacity: 0;}
-  to {bottom: 50%; opacity: 1;}
+  from {top: 0; opacity: 0;}
+  to {top: 10%; opacity: 1;}
 }
 @-webkit-keyframes fadeout {
-  from {bottom: 50%; opacity: 1;}
-  to {bottom: 40%; opacity: 0;}
+  from {top: 10%; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }
 @keyframes fadeout {
-  from {bottom: 50%; opacity: 1;}
-  to {bottom: 40%; opacity: 0;}
+  from {top: 10%; opacity: 1;}
+  to {top: 0; opacity: 0;}
 }

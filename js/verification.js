@@ -184,6 +184,6 @@ function verification() {
         
         var passwordInput = document.getElementById("passwordInput");
         passwordInput.select();
-        // passwordInput.setSelectionRange(0, 99999); /*For mobile devices*/
+        passwordInput.setSelectionRange(0, 99999); /*For mobile devices*/
     }
 }
