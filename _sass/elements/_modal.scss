@@ -58,7 +58,7 @@
 }
 
 #passwordSubmit {
-  font-size: $font-size-medium;
+  font-size: $font-size-base;
   font-weight: $font-weight-bold;
   background-color: $color-brand;
   color: $color-white;
@@ -66,6 +66,10 @@
   border: none;
   min-width: 90px;
   min-height: 50px;
+  
+  &:active {
+    opacity: .8;
+  }
 }
 
 .survey {
@@ -80,4 +84,43 @@
     height: 320px;
     object-fit: cover;
   }
+}
+
+#snackbar {
+  visibility: hidden;
+  position: fixed;
+  min-width: 200px;
+  min-height: 40px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 40px;
+  padding: 0 12px;
+  background-color: rgba(0, 0, 0, 0.65);
+  color: #ffffff;
+  text-align: center;
+  border-radius: 6px;
+  z-index: 1;
+  bottom: 40px;
+  &.show {
+      visibility: visible;
+      -webkit-animation: fadein 0.3s, fadeout 0.3s 1.5s !important;
+      animation: fadein 0.3s, fadeout 0.3s 1.5s !important;
+  }
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 40px; opacity: 1;}
+}
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 40px; opacity: 1;}
+}
+@-webkit-keyframes fadeout {
+  from {bottom: 40px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+@keyframes fadeout {
+  from {bottom: 40px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }

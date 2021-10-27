@@ -17,3 +17,4 @@ layout: default
         </div>
     </div>
 </div>
+<div id="snackbar">비밀번호가 일치하지 않습니다</div>
