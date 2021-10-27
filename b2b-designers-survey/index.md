@@ -1,5 +1,8 @@
 ---
 layout: default
+title: "🔍 B2B 디자이너들의 모임 설문 결과"
+subtitle: "B2B 디자이너들의 모임 멤버들에게만 공개되었습니다"
+header-img: "lock-left.png"
 ---
 <script>
     window.onload = function() {
@@ -17,4 +20,6 @@ layout: default
         </div>
     </div>
 </div>
-<div id="snackbar">비밀번호가 일치하지 않습니다</div>
+<div class="o-grid">
+    <div id="snackbar">비밀번호가 일치하지 않습니다</div>
+</div>

@@ -176,5 +176,14 @@ function verification() {
         createModal();
     }
     else {
+        // var input = document.getElementById('passwordInput');
+        // input.setAttribute('class', 'error')
+        var snackbar = document.getElementById('snackbar');
+        snackbar.className = 'show';
+        setTimeout(function(){snackbar.className = snackbar.className.replace('show', '')}, 1800);
+        
+        var passwordInput = document.getElementById("passwordInput");
+        passwordInput.select();
+        passwordInput.setSelectionRange(0, 99999); /*For mobile devices*/
     }
 }
