@@ -154,7 +154,7 @@ function createModal() {
     document.body.appendChild(modalContainer);
     
     var modal = document.createElement("iframe");
-    modal.setAttribute("src", "https://datastudio.google.com/embed/reporting/94ddea9a-5522-4058-aa74-2f16fc565d44/page/kazdC");
+    modal.setAttribute("src", "https://datastudio.google.com/embed/reporting/d841c401-2c43-4fa4-80d9-9203489d6d88/page/kazdC");
     modal.setAttribute("class", "modal__content");
     
     document.getElementById("modalContainer").appendChild(modal);
