@@ -15,16 +15,31 @@
     opacity: .5;
   }
 
+  &__closeButton {
+    position: absolute;
+    z-index: 1000;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255,255,255,0.8);
+    top: 10px;
+    left: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6 6 18M6 6l12 12' stroke='%235c6bf3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
   &__container {
     position: absolute;
     z-index: 999;
-    width: 88vw;
-    height: 95vh;
+    width: 100vw;
+    height: 100vh;
     background-color: #fff;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    border-radius: 10px;
+    // border-radius: 10px;
   }
 
   &__content {

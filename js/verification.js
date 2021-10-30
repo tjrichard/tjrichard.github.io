@@ -142,11 +142,17 @@ return binb2hex(core_sha256(str2binb(s), s.length * chrsz));
 /*                               */ 
 
 function createModal() {
-    var modalBackground = document.createElement("div");
-    modalBackground.setAttribute("id", "modalBackground");
-    modalBackground.setAttribute("class", "modal__background");
-    modalBackground.setAttribute("onclick", "closeModal()");
-    document.body.appendChild(modalBackground);
+    // var modalBackground = document.createElement("div");
+    // modalBackground.setAttribute("id", "modalBackground");
+    // modalBackground.setAttribute("class", "modal__background");
+    // modalBackground.setAttribute("onclick", "closeModal()");
+    // document.body.appendChild(modalBackground);
+
+    var modalCloseButton = document.createElement("div");
+    modalCloseButton.setAttribute("id", "modalCloseButton");
+    modalCloseButton.setAttribute("class", "modal__closeButton");
+    modalCloseButton.setAttribute("onclick", "closeModal()");
+    document.body.appendChild(modalCloseButton);
     
     var modalContainer = document.createElement("div");
     modalContainer.setAttribute("id", "modalContainer");
@@ -161,10 +167,12 @@ function createModal() {
 }
 
 function closeModal() {
-    var mbg = document.getElementById("modalBackground");
+    // var mbg = document.getElementById("modalBackground");
     var mc = document.getElementById("modalContainer");
-    mbg.remove();
+    var mcb = document.getElementById("modalCloseButton");
+    // mbg.remove();
     mc.remove();
+    mcb.remove();
 }
 
 function verification() {
