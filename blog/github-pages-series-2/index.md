@@ -54,7 +54,7 @@ Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조
 
 위 기준들을 잘 생각하면서 테마를 찾아보자. 다음과 같이 무료 Jekyll 테마를 모아서 리스트를 제공하는 사이트들이 있으니 원하는 테마를 찾아보도록 하자.
 
-개인적으로는 [Github의 Jekyll-theme 토픽](https://github.com/topics/jekyll-theme) 이 가장 많은 테마를 제공하고 있고 정렬도 자유롭게 할 수 있지만, 리스트에서는 이름만 보이는 테마가 대부분이라 직접 들어가지 않는 한 어떤 테마인지 알 기 어렵다는 단점이 있다. [Jekyllthemes.io](http://jekyllthemes.io)는 start, last commit, fork 순으로 정렬할 수 있어 인기있는 테마를 빠르게 찾을 수 있다.
+개인적으로는 [Github의 Jekyll-theme 토픽](https://github.com/topics/jekyll-theme) 이 가장 많은 테마를 제공하고 있고 정렬도 자유롭게 할 수 있지만, 리스트에서는 이름만 보이는 테마가 대부분이라 직접 들어가지 않는 한 어떤 테마인지 알 기 어렵다는 단점이 있다. [Jekyllthemes.io](https://jekyllthemes.io)는 start, last commit, fork 순으로 정렬할 수 있어 인기있는 테마를 빠르게 찾을 수 있다.
 
 [https://jekyllthemes.io/free](https://jekyllthemes.io/free)
 
@@ -64,9 +64,9 @@ Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조
 
 [https://jekyll-themes.com/free/](https://jekyll-themes.com/free/)
 
-[http://themes.jekyllrc.org/](http://themes.jekyllrc.org/)
+[https://themes.jekyllrc.org/](https://themes.jekyllrc.org/)
 
-[http://jekyllthemes.org/](http://jekyllthemes.org/)
+[https://jekyllthemes.org/](https://jekyllthemes.org/)
 
 [https://jekyllthemes.dev/](https://jekyllthemes.dev/)
 

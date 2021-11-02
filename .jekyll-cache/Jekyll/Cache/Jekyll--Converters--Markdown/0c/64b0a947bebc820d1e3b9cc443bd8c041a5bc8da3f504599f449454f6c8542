@@ -1,11 +1,11 @@
-I"ì<script>
+I"ï¿½<script>
     window.onload = function() {
         // var input = document.getElementById("gsc-i-id1").focus();
         var input = document.getElementById("long_url").focus();
     };
 </script>
 
-<!-- 'https://tinyurl.com/api-create.php?url='.'http://www.example.com/'); -->
+<!-- 'https://tinyurl.com/api-create.php?url='.'https://www.example.com/'); -->
 <div class="o-grid">
     <form autocomplete="off">
         <input type="text" id="long_url" name="long_url" placeholder="Enter long url" />

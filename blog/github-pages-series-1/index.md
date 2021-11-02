@@ -42,7 +42,7 @@ Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyl
    괜찮은 테마를 가져와 이를 뜯어보고 내가 원하는 대로 구조, 스타일, 인터랙션을 커스터마이징 하고 서드파티 플러그인, 애널리틱스를 설치하고 방문자에 대한 분석까지 할 수 있음
    ```
 우리의 목표에 맞는 아주 멋진 사례로 Jihye Lee 님의 블로그를 소개하겠다.
-> Jihye Lee 님은 Tale ([테마 데모](https://chesterhow.github.io/tale/), [테마 Git](https://github.com/chesterhow/tale)) 이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 [본인의 블로그](http://jihyeleee.com/)를 아주 새롭고 멋지게 만든 예시가 있다.
+> Jihye Lee 님은 Tale ([테마 데모](https://chesterhow.github.io/tale/), [테마 Git](https://github.com/chesterhow/tale)) 이라는 아주 심플하고 별거 없어 보이는 Jekyll 테마로 [본인의 블로그](https://jihyeleee.com/)를 아주 새롭고 멋지게 만든 예시가 있다.
 
 나는 간단한 HTML, CSS 코딩 공부도 할 겸 직접 내 입맛에 맞는 블로그를 만들면서 실습까지 진행해보고자 시작하게 되었다.
 
@@ -51,15 +51,15 @@ Jekyll: Github Pages는 블로그 구축을 위한 틀을 제공한다면, Jekyl
 
 Github.io는 Github.com에서 제공하는 블로그 서비스로, Github.io 페이지를 사용하기 위해서는 Github.com에 가입되어 있어야 한다.
 
-[Github.com](http://github.com)으로 들어가서 가입을 해보자.
+[Github.com](https://github.com)으로 들어가서 가입을 해보자.
 
 ![github.com 메인 화면](img/screenshot1.png)
 
-[Github.com](http://github.com) 메인 화면이다. 화면 중간 우측에 바로 가입할 수 있는 필드가 있다. 혹은 우측 상단의 Sign-up 을 눌러 Sign-up 페이지에서도 가입을 할 수 있다.
+[Github.com](https://github.com) 메인 화면이다. 화면 중간 우측에 바로 가입할 수 있는 필드가 있다. 혹은 우측 상단의 Sign-up 을 눌러 Sign-up 페이지에서도 가입을 할 수 있다.
 
 ![Sign-up 페이지](img/screenshot2.png)
 
-여기서 주의할 점은 **Username**이 이후 [Github.io](http://github.io) 에서 블로그 페이지를 만들 때 사용될 주소의 첫 부분을 담당한다는 점이다.
+여기서 주의할 점은 **Username**이 이후 [Github.io](https://github.io) 에서 블로그 페이지를 만들 때 사용될 주소의 첫 부분을 담당한다는 점이다.
 평소에 사용하던 읽을 수 없고 알아보기 힘든 `rhrnakaktxkd490000` 이나, 남들에게 보여주기 부끄러운 `cutie-jisu-94` 같은 아이디보단 만들고 싶은 블로그의 목적이나 본인을 잘 나타낼 수 있는 이름으로 만드는 것을 추천한다.
 
 
@@ -100,7 +100,7 @@ Repository name을 'Username.github.io' 형태로 입력하자. 이 때 Username
 
 ### 3. Git Client 연결해서 기초 작업 환경 세팅하기
 
-자 이제 [Github.io](http://github.io)를 위한 계정과 저장소를 만들었다. Github.io 에서 다음 스텝을 따라가 보자.
+자 이제 [Github.io](https://github.io)를 위한 계정과 저장소를 만들었다. Github.io 에서 다음 스텝을 따라가 보자.
 
 [Github.io 페이지 ↗](https://pages.github.com/)
 

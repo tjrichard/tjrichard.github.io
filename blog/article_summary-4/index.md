@@ -100,7 +100,7 @@ order: 6
 
 #### LinkedIn의 북극성 지표 예시 <!-- omit in toc -->  
 
-LinkedIn의 데이터 사이언티스트는 ["추천(endorsements)" 기능](https://blog.linkedin.com/2012/09/24/introducing-endorsements-give-kudos-with-just-one-click)에 대한 그들의 북극성 지표를 개선하는 것이 더 나은 프로덕트 경험을 제공하지 **않았다는** [멋진 케이스 스터디](http://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p617.pdf)를 공유하였다. 그들의 지표 정의는 추천이 만들어지고/받아들여진 액션에 관한 것 이었고, 채용 담당자는 이러한 지지가 잘못된 정보를 제공하고 있을지 우려한다는 고객이 인지하는 가치를 대변하지 못해 LinkedIn의 비즈니스를 실제로 개선하지 못했다.
+LinkedIn의 데이터 사이언티스트는 ["추천(endorsements)" 기능](https://blog.linkedin.com/2012/09/24/introducing-endorsements-give-kudos-with-just-one-click)에 대한 그들의 북극성 지표를 개선하는 것이 더 나은 프로덕트 경험을 제공하지 **않았다는** [멋진 케이스 스터디](https://papers.www2017.com.au.s3-website-ap-southeast-2.amazonaws.com/companion/p617.pdf)를 공유하였다. 그들의 지표 정의는 추천이 만들어지고/받아들여진 액션에 관한 것 이었고, 채용 담당자는 이러한 지지가 잘못된 정보를 제공하고 있을지 우려한다는 고객이 인지하는 가치를 대변하지 못해 LinkedIn의 비즈니스를 실제로 개선하지 못했다.
 
 Reforge 또한 최근 프로덕트 지표를 제대로 설정하지 않았을 경우 [일반적으로 발생하는 위험](https://www.reforge.com/blog/north-star-metric-growth)에 대한 훌륭한 아티클을 개제하였다.
 
