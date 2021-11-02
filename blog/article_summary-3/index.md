@@ -15,7 +15,7 @@ order: 5
 ![](https://images.ctfassets.net/c1zhnszcah7h/6YoyPiCk1Gcj0ciOO2Bi0l/c8b2170ef28a55397e87789b1614ca82/Square_-_Thoughtful_Execcution.png?w=1648&h=1648&q=96&fm=webp)
 
 <p class="text-gray">
-🔗이 글은 Annina Koskinen이 <a href='https://spotify.design/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=24&domain=https://www.spotify.design/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'> Spotify.design</a>에 올린 <a href='https://abit.ly/article_18' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
+🔗이 글은 Annina Koskinen이 <a href='https://spotify.design/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.spotify.design/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'> Spotify.design</a>에 올린 <a href='https://abit.ly/article_18' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 ### ⚡️요약

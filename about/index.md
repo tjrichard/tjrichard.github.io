@@ -13,6 +13,6 @@ about: true
 
 ---
 
-<a href='https://tjrichard.github.io/assets/Resume_Seunghwan_1908.pdf' target='_blank' rel='nofollow' id='resume' onclick='downloadResume(resume)'>🧑🏻‍💻이력서</a> / <a href='https://tjrichard.github.io/assets/Portfolio_Seunghwan_1906.pdf' target='_blank' rel='nofollow' id='portfolio' onclick='downloadPortfolio(portfolio)'>🏄🏻‍♂️포트폴리오</a>
+<a href='{{ '/assets/Resume_Seunghwan_1908.pdf' | prepend: site.baseurl }}' target='_blank' rel='nofollow' id='resume' onclick='downloadResume(resume)'>🧑🏻‍💻이력서</a> / <a href='{{ '/assets/Portfolio_Seunghwan_1906.pdf' | prepend: site.baseurl }}' target='_blank' rel='nofollow' id='portfolio' onclick='downloadPortfolio(portfolio)'>🏄🏻‍♂️포트폴리오</a>
 
 _last update : 19.08_
