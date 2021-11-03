@@ -1,7 +1,7 @@
 /**
 *
 *  Secure Hash Algorithm (SHA256)
-*  http://www.webtoolkit.info/
+*  https://www.webtoolkit.info/
 *
 *  Original code by Angel Marin, Paul Johnston.
 *
