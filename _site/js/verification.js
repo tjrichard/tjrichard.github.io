@@ -178,9 +178,12 @@ function closeModal() {
 function verification() {
     var input = document.getElementById('passwordInput').value;
     var encodedPassword = SHA256(input);
+    // console.log(encodedPassword);
     var pass1 = '58c63d3625b948b10a897371f0e656455a78e235db5690e2d1bbf23a1883d4ec';
+    var pass2 = '41dd0a5e6f3e15a19eb1dcf9f985cf342557ed34d3c0bf19dd07eeff766a8a5d';
+    var pass3 = '7634aeb9648248f6e3d8a2f7166a872f884a6cbce346d52bfcbff5357ee01c29';
 
-    if (encodedPassword && encodedPassword == pass1) {
+    if (encodedPassword && (encodedPassword == pass1 || encodedPassword == pass2 || encodedPassword == pass3)) {
         createModal();
     }
     else {
