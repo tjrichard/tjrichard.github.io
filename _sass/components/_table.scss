@@ -7,23 +7,30 @@
   width: 100%;
   list-style-type: none;
   overflow: auto;
-
+  
   &__thead {
     font-size: $font-size-header;
     margin-bottom: half($base-spacing-unit);
     font-weight: $font-weight-bold;
     border-bottom: 1px solid $color-border;
   }
-
+  
   &__tbody {
     font-size: $font-size-medium;
-    color: $color-text;
     font-weight: $font-weight-regular;
+    color: $color-text;
+    min-width: 500px;
     margin-left: 0px;
     padding: 12px;
     background-color: $bg-color-gray;
     border-radius: 12px;
-    min-width: 500px;
+    border: 1px solid transparent;
+    transition: all ease .2s;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $color-gray-100;
+    }
   }
 
   li {
