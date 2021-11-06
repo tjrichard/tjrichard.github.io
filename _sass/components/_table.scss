@@ -7,38 +7,46 @@
   width: 100%;
   list-style-type: none;
   overflow: auto;
-
+  
   &__thead {
     font-size: $font-size-header;
     margin-bottom: half($base-spacing-unit);
     font-weight: $font-weight-bold;
     border-bottom: 1px solid $color-border;
   }
-
+  
   &__tbody {
     font-size: $font-size-medium;
-    margin-bottom: double($base-spacing-unit);
-    color: $color-text;
     font-weight: $font-weight-regular;
+    color: $color-text;
+    min-width: 500px;
     margin-left: 0px;
+    padding: 12px;
+    background-color: $bg-color-gray;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    transition: all ease .2s;
 
-    .company {
-      font-size: $font-size-header;
-      color: $color-text;
-      font-weight: $font-weight-bold;
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $color-gray-100;
     }
   }
 
   li {
     display: flex;
     align-items: flex-start;
-    margin-bottom: half($base-spacing-unit);
+    margin-bottom: 12px;
   }
 }
 
 .company {
-  width: 30vw !important;
+  font-size: $font-size-header;
+  color: $color-text;
+  font-weight: $font-weight-bold;
+  width: 30vw;
   min-width: 140px;
+  max-width: 240px;
   margin-bottom: 0;
   padding: 10px;
 }
@@ -46,6 +54,7 @@
 .brief {
   width: 70vw !important;
   min-width: 340px;
+  max-width: 516px;
   margin-bottom: 0;
   padding: 10px;
 

@@ -7,10 +7,10 @@
     transition: $global-transition;
 
     &__item {
-        // border-bottom: 1px solid rgba(0,0,0,.07);
         padding: 16px 0;
         list-style: none;
         width: 100%;
+        border: 1px solid transparent;
         border-radius: 8px;
         margin: 0 0 20px 0;
         transition: $global-transition;
@@ -112,7 +112,8 @@
     cursor: pointer;
     // opacity: .6;
     // transform: translate(10px, -10px);
-    box-shadow: 0px 51px 143px rgba(27, 37, 40, 0.07), 0px 17.9529px 59.582px rgba(27, 37, 40, 0.0347751), 0px 9.97283px 32.3937px rgba(27, 37, 40, 0.024173), 0px 5.49113px 17.8057px rgba(27, 37, 40, 0.0167152), 0px 2.39375px 7.89857px rgba(27, 37, 40, 0.00941464);;
+    // box-shadow: 0px 51px 143px rgba(27, 37, 40, 0.07), 0px 17.9529px 59.582px rgba(27, 37, 40, 0.0347751), 0px 9.97283px 32.3937px rgba(27, 37, 40, 0.024173), 0px 5.49113px 17.8057px rgba(27, 37, 40, 0.0167152), 0px 2.39375px 7.89857px rgba(27, 37, 40, 0.00941464);
+    border: 1px solid $color-gray-100;
 }
 
 .draft {
