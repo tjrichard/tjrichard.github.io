@@ -1,10 +1,13 @@
 <header id='c-header' class='c-header'>
   <div class='o-grid'>
     <div class='o-grid__col o-grid__col--full'>
-      <div class='c-header__inner'>
-        <ul class="c-nav c-nav-list">
+      <div class='c-header__inner' style='display: flex; justify-content: space-between;'>
+        <ul class='c-nav c-nav-list'>
           {% include navigation.html %}
         </ul>
+        <a href='{{ site.url }}' class='c-nav-list__logo'>
+          <img src='/images/dwmm-round-128.png'>
+        </a>
       </div>
     </div>
   </div>  

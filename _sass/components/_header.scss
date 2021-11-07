@@ -9,7 +9,7 @@
   border-bottom: 1px solid $color-border;
   z-index: 100;
   top: 0;
-  height: 51px;
+  height: 61px;
 
   &__inner {
     padding: $base-spacing-unit 0 0;
@@ -26,7 +26,7 @@
   height: 2px;
   background-color: $bg-color-gray;
   position: relative;
-  top: -3px;
+  top: 3px;
   
   .progress-bar {
       position: relative;
