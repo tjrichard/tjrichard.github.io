@@ -69,11 +69,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   analytics.page({
     'Referrer Host': referrerHost
   });
-  analytics.identify({
-    'User Agent': userAgent,
-    'Browser': browser,
-    'interests': interests
-  });
+  var path = document.location.pathname;
+  var proj = '/project/'
+  var blog = '/blog/'
+  if (path.indexOf(proj) != -1 || path.indexOf(blog) != -1){
+    analytics.identify({
+      'User Agent': userAgent,
+      'Browser': browser,
+      'interests': interests
+    });
+  }
+  else {
+    analytics.identify({
+      'User Agent': userAgent,
+      'Browser': browser
+    });
+  }
 }}();
   function downloadResume(target) {
     var href = target.href;

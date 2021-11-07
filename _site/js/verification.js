@@ -206,5 +206,8 @@ function handler(event) {
         verification();
     }
 }
-
-document.getElementById('passwordInput').addEventListener('keydown', handler);
+// survey 화면에서만 동작
+if (document.location.pathname == '/b2b-designers-survey/'){
+    document.getElementById('passwordInput').addEventListener('keydown', handler);
+}
+else {};
