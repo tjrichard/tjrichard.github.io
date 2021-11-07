@@ -1,15 +1,15 @@
 ---
 layout: default
-title: Thoughts and Intrests
-description: 🤔 관심 분야에 대한 생각
+title: Things have been thinking
+description: 관심 분야에 대한 생각과 노트
 project-header: true
 ---
 <div class='o-grid'>
     <div class='o-grid__col o-grid__col--full'>
         <div class='o-grid__head o-grid__head--full'>
             <hr style='visibility:hidden'>
-                <h1 class='c-page__title'>{{ page.title }}</h1>
-                <p class='c-page__subtitle'>{{ page.description }}</p>
+            <h1 class='c-page__title'>{{ page.title }}</h1>
+            <p class='c-page__subtitle'>{{ page.description }}</p>
             <hr style='visibility:hidden'>
         </div>
         <ul class='c-list'>
