@@ -198,3 +198,13 @@ function verification() {
         passwordInput.setSelectionRange(0, 99999); /*For mobile devices*/
     }
 }
+
+// Enter 누를 때 verification() 실행
+function handler(event) {
+    var keyStroke = event.key;
+    if (keyStroke == 'Enter') {
+        verification();
+    }
+}
+
+document.getElementById('passwordInput').addEventListener('keydown', handler);
