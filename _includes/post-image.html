@@ -1,0 +1,53 @@
+<script>
+function createModal(imgsrc) {
+  var styleTop0Pixel = "top: " + scrollTop + "px";
+  var styleTop50Percent = "top: calc(50% + " + scrollTop + "px)";
+  var styleTop10Pixel = scrollTop + 80;
+  styleTop10Pixel = "top: " + styleTop10Pixel + "px";
+
+  var modalBackground = document.createElement("div");
+  modalBackground.setAttribute("id", "modalBackground");
+  modalBackground.setAttribute("class", "modal__background");
+  modalBackground.setAttribute("onclick", "closeModal()");
+  modalBackground.setAttribute("style", styleTop0Pixel)
+  document.body.appendChild(modalBackground);
+
+  var modalCloseButton = document.createElement("div");
+  modalCloseButton.setAttribute("id", "modalCloseButton");
+  modalCloseButton.setAttribute("class", "modal__closeButton");
+  modalCloseButton.setAttribute("onclick", "closeModal()");
+  modalCloseButton.setAttribute("style", styleTop10Pixel)
+  document.body.appendChild(modalCloseButton);
+  
+  var modal = document.createElement("img");
+  modal.setAttribute("id", "modalImage");
+  modal.setAttribute("src", imgsrc);
+  modal.setAttribute("class", "modal__content__img");
+  modal.setAttribute("onclick", "closeModal()");
+  modal.setAttribute("style", styleTop50Percent)
+  document.body.appendChild(modal);
+
+  // body overflow: hidden
+  document.body.classList.add('modal-open')
+}
+
+function closeModal() {
+    var mbg = document.getElementById("modalBackground");
+    var m = document.getElementById("modalImage");
+    var mcb = document.getElementById("modalCloseButton");
+    mbg.remove();
+    m.remove();
+    mcb.remove();
+
+    // body overflow: auto
+    document.body.classList.remove('modal-open')
+}
+
+document.querySelectorAll('img').forEach(item => {
+  item.addEventListener('click', event => {
+    var imgSrc = item.currentSrc;
+    createModal(imgSrc);
+    clickedImage(imgSrc);
+  })
+})
+</script>

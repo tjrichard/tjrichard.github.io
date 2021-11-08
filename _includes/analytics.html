@@ -142,6 +142,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
       })
   };
+  function clickedImage(imgSrc) {
+    analytics.track("Click Image", {
+      url: "{{ page.url }}",
+      target: imgSrc,
+      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+    })
+  }
 </script>
 
 <!-- Beausible Analytics -->

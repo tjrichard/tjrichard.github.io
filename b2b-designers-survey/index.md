@@ -10,6 +10,7 @@ header-img: "b2b_graphic_cover_600x300.png"
         document.getElementById('c-footer').remove();
     };
 </script>
+{% include verification.html %}
 <div class="o-wrapper">
     <div class="o-grid">
         <div class="m-center">

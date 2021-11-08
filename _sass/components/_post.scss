@@ -67,6 +67,10 @@
   &__image {
     margin: 0 auto $base-spacing-unit;
   }
+
+  & img {
+    cursor: zoom-in;
+  }
 }
 
 

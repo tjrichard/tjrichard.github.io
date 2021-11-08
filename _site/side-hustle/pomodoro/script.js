@@ -133,9 +133,10 @@ document.addEventListener('DOMContentLoaded', function() {
 	 return;
 	}
    
-	if (Notification.permission !== 'granted')
-	 Notification.requestPermission();
-   });
+	if (Notification.permission !== 'granted') {
+		Notification.requestPermission();
+	}
+});
 
 // notifications fuction
 function noti_focus() {
