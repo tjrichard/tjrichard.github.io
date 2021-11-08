@@ -13,6 +13,7 @@
     object-fit: cover;
     object-position: center;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.23) 100%), $color-brand;
+    cursor: zoom-in;
   }
 
   &__type {
