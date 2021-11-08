@@ -31,172 +31,6 @@
   <link rel="shortcut icon" href="https://tjrichard.github.io/favicon.ico">
 
   <!-- <script src="https://unpkg.com/phosphor-icons"></script> -->
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172119466-2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-172119466-2');
-</script>
-
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PR9V822');</script>
-<!-- End Google Tag Manager -->
-
-<!-- Naver Search Console -->
-<meta name="naver-site-verification" content="a906dfeb775b0c7620f9b2d7338d9638c1bd8cea" />
-
-<!-- Segment -->
-<script>
-  var referrer;
-  var referrerHost;
-  var userAgent;
-  var browser;
-  
-    var interests = [];
-    
-    interests.push("Blog");
-    interests.push("Github.io");
-    interests.push("Jekyll");
-    interests.push("Development");
-  
-
-  /*
-  받은 referrer url에서 www에서 / 까지를 host로 리턴합니다
-  www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다.
-  User Agent의 값에서 값을 분리해 
-  */
-  window.onload = function () {
-    referrer = document.referrer;
-    if (referrer.split("://")[1].substring(0, 3) == "www") {
-        referrerHost = referrer.split("www.")[1];
-        referrerHost = referrerHost.split("/")[0];
-    }
-    else {
-        referrerHost = referrer.split("://")[1];
-        referrerHost = referrerHost.split("/")[0];
-    }
-  
-    userAgent = navigator.userAgent.toLowerCase();
-    if(userAgent.indexOf('edge')>-1){
-      browser='Microsoft Edge';
-    }else if(userAgent.indexOf('whale')>-1){
-      browser='Naver Whale';
-    }else if(userAgent.indexOf('chrome')>-1){
-      browser='Google Chrome';
-    }else if(userAgent.indexOf('firefox')>-1){
-      browser='Mozilla Firefox';
-    }else{
-      browser='Internet Explorer';
-    }
-  }
-
-
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";;analytics.SNIPPET_VERSION="4.15.3";
-  analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
-  analytics.page({
-    'Referrer Host': referrerHost
-  });
-  var path = document.location.pathname;
-  var proj = '/project/'
-  var blog = '/blog/'
-  if (path.indexOf(proj) != -1 || path.indexOf(blog) != -1){
-    analytics.identify({
-      'User Agent': userAgent,
-      'Browser': browser,
-      'interests': interests
-    });
-  }
-  else {
-    analytics.identify({
-      'User Agent': userAgent,
-      'Browser': browser
-    });
-  }
-}}();
-  function downloadResume(target) {
-    var href = target.href;
-    var len = document.getElementsByTagName('p').length;
-    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
-      analytics.track("Download Resume",{
-        url: "/blog/github-pages-series-2/",
-        target: href,
-        title: "Jekyll 테마 찾고 설치하는 법"
-      })
-      analytics.identify({
-        "contact": true,
-        "download": {
-          "Category": "이력서",
-          "last updated": date
-        }
-      })
-  };
-  function downloadPortfolio(target) {
-    var href = target.href;
-    var len = document.getElementsByTagName('p').length;
-    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
-    analytics.track("Download Portfolio",{
-      url: "/blog/github-pages-series-2/",
-      target: href,
-      title: "Jekyll 테마 찾고 설치하는 법"
-    })
-    analytics.identify({
-        "contact": true,
-        "download": {
-          "Category": "포트폴리오",
-          "last updated": date
-        }
-    })
-  }
-  function socialLink(target) {
-    var href = target.href;
-    analytics.track("Click Social Link",{
-      url: "/blog/github-pages-series-2/",
-      target: href,
-      title: "Jekyll 테마 찾고 설치하는 법"
-    })
-  }
-  function clickedOutlink(target) {
-    var href = target.href;
-      analytics.track("Click Outlink",{
-        url: "/blog/github-pages-series-2/",
-        target: href,
-        title: "Jekyll 테마 찾고 설치하는 법"
-      })
-  }
-  function scrollComplete() {
-    analytics.track("Scroll Complete",{
-        url: "/blog/github-pages-series-2/",
-        title: "Jekyll 테마 찾고 설치하는 법"
-      })
-  };
-  function clickedImage(imgSrc) {
-    analytics.track("Click Image", {
-      url: "/blog/github-pages-series-2/",
-      target: imgSrc,
-      title: "Jekyll 테마 찾고 설치하는 법"
-    })
-  }
-</script>
-
-<!-- Beausible Analytics -->
-<script type="text/javascript">
-  (function(w, d, a){
-      w.__baclient__ = {
-          load : function(src){
-              var b = d.createElement("script");
-              b.src = src; b.async=true; b.type = "text/javascript";
-              d.getElementsByTagName("head")[0].appendChild(b);
-          }
-      };w.__baclient__.load(a);
-  })(window, document, "//ba.beusable.net/script/ba/d2031e3a1d");
-</script>
   
   <style>
     
@@ -574,7 +408,173 @@ document.querySelectorAll('img').forEach(item => {
 </script>
 
   </div>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172119466-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-172119466-2');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PR9V822');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Naver Search Console -->
+<meta name="naver-site-verification" content="a906dfeb775b0c7620f9b2d7338d9638c1bd8cea" />
+
+<!-- Segment -->
+<script>
+  var referrer;
+  var referrerHost;
+  var userAgent;
+  var browser;
+  
+    var interests = [];
+    
+    interests.push("Blog");
+    interests.push("Github.io");
+    interests.push("Jekyll");
+    interests.push("Development");
+  
+
+  /*
+  받은 referrer url에서 www에서 / 까지를 host로 리턴합니다
+  www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다.
+  User Agent의 값에서 값을 분리해 
+  */
+  window.onload = function () {
+    referrer = document.referrer;
+    if (referrer.split("://")[1].substring(0, 3) == "www") {
+        referrerHost = referrer.split("www.")[1];
+        referrerHost = referrerHost.split("/")[0];
+    }
+    else {
+        referrerHost = referrer.split("://")[1];
+        referrerHost = referrerHost.split("/")[0];
+    }
+  
+    userAgent = navigator.userAgent.toLowerCase();
+    if(userAgent.indexOf('edge')>-1){
+      browser='Microsoft Edge';
+    }else if(userAgent.indexOf('whale')>-1){
+      browser='Naver Whale';
+    }else if(userAgent.indexOf('chrome')>-1){
+      browser='Google Chrome';
+    }else if(userAgent.indexOf('firefox')>-1){
+      browser='Mozilla Firefox';
+    }else{
+      browser='Internet Explorer';
+    }
+  }
+
+
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";;analytics.SNIPPET_VERSION="4.15.3";
+  analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
+  analytics.page({
+    'Referrer Host': referrerHost
+  });
+  var path = document.location.pathname;
+  var proj = '/project/'
+  var blog = '/blog/'
+  if (path.indexOf(proj) != -1 || path.indexOf(blog) != -1){
+    analytics.identify({
+      'User Agent': userAgent,
+      'Browser': browser,
+      'interests': interests
+    });
+  }
+  else {
+    analytics.identify({
+      'User Agent': userAgent,
+      'Browser': browser
+    });
+  }
+}}();
+  function downloadResume(target) {
+    var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
+      analytics.track("Download Resume",{
+        url: "/blog/github-pages-series-2/",
+        target: href,
+        title: "Jekyll 테마 찾고 설치하는 법"
+      })
+      analytics.identify({
+        "contact": true,
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
+      })
+  };
+  function downloadPortfolio(target) {
+    var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
+    analytics.track("Download Portfolio",{
+      url: "/blog/github-pages-series-2/",
+      target: href,
+      title: "Jekyll 테마 찾고 설치하는 법"
+    })
+    analytics.identify({
+        "contact": true,
+        "download": {
+          "Category": "포트폴리오",
+          "last updated": date
+        }
+    })
+  }
+  function socialLink(target) {
+    var href = target.href;
+    analytics.track("Click Social Link",{
+      url: "/blog/github-pages-series-2/",
+      target: href,
+      title: "Jekyll 테마 찾고 설치하는 법"
+    })
+  }
+  function clickedOutlink(target) {
+    var href = target.href;
+      analytics.track("Click Outlink",{
+        url: "/blog/github-pages-series-2/",
+        target: href,
+        title: "Jekyll 테마 찾고 설치하는 법"
+      })
+  }
+  function scrollComplete() {
+    analytics.track("Scroll Complete",{
+        url: "/blog/github-pages-series-2/",
+        title: "Jekyll 테마 찾고 설치하는 법"
+      })
+  };
+  function clickedImage(imgSrc) {
+    analytics.track("Click Image", {
+      url: "/blog/github-pages-series-2/",
+      target: imgSrc,
+      title: "Jekyll 테마 찾고 설치하는 법"
+    })
+  }
+</script>
+
+<!-- Beausible Analytics -->
+<script type="text/javascript">
+  (function(w, d, a){
+      w.__baclient__ = {
+          load : function(src){
+              var b = d.createElement("script");
+              b.src = src; b.async=true; b.type = "text/javascript";
+              d.getElementsByTagName("head")[0].appendChild(b);
+          }
+      };w.__baclient__.load(a);
+  })(window, document, "//ba.beusable.net/script/ba/d2031e3a1d");
+</script>
   <script src="/js/jquery-3.1.1.min.js"> </script>
   <script src="/js/evil-icons.min.js">   </script>
   <script src="/js/jquery.fitvids.js">   </script>
