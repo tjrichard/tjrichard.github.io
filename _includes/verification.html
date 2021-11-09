@@ -208,8 +208,10 @@ function handler(event) {
     }
 }
 // survey 화면에서만 동작
-if (document.location.pathname == '/b2b-designers-survey/'){
-    document.getElementById('passwordInput').addEventListener('keydown', handler);
-}
-else {};
+window.addEventListener('DOMContentLoaded', (event) => {
+    if (document.location.pathname == '/b2b-designers-survey/'){
+        document.getElementById('passwordInput').addEventListener('keydown', handler);
+    }
+    else {};
+});
 </script>

@@ -4,13 +4,13 @@ title: "B2B 디자이너들의 모임 설문 결과 🎙"
 subtitle: "멤버만 접근 가능합니다"
 header-img: "b2b_graphic_cover_600x300.png"
 ---
+{% include verification.html %}
 <script>
-    window.onload = function() {
+    window.addEventListener('DOMContentLoaded', (event) => {
         document.getElementById('c-header').remove();
         document.getElementById('c-footer').remove();
-    };
+    });
 </script>
-{% include verification.html %}
 <div class="o-wrapper">
     <div class="o-grid">
         <div class="m-center">

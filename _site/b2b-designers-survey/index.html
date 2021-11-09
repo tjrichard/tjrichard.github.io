@@ -75,13 +75,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
     <script>
-    window.onload = function() {
-        document.getElementById('c-header').remove();
-        document.getElementById('c-footer').remove();
-    };
-</script>
-
-<script>
 /**
 *
 *  Secure Hash Algorithm (SHA256)
@@ -291,10 +284,19 @@ function handler(event) {
     }
 }
 // survey 화면에서만 동작
-if (document.location.pathname == '/b2b-designers-survey/'){
-    document.getElementById('passwordInput').addEventListener('keydown', handler);
-}
-else {};
+window.addEventListener('DOMContentLoaded', (event) => {
+    if (document.location.pathname == '/b2b-designers-survey/'){
+        document.getElementById('passwordInput').addEventListener('keydown', handler);
+    }
+    else {};
+});
+</script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        document.getElementById('c-header').remove();
+        document.getElementById('c-footer').remove();
+    });
 </script>
 
 <div class="o-wrapper">
