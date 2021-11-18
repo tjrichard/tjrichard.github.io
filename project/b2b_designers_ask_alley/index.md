@@ -138,4 +138,4 @@ B2B 프로덕트를 만들고있는 B2B 디자이너들은 B2C 디자이너보�
 
 더 많은 B2B 프로덕트 디자이너들이 한 자리에서 어려운 점, 배운 점을 공유하고 서로 도움이 되기 위해 커뮤니티를 운영중입니다.
 
-<a href="https://abit.ly/b2b-designers" target='blank' rel='nofollow' id='outlink5' onclick='clickedOutlink(outlink5)'>🔗 B2B 디자이너들의 모임 노션 바로가기</a>
+<a href="https://www.b2b-designers.space" target='blank' rel='nofollow' id='outlink5' onclick='clickedOutlink(outlink5)'>🔗 B2B 디자이너들의 모임 노션 바로가기</a>
