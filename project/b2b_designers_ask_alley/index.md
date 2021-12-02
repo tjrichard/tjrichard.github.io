@@ -13,7 +13,7 @@ header-img: "img/notion_header.png"
 order: 1
 ---
 
-<p class="text-gray">🔗 이 글은 <a href="https://abit.ly/b2b-designers_ask_alley_m" target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://api.faviconkit.com/medium.com/64' style='display:inline; height: 1em; position: relative; bottom: -2px;'> B2B 디자이너들의 모임 Medium</a>에도 게재되었습니다</p>
+<p class="text-gray">🔗 이 글은 <a href="https://abit.ly/b2b-designers_ask_alley_m" target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://miro.medium.com/fit/c/120/120/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' style='display:inline; height: 1em; position: relative; bottom: -2px;'> B2B 디자이너들의 모임 Medium</a>에도 게재되었습니다</p>
 
 ### B2B 디자이너들의 모임 첫 '멤버들에게 질문' 세션으로 A/B 테스팅 솔루션을 제공 중인 스타트업 'Hackle'의 프로덕트 디자이너 Alley님과 함께합니다.
 
