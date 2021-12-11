@@ -78,11 +78,19 @@
                     memberName.innerHTML = name;
                     memberDescDiv.appendChild(memberName);
                 }
-                var memberWork = document.createElement("div");
-                    memberWork.setAttribute("class", "m-work")
-                    memberWork.innerHTML = "@" + company + "(" + product + ")";
-                    memberDescDiv.appendChild(memberWork);
-                
+                if(company == "이직중"){}else{
+                    if(!product){
+                        var memberWork = document.createElement("div");
+                        memberWork.setAttribute("class", "m-work")
+                        memberWork.innerHTML = "@" + company;
+                        memberDescDiv.appendChild(memberWork);
+                    }else{
+                        var memberWork = document.createElement("div");
+                        memberWork.setAttribute("class", "m-work")
+                        memberWork.innerHTML = "@" + company + "(" + product + ")";
+                        memberDescDiv.appendChild(memberWork);
+                    }                
+                }
                 var memberIntro = document.createElement("div");
                     memberIntro.setAttribute("class", "m-intro")
                     memberIntro.innerHTML = intro;
