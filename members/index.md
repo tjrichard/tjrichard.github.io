@@ -9,13 +9,12 @@ header-img: "b2b_graphic_cover_600x300.png"
     window.addEventListener('DOMContentLoaded', (event) => {
     document.getElementById('c-header').remove();
     document.getElementById('c-footer').remove();
+    document.body.style.backgroundColor = '#FAFAFA';
     });
 </script>
 <div class="o-wrapper">
-    <div class="o-grid">
-        <div class="m-center">
-            <ul id="member-list" class='c-list'>
-            </ul>
-        </div>
+    <div class="m-list">
+        <ul id="member-list" class='c-list'>
+        </ul>
     </div>
 </div>

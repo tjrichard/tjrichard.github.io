@@ -13,96 +13,108 @@
     /*
     =================== List functoins ===================
     */
+
+    function getDomainName(url) {
+        var longUrl = url;
+        var domain1 = longUrl.split("://")[1].split(".")[0];
+        var domain2 = longUrl.split("://")[1].split(".")[1];
+        if(domain1 == "www"){
+            return "🔗 " + domain2;
+        } else {
+            return "🔗 " + domain1;
+        }
+    }
+
     function listMembers(json) {
         var records = [];
         records = json.records;
         console.log(records.length);
         
         for(x = 0; x < records.length; x++) {
-            console.log(records[x]);
-            var id = records[x].id;
-            console.log(id);
-            var name = records[x].fields.Name;
-            console.log(name);
-            var company = records[x].fields.Company;
-            console.log(company);
-            var product = records[x].fields.Product;
-            console.log(product);
-            var role = records[x].fields.Role;
-            console.log(role);
-            var intro = records[x].fields.Intro;
-            console.log(intro);
-            var link1 = records[x].fields.Link1;
-            console.log(link1);
-            var link2 = records[x].fields.Link2;
-            console.log(link2);
-            var link3 = records[x].fields.Link3;
-            console.log(link3);
-            var profile_pic_url = "";
-            if(!records[x].fields["Profile Picture"]){profile_pic_url = "./profile/placeholder.png"}else{profile_pic_url = records[x].fields["Profile Picture"][0]["thumbnails"]["large"]["url"];};
-            var manager = "";
-            if(json.records[x].fields["Apply for \bManager"] == "네"){manager = true;}else{manager = false;};
-            console.log(manager);
-            var enrolled_date = records[x].fields["Enrolled Date"]; // 정렬 필요할 경우
-            
-            var listUl = document.getElementById("member-list");
-            var listLi = document.createElement("li");
-                listLi.setAttribute("id", id);
-                listUl.appendChild(listLi);
-            var memberProfile = document.createElement("img")
-                memberProfile.setAttribute("src",profile_pic_url);
-                listLi.appendChild(memberProfile);
-            if(manager == true) {
-            var memberNameDiv = document.createElement("div");
-                memberNameDiv.setAttribute("class", "m_name_container");
-                listLi.appendChild(memberNameDiv);
-            var memberName = document.createElement("h6");
-                memberName.setAttribute("class", "m_name");
-                memberName.innerHTML = name;
-                memberNameDiv.appendChild(memberName);
-            var memberManager = document.createElement("div");
-                memberManager.setAttribute("class", "m_manager");
-                memberNameDiv.appendChild(memberManager);
-            } else {
-                var memberName = document.createElement("h6");
-                memberName.setAttribute("class", "m_name");
-                memberName.innerHTML = name;
-                listLi.appendChild(memberName);
+            if(!records[x].fields.Name){}else{
+                var id = records[x].id;
+                var name = records[x].fields.Name;
+                var company = records[x].fields.Company;
+                var product = records[x].fields.Product;
+                var role = records[x].fields.Role;
+                var intro = records[x].fields.Intro;
+                var link1 = records[x].fields.Link1;
+                var link2 = records[x].fields.Link2;
+                var link3 = records[x].fields.Link3;
+                var profile_pic_url = "";
+                if(!records[x].fields["Profile Picture"]){profile_pic_url = "./profile/placeholder.png"}else{profile_pic_url = records[x].fields["Profile Picture"][0]["thumbnails"]["large"]["url"];};
+                var manager = "";
+                if(json.records[x].fields["Apply for \bManager"] == "네"){manager = true;}else{manager = false;};
+                var enrolled_date = records[x].fields["Enrolled Date"]; // 정렬 필요할 경우 사용
+                
+                var listUl = document.getElementById("member-list");
+                var listLi = document.createElement("li");
+                    listUl.appendChild(listLi);
+                var memberProfileDiv = document.createElement("div");
+                    memberProfileDiv.setAttribute("class", "m-profile-container");
+                    memberProfileDiv.style.backgroundImage = "url(" + profile_pic_url + ")";
+                    listLi.appendChild(memberProfileDiv);
+                var memberRole = document.createElement("div");
+                    memberRole.setAttribute("class", "m-role")
+                    memberRole.innerHTML = role;
+                    memberProfileDiv.appendChild(memberRole);
+                var memberDescDiv = document.createElement("div");
+                    memberDescDiv.setAttribute("class", "m-desc");
+                    listLi.appendChild(memberDescDiv);
+                if(manager == true) {
+                var memberNameDiv = document.createElement("div");
+                    memberNameDiv.setAttribute("class", "m-name-container");
+                    memberDescDiv.appendChild(memberNameDiv);
+                var memberName = document.createElement("h3");
+                    memberName.setAttribute("class", "m-name");
+                    memberName.innerHTML = name;
+                    memberNameDiv.appendChild(memberName);
+                var memberManager = document.createElement("div");
+                    memberManager.setAttribute("class", "m-manager");
+                    memberNameDiv.appendChild(memberManager);
+                } else {
+                    var memberName = document.createElement("h3");
+                    memberName.setAttribute("class", "m-name");
+                    memberName.innerHTML = name;
+                    memberDescDiv.appendChild(memberName);
+                }
+                var memberWork = document.createElement("div");
+                    memberWork.setAttribute("class", "m-work")
+                    memberWork.innerHTML = "@" + company + "(" + product + ")";
+                    memberDescDiv.appendChild(memberWork);
+                
+                var memberIntro = document.createElement("div");
+                    memberIntro.setAttribute("class", "m-intro")
+                    memberIntro.innerHTML = intro;
+                    memberDescDiv.appendChild(memberIntro);
+                if(!link1){}else{
+                    var memberLinkContainer = document.createElement("div");
+                        memberLinkContainer.setAttribute("class","m-link-container");
+                        memberDescDiv.appendChild(memberLinkContainer);
+                    var domainName = getDomainName(link1);
+                    var memberLink1 = document.createElement("a");
+                        memberLink1.setAttribute("class", "m-link")
+                        memberLink1.innerHTML = domainName;
+                        memberLink1.setAttribute("href", link1);
+                        memberLinkContainer.appendChild(memberLink1);
+                };
+                if(!link2){}else{
+                    var domainName = getDomainName(link2);
+                    var memberLink2 = document.createElement("a");
+                        memberLink2.setAttribute("class", "m-link")
+                        memberLink2.innerHTML = domainName;
+                        memberLink2.setAttribute("href", link2);
+                        memberLinkContainer.appendChild(memberLink2);
+                };
+                if(!link3){}else{
+                    var domainName = getDomainName(link3);
+                    var memberLink3 = document.createElement("a");
+                        memberLink3.setAttribute("class", "m-link")
+                        memberLink3.innerHTML = domainName;
+                        memberLink3.setAttribute("href", link3);
+                        memberLinkContainer.appendChild(memberLink3);
+                };
             }
-            var memberCompany = document.createElement("div");
-                memberCompany.setAttribute("class", "m_company")
-                memberCompany.innerHTML = company;
-                listLi.appendChild(memberCompany);
-            var memberProduct = document.createElement("div");
-                memberProduct.setAttribute("class", "m_product")
-                memberProduct.innerHTML = product;
-                listLi.appendChild(memberProduct);
-            var memberRole = document.createElement("div");
-                memberRole.setAttribute("class", "m_role")
-                memberRole.innerHTML = role;
-                listLi.appendChild(memberRole);
-            var memberIntro = document.createElement("div");
-                memberIntro.setAttribute("class", "m_intro")
-                memberIntro.innerHTML = intro;
-                listLi.appendChild(memberIntro);
-            if(!link1){}else{
-                var memberLink1 = document.createElement("div");
-                    memberLink1.setAttribute("class", "m_link")
-                    memberLink1.innerHTML = link1;
-                    listLi.appendChild(memberLink1);
-            };
-            if(!link2){}else{
-                var memberLink2 = document.createElement("div");
-                    memberLink2.setAttribute("class", "m_link")
-                    memberLink2.innerHTML = link2;
-                    listLi.appendChild(memberLink2);
-            };
-            if(!link3){}else{
-                var memberLink3 = document.createElement("div");
-                    memberLink3.setAttribute("class", "m_link")
-                    memberLink3.innerHTML = link3;
-                    listLi.appendChild(memberLink3);
-            };
         }
     }
 
@@ -124,9 +136,6 @@
         fetch(url, requestOptions)
             .then(response => response.json())
             .then(json => {
-                console.log(json);
-                // console.log(json.records[0]);
-                // console.log(json.records[1]);
                 listMembers(json);
             });
     };
