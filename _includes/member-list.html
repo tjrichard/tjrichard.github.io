@@ -44,7 +44,7 @@
                 var profile_pic_url = "";
                 if(!records[x].fields["Profile Picture"]){profile_pic_url = "./profile/placeholder.png"}else{profile_pic_url = records[x].fields["Profile Picture"][0]["thumbnails"]["large"]["url"];};
                 var manager = "";
-                if(json.records[x].fields["Apply for \bManager"] == "네"){manager = true;}else{manager = false;};
+                if(json.records[x].fields.Manager == "운영진"){manager = true;}else{manager = false;};
                 var enrolled_date = records[x].fields["Enrolled Date"]; // 정렬 필요할 경우 사용
                 
                 var listUl = document.getElementById("member-list");
