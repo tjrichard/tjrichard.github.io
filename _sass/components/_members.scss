@@ -1,0 +1,165 @@
+/*------------------------------------*\
+  Components > Members
+\*------------------------------------*/
+
+.m-list {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+    
+    ul {
+        margin: 0 auto;
+        transition: .2s;
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-column-gap: 40px;
+        grid-row-gap: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+
+        li {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            min-width: 200px;
+        }
+    }
+}
+
+.m-profile-container {
+    width: 100%;
+    height: 280px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+.m-desc {
+
+}
+.m-name-container {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.m-name {
+    margin-bottom: 0;
+    display: inline-block;
+    color: $color-key;
+}
+
+.m-manager {
+    margin-left: 4px;
+    height: 16px;
+    width: 16px;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 5a1 1 0 0 1 .78.375l3.303 4.128 3.21-3.21A1 1 0 0 1 21 7v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1.707-.707l3.21 3.21 3.302-4.128A1 1 0 0 1 12 5Zm0 2.6-3.22 4.025a1 1 0 0 1-1.487.082L5 9.414V17h14V9.414l-2.293 2.293a1 1 0 0 1-1.488-.082L12 7.6Z' fill='%234139EF'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.m-role {
+    display: inline-block;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+    line-height: 20px;
+    padding: 0px 4px;
+    border: 2px solid $bg-color-dark;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.88);
+    backdrop-filter: blur(4px);
+    position: relative;
+    transform: translate(8px, 245px);
+}
+
+.m-work {
+    font-size: $font-size-base;
+    margin-bottom: 20px;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 60%;
+        height: 1px;
+        background-color: $color-gray-100;
+        transform: translate(0, 10px);
+    }
+}
+
+.m-intro {
+    font-size: $font-size-medium;
+    color: #494f50;
+    word-break: keep-all;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.m-link-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 6px 10px;
+}
+
+.m-link {
+    font-size: $font-size-medium;
+    padding: 4px 8px;
+    max-width: 130px;
+    border-radius: 6px;
+    background-color: #eaeff1;
+    color: #494f50;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+    &:hover {
+        background-color: $color-key;
+        color: $color-white;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .m-list {
+        ul {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    .m-profile-container {
+        max-height: 3   00px;
+        min-width: 120px;
+        min-height: 80px;
+    }
+
+    .m-role {
+        font-size: $font-size-tiny;
+        line-height: 18px;
+        transform: translate(8px, 245px);
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .m-list {
+        ul {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .m-profile-container {
+        max-height: 300px;
+        min-width: 120px;
+        min-height: 80px;
+    }
+    .m-role {
+        font-size: $font-size-tiny;
+        line-height: 18px;
+        transform: translate(8px, 245px);
+    }
+}

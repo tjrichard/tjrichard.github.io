@@ -144,7 +144,7 @@ function appendList(json) {
         liValueHeader.setAttribute("id", "value");
         liValueHeader.innerHTML = "Value";
 
-    document.getElementById("apiRespons").innerHTML = "";
+    document.getElementById("apiResponse").innerHTML = "";
     document.getElementById("apiResponse").appendChild(ul);
     document.getElementById("ul").appendChild(liKeyHeader);
     document.getElementById("ul").appendChild(liValueHeader);
