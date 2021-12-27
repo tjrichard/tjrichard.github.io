@@ -104,10 +104,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     function listMembers(json) {
         var records = [];
         records = json.records;
-        console.log(records.length);
         
         for(x = 0; x < records.length; x++) {
-            if(!records[x].fields.Name){}else{
+            if(!records[x].fields.Name || records[x].fields.Public == "아니오"){}else{
                 var id = records[x].id;
                 var name = records[x].fields.Name;
                 var company = records[x].fields.Company;
