@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="table.css" rel="stylesheet">
+    <script>
+        function searchNickName() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchNickName");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("salary-list");
+            tr = table.getElementsByTagName("tr");
+            if (!input.value.length) {
+                for (i = 0; i < tr.length; i++) {
+                    tr[i].style.backgroundColor = "";
+                    document.getElementById("salary-table").scrollTop = 0;
+                }
+            } else {
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.backgroundColor = "#fffee8";
+                            var topPos = tr[i].offsetTop - 60;
+                            document.getElementById("salary-table").scrollTop = topPos;
+                        } else {
+                            tr[i].style.backgroundColor = "";
+                        }
+                    }
+                }
+            }
+        }
+        function searchDomain() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchDomain");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("table4");
+            tr = table.getElementsByTagName("tr");
+            if (!input.value.length) {
+                for (i = 0; i < tr.length; i++) {
+                    tr[i].style.backgroundColor = "";
+                    document.getElementById("domain-table").scrollTop = 0;
+                }
+            } else {
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.backgroundColor = "#fffee8";
+                            var topPos = tr[i].offsetTop - 60;
+                            document.getElementById("domain-table").scrollTop = topPos;
+                        } else {
+                            tr[i].style.backgroundColor = "";
+                        }
+                    }
+                }
+            }
+        }
+        function searchSatisfaction() {
+            var input, filter, table, tr, td, i, txtValue;
+            input = document.getElementById("searchSatisfaction");
+            filter = input.value.toUpperCase();
+            table = document.getElementById("table5");
+            tr = table.getElementsByTagName("tr");
+            if (!input.value.length) {
+                for (i = 0; i < tr.length; i++) {
+                    tr[i].style.backgroundColor = "";
+                    document.getElementById("satisfaction-table").scrollTop = 0;
+                }
+            } else {
+                for (i = 0; i < tr.length; i++) {
+                    td = tr[i].getElementsByTagName("td")[0];
+                    if (td) {
+                        txtValue = td.textContent || td.innerText;
+                        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                            tr[i].style.backgroundColor = "#fffee8";
+                            var topPos = tr[i].offsetTop - 60;
+                            document.getElementById("satisfaction-table").scrollTop = topPos;
+                        } else {
+                            tr[i].style.backgroundColor = "";
+                        }
+                    }
+                }
+            }
+        }
+        window.onload = function () {
+            var list = document.getElementById("salary-list");
+            var tr = list.getElementsByTagName("tr");
+            var count = tr.length - 1;
+            var recordCount = document.getElementById("recordCount");
+            recordCount.innerHTML = count;
+
+            var table1 = document.getElementById("salary-table");
+            table1.addEventListener('scroll', () => {
+                var tableHeight1 = table1.scrollHeight;
+                var viewHeight1 = table1.offsetHeight;
+                var currentScroll1 = table1.scrollTop;
+                var scrolled1 = tableHeight1 - viewHeight1 - currentScroll1;
+                var shadow1 = document.getElementById("shadow");
+                function getScrolled() {
+                    // console.log(scrolled1);
+                    if (scrolled1 <= 1) {
+                        shadow1.style.display = "none";
+                    } else {
+                        shadow1.style.display = "";
+                    }
+                }
+                getScrolled();
+            });
+            var table2 = document.getElementById("domain-table");
+            table2.addEventListener('scroll', () => {
+                var tableHeight2 = table2.scrollHeight;
+                var viewHeight2 = table2.offsetHeight;
+                var currentScroll2 = table2.scrollTop;
+                var scrolled2 = tableHeight2 - viewHeight2 - currentScroll2;
+                var shadow2 = document.getElementById("shadow2");
+                function getScrolled() {
+                    // console.log(scrolled2);
+                    if (scrolled2 <= 1) {
+                        shadow2.style.display = "none";
+                    } else {
+                        shadow2.style.display = "";
+                    }
+                }
+                getScrolled();
+            });
+            var table3 = document.getElementById("satisfaction-table");
+            table3.addEventListener('scroll', () => {
+                var tableHeight3 = table3.scrollHeight;
+                var viewHeight3 = table3.offsetHeight;
+                var currentScroll3 = table3.scrollTop;
+                var scrolled3 = tableHeight3 - viewHeight3 - currentScroll3;
+                var shadow3 = document.getElementById("shadow3");
+                function getScrolled() {
+                    // console.log(scrolled3);
+                    if (scrolled3 <= 1) {
+                        shadow3.style.display = "none";
+                    } else {
+                        shadow3.style.display = "";
+                    }
+                }
+                getScrolled();
+            });
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="content__container border-rad-14px">
+            <div class="header__container">
+                <h1 class="header">응답자 리스트 (<span id="recordCount"></span>명)</h1>
+                <input type="text" id="searchNickName" onkeyup="searchNickName()" placeholder="닉네임을 검색하세요"
+                    title="닉네임을 검색하세요">
+            </div>
+            <div id="salary-table" class="table__container">
+                <table id="salary-list" class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">닉네임</th>
+                            <th title="Field #2">연차</th>
+                            <th title="Field #3">시작연봉</th>
+                            <th title="Field #4">현재연봉</th>
+                            <th title="Field #5">이직횟수</th>
+                            <th title="Field #6">회사분류</th>
+                            <th title="Field #7">도메인</th>
+                            <th title="Field #8">직무</th>
+                            <th title="Field #9">만족도</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>뚠뚠한 강얼쥐</td>
+                            <td>신입(0년차)</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>R&amp;D</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>5점</td>
+                        </tr>
+                        <tr>
+                            <td>우잉</td>
+                            <td>1년차</td>
+                            <td>2,400</td>
+                            <td>2,700</td>
+                            <td>1번</td>
+                            <td>중소기업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>BX / 브랜드 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>동미</td>
+                            <td>1년차</td>
+                            <td>2,520</td>
+                            <td>2,760</td>
+                            <td>0번</td>
+                            <td>중소기업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>서비스 기획</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>똥똥이</td>
+                            <td>신입(0년차)</td>
+                            <td>2,400</td>
+                            <td>2,800</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>사회혁신</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>문어발</td>
+                            <td>1년차</td>
+                            <td>2,400</td>
+                            <td>2,900</td>
+                            <td>4번</td>
+                            <td>중소기업</td>
+                            <td>물류 (식품)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>클로이</td>
+                            <td>신입(0년차)</td>
+                            <td>2,900</td>
+                            <td>2,900</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>물류 (식품)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>Andy</td>
+                            <td>신입(0년차)</td>
+                            <td>3,000</td>
+                            <td>3,000</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>이커머스</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>아론</td>
+                            <td>1년차</td>
+                            <td>2,520</td>
+                            <td>3,000</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>CRM (마케팅)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>스타트업디자이너</td>
+                            <td>4년차</td>
+                            <td>2,020</td>
+                            <td>3,030</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>자몽곰</td>
+                            <td>3년차</td>
+                            <td>2,400</td>
+                            <td>3,120</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>보안</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>네투네</td>
+                            <td>1년차</td>
+                            <td>2,400</td>
+                            <td>3,200</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>안습</td>
+                            <td>4년차</td>
+                            <td>2,600</td>
+                            <td>3,200</td>
+                            <td>3번</td>
+                            <td>중소기업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>옐로</td>
+                            <td>2년차</td>
+                            <td>3,000</td>
+                            <td>3,240</td>
+                            <td>1번</td>
+                            <td>중소기업</td>
+                            <td>ERP</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>죠죠</td>
+                            <td>1년차</td>
+                            <td>3,000</td>
+                            <td>3,300</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>외로운치즈</td>
+                            <td>2년차</td>
+                            <td>2,800</td>
+                            <td>3,300</td>
+                            <td>1번</td>
+                            <td>중소기업</td>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>이유</td>
+                            <td>7년차</td>
+                            <td>1,800</td>
+                            <td>3,300</td>
+                            <td>3번</td>
+                            <td>중소기업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>BX / 브랜드 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>마일드커리</td>
+                            <td>5년차</td>
+                            <td>1,800</td>
+                            <td>3,350</td>
+                            <td>3번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>봄</td>
+                            <td>1년차</td>
+                            <td>3,500</td>
+                            <td>3,500</td>
+                            <td>0번</td>
+                            <td>중소기업</td>
+                            <td>금융</td>
+                            <td>UX 기획</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>호랑이</td>
+                            <td>3년차</td>
+                            <td>2,500</td>
+                            <td>3,500</td>
+                            <td>1번</td>
+                            <td>중견기업</td>
+                            <td>HR</td>
+                            <td>UX 기획</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>베이컨</td>
+                            <td>2년차</td>
+                            <td>2,700</td>
+                            <td>3,500</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>보안</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>말티즈</td>
+                            <td>2년차</td>
+                            <td>2,700</td>
+                            <td>3,500</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>물류 (식품)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>로또1등간절</td>
+                            <td>4년차</td>
+                            <td>2,600</td>
+                            <td>3,500</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>마케팅</td>
+                            <td>UX 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>욥욥</td>
+                            <td>3년차</td>
+                            <td>2,400</td>
+                            <td>3,560</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>플랫폼 (딜리버리, 멀티)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>루루</td>
+                            <td>3년차</td>
+                            <td>2,700</td>
+                            <td>3,600</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>UX 디자이너</td>
+                            <td>1점</td>
+                        </tr>
+                        <tr>
+                            <td>k4</td>
+                            <td>3년차</td>
+                            <td>2,560</td>
+                            <td>3,600</td>
+                            <td>0번</td>
+                            <td>중견기업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>chiskis</td>
+                            <td>10년차 이상</td>
+                            <td>1,800</td>
+                            <td>3,600</td>
+                            <td>4번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>토리</td>
+                            <td>4년차</td>
+                            <td>2,200</td>
+                            <td>3,600</td>
+                            <td>3번</td>
+                            <td>중견기업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>여미</td>
+                            <td>2년차</td>
+                            <td>2,400</td>
+                            <td>3,700</td>
+                            <td>3번</td>
+                            <td>스타트업</td>
+                            <td>교육</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>ㅁㄴㅇㄹ</td>
+                            <td>5년차</td>
+                            <td>2,400</td>
+                            <td>3,760</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>의료</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>호호</td>
+                            <td>4년차</td>
+                            <td>1,800</td>
+                            <td>3,800</td>
+                            <td>5번</td>
+                            <td>스타트업</td>
+                            <td>상담 서비스</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>라라</td>
+                            <td>1년차</td>
+                            <td>3,400</td>
+                            <td>3,800</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>감귤</td>
+                            <td>1년차</td>
+                            <td>2,100</td>
+                            <td>3,800</td>
+                            <td>0번</td>
+                            <td>스타트업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>닥터페퍼</td>
+                            <td>8년차</td>
+                            <td>2,400</td>
+                            <td>3,800</td>
+                            <td>3번</td>
+                            <td>스타트업</td>
+                            <td>AI (AML)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>아미베베</td>
+                            <td>3년차</td>
+                            <td>1,900</td>
+                            <td>3,800</td>
+                            <td>4번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>1점</td>
+                        </tr>
+                        <tr>
+                            <td>디자인 위위</td>
+                            <td>10년차 이상</td>
+                            <td>1,950</td>
+                            <td>4,000</td>
+                            <td>4번</td>
+                            <td>중소기업</td>
+                            <td>플랫폼 (딜리버리, 멀티)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>어디보자</td>
+                            <td>9년차</td>
+                            <td>1,700</td>
+                            <td>4,000</td>
+                            <td>4번</td>
+                            <td>중소기업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>와랄라</td>
+                            <td>4년차</td>
+                            <td>2,400</td>
+                            <td>4,000</td>
+                            <td>0번</td>
+                            <td>중소기업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>무지</td>
+                            <td>2년차</td>
+                            <td>2,160</td>
+                            <td>4,000</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>사업개발 및 PM</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>uu</td>
+                            <td>7년차</td>
+                            <td>2,200</td>
+                            <td>4,010</td>
+                            <td>3번</td>
+                            <td>중소기업</td>
+                            <td>교육</td>
+                            <td>UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>월루월루</td>
+                            <td>4년차</td>
+                            <td>2,400</td>
+                            <td>4,070</td>
+                            <td>1번</td>
+                            <td>중견기업</td>
+                            <td>그룹웨어 (업무 포탈)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>띠로리</td>
+                            <td>6년차</td>
+                            <td>1,800</td>
+                            <td>4,150</td>
+                            <td>2번</td>
+                            <td>중소기업</td>
+                            <td>리걸테크</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>백억부자</td>
+                            <td>5년차</td>
+                            <td>2,500</td>
+                            <td>4,150</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>마케팅</td>
+                            <td>BX / 브랜드 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>91-어느디자이너-01</td>
+                            <td>3년차</td>
+                            <td>3,500</td>
+                            <td>4,300</td>
+                            <td>4번</td>
+                            <td>중견기업</td>
+                            <td>CRM (마케팅)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>완료</td>
+                            <td>3년차</td>
+                            <td>3,600</td>
+                            <td>4,300</td>
+                            <td>3번</td>
+                            <td>스타트업</td>
+                            <td>헬스케어</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>스탓텁</td>
+                            <td>7년차</td>
+                            <td>2,000</td>
+                            <td>4,400</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>물류 (식품)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>유나</td>
+                            <td>1년차</td>
+                            <td>2,800</td>
+                            <td>4,400</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>F&amp;B</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>디디D자이너</td>
+                            <td>3년차</td>
+                            <td>2,200</td>
+                            <td>4,420</td>
+                            <td>1번</td>
+                            <td>대기업</td>
+                            <td>금융</td>
+                            <td>UX 기획</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>Comp_18374922</td>
+                            <td>2년차</td>
+                            <td>3,400</td>
+                            <td>4,500</td>
+                            <td>0번</td>
+                            <td>대기업</td>
+                            <td>엔터테인먼트</td>
+                            <td>서비스 기획</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>우다다</td>
+                            <td>7년차</td>
+                            <td>2,000</td>
+                            <td>4,500</td>
+                            <td>3번</td>
+                            <td>중소기업</td>
+                            <td>마케팅</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>디나</td>
+                            <td>3년차</td>
+                            <td>2,000</td>
+                            <td>4,800</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>안녕하세요</td>
+                            <td>8년차</td>
+                            <td>2,500</td>
+                            <td>4,800</td>
+                            <td>3번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UI 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>ORZO</td>
+                            <td>1년차</td>
+                            <td>4,800</td>
+                            <td>4,800</td>
+                            <td>1번</td>
+                            <td>중소기업</td>
+                            <td>HR</td>
+                            <td>PM</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>소어린</td>
+                            <td>6년차</td>
+                            <td>2,600</td>
+                            <td>4,800</td>
+                            <td>5번</td>
+                            <td>스타트업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>J</td>
+                            <td>6년차</td>
+                            <td>1,800</td>
+                            <td>4,800</td>
+                            <td>6번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>수트</td>
+                            <td>5년차</td>
+                            <td>2,600</td>
+                            <td>4,900</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>UX 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>롤로</td>
+                            <td>6년차</td>
+                            <td>2,000</td>
+                            <td>4,900</td>
+                            <td>4번</td>
+                            <td>스타트업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>잉</td>
+                            <td>신입(0년차)</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td>0번</td>
+                            <td>중견기업</td>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>ㅎㅎ</td>
+                            <td>2년차</td>
+                            <td>4,600</td>
+                            <td>5,000</td>
+                            <td>0번</td>
+                            <td>대기업</td>
+                            <td>SI</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>제로</td>
+                            <td>4년차</td>
+                            <td>2,150</td>
+                            <td>5,000</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>CMS, LMS</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>후아유</td>
+                            <td>3년차</td>
+                            <td>4,300</td>
+                            <td>5,000</td>
+                            <td>0번</td>
+                            <td>대기업</td>
+                            <td>그룹웨어 (업무 포탈)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>꾸꾸</td>
+                            <td>5년차</td>
+                            <td>2,000</td>
+                            <td>5,000</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>로라</td>
+                            <td>10년차 이상</td>
+                            <td>1,600</td>
+                            <td>5,000</td>
+                            <td>5번</td>
+                            <td>중소기업</td>
+                            <td>B2C 일반</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>오소리</td>
+                            <td>4년차</td>
+                            <td>2,650</td>
+                            <td>5,000</td>
+                            <td>1번</td>
+                            <td>중견기업</td>
+                            <td>모빌리티</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>징징이</td>
+                            <td>6년차</td>
+                            <td>1,800</td>
+                            <td>5,040</td>
+                            <td>3번</td>
+                            <td>스타트업</td>
+                            <td>플랫폼 (딜리버리, 멀티)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>곰같은10년차</td>
+                            <td>10년차 이상</td>
+                            <td>1,200</td>
+                            <td>5,100</td>
+                            <td>5번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>눕소리</td>
+                            <td>10년차 이상</td>
+                            <td>2,800</td>
+                            <td>5,100</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>의료</td>
+                            <td>서비스 기획</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>펠리체</td>
+                            <td>6년차</td>
+                            <td>3,000</td>
+                            <td>5,200</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>모빌리티</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>뉴스</td>
+                            <td>9년차</td>
+                            <td>1,800</td>
+                            <td>5,400</td>
+                            <td>5번</td>
+                            <td>대기업</td>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>UX 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>1234567890</td>
+                            <td>8년차</td>
+                            <td>2,400</td>
+                            <td>5,400</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>이커머스</td>
+                            <td>서비스 기획</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>VkA41WeE91p442</td>
+                            <td>3년차</td>
+                            <td>2,800</td>
+                            <td>5,500</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>AI (AML)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>1점</td>
+                        </tr>
+                        <tr>
+                            <td>구구</td>
+                            <td>6년차</td>
+                            <td>2,300</td>
+                            <td>5,500</td>
+                            <td>2번</td>
+                            <td>스타트업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>ㅁㄷㅅ</td>
+                            <td>10년차 이상</td>
+                            <td>1,600</td>
+                            <td>5,500</td>
+                            <td>3번</td>
+                            <td>중소기업</td>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>ㅇㅇ</td>
+                            <td>7년차</td>
+                            <td>2,400</td>
+                            <td>5,700</td>
+                            <td>1번</td>
+                            <td>중견기업</td>
+                            <td>마케팅</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>b2b</td>
+                            <td>8년차</td>
+                            <td>2,600</td>
+                            <td>5,920</td>
+                            <td>4번</td>
+                            <td>SI소기업</td>
+                            <td>CMS, LMS</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>하하호호</td>
+                            <td>8년차</td>
+                            <td>2,400</td>
+                            <td>6,000</td>
+                            <td>5번</td>
+                            <td>중소기업</td>
+                            <td>교육</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>예예</td>
+                            <td>9년차</td>
+                            <td>1,800</td>
+                            <td>6,300</td>
+                            <td>2번</td>
+                            <td>대기업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>tae</td>
+                            <td>6년차</td>
+                            <td>2,800</td>
+                            <td>6,600</td>
+                            <td>2번</td>
+                            <td>중소기업</td>
+                            <td>교육</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>ㄱㄴㄷ</td>
+                            <td>10년차 이상</td>
+                            <td>1,800</td>
+                            <td>7,000</td>
+                            <td>6번</td>
+                            <td>대기업</td>
+                            <td>패션</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>무릉도원</td>
+                            <td>10년차 이상</td>
+                            <td>1,800</td>
+                            <td>7,000</td>
+                            <td>4번</td>
+                            <td>프리랜서</td>
+                            <td>의료</td>
+                            <td>UX/UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>닉넴123</td>
+                            <td>5년차</td>
+                            <td>3,600</td>
+                            <td>7,100</td>
+                            <td>2번</td>
+                            <td>대기업</td>
+                            <td>그룹웨어 (업무 포탈)</td>
+                            <td>UI 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>먼지</td>
+                            <td>10년차 이상</td>
+                            <td>1,700</td>
+                            <td>7,200</td>
+                            <td>4번</td>
+                            <td>스타트업</td>
+                            <td>CRM (마케팅)</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                        <tr>
+                            <td>엠유</td>
+                            <td>6년차</td>
+                            <td>3,509</td>
+                            <td>8,000</td>
+                            <td>1번</td>
+                            <td>스타트업</td>
+                            <td>Livechat</td>
+                            <td>프로덕트 디자이너</td>
+                            <td>4점</td>
+                        </tr>
+                        <tr>
+                            <td>dada</td>
+                            <td>10년차 이상</td>
+                            <td>2,000</td>
+                            <td>9,400</td>
+                            <td>4번</td>
+                            <td>대기업</td>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>UI 디자이너</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>에비에이터</td>
+                            <td>10년차 이상</td>
+                            <td>3,200</td>
+                            <td>9,500</td>
+                            <td>0번</td>
+                            <td>대기업</td>
+                            <td>사업개발 및 PM</td>
+                            <td>PM</td>
+                            <td>2점</td>
+                        </tr>
+                        <tr>
+                            <td>프로입디자이너</td>
+                            <td>8년차</td>
+                            <td>3,800</td>
+                            <td>9,500</td>
+                            <td>2번</td>
+                            <td>대기업</td>
+                            <td>HR</td>
+                            <td>UX 디자이너</td>
+                            <td>3점</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="shadow" class="shadow"></div>
+            </div>
+        </div>
+
+        <div class="content__container border-rad-14px">
+            <div class="header__container">
+                <h1 class="header">연차 별 응답자 분포 및 현재 연봉</h1>
+            </div>
+            <img src="./응답자 분포 - 연차 별.png">
+            <div class="text__container">
+                <p>카카오톡 커뮤니티 방에는 1, 3년차 주니어, 10년차 이상 시니어가 가장 많았음</p>
+                <p>가장 활발히 활동할 것이라고 생각했던 4~6년차는 평균이었음</p>
+            </div>
+            <div class="table__container">
+                <table id="table2" class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">연차</th>
+                            <th title="Field #2">시작연봉 평균</th>
+                            <th title="Field #3">현재연봉 MIN</th>
+                            <th title="Field #4">현재연봉 평균</th>
+                            <th title="Field #5">현재연봉 MAX</th>
+                            <th title="Field #6">현재연봉 중앙값</th>
+                            <th title="Field #7">연간 증가율</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>10년차 이상</td>
+                            <td>1,950</td>
+                            <td>3,600</td>
+                            <td>6,218</td>
+                            <td>9,500</td>
+                            <td>5,500</td>
+                            <td>12.30%</td>
+                        </tr>
+                        <tr>
+                            <td>8년차</td>
+                            <td>2,683</td>
+                            <td>3,800</td>
+                            <td>5,903</td>
+                            <td>9,500</td>
+                            <td>5,660</td>
+                            <td>10.36%</td>
+                        </tr>
+                        <tr>
+                            <td>6년차</td>
+                            <td>2,401</td>
+                            <td>4,150</td>
+                            <td>5,443</td>
+                            <td>8,000</td>
+                            <td>5,040</td>
+                            <td>14.62%</td>
+                        </tr>
+                        <tr>
+                            <td>9년차</td>
+                            <td>1,767</td>
+                            <td>4,000</td>
+                            <td>5,233</td>
+                            <td>6,300</td>
+                            <td>5,400</td>
+                            <td>12.82%</td>
+                        </tr>
+                        <tr>
+                            <td>5년차</td>
+                            <td>2,483</td>
+                            <td>3,350</td>
+                            <td>4,710</td>
+                            <td>7,100</td>
+                            <td>4,525</td>
+                            <td>13.66%</td>
+                        </tr>
+                        <tr>
+                            <td>7년차</td>
+                            <td>2,080</td>
+                            <td>3,300</td>
+                            <td>4,382</td>
+                            <td>5,700</td>
+                            <td>4,400</td>
+                            <td>11.23%</td>
+                        </tr>
+                        <tr>
+                            <td>3년차</td>
+                            <td>2,738</td>
+                            <td>3,120</td>
+                            <td>4,125</td>
+                            <td>5,500</td>
+                            <td>4,050</td>
+                            <td>14.63%</td>
+                        </tr>
+                        <tr>
+                            <td>4년차</td>
+                            <td>2,313</td>
+                            <td>3,030</td>
+                            <td>3,911</td>
+                            <td>5,000</td>
+                            <td>3,800</td>
+                            <td>14.03%</td>
+                        </tr>
+                        <tr>
+                            <td>2년차</td>
+                            <td>2,970</td>
+                            <td>3,240</td>
+                            <td>3,843</td>
+                            <td>5,000</td>
+                            <td>3,600</td>
+                            <td>13.74%</td>
+                        </tr>
+                        <tr>
+                            <td>1년차</td>
+                            <td>2,895</td>
+                            <td>2,700</td>
+                            <td>3,469</td>
+                            <td>4,800</td>
+                            <td>3,300</td>
+                            <td>19.85%</td>
+                        </tr>
+                        <tr>
+                            <td>신입(0년차)</td>
+                            <td>3,162</td>
+                            <td>2,510</td>
+                            <td>3,242</td>
+                            <td>5,000</td>
+                            <td>2,900</td>
+                            <td>-</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <img src="./현재 연봉 - 연차 별.png">
+            <div class="text__container">
+                <p>5, 6년차에서 연차에 비해 현재 연봉의 Max가 높은 케이스가 두드러지게 발견되었음</p>
+                <p><strong>연차 당 연봉 상승율:</strong> 시작 연봉을 기준으로 매년 동일한 비율로 연봉이 상승했다는 가정</p>
+                <p>일반적으로 10%대의 상승이 기대됨 (평균 13.73%). 1년차의 19%는 시작 연봉에서 상승할 수 있는 여력이 많기 때문으로 보임</p>
+            </div>
+        </div>
+
+
+        <div class="content__container border-rad-14px">
+            <div class="header__container">
+                <h1 class="header">이직 횟수 당 연봉 상승률</h1>
+            </div>
+            <img src="./연봉 상승률 - 이직 횟수 별.png">
+            <div class="text__container">
+                <p><strong>이직 횟수 당 연봉 상승률:</strong> 시작 연봉을 기준으로 현재 연봉까지 이직 만으로 연봉이 상승했다는 가정</p>
+                <p>연차 별 상승이 아닌 이직 횟수 별 상승률을 확인해보면</p>
+                <p>이번에도 저연차에서 상승 여력이 많기 떄문에 횟수 당 상승률이 높음</p>
+                <p>이직을 하지 않고 10년 이상을 한 곳에서 다녀 높은 연봉을 획득한 케이스와 같이 한 직장에 오래 다닌 케이스를 반영하지 못함</p>
+            </div>
+            <div class="table__container">
+                <table id="table3" class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">이직횟수</th>
+                            <th title="Field #2">인원</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>0번</td>
+                            <td align="right">17</td>
+                        </tr>
+                        <tr>
+                            <td>1번</td>
+                            <td align="right">23</td>
+                        </tr>
+                        <tr>
+                            <td>2번</td>
+                            <td align="right">15</td>
+                        </tr>
+                        <tr>
+                            <td>3번</td>
+                            <td align="right">12</td>
+                        </tr>
+                        <tr>
+                            <td>4번</td>
+                            <td align="right">11</td>
+                        </tr>
+                        <tr>
+                            <td>5번</td>
+                            <td align="right">6</td>
+                        </tr>
+                        <tr>
+                            <td>6번</td>
+                            <td align="right">2</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text__container">
+                <p>이직 횟수가 2번 이하인 경우가 64%를 차지함</p>
+                <p>짧게 이직하는 경우보다 한 회사에 수 년간 근무하는 경우가 조금 더 많음</p>
+            </div>
+            <img src="./연차 별 이직 횟수.png">
+            <div class="text__container">
+                <p>일반적으로 이직은 4회까지 발생함 (응답자 중 최대 이직 횟수는 6번)</p>
+                <p>5년차 까지는 1번 이직 후 현재 회사에 적응하기 위해 더 노력하는 반면 6년차에 이직하는듯 한 모습</p>
+            </div>
+        </div>
+
+        <div class="content__container border-rad-14px">
+            <div class="header__container">
+                <h1 class="header">도메인 별 현재 연봉</h1>
+                <input type="text" id="searchDomain" onkeyup="searchDomain()" placeholder="도메인을 검색하세요"
+                    title="도메인을 검색하세요">
+            </div>
+            <div id="domain-table" class="table__container">
+                <table id="table4" class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">도메인</th>
+                            <th title="Field #2">인원</th>
+                            <th title="Field #3">시작연봉 평균</th>
+                            <th title="Field #4">현재연봉 MIN</th>
+                            <th title="Field #5">현재연봉 평균</th>
+                            <th title="Field #6">현재연봉 MAX</th>
+                            <th title="Field #7">현재연봉 중앙값</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Livechat</td>
+                            <td align="right">1</td>
+                            <td>3,509</td>
+                            <td>8,000</td>
+                            <td>8,000</td>
+                            <td>8,000</td>
+                            <td align="right">8000</td>
+                        </tr>
+                        <tr>
+                            <td>패션</td>
+                            <td align="right">1</td>
+                            <td>1,800</td>
+                            <td>7,000</td>
+                            <td>7,000</td>
+                            <td>7,000</td>
+                            <td align="right">7000</td>
+                        </tr>
+                        <tr>
+                            <td>사업개발 및 PM</td>
+                            <td align="right">2</td>
+                            <td>2,680</td>
+                            <td>4,000</td>
+                            <td>6,750</td>
+                            <td>9,500</td>
+                            <td align="right">6750</td>
+                        </tr>
+                        <tr>
+                            <td>HR</td>
+                            <td align="right">3</td>
+                            <td>3,700</td>
+                            <td>3,500</td>
+                            <td>5,933</td>
+                            <td>9,500</td>
+                            <td align="right">4800</td>
+                        </tr>
+                        <tr>
+                            <td>CMS, LMS</td>
+                            <td align="right">2</td>
+                            <td>2,375</td>
+                            <td>5,000</td>
+                            <td>5,460</td>
+                            <td>5,920</td>
+                            <td align="right">5460</td>
+                        </tr>
+                        <tr>
+                            <td>그룹웨어 (업무 포탈)</td>
+                            <td align="right">3</td>
+                            <td>3,433</td>
+                            <td>4,070</td>
+                            <td>5,390</td>
+                            <td>7,100</td>
+                            <td align="right">5000</td>
+                        </tr>
+                        <tr>
+                            <td>의료</td>
+                            <td align="right">3</td>
+                            <td>2,333</td>
+                            <td>3,760</td>
+                            <td>5,287</td>
+                            <td>7,000</td>
+                            <td align="right">5100</td>
+                        </tr>
+                        <tr>
+                            <td>모빌리티</td>
+                            <td align="right">2</td>
+                            <td>2,825</td>
+                            <td>5,000</td>
+                            <td>5,100</td>
+                            <td>5,200</td>
+                            <td align="right">5100</td>
+                        </tr>
+                        <tr>
+                            <td>교육</td>
+                            <td align="right">4</td>
+                            <td>2,450</td>
+                            <td>3,700</td>
+                            <td>5,078</td>
+                            <td>6,600</td>
+                            <td align="right">5005</td>
+                        </tr>
+                        <tr>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td align="right">8</td>
+                            <td>2,208</td>
+                            <td>3,600</td>
+                            <td>5,050</td>
+                            <td>9,400</td>
+                            <td align="right">4400</td>
+                        </tr>
+                        <tr>
+                            <td>SI</td>
+                            <td align="right">1</td>
+                            <td>4,600</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td align="right">5000</td>
+                        </tr>
+                        <tr>
+                            <td>B2C 일반</td>
+                            <td align="right">1</td>
+                            <td>1,600</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td align="right">5000</td>
+                        </tr>
+                        <tr>
+                            <td>CRM (마케팅)</td>
+                            <td align="right">3</td>
+                            <td>2,573</td>
+                            <td>3,000</td>
+                            <td>4,833</td>
+                            <td>7,200</td>
+                            <td align="right">4300</td>
+                        </tr>
+                        <tr>
+                            <td>AI (AML)</td>
+                            <td align="right">2</td>
+                            <td>2,600</td>
+                            <td>3,800</td>
+                            <td>4,650</td>
+                            <td>5,500</td>
+                            <td align="right">4650</td>
+                        </tr>
+                        <tr>
+                            <td>엔터테인먼트</td>
+                            <td align="right">1</td>
+                            <td>3,400</td>
+                            <td>4,500</td>
+                            <td>4,500</td>
+                            <td>4,500</td>
+                            <td align="right">4500</td>
+                        </tr>
+                        <tr>
+                            <td>마케팅</td>
+                            <td align="right">4</td>
+                            <td>2,375</td>
+                            <td>3,500</td>
+                            <td>4,463</td>
+                            <td>5,700</td>
+                            <td align="right">4325</td>
+                        </tr>
+                        <tr>
+                            <td>F&amp;B</td>
+                            <td align="right">1</td>
+                            <td>2,800</td>
+                            <td>4,400</td>
+                            <td>4,400</td>
+                            <td>4,400</td>
+                            <td align="right">4400</td>
+                        </tr>
+                        <tr>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td align="right">7</td>
+                            <td>2,900</td>
+                            <td>3,300</td>
+                            <td>4,400</td>
+                            <td>5,400</td>
+                            <td align="right">4800</td>
+                        </tr>
+                        <tr>
+                            <td>헬스케어</td>
+                            <td align="right">1</td>
+                            <td>3,600</td>
+                            <td>4,300</td>
+                            <td>4,300</td>
+                            <td>4,300</td>
+                            <td align="right">4300</td>
+                        </tr>
+                        <tr>
+                            <td>플랫폼 (딜리버리, 멀티)</td>
+                            <td align="right">3</td>
+                            <td>2,050</td>
+                            <td>3,560</td>
+                            <td>4,200</td>
+                            <td>5,040</td>
+                            <td align="right">4000</td>
+                        </tr>
+                        <tr>
+                            <td>이커머스</td>
+                            <td align="right">2</td>
+                            <td>2,700</td>
+                            <td>3,000</td>
+                            <td>4,200</td>
+                            <td>5,400</td>
+                            <td align="right">4200</td>
+                        </tr>
+                        <tr>
+                            <td>리걸테크</td>
+                            <td align="right">1</td>
+                            <td>1,800</td>
+                            <td>4,150</td>
+                            <td>4,150</td>
+                            <td>4,150</td>
+                            <td align="right">4150</td>
+                        </tr>
+                        <tr>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td align="right">18</td>
+                            <td>2,158</td>
+                            <td>2,700</td>
+                            <td>4,136</td>
+                            <td>7,500</td>
+                            <td align="right">3700</td>
+                        </tr>
+                        <tr>
+                            <td>금융</td>
+                            <td align="right">2</td>
+                            <td>2,850</td>
+                            <td>3,500</td>
+                            <td>3,960</td>
+                            <td>4,420</td>
+                            <td align="right">3960</td>
+                        </tr>
+                        <tr>
+                            <td>상담 서비스</td>
+                            <td align="right">1</td>
+                            <td>1,800</td>
+                            <td>3,800</td>
+                            <td>3,800</td>
+                            <td>3,800</td>
+                            <td align="right">3800</td>
+                        </tr>
+                        <tr>
+                            <td>물류 (식품)</td>
+                            <td align="right">4</td>
+                            <td>2,500</td>
+                            <td>2,900</td>
+                            <td>3,425</td>
+                            <td>4,400</td>
+                            <td align="right">3200</td>
+                        </tr>
+                        <tr>
+                            <td>보안</td>
+                            <td align="right">2</td>
+                            <td>2,550</td>
+                            <td>3,120</td>
+                            <td>3,310</td>
+                            <td>3,500</td>
+                            <td align="right">3310</td>
+                        </tr>
+                        <tr>
+                            <td>ERP</td>
+                            <td align="right">1</td>
+                            <td>3,000</td>
+                            <td>3,240</td>
+                            <td>3,240</td>
+                            <td>3,240</td>
+                            <td align="right">3240</td>
+                        </tr>
+                        <tr>
+                            <td>사회혁신</td>
+                            <td align="right">1</td>
+                            <td>2,400</td>
+                            <td>2,800</td>
+                            <td>2,800</td>
+                            <td>2,800</td>
+                            <td align="right">2800</td>
+                        </tr>
+                        <tr>
+                            <td>R&amp;D</td>
+                            <td align="right">1</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td align="right">2510</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="shadow2" class="shadow"></div>
+            </div>
+            <div class="text__container">
+                <p>직접 입력한 도메인들은 카테고라이징을 위해 임의로 전처리 되었음. 전처리로 합쳐진 도메인 이름은 () 안에 별도 표기함.</p>
+                <p>특정 도메인의 현재 연봉이 높더라도 참여하고 있는 인원이 적어 bias 된 경우도 있음</p>
+                <p>데이터 분석, 마케팅, 교육, 물류 도메인에 종사하고 있는 응답자가 다수</p>
+                <p>디자인 전반을 제외한 나머지 도메인 인원은 연차 구성이 다양함</p>
+                <p>디자인 전반은 0년차와 10년차 이상 비율이 가장 높았음</p>
+            </div>
+        </div>
+
+        <div class="content__container border-rad-14px">
+            <div class="header__container">
+                <h1 class="header">회사 분류 별 인원 및 현재 연봉</h1>
+            </div>
+            <img src="./회사 분류 별.png">
+            <div class="text__container">
+                <p>중소기업, 스타트업에 종사하고 있는 응답자가 다수</p>
+                <p>중견기업, 중소기업, 스타트업 간 현재 평균 연봉의 차이는 미미함</p>
+                <p>하지만 <strong>현재 연봉의 Max</strong> 에서는 스타트업이 대기업을 제외한 나머지 모든 분류보다 높았음</p>
+            </div>
+        </div>
+
+        <div class="content__container border-rad-14px">
+            <div class="header__container">
+                <h1 class="header">연차 별 현재 연봉 만족도</h1>
+            </div>
+            <img src="./연차 별 현재 연봉 만족도.png">
+            <div class="text__container">
+                <p>취업에 성공한 신입의 경우 자신의 현재 연봉을 긍정적으로 생각함</p>
+                <p>→ 취업 성공에 긍정적인 감정이 생겼거나, 비교할 비교군이 없어 부정적 생각이 들지 않는 듯 함</p>
+                <p>대다수의 연차에서 자신의 연봉이 역량을 제대로 반영하지 못한다고 생각함</p>
+                <p>평균 연봉이 유달리 높은 6년차에서는 다른 연차보다 더 긍정적임</p>
+            </div>
+            <div class="header__container">
+                <h1 class="header">도메인 별 만족도</h1>
+                <input type="text" id="searchSatisfaction" onkeyup="searchSatisfaction()" placeholder="도메인을 검색하세요"
+                    title="도메인을 검색하세요">
+            </div>
+            <div id="satisfaction-table" class="table__container">
+                <table id="table5" class="table table-bordered table-hover table-condensed">
+                    <thead>
+                        <tr>
+                            <th title="Field #1">도메인</th>
+                            <th title="Field #2">시작연봉 평균</th>
+                            <th title="Field #3">현재연봉 MIN</th>
+                            <th title="Field #4">현재연봉 평균</th>
+                            <th title="Field #5">현재연봉 MAX</th>
+                            <th title="Field #6">현재연봉 중앙값</th>
+                            <th title="Field #7">인원</th>
+                            <th title="Field #8">만족도 평균</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>R&amp;D</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td>2,510</td>
+                            <td align="right">1</td>
+                            <td>5.00점</td>
+                        </tr>
+                        <tr>
+                            <td>Livechat</td>
+                            <td>3,509</td>
+                            <td>8,000</td>
+                            <td>8,000</td>
+                            <td>8,000</td>
+                            <td>8,000</td>
+                            <td align="right">1</td>
+                            <td>4.00점</td>
+                        </tr>
+                        <tr>
+                            <td>플랫폼 (딜리버리, 멀티)</td>
+                            <td>2,050</td>
+                            <td>3,560</td>
+                            <td>4,200</td>
+                            <td>5,040</td>
+                            <td>4,000</td>
+                            <td align="right">3</td>
+                            <td>3.67점</td>
+                        </tr>
+                        <tr>
+                            <td>모빌리티</td>
+                            <td>2,825</td>
+                            <td>5,000</td>
+                            <td>5,100</td>
+                            <td>5,200</td>
+                            <td>5,100</td>
+                            <td align="right">2</td>
+                            <td>3.50점</td>
+                        </tr>
+                        <tr>
+                            <td>SI</td>
+                            <td>4,600</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td align="right">1</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>F&amp;B</td>
+                            <td>2,800</td>
+                            <td>4,400</td>
+                            <td>4,400</td>
+                            <td>4,400</td>
+                            <td>4,400</td>
+                            <td align="right">1</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>CRM (마케팅)</td>
+                            <td>2,573</td>
+                            <td>3,000</td>
+                            <td>4,833</td>
+                            <td>7,200</td>
+                            <td>4,300</td>
+                            <td align="right">3</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>CMS, LMS</td>
+                            <td>2,375</td>
+                            <td>5,000</td>
+                            <td>5,460</td>
+                            <td>5,920</td>
+                            <td>5,460</td>
+                            <td align="right">2</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>헬스케어</td>
+                            <td>3,600</td>
+                            <td>4,300</td>
+                            <td>4,300</td>
+                            <td>4,300</td>
+                            <td>4,300</td>
+                            <td align="right">1</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>패션</td>
+                            <td>1,800</td>
+                            <td>7,000</td>
+                            <td>7,000</td>
+                            <td>7,000</td>
+                            <td>7,000</td>
+                            <td align="right">1</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>이커머스</td>
+                            <td>2,700</td>
+                            <td>3,000</td>
+                            <td>4,200</td>
+                            <td>5,400</td>
+                            <td>4,200</td>
+                            <td align="right">2</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>상담 서비스</td>
+                            <td>1,800</td>
+                            <td>3,800</td>
+                            <td>3,800</td>
+                            <td>3,800</td>
+                            <td>3,800</td>
+                            <td align="right">1</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>사회혁신</td>
+                            <td>2,400</td>
+                            <td>2,800</td>
+                            <td>2,800</td>
+                            <td>2,800</td>
+                            <td>2,800</td>
+                            <td align="right">1</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>보안</td>
+                            <td>2,550</td>
+                            <td>3,120</td>
+                            <td>3,310</td>
+                            <td>3,500</td>
+                            <td>3,310</td>
+                            <td align="right">2</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>물류 (식품)</td>
+                            <td>2,500</td>
+                            <td>2,900</td>
+                            <td>3,425</td>
+                            <td>4,400</td>
+                            <td>3,200</td>
+                            <td align="right">4</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>금융</td>
+                            <td>2,850</td>
+                            <td>3,500</td>
+                            <td>3,960</td>
+                            <td>4,420</td>
+                            <td>3,960</td>
+                            <td align="right">2</td>
+                            <td>3.00점</td>
+                        </tr>
+                        <tr>
+                            <td>B2B 일반 (SaaS, 임베디드)</td>
+                            <td>2,208</td>
+                            <td>3,600</td>
+                            <td>5,050</td>
+                            <td>9,400</td>
+                            <td>4,400</td>
+                            <td align="right">8</td>
+                            <td>2.75점</td>
+                        </tr>
+                        <tr>
+                            <td>데이터 분석 (마케팅 분석)</td>
+                            <td>2,900</td>
+                            <td>3,300</td>
+                            <td>4,400</td>
+                            <td>5,400</td>
+                            <td>4,800</td>
+                            <td align="right">7</td>
+                            <td>2.71점</td>
+                        </tr>
+                        <tr>
+                            <td>HR</td>
+                            <td>3,700</td>
+                            <td>3,500</td>
+                            <td>5,933</td>
+                            <td>9,500</td>
+                            <td>4,800</td>
+                            <td align="right">3</td>
+                            <td>2.67점</td>
+                        </tr>
+                        <tr>
+                            <td>그룹웨어 (업무 포탈)</td>
+                            <td>3,433</td>
+                            <td>4,070</td>
+                            <td>5,390</td>
+                            <td>7,100</td>
+                            <td>5,000</td>
+                            <td align="right">3</td>
+                            <td>2.67점</td>
+                        </tr>
+                        <tr>
+                            <td>디자인 전반 (UI, GUI, 편집, 콘텐츠)</td>
+                            <td>2,158</td>
+                            <td>2,700</td>
+                            <td>4,136</td>
+                            <td>7,500</td>
+                            <td>3,700</td>
+                            <td align="right">18</td>
+                            <td>2.56점</td>
+                        </tr>
+                        <tr>
+                            <td>마케팅</td>
+                            <td>2,375</td>
+                            <td>3,500</td>
+                            <td>4,463</td>
+                            <td>5,700</td>
+                            <td>4,325</td>
+                            <td align="right">4</td>
+                            <td>2.50점</td>
+                        </tr>
+                        <tr>
+                            <td>교육</td>
+                            <td>2,450</td>
+                            <td>3,700</td>
+                            <td>5,078</td>
+                            <td>6,600</td>
+                            <td>5,005</td>
+                            <td align="right">4</td>
+                            <td>2.50점</td>
+                        </tr>
+                        <tr>
+                            <td>의료</td>
+                            <td>2,333</td>
+                            <td>3,760</td>
+                            <td>5,287</td>
+                            <td>7,000</td>
+                            <td>5,100</td>
+                            <td align="right">3</td>
+                            <td>2.33점</td>
+                        </tr>
+                        <tr>
+                            <td>ERP</td>
+                            <td>3,000</td>
+                            <td>3,240</td>
+                            <td>3,240</td>
+                            <td>3,240</td>
+                            <td>3,240</td>
+                            <td align="right">1</td>
+                            <td>2.00점</td>
+                        </tr>
+                        <tr>
+                            <td>B2C 일반</td>
+                            <td>1,600</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td>5,000</td>
+                            <td align="right">1</td>
+                            <td>2.00점</td>
+                        </tr>
+                        <tr>
+                            <td>엔터테인먼트</td>
+                            <td>3,400</td>
+                            <td>4,500</td>
+                            <td>4,500</td>
+                            <td>4,500</td>
+                            <td>4,500</td>
+                            <td align="right">1</td>
+                            <td>2.00점</td>
+                        </tr>
+                        <tr>
+                            <td>사업개발 및 PM</td>
+                            <td>2,680</td>
+                            <td>4,000</td>
+                            <td>6,750</td>
+                            <td>9,500</td>
+                            <td>6,750</td>
+                            <td align="right">2</td>
+                            <td>2.00점</td>
+                        </tr>
+                        <tr>
+                            <td>리걸테크</td>
+                            <td>1,800</td>
+                            <td>4,150</td>
+                            <td>4,150</td>
+                            <td>4,150</td>
+                            <td>4,150</td>
+                            <td align="right">1</td>
+                            <td>2.00점</td>
+                        </tr>
+                        <tr>
+                            <td>AI (AML)</td>
+                            <td>2,600</td>
+                            <td>3,800</td>
+                            <td>4,650</td>
+                            <td>5,500</td>
+                            <td>4,650</td>
+                            <td align="right">2</td>
+                            <td>1.50점</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="shadow3" class="shadow"></div>
+            </div>
+            <div class="text__container">
+                <p>일부 만족도가 높은 경우 인원이 적어 평균값으로 비교하기 적절하지 않은 경우가 있음</p>
+                <p>플랫폼 도메인에 종사하는 경우 연봉 만족도가 높은 편</p>
+                <p>AI 도메인에 종사하는 경우 연봉 만족도가 낮은 편</p>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

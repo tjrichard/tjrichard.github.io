@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "B2B 디자이너들의 모임 설문 결과 🎙"
+title: "B2B 디자이너들의 모임 연봉 설문 결과 🎙"
 subtitle: "멤버만 접근 가능합니다"
 header-img: "b2b_graphic_cover_600x300.png"
 ---
@@ -15,9 +15,9 @@ header-img: "b2b_graphic_cover_600x300.png"
     <div class="o-grid">
         <div class="m-center">
             <img src="./lock-left.png" class="survey-image">
-            <p class="survey-title">B2B 디자이너들의 모임 설문 결과</p>
+            <p class="survey-title">B2B 디자이너들의 모임 연봉 설문 결과</p>
             <input id="passwordInput" name="passwordInput" placeholder="비밀번호를 입력해주세요" type="password">
-            <input type="button" id="passwordSubmit" value="🔒 잠금 해제 " onclick="verification('https://datastudio.google.com/embed/reporting/d841c401-2c43-4fa4-80d9-9203489d6d88/page/kazdC')">
+            <input type="button" id="passwordSubmit" value="🔒 잠금 해제 " onclick="verification('./content.html')">
         </div>
     </div>
 </div>
