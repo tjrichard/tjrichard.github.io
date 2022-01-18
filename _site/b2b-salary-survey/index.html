@@ -10,19 +10,19 @@
   <!--Google Search Console Verification-->
   <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
   
-  <title>B2B 디자이너들의 모임 설문 결과 🎙</title>
+  <title>B2B 디자이너들의 모임 연봉 설문 결과 🎙</title>
   <meta name="description" content="멤버만 접근 가능합니다">
   <!-- Open Graph -->
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="B2B 디자이너들의 모임 설문 결과 🎙">
-<meta property="og:image" content="http://localhost:4000/b2b-designers-survey/b2b_graphic_cover_600x300.png">
-        <!-- <script>console.log('http://localhost:4000/b2b-designers-survey/b2b_graphic_cover_600x300.png')</script> -->
+<meta property="og:title" content="B2B 디자이너들의 모임 연봉 설문 결과 🎙">
+<meta property="og:image" content="http://localhost:4000/b2b-salary-survey/b2b_graphic_cover_600x300.png">
+        <!-- <script>console.log('http://localhost:4000/b2b-salary-survey/b2b_graphic_cover_600x300.png')</script> -->
 
 <meta property="og:description" content="멤버만 접근 가능합니다">
-<meta property="og:url" content="http://localhost:4000/b2b-designers-survey/">
+<meta property="og:url" content="http://localhost:4000/b2b-salary-survey/">
 <meta property="og:site_name" content="Seunghwan">
-  <link rel='canonical' href="http://localhost:4000/b2b-designers-survey/">
+  <link rel='canonical' href="http://localhost:4000/b2b-salary-survey/">
   <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="http://localhost:4000/feed.xml">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
@@ -304,9 +304,9 @@ window.addEventListener('DOMContentLoaded', (event) => {
     <div class="o-grid">
         <div class="m-center">
             <img src="./lock-left.png" class="survey-image" />
-            <p class="survey-title">B2B 디자이너들의 모임 설문 결과</p>
+            <p class="survey-title">B2B 디자이너들의 모임 연봉 설문 결과</p>
             <input id="passwordInput" name="passwordInput" placeholder="비밀번호를 입력해주세요" type="password" />
-            <input type="button" id="passwordSubmit" value="🔒 잠금 해제 " onclick="verification('https://datastudio.google.com/embed/reporting/d841c401-2c43-4fa4-80d9-9203489d6d88/page/kazdC')" />
+            <input type="button" id="passwordSubmit" value="🔒 잠금 해제 " onclick="verification('./content.html')" />
         </div>
     </div>
 </div>
@@ -410,9 +410,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var len = document.getElementsByTagName('p').length;
     var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
       analytics.track("Download Resume",{
-        url: "/b2b-designers-survey/",
+        url: "/b2b-salary-survey/",
         target: href,
-        title: "B2B 디자이너들의 모임 설문 결과 🎙"
+        title: "B2B 디자이너들의 모임 연봉 설문 결과 🎙"
       })
       analytics.identify({
         "contact": true,
@@ -427,9 +427,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var len = document.getElementsByTagName('p').length;
     var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
     analytics.track("Download Portfolio",{
-      url: "/b2b-designers-survey/",
+      url: "/b2b-salary-survey/",
       target: href,
-      title: "B2B 디자이너들의 모임 설문 결과 🎙"
+      title: "B2B 디자이너들의 모임 연봉 설문 결과 🎙"
     })
     analytics.identify({
         "contact": true,
@@ -442,30 +442,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function socialLink(target) {
     var href = target.href;
     analytics.track("Click Social Link",{
-      url: "/b2b-designers-survey/",
+      url: "/b2b-salary-survey/",
       target: href,
-      title: "B2B 디자이너들의 모임 설문 결과 🎙"
+      title: "B2B 디자이너들의 모임 연봉 설문 결과 🎙"
     })
   }
   function clickedOutlink(target) {
     var href = target.href;
       analytics.track("Click Outlink",{
-        url: "/b2b-designers-survey/",
+        url: "/b2b-salary-survey/",
         target: href,
-        title: "B2B 디자이너들의 모임 설문 결과 🎙"
+        title: "B2B 디자이너들의 모임 연봉 설문 결과 🎙"
       })
   }
   function scrollComplete() {
     analytics.track("Scroll Complete",{
-        url: "/b2b-designers-survey/",
-        title: "B2B 디자이너들의 모임 설문 결과 🎙"
+        url: "/b2b-salary-survey/",
+        title: "B2B 디자이너들의 모임 연봉 설문 결과 🎙"
       })
   };
   function clickedImage(imgSrc) {
     analytics.track("Click Image", {
-      url: "/b2b-designers-survey/",
+      url: "/b2b-salary-survey/",
       target: imgSrc,
-      title: "B2B 디자이너들의 모임 설문 결과 🎙"
+      title: "B2B 디자이너들의 모임 연봉 설문 결과 🎙"
     })
   }
 </script>
