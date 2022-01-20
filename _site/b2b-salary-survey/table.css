@@ -2,11 +2,7 @@ body {
     background-color: #F9F8Fa;
 }
 
-p {
-    color: #1B2528;
-    font-size: clamp(11px, 1.8vw, 16px);
-}
-
+/* container */
 .container {
     max-width: 1260px;
     margin: auto;
@@ -22,12 +18,8 @@ p {
     border: 1px solid rgba(0,0,0,0.12);
     margin-bottom: 20px;
 }
-.border-rad-14px {
-    border-radius: 14px 14px 0 0;
-}
-
-h1 {
-    display: inline-block;
+.border-rad-10px {
+    border-radius: 10px;
 }
 
 .header__container {
@@ -40,8 +32,25 @@ h1 {
     border-bottom: 1px solid rgba(0,0,0,0.12);
 }
 
-.header {
-    margin: 0 0 0 20px;
+.text__container {
+    width: calc(100% - 40px);
+    padding: 10px 20px 20px;
+}
+
+.table__container {
+    width: 100%;
+    max-height: 60vh;
+    overflow: auto;
+}
+
+/* elements */
+h1 {
+    display: inline-block;
+}
+
+p {
+    color: #1B2528;
+    font-size: clamp(11px, 1.8vw, 16px);
 }
 
 input {
@@ -60,9 +69,13 @@ input {
     h1 {
         font-size: 3.5vw;
     }
-    #searchRecords {
+    input {
         width: 35vw;
     }
+}
+
+.header {
+    margin: 0 0 0 20px;
 }
 
 img {
@@ -70,17 +83,6 @@ img {
     max-height: 580px;
     align-self: center;
     margin: 20px 0;
-}
-
-.text__container {
-    width: calc(100% - 40px);
-    padding: 0 20px 40px;
-}
-
-.table__container {
-    width: 100%;
-    max-height: 60vh;
-    overflow: auto;
 }
 
 table {
