@@ -124,7 +124,7 @@ td {
 }
 
 /* Header 정렬 기준열 표시 */
-#salary-list th:nth-child(4), #table2 th:nth-child(4), #table4 th:nth-child(5) {
+#salary-list th:nth-child(4), #table2 th:nth-child(4), #table4 th:nth-child(5), #table5 th:last-child, #table6 th:nth-child(6) {
     color: #1B2528;
     font-weight: 600;
 }
@@ -171,18 +171,17 @@ td:last-child {
 #salary-list td:nth-child(3), #salary-list td:nth-child(4), #salary-list td:nth-child(5) {
     text-align: end;
 }
-
-
-/* 나머지 연봉 기준 테이블 Header 정렬 기준열 표시 */
-#table2 th:nth-child(4), #table4 th:nth-child(5), #table5 th:last-child {
-    color: #1B2528;
-    font-weight: 600;
+#salary-list th:nth-child(3), #salary-list th:nth-child(4), #salary-list th:nth-child(5) {
+    text-align: end;
 }
 
 /* 나머지 연봉 기준 테이블들 정렬 */
-#table2 th:not(:first-child), #table2 td:not(:first-child), #table4 th:not(:first-child), #table4 td:not(:first-child), #table5 th:not(:first-child), #table5 td:not(:first-child) {
+#table2 th:not(:first-child), #table2 td:not(:first-child), #table4 th:not(:first-child), #table4 td:not(:first-child), #table5 th:not(:first-child), #table5 td:not(:first-child), #table6 td:not(:first-child) {
     text-align: end;
 }
-#table3 th:last-child {
+#table3 th:last-child, #table6 th:not(:first-child) {
     text-align: end;
+}
+#table7 td:not(:first-child), #table7 th:not(:first-child) {
+    text-align: center;
 }
