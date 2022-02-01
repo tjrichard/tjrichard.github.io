@@ -1,8 +1,8 @@
 ---
 layout: post
 type: 'Product'
-title:  '스타트업을 위한 '실험'과 '가설' 개념 설명'
-subtitle: 요약 👉 스타트업을 위한 '실험'과 '가설' 개념 설명
+title:  '스타트업을 위한 실험과 가설 개념 설명'
+subtitle: 요약 👉 스타트업을 위한 실험과 가설 개념 설명
 tags: [A/B테스팅, 데이터 분석, 프로덕트 분석]
 date: 2021-09-15 14:30:00
 article: true
