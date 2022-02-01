@@ -39,6 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   var path = document.location.pathname;
   var proj = '/project/'
   var blog = '/blog/'
+  var article = '/article/'
   if (path.indexOf(proj) != -1 || path.indexOf(blog) != -1 || path.indexOf(article) != -1){
     analytics.identify({
       'User Agent': userAgent,
@@ -50,7 +51,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'User Agent': userAgent
     });
   }
-  
+
   function downloadResume(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;
