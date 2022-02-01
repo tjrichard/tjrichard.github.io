@@ -6,7 +6,7 @@ layout: null
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="https://www.google.com/schemas/sitemap-news/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd https://www.google.com/schemas/sitemap-news/0.9 https://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
     {%- assign sorted = site.pages | sort: 'order' | reverse -%}
     {%- for page in sorted -%}
-        {%- if page.project == true -%}
+        {%- if page.project == true %}
         <url>
             <loc>{{ site.url }}{{ page.url }}</loc>
         </url>
@@ -15,7 +15,7 @@ layout: null
     
     {% assign sorted = site.pages | sort: 'order' | reverse -%}
     {%- for page in sorted -%}
-        {% if page.blog == true -%}
+        {% if page.blog == true %}
         <url>
             <loc>{{ site.url }}{{ page.url }}</loc>
         </url>
@@ -24,7 +24,7 @@ layout: null
 
     {% assign sorted = site.pages | sort: 'order' | reverse -%}
     {%- for page in sorted -%}
-        {% if page.article == true -%}
+        {% if page.article == true %}
         <url>
             <loc>{{ site.url }}{{ page.url }}</loc>
         </url>
