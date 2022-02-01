@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!--Google Search Console Verification-->
+  <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
+  
+  <title>B2B SaaS 프로덕트를 디자인하면서 느낀 것들</title>
+  <meta name="description" content="번역 및 요약 👉 Designing for B2B and Enterprise SaaS">
+  <!-- Open Graph -->
+<meta property="og:locale" content="">
+<meta property="og:type" content="article">
+<meta property="og:title" content="B2B SaaS 프로덕트를 디자인하면서 느낀 것들">
+<meta property="og:image" content="http://localhost:4000/blog/article_summary-7/img/B2B_design.png">
+        <!-- <script>console.log('http://localhost:4000/blog/article_summary-7/img/B2B_design.png')</script> -->
+
+<meta property="og:description" content="번역 및 요약 👉 Designing for B2B and Enterprise SaaS">
+<meta property="og:url" content="http://localhost:4000/article/article_summary-7/">
+<meta property="og:site_name" content="Seunghwan">
+  <link rel='canonical' href="http://localhost:4000/article/article_summary-7/">
+  <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="http://localhost:4000/feed.xml">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;700&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet"> -->
+
+  <link rel="shortcut icon" href="https://tjrichard.github.io/favicon.ico">
+
+  <!-- <script src="https://unpkg.com/phosphor-icons"></script> -->
+  
+  <style>
+    
+
+    html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */html{font-family:'Inter', 'Noto Sans KR', sans-serif;line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:0.67em 0}figcaption{position:relative;top:-29px;text-align:center;margin-bottom:16px;color:#77868B;font-size:14px}figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:'Fira Mono', monospace;font-size:14px}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:600}del{color:#77868B}code,kbd,samp{font-family:'Fira Mono', monospace;font-size:14px}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-0.25em}sup{top:-0.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:'Inter', 'Noto Sans KR', sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-cancel-button,[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}body,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,dd,ol,ul,figure,hr,fieldset,legend{margin:0;padding:0}li>ol,li>ul{margin-bottom:0}table{border-collapse:collapse;border-spacing:0}address,h1,h2,h3,h4,h5,h6,blockquote,p,pre,dl,ol,ul,figure,hr,table,fieldset{margin-bottom:32px}blockquote dd,blockquote ol,blockquote ul{margin-bottom:0}dd,ol,ul{list-style-position:outside;margin-left:16px}dd li,ol li,ul li{margin-left:16px}@-webkit-keyframes spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}@keyframes spin{100%{-webkit-transform:rotate(360deg);transform:rotate(360deg)}}.icon{position:relative;display:inline-block;width:25px;height:25px;overflow:hidden;fill:currentColor}.icon__cnt{width:100%;height:100%;background:inherit;fill:inherit;pointer-events:none;transform:translateX(0);-ms-transform:translate(0.5px, -0.3px)}.icon--m{width:50px;height:50px}.icon--l{width:100px;height:100px}.icon--xl{width:150px;height:150px}.icon--xxl{width:200px;height:200px}.icon__spinner{position:absolute;top:0;left:0;width:100%;height:100%}.icon--ei-spinner .icon__spinner,.icon--ei-spinner-2 .icon__spinner{-webkit-animation:spin 1s steps(12) infinite;animation:spin 1s steps(12) infinite}.icon--ei-spinner-3 .icon__spinner{-webkit-animation:spin 1.5s linear infinite;animation:spin 1.5s linear infinite}.icon--ei-sc-facebook{fill:#3b5998}.icon--ei-sc-github{fill:#333}.icon--ei-sc-google-plus{fill:#dd4b39}.icon--ei-sc-instagram{fill:#3f729b}.icon--ei-sc-linkedin{fill:#0976b4}.icon--ei-sc-odnoklassniki{fill:#ed812b}.icon--ei-sc-skype{fill:#00aff0}.icon--ei-sc-soundcloud{fill:#f80}.icon--ei-sc-tumblr{fill:#35465c}.icon--ei-sc-twitter{fill:#55acee}.icon--ei-sc-vimeo{fill:#1ab7ea}.icon--ei-sc-vk{fill:#45668e}.icon--ei-sc-youtube{fill:#e52d27}.icon--ei-sc-pinterest{fill:#bd081c}.icon--ei-sc-telegram{fill:#0088cc}.highlight{margin:0;background:#fff}.highlighter-rouge .highlight{background:#F9F8Fa;margin-bottom:32px}.highlight .c{color:#998;font-style:italic}.highlight .err{color:#a61717;background-color:#e3d2d2}.highlight .k{font-weight:bold}.highlight .o{font-weight:bold}.highlight .cm{color:#998;font-style:italic}.highlight .cp{color:#999;font-weight:bold}.highlight .c1{color:#998;font-style:italic}.highlight .cs{color:#999;font-weight:bold;font-style:italic}.highlight .gd{color:#000;background-color:#fdd}.highlight .gd .x{color:#000;background-color:#faa}.highlight .ge{font-style:italic}.highlight .gr{color:#a00}.highlight .gh{color:#999}.highlight .gi{color:#000;background-color:#dfd}.highlight .gi .x{color:#000;background-color:#afa}.highlight .go{color:#888}.highlight .gp{color:#555}.highlight .gs{font-weight:bold}.highlight .gu{color:#aaa}.highlight .gt{color:#a00}.highlight .kc{font-weight:bold}.highlight .kd{font-weight:bold}.highlight .kp{font-weight:bold}.highlight .kr{font-weight:bold}.highlight .kt{color:#458;font-weight:bold}.highlight .m{color:#099}.highlight .s{color:#d14}.highlight .na{color:teal}.highlight .nb{color:#0086B3}.highlight .nc{color:#458;font-weight:bold}.highlight .no{color:teal}.highlight .ni{color:purple}.highlight .ne{color:#900;font-weight:bold}.highlight .nf{color:#900;font-weight:bold}.highlight .nn{color:#555}.highlight .nt{color:navy}.highlight .nv{color:teal}.highlight .ow{font-weight:bold}.highlight .w{color:#bbb}.highlight .mf{color:#099}.highlight .mh{color:#099}.highlight .mi{color:#099}.highlight .mo{color:#099}.highlight .sb{color:#d14}.highlight .sc{color:#d14}.highlight .sd{color:#d14}.highlight .s2{color:#d14}.highlight .se{color:#d14}.highlight .sh{color:#d14}.highlight .si{color:#d14}.highlight .sx{color:#d14}.highlight .sr{color:#009926}.highlight .s1{color:#d14}.highlight .ss{color:#990073}.highlight .bp{color:#999}.highlight .vc{color:teal}.highlight .vg{color:teal}.highlight .vi{color:teal}.highlight .il{color:#099}body{color:#1B2528;font-size:16px;font-family:"Ubuntu","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:27px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}*::selection{color:#fff;background:#5c6bf3}.text-gray{color:#77868B}.text-gray a{color:#77868B}a{text-decoration:none;color:#1B2528;transition:.2s}a:hover,a:active,a:focus{text-decoration:none}img{display:block;max-width:100%;font-style:italic;margin:auto}hr{height:1px;margin:32px 0;border:0;background-color:#F1F3F6}h1,h2,h3,h4,h5,h6{font-weight:inherit;line-height:initial;font-weight:600}h1{font-size:36px}h2{font-size:28px}h3{font-size:24px}h4{font-size:20px}h5{font-size:18px}h6{font-size:16px}blockquote{padding:10px 16px;border-left:2px solid #4139EF;background-color:#FAFAFA;position:relative}blockquote p{margin-bottom:0px}pre,code{font-family:"Fira Mono",monospace;background-color:#F9F8Fa;color:#4139EF;border-radius:3px}pre{overflow:auto;padding:16px;margin-bottom:32px;font-size:14px;line-height:22px;white-space:pre-wrap;word-wrap:break-word;word-break:break-all}li code,p code{padding:4px 8px}input[type='text'],input[type='tel'],input[type='number'],input[type='email'],select,textarea{width:100%;padding:16px;border:1px solid #F1F3F6;border-radius:0;outline:none;background-color:#fff;font-size:12px;appearance:none;transition:.2s}input[type='text']:hover,input[type='text']:active,input[type='text']:focus,input[type='tel']:hover,input[type='tel']:active,input[type='tel']:focus,input[type='number']:hover,input[type='number']:active,input[type='number']:focus,input[type='email']:hover,input[type='email']:active,input[type='email']:focus,select:hover,select:active,select:focus,textarea:hover,textarea:active,textarea:focus{border:1px solid #4139EF}form{display:flex;margin-bottom:16px;width:100%}#long_url{margin-right:16px;height:29px;padding:8px}#submit{font-size:13px;background-color:#5c6bf3;color:#fff;border-radius:3px;border:none;min-width:90px;margin-left:2px}#___gcse_0{width:100%}#___gcse_0 .gsc-control-cse{border:none}#___gcse_0 .gsc-input{height:29px}#___gcse_0 .gsc-input .gsc-input-box{border-color:#F1F3F6}#___gcse_0 .gsc-input .gsc-input-box:hover,#___gcse_0 .gsc-input .gsc-input-box:focus{border-color:#4139EF !important}#___gcse_0 .gsc-input table{margin-bottom:0 !important}#___gcse_0 .gsc-input .gsib_a{line-height:14px}#___gcse_0 td{line-height:14px}#___gcse_0 td button{width:90px}.gsc-control-cse{margin-bottom:16px;padding:0px !important}.gsc-search-box-tools{margin:0px !important}.gsc-results-wrapper-nooverlay .gs-image-box{margin:2px 10px 2px 0 !important;width:100px}.gsc-results-wrapper-nooverlay .gs-image-box img{display:inline-block;max-width:100px;max-height:100px}.surit-io{width:100%;height:95vh;border:none}.modal{transition:all ease .2s}.modal-open{overflow:hidden}.modal__background{position:absolute;z-index:998;width:100%;height:100%;top:0;left:0;background-color:#000;opacity:.5}.modal__closeButton{position:absolute;z-index:1001;width:40px;height:40px;background-color:rgba(255,255,255,0.8);top:10px;left:10px;border-radius:50%;cursor:pointer;background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18 6 6 18M6 6l12 12' stroke='%235c6bf3' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");background-position:center;background-repeat:no-repeat}.modal__container{position:absolute;z-index:999;width:100vw;height:100vh;background-color:#fff;top:50%;left:50%;transform:translate(-50%, -50%)}.modal__content{position:relative;left:0;top:0;width:100%;height:100%;border:none}.modal__content__img{z-index:1000;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);max-height:700px;cursor:zoom-out;background-color:#fff}.m-center{display:flex;flex-direction:column;gap:14px;padding:20px;position:absolute;top:50%;left:50%;transform:translate(-50%, -65%);width:300px}#passwordInput{height:44px;border:1px solid black;border-radius:4px;padding:2px 10px;font-size:14px}#passwordSubmit{font-size:16px;font-weight:600;background-color:#5c6bf3;color:#fff;border-radius:3px;border:none;min-width:90px;min-height:50px}#passwordSubmit:active{opacity:.8}.survey-title{font-weight:600;font-size:24px;align-self:center;width:max-content;margin-bottom:10px}.survey-image{height:280px;object-fit:cover}#snackbar{visibility:hidden;position:fixed;min-width:200px;min-height:40px;font-size:14px;font-weight:300;line-height:40px;padding:0 12px;background-color:rgba(0,0,0,0.65);color:#fff;text-align:center;border-radius:6px;z-index:1;top:10%;left:50%;transform:translate(-50%, 0)}#snackbar.show{visibility:visible;-webkit-animation:fadein 0.3s, fadeout 0.3s 1.5s !important;animation:fadein 0.3s, fadeout 0.3s 1.5s !important}@-webkit-keyframes fadein{from{top:0;opacity:0}to{top:10%;opacity:1}}@keyframes fadein{from{top:0;opacity:0}to{top:10%;opacity:1}}@-webkit-keyframes fadeout{from{top:10%;opacity:1}to{top:0;opacity:0}}@keyframes fadeout{from{top:10%;opacity:1}to{top:0;opacity:0}}.o-grid{margin:0 auto;display:flex;flex-wrap:wrap;max-width:800px}.o-grid:after{content:'';display:table;clear:both}.o-grid .o-grid{margin-right:-16px;margin-left:-16px;padding:0}.o-grid--full{max-width:100vw}.o-grid__col{float:left;padding-right:16px;padding-left:16px;margin:auto}.o-grid__col--1-4-s{width:25%}.o-grid__col--1-3-s{width:33.3333333333%}.o-grid__col--2-4-s{width:50%}.o-grid__col--3-4-s{width:75%}.o-grid__col--4-4-s{width:100%}@media (min-width: 40em){.o-grid__col--1-4-m{width:25%}.o-grid__col--1-3-m{width:33.3333333333%}.o-grid__col--2-4-m{width:50%}.o-grid__col--3-4-m{width:75%}}@media (min-width: 64em){.o-grid__col--1-4-l{width:25%}.o-grid__col--1-3-l{width:33.3333333333%}.o-grid__col--2-4-l{width:50%}.o-grid__col--3-4-l{width:75%}}.o-grid__col--full{width:100%}.o-grid__col--center{margin:0 auto}.o-grid__col--end{margin-left:auto;margin-top:20px}.o-grid__head{display:inline-block;padding:0 16px}.o-grid__head--full{width:100%}.o-wrapper{padding:0 0 32px 0}.c-off-canvas-container{display:flex;min-height:100vh;flex-direction:column}.c-off-canvas-container .o-wrapper{flex:1 0 auto}.o-plain-list{position:relative;top:16px;padding:0;list-style:none}.c-header{position:-webkit-sticky;position:sticky;background-color:#fff;border-bottom:1px solid #F1F3F6;z-index:100;top:0;height:61px}.c-header__inner{padding:16px 0 0;width:100%}.c-header__icon{vertical-align:middle}.progress-container{width:100%;height:2px;background-color:#FAFAFA;position:relative;top:3px}.progress-container .progress-bar{position:relative;display:block;width:0%;max-width:100%;height:2px;background-color:#4139EF}.c-logo__link{font-size:19px;font-weight:900;transition:.2s;position:relative;top:2px}.c-logo__link:hover,.c-logo__link:active,.c-logo__link:focus{color:#5c6bf3;text-decoration:none}.c-nav{margin:0px}.c-nav__link{display:block;transition:.2s;width:max-content;padding:2px 8px;border-radius:4px}.c-nav__link--current{color:#5c6bf3}.home-template .c-nav__link--current:not(:hover){color:#1B2528}.c-nav__link:hover,.c-nav__link:active,.c-nav__link:focus{color:#5c6bf3;text-decoration:none}.c-nav-list{display:flex;flex-direction:row;padding-bottom:10px}.c-nav-list li{position:relative;display:inline-block;margin:0 10px 0 0;list-style:none;font-size:16px}.c-nav-list li:hover{cursor:pointer}.c-nav-list li:hover a{text-decoration:none}.c-nav-list li:hover a:hover{text-decoration:none;background-color:#F9F8Fa}.c-nav-list:last-child{margin-right:0}.c-nav-list__logo{margin:0 10px}.c-nav-list__logo img{height:32px;transition:all ease .2s}.c-nav-list__logo img:hover{opacity:0.8}.normal{color:#1B2528;font-weight:500;border-style:none}.active{color:#5c6bf3;font-weight:700}.active::before{content:"";position:absolute;top:42px;left:0;width:100%;height:2px;background-color:#5c6bf3}.c-off-canvas-toggle{float:right;position:relative;z-index:10;height:19px;width:25px;cursor:pointer}.c-off-canvas-toggle__icon{position:absolute;left:0;height:1px;width:25px;background:#1B2528;cursor:pointer}.c-off-canvas-toggle__icon:before,.c-off-canvas-toggle__icon:after{content:'';display:block;height:100%;background-color:inherit;transition:.2s}.c-off-canvas-toggle__icon:before{transform:translateY(16px)}.c-off-canvas-toggle__icon:after{transform:translateY(7px)}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon{height:1px;background-color:transparent;margin-bottom:8px}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:before,.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:after{position:relative;visibility:visible;background:#1B2528}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:before{top:11px;transform:rotate(-45deg)}.c-off-canvas-toggle--close .c-off-canvas-toggle__icon:after{top:9px;transform:rotate(45deg)}.c-off-canvas-toggle--close{top:0;float:none;display:block;margin-left:auto}html,body{height:100vh}.c-off-canvas-content{position:fixed;top:0;right:0;width:300px;height:100%;padding:24px 32px;background-color:#fff;transform:translate3d(300px, 0, 0)}.c-off-canvas-container{transform:translate3d(0, 0, 0);transition:transform .2s cubic-bezier(0.16, 0.68, 0.43, 0.99)}.c-off-canvas-container.is-active{transform:translate3d(-300px, 0, 0)}.c-off-canvas-container.is-active:after{position:fixed;top:0;right:0;bottom:0;left:0;content:'';background-color:rgba(0,0,0,0.2)}.c-tags a{display:inline-block;padding:4px 16px;margin:0 8px 4px 0;font-size:11px;font-family:"Ubuntu","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:22px;background-color:#FAFAFA;transition:.2s}.c-tags a:hover{transform:translateX(4px) translateY(-4px);box-shadow:-4px 4px 0 0 #4139EF}.c-tags a:hover,.c-tags a:active,.c-tags a:focus{text-decoration:none;background-color:#FAFAFA}@media (max-width: 39.99em){.c-tags{margin-bottom:19px}}.c-btn{display:inline-block;padding:8px 32px;cursor:pointer;transition:.2s;text-align:center;vertical-align:middle;white-space:nowrap;line-height:inherit;border:0;border-radius:0;color:#fff;background-color:#207cdf;font-size:14px}.c-btn:hover,.c-btn:active,.c-btn:focus{text-decoration:none;background-color:#238cf6}.c-btn--full{width:100%}.c-btn--small{padding:4px 16px}.c-table{margin:0 auto 32px auto;width:100%;list-style-type:none;overflow:auto}.c-table__thead{font-size:19px;margin-bottom:8px;font-weight:600;border-bottom:1px solid #F1F3F6}.c-table__tbody{font-size:14px;font-weight:400;color:#1B2528;min-width:500px;margin-left:0px;padding:12px;background-color:#F9F8Fa;border-radius:12px;border:1px solid transparent;transition:all ease .2s}.c-table__tbody:hover{background-color:transparent;border:1px solid #D7DEE1}.c-table li{display:flex;align-items:flex-start;margin-bottom:12px}.company{font-size:19px;color:#1B2528;font-weight:600;width:30vw;min-width:140px;max-width:240px;margin-bottom:0;padding:10px}.brief{width:70vw !important;min-width:340px;max-width:516px;margin-bottom:0;padding:10px}.brief p{margin-bottom:0}.date{font-size:12px;font-weight:600;line-height:19px;color:#77868B;margin-bottom:0}.hustle{list-style:none;margin:0}.hustle__img{display:flex;min-width:48px;height:48px;margin-right:20px}.hustle__img img{max-width:48px;max-height:48px}.hustle__name{font-size:19px;color:#1B2528;font-weight:600}.hustle .hustle__list{display:flex;padding:20px;margin:0 0 20px 0;align-items:center}.c-post-card{display:block;padding:32px 0;word-break:break-word;border-bottom:1px solid #F1F3F6}.c-post-card--first{padding-top:0}.c-post-card--last{padding-bottom:0;border-bottom:0}.c-post-card__title{margin-bottom:10px;font-size:16px;font-weight:600;transition:.2s}@media (min-width: 40em){.c-post-card__title{font-size:24px}}.c-post-card__excerpt{margin-bottom:10px}.c-post-card__date{display:block;color:#77868B;direction:ltr;font-size:11px;font-weight:600;line-height:19px;text-transform:uppercase}.c-post-card:hover{color:#1B2528;text-decoration:none}.c-post-card:hover .c-post-card__title{color:#5c6bf3}.c-list{margin:0 auto;transition:.2s}.c-list__item{padding:16px 0;list-style:none;width:100%;border:1px solid transparent;border-radius:8px;margin:0 0 20px 0;transition:.2s}.c-list__item:last-child{margin-bottom:48px}.c-list__item a{background-image:none !important}.c-list__item a :hover{background-image:none !important}.c-list__type{color:#4139EF;font-size:16px;font-weight:600;padding-bottom:10px;margin:0}.c-list__tag{font-size:11px;font-weight:600;color:#1B2528;display:block;text-align:center;text-transform:uppercase;letter-spacing:0.03em;padding:20px 10px;margin:10px 0;background-color:#F9F8Fa;border-radius:10px}@media (min-width: 40em){.c-list__tag{margin:10px 0}}.c-list__info{display:inline-block;padding:0 20px;transition:.2s}.c-list__info .c-list__title{font-size:19px;font-weight:600;transition:.2s;display:block;line-height:32px;letter-spacing:-0.009em;position:relative;margin-bottom:6px}@media (min-width: 40em){.c-list__info .c-list__title{font-size:24px}}@media (min-width: 40em){.c-list__info{display:block;width:100%}}.c-list__info .c-list__sub{font-size:16px;color:#77868B;line-height:27px;margin-bottom:24px}.c-list__info .c-list__body{font-size:14px;color:#77868B;line-height:22px;margin-bottom:10px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}.c-list__info .c-list__date{display:block;color:#77868B;direction:ltr;font-size:12px;font-weight:600;line-height:19px;text-transform:uppercase;padding-bottom:10px}.c-list .c-list-draft-message{text-align:center}.c-list__item:hover,.c-list__item:focus{cursor:pointer;border:1px solid #D7DEE1}.c-list__item:hover a,.c-list__item:focus a{text-decoration:none}.c-list__item:hover .c-list__title,.c-list__item:focus .c-list__title{color:#4139EF}.draft{opacity:.6 !important;pointer-events:none !important}.c-list__img{width:100%;height:16em;object-fit:cover;object-position:center;padding-bottom:10px;margin-bottom:10px}.c-pagination{text-transform:uppercase;transition:.2s}.c-pagination:hover,.c-pagination:active,.c-pagination:focus{color:#5c6bf3;text-decoration:none}.c-pagination__text{position:relative;font-size:12px;letter-spacing:2px}.c-pagination__text--prev{left:-16px}.c-pagination__text--next{right:-16px}.c-pagination__icon{vertical-align:text-top}.c-pagination__icon--prev{left:-8px}.c-pagination__icon--next{right:-8px}.pager{margin:20px 0 0 0;display:flex}.pager li{width:49%;list-style:none}.pager li>a,.pager li>span{display:inline-block;padding:5px 14px;background-color:#fff;border:1px solid #F1F3F6;transition:.2s}.pager li>a{font-size:14px;font-weight:600;font-family:"Ubuntu","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:22px;color:#4139EF;width:100%;height:100%}.pager li>a:hover,.pager li>a:focus{text-decoration:none;transform:translateX(4px) translateY(-4px);box-shadow:-4px 4px 0 0 #4139EF}.pager li>a>span{font-size:12px;font-weight:400;font-family:"Ubuntu","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:19px;color:#77868B}.pager .next{float:right;margin-left:auto}.pager .previous{float:left}.pager .disabled>a,.pager .disabled>a:hover,.pager .disabled>a:focus,.pager .disabled>span{color:#77868B;background-color:#FAFAFA;cursor:not-allowed}.c-page{margin:0 auto;max-width:740px}.c-page__header{display:flex;flex-direction:row}.c-page__header__image{width:30vw;min-width:120px;max-width:180px;align-self:center}.c-page__title{font-size:38px;margin-bottom:8px;font-weight:700;word-break:keep-all}@media (min-width: 40em){.c-page__title{font-size:38px}}.c-page__title a{transition:.2s;text-decoration:underline rgba(96,90,242,0.2)}.c-page__title a:hover{color:#5c6bf3;text-decoration:underline #5c6bf3}.c-page__subtitle{font-size:19px;margin-bottom:32px;color:#77868B;font-weight:400}@media (min-width: 40em){.c-page__subtitle{font-size:19px}}.c-page__type{color:#4139EF;font-size:24px;font-weight:600;padding:10px 0;margin-bottom:8px}.c-page__role{font-size:19px;font-weight:600}.c-page__keyword{font-size:16px;color:#77868B}.c-page__keyword a{color:#77868B}.c-page__favicon{display:inline;height:20px;margin-right:8px;position:relative;top:3px}.c-page__pebble{display:inline-block !important;padding:4px 16px;margin:0 8px 16px 0 !important;font-size:14px;font-family:"Ubuntu","Noto Sans KR" Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";line-height:27px;background-color:#FAFAFA;transition:.2s}.c-page__pebble:hover{transform:translateX(4px) translateY(-4px);box-shadow:-4px 4px 0 0 #4139EF}.c-page__pebble:hover,.c-page__pebble:active,.c-page__pebble:focus{text-decoration:none;background-color:#FAFAFA}@media (max-width: 39.99em){.c-page__pebble{margin-bottom:19px}}.c-page__pebble:last-child{margin-right:0}.c-post{margin:0 auto;max-width:840px}.c-post__header-img{margin:0 0 20px 0;width:100%;max-height:24em;object-fit:cover;object-position:center;background:linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.23) 100%),#5c6bf3;cursor:zoom-in}.c-post__type{color:#4139EF;font-size:16px;font-weight:600;padding:10px 0;margin-bottom:20px}.c-post__title{font-size:32px;margin-bottom:8px;font-weight:600}@media (min-width: 40em){.c-post__title{font-size:32px}}.c-post__subtitle{font-size:14px;margin-bottom:16px;color:#77868B;font-weight:400}@media (min-width: 40em){.c-post__subtitle{font-size:16px}}.c-post__date{position:relative;display:block;font-size:14px;font-weight:600;line-height:22px;color:#77868B}.c-post__date:after{position:absolute;content:'';top:0;left:50%;height:1px;width:64px;background:#FAFAFA;transform:translateX(-50%)}.c-post__image{margin:0 auto 16px}.c-post img{cursor:zoom-in}sup a{color:#5c6bf3 !important}.footnotes{background-color:#fafafa;padding:20px 20px;line-height:1.2;margin-bottom:36px}.footnotes ol{margin:0px;color:#77868B}.footnotes p{display:contents;font-size:14px;margin-bottom:0px;line-height:1.5}.footnotes li{font-size:14px;padding-right:8px;margin-bottom:22px;margin-left:16px}.footnotes li:last-child{margin-bottom:0px}.footnotes .reversefootnote{color:#77868B;text-decoration:none !important;position:relative;top:2px}.footnotes .reversefootnote:hover{color:#4139EF}.footnotes .reversefootnote:hover::before{background-color:#4139EF}.c-content{margin-bottom:32px}.c-content a:not(.c-btn){transition:.2s;text-decoration:none;padding-bottom:2px;background-position:0 1.2em;background-repeat:repeat-x;background-size:1.5px 1.5px;color:#5c6bf3;opacity:1}.c-content a:not(.c-btn):hover,.c-content a:not(.c-btn):active,.c-content a:not(.c-btn):focus{text-decoration:none;opacity:.7;background-image:linear-gradient(to bottom, #5c6bf3 75%, transparent 75%)}.c-text-center{text-align:center}.c-text-ltr{direction:ltr}.twitter-tweet,.fluid-width-video-wrapper{margin-bottom:16px !important}.c-social-nav{margin:0}.c-social-nav :first-child{margin-left:0 !important}.c-social-nav__item{display:inline-block}.c-social-nav__icon{fill:#1B2528;vertical-align:middle;transition:.2s}.c-social-nav__icon:hover,.c-social-nav__icon:active,.c-social-nav__icon:focus{fill:#5c6bf3}.c-social-nav__title{padding-left:5px;font-weight:600;color:#77868B}.c-social-nav__body{display:flex;padding:0 16px;width:100%}.c-social-nav__copyright{margin:0 0 0 auto;font-size:14px;color:#77868B}.c-footer{padding:48px 0;background-color:#FAFAFA}.m-list{display:flex;flex-wrap:nowrap;max-width:1440px;margin:0 auto;padding:40px}.m-list ul{margin:0 auto;transition:.2s;display:grid;grid-auto-columns:1fr;grid-column-gap:40px;grid-row-gap:40px;grid-template-columns:1fr 1fr 1fr 1fr;grid-template-rows:auto auto}.m-list ul li{list-style:none;display:flex;flex-direction:column;margin:0;min-width:200px}.m-profile-container{width:100%;height:280px;margin-bottom:20px;background-size:cover;background-position:center}.m-name-container{display:flex;align-items:baseline;margin-bottom:4px}.m-name{margin-bottom:0;display:inline-block;color:#4139EF}.m-manager{margin-left:4px;height:16px;width:16px;background-image:url("data:image/svg+xml,%3Csvg width='24' height='24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='none' d='M0 0h24v24H0z'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12 5a1 1 0 0 1 .78.375l3.303 4.128 3.21-3.21A1 1 0 0 1 21 7v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1.707-.707l3.21 3.21 3.302-4.128A1 1 0 0 1 12 5Zm0 2.6-3.22 4.025a1 1 0 0 1-1.487.082L5 9.414V17h14V9.414l-2.293 2.293a1 1 0 0 1-1.488-.082L12 7.6Z' fill='%234139EF'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:center;background-size:cover}.m-role{display:inline-block;font-size:12px;font-weight:600;line-height:20px;padding:0px 4px;border:2px solid #0A0A0A;border-radius:3px;background-color:rgba(255,255,255,0.88);backdrop-filter:blur(4px);position:relative;transform:translate(8px, 245px)}.m-work{font-size:16px;margin-bottom:20px}.m-work::after{content:'';display:block;width:60%;height:1px;background-color:#D7DEE1;transform:translate(0, 10px)}.m-intro{font-size:14px;color:#494f50;word-break:keep-all;margin-bottom:20px;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}.m-link-container{display:flex;flex-wrap:wrap;flex-direction:row;gap:6px 10px}.m-link{font-size:14px;padding:4px 8px;max-width:130px;border-radius:6px;background-color:#eaeff1;color:#494f50;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.m-link:hover{background-color:#4139EF;color:#fff}@media screen and (max-width: 991px){.m-list ul{grid-template-columns:1fr 1fr}.m-profile-container{max-height:3   00px;min-width:120px;min-height:80px}.m-role{font-size:11px;line-height:18px;transform:translate(8px, 245px)}}@media screen and (max-width: 630px){.m-list ul{grid-template-columns:1fr}.m-profile-container{max-height:300px;min-width:120px;min-height:80px}.m-role{font-size:11px;line-height:18px;transform:translate(8px, 245px)}}.u-hidden{display:none}.u-hidden-visually{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.u-font-medium{font-size:14px;line-height:22px}.u-font-small{font-size:12px;line-height:19px}.u-font-tiny{font-size:11px;line-height:17px}.u-text-left{text-align:left}.u-text-right{text-align:right}.u-text-center{text-align:center}.u-text-justify{text-align:justify}.u-inline{display:inline}.u-block{display:block}.u-inline-block{display:inline-block}.u-left{float:left}.u-right{float:right}.u-clearfix:after{content:'';display:table;clear:both}
+
+  </style>
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR9V822"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div>
+    <header id='c-header' class='c-header'>
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-header__inner' style='display: flex; justify-content: space-between;'>
+        <ul class='c-nav c-nav-list'>
+           
+  <li role='presentation'>
+    <a href='/'  class="c-nav__link normal">Home</a>
+    </li>
+  <li role='presentation'>
+    <a href='/project'  class="c-nav__link normal">Project</a>
+  </li>
+  <li role='presentation'>
+    <a href='/blog'  class="c-nav__link normal">Blog</a>
+  </li>
+  <li role='presentation'>
+    <a href='/article'  class="c-nav__link active" class="c-nav__link normal">Article Summary</a>
+  </li>
+  <li role='presentation'>
+    <a href='/about'  class="c-nav__link normal">About</a>
+  </li>
+        </ul>
+        <a href='http://localhost:4000' class='c-nav-list__logo'>
+          <img src='/images/dwmm-round-128.png'>
+        </a>
+      </div>
+    </div>
+  </div>  
+  
+  <div class='progress-container'>
+    <div class='progress-bar' id='progress-bar'></div>
+  </div>
+  
+</header>
+
+    
+<script>
+function createModal(imgsrc) {
+  var styleTop0Pixel = "top: " + scrollTop + "px";
+  var styleTop50Percent = "top: calc(50% + " + scrollTop + "px)";
+  var styleTop10Pixel = scrollTop + 80;
+  styleTop10Pixel = "top: " + styleTop10Pixel + "px";
+
+  var modalBackground = document.createElement("div");
+  modalBackground.setAttribute("id", "modalBackground");
+  modalBackground.setAttribute("class", "modal__background");
+  modalBackground.setAttribute("onclick", "closeModal()");
+  modalBackground.setAttribute("style", styleTop0Pixel)
+  document.body.appendChild(modalBackground);
+
+  var modalCloseButton = document.createElement("div");
+  modalCloseButton.setAttribute("id", "modalCloseButton");
+  modalCloseButton.setAttribute("class", "modal__closeButton");
+  modalCloseButton.setAttribute("onclick", "closeModal()");
+  modalCloseButton.setAttribute("style", styleTop10Pixel)
+  document.body.appendChild(modalCloseButton);
+  
+  var modal = document.createElement("img");
+  modal.setAttribute("id", "modalImage");
+  modal.setAttribute("src", imgsrc);
+  modal.setAttribute("class", "modal__content__img");
+  modal.setAttribute("onclick", "closeModal()");
+  modal.setAttribute("style", styleTop50Percent)
+  document.body.appendChild(modal);
+
+  // body overflow: hidden
+  document.body.classList.add('modal-open')
+}
+
+function closeModal() {
+    var mbg = document.getElementById("modalBackground");
+    var m = document.getElementById("modalImage");
+    var mcb = document.getElementById("modalCloseButton");
+    mbg.remove();
+    m.remove();
+    mcb.remove();
+
+    // body overflow: auto
+    document.body.classList.remove('modal-open')
+}
+
+document.querySelectorAll('img').forEach(item => {
+  item.addEventListener('click', event => {
+    var imgSrc = item.currentSrc;
+    createModal(imgSrc);
+    clickedImage(imgSrc);
+  })
+})
+</script>
+
+
+
+<div class='o-wrapper'>
+  
+  <div class='o-grid'>
+    <div class='o-grid__col'>
+      <article class='c-post' itemscope itemtype='https://schema.org/BlogPosting'>
+        <p class="c-post__type">PRODUCT</p>
+
+        <h1 class='c-post__title u-text-left'>B2B SaaS 프로덕트를 디자인하면서 느낀 것들</h1>    
+        
+        <p class='c-post__subtitle u-text-left'>번역 및 요약 👉 Designing for B2B and Enterprise SaaS</p>
+        
+        <time class='c-post__date' datetime='2021-08-14T08:37:45+09:00' itemprop='datePublished'>13 Aug 2021</time>
+        
+        <hr>
+
+        <div class='c-content' itemprop='articleBody'>
+          
+
+          <p class="text-gray">
+ 🔗 이 글은 Varun Mohapatra가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://uxdesign.cc/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://uxdesign.cc" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />UX Collective</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://abit.ly/article_45" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>저자는 B2B 프로덕트와 기업용 애플리케이션을 동일하게 간주하여 말하고 있습니다. 저자는 B2B를 Enterprise로 표현하고 있지만 번역 후 해석의 용이성을 위해 이 글에서는 모두 B2B로 표현합니다.</p>
+
+<p>2018년 1월 글이지만 제가 B2B, SaaS를 디자인하면서 공감이 되는 글이라 번역에 옮깁니다.</p>
+
+<h2 id="️-요약">⚡️ 요약</h2>
+<p><strong>1. 기능적 복잡도 😓</strong></p>
+<blockquote>
+  <p>B2B 프로덕트는 복잡합니다. 사용자도 B2B 프로덕트를 익혀 잘 사용하기까지 리소스를 투자해야 합니다. 이 말은 B2B 프로덕트의 기능 릴리즈는 아주 비싸다는 말입니다. 하나의 기능을 릴리즈하기 전에 충분히 디자인씽킹 하고, 모든 가능성을 점검한 후 인터페이스를 디자인해야 합니다.</p>
+</blockquote>
+
+<p><strong>2. 근로자(실사용자) 마인드셋을 위해 디자인하기 💼</strong></p>
+<blockquote>
+  <p>B2C 프로덕트와 가장 다른 점이라고 할 수 있습니다. B2B 프로덕트는 기업 사용자의 업무를 효율적으로 처리하기 위해 존재하므로 사용자의 사용 목적부터 다릅니다. 사용자의 도메인에 대해 자세하게 이해하고 그들의 워크플로우를 뜯어볼 수 있어야만 진정으로 사용자에게 유용한 B2B 프로덕트를 만들 수 있습니다.</p>
+</blockquote>
+
+<p><strong>3. 높은 전환 비용을 인지하기 😟</strong></p>
+<blockquote>
+  <p>B2B 프로덕트는 이미 존재하는 워크플로우를 빠르고/효율적이고/더 낫고/더 저렴한 방식으로 해결할 방법을 제안하는 것입니다. 따라서 경쟁 프로덕트가 있는 경우가 많은데, 한 프로덕트에서 다른 프로덕트로 옮겨가는 전환 비용이 B2B 프로덕트에서는 더 클 수밖에 없습니다. 높은 전환 비용이 있음에도 불구하고 우리 프로덕트를 사용할 수 있도록 데이터 마이그레이션 과정을 최적화 고, 사용법을 쉽게 익힐 수 있게 하고, 경쟁 프로덕트보다 더 저렴하면서도 더 효율적으로 일을 처리할 수 있는 프로덕트를 만들어야 합니다.</p>
+</blockquote>
+
+<p><strong>4. 새로운 기능과 가능성을 만드는 것을 우선순위로 두기 😤</strong></p>
+<blockquote>
+  <p>B2B 프로덕트는 사용자들의 끊임없는 요구사항을 프로덕트의 비전에 맞추어 달성 해나가야 합니다. 하지만 혁신적인 프로덕트는 사용자의 이야기를 실현하는 것만으로는 달성할 수 없습니다. 포드가 자동차를 처음으로 만들 때 사람들은 더 빠른 말만을 원하고 있던 것처럼요. B2B 디자이너는 사용자가 원하는 새로운 기능을 만드는 것과 혁신의 가능성을 만드는 두 측면을 항상 생각해야 합니다.</p>
+</blockquote>
+
+<p><strong>5. UX 일관성을 유지하기 😊</strong></p>
+<blockquote>
+  <p>원 글은 2018년에 작성되었기 때문에 저자의 요점과 다른 점에서 풀어보도록 하겠습니다. B2B 프로덕트는 다양한 사용자가 각자의 워크플로우에 맞는 다양한 기능을 사용하기 때문에 한 프로덕트에서도 사용 케이스가 세세하게 분화되기 마련입니다. 한 사용자의 사용 케이스가 변화하더라도 일관된 UX를 제공해야 하는데, 프로덕트 팀이 커질수록 이를 지키기가 어려워집니다. 작게는 디스크립션 레이블 어미에서 크게는 특정 기능이 사용되는 방식까지 달라지는 것을 경험할 수 있습니다. 항상 내가 디자인 하는 기능이나 개선사항이 다양하게 사용될 수 있음을 인지하고 일관된 UX를 구현할 수 있도록 여러 업무 유관자와 커뮤니케이션 하는 것이 중요합니다.</p>
+</blockquote>
+
+<p><strong>6. 모든 디자이너가 B2B 프로덕트를 좋아하진 않는다 😢</strong></p>
+<blockquote>
+  <p>많은 디자이너들의 호불호가 갈리는 지점은 B2B 프로덕트는 화려하고 심플한 UI로 사용자들을 사로잡는 게 아니라, 업무를 잘 도와줄 수 있도록 예측가능하고 명확한 디자인을 해야한다는 점입니다. B2B 디자인은 익숙하지 않은 도메인과 복잡한 프로덕트 구조 속에서 기업 사용자가 가지는 복잡한 문제를 해결해나가면서 빠르게 개인의 역량을 성장시킬 수 있습니다.</p>
+</blockquote>
+
+<hr />
+
+<p><img src="img/B2B_design.png" alt="B2B design" /></p>
+
+<h2 id="intro">Intro</h2>
+
+<p>내가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.vwo.com/" target="blank" rel="nofollow" id="outlink3" onclick="clickedOutlink(outlink3)">VWO</a>에서 일을 시작하면서 이런 의문을 느낄만 한 순간들이 많이 있었다. 기업용 애플리케이션(B2B)는 정말 일반 소비자용 앱(B2C)와 다른가? 다른 점이 있다면 디자이너와 디자인 프로세스에 어떤 영향을 미치는가?</p>
+
+<p>지난 몇 년간 내가 경험한 점들을 B2B 팀에 입사하려고 하거나 이미 일하고 있는 사람들에게 공유한다.</p>
+
+<h2 id="기업용-애플리케이션이란-무엇인가">기업용 애플리케이션이란 무엇인가?</h2>
+
+<p>위키피디아는 다음과 같이 정의하고 있다.</p>
+
+<blockquote>
+  <p>An enterprise application is a computer software used to satisfy the needs of an organization rather than those of individual users.<br />
+기업용 애플리케이션은 개인 사용자보다 조직의 니즈를 충족시키기 위한 컴퓨터 소프트웨어이다.</p>
+</blockquote>
+
+<p><img src="img/b2b_product_example.png" alt="B2B product example" /></p>
+
+<figcaption>한 번쯤 봤을 기업용 프로덕트의 예시</figcaption>
+
+<p>오늘날의 기업 환경에서, 대부분의 B2B 프로덕트는 복잡하고, 확장성 있고, 분산되어있고, 컴포넌트 중심이고, 중요한 미션을 가지고 있다. 기업용 애플리케이션은 비즈니스 프로세스를 지원하거나 자동화하기 위해 복잡하고 많은 양의 데이터를 적재하고, 가공하고, 제공하는 데 의의가 있다.</p>
+
+<p>기업용 툴은 조직과 그 구성원들이 더 잘 일할 수 있도록 하는 프로덕트를 만드는 것이다.</p>
+
+<p><em>메모: ‘기업용’과 ‘B2B’ 용어 정의에서 약간의 차이가 있긴 하다. 하지만 오늘날의 소프트웨어 환경에서 이러한 차이점은 중요하지 않으며, 이 글의 목적에 따라 둘을 동일한 의미를 가집니다.</em></p>
+
+<figcaption>(*역자 주: 아래부터는 기업용 애플리케이션을 모두 B2B 프로덕트로 칭하겠습니다)</figcaption>
+
+<h2 id="b2b-프로덕트-디자인은-b2c-프로덕트를-디자인하는-것과-어떻게-다를까">B2B 프로덕트 디자인은 B2C 프로덕트를 디자인하는 것과 어떻게 다를까?</h2>
+
+<p>B2B 프로덕트 디자인은 생각만큼 많이 다르지는 않다. 모든 좋은 디자인을 위한 원칙이 동일하게 적용된다. 하지만 B2C 프로덕트를 디자인하는 것과 B2B 프로덕트를 디자인 하는 것에 약간의 다름이 있다.</p>
+
+<p><strong>시장에 내놓을 자동차를 만드는 것</strong>과 <strong>상업용 비행정을 만드는 것</strong>을 생각해보자. 둘 다 A에서 B로 사람들을 이동시킬 고도의 엔지니어링 디자인이 접목되지만 사용 방법, 제조에 소요되는 시간, 테스팅 &amp; 안전 기준, 사용자들의 기대, 구매 &amp; 소유와 같이 디자인과 프로세스에 영향을 주는 모든것에 명확한 차이가 있다.</p>
+
+<blockquote>
+  <p>마찬가지로 B2B 앱의 경우 앱이 목표로 하는 고유한 문제와 그 접근 방식에 항상 차이가 있습니다.</p>
+</blockquote>
+
+<h2 id="직면하게-되는-문제">직면하게 되는 문제:</h2>
+
+<p><em>알림: 이런 문제 중 몇몇은 어떤 종류의 소프트웨어를 디자인하든 동일하게 직면하는 문제들도 있지만, B2B 프로덕트 디자인에서는 훨씬 차별적으로 나타납니다.</em></p>
+
+<h2 id="1-기능적-복잡도-">1. 기능적 복잡도 😓</h2>
+
+<p>B2B 앱은 여러 데이터 상태, 시각화 옵션, 관리 작업, 여러 사용자의 협업, 다른 소프트웨어와 연동과 같이 셀 수 없는 요소가 있기 때문에 복잡도 규모는 보통 B2C 앱보다 더 크다. 하나의 요구사항을 만족시키기 위한 모든 디자인 의사결정이 다른 여러 요구사항에 영향을 미치고, 종종 어떤 임팩트가 있을지 예상하기까지 어렵다. 겉보기에 간단해 보이는 기능을 추가하는데 온갖 종류의 엣지 케이스를 확인해야 하는 과정을 거쳐야만 한다.</p>
+
+<p><img src="img/jira_example.png" alt="Jira Example" /></p>
+
+<figcaption>(2018년이라 현재 화면과 약간의 차이가 있습니다) 아틀라시안의 '지라'의 화면 : 복잡한 기능적 요구사항의 예시</figcaption>
+
+<h3 id="-해결하는-방법">💪 해결하는 방법:</h3>
+
+<p>복잡성을 해결하는 방법은 뭘까? — 답은 당연히 단순성이다. 인터페이스의 단순성을 최근(*2018년) 유행하는 미니멀 UI와 혼동하지 말라. 여기서 말하는 단순성은 적절한 계획과 프로세스를 통해 구현된 것을 말한다. 프로덕트 사이클이 얼마나 타이트하든 ‘디자인씽킹’하는 것과 디자인을 시작하기 전에 우리가 수집한 일련의 요구사항과 기능 명세들을 정리하는데 시간을 투자하는 것이 중요하다. 사실 이 과정은 디자인의 대부분이라고 할 수 있다.</p>
+
+<p>당신이 떠올린 해결책이 확실하다고 생각할 때면 곧바로 스케치, 피그마, 포토샵을 켜고 싶은 것은 아주 자연스러운 경향이지만 실은 너무 이른 경우가 대부분이다. 전체적인 컨텍스트와 발견 점을 정리하고 내가 어떤 것을 디자인할지에 대해 정리할 수 있는 시간을 갖는것이 중요하다. 리서치와 계획하는 단계를 거치고, 모든 가능성을 발견하고 모든 엣지 케이스를 다뤄야 한다. 마침내 준비되었을 때 인터페이스를 다듬기 시작하자.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"나에게 만약 나무를 자를 6시간이 주어진다면, 나는 첫 4시간을 도끼를 날카롭게 가는데 쓰겠다."
+— 격언
+</code></pre></div></div>
+
+<blockquote>
+  <p>적절한 계획과 작업 과정을 거치게 되면 장기적으로 보상받을 것이며, 결국 논리적이고 버그 없는 프로덕트 경험을 이끌어낼 것이다.</p>
+</blockquote>
+
+<h2 id="1-근로자실사용자-마인드셋을-위해-디자인하기-">1. 근로자(실사용자) 마인드셋을 위해 디자인하기 💼</h2>
+
+<p>B2B 프로덕트 사용자의 마인드셋과 행동 양식은 일상적인 B2C 사용자와 매우 다르다. 기업 사용자들은 일반적으로 그들의 일을 효율적으로 완료하는 것 이외에도 그들의 커리어 성장, 배움, 조직에서의 성공과 같은 다른 목표가 있다. 프로페셔널 근로자들을 위해 디자인 하는 것은 그들의 업무 컨텍스트, 워크플로우, 환경, 소명, 문제와 그들이 사용하고 있는 현재 솔루션에 대해 잘 이해하는 것이 필요하다.</p>
+
+<h3 id="️-최고로-잘-할-수-있는-방법">✌️ 최고로 잘 할 수 있는 방법:</h3>
+
+<p>B2B 프로덕트는 프로덕트 자체에 대한 사용자의 니즈를 넘어 그들의 직업과 커리어에 대한 이해가 아주 중요하다. 최종 사용자와 직접 대화하고, 그들의 도메인을 조사하고 그들의 현재 방식을 체험해보는 것은 사용자에 대한 공감을 발전시키는 데 유용하다.</p>
+
+<p>또한 사용자들은 종종 현재 워크플로우와 루틴에 익숙해져 있어서 그들이 진짜로 원하는 것이 무엇인지 상상하기 힘들어한다. 그들이 말하는 기능과 옵션들은 프로덕트 혁신으로 향하는 길을 밝혀줄 수 없는 것을 말하는 것일 수도 있다.</p>
+
+<p><img src="img/user_needs_example.png" alt="User Needs" /></p>
+
+<figcaption>당신의 사용자들은 그냥 더 많은 것이 더 좋다고 생각할 수 있다</figcaption>
+
+<p>B2B 프로덕트 팀을 위한 가이드 원칙은 고객들이 현재 어떤 부분에서 난관을 겪고 있는지 알고, 이 이슈들을 해결하는데 미래에 프로덕트가 무엇을 해야 할지 길을 그리는 것이다. 사용자의 장기적인 목표를 알고 난 다음 디자이너들이 할 수 있는 일이 많아진다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>사람들은 더 나은 자신이 되기 위해 프로덕트를 구매한다 — JTBD (https://jtbd.info/)
+(*Jobs To Be Done)
+</code></pre></div></div>
+
+<blockquote>
+  <p>사용자들이 자신이 원하는 것이 뭔지 말하는 것에 집중하지 말고, 그들이 어떻게 행동하는지에 집중하고 그 포인트에서 혁신을 끌어내야 한다. 아이디어를 린하게 프로토타입으로 만들어 사용자에게 테스트 해야 한다.</p>
+</blockquote>
+
+<h2 id="3-높은-전환-비용을-인지하기-">3. 높은 전환 비용을 인지하기 😟</h2>
+
+<p>종종 기업 사용자들은 지금 가지고 있는 워크플로우에 너무 익숙하고 만족하고 있어서 다른 프로덕트로 변경해야 할 니즈를 전혀 느끼지 못하기도 한다. 심지어 다른 프로덕트로 변경하고자 할 때도, 여러 사람의 동의와 합의가 필요하기까지 한다. 당연히 현존하는 데이터를 마이그레이션 하는 것은 회사와 근로자 모두에게 불편사항이기도 하다. 일반적인 소비자 앱과는 달리, B2B 프로덕트를 변경하기 위한 전환 비용은 상당히 높다.</p>
+
+<h3 id="--관리하는-방법">😳  관리하는 방법:</h3>
+
+<p>기업에게 프로덕트를 변경하라고 설득하는 방법에는 크게 2가지가 있다.</p>
+
+<ol>
+  <li><strong>경쟁 프로덕트보다 기능적으로 훨씬 더 나아야 한다</strong></li>
+  <li><strong>현재 워크플로우를 재정의해서 사용자에게 현재보다 훨씬 더 빠르고/낫고/효율적이고/매력적이게 한다</strong></li>
+</ol>
+
+<p>두 번째 방법에서 디자인이 진가를 발휘할 수 있다. 생산성, 워크플로우, 프로세스는 조직에게 굉장히 중요한 요소이다. 그들의 현재 솔루션을 잘 살펴보고, 어느 부분에서 그들이 난관을 겪고 있는지 확인해보자. <strong>더 빠른 워크플로우, 더 높은 효율성, 더 낮은 비용을 실현할 수 있는 요소를 찾아보자.</strong> 이런 면들에서 혁신이 있다면 기업들이 점프하도록 설득할 수 있는 해결책으로 이어질 수 있다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>사람의 행동을 변화시키는 것만이 혁신을 측정하기 위한 가장 최고, 유일, 진정하고 직접적인 방법이다.
+— Stewart Butterfield, Slack의 공동창업자
+</code></pre></div></div>
+
+<blockquote>
+  <p>현재 접근방식을 더 효율적으로 바꿀 기회를 항상 찾아야 한다.</p>
+</blockquote>
+
+<h2 id="4-새로운-기능과-가능성을-만드는-것을-우선순위로-두기-">4. 새로운 기능과 가능성을 만드는 것을 우선순위로 두기 😤</h2>
+
+<p>B2B 프로덕트는 기존 사용자 경험을 강화하는 것 보다 새로운 기능을 만드는 것이 거의 모든 순간에서 우선한다. 프로덕트가 첫선을 보이는 시기엔 디자인 스프린트를 열성적으로 가져가는 것이 일반적이지만, 프로덕트가 출시된 후에는 기능을 계속해서 추가해야만 한다. 유료 고객들은 새로운 가능성과 추가 기능을 계속해서 요구할 것이다. 프로덕트 팀은 앞에 놓여있는 바쁜 로드맵을 미리 계획합니다. 이 시점에서는 디자이너가 업무 관계자들에게 UX와 디자인을 개선하는데 시간을 투자하자고 설득하는 것이 특히 더 힘들 수 있다.</p>
+
+<h3 id="-해결하는-방법-1">😳 해결하는 방법:</h3>
+
+<p>주어진 상황을 업무 관계자들의 입장에서 그려보라. 그들은 어느 스프린트, 어느 주나 어느 월에서든 새로운 기능을 개발하거나 가능성을 추가하지 않는 것은 잠재적인 수익을 어느 정도 잃는 것과 같다고 생각한다. 따라서 사람들에게 UX나 디자인 개선이 가지는 힘이나, 개선했을 때 기능을 추가함으로써 가져올 수 있는 수익보다 더 큰 임팩트를 줄 수 있음을 이해시키는 게 중요하다. 성공 사례를 이야기하고, 상위 의사결정자에게 직접 이야기해서 그들의 마음을 이끌어내라. 개선사항을 디자인 하는 것은 항상 페인 포인트를 주의 깊게 분석하고, 아이디어를 실험해야 하므로 시간과 혁신이 필요할 것이다.</p>
+
+<p>또, 현존하는 프로덕트를 개선하는 것은 성장하는 회사에 아주 중요하기 때문에 훈련 삼아 한 번씩 자신의 프로덕트나 경쟁 프로덕트가 없다고 생각하고 완전 처음부터 솔루션을 브레인스토밍 하는 것을 추천한다. 이렇게 한다면 즐거운 놀라움을 경험하게 될 것이다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"전구는 촛불의 지속적인 개선에서 나온 것이 아니다."
+— Oren Harari
+</code></pre></div></div>
+
+<p>회사를 설득한 다음엔 시간을 정한 스프린트에서 작은 성공을 경험하는 것으로 시작하고, 그 성공의 임팩트를 항상 측정하자. 회사가 디자인에 믿음을 서서히 가지도록 만들어서 점점 더 큰 개선과 실험으로 나아가라.</p>
+
+<blockquote>
+  <p>프로덕트 팀과 엔지니어링 팀이 좋은 UX를 구현할 수 있도록 헌신해달라고 부탁하고, 이게 디자인 팀만의 일이 아님을 알려주자.</p>
+</blockquote>
+
+<h2 id="5-ux-일관성을-유지하기-">5. UX 일관성을 유지하기 😊</h2>
+
+<p><img src="img/ux_challenges_survey.png" alt="UX Challenges Survey" /></p>
+
+<figcaption>출처: <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.uxpin.com/enterprise-ux-design-2017-2018-industry-report" target="blank" rel="nofollow" id="outlink4" onclick="clickedOutlink(outlink4)">
+Enterprise UX Industry Report 2017–2018</a></figcaption>
+
+<p>최근(*2018년) 3,000개 이상 기업의 디자이너를 대상으로 한 설문조사에서 디자인 팀이 가장 직면하고 있는 가장 큰 문제는 UX 일관성이었다. 일반적인 소비자용 프로덕트와 다르게, B2B 프로덕트는 더 긴 프로덕트 사이클을 가지고 있고 여러 팀으로 나누어져서 병렬적으로 실행되는 경우가 많다.</p>
+
+<p>모든 디자이너들은 다른 팀들과 똑같이 프로덕트의 컴포넌트, 디자인 패턴, 심지어 컬러와 같은 디테일을 변경할 때 일관성을 유지하지 못하는 문제에 직면하고 있다. 이런 문제점은 팀 사이즈가 크거나 프로덕트가 확장하게 될 때 곱절이 되어버린다.</p>
+
+<h3 id="-해결하는-방법-2">💪 해결하는 방법:</h3>
+
+<p>많은 회사가 장기적인 일관성과 확장성을 위해 <strong>디자인 시스템</strong>을 만들게 된다. 디자인 시스템은 명확한 기준으로 가이드 된 재사용 가능한 컴포넌트의 집합이고, 조합을 통해 여러 종류의 애플리케이션을 만들 수 있다. 디자인 시스템은 보통 다음을 포함한다:</p>
+
+<ol>
+  <li><strong>가이드라인</strong> (디자인 원칙, 코드 컨벤션, 편집 가이드라인 등)</li>
+  <li><strong>비주얼 애셋</strong> (컬러 팔레트, 타이포그래피 스케일, 아이콘 등)</li>
+  <li><strong>UI 패턴</strong> (폼, 버튼 스타일, 페이지 패턴 등)</li>
+  <li><strong>사용과 유지보수</strong>를 위한 포인트들</li>
+</ol>
+
+<p>B2B 프로덕트 팀들에게 디자인 시스템이 있는지 물어보았을 때, 55% 정도는 가지고 있거나 만들고 있는 중이라고 답변했다(*2018년 기준!). 이것은 긍정적인 신호이다. 한 가지 알아두어야 할 점은 디자인 시스템을 100% 끝내는 순간은 없다는 것이다. 장기적으로 만들어나가야 하는 것이고, 시간이 지나면서 진화해 나가는 것이다.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"각 요소의 디자인은 제작하기 쉬워야 하고, 고치기도 쉬워야 한다."
+— Leo Fender
+</code></pre></div></div>
+
+<blockquote>
+  <p><strong>디자인 시스템은 일관성 있는 UX를 만들기 위한 큰 발걸음이다.</strong>
+<br /><br />
+영감을 얻을 수 있는 B2B 프로덕트 디자인 시스템의 예시: Salesforce의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.lightningdesignsystem.com/" target="blank" rel="nofollow" id="outlink5" onclick="clickedOutlink(outlink5)">Lightning Design System</a>, Intuit의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://designsystem.quickbooks.com/" target="blank" rel="nofollow" id="outlink6" onclick="clickedOutlink(outlink6)">Quickbooks</a>(구 Harmony Design System)</p>
+</blockquote>
+
+<p class="text-gray">*역자 주. 역자가 추천하는 공개된 디자인 시스템의 예시도 추가합니다:</p>
+<blockquote>
+  <p>Segment의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://evergreen.segment.com" target="blank" rel="nofollow" id="outlink7" onclick="clickedOutlink(outlink7)">Evergreen</a>, Atlassian의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://atlassian.design/foundations/accessibility" target="blank" rel="nofollow" id="outlink8" onclick="clickedOutlink(outlink8)">Design System</a>, Elastic Search의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://elastic.github.io/eui/#/" target="blank" rel="nofollow" id="outlink9" onclick="clickedOutlink(outlink9)">Elastic UI</a>, IBM의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.ibm.com/design/language/" target="blank" rel="nofollow" id="outlink10" onclick="clickedOutlink(outlink10)">Design Language</a>, Google의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://material.io/" target="blank" rel="nofollow" id="outlink11" onclick="clickedOutlink(outlink11)">Material Design</a>, SendGrid의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://styleguide.sendgrid.com/index.html" target="blank" rel="nofollow" id="outlink12" onclick="clickedOutlink(outlink12)">StyleGuide</a>, Zendesk의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://garden.zendesk.com" target="blank" rel="nofollow" id="outlink13" onclick="clickedOutlink(outlink13)">Garden</a>, Microsoft의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.microsoft.com/design/fluent/#/" target="blank" rel="nofollow" id="outlink14" onclick="clickedOutlink(outlink14)">Fluent</a>, Mixpanel의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://design.mixpanel.com/" target="blank" rel="nofollow" id="outlink15" onclick="clickedOutlink(outlink15)">Design System</a></p>
+</blockquote>
+
+<h2 id="6-모든-디자이너가-b2b-프로덕트를-좋아하진-않는다-">6. 모든 디자이너가 B2B 프로덕트를 좋아하진 않는다 😢</h2>
+
+<p>B2B 프로덕트를 위해 일해본 디자이너 중 이 일이 지루하다고 생각하는 사람이 많다. 에이전시나 B2C 백그라운드를 가진 사람들은 B2B에서 일하는 것이 다양성이 부족하고 흥분되지 않는다고 생각하기도 한다. 우리가 dribbble에서 침 흘리며 보는 멋진 마이크로 인터랙션 비주얼과 애니메이션을 만들 기회는 잘 오지 않는다. 이런 경우 업무는 늘어지게 되고 디자이너들은 뭔가가 빠진 것처럼 동기부여가 되지 않게 된다</p>
+
+<h3 id="-방지하는-방법">😳 방지하는 방법:</h3>
+
+<p>B2B 프로덕트 디자인은 고객들의 과업을 해결해주어 그들이 직장에서 더 나은 삶을 살 수 있도록 돕는 데 있다. (위험하지만 않다면) 사용자를 홀릴 수 있는 UI를 만드는 것은 언제나 우선순위 리스트 중 가장 하단에 있을 것이다. <strong>보는 즉시 직관적으로 어떻게 작동할지 알 수 있는 표준화되고, 예측 가능한 사용자 인터페이스가 타겟 고객들에게 가장 좋은 UI이다.</strong></p>
+
+<blockquote>
+  <p>우리의 목표는 사용자들에게서 <strong>“와우!”</strong> 를 받는것이지만 — 프로덕트가 그들의 일을 얼마나 효율적으로 돕는지로부터 와야 하지, 아름다운 UI로부터 와야 하는것이 아니다</p>
+</blockquote>
+
+<p>B2B 디자인 팀을 구성할 때 목표와 동기가 일치하는 디자이너를 선택하는 것은 중요하다. 동기라 함은 복잡한 문제를 풀고, 자신의 디자인이 사용자의 일을 완료하는데 어떻게 도움이 되는지 보는 것에서 와야 한다.</p>
+
+<blockquote>
+  <p><strong><em>따라서, 팀에 들어올 모든 디자이너들에게 이후 일어날 일들을 예상하게 하고 올바른 기대치를 설정하는 것이 중요하다.</em></strong></p>
+</blockquote>
+
+<hr />
+
+<h2 id="b2b-디자인에-입문할-때-필요한-일반적인-조언-몇-가지">B2B 디자인에 입문할 때 필요한 일반적인 조언 몇 가지</h2>
+
+<p><strong>B2B는 진화하고 있다.</strong> B2B 프로덕트는 더이상 삐걱거리고 지겨운 것이 아니다. 오늘날 사용자들은 일반적인 B2C 앱에서 경험한 퍼포먼스와 경험을 원한다. 그들은 아름다운 UI를 즐기며, 첫 시작 전에 문서를 읽어야만 하는 것을 싫어한다. 차세대 기술인 VR, AI와 음성 인터페이스는 이미 우리의 일상 생활에 들어왔으며, 얼마 지나지 않아 우리의 업무 생활에도 들어올 것이다. B2B 프로덕트에게는 흥분되는 시기이며 디자이너들이 할 수 있는 일은 끝없이 있다.</p>
+
+<p>당신에게 도움이 될 3가지 가이드:</p>
+
+<ol>
+  <li><strong>유연함과 모듈화를 받아들여라.</strong> 디자인할 모든 것이 진화하고 성장할 것으로 생각해야 한다. 현재의 니즈에 딱 알맞은 컴포넌트를 만들려고 하지 말고 미래의 니즈도 반영할 수 있도록 유연하고 확장성 있게 만드는데 중점을 두어야한다.</li>
+  <li><strong>규칙과 프로세스를 정립하라.</strong> 훌륭한 협업, 탄탄한 사용자 리서치, 액션 가능한 문제 정의, 집중된 디자인 이터레이션들은 한 번씩 달성할 순 있지만 매번 모든 것을 달성하기란 어려운 일이다. 효율적인 방법은 반복 가능한 프로세스를 만들고 매 사이클마다 조금씩 개선해나가는 것이다.</li>
+  <li><strong>전체를 생각하라.</strong> 당신의 디자인과 추가되는 기능들이 프로덕트 전반과 회사의 비전에 어떤 영향을 주는지에 대해 항상 인지하고 있어야 한다. 당신이 만들고, 추가하고, 개선하는 모든 것에 전체적인 관점으로 접근한다면 결국 논리적이고 일관된 프로덕트 경험으로 이어지게 될 것이다.</li>
+</ol>
+
+<hr />
+
+<h3 id="b2b-디자이너들의-모임-소개">B2B 디자이너들의 모임 소개</h3>
+<p>B2B 프로덕트를 만들고있는 B2B 디자이너들은 B2C 디자이너보다 더 어려운 문제를 풀고 있는 경우가 많은데 비해 자료, 지식, 피드백을 찾는데도 어려움을 겪고 있습니다.</p>
+
+<p>더 많은 B2B 프로덕트 디자이너들이 한 자리에서 어려운 점, 배운 점을 공유하고 서로 도움이 되기 위해 커뮤니티를 운영중입니다.</p>
+
+<p><a rel="nofollow noopener noreferrer" target="_blank" href="https://abit.ly/b2b-designers">🔗 B2B 디자이너들의 모임 노션 바로가기</a></p>
+
+
+        </div>
+
+        <div class='c-tags'>
+          
+            <a href='#'>아티클 요약</a>
+            <!--<a href='/tag/아티클 요약'>아티클 요약</a>-->
+          
+            <a href='#'>B2B</a>
+            <!--<a href='/tag/B2B'>B2B</a>-->
+          
+            <a href='#'>SaaS</a>
+            <!--<a href='/tag/SaaS'>SaaS</a>-->
+          
+            <a href='#'>디자이너 마인드셋</a>
+            <!--<a href='/tag/디자이너 마인드셋'>디자이너 마인드셋</a>-->
+          
+        </div>
+        
+        <!--previous and next posts 구 버전-->
+        <hr style="visibility:hidden;">
+          <ul class="pager">
+            
+            
+          </ul>
+
+        <!--previous and next posts 신 버전-->
+        <hr style="visibility:hidden;">
+        <ul class="pager">         
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+        
+        <!--disqus-->
+        
+        <hr>
+          <section class='disqus'>
+  <div id='disqus_thread'></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/article/article_summary-7/';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      // Change `aspirethemes-demos` with your Disqus shortcode
+      s.src = '//tjrichard-github-io.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>
+</section>
+        
+      </article>
+    </div>
+  </div>
+</div>
+
+
+    <footer id='c-footer' class='c-footer'>
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      <p class="c-social-nav__title">DWMM</p>
+    </div>
+
+    <div class='c-social-nav__body'>
+
+      <ul class='c-social-nav'>
+        <!--
+        <li class='c-social-nav__item'>
+          <a href='' target='_blank'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-twitter' data-size='s'></span>
+          </a>
+        </li>
+        -->
+        <li class='c-social-nav__item'>
+          <a href='https://instagram.com/nam.d.richard' target='_blank' rel='nofollow' id='instagram' onclick='socialLink(instagram)'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-instagram' data-size='s'></span>
+          </a>
+        </li>
+        <li class='c-social-nav__item'>
+          <a href='https://github.com/tjrichard' target='_blank' rel='nofollow' id='github' onclick='socialLink(github)'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-github' data-size='s'></span>
+          </a>
+        </li>
+        <li class='c-social-nav__item'>
+          <a href='https://www.linkedin.com/in/tjrichard91' target='_blank' rel='nofollow' id='linkedin' onclick='socialLink(linkedin)'>
+            <span class='c-social-nav__icon' data-icon='ei-sc-linkedin' data-size='s'></span>
+          </a>
+        </li>
+        <li class='c-social-nav__item'>
+          <a href='mailto:tjrichard91@gmail.com' target='_blank' rel='nofollow' id='email' onclick='socialLink(email)'>
+            <span class='c-social-nav__icon' data-icon='ei-envelope' data-size='s'></span>
+          </a>
+        </li>
+      </ul>
+      <p class='c-social-nav__copyright'>© Seunghwan Jang. <span id='currentYear'></span></p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('currentYear').innerHTML = new Date().getFullYear();
+</script>
+
+  </div>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172119466-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-172119466-2');
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PR9V822');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Naver Search Console -->
+<meta name="naver-site-verification" content="a906dfeb775b0c7620f9b2d7338d9638c1bd8cea" />
+
+<!-- Segment -->
+<script>
+  var userAgent;
+  userAgent = navigator.userAgent.toLowerCase();
+  
+    var interests = [];
+    
+    interests.push("아티클 요약");
+    interests.push("B2B");
+    interests.push("SaaS");
+    interests.push("디자이너 마인드셋");
+  
+
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";;analytics.SNIPPET_VERSION="4.15.3";
+  analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
+  var path = document.location.pathname;
+  var proj = '/project/'
+  var blog = '/blog/'
+  if (path.indexOf(proj) != -1 || path.indexOf(blog) != -1){
+    analytics.identify({
+      'User Agent': userAgent,
+      'interests': interests
+    });
+  }
+  else {
+    analytics.identify({
+      'User Agent': userAgent
+    });
+  }
+}}();
+  function downloadResume(target) {
+    var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
+      analytics.track("Download Resume",{
+        url: "/article/article_summary-7/",
+        target: href,
+        title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
+      })
+      analytics.identify({
+        "contact": true,
+        "download": {
+          "Category": "이력서",
+          "last updated": date
+        }
+      })
+  };
+  function downloadPortfolio(target) {
+    var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
+    analytics.track("Download Portfolio",{
+      url: "/article/article_summary-7/",
+      target: href,
+      title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
+    })
+    analytics.identify({
+        "contact": true,
+        "download": {
+          "Category": "포트폴리오",
+          "last updated": date
+        }
+    })
+  }
+  function socialLink(target) {
+    var href = target.href;
+    analytics.track("Click Social Link",{
+      url: "/article/article_summary-7/",
+      target: href,
+      title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
+    })
+  }
+  function clickedOutlink(target) {
+    var href = target.href;
+      analytics.track("Click Outlink",{
+        url: "/article/article_summary-7/",
+        target: href,
+        title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
+      })
+  }
+  function scrollComplete() {
+    analytics.track("Scroll Complete",{
+        url: "/article/article_summary-7/",
+        title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
+      })
+  };
+  function clickedImage(imgSrc) {
+    analytics.track("Click Image", {
+      url: "/article/article_summary-7/",
+      target: imgSrc,
+      title: "B2B SaaS 프로덕트를 디자인하면서 느낀 것들"
+    })
+  }
+</script>
+  <script src="/js/jquery-3.1.1.min.js"> </script>
+  <script src="/js/evil-icons.min.js">   </script>
+  <script src="/js/jquery.fitvids.js">   </script>
+  <script src="/js/app.js">              </script>
+  <script src="/js/shorten-url.js">      </script>
+  <script>
+  var scrollTop;
+  var totalHeight;
+  var viewportHeight;
+  var progressBar;
+  var scrolled;
+  var scrollPercent;
+  var scrollEventCount = 1;
+  
+  window.addEventListener('scroll', () =>{
+    scrollTop = window.scrollY;
+    totalHeight = document.documentElement.scrollHeight;
+    viewportHeight = window.innerHeight;
+    progressBar = document.getElementById('progress-bar');
+    scrolled = (scrollTop / (totalHeight - viewportHeight - 930)) * 100
+    var x;
+    function getPercent() {
+      if (scrolled >= 100){
+        x = "100%";
+      }
+      else {
+        x = scrolled + "%";
+      }
+    }
+    getPercent();
+    scrollPercent = x;
+    if (progressBar) {
+      progressBar.style.width = scrollPercent;
+    }
+    // console.log(document.documentElement.scrollTop || document.body.scrollTop);
+    
+    if (scrolled >= 100) {
+      scrollEventCount++;
+      if (scrollEventCount == 2 ) {
+        scrollComplete();
+      }
+    }
+  });
+</script>
+  
+    <script>
+function createModal(imgsrc) {
+  var styleTop0Pixel = "top: " + scrollTop + "px";
+  var styleTop50Percent = "top: calc(50% + " + scrollTop + "px)";
+  var styleTop10Pixel = scrollTop + 80;
+  styleTop10Pixel = "top: " + styleTop10Pixel + "px";
+
+  var modalBackground = document.createElement("div");
+  modalBackground.setAttribute("id", "modalBackground");
+  modalBackground.setAttribute("class", "modal__background");
+  modalBackground.setAttribute("onclick", "closeModal()");
+  modalBackground.setAttribute("style", styleTop0Pixel)
+  document.body.appendChild(modalBackground);
+
+  var modalCloseButton = document.createElement("div");
+  modalCloseButton.setAttribute("id", "modalCloseButton");
+  modalCloseButton.setAttribute("class", "modal__closeButton");
+  modalCloseButton.setAttribute("onclick", "closeModal()");
+  modalCloseButton.setAttribute("style", styleTop10Pixel)
+  document.body.appendChild(modalCloseButton);
+  
+  var modal = document.createElement("img");
+  modal.setAttribute("id", "modalImage");
+  modal.setAttribute("src", imgsrc);
+  modal.setAttribute("class", "modal__content__img");
+  modal.setAttribute("onclick", "closeModal()");
+  modal.setAttribute("style", styleTop50Percent)
+  document.body.appendChild(modal);
+
+  // body overflow: hidden
+  document.body.classList.add('modal-open')
+}
+
+function closeModal() {
+    var mbg = document.getElementById("modalBackground");
+    var m = document.getElementById("modalImage");
+    var mcb = document.getElementById("modalCloseButton");
+    mbg.remove();
+    m.remove();
+    mcb.remove();
+
+    // body overflow: auto
+    document.body.classList.remove('modal-open')
+}
+
+document.querySelectorAll('img').forEach(item => {
+  item.addEventListener('click', event => {
+    var imgSrc = item.currentSrc;
+    createModal(imgSrc);
+    clickedImage(imgSrc);
+  })
+})
+</script>
+  
+</body>
+
+</html>

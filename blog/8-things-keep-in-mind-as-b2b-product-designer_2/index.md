@@ -6,7 +6,8 @@ subtitle: "그래서, B2B 프로덕트 디자이너는 어떻게 일해야 할�
 tags: [B2B, 디자이너 마인드셋, 프로덕트 디자인, 스타트업]
 date: 2021-09-01 10:59:45
 blog: true
-is_list-img: false
+is_list-img: true
+list-img: "8-things-keep-in-mind-as-b2b-product-designer_2/img/header_img.png"
 post-header: true
 header-img: "img/header_img.png"
 order: 11
