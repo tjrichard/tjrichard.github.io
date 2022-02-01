@@ -1,12 +1,15 @@
 {% assign current = page.url | downcase | split: '/' %} 
   <li role='presentation'>
-    <a href='{{ '' | prepend: site.baseurl }}/' {% if current[1] == "about" or current[1] == "blog" or current[1] == "project" or currrent[1] == "connect-180" %} class="c-nav__link normal" {% endif %} class="c-nav__link active">Home</a>
-  </li>
+    <a href='{{ '' | prepend: site.baseurl }}/' {% if current.size == 0 %} class="c-nav__link active" {% endif %} class="c-nav__link normal">Home</a>
+    </li>
   <li role='presentation'>
     <a href='{{ '/project' | prepend: site.baseurl }}' {% if current[1] == "project" %} class="c-nav__link active"{% endif %} class="c-nav__link normal">Project</a>
   </li>
   <li role='presentation'>
     <a href='{{ '/blog' | prepend: site.baseurl }}' {% if current[1] == "blog" %} class="c-nav__link active"{% endif %} class="c-nav__link normal">Blog</a>
+  </li>
+  <li role='presentation'>
+    <a href='{{ '/article' | prepend: site.baseurl }}' {% if current[1] == "article" %} class="c-nav__link active"{% endif %} class="c-nav__link normal">Article Summary</a>
   </li>
   <li role='presentation'>
     <a href='{{ '/about' | prepend: site.baseurl }}' {% if current[1] == "about" %} class="c-nav__link active"{% endif %} class="c-nav__link normal">About</a>

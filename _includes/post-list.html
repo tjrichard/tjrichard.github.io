@@ -2,7 +2,14 @@
     <a href="{{ page.url | prepend: site.baseurl }}">
         <div class="c-list__info">
             {% if page.is_list-img == true %}
-            <img src="{{ page.list-img }}" class="c-list__img" alt='{{ post.title }}'> {% endif %}
+                {% if page.list-img == nil -%}
+                    {% if page.article == true -%}
+                        <img src="../images/daily-article.png" class="c-list__img" alt='{{ post.title }}'>
+                    {% endif -%}
+                {% else %}
+                    <img src="{{ page.list-img }}" class="c-list__img" alt='{{ post.title }}'>
+                {% endif -%}
+            {% endif %}
             <p class="c-list__type">
                 {{ page.type | upcase }}
             </p>
@@ -13,13 +20,14 @@
                 {{ page.subtitle }}
             </p>
             {% if page.draft == true %}
-            <span class="c-list__tag">
-                    Coming Soon
-                </span> {% else %}
-            <p class="c-list__body">
-                {{ page.content | markdownify | strip_html | truncatewords: 70 }}
-            </p>
-            <time class='c-list__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time> {% endif %}
+                <span class="c-list__tag">
+                        Coming Soon
+                    </span> {% else %}
+                <p class="c-list__body">
+                    {{ page.content | markdownify | strip_html | truncatewords: 70 }}
+                </p>
+                <time class='c-list__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
+            {% endif %}
         </div>
     </a>
 </li>

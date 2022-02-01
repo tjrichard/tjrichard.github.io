@@ -126,9 +126,9 @@
     height: 16em;
     // border-radius: .5em;
     // box-shadow: 6px 0 40px 8px rgba(0,0,0,.05);
-    object-fit: scale-down;
+    object-fit: cover;
     object-position: center;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    // border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     margin-bottom: 10px;
 }

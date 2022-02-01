@@ -6,7 +6,8 @@ subtitle: "B2B 프로덕트는 B2C 프로덕트와 어떻게 다를까?"
 tags: [B2B, 디자이너 마인드셋, 프로덕트 디자인, 스타트업]
 date: 2021-08-25 11:54:45
 blog: true
-is_list-img: false
+is_list-img: true
+list-img: "8-things-keep-in-mind-as-b2b-product-designer/img/header_img.png"
 post-header: true
 header-img: "img/header_img.png"
 order: 10

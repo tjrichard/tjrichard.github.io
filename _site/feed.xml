@@ -5,8 +5,8 @@
     <description>AB180의 UX 디자이너 장승환의 블로그입니다.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 22 Jan 2022 10:48:07 +0900</pubDate>
-    <lastBuildDate>Sat, 22 Jan 2022 10:48:07 +0900</lastBuildDate>
+    <pubDate>Tue, 01 Feb 2022 14:09:27 +0900</pubDate>
+    <lastBuildDate>Tue, 01 Feb 2022 14:09:27 +0900</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
 
     <item>
@@ -27,48 +27,6 @@
           <pubDate>Wed, 25 Aug 2021 20:54:45 +0900</pubDate>
           <link>http://localhost:4000/blog/8-things-keep-in-mind-as-b2b-product-designer/</link>
           <guid isPermaLink="true">http://localhost:4000/blog/8-things-keep-in-mind-as-b2b-product-designer/</guid>
-        </item><item>
-          <title>B2B SaaS 프로덕트를 디자인하면서 느낀 것들</title>
-          <description> 🔗 이 글은 Varun Mohapatra가 UX Collective에 올린 아티클을 번역, 요약한 글입니다.저자는 B2B 프로덕트와 기업용 애플리케이션을 동일하게 간주하여 말하고 있습니다. 저자는 B2B를 Enterprise로 표현하고 있지만 번역 후 해석의 용이성을 위해 이 글...</description>
-          <pubDate>Sat, 14 Aug 2021 08:37:45 +0900</pubDate>
-          <link>http://localhost:4000/blog/article_summary-7/</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/article_summary-7/</guid>
-        </item><item>
-          <title>프로덕트에 맞는 지표 발견하기</title>
-          <description>🔗 이 글은 Claudia Delago가 본인의 미디엄 블로그에 올린 아티클을 번역, 요약한 글입니다.⚡️ 요약  프로덕트 관리를 위해 프로덕트 선행 지표는 반드시 필요합니다. 이 때 프로덕트 지표는 모든 것을 측정하려 해서는 안되고, 프로덕트를 더 나은 방향으로 만들기 위한 의사...</description>
-          <pubDate>Mon, 28 Jun 2021 02:39:45 +0900</pubDate>
-          <link>http://localhost:4000/blog/article_summary-6/</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/article_summary-6/</guid>
-        </item><item>
-          <title>프로덕트를 사용자 친화적으로 만드는 것은 무엇일까?</title>
-          <description>🔗 이 글은 Robert Turner가 본인의 미디엄 블로그에 올린 아티클을 번역, 요약한 글입니다.⚡️ 요약  사용성을 정량적으로 평가하려고 하면 큰 결함이나 딜 브레이커가 되는 핵심 이유를 알려주긴 하지만, 정성적인 조사 방법으로는 제품 사용성에 대한 정성적인 지표로서 역할은 ...</description>
-          <pubDate>Thu, 21 Jan 2021 21:20:45 +0900</pubDate>
-          <link>http://localhost:4000/blog/article_summary-5/</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/article_summary-5/</guid>
-        </item><item>
-          <title>모든 프로덕트는 북극성 지표가 필요하다. 우리 북극성 지표는 어떻게 찾을까?</title>
-          <description>🔗 이 글은 Sandhya Hegde가  Amplitude Blog에 올린 아티클을 번역, 요약한 글입니다.⚡️요약       북극성 지표는 프로덕트 팀이 목표로하는 고객의 문제와 비즈니스가 목표로하는 수익을 연결한다    북극성 지표는 회사 내 조직들의 목표와 전략을 하나로 일치...</description>
-          <pubDate>Fri, 30 Oct 2020 21:20:45 +0900</pubDate>
-          <link>http://localhost:4000/blog/article_summary-4/</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/article_summary-4/</guid>
-        </item><item>
-          <title>디자인 솔루션은 직감적이 아니라 계획적이어야 한다: Toughtful Execution Framework</title>
-          <description>🔗이 글은 Annina Koskinen이  Spotify.design에 올린 아티클을 번역, 요약한 글입니다.⚡️요약  이 글은 디자인 프로세스에 대해 공부한 사람이라면 모두 알고 있는 Empathy - Design - Prototype - Test - Iteration 단계를 S...</description>
-          <pubDate>Fri, 25 Sep 2020 23:40:45 +0900</pubDate>
-          <link>http://localhost:4000/blog/article_summary-3/</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/article_summary-3/</guid>
-        </item><item>
-          <title>오류 메세지 문장 작성법 간단히 살펴보기</title>
-          <description>🔗 이 글은 Jason Fox가 UX Collective에 올린 미디엄 글을 번역, 요약한 글입니다.⚡️요약      Constant Component에 제공되어야 할 정보를 작성하기    Dynamic Component에서 오류 상황의 컨텍스트를 더 잘 이해시킬 수 있도록 보강하...</description>
-          <pubDate>Wed, 09 Sep 2020 07:37:45 +0900</pubDate>
-          <link>http://localhost:4000/blog/article_summary-2/</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/article_summary-2/</guid>
-        </item><item>
-          <title>디자인 조사 방법: 독립 집단 설계 vs 반복 측정 설계</title>
-          <description>🔗 이 글은 Raluca Budiu가  Nielsen Norman Group에 올린 아티클을 번역, 요약한 글입니다.⚡️요약  사용자 리서치에서 크게 두 가지 방법이 있고, 두 방법의 특징을 알고 더 좋은 방법을 선택해야 한다      반복 측정 설계는 참가자 간 차이를 상쇄할 수...</description>
-          <pubDate>Fri, 28 Aug 2020 23:40:45 +0900</pubDate>
-          <link>http://localhost:4000/blog/article_summary-1/</link>
-          <guid isPermaLink="true">http://localhost:4000/blog/article_summary-1/</guid>
         </item><item>
           <title>Jekyll 테마 찾고 설치하는 법</title>
           <description>이전 글 → Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅지난 글과 다른 점지난 글에서는 Github.io로 블로그 페이지를 만들 수 있는 틀을 구축했다면, 이번 글에서는 이미 잘 만들어진 블로그 테마를 찾고, 나의 블로그에 적용하는 과정을 다룬다.Jekyl...</description>
