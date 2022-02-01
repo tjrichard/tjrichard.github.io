@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dwmm.site/sitemap.xml
+Sitemap: https://tjrichard.github.io/sitemap.xml
