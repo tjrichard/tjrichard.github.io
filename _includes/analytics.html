@@ -19,72 +19,90 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- Naver Search Console -->
 <meta name="naver-site-verification" content="a906dfeb775b0c7620f9b2d7338d9638c1bd8cea" />
 
+<!-- Mixpanel -->
+<!-- <script type="text/javascript">
+  (function(f,b){if(!b.__SV){var e,g,i,h;window.mixpanel=b;b._i=[];b.init=function(e,f,c){function g(a,d){var b=d.split(".");2==b.length&&(a=a[b[0]],d=b[1]);a[d]=function(){a.push([d].concat(Array.prototype.slice.call(arguments,0)))}}var a=b;"undefined"!==typeof c?a=b[c]=[]:c="mixpanel";a.people=a.people||[];a.toString=function(a){var d="mixpanel";"mixpanel"!==c&&(d+="."+c);a||(d+=" (stub)");return d};a.people.toString=function(){return a.toString(1)+".people (stub)"};i="disable time_event track track_pageview track_links track_forms track_with_groups add_group set_group remove_group register register_once alias unregister identify name_tag set_config reset opt_in_tracking opt_out_tracking has_opted_in_tracking has_opted_out_tracking clear_opt_in_out_tracking start_batch_senders people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user people.remove".split(" ");
+  for(h=0;h<i.length;h++)g(a,i[h]);var j="set set_once union unset remove delete".split(" ");a.get_group=function(){function b(c){d[c]=function(){call2_args=arguments;call2=[c].concat(Array.prototype.slice.call(call2_args,0));a.push([e,call2])}}for(var d={},e=["get_group"].concat(Array.prototype.slice.call(arguments,0)),c=0;c<j.length;c++)b(j[c]);return d};b._i.push([e,f,c])};b.__SV=1.2;e=f.createElement("script");e.type="text/javascript";e.async=!0;e.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?
+  MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";g=f.getElementsByTagName("script")[0];g.parentNode.insertBefore(e,g)}})(document,window.mixpanel||[]);
+  
+  // Enabling the debug mode flag is useful during implementation,
+  // but it's recommended you remove it for production
+  mixpanel.init('015e282a3156823f4cef3ef920a5495a', {debug: true}); 
+  mixpanel.track('Sign up');
+</script> -->
+
 <!-- Segment -->
 <script>
-  var userAgent;
-  userAgent = navigator.userAgent.toLowerCase();
-  {% if page.tags %}
-    var interests = [];
-    {% for tag in page.tags -%}
-    {%- capture tag_name %}{{ tag }}{% endcapture %}
-    interests.push("{{ tag_name }}");
-    {%- endfor %}
-  {% endif %}
+  !function () {
+    var analytics = window.analytics = window.analytics || []; if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+      analytics.invoked = !0; analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on", "addSourceMiddleware", "addIntegrationMiddleware", "setAnonymousId", "addDestinationMiddleware"]; analytics.factory = function (e) { return function () { var t = Array.prototype.slice.call(arguments); t.unshift(e); analytics.push(t); return analytics } }; for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key) } analytics.load = function (key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = "https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js"; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e }; analytics._writeKey = "QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";; analytics.SNIPPET_VERSION = "4.15.3";
+      analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
+      analytics.page();
+    }
+    var userAgent;
+    userAgent = navigator.userAgent.toLowerCase();
+    {% if page.tags %}
+      var interests = [];
+      {% for tag in page.tags -%}
+        {%- capture tag_name %} {{ tag }} {% endcapture %}
+        interests.push("{{ tag_name }}");
+      {%- endfor %}
+    {% endif %}
+  
+    var path = document.location.pathname;
+    var proj = '/project/'
+    var blog = '/blog/'
+    var article = '/article/'
+    if (path.indexOf(proj) != -1 || path.indexOf(blog) != -1 || path.indexOf(article) != -1) {
+      analytics.identify({
+        'User Agent': userAgent,
+        'interests': interests
+      });
+    }
+    else {
+      analytics.identify({
+        'User Agent': userAgent
+      });
+    }
+  }();
 
-  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){var t=Array.prototype.slice.call(arguments);t.unshift(e);analytics.push(t);return analytics}};for(var e=0;e<analytics.methods.length;e++){var key=analytics.methods[e];analytics[key]=analytics.factory(key)}analytics.load=function(key,e){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=e};analytics._writeKey="QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG";;analytics.SNIPPET_VERSION="4.15.3";
-  analytics.load("QmVYyLedpWWw5IGRhwvxW0DhG1Py1BCG");
-  var path = document.location.pathname;
-  var proj = '/project/'
-  var blog = '/blog/'
-  if (path.indexOf(proj) != -1 || path.indexOf(blog) != -1){
-    analytics.identify({
-      'User Agent': userAgent,
-      'interests': interests
-    });
-  }
-  else {
-    analytics.identify({
-      'User Agent': userAgent
-    });
-  }
-}}();
   function downloadResume(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;
-    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
-      analytics.track("Download Resume",{
-        url: "{{ page.url }}",
-        target: href,
-        title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-      })
-      analytics.identify({
-        "contact": true,
-        "download": {
-          "Category": "이력서",
-          "last updated": date
-        }
-      })
-  };
-  function downloadPortfolio(target) {
-    var href = target.href;
-    var len = document.getElementsByTagName('p').length;
-    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14,19);
-    analytics.track("Download Portfolio",{
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14, 19);
+    analytics.track("Download Resume", {
       url: "{{ page.url }}",
       target: href,
       title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
     })
     analytics.identify({
-        "contact": true,
-        "download": {
-          "Category": "포트폴리오",
-          "last updated": date
-        }
+      "contact": true,
+      "download": {
+        "Category": "이력서",
+        "last updated": date
+      }
+    })
+  };
+  function downloadPortfolio(target) {
+    var href = target.href;
+    var len = document.getElementsByTagName('p').length;
+    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14, 19);
+    analytics.track("Download Portfolio", {
+      url: "{{ page.url }}",
+      target: href,
+      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+    })
+    analytics.identify({
+      "contact": true,
+      "download": {
+        "Category": "포트폴리오",
+        "last updated": date
+      }
     })
   }
   function socialLink(target) {
     var href = target.href;
-    analytics.track("Click Social Link",{
+    analytics.track("Click Social Link", {
       url: "{{ page.url }}",
       target: href,
       title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
@@ -92,17 +110,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   function clickedOutlink(target) {
     var href = target.href;
-      analytics.track("Click Outlink",{
-        url: "{{ page.url }}",
-        target: href,
-        title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-      })
+    analytics.track("Click Outlink", {
+      url: "{{ page.url }}",
+      target: href,
+      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+    })
   }
   function scrollComplete() {
-    analytics.track("Scroll Complete",{
-        url: "{{ page.url }}",
-        title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
-      })
+    analytics.track("Scroll Complete", {
+      url: "{{ page.url }}",
+      title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
+    })
   };
   function clickedImage(imgSrc) {
     analytics.track("Click Image", {

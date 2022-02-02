@@ -2,57 +2,32 @@
 layout: null
 ---
 
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="https://www.google.com/schemas/sitemap-news/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.sitemaps.org/schemas/sitemap/0.9 https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd https://www.google.com/schemas/sitemap-news/0.9 https://www.google.com/schemas/sitemap-news/0.9/sitemap-news.xsd">
-    {% assign sorted = site.pages | sort: 'order' | reverse -%}
+    {%- assign sorted = site.pages | sort: 'order' | reverse -%}
     {%- for page in sorted -%}
-    {%- if page.project == true -%}
-    <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-        {% if page.date == null -%}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        {%- else -%}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+        {%- if page.project == true %}
+        <url>
+            <loc>{{ site.url }}{{ page.url }}</loc>
+        </url>
         {% endif %}
-
-        {%- if page.sitemap.changefreq == null -%}
-        <changefreq>weekly</changefreq>
-        {%- else -%}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {%- if page.sitemap.priority == null %}
-        <priority>1.0</priority>
-        {%- else -%}
-        <priority>{{ page.sitemap.priority }}</priority>
-        {% endif %}
-    </url>
-    {% endif %}
     {%- endfor -%}
     
     {% assign sorted = site.pages | sort: 'order' | reverse -%}
     {%- for page in sorted -%}
-    {% if page.blog == true -%}
-    <url>
-        <loc>{{ site.url }}{{ page.url }}</loc>
-        {% if page.date == null -%}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        {%- else -%}
-        <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
-        {% endif %}
+        {% if page.blog == true %}
+        <url>
+            <loc>{{ site.url }}{{ page.url }}</loc>
+        </url>
+        {%- endif %}
+    {%- endfor %}
 
-        {%- if page.sitemap.changefreq == null -%}
-        <changefreq>weekly</changefreq>
-        {%- else -%}
-        <changefreq>{{ page.sitemap.changefreq }}</changefreq>
-        {% endif %}
-
-        {%- if page.sitemap.priority == null %}
-        <priority>0.5</priority>
-        {%- else -%}
-        <priority>{{ page.sitemap.priority }}</priority>
-        {% endif %}
-    </url>
-    {%- endif %}
+    {% assign sorted = site.pages | sort: 'order' | reverse -%}
+    {%- for page in sorted -%}
+        {% if page.article == true %}
+        <url>
+            <loc>{{ site.url }}{{ page.url }}</loc>
+        </url>
+        {%- endif %}
     {%- endfor %}
 </urlset>
