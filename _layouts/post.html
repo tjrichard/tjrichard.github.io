@@ -71,10 +71,10 @@ layout: default
           {% assign next_post = page.order | plus: 1 %}
           {% for pages in sorted %}
             {% if page.order == prev_post %}
-              {% assign prev == page %}
+              {% assign prev = page %}
             {% endif %}
             {% if page.order == next_post %}
-              {% assign next == page %}
+              {% assign next = page %}
             {% endif %}
           {% endfor %}
           {% if prev %}
