@@ -13,7 +13,7 @@ order: 26
 ---
 
 <p class="text-gray">
- 🔗 이 글은 이상희님이 <a href='https://kimchihill.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://kimchihill.com' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://kimchihill.com/2021/09/09/anatomy-of-the-6-key-questions-asked-to-b2b-saas-startups/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
+ 🔗 이 글은 이상희님이 <a href='https://kimchihill.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://kimchihill.com' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://kimchihill.com/2021/09/09/anatomy-of-the-6-key-questions-asked-to-b2b-saas-startups/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
 ## ⚡️ 요약
