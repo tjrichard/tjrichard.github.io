@@ -7,11 +7,16 @@ tags: [UX Writing, 경험 공유, 실 사례, 일하는 방법]
 date: 2021-09-30 14:30:00
 article: true
 is_list-img: true
-list-img: 
+list-img: 'http://t1.daumcdn.net/brunch/service/user/1SwI/image/lpR07slC6MzgVjC_BAuUkMfmSPc.png'
 post-header: false
-draft: true
 order: 25
 ---
+
+<p class="text-gray">
+ 🔗 이 글은 김자유(김강령)님이 <a href='https://brunch.co.kr/@thinkaboutlove/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@thinkaboutlove/396' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
+</p>
+
+## ⚡️ 요약
 
 지난 토스의 Simplicity 21 컨퍼런스에서 발표된 적 있는 토스 보이스톤 메이커를 만들게된 과정에 대한 글입니다.
 
@@ -23,5 +28,4 @@ order: 25
 
 보이스톤 메이커를 도입하기 위해 UX Writer, UX 엔지니어가 TF를 구성해 작업하였는데, 회사 입장에서도 보이스톤 메이커라는 내부 워크 프로세스를 위해 리소스를 사용하도록 결정할 수 있었다는것이 놀라운 결정입니다.
 
-관련한 Simplicity 21 영상입니다.
-https://www.youtube.com/watch?v=zRm5JNcC_Bw
+위 내용과 관련한 토스의 <a href='https://www.youtube.com/watch?v=zRm5JNcC_Bw' target='blank' rel='nofollow' id='outlink3' onclick='clickedOutlink(outlink3)'>Simplicity 21 영상</a>입니다.

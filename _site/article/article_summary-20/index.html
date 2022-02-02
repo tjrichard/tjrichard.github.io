@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang='ko'>
-
 <head>
   <meta charset='utf-8'>
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -16,14 +15,14 @@
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
 <meta property="og:title" content="스타트업을 위한 실험과 가설 개념 설명">
-<meta property="og:image" content="http://localhost:4000/images/blog_ogimg.png">
-        <!-- <script>console.log('http://localhost:4000/images/blog_ogimg.png')</script> -->
+<meta property="og:image" content="https://dwmm.site/images/blog_ogimg.png">
+        <!-- <script>console.log('https://dwmm.site/images/blog_ogimg.png')</script> -->
 
 <meta property="og:description" content="요약 👉 스타트업을 위한 실험과 가설 개념 설명">
-<meta property="og:url" content="http://localhost:4000/article/article_summary-20/">
+<meta property="og:url" content="https://dwmm.site/article/article_summary-20/">
 <meta property="og:site_name" content="Seunghwan">
-  <link rel='canonical' href="http://localhost:4000/article/article_summary-20/">
-  <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="http://localhost:4000/feed.xml">
+  <link rel='canonical' href="https://dwmm.site/article/article_summary-20/">
+  <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="https://dwmm.site/feed.xml">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Noto+Sans+KR:wght@300;400;700&family=Work+Sans:wght@400;600;800&display=swap" rel="stylesheet"> -->
@@ -68,7 +67,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href='/about'  class="c-nav__link normal">About</a>
   </li>
         </ul>
-        <a href='http://localhost:4000' class='c-nav-list__logo'>
+        <a href='https://dwmm.site' class='c-nav-list__logo'>
           <img src='/images/dwmm-round-128.png'>
         </a>
       </div>
@@ -158,9 +157,137 @@ document.querySelectorAll('img').forEach(item => {
 
           <p>최근 데이터 기반 의사결정, 사용자 행동 분석 등 데이터 분석을 활용하는 곳이 많아졌습니다. 주변에서 많이 이야기 하는 ‘실험’과 ‘가설’에 대한 개념을 얼마나 정확하게 알고 있나요?</p>
 
-<p>실험은 몰랐던 것을 알아내기 위해 (=지식을 얻기 위해) 하는 활동입니다. 만약 실험으로 뭔가를 알아내지 못했다면 잘못된 실험입니다.
-가설은 반증할 수 있도록 구체적인 형태와 숫자로 표현된 문장입니다.
-가설과 유사한 의미로 사용되는 가정은 반증 가능할 정도로 구체적이지 못한 암묵적인 믿음입니다.</p>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PR9V822"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+  <div>
+    <header id='c-header' class='c-header'>
+  <div class='o-grid'>
+    <div class='o-grid__col o-grid__col--full'>
+      <div class='c-header__inner' style='display: flex; justify-content: space-between;'>
+        <ul class='c-nav c-nav-list'>
+           
+  <li role='presentation'>
+    <a href='/'  class="c-nav__link normal">Home</a>
+    </li>
+  <li role='presentation'>
+    <a href='/project'  class="c-nav__link normal">Project</a>
+  </li>
+  <li role='presentation'>
+    <a href='/blog'  class="c-nav__link normal">Blog</a>
+  </li>
+  <li role='presentation'>
+    <a href='/article'  class="c-nav__link active" class="c-nav__link normal">Article Summary</a>
+  </li>
+  <li role='presentation'>
+    <a href='/about'  class="c-nav__link normal">About</a>
+  </li>
+        </ul>
+        <a href='https://dwmm.site' class='c-nav-list__logo'>
+          <img src='/images/dwmm-round-128.png'>
+        </a>
+      </div>
+    </div>
+  </div>  
+  
+  <div class='progress-container'>
+    <div class='progress-bar' id='progress-bar'></div>
+  </div>
+  
+</header>
+
+    
+<script>
+function createModal(imgsrc) {
+  var styleTop0Pixel = "top: " + scrollTop + "px";
+  var styleTop50Percent = "top: calc(50% + " + scrollTop + "px)";
+  var styleTop10Pixel = scrollTop + 80;
+  styleTop10Pixel = "top: " + styleTop10Pixel + "px";
+
+  var modalBackground = document.createElement("div");
+  modalBackground.setAttribute("id", "modalBackground");
+  modalBackground.setAttribute("class", "modal__background");
+  modalBackground.setAttribute("onclick", "closeModal()");
+  modalBackground.setAttribute("style", styleTop0Pixel)
+  document.body.appendChild(modalBackground);
+
+  var modalCloseButton = document.createElement("div");
+  modalCloseButton.setAttribute("id", "modalCloseButton");
+  modalCloseButton.setAttribute("class", "modal__closeButton");
+  modalCloseButton.setAttribute("onclick", "closeModal()");
+  modalCloseButton.setAttribute("style", styleTop10Pixel)
+  document.body.appendChild(modalCloseButton);
+  
+  var modal = document.createElement("img");
+  modal.setAttribute("id", "modalImage");
+  modal.setAttribute("src", imgsrc);
+  modal.setAttribute("class", "modal__content__img");
+  modal.setAttribute("onclick", "closeModal()");
+  modal.setAttribute("style", styleTop50Percent)
+  document.body.appendChild(modal);
+
+  // body overflow: hidden
+  document.body.classList.add('modal-open')
+}
+
+function closeModal() {
+    var mbg = document.getElementById("modalBackground");
+    var m = document.getElementById("modalImage");
+    var mcb = document.getElementById("modalCloseButton");
+    mbg.remove();
+    m.remove();
+    mcb.remove();
+
+    // body overflow: auto
+    document.body.classList.remove('modal-open')
+}
+
+document.querySelectorAll('img').forEach(item => {
+  item.addEventListener('click', event => {
+    var imgSrc = item.currentSrc;
+    createModal(imgSrc);
+    clickedImage(imgSrc);
+  })
+})
+</script>
+
+
+
+<div class='o-wrapper'>
+  
+  <div class='o-grid'>
+    <div class='o-grid__col'>
+      <article class='c-post' itemscope itemtype='https://schema.org/BlogPosting'>
+        <p class="c-post__type">PRODUCT</p>
+
+        <h1 class='c-post__title u-text-left'>스타트업을 위한 실험과 가설 개념 설명</h1>    
+        
+        <p class='c-post__subtitle u-text-left'>요약 👉 스타트업을 위한 실험과 가설 개념 설명</p>
+        
+        <time class='c-post__date' datetime='2021-09-15T23:30:00+09:00' itemprop='datePublished'>15 Sep 2021</time>
+        
+        <hr>
+
+        <div class='c-content' itemprop='articleBody'>
+          
+
+          <p class="text-gray">
+ 🔗 이 글은 김민우님이 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.minwookim.kr/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://www.minwookim.kr/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />블로그</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.minwookim.kr/experiment-hypothesis-for-startups/" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 요약한 글입니다.
+</p>
+
+<h2 id="️-요약">⚡️ 요약</h2>
+
+<blockquote>
+  <p>최근 데이터 기반 의사결정, 사용자 행동 분석 등 데이터 분석을 활용하는 곳이 많아졌습니다. 주변에서 많이 이야기 하는 ‘실험’과 ‘가설’에 대한 개념을 얼마나 정확하게 알고 있나요?</p>
+</blockquote>
+
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">실험</code>은 몰랐던 것을 알아내기 위해 (=지식을 얻기 위해) 하는 활동입니다. 만약 실험으로 뭔가를 알아내지 못했다면 잘못된 실험입니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">가설</code>은 반증할 수 있도록 구체적인 형태와 숫자로 표현된 문장입니다.
+가설과 유사한 의미로 사용되는 가정은 반증 가능할 정도로 구체적이지 못한 암묵적인 믿음입니다.</li>
+</ol>
 
 <p>스타트업의 실험은 다음과 같이 실행되어야 합니다.</p>
 <ol>
@@ -212,7 +339,7 @@ document.querySelectorAll('img').forEach(item => {
   <div id='disqus_thread'></div>
   <script>
     var disqus_config = function () {
-      this.page.url = 'http://localhost:4000/article/article_summary-20/';
+      this.page.url = 'https://dwmm.site/article/article_summary-20/';
     };
 
     (function() {
@@ -327,9 +454,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
       var interests = [];
       
-        interests.push(" A/B테스팅 ");
-        interests.push(" 데이터 분석 ");
-        interests.push(" 프로덕트 분석 ");
+        interests.push("A/B테스팅");
+        interests.push("데이터 분석");
+        interests.push("프로덕트 분석");
     
   
     var path = document.location.pathname;
@@ -376,15 +503,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       title: "스타트업을 위한 실험과 가설 개념 설명"
     })
     analytics.identify({
-      "contact": true,
-      "download": {
-        "Category": "포트폴리오",
-        "last updated": date
-      }
+        "contact": true,
+        "download": {
+          "Category": "포트폴리오",
+          "last updated": date
+        }
     })
   }
   function socialLink(target) {
     var href = target.href;
+    analytics.track("Click Social Link",{
     analytics.track("Click Social Link", {
       url: "/article/article_summary-20/",
       target: href,
@@ -393,17 +521,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
   function clickedOutlink(target) {
     var href = target.href;
-    analytics.track("Click Outlink", {
-      url: "/article/article_summary-20/",
-      target: href,
-      title: "스타트업을 위한 실험과 가설 개념 설명"
-    })
+      analytics.track("Click Outlink",{
+        url: "/article/article_summary-20/",
+        target: href,
+        title: "스타트업을 위한 실험과 가설 개념 설명"
+      })
   }
   function scrollComplete() {
-    analytics.track("Scroll Complete", {
-      url: "/article/article_summary-20/",
-      title: "스타트업을 위한 실험과 가설 개념 설명"
-    })
+    analytics.track("Scroll Complete",{
+        url: "/article/article_summary-20/",
+        title: "스타트업을 위한 실험과 가설 개념 설명"
+      })
   };
   function clickedImage(imgSrc) {
     analytics.track("Click Image", {

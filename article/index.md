@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Curated Articles
-description: 성장을 위한 아티클 큐레이션
+title: Curated Atricles
+description: 성장을 위한 아티클 요약 큐레이션
 project-header: true
 header-img: '../images/daily-article.png'
 ---
