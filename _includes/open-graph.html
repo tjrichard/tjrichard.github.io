@@ -2,23 +2,58 @@
 <meta property="og:locale" content="{{ site.locale }}">
 <meta property="og:type" content="article">
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-{% if page.list-img == nil -%}
-    {%- if page.header-img == nil -%}
-        <meta property="og:image" content="{{ site.url }}/images/blog_ogimg.png">
-        <!-- <script>console.log('{{ site.url }}/images/blog_ogimg.png')</script> -->
+{% if page.article -%}
+    {% if page.list-img == nil -%}
+        {%- if page.header-img == nil -%}
+            <meta property="og:image" content="{{ site.url }}/images/daily-article.png">
+            <!-- <script>console.log('{{ site.url }}/images/blog_ogimg.png')</script> -->
+        {%- else -%}
+            <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ page.header-img }}">
+            <!-- <script>console.log('{{ site.url }}{{ page.url }}{{ page.header-img }}')</script> -->
+        {%- endif %}
     {%- else -%}
-        <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ page.header-img }}">
-        <!-- <script>console.log('{{ site.url }}{{ page.url }}{{ page.header-img }}')</script> -->
-    {%- endif %}
-{%- else -%}
-    {%- if page.header-img == nil -%}
-        <meta property="og:image" content="{{ site.url }}/blog/{{ page.list-img }}">
-        <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
-    {%- else -%}
-        <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
-        <!-- <script>console.log('{{ site.url}}{{ page.url }}{{ page.header-img }}')</script> -->
+        {%- if page.header-img == nil -%}
+            {% assign protocol = page.list-img | split: ":" -%}
+            {% if protocol.first == "http" or "https" -%}
+                <meta property="og:image" content="{{ page.list-img }}">
+                <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
+            {%- else -%}
+                <meta property="og:image" content="{{ site.url }}/blog/{{ page.list-img }}">
+                <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
+            {% endif -%}
+        {%- else -%}
+            <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
+            <!-- <script>console.log('{{ site.url}}{{ page.url }}{{ page.header-img }}')</script> -->
+        {%- endif %}
     {%- endif %}
 {%- endif %}
+
+{% if page.blog -%}
+    {% if page.list-img == nil -%}
+        {%- if page.header-img == nil -%}
+            <meta property="og:image" content="{{ site.url }}/images/blog_ogimg.png">
+            <!-- <script>console.log('{{ site.url }}/images/blog_ogimg.png')</script> -->
+        {%- else -%}
+            <meta property="og:image" content="{{ site.url }}{{ page.url }}{{ page.header-img }}">
+            <!-- <script>console.log('{{ site.url }}{{ page.url }}{{ page.header-img }}')</script> -->
+        {%- endif %}
+    {%- else -%}
+        {%- if page.header-img == nil -%}
+            {% assign protocol = page.list-img | split: ":" -%}
+            {% if protocol.first == "http" or "https" -%}
+                <meta property="og:image" content="{{ page.list-img }}">
+                <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
+            {%- else -%}
+                <meta property="og:image" content="{{ site.url }}/blog/{{ page.list-img }}">
+                <!-- <script>console.log('{{ site.url }}/blog/{{ page.list-img }}')</script> -->
+            {% endif -%}
+        {%- else -%}
+            <meta property="og:image" content="{{ site.url}}{{ page.url }}{{ page.header-img }}">
+            <!-- <script>console.log('{{ site.url}}{{ page.url }}{{ page.header-img }}')</script> -->
+        {%- endif %}
+    {%- endif %}
+{%- endif %}
+
 
 {% if page.subtitle == nil or page.subtitle == '장승환' -%}
     <meta property="og:description" content="{{ site.description }}">
