@@ -10,6 +10,12 @@ first:
 #     name: Mixpanel 대시보드 활용 →
 #     description: Segment, Mixpanel을 활용하여 이벤트 설계 및 블로그 방문자 분석 실습
 #     date: Aug 2021 ~ Present 🚀
+second:
+  - img: images/icons/toolbox.png
+    link: /side-hustle/case-list-generator
+    name: 케이스 리스트 제너레이터
+    description: QA 리스트, 디자인 시스템 토큰과 같은 반복되는 규칙 쌍 생성기
+    date: Feb 2022
 third:
   - img: images/icons/pomodoro.png
     link: /side-hustle/pomodoro
