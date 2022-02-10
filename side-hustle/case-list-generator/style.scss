@@ -157,13 +157,18 @@ body {
 }
 
 #catList {
-    width: 80vw;
+    width: 40vw;
     height: 90vh;
     overflow: auto;
     background-color: #fff;
-    padding: 80px 20px;
-    & li {
-    list-style: none;
+    padding: 40px 40px 80px;
+    & h1 {
+        color: #1B2528;
+    }
+    & > p {
+        font-size: 14px;
+        color: #77868B;
+        margin-bottom: 20px;
     }
 }
 
@@ -200,13 +205,46 @@ input[type="input"], textarea[type="input"] {
     font-size: 13px;
 }
 
-#divider {
-    margin: 20px 0;
-}
-
 .buttonArea {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+}
+
+#index {
+    margin: 0 20px;
+    & p {
+        font-size: 20px;
+        color: #77868B;
+    }
+}
+
+#resultArea {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    min-height: 200px;
+    background-color: #fff;
+    border-radius: 14px;
+    border: 2px dashed rgba(0,0,0,0.12);
+    padding: 80px 20px;
+    & li {
+        list-style: none;
+    }
+    & p {
+        max-width: 100%;
+        overflow-x: hidden;
+        text-overflow: ellipsis;
+        max-height: 250px;
+        font-size: 14px;
+        margin-bottom: 12px;
+        color: #77868B;
+    }
 }
 
 #addCat {
@@ -215,9 +253,20 @@ input[type="input"], textarea[type="input"] {
 #generateList {
     background-color: #4139EF;
 }
+#download {
+    width: 60%;
+    padding: 8px;
+    background-color: #4139EF;
+    text-align: center;
+    align-self: center;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 3px;
+    white-space: nowrap;
+}
 
-input[type="button"], input[type="submit"] {
-    width: auto;
+input[type="button"] {
+    width: 60%;
     color: #fff;
     padding: 8px 16px;
     font-size: 16px;
@@ -229,3 +278,8 @@ input[type="button"], input[type="submit"] {
     background-color: #77868B !important;
 }
 
+.secondary {
+    background-color: #F9F8Fa !important;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.04) !important;
+    color: #77868B !important;
+}
