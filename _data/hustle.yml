@@ -32,7 +32,7 @@ fifth:
   - img: images/icons/calculator.png
     link: /side-hustle/js-calculator
     name: Javascript 계산기 →
-    description: Vanilla JS로 사칙연산 게산기 구현
+    description: Vanilla JS로 사칙연산 계산기 구현
     date: Sep 2021
 sixth:
   - img: images/icons/custom.png

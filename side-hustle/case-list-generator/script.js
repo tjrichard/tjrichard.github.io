@@ -317,6 +317,7 @@ function generateList() {
         // a.setAttribute("download","generated-list.csv");
         a.download = 'generated-list.csv';
         a.setAttribute("href",window.URL.createObjectURL(csvFile));
+        a.setAttribute("charset","utf-8");
         a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
     btnArea.appendChild(a);
 }
