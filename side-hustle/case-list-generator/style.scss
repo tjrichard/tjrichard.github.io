@@ -264,6 +264,9 @@ input[type="input"], textarea[type="input"] {
     text-decoration: none;
     border-radius: 3px;
     white-space: nowrap;
+    &:hover {
+        opacity: 0.8;
+    }
 }
 
 input[type="button"] {

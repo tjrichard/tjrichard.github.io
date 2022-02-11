@@ -304,19 +304,13 @@ function generateList() {
     }
     
 
-    // CSV 다운로드 버튼을 CTA 버튼으로 추가 제공
+    // CSV 다운로드 버튼을 CTA 버튼으로 표
     var CSV = generatedValue.join('\n');
     window.URL = window.webkitURL || window.URL;
     var contentType = 'text/csv; charset=utf-8';
     var csvFile = new Blob([CSV], {type: contentType});
-    var a = document.createElement('a');
-        a.setAttribute("id","download");
-        // a.setAttribute("type","button");
-        // a.setAttribute("value","CSV 다운로드");
-        a.textContent = "CSV 다운로드"
-        // a.setAttribute("download","generated-list.csv");
-        a.download = 'generated-list.csv';
+    var a = document.getElementById('download');
+        a.style.display = "";
         a.setAttribute("href",window.URL.createObjectURL(csvFile));
         a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
-    btnArea.appendChild(a);
 }

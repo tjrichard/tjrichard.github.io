@@ -320,6 +320,10 @@ input[type="input"]:focus, textarea[type="input"]:focus {
   white-space: nowrap;
 }
 
+#download:hover {
+  opacity: 0.8;
+}
+
 input[type="button"] {
   width: 60%;
   color: #fff;
