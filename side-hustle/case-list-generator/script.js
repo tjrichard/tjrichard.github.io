@@ -310,7 +310,7 @@ function generateList() {
     var contentType = 'text/csv; charset=utf-8';
     var csvFile = new Blob([CSV], {type: contentType});
     var a = document.getElementById('download');
-        a.style.display = "";
+        a.style.display = "initial";
         a.setAttribute("href",window.URL.createObjectURL(csvFile));
         a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
 }
