@@ -22,6 +22,8 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
+  -webkit-transition: all ease 0.2s;
+  transition: all ease 0.2s;
 }
 
 input,
@@ -324,6 +326,11 @@ input[type="button"] {
   padding: 8px 16px;
   font-size: 16px;
   border-radius: 4px;
+}
+
+input[type="button"]:hover {
+  opacity: 0.8;
+  cursor: pointer;
 }
 
 .disabled {

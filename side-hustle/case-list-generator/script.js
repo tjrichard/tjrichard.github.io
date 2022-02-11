@@ -307,7 +307,7 @@ function generateList() {
     // CSV 다운로드 버튼을 CTA 버튼으로 추가 제공
     var CSV = generatedValue.join('\n');
     window.URL = window.webkitURL || window.URL;
-    var contentType = 'text/csv';
+    var contentType = 'text/csv; charset=utf-8';
     var csvFile = new Blob([CSV], {type: contentType});
     var a = document.createElement('a');
         a.setAttribute("id","download");
@@ -317,7 +317,6 @@ function generateList() {
         // a.setAttribute("download","generated-list.csv");
         a.download = 'generated-list.csv';
         a.setAttribute("href",window.URL.createObjectURL(csvFile));
-        a.setAttribute("charset","utf-8");
         a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
     btnArea.appendChild(a);
 }

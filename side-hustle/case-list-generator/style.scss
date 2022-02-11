@@ -20,6 +20,7 @@ html {
 *::before,
 *::after {
     box-sizing: inherit;
+    transition: all ease 0.2s;
 }
 
 input,
@@ -271,6 +272,10 @@ input[type="button"] {
     padding: 8px 16px;
     font-size: 16px;
     border-radius: 4px;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
 }
 
 .disabled {
