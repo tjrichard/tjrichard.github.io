@@ -296,15 +296,8 @@ function generateList() {
     // 리스트 생성 버튼 secondary 로 하이라키 낮추기
     var btn = document.getElementById("generateList");
     btn.setAttribute("class","secondary");
-    
-    // 이미 다운로드 버튼이 있는지 확인, 있다면 기존 다운로드 버튼 제거
-    var btnArea = document.getElementById("buttonArea");
-    if(!document.getElementById("download")){}else{
-        document.getElementById("download").remove();
-    }
-    
 
-    // CSV 다운로드 버튼을 CTA 버튼으로 표
+    // CSV 다운로드 버튼을 CTA 버튼으로 표시
     var CSV = generatedValue.join('\n');
     window.URL = window.webkitURL || window.URL;
     var contentType = 'text/csv; charset=utf-8';
