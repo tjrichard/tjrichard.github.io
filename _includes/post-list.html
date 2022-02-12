@@ -4,10 +4,10 @@
             {% if page.is_list-img == true %}
                 {% if page.list-img == nil -%}
                     {% if page.article == true -%}
-                        <img src="../images/daily-article.png" class="c-list__img" alt='{{ post.title }}'>
+                        <img src="../images/daily-article.png" class="c-list__img" loading="lazy" alt='{{ page.title }}'>
                     {% endif -%}
                 {% else %}
-                    <img src="{{ page.list-img }}" class="c-list__img" alt='{{ post.title }}'>
+                    <img src="{{ page.list-img }}" class="c-list__img" loading="lazy" alt='{{ page.title }}'>
                 {% endif -%}
             {% endif %}
             <p class="c-list__type">
