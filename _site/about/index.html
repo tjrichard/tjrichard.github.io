@@ -104,9 +104,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <hr />
 
-<p><a href="/assets/Resume_Seunghwan_1908.pdf" target="_blank" rel="nofollow" id="resume" onclick="downloadResume(resume)">🧑🏻‍💻이력서</a> / <a href="/assets/Portfolio_Seunghwan_1906.pdf" target="_blank" rel="nofollow" id="portfolio" onclick="downloadPortfolio(portfolio)">🏄🏻‍♂️포트폴리오</a></p>
-
-<p><em>last update : 19.08</em></p>
+<p><a href="/assets/Resume_Seunghwan_2202.pdf" target="_blank" rel="nofollow" id="resume" onclick="downloadResume(resume)">🧑🏻‍💻이력서</a> <em>(last update : 22.02)</em><br />
+<a href="/assets/Portfolio_Seunghwan_1906.pdf" target="_blank" rel="nofollow" id="portfolio" onclick="downloadPortfolio(portfolio)">🏄🏻‍♂️포트폴리오</a>  <em>(last update : 19.08)</em></p>
 
       </div>
     </article>
@@ -225,8 +224,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   function downloadResume(target) {
     var href = target.href;
-    var len = document.getElementsByTagName('p').length;
-    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14, 19);
+    var resume = document.getElementById("resume");
+    var date = resume.href.substring(resume.length - 8, resume.length - 4)
     analytics.track("Download Resume", {
       url: "/about/",
       target: href,
@@ -236,7 +235,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "contact": true,
       "download": {
         "Category": "이력서",
-        "last updated": date
+        "last updated": '22.02'
       }
     })
   };

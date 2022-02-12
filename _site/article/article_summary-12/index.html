@@ -361,8 +361,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   function downloadResume(target) {
     var href = target.href;
-    var len = document.getElementsByTagName('p').length;
-    var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14, 19);
+    var resume = document.getElementById("resume");
+    var date = resume.href.substring(resume.length - 8, resume.length - 4)
     analytics.track("Download Resume", {
       url: "/article/article_summary-12/",
       target: href,
@@ -372,7 +372,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       "contact": true,
       "download": {
         "Category": "이력서",
-        "last updated": date
+        "last updated": '22.02'
       }
     })
   };
