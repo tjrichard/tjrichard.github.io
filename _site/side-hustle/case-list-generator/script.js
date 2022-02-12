@@ -45,13 +45,18 @@ userAgent = navigator.userAgent.toLowerCase();
 
 /* Case List Generator */
 var catListCount = 2;
+var abc = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','AA','AB','AC','AD','AE','AF','AG','AH','AI','AJ','AK','AL','AM','AN','AO','AP','AQ','AR','AS','AT','AU','AV','AW','AX','AY','AZ','BA','BB','BC','BD','BE','BF','BG','BH','BI','BJ','BK','BL','BM','BN','BO','BP','BQ','BR','BS','BT','BU','BV','BW','BX','BY','BZ','CA','CB','CC','CD','CE','CF','CG','CH','CI','CJ','CK','CL','CM','CN','CO','CP','CQ','CR','CS','CT','CU','CV','CW','CX','CY','CZ','DA','DB','DC','DD','DE','DF','DG','DH','DI','DJ','DK','DL','DM','DN','DO','DP','DQ','DR','DS','DT','DU','DV','DW','DX','DY','DZ','EA','EB','EC','ED','EE','EF','EG','EH','EI','EJ','EK','EL','EM','EN','EO','EP','EQ','ER','ES','ET','EU','EV','EW','EX','EY','EZ','FA','FB','FC','FD','FE','FF','FG','FH','FI','FJ','FK','FL','FM','FN','FO','FP','FQ','FR','FS','FT','FU','FV','FW','FX','FY','FZ','GA','GB','GC','GD','GE','GF','GG','GH','GI','GJ','GK','GL','GM','GN','GO','GP','GQ','GR','GS','GT','GU','GV','GW','GX','GY','GZ','HA','HB','HC','HD','HE','HF','HG','HH','HI','HJ','HK','HL','HM','HN','HO','HP','HQ','HR','HS','HT','HU','HV','HW','HX','HY','HZ','IA','IB','IC','ID','IE','IF','IG','IH','II','IJ','IK','IL','IM','IN','IO','IP','IQ','IR','IS','IT','IU','IV','IW','IX','IY','IZ','JA','JB','JC','JD','JE','JF','JG','JH','JI','JJ','JK','JL','JM','JN','JO','JP','JQ','JR','JS','JT','JU','JV','JW','JX','JY','JZ','KA','KB','KC','KD','KE','KF','KG','KH','KI','KJ','KK','KL','KM','KN','KO','KP','KQ','KR','KS','KT','KU','KV','KW','KX','KY','KZ','LA','LB','LC','LD','LE','LF','LG','LH','LI','LJ','LK','LL','LM','LN','LO','LP','LQ','LR','LS','LT','LU','LV','LW','LX','LY','LZ','MA','MB','MC','MD','ME','MF','MG','MH','MI','MJ','MK','ML','MM','MN','MO','MP','MQ','MR','MS','MT','MU','MV','MW','MX','MY','MZ','NA','NB','NC','ND','NE','NF','NG','NH','NI','NJ','NK','NL','NM','NN','NO','NP','NQ','NR','NS','NT','NU','NV','NW','NX','NY','NZ','OA','OB','OC','OD','OE','OF','OG','OH','OI','OJ','OK','OL','OM','ON','OO','OP','OQ','OR','OS','OT','OU','OV','OW','OX','OY','OZ','PA','PB','PC','PD','PE','PF','PG','PH','PI','PJ','PK','PL','PM','PN','PO','PP','PQ','PR','PS','PT','PU','PV','PW','PX','PY','PZ','QA','QB','QC','QD','QE','QF','QG','QH','QI','QJ','QK','QL','QM','QN','QO','QP','QQ','QR','QS','QT','QU','QV','QW','QX','QY','QZ','RA','RB','RC','RD','RE','RF','RG','RH','RI','RJ','RK','RL','RM','RN','RO','RP','RQ','RR','RS','RT','RU','RV','RW','RX','RY','RZ','SA','SB','SC','SD','SE','SF','SG','SH','SI','SJ','SK','SL','SM','SN','SO','SP','SQ','SR','SS','ST','SU','SV','SW','SX','SY','SZ','TA','TB','TC','TD','TE','TF','TG','TH','TI','TJ','TK','TL','TM','TN','TO','TP','TQ','TR','TS','TT','TU','TV','TW','TX','TY','TZ','UA','UB','UC','UD','UE','UF','UG','UH','UI','UJ','UK','UL','UM','UN','UO','UP','UQ','UR','US','UT','UU','UV','UW','UX','UY','UZ','VA','VB','VC','VD','VE','VF','VG','VH','VI','VJ','VK','VL','VM','VN','VO','VP','VQ','VR','VS','VT','VU','VV','VW','VX','VY','VZ','WA','WB','WC','WD','WE','WF','WG','WH','WI','WJ','WK','WL','WM','WN','WO','WP','WQ','WR','WS','WT','WU','WV','WW','WX','WY','WZ','XA','XB','XC','XD','XE','XF','XG','XH','XI','XJ','XK','XL','XM','XN','XO','XP','XQ','XR','XS','XT','XU','XV','XW','XX','XY','XZ','YA','YB','YC','YD','YE','YF','YG','YH','YI','YJ','YK','YL','YM','YN','YO','YP','YQ','YR','YS','YT','YU','YV','YW','YX','YY','YZ','ZA','ZB','ZC','ZD','ZE','ZF','ZG','ZH','ZI','ZJ','ZK','ZL','ZM','ZN','ZO','ZP','ZQ','ZR','ZS','ZT','ZU','ZV','ZW','ZX','ZY','ZZ'];
+var valueExamples = [['안드로이드', 'iOS', '웹'],['오너', '대행사', '미디어 파트너'],['red', 'blue', 'green', 'gray'],[100, 200, 300, 400],['Active', 'Inactive', 'Error'],['설정 이전', '설정 완료'],['무료', '유료']];
+const randomNum = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
 function addCat() {
     var catList = document.getElementById("catList")
     var nextCatListCount = catListCount++;
     var nextCatListId = "cat" + nextCatListCount;
     var nextCatDeleteId = "delete" + nextCatListCount;
-    var nextCatListTitle = "카테고리 타이틀 " + nextCatListCount;
+    var nextCatListTitle = abc[nextCatListCount - 1] + " 칼럼 카테고리 타이틀";
     
     var catContainer = document.createElement("div");
         catContainer.setAttribute("class","catContainer");
@@ -72,7 +77,8 @@ function addCat() {
         catTitle.setAttribute("class","catTitle");
     var catValue = document.createElement("textarea");
         catValue.setAttribute("type", "input");
-        catValue.setAttribute("placeholder", "카테고리 케이스. 콤마로 구분합니다. 필요시 큰/작은 따옴표로 그룹핑 가능합니다 e.g. '안드로이드', 'iOS', '웹'");
+        var placeholder = "카테고리 케이스. 콤마로 구분합니다. 필요시 큰/작은 따옴표로 그룹핑 가능합니다 e.g. " + valueExamples[randomNum(0,valueExamples.length - 1)];
+        catValue.setAttribute("placeholder", placeholder);
         catValue.setAttribute("class","catValue");
         catValue.setAttribute("rows", "4");
         catContainer.appendChild(catTitle);
@@ -100,7 +106,7 @@ function addCat() {
 
 function deleteCat(element) {
     var catList = document.getElementById("catList")
-    var catListCount = catList.childElementCount - 3;
+    var catListCount = catList.childElementCount - 1;
     var parent = element.parentElement;
     if(catListCount == 1){
         document.getElementsByTagName("input")[0].value = '';
@@ -296,27 +302,14 @@ function generateList() {
     // 리스트 생성 버튼 secondary 로 하이라키 낮추기
     var btn = document.getElementById("generateList");
     btn.setAttribute("class","secondary");
-    
-    // 이미 다운로드 버튼이 있는지 확인, 있다면 기존 다운로드 버튼 제거
-    var btnArea = document.getElementById("buttonArea");
-    if(!document.getElementById("download")){}else{
-        document.getElementById("download").remove();
-    }
-    
 
-    // CSV 다운로드 버튼을 CTA 버튼으로 추가 제공
+    // CSV 다운로드 버튼을 CTA 버튼으로 표시
     var CSV = generatedValue.join('\n');
     window.URL = window.webkitURL || window.URL;
-    var contentType = 'text/csv';
+    var contentType = 'text/csv; charset=utf-8';
     var csvFile = new Blob([CSV], {type: contentType});
-    var a = document.createElement('a');
-        a.setAttribute("id","download");
-        // a.setAttribute("type","button");
-        // a.setAttribute("value","CSV 다운로드");
-        a.textContent = "CSV 다운로드"
-        // a.setAttribute("download","generated-list.csv");
-        a.download = 'generated-list.csv';
+    var a = document.getElementById('download');
+        a.style.display = "initial";
         a.setAttribute("href",window.URL.createObjectURL(csvFile));
         a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
-    btnArea.appendChild(a);
 }

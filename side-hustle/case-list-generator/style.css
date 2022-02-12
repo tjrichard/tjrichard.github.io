@@ -22,8 +22,6 @@ html {
 *::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
-  -webkit-transition: all ease 0.2s;
-  transition: all ease 0.2s;
 }
 
 input,
@@ -112,12 +110,22 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   height: 100vh;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   font-family: 'Noto Sans KR', 'Apple SD Gothic Neo', 'Sans-serif';
   background-color: #F9F8Fa;
+}
+
+#headerArea {
+  margin-bottom: 20px;
+  display: block;
+  width: 90vw;
 }
 
 .back--button {
@@ -163,7 +171,6 @@ body {
   background-color: rgba(0, 0, 0, 0.06);
   -webkit-transition: 0.2s all ease;
   transition: 0.2s all ease;
-  margin-left: 10px;
 }
 
 .delete--button:hover {
@@ -179,11 +186,16 @@ body {
 }
 
 #catList {
-  width: 40vw;
-  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  grid-auto-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 90vw;
   overflow: auto;
   background-color: #fff;
-  padding: 40px 40px 80px;
+  padding: 40px 20px;
 }
 
 #catList h1 {
@@ -197,34 +209,42 @@ body {
 }
 
 .catContainer {
-  margin-bottom: 10px;
   width: 100%;
 }
 
 input[type="input"], textarea[type="input"] {
   width: 100%;
-  outline: 1px solid rgba(0, 0, 0, 0.62);
+  max-width: 400px;
+  border: 1px solid #e2e3e3;
   padding: 4px 8px;
-  border-radius: 3px;
-  margin-bottom: 10px;
 }
 
 input[type="input"]:hover, textarea[type="input"]:hover {
-  outline: 1px solid rgba(0, 0, 0, 0.48);
+  border: 1px solid rgba(0, 0, 0, 0.08);
 }
 
 input[type="input"]:focus, textarea[type="input"]:focus {
-  outline: 2px solid #4139EF;
+  border: 1px solid #4139EF;
+}
+
+input[type="input"] {
+  background-color: #f8f9fa;
+  color: #5f6368;
 }
 
 .cat {
-  width: 100%;
+  width: 400px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-right: 20px;
 }
 
 .catTitle {
@@ -254,7 +274,7 @@ input[type="input"]:focus, textarea[type="input"]:focus {
 }
 
 #index {
-  margin: 0 20px;
+  margin: 20px 0;
 }
 
 #index p {
@@ -276,7 +296,7 @@ input[type="input"]:focus, textarea[type="input"]:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40vw;
+  width: 90vw;
   min-height: 200px;
   background-color: #fff;
   border-radius: 14px;
@@ -299,7 +319,11 @@ input[type="input"]:focus, textarea[type="input"]:focus {
 }
 
 #addCat {
-  background-color: #5c6bf3;
+  border: 1px dashed #5c6bf3;
+  color: #5c6bf3;
+  height: 34px;
+  width: 160px;
+  line-height: 10px;
 }
 
 #generateList {
@@ -330,6 +354,8 @@ input[type="button"] {
   padding: 8px 16px;
   font-size: 16px;
   border-radius: 4px;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
 }
 
 input[type="button"]:hover {
@@ -339,7 +365,9 @@ input[type="button"]:hover {
 
 .disabled {
   cursor: not-allowed !important;
-  background-color: #77868B !important;
+  background-color: #D7DEE1 !important;
+  border: 1px solid #D7DEE1 !important;
+  color: #77868B !important;
 }
 
 .secondary {
