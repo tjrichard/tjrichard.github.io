@@ -376,6 +376,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     })
   };
+  function openResume(target) {
+    var href = target.href;
+    analytics.track("Open Resume", {
+      url: "/article/article_summary-12/",
+      target: href,
+      title: "[Slack] 슬랙이 API를 디자인 하는 방법"
+    })
+    analytics.identify({
+      "contact": true,
+      "download": {
+        "Category": "이력서",
+        "last updated": '22.02'
+      }
+    })
+  };
+
   function downloadPortfolio(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;

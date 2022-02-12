@@ -377,6 +377,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     })
   };
+  function openResume(target) {
+    var href = target.href;
+    analytics.track("Open Resume", {
+      url: "/article/article_summary-25/",
+      target: href,
+      title: "[토스] 토스가 보이스톤 메이커를 만들게 된 배경"
+    })
+    analytics.identify({
+      "contact": true,
+      "download": {
+        "Category": "이력서",
+        "last updated": '22.02'
+      }
+    })
+  };
+
   function downloadPortfolio(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;

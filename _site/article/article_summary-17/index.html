@@ -426,6 +426,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     })
   };
+  function openResume(target) {
+    var href = target.href;
+    analytics.track("Open Resume", {
+      url: "/article/article_summary-17/",
+      target: href,
+      title: "스타트업 업계에서 자주 나오는 용어를 만화로 이해하기"
+    })
+    analytics.identify({
+      "contact": true,
+      "download": {
+        "Category": "이력서",
+        "last updated": '22.02'
+      }
+    })
+  };
+
   function downloadPortfolio(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;

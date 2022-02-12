@@ -392,6 +392,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     })
   };
+  function openResume(target) {
+    var href = target.href;
+    analytics.track("Open Resume", {
+      url: "/article/article_summary-52/",
+      target: href,
+      title: "포트폴리오 작성에 가장 도움이 되는  프레임워크 : STAR"
+    })
+    analytics.identify({
+      "contact": true,
+      "download": {
+        "Category": "이력서",
+        "last updated": '22.02'
+      }
+    })
+  };
+
   function downloadPortfolio(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;

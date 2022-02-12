@@ -434,6 +434,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     })
   };
+  function openResume(target) {
+    var href = target.href;
+    analytics.track("Open Resume", {
+      url: "/article/article_summary-63/",
+      target: href,
+      title: "디자이너가 사용자 오류를 방지하는 방법"
+    })
+    analytics.identify({
+      "contact": true,
+      "download": {
+        "Category": "이력서",
+        "last updated": '22.02'
+      }
+    })
+  };
+
   function downloadPortfolio(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;

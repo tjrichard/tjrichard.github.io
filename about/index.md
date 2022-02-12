@@ -16,5 +16,6 @@ about: true
 
 ---
 
-<a href='{{ '/assets/Resume_Seunghwan_2202.pdf' | prepend: site.baseurl }}' target='_blank' rel='nofollow' id='resume' onclick='downloadResume(resume)'>🧑🏻‍💻이력서</a> _(last update : 22.02)_  
+<a href='{{ '/assets/Resume_Seunghwan_2202.pdf' | prepend: site.baseurl }}' target='_blank' rel='nofollow' id='resume' onclick='downloadResume(resume)'>🧑🏻‍💻이력서 (PDF)</a> / <a href='https://my.surfit.io/w/518482160' target='_blank' rel='nofollow' id='resume_surfit' onclick='openResume(resume_surfit)'>(링크)</a> _(last update : 22.02)_  
 <a href='{{ '/assets/Portfolio_Seunghwan_1906.pdf' | prepend: site.baseurl }}' target='_blank' rel='nofollow' id='portfolio' onclick='downloadPortfolio(portfolio)'>🏄🏻‍♂️포트폴리오</a>  _(last update : 19.08)_
+

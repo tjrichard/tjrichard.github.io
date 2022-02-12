@@ -104,8 +104,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <hr />
 
-<p><a href="/assets/Resume_Seunghwan_2202.pdf" target="_blank" rel="nofollow" id="resume" onclick="downloadResume(resume)">🧑🏻‍💻이력서</a> <em>(last update : 22.02)</em><br />
+<p><a href="/assets/Resume_Seunghwan_2202.pdf" target="_blank" rel="nofollow" id="resume" onclick="downloadResume(resume)">🧑🏻‍💻이력서 (PDF)</a> / <a rel="nofollow noopener noreferrer" target="_blank" href="https://my.surfit.io/w/518482160" target="_blank" rel="nofollow" id="resume_surfit" onclick="openResume(resume_surfit)">(링크)</a> <em>(last update : 22.02)</em><br />
 <a href="/assets/Portfolio_Seunghwan_1906.pdf" target="_blank" rel="nofollow" id="portfolio" onclick="downloadPortfolio(portfolio)">🏄🏻‍♂️포트폴리오</a>  <em>(last update : 19.08)</em></p>
+
 
       </div>
     </article>
@@ -239,6 +240,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     })
   };
+  function openResume(target) {
+    var href = target.href;
+    analytics.track("Open Resume", {
+      url: "/about/",
+      target: href,
+      title: "Seunghwan Jang"
+    })
+    analytics.identify({
+      "contact": true,
+      "download": {
+        "Category": "이력서",
+        "last updated": '22.02'
+      }
+    })
+  };
+
   function downloadPortfolio(target) {
     var href = target.href;
     var len = document.getElementsByTagName('p').length;
