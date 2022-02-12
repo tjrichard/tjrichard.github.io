@@ -7,7 +7,7 @@ tags: [PM/PO, 디자이너 성장, 마인드셋, 일하는 방법]
 date: 2021-11-04 14:30:00
 article: true
 is_list-img: true
-list-img: 'http://t1.daumcdn.net/brunch/service/user/7pqA/image/_6yg5JMGeNlCzIUCprkuZ4KyI-Q.jpg'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/7pqA/image/_6yg5JMGeNlCzIUCprkuZ4KyI-Q.jpg'
 post-header: false
 order: 47
 ---

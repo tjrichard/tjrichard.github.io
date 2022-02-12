@@ -7,7 +7,7 @@ tags: [디자이너 성장]
 date: 2021-11-26 14:30:00
 article: true
 is_list-img: true
-list-img: 'https://img1.daumcdn.net/thumb/R1280x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/4i7K/image/1KsLlS6uHHxMx5q_FEP1BE5Pt4I.png'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/4i7K/image/1KsLlS6uHHxMx5q_FEP1BE5Pt4I.png'
 post-header: false
 order: 62
 ---

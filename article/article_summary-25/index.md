@@ -7,7 +7,7 @@ tags: [UX Writing, 경험 공유, 실 사례, 일하는 방법]
 date: 2021-09-30 14:30:00
 article: true
 is_list-img: true
-list-img: 'http://t1.daumcdn.net/brunch/service/user/1SwI/image/lpR07slC6MzgVjC_BAuUkMfmSPc.png'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/1SwI/image/lpR07slC6MzgVjC_BAuUkMfmSPc.png'
 post-header: false
 order: 25
 ---

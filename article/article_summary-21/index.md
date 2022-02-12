@@ -7,7 +7,7 @@ tags: [UX Writing, 직무 분석]
 date: 2021-09-16 14:30:00
 article: true
 is_list-img: true
-list-img: 'http://t1.daumcdn.net/brunch/service/user/A1Z/image/eocQcbEr9bs_CoBX4O8x0ZXaAGs.jpg'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/A1Z/image/eocQcbEr9bs_CoBX4O8x0ZXaAGs.jpg'
 post-header: false
 order: 21
 ---

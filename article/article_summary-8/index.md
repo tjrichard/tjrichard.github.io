@@ -7,7 +7,7 @@ tags: [UX Writing, 가이드]
 date: 2021-08-02 14:30:00
 article: true
 is_list-img: true
-list-img: 'http://t1.daumcdn.net/brunch/service/user/2Uw/image/ptGPAT50tzUWgCrL09N7trWUxJ8.jpg'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/2Uw/image/ptGPAT50tzUWgCrL09N7trWUxJ8.jpg'
 post-header: false
 order: 8
 ---

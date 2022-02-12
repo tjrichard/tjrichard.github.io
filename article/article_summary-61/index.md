@@ -7,7 +7,7 @@ tags: [경험 공유, 디자이너 성장, 마인드셋, 비즈니스 전략, �
 date: 2021-11-25 14:30:00
 article: true
 is_list-img: true
-list-img: 'https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/3SO/image/yUxs4m5Ut2LZ8mUXp8gDIushUhc'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/3SO/image/yUxs4m5Ut2LZ8mUXp8gDIushUhc'
 post-header: false
 order: 61
 ---

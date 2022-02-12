@@ -7,7 +7,7 @@ tags: [A/B테스팅, 경험 공유, 데이터 분석, 디자인 분석, 사용�
 date: 2021-10-27 14:30:00
 article: true
 is_list-img: true
-list-img: 'https://t1.daumcdn.net/thumb/R1280x0.fpng/?fname=http://t1.daumcdn.net/brunch/service/user/89Po/image/nOsURej53UFAD3jlwMMvyEoPcRM.png'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/89Po/image/nOsURej53UFAD3jlwMMvyEoPcRM.png'
 post-header: false
 order: 42
 ---

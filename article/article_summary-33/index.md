@@ -7,7 +7,7 @@ tags: [독후감, 스타트업, 일하는 방법]
 date: 2021-10-14 14:30:00
 article: true
 is_list-img: true
-list-img: 'http://t1.daumcdn.net/brunch/service/user/2cqn/image/0XgOILC95CeZ9Umr7RondM58LuM.jpg'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/2cqn/image/0XgOILC95CeZ9Umr7RondM58LuM.jpg'
 post-header: false
 order: 33
 ---

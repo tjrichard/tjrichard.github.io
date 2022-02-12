@@ -7,7 +7,7 @@ tags: [경험 공유, 실 사례, 일하는 방법, 직무 분석]
 date: 2021-09-20 14:30:00
 article: true
 is_list-img: true
-list-img: 'http://t1.daumcdn.net/brunch/service/user/1Diw/image/D-N19yIsD0hiKds7hxlaByRANmI.jpg'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/1Diw/image/D-N19yIsD0hiKds7hxlaByRANmI.jpg'
 post-header: false
 order: 22
 ---

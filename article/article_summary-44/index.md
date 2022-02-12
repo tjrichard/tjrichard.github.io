@@ -7,7 +7,7 @@ tags: [마인드셋, 일하는 방법]
 date: 2021-10-29 14:30:00
 article: true
 is_list-img: true
-list-img: 'https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/KW8/image/3onqWssh0GvgOXc582tn4mEkwOY.jpeg'
+list-img: 'https://t1.daumcdn.net/brunch/service/user/KW8/image/3onqWssh0GvgOXc582tn4mEkwOY.jpeg'
 post-header: false
 order: 44
 ---
