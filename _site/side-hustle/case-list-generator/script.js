@@ -312,4 +312,10 @@ function generateList() {
         a.style.display = "initial";
         a.setAttribute("href",window.URL.createObjectURL(csvFile));
         a.dataset.downloadurl = [contentType, a.download, a.href].join(':');
+
+    analytics.track('Generate List', {
+        'Generated Row Count': generatedRowCount,
+        'Category Count': catList.childElementCount - 1,
+        title: "Case List Generator"
+    })
 }
