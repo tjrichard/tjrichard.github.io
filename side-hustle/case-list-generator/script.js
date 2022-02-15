@@ -102,6 +102,10 @@ function addCat() {
     cat.appendChild(deleteIcon);
     catList.appendChild(cat);
     catList.appendChild(btn);
+
+    // 가로 스크롤을 우측으로 고정함
+    var xWidth = catList.scrollWidth;
+    catList.scroll(xWidth,0);
 }
 
 function deleteCat(element) {
