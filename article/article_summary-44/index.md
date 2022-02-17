@@ -16,10 +16,6 @@ order: 44
  🔗 이 글은 김형석님이 <a href='https://brunch.co.kr/@hyungsukkim/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@hyungsukkim/58' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 직장에서 사랑받는 주니어, 일잘러가 되는 방법: 질문의 기술
-
 질문하는것은 매우 중요합니다. 하지만 무제한적인 호기심은 가장 먼저 스스로에게 물어야 하고, 다른 사람에게 질문을 할 때에는 그 목적이 분명해야 합니다.
 
 질문을 하는 제 1 목적은 '**`모르는 것에 대한 답`**'을 얻기 위함입니다. 아는 것도 물어보고, 모르는 것도 물어보는것은 민폐입니다. 바쁘디 바쁜 동료의 시간을 의미없이 사용해버리기만 합니다. 책임을 회피하기 위해 질문을 이용하는것은 생각하는 머리가 없다고 고백하는것과 다름 없습니다. 책임을 져야 할 것 같은 느낌이 왔다면 누군가의 말에 그 책임을 전가시키는게 아니라 이 행동을 하지 않아야 하는 이유를 설득해야 합니다. 

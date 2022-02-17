@@ -39,11 +39,11 @@ order: 2
 
 Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조를 어떻게 짤 것인가를 먼저 생각해봐야 한다. 왜냐하면 많은 수의 단순한, 미니멀한 Jekyll 테마는 다음과 같은 블로그 구조를 가지고 있기 때문이다.
 
-![Minimal Jekyll theme Structure](img/Minimal%20Jekyll%20Structure.png)
+![Minimal Jekyll theme Structure](img/Minimal%20Jekyll%20Structure.png){:class="lazyload"}
 
 만약 당신이 만들고 싶은 블로그의 구조가 더 깊고 다양하다면 테마에서 제공하는 구조를 활용해도 어려울 수 있다.
 
-![Your Jekyll theme Structure](img/Your%20Blog%20Structure.png)
+![Your Jekyll theme Structure](img/Your%20Blog%20Structure.png){:class="lazyload"}
 
 테마 안에서 스타일과 인터랙션을 수정하는 것 보다 테마의 구조를 변경하는 것이 더 난이도가 높으므로 처음 테마를 결정할 때 본인의 블로그 구조를 먼저 구상 해두는 것이 필요하다.
 
@@ -78,7 +78,7 @@ Jekyll 테마를 선택하기 전 내가 만들려고 하는 블로그의 구조
 
 위에서 정했던 테마 선택 기준에서 내가 원했던 태그 기능, Table of Contents 기능을 제공하는 [Huxpro](https://github.com/Huxpro/huxpro.github.io) 테마를 이용해 블로그를 만들어보기로 했다. ~~중국어로 되어있긴 하지만, 코드는 영어겠지..~~
 
-![Hupro Blog Demo](img/screenshot1.png)
+![Hupro Blog Demo](img/screenshot1.png){:class="lazyload"}
 
 Huxpro 테마로 만든 Hux Blog 페이지
 
@@ -86,9 +86,9 @@ Huxpro 테마로 만든 Hux Blog 페이지
 
 설치려고 하는 테마를 정했다면, 해당 테마의 github 저장소에 들어가자.
 
-![Fork](img/Fork.png)
+![Fork](img/Fork.png){:class="lazyload"}
 
-![Fork at](img/Fork_at.png)
+![Fork at](img/Fork_at.png){:class="lazyload"}
 
 우측 상단에 있는 `Fork`[^2] 버튼을 클릭 하면, 복사하기를 원하는 저장소를 선택할 수 있을 것이다. 준비된 블로그용 저장소를 선택해 테마의 코드를 복사하자.
 
@@ -98,7 +98,7 @@ Huxpro 테마로 만든 Hux Blog 페이지
 
 테마를 Fork하니 1편에서 설정했던 저장소 이름과 다르게 개별 저장소로 생성이 되었다. 1편에서 만들었던 저장소는 다른 이름으로 변경 혹은 삭제 후, 복사 해온 저장소의 이름을 변경해주자. 1편에서 한 설명과 같이, 저장소의 이름을 본인의 `username.github.io` 로 변경해야 한다. 각 저장소의 Settings 메뉴에 가면 기존 저장소를 삭제할 수 있고, 새로운 저장소 이름을 변경할 수 있다.
 
-![Repo name change](img/repo_name_change.png)
+![Repo name change](img/repo_name_change.png){:class="lazyload"}
 
 저장소 이름을 변경했으니, 해당 주소로 들어가면 우리가 Fork 한 테마가 그대로 보이는 것을 확인할 수 있다!
 
@@ -106,14 +106,14 @@ Huxpro 테마로 만든 Hux Blog 페이지
 
 자신의 깃헙 저장소에 테마 코드를 복사하고 저장소 이름도 내 username으로 변경도 완료했으니, 이를 불러오고 수정할 수 있도록 본인의 컴퓨터 로컬에 저장하고 편하게 수정할 수 있도록 Github Desktop에서 열도록 하자. 저장소를 Clone한 후 나의 경우엔 Fork 한 대상인 Huxpro에 contribute 할 것인지 나의 프로젝트로 사용할 것인지 물어보는데, 우리는 개인 블로그를 만들 것이기 때문에 아래 선택지인 개인 프로젝트 용으로 사용할 것으로 선택하자.
 
-![Select for my own project](img/for_my_own_project.png)
+![Select for my own project](img/for_my_own_project.png){:class="lazyload"}
 
 
 #### 4. config.yml 수정하기
 
 config.yml 파일은 테마의 가장 기본적인 설정들을 관리하는 파일이다. 보통 저장소의 가장 바깥에 있으니 찾기 쉬울 것이다. config 파일 내용은 테마마다 지원하는 기능, 구조가 달라 설정 가능한 항목들은 제각각이겠지만 나는 내가 복사한 Huxpro 테마의 설정들을 기준으로 설명해보겠다.
 
-![change config file](img/change_config_file.png)
+![change config file](img/change_config_file.png){:class="lazyload"}
 
 블로그 안에 내용과 관계 없이 블로그 사이트를 구성하는 가장 기초적인 세팅만 변경해보자.
 

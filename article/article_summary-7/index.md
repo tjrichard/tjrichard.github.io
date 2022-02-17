@@ -21,6 +21,7 @@ order: 7
 2018년 1월 글이지만 제가 B2B, SaaS를 디자인하면서 공감이 되는 글이라 번역에 옮깁니다.
 
 ## ⚡️ 요약
+
 **1. 기능적 복잡도 😓**
 > B2B 프로덕트는 복잡합니다. 사용자도 B2B 프로덕트를 익혀 잘 사용하기까지 리소스를 투자해야 합니다. 이 말은 B2B 프로덕트의 기능 릴리즈는 아주 비싸다는 말입니다. 하나의 기능을 릴리즈하기 전에 충분히 디자인씽킹 하고, 모든 가능성을 점검한 후 인터페이스를 디자인해야 합니다.
 
@@ -41,7 +42,8 @@ order: 7
 
 ---
 
-![B2B design](img/B2B_design.png)
+![B2B design](article_summary-7/img/B2B_design.png){:class="lazyload"}{:class="lazyload"}
+
 
 ## Intro
 
@@ -57,7 +59,7 @@ order: 7
 > An enterprise application is a computer software used to satisfy the needs of an organization rather than those of individual users.  
 기업용 애플리케이션은 개인 사용자보다 조직의 니즈를 충족시키기 위한 컴퓨터 소프트웨어이다.
 
-![B2B product example](img/b2b_product_example.png)
+![B2B product example](article_summary-7/img/b2b_product_example.png){:class="lazyload"}
 
 <figcaption>한 번쯤 봤을 기업용 프로덕트의 예시</figcaption>
 
@@ -85,7 +87,7 @@ B2B 프로덕트 디자인은 생각만큼 많이 다르지는 않다. 모든 �
 
 B2B 앱은 여러 데이터 상태, 시각화 옵션, 관리 작업, 여러 사용자의 협업, 다른 소프트웨어와 연동과 같이 셀 수 없는 요소가 있기 때문에 복잡도 규모는 보통 B2C 앱보다 더 크다. 하나의 요구사항을 만족시키기 위한 모든 디자인 의사결정이 다른 여러 요구사항에 영향을 미치고, 종종 어떤 임팩트가 있을지 예상하기까지 어렵다. 겉보기에 간단해 보이는 기능을 추가하는데 온갖 종류의 엣지 케이스를 확인해야 하는 과정을 거쳐야만 한다.
 
-![Jira Example](img/jira_example.png)
+![Jira Example](article_summary-7/img/jira_example.png){:class="lazyload"}
 
 <figcaption>(2018년이라 현재 화면과 약간의 차이가 있습니다) 아틀라시안의 '지라'의 화면 : 복잡한 기능적 요구사항의 예시</figcaption>
 
@@ -115,7 +117,7 @@ B2B 프로덕트는 프로덕트 자체에 대한 사용자의 니즈를 넘어 
 
 또한 사용자들은 종종 현재 워크플로우와 루틴에 익숙해져 있어서 그들이 진짜로 원하는 것이 무엇인지 상상하기 힘들어한다. 그들이 말하는 기능과 옵션들은 프로덕트 혁신으로 향하는 길을 밝혀줄 수 없는 것을 말하는 것일 수도 있다.
 
-![User Needs](img/user_needs_example.png)
+![User Needs](article_summary-7/img/user_needs_example.png){:class="lazyload"}
 
 <figcaption>당신의 사용자들은 그냥 더 많은 것이 더 좋다고 생각할 수 있다</figcaption>
 
@@ -169,7 +171,7 @@ B2B 프로덕트는 기존 사용자 경험을 강화하는 것 보다 새로운
 
 ## 5. UX 일관성을 유지하기 😊
 
-![UX Challenges Survey](img/ux_challenges_survey.png)
+![UX Challenges Survey](article_summary-7/img/ux_challenges_survey.png){:class="lazyload"}
 
 <figcaption>출처: <a href='https://www.uxpin.com/enterprise-ux-design-2017-2018-industry-report' target='blank' rel='nofollow' id='outlink4' onclick='clickedOutlink(outlink4)'>
 Enterprise UX Industry Report 2017–2018</a></figcaption>

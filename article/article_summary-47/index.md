@@ -16,8 +16,6 @@ order: 47
  🔗 이 글은 김영욱님이 <a href='https://brunch.co.kr/@ywkim36/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@ywkim36/20' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 불확실성이 가득한 비즈니스 세상에서 PM/PO가 의사결정할 때 꾸준히 주의하고 극복해야 하는 4가지 인지편향을 소개합니다.
 
 ### 1. 확증 편향 (Confirmation Bias)

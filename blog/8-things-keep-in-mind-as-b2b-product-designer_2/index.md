@@ -39,7 +39,7 @@ order: 11
 
 ### (1) 더 나은 사용자 리서치를 할 수 있도록 환경을 준비해야 한다
 
-![디자이너와 사용자 간 거리](../8-things-keep-in-mind-as-b2b-product-designer_2/img/distance_between_designer_and_user.png)
+![디자이너와 사용자 간 거리](../8-things-keep-in-mind-as-b2b-product-designer_2/img/distance_between_designer_and_user.png){:class="lazyload"}
 
 <figcaption>디자이너와 사용자 간 거리</figcaption>
 
@@ -141,7 +141,7 @@ B2B 프로덕트 사용자들은 업무 시간 외에는 일반 서비스를 사
 
 **👉 이미 80점을 달성한 문제를 90점까지 끌어올리려는 노력 이전에, 더 많은 문제를 80점으로 해결하는 노력을 해야 하는 것은 당연합니다.**
 
-![B2B 프로덕트의 가치 요소](../8-things-keep-in-mind-as-b2b-product-designer_2/img/b2b_elements_of_value.png)
+![B2B 프로덕트의 가치 요소](../8-things-keep-in-mind-as-b2b-product-designer_2/img/b2b_elements_of_value.png){:class="lazyload"}
 
 <figcaption>B2B 프로덕트가 기본적으로 갖춰야 할 가치 요소는<br>'기능'과 비즈니스를 잘(effectiveness), 효율적으로(efficiency) 해결해줄 수 있도록 도와주는 것'입니다<br>출처: <a href='https://www.bain.com/insights/eov-b2b-infographic/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>B2B Elements of Value</a></figcaption>
 
@@ -163,7 +163,7 @@ B2B 프로덕트 사용자들은 업무 시간 외에는 일반 서비스를 사
 
 ### (8) 프로덕트의 성장 단계를 고려해야 한다
 
-![프로덕트 라이프 사이클](../8-things-keep-in-mind-as-b2b-product-designer_2/img/product_life_cycle.png)
+![프로덕트 라이프 사이클](../8-things-keep-in-mind-as-b2b-product-designer_2/img/product_life_cycle.png){:class="lazyload"}
 
 <figcaption>프로덕트 라이프 사이클. 현재 프로덕트의 성장 단계에 따라 비즈니스 목표가 달라진다.</figcaption>
 
@@ -208,7 +208,7 @@ B2B 프로덕트가 성숙한 만큼 시장이 성장하지 않습니다. 기존
 
 <span style="color: #4139EF;">**성숙기와 쇠퇴기에서 프로덕트가 정체되고 시장이 성장하지 않는 한계를 진정으로 해결하기 위해서는 프로덕트 라이프 사이클이 S 커브를 그려야 한다**</span>
 
-![프로덕트 라이프 사이클의 S 커브](../8-things-keep-in-mind-as-b2b-product-designer_2/img/s_curve.png)
+![프로덕트 라이프 사이클의 S 커브](../8-things-keep-in-mind-as-b2b-product-designer_2/img/s_curve.png){:class="lazyload"}
 
 <figcaption>프로덕트 라이프 사이클의 S 커브</figcaption>
 

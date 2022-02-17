@@ -16,10 +16,6 @@ order: 45
  🔗 이 글은 Jordan Bowman님이 <a href='https://uxtools.co/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://uxtools.co/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://uxtools.co/blog/best-ux-research-methods-in-a-pinch' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 어떤 상황에 어떤 UX 리서치 방법론을 사용해야 할까?
-
 발견하고자 하는 리서치 결과가 매번 다르기 때문에 각 상황에 가장 효율적인 UX 리서치 방법론이 필요합니다. 이 아티클에서는 다음 6가지 방법을 사용할 상황을 안내합니다.
 
 어떤 상황에 어떤 방법론을 사용해야 하는지 알기 위해서는 우리가 알아내고자 하는것이 무엇인지, 목표가 무엇인지, 어떤 문제를 해결하려고 하는지 스스로에게 질문해야 합니다.

@@ -16,8 +16,6 @@ order: 31
  🔗 이 글은 Victor Eduoh님이 <a href='https://openviewpartners.com/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://openviewpartners.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Openview</a>에 올린 <a href='https://openviewpartners.com/blog/product-onboarding-examples/#.YfpxPlgzb0o' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 ### 6가지 Product-led SaaS 온보딩 레슨
 
 Product-led Growth를 지향하는 프로덕트라면 Freemium이나 Trial 비즈니스 모델으로 새로운 사용자를 획득하고 있을 것입니다. 하지만 적절한 사용자 온보딩이 준비되어있지 않으면 새로 획득된 사용자는 다시 돌아오지 않을 수도 있습니다.

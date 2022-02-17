@@ -16,10 +16,6 @@ order: 43
  🔗 이 글은 Sacony님이 <a href='https://saconyreview.glivery.co.kr/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://glivery.co.kr/icons/favicon-96x96.png' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>글리버리</a>에 올린 <a href='https://saconyreview.glivery.co.kr/p/2265438233048' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 코인베이스는 어떻게 의사결정 할까?
-
 코인베이스는 사내 정치와 관료적인 의사결정 체계의 한계를 극복하고 노이즈를 줄여서 효율적인 결정을 위해  두 가지 방법을 사용합니다. 두 방법 모두 구글닥과 같이 모두가 함께 확인할 수 있고, 동시에 협업이 가능한 문서 형태로 커뮤니케이션 합니다.
 
 ### 1️⃣ Problem / Proposed Solution

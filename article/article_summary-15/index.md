@@ -16,7 +16,6 @@ order: 15
  🔗 이 글은 Lenny님이 <a href='https://www.lennysnewsletter.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.lennysnewsletter.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Substack</a>에 올린 <a href='https://www.lennysnewsletter.com/p/how-todays-fastest-growing-b2b-businesses' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
 
 > 빠르게 성장한 B2B 비즈니스는 어떻게 첫 고객을 확보했을까요? 우리가 잘 아는 슬랙, 피그마, 앰플리튜드, 아틀라시안, 드롭박스 등 B2B 솔루션들의 시작과 첫 고객을 확보한 방법에 대해 소개하고 있습니다. 
 

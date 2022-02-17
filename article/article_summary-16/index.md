@@ -16,8 +16,6 @@ order: 16
  🔗 이 글은 Lenny Rachitsky님이 <a href='https://future.a16z.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://future.a16z.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>a16z 블로그</a>에 올린 <a href='https://future.a16z.com/north-star-metrics/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > 내 프로덕트의 특징에 따라 더 잘 맞는 북극성 지표가 있을 수 있을까요? 저자는 북극성 지표를 6가지 카테고리로 나누고, 각 카테고리가 더 적합한 프로덕트 형태를 정의하고 있습니다. 다만 각 회사들이 한 카테고리의 북극성 지표만 가지고 있는 것은 아니라는 점을 인지해야 합니다.
 
 > 각 카테고리의 회사가 어떤 곳인지 들여다 보시면 저절로 고개를 끄덕일 수 있을 만큼 잘 분석한 글입니다.

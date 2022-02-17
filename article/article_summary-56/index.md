@@ -16,8 +16,6 @@ order: 56
  🔗 이 글은 Userpilot Team이 <a href='https://userpilot.medium.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://userpilot.medium.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://userpilot.medium.com/release-notes-template-for-saas-c823f45b5709' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 프로덕트의 새로운 기능에 대한 릴리즈 노트는 사용자 Engagement에 큰 영향을 줄 수 있는 요소입니다.
 
 ### 👀  잠깐, 릴리즈 노트란?

@@ -16,10 +16,6 @@ order: 65
  🔗 이 글은 Akash M Dubey님이 <a href='https://akashmdubey.medium.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://akashmdubey.medium.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://akashmdubey.medium.com/the-only-product-strategy-framework-you-need-5bf64dedef3e' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 당신에게 필요한 단 하나의 프로덕트 전략 프레임워크
-
 아무리 프로덕트 전략을 세세하게 짜뒀다고 해도 전략의 본질만 남겨 몇 문장만으로 간소하고 명확하게 표현할 수 있어야 합니다. 그렇게 표현하지 못한다면, 그 전략에 중요한 포인트가 없거나 짚어내지 못하는것입니다. 목표한 성공을 달성하기 위해서는 최적의 길을 선택할 수 있도록 돕는 훌륭한 전략이 필요합니다.
 
 Geoffrey Moore의 `Value proposition statement`나 `Positioning` 프레임워크를 통해 다음과 같이 프로덕트 전략을 몇 문장으로 요약할 수 있습니다.

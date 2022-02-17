@@ -12,10 +12,8 @@ post-header: false
 order: 3
 ---
 
-![](https://images.ctfassets.net/c1zhnszcah7h/6YoyPiCk1Gcj0ciOO2Bi0l/c8b2170ef28a55397e87789b1614ca82/Square_-_Thoughtful_Execcution.png?w=1648&h=1648&q=96&fm=webp)
-
 <p class="text-gray">
-🔗이 글은 Annina Koskinen이 <a href='https://spotify.design/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.spotify.design/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'> Spotify.design</a>에 올린 <a href='https://abit.ly/article_18' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
+🔗 이 글은 Annina Koskinen이 <a href='https://spotify.design/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.spotify.design/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'> Spotify.design</a>에 올린 <a href='https://abit.ly/article_18' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 ### ⚡️요약
@@ -53,7 +51,7 @@ Thoughtful Execution Framework은 여러 문제나 기회를 식별하는 방식
 
 팀에게는 보통 다음과 같은 일이 많았기 때문에 여기에서 개선의 기회를 발견하였다.
 
-![one goal, one idea](https://images.ctfassets.net/c1zhnszcah7h/1S5Vcmlumx2lr4xd7rkAtK/87779df606859afed1ef0c02413c91cd/Thoughtful_Execution_Inline_-_1.png?w=2000&h=1177&q=96&fm=webp)
+![one goal, one idea](https://images.ctfassets.net/c1zhnszcah7h/1S5Vcmlumx2lr4xd7rkAtK/87779df606859afed1ef0c02413c91cd/Thoughtful_Execution_Inline_-_1.png?w=2000&h=1177&q=96&fm=webp){:class="lazyload"}
 
 <figcaption>One goal, one idea.</figcaption>
 
@@ -65,7 +63,7 @@ Thoughtful Execution Framework은 여러 문제나 기회를 식별하는 방식
 
 한 솔루션으로 곧바로 달려들게 하는 생각을 바꾸기 위해, 프로덕트 개발 프로세스에 필수적인 스텝을 밟도록 하였다. 이런 스텝은 트리 구조로 보여줘 팀들이 이 스텝을 순서대로 밟는 것을 도왔다. 우리는 팀이 문제 발견, 가설 수립, 아이디어 발산 과정을 넓게 먼저 본 후 하나의 솔루션으로 수렴할 수 있도록 하고자 했다.
 
-![The Thoughtful Execution tree](https://images.ctfassets.net/c1zhnszcah7h/4MqSDogtPyLo6o6pFdba7H/dba74509a81a75cb42d06dd19016073d/Thoughtful_Execution_Inline_-_2_2x__1_.png?w=2000&h=1177&q=96&fm=webp)
+![The Thoughtful Execution tree](https://images.ctfassets.net/c1zhnszcah7h/4MqSDogtPyLo6o6pFdba7H/dba74509a81a75cb42d06dd19016073d/Thoughtful_Execution_Inline_-_2_2x__1_.png?w=2000&h=1177&q=96&fm=webp){:class="lazyload"}
 
 <figcaption>The Thoughtful Execution tree.</figcaption>
 
@@ -75,7 +73,7 @@ Thoughtful Execution Framework은 여러 문제나 기회를 식별하는 방식
 
 비즈니스 세계에서도 이와 비슷하게, 목표가 세워졌다면 해결해야 할 잠재적인 문제와 기회가 무엇인지 정확하게 알기 위해 데이터와 인사이트를 모으는데 충분한 시간을 들여야 한다. Spotify에서는 이것을 산(mountains)이라고 부른다. 마치 산처럼 이 문제와 기회들은 높이도 다르고, 달성할 수 있는 난이도도 달라 각각에 맞는 고유한 전략이 필요하다.
 
-![Surveying the opportunity mountains.](https://images.ctfassets.net/c1zhnszcah7h/qISyKnkwPqDMKmcqjdmog/9e063c7904366a90e479694b8079b9ad/Thoughtful_Execution_Inline_-_3_2x__1_.png?w=2000&h=1177&q=96&fm=webp)
+![Surveying the opportunity mountains.](https://images.ctfassets.net/c1zhnszcah7h/qISyKnkwPqDMKmcqjdmog/9e063c7904366a90e479694b8079b9ad/Thoughtful_Execution_Inline_-_3_2x__1_.png?w=2000&h=1177&q=96&fm=webp){:class="lazyload"}
 
 <figcaption>Surveying the opportunity mountains.</figcaption>
 
@@ -83,7 +81,7 @@ Thoughtful Execution Framework은 여러 문제나 기회를 식별하는 방식
 
 해결할 서로 다른 문제와 기회를 발견한 뒤 다음으로 할 일은 이를 해결했을 때 가장 임팩트가 큰 곳이 어딘지 아는 것이다. 가능하다면 데이터 사인티스트 친구에게 빠른 조사나 실험을 해서 어떤 기회의 "산"이 가장 높은지 알아봐 달라고 할 수 있다. 프로젝트의 범위에 따라 목표의 지표를 움직이기에 가장 적합한 방법으로 하나의 문제나 기회에 집중하는 것으로 결정할 수도 있고, 여러 개를 한 번에 해결하려 할 수도 있다.
 
-![To maximize impact, assess which opportunity mountain is the tallest.](https://images.ctfassets.net/c1zhnszcah7h/3urW8h9ZAxtAPmRQDXXAjs/e341f23d2da441c1a9dce559c8c52ed5/Thoughtful_Execution_Inline_-_4_2x.png?w=2000&h=1177&q=96&fm=webp)
+![To maximize impact, assess which opportunity mountain is the tallest.](https://images.ctfassets.net/c1zhnszcah7h/3urW8h9ZAxtAPmRQDXXAjs/e341f23d2da441c1a9dce559c8c52ed5/Thoughtful_Execution_Inline_-_4_2x.png?w=2000&h=1177&q=96&fm=webp){:class="lazyload"}
 
 <figcaption>To maximize impact, assess which opportunity mountain is the tallest.</figcaption>
 
@@ -95,13 +93,13 @@ Thoughtful Execution Framework은 여러 문제나 기회를 식별하는 방식
 2. 몇몇 사람들은 가입 폼 화면으로 들어왔지만, 폼을 완성하지 않았다.
 3. 몇몇 사람들은 가입 폼 화면으로 들어오고, 폼을 완성했지만 어떤 오류때문에 가입에 실패했다.
 
-![Examples of opportunity statements.](https://images.ctfassets.net/c1zhnszcah7h/7o6JpkwN7Vj4wuDs78Y0TN/020b4968ea319ed4b8d592a36a62caf3/Thoughtful_Execution_Inline_-_5_2x__1_.png?w=2000&h=1177&q=96&fm=webp)
+![Examples of opportunity statements.](https://images.ctfassets.net/c1zhnszcah7h/7o6JpkwN7Vj4wuDs78Y0TN/020b4968ea319ed4b8d592a36a62caf3/Thoughtful_Execution_Inline_-_5_2x__1_.png?w=2000&h=1177&q=96&fm=webp){:class="lazyload"}
 
 <figcaption>Examples of opportunity statements.</figcaption>
 
 이 세 목표는 모두 그들의 목표하는 지표를 개선할 수 있었을 것이지만, 팀은 세 번째 기회를 먼저 집중하기로 했다. 세 번째 기회에 있는 사람들은 가입에 대한 동기를 분명히 보였지만 가입 하기에 실패했기 때문이다. 이제 팀은 또 다른 Toughtful Exeucution Tree를 만들었고, 이번엔 목표를 더 구체적으로 잡았다.
 
-![Example of a tree built for a specific goal.](https://images.ctfassets.net/c1zhnszcah7h/6SVuqpAeuyVorHBhZOtgwO/7bb62583274485e862b0bade3fc85d14/Thoughtful_Execution_Inline_-_6_2x__1_.png?w=2000&h=1177&q=96&fm=webp)
+![Example of a tree built for a specific goal.](https://images.ctfassets.net/c1zhnszcah7h/6SVuqpAeuyVorHBhZOtgwO/7bb62583274485e862b0bade3fc85d14/Thoughtful_Execution_Inline_-_6_2x__1_.png?w=2000&h=1177&q=96&fm=webp){:class="lazyload"}
 
 <figcaption>Example of a tree built for a specific goal.</figcaption>
 
@@ -113,7 +111,7 @@ Thoughtful Execution Framework은 여러 문제나 기회를 식별하는 방식
 
 우리가 왜 어떤 플레이리스트가 각 사용자에게 추천 되었는지 더 잘 설명할 수 있는 기회를 탐색하고 있을 때, 우리는 여러 가설을 세웠고 그 중 일부가 아래 트리에 표현되어 있다. 또 트리는 하나의 가설이 여러 방법으로 디자인될 수 있다는 점도  보여준다. 그리고 각 방법은 서로 다른 방식으로 효과를 보였을 것이다.
 
-![Examples of different design solutions for a single hypothesis. L-R: Listing out artists per a set of playlist recommendations; using a single artist as a hook to different playlists; listing out artists per playlist.](https://images.ctfassets.net/c1zhnszcah7h/4W1ZzU914vUgdFxKSUGmS/627ebc8f426ee263f361775165c2bbb2/Thoughtful_Execution_Inline_-_7.png?w=2000&h=1177&q=96&fm=webp)
+![Examples of different design solutions for a single hypothesis. L-R: Listing out artists per a set of playlist recommendations; using a single artist as a hook to different playlists; listing out artists per playlist.](https://images.ctfassets.net/c1zhnszcah7h/4W1ZzU914vUgdFxKSUGmS/627ebc8f426ee263f361775165c2bbb2/Thoughtful_Execution_Inline_-_7.png?w=2000&h=1177&q=96&fm=webp){:class="lazyload"}
 
 <figcaption>Examples of different design solutions for a single hypothesis. L-R: Listing out artists per a set of playlist recommendations; using a single artist as a hook to different playlists; listing out artists per playlist.</figcaption>
 

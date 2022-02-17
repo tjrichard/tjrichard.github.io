@@ -16,8 +16,6 @@ order: 29
  🔗 이 글은 Disquite 팀이 <a href='https://www.disquiet.tech/post/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.disquiet.tech' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>커뮤니티</a>에 올린 <a href='https://www.disquiet.tech/post/how-to-conduct-user-interview' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 사용자의 행동 데이터나 사용자의 피드백은 현재 솔루션이 사용자의 문제를 해결해 주는지, Frictionless 한 사용 경험을 제공하는지를 알려주긴 하지만 제품의 방향성을 어떻게 해야 하는지는 알려주지 않습니다.
 
 제품의 방향성을 알기 위해서는 **사용자 인터뷰**가 필요합니다.

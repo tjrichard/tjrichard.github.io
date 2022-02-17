@@ -16,10 +16,6 @@ order: 33
  🔗 이 글은 ASH님이 <a href='https://brunch.co.kr/@ashashash/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@ashashash/125' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 크래프톤 웨이'에서 배운 사람에 관한 61가지
-
 크래프톤 웨이는 크래프톤이라는 스타트업이 어떻게 성공했는지 그 비결에 대해 이야기 하는 책이 아니라 창업이 어떻게 이루어 졌으며, 어떤 경영 원칙을 세웠고, 누가 어떤 조직을 맡고 떠났으며, 어떤 고난을 겪었고 어떻게 성공을 했는지 있는 그대로 이야기하는 역사서와 같은 책입니다.
 
 ASH님이 뽑은 61가지 인사이트 중 일부를 발췌합니다.

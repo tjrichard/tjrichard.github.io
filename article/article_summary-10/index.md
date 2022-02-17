@@ -16,8 +16,6 @@ order: 10
  🔗 이 글은 David Sacks님이 <a href='https://medium.com/craft-ventures/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://medium.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://medium.com/craft-ventures/freemium-vs-free-trial-which-is-better-for-saas-startups-97b9ac737597' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > SaaS 프로덕트를 잠재 고객에게 경험하도록 제공하는 대표적인 두 가지 방식인 `Freemium`과 `Free Trial` 중 어떤 방법이 내 프로덕트와 더 잘 맞는 방법일까요?  
 `Freemium`은 프로덕트의 제한적인 기능을 항시 무료로 제공하여 더 강화된 기능을 사용하기 위해 결제를 유도하는 방식이고,  
 `Free Trial`은 보통 모든 기능을 제한적인 시간동안 사용할 수 있도록 하여 프로덕트를 경험하게 하는 방식입니다.

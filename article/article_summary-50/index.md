@@ -16,8 +16,6 @@ order: 50
  🔗 이 글은 SalRite님이 <a href='https://towardsdatascience.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://towardsdatascience.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://towardsdatascience.com/how-stats-can-mislead-you-e0ad563a578a' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 잘못된 해석을 유도하는 통계 자료. 어떤 상황에서 통계 자료를 잘못 해석할 수 있을까요?
 
 1. **통계적 유의성이 있다는 것이 실제로 유의미한 내용이라는 말은 아닙니다.** 분석 결과가 통계적 유의성을 확보했더라도 샘플이 모집단을 적절히 대변하지 못할 수도, 리스크가 너무 커서 1%의 오차라도 용납할 수 없을수도 있습니다.

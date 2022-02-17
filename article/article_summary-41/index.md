@@ -16,10 +16,6 @@ order: 41
  🔗 이 글은 Val Geisler님이 <a href='https://www.invisionapp.com/inside-design/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.invisionapp.com' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://www.invisionapp.com/inside-design/saas-customer-onboarding-templates/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 예술가처럼 SaaS 온보딩 이메일 템플릿 훔치기
-
 아래 6가지 원칙을 실현할 수 있는 온보딩 이메일용 템플릿 예시를 제공합니다.
 
 ### 원칙 1️⃣ : 첫 환영 이메일을 커스텀 하기

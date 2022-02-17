@@ -16,10 +16,6 @@ order: 37
  🔗 이 글은 Userpilot Team이 <a href='https://userpilot.medium.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://userpilot.medium.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://userpilot.medium.com/how-to-use-product-analytics-tools-to-reduce-user-friction-953212777a84' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 프로덕트 분석 툴을 활용해 User Friction 제거하기
-
 데이터 기반 UX의 대표적인 방법으로는 프로덕트 분석 툴으로 데이터를 활용하여 Frictionless한 프로덕트를 만드는 것이 있습니다.
 
 프로덕트 분석 툴은 다음과 같은 방법으로 User Friction의 원인을 밝히는데 도움을 줄 수 있습니다.

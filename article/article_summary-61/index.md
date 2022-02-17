@@ -16,10 +16,6 @@ order: 61
  🔗 이 글은 지원준님이 <a href='https://brunch.co.kr/@wjchee/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@wjchee/3' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### [Slack] 우리는 말 안장을 파는게 아니다.
-
 > 이 글은 Slack의 CEO가 Slack의 프리뷰 릴리즈 2주 전 사내에 전파한 내용(에 대한 번역글)입니다.
 
 Slack은 Slack이 만들어지기 이전에는 존재하지 않던 업무용 커뮤니케이션 SaaS 라는 새로운 시장을 타겟으로 만들어진 프로덕트입니다. 이 때문에 본인의 Painpoint를 잘 알고, 니즈를 설명할 수 있고, 어떤 프로덕트를 상상하는지 그려낼 수 있는 사용자는 없었습니다. Slack은 사람들이 '자신이 원한다고 믿는 것'들을 이해해 Slack의 가치를 그에 맞게 적절한 형태로 풀어내는 일에 집중했습니다. Slack은 디지털 프로덕트 뿐 만 아니라 회원가입 양식 문구, 로딩 페이지, 환영 이메일, 정확하고 이해도 높은 검색 결과, 사려 깊게 적용된 멋진 기능들에서 겪는 모든 경험들을 잘 디자인 했습니다.

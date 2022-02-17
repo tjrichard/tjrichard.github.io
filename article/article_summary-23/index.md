@@ -16,8 +16,6 @@ order: 23
  🔗 이 글은 Josh님이 <a href='https://www.facebook.com/joshjaehong/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.facebook.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>페이스북</a>에 올린 <a href='https://www.facebook.com/joshjaehong/posts/3064674003592216' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>포스트</a>를 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > 채널톡이 채널톡 마케팅에 적용하기 위해 B2B 마케팅 사례를 분석한 결과에 대한 경험을 공유했습니다.
 
 잘 된 스타트업, 최근 SaaS 붐을 이끌고 있는 사례, 유명한 B2C 서비스까지 다양하게 살펴 본 결과, 공통점은 거의 없고, 두 가지 공통점만 발견할 수 있었다고 합니다.

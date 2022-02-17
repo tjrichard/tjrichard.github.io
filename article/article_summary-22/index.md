@@ -16,7 +16,6 @@ order: 22
  🔗 이 글은 마미새(마케팅에 미친 새싹들)님이 <a href='https://brunch.co.kr/@groschool/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@groschool/51' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
 
 > 데이터 사이언티스트 하용호님의 인터뷰 글입니다. 하용호님은 스스로 하는 일을 데이터로 회사의 문제를 해결해주는 사람이라고 합니다. '데이터'라는 점을 빼면 디자이너가 하는 일과 맥락을 같이한다고 볼 수 있겠습니다.
 

@@ -16,10 +16,6 @@ order: 30
  🔗 이 글은 Lenny님이 <a href='https://www.lennysnewsletter.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.lennysnewsletter.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Substack</a>에 올린 <a href='https://www.lennysnewsletter.com/p/negotiating-comp' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 연봉협상을 위한 10계명
-
 > 연봉협상은 언제나 어려운 일입니다. 내가 협상을 하는건지, 통보를 받는것인지.. 이직할 때 더 나은 연봉협상을 위한 10계명입니다.
 
 **1. 협상은 생각보다 일찍 시작한다**

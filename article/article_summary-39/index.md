@@ -16,10 +16,6 @@ order: 39
  🔗 이 글은 박진우님이 <a href='https://brunch.co.kr/@crethink/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@crethink/15' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 불만을 없앤다고 만족이 생기는게 아니다
-
 불만이 생길 수 있는 요소들을 모두 제거한 Friction-less 한 프로덕트를 만든다고 해서 그 프로덕트가 가장 좋은 프로덕트 일까요? 답은 '**아니오**' 입니다. 불만 요소를 모두 제거한다고 해서 없던 만족이 생기는게 아니기 때문입니다. 우리 마음 속에선 불만과 만족을 처리하는 방식이 다르기 때문입니다.
 
 불만은 보통 **비교에서 기반합니다.** 반면 만족은 **그것이 가지는 독특함**에서 옵니다. 이 개념은 '`카노 모델`'과도 관련된 이야기이기도 합니다.

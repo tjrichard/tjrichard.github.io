@@ -16,10 +16,6 @@ order: 57
  🔗 이 글은 Ryan Cornelius님이 <a href='https://uxdesign.cc/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://uxdesign.cc/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://uxdesign.cc/your-main-competitor-probably-isnt-who-you-think-it-is-2b87e1f5ac23' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 당신은 프로덕트의 가장 큰 경쟁자를 간과하고 있습니다.
-
 만약 당신에게 가장 큰 경쟁자가 누구냐고 물어본다면 스타트업부터 대기업까지 당신이 경쟁자라고 생각하는 많은 기업들을 줄줄 읊을 수 있을지도 모릅니다. 기능 별로 누가 더 잘하고 있는지도 다 알고 있을 수 있습니다. 하지만 대부분의 경우에, 특히 세상에 없던 혁신적인 프로덕트를 만들어내는 중이라고 한다면 가장 큰 경쟁자는 어떤 '회사'가 아닙니다.
 
 ### 📌  당신의 가장 큰 경쟁자는 '현상 유지' 입니다.

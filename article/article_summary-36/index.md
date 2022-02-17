@@ -16,10 +16,6 @@ order: 36
  🔗 이 글은 xguru님이 <a href='https://news.hada.io/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://news.hada.io/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>GeekNews</a>에 올린 <a href='https://news.hada.io/topic?id=2561' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 인스타그램을 10억 사용자로 만든 '인접 사용자 이론'
-
 > 사용자 4억명에서 10억명이 된 3년간 Growth팀 헤드였던 Bangaly의 경험을 공유한 글입니다.
 
 **`인접 사용자(The Adjacent User)`**는 제품을 알고, 사용해봤지만 참여하지는 못하는 사용자를 의미합니다. 인접 사용자가 사용자가 되지 못하는것은 제품 포지셔닝이나 제품을 경험하는데 장벽이 있음을 의미합니다. 제품의 Growth를 위해서는 지속적으로 인접 사용자를 정의하고, 그들이 뭘 어려워 하는지를 이해하고 공감하면서 문제를 해결해야 합니다.

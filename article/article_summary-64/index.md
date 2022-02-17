@@ -16,8 +16,6 @@ order: 64
  🔗 이 글은 Product Mindset님이 <a href='https://productmindset.substack.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://productmindset.substack.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Substack</a>에 올린 <a href='https://productmindset.substack.com/p/porters-five-forces-framework' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 프로덕트의 전략과 앞으로 수행할 로드맵을 결정하기 위해서는 프로덕트가 처해진 환경을 분석하는것이 중요합니다. 프로덕트의 경쟁 상황을 이해하는데 유용한 프레임워크인 **마이클 포터의 5 Forces (5가지 경쟁요인)** 프레임워크를 소개합니다.
 
 > 마이클 포터의 5가지 경쟁요인을 잘 사용하기 위해서는 각 5가지 경쟁요인을 분석하고, 각자의 산업에 어떻게 적용될 수 있는지 알아봐야 합니다. 현실적으로 모든 분석 결과가 아름다운 모습을 가질수는 없지만, 산업을 이 프레임워크로 분석하는것은 더 강력한 경쟁자로 변화할 수 있는 방법과 수익성을 개선할 수 있는 방법에 대해 생각해볼 수 있는 기회를 제공합니다.

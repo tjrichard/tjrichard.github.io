@@ -16,8 +16,6 @@ order: 55
  🔗 이 글은 Sequoia가 <a href='https://medium.com/sequoia-capital/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://medium.com/sequoia-capital/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://medium.com/sequoia-capital/the-building-blocks-of-a-data-informed-company-70cc5908143d' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 데이터에 대한 중요성은 나날이 높아져가고 있습니다. 일부 회사들은 더 많은 A/B 테스팅을 하거나 실험을 통해 더 많이 프로덕트를 이터레이션 하고, 더 많은 릴리즈를 통해 더 빠른 프로덕트 성장을 이뤄내기도 했습니다. 여러 소스에서 수집된, 정형화 되지 않은 수많은 데이터들 속에서 인사이트를 성공적으로 발견할 수 있느냐가 회사의 경쟁력과 프로덕트의 혁신을 이끌어내기 시작했습니다. 어떻게 하면 우리 회사도 Data Informed Company가 될 수 있을까요?
 
 ### 🐒  데이터 분석의 진화 과정

@@ -16,8 +16,6 @@ order: 14
  🔗 이 글은 정선우님이 <a href='https://sonujung.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://sonujung.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>본인의 블로그</a>에 올린 <a href='https://sonujung.com/product-design-in-startup' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > 식스샵 정선우님의 스타트업에서 프로덕트 디자인을 한다는것에 대한 인사이트를 담은 글입니다.
 
 > 현 시대에 프로덕트 디자이너라는 직무를 많은 기업이 찾는데에는 기존 기능 중심 조직에서 제품 중심 조직으로 많은 기업이 거듭나고 있기 때문이라고 합니다. 제품 중심 조직의 구성원들은 도메인에 대한 지식을 바탕으로 본인이 맡고있는 제품에 대한 오너십을 가지고 (워터폴 방식이 아닌) 애자일하게 일하기를 기대합니다.
