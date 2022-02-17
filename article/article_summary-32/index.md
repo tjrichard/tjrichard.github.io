@@ -16,10 +16,6 @@ order: 32
  🔗 이 글은 Jinhee Park님이 <a href='https://brunch.co.kr/@hijinnyjinny/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@hijinnyjinny/17' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 기본적인 데이터 분석 지표: DAU, WAU, MAU, Rolling Metrics
-
 마케터, PM이 가장 기본적으로 보는 프로덕트 데이터 지표로는 활성 사용자 수(Active Users)를 꼽을 수 있습니다. DAU(Daily Active Users), WAU(Weelky Active Users), MAU(Monthly Active Users)는 활성 사용자를 일 단위로 볼 것인지, 주 단위, 월 단위로 볼 것인지에 따라 나눠진 지표입니다.
 
 DAU, WAU, MAU가 유의미한 지표가 되려면 어떤 사용자가 '**`활성 사용자(Active Users)`**'인 지를 **`먼저 프로덕트에 맞게 정의`**하는게 필요합니다.

@@ -16,8 +16,6 @@ order: 12
  🔗 이 글은 Saurabh Sahni, Taylot Singletary님이 <a href='https://slack.engineering/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://slack.engineering/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>슬랙 엔지니어링 블로그</a>에 올린 <a href='https://slack.engineering/how-we-design-our-apis-at-slack/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > 슬랙이 API를 디자인하는 설계 원칙에 대한 이야기입니다. API를 디자인하는 일이지만 B2B 프로덕트를 설계하는 원칙이라고 해도 전혀 어색하지 않습니다.
 
 1. 한가지 동작만 아주 잘 할 것

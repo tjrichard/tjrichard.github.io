@@ -16,10 +16,6 @@ order: 40
  🔗 이 글은 uxdesign.cc가 <a href='https://uxdesign.cc/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://uxdesign.cc/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://uxdesign.cc/whats-the-best-way-to-display-dates-to-international-users-d2a1150d2444' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 다국어 프로덕트에서 날짜 표기는 어떻게 해야 할까?
-
 B2B SaaS 프로덕트는 글로벌로 진출하기 용이한 프로덕트입니다. SaaS에서 날짜는 자주 사용되는 컴포넌트인데, 국가 별로 날짜를 표기하는 법은 각자 상이합니다. 다국어 프로덕트에서 날짜는 어떤 방법으로 표기해야 할까요?
 
 각 지역 별로 주로 사용하는 날짜 표기법은 다음과 같습니다.

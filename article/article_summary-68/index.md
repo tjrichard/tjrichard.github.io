@@ -16,8 +16,6 @@ order: 68
  🔗 이 글은 Elon Musk가 <a href='https://twitter.com/elonmusk/status/1472647410568642564' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://twitter.com/elonmusk/status/1472647410568642564' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Twitter</a>에 올린 쓰레드를 옮겨 소개한 <a href='https://www.inc.com/jessica-stillman/elon-musk-cognitive-biases.html' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 일론 머스크는 여러 논란이 있지만 성공한 혁신가라는 점은 부인할 수 없습니다. 그는 이 성공의 주요한 요인 중 하나로 ‘**제 1 원칙 사고**’라고 부르는 명확하게 사고하는 법을 꼽았습니다.
 
 급변하는 시장 상황에서 여러 상반되는 요구사항을 가지는 사용자를 상대로 올바른 결정을 내리기 위해서는 머릿 속에서 일어날 수 있는 오류나 편향을 피해야 합니다. 다음은 일론 머스크가 모든 어린이들에게 가르쳐야 하는 50가지 인지편향, 사고 오류, 인간의 비합리적 경향을 옮긴 내용입니다. 가까이에 두고 내 의사결정이 올바른 것인지 점검하는 용도로 사용해봅시다.

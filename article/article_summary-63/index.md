@@ -16,8 +16,6 @@ order: 63
  🔗 이 글은 Jordan Bowman님이 <a href='https://uxtools.co/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://uxtools.co/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://uxtools.co/blog/how-designers-can-prevent-user-errors/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 ### B2B 프로덕트는 사용자의 업무를 성공적으로 도와주기 위해 존재합니다
 
 비즈니스 업무를 수행하는 사용자에겐 시스템에서 발생한 오류로 인해 사용자의 업무에 영향이 가기도 하고, 고객 비즈니스 전반에 악영향을 주기도 합니다. 이러한 사용자 오류를 B2B 프로덕트 디자이너로서 방지할 수 있는 방법은 무엇이 있을까요?

@@ -16,8 +16,6 @@ order: 66
  🔗 이 글은 Lee J. H님이 <a href='https://ppss.kr/archives' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://ppss.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>ㅍㅍㅅㅅ</a>에 올린 <a href='https://ppss.kr/archives/50612' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 회사 생활을 하면서 나의 디자인, 기획내용을 전달하거나 프로젝트 진행 내용을 보고하는 등 누군가에게 보고하는 상황이 종종 발생합니다. 이런 경우 회사에서 사용되는 보고서는 두 가지 목적으로 분류할 수 있습니다.
 
 1. 문제 해결을 위해 어떤 행동을 해야하며, 이를 위해 어떤것이 필요하다

@@ -16,8 +16,6 @@ order: 9
  🔗 이 글은 Ally님이 <a href='https://blog.gangnamunni.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://blog.gangnamunni.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>강남언니 블로그</a>에 올린 <a href='https://blog.gangnamunni.com/post/AB-test-Baisc' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > 강남언니가 일본 유저 대상으로 온보딩 화면을 AB 테스팅 하여 회원가입 전환율을 높이려는 과정에 대한 글입니다.
 첫 번째 시도는 실패하고, 실패를 딛고 다시 설계하여 두 번째 시도에서 유의미한 개선을 경험하는 과정이 담겨있습니다.
 

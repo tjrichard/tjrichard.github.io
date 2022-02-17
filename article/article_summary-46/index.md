@@ -16,10 +16,6 @@ order: 46
  🔗 이 글은 Christopher Chae님이 <a href='https://blog.relate.kr/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://blog.relate.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>릴레잇 블로그</a>에 올린 <a href='https://blog.relate.kr/free-trial-survey/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### Free Trial SaaS 기업 600개를 설문하고 배운 10가지
-
 Product-Led Growth SaaS 프로덕트는 Free Trial과 Freemium 을 사용해 Lead를 유도하는 경우가 많습니다. 그 중 Free Trial을 실행하고 있는 SaaS 기업을 설문조사하여 분석한 결과를 Relate에서 번역을 제공 해주셨습니다.
 
 1. 연간 계약이 최고다

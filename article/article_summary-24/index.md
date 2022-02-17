@@ -16,8 +16,6 @@ order: 24
  🔗 이 글은 오일나우의 지연님이 <a href='https://medium.com/%EC%98%A4%EC%9D%BC%EB%82%98%EC%9A%B0-%ED%8C%80-%EB%B8%94%EB%A1%9C%EA%B7%B8/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://medium.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://medium.com/%EC%98%A4%EC%9D%BC%EB%82%98%EC%9A%B0-%ED%8C%80-%EB%B8%94%EB%A1%9C%EA%B7%B8/%ED%94%84%EB%A1%9C%EB%AA%A8%EC%85%98-%EC%97%86%EC%9D%B4-ux%EB%A7%8C%EC%9C%BC%EB%A1%9C-%EC%8B%A0%EA%B7%9C-%EA%B0%80%EC%9E%85-%EC%9C%A0%EC%A0%80%EB%A5%BC-235-%EB%8A%98%EB%A6%AC%EB%8A%94-%EB%B0%A9%EB%B2%95-128dac4f92b0' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 오일나우가 UX 개선만으로 회원가입 퍼널 전환률을 높인 사례입니다. 오일나우는 처음엔 핵심 저니를 짧게 구성하고자 회원가입 단계를 뒤로 미뤘었는데요, 시간이 지나자 리텐션에 유리한 로그인이 필요한 행동들을 유도하기가 힘들다는 한계에 부딪혔습니다.
 
 1. `회원가입 전환율`을 위해서는 근처 저렴한 주유소를 찾아준다는 오일나우의 핵심 가치를 전달하기 위해 딱딱한 회원가입 프로세스 대신 월 주유비의 10%를 절약해준다는 **핵심가치를 숫자로 확연하게 느낄 수 있도록** 하는 과정을 먼저 배치했습니다.

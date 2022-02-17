@@ -20,7 +20,7 @@ order: 2
 
 > 1. Constant Component에 제공되어야 할 정보를 작성하기
 2. Dynamic Component에서 오류 상황의 컨텍스트를 더 잘 이해시킬 수 있도록 보강하기  
-*최소 요구 조건은 Constant Component이다. 잘 작성된 Constant Component만 있어도 유저의 오류 상황을 명확히 인지시키고 해결할 수 있다.
+* 최소 요구 조건은 Constant Component이다. 잘 작성된 Constant Component만 있어도 유저의 오류 상황을 명확히 인지시키고 해결할 수 있다.
 * Constant Component는 사용자가 취할 수 있는 액션 경로와 무엇이 왜 발생했는지 명시
 * Dynamic Component는 오류 상황에 대한 
 
@@ -56,19 +56,19 @@ Constant Component는 필수 요소이다. 여기엔 사용자에게 어떤 일�
 - 의례 어구 (Politeness markers)
 - 담화 어구 (Discourse markers)
 
-![Good Error message example 1](https://miro.medium.com/max/1400/1*xZlzjnNGRorReOSq3H_-Pg.png)
+![Good Error message example 1](https://miro.medium.com/max/1400/1*xZlzjnNGRorReOSq3H_-Pg.png){:class="lazyload"}
 
-![Good Error message example 2](https://miro.medium.com/max/1400/1*cnuSLNYWGBjAp0G0gm5M9A.png)
+![Good Error message example 2](https://miro.medium.com/max/1400/1*cnuSLNYWGBjAp0G0gm5M9A.png){:class="lazyload"}
 
 ### 오류 메세지 문장이 잘못된 경우
 
 오류 메세지가 기본 구성에서 벗어나 있다면 사용자들은 오류 상황을 명확하게 인지하지 못하게 될 것이고, 그 오류 메세지는 곧 SNS에서 까이게 될 것이다.
 
-![Bad Error message example 1](https://miro.medium.com/max/1400/1*iYDqQSuGT2Lku9tUMg6y7A.png)
+![Bad Error message example 1](https://miro.medium.com/max/1400/1*iYDqQSuGT2Lku9tUMg6y7A.png){:class="lazyload"}
 
-![Bad Error message example 2](https://miro.medium.com/max/1400/1*IGdrWARpuHYbnqWF_9xG-w.png)
+![Bad Error message example 2](https://miro.medium.com/max/1400/1*IGdrWARpuHYbnqWF_9xG-w.png){:class="lazyload"}
 
-![Bad Error message example 3](https://miro.medium.com/max/1400/1*MIwPQ_SpUGDZ7_rr3iVvXg.png)
+![Bad Error message example 3](https://miro.medium.com/max/1400/1*MIwPQ_SpUGDZ7_rr3iVvXg.png){:class="lazyload"}
 
 ### 이 문장을 활용하는 방법
 

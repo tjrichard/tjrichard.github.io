@@ -61,7 +61,7 @@ order: 4
 
 북극성 지표는 프로덕트 팀의 성공을 측정하는 지표이다. 북극성 지표는 프로덕트 팀이 풀고자 하는 고객의 문제와 비즈니스가 목표로하는 수익의 관계를 정의한다.
 
-![Relationship between Vision and Revenue](https://images.ctfassets.net/vrkkgjbn4fsk/oUxh6lTfLa28sEKyAUSuo/b233ce2534db23544414c48ff0956cc3/what-is-north-star-metric.png?q=90&w=1168)
+![Relationship between Vision and Revenue](https://images.ctfassets.net/vrkkgjbn4fsk/oUxh6lTfLa28sEKyAUSuo/b233ce2534db23544414c48ff0956cc3/what-is-north-star-metric.png?q=90&w=1168){:class="lazyload"}
 
 따라서 어떤 회사든 세 가지 중요한 목적을 가진다.
 
@@ -82,7 +82,7 @@ order: 4
 1. 프로덕트의 비전에 대한 정의
 2. 현재 프로덕트 전략을 측정할 수 있는 주요 지표
 
-![Amplitude's Product North Star](https://images.ctfassets.net/vrkkgjbn4fsk/32oOmrJcmkUoQA8goGK2CW/8201f0905344fe35ee353eb8217dfcce/amplitude-b2b-north-star-metric-example-1024x401.png?q=90&w=2336)
+![Amplitude's Product North Star](https://images.ctfassets.net/vrkkgjbn4fsk/32oOmrJcmkUoQA8goGK2CW/8201f0905344fe35ee353eb8217dfcce/amplitude-b2b-north-star-metric-example-1024x401.png?q=90&w=2336){:class="lazyload"}
 
 <figcaption>Amplitude의 현재 프로덕트 북극성 지표</figcaption>
 
@@ -144,7 +144,7 @@ Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley 
 
 #### 요약하자면, 좋은 북극성 지표는 다음 세 가지 특징을 가진다: <!-- omit in toc -->  
 
-![Three Good North Star Metric Attributes](https://images.ctfassets.net/vrkkgjbn4fsk/6xuFgiHMhq0sK0cGyKikWe/f88f0774f052ced056cea9494d7a79cc/attributes-good-north-star-metric.png?q=90&w=2336)
+![Three Good North Star Metric Attributes](https://images.ctfassets.net/vrkkgjbn4fsk/6xuFgiHMhq0sK0cGyKikWe/f88f0774f052ced056cea9494d7a79cc/attributes-good-north-star-metric.png?q=90&w=2336){:class="lazyload"}
 
 <figcaption>Three Good North Star Metric Attributes</figcaption>
 
@@ -166,7 +166,7 @@ Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley 
 
 아래는 식료품 주문과 배달 앱에 대한 북극성 지표 트리 예시이다. 트리는 12개의 프로덕트 개선 계획을 북극성 지표의 각의 차원을 발전시킬 수 있는 하나의 프레임워크로 묶은 것이다.
 
-![Example of 4 North Star Metric Dimensions for Grocery Delivery App](https://images.ctfassets.net/vrkkgjbn4fsk/1mEKe0EY6QIWICyokeiu2g/a4328e19435979a92118585463160bcd/north-star-metric-tree.png?q=90&w=2336)
+![Example of 4 North Star Metric Dimensions for Grocery Delivery App](https://images.ctfassets.net/vrkkgjbn4fsk/1mEKe0EY6QIWICyokeiu2g/a4328e19435979a92118585463160bcd/north-star-metric-tree.png?q=90&w=2336){:class="lazyload"}
 
 <figcaption>Example of 4 North Star Metric Dimensions for Grocery Delivery App</figcaption>
 
@@ -178,11 +178,11 @@ Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley 
 2. <span style="color: #4139EF;">**트랜잭션 게임(Transaction)**</span> : 플랫폼 안에서 사용자가 상업적 트랜잭션을 얼마나 만드는가
 3. <span style="color: #4139EF;">**생산성 게임(Productivity)**</span> : 프로덕트 내에서 사용자가 얼마나 고가치 디지털 업무를 수행할 수 있는가
 
-![The 3 Games in Product](https://images.ctfassets.net/vrkkgjbn4fsk/46J74JVEBqSgEkQ0SeGKO0/baaf247a501c6a1cf74e1becd82cb92e/product-engagement-game.png?q=90&w=2336)
+![The 3 Games in Product](https://images.ctfassets.net/vrkkgjbn4fsk/46J74JVEBqSgEkQ0SeGKO0/baaf247a501c6a1cf74e1becd82cb92e/product-engagement-game.png?q=90&w=2336){:class="lazyload"}{:class="lazyload"}
 
 <figcaption>The 3 Games in Product</figcaption>
 
-![Hypothetical North Star Example for each Game](https://images.ctfassets.net/vrkkgjbn4fsk/58AQcYMZfimWsQmK8QMyAe/c8740feb5c15f050c6e0623e725f6106/examples-hypothetical-north-star-metric.png?q=90&w=2336)
+![Hypothetical North Star Example for each Game](https://images.ctfassets.net/vrkkgjbn4fsk/58AQcYMZfimWsQmK8QMyAe/c8740feb5c15f050c6e0623e725f6106/examples-hypothetical-north-star-metric.png?q=90&w=2336){:class="lazyload"}
 
 <figcaption>Hypothetical North Star Example for each Game</figcaption>
 
@@ -198,7 +198,7 @@ Docusign의 전 프로덕트 리더이자 Social Capital의 파트너인 Ashley 
 
 프로덕트 전략을 수행하는데 북극성 지표 프레임워크를 사용하는 것은 임팩트 중심 조직에게 필수적인 투자이다. 또 이것은 프로덕트 주도형 기업으로 가는 길이다.
 
-![Product-led Company using the North Star Metric](https://images.ctfassets.net/vrkkgjbn4fsk/3hNgILdWYE2cYOkoEgI4My/22b0d5da4ac88610f3d8eff8450516d7/product-initiatives-north-star-metric-revenue.png?q=90&w=2336)
+![Product-led Company using the North Star Metric](https://images.ctfassets.net/vrkkgjbn4fsk/3hNgILdWYE2cYOkoEgI4My/22b0d5da4ac88610f3d8eff8450516d7/product-initiatives-north-star-metric-revenue.png?q=90&w=2336){:class="lazyload"}
 
 <figcaption>Product-led Company using the North Star Metric</figcaption>
 

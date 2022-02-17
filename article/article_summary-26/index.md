@@ -16,8 +16,6 @@ order: 26
  🔗 이 글은 이상희님이 <a href='https://kimchihill.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://kimchihill.com' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://kimchihill.com/2021/09/09/anatomy-of-the-6-key-questions-asked-to-b2b-saas-startups/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 알토스 벤처스의 Han Kim 대표님이 B2B 회사 경영진에게 던지는 질문에 대해 Sendbird의 Country Manager 이상희님의 주관적인 답변이 담긴 글입니다.
 
 Sendbird가 성공을 위해 달려가고 있는 과정과 생각을 엿볼 수 있으니 본인의 프로덕트/회사가 답할 수 있는 내용과 어떻게 다른지 생각해보는것도 도움이 될 것 같습니다.

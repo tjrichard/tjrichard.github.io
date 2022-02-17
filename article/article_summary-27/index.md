@@ -16,8 +16,6 @@ order: 27
  🔗 이 글은 Jakob Nielson님이 <a href='https://www.nngroup.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.nngroup.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>NN Group 블로그</a>에 올린 <a href='https://www.nngroup.com/articles/progressive-disclosure/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 🤔 사용자는 모든 요구사항을 처리할 수 있는 강력한 기능과 통제감을 원하기도 하지만 현재 요구사항에 가장 적합한 몇 가지만 볼 수 있고 추가적으로 학습하지 않아도 알 수 있는 단순함을 동시에 원하기 때문에 복잡한 프로덕트를 디자인 하는 우리는 종종 딜레마에 직면하게 됩니다.
 
 ### 💎 점진적 공개

@@ -16,8 +16,6 @@ order: 58
  🔗 이 글은 Kate Kaplan님이 <a href='https://www.nngroup.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.nngroup.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>NN Group</a>에 올린 <a href='https://www.nngroup.com/articles/usability-heuristics-complex-applications/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 B2B 프로덕트는 기업 사용자의 다양한 업무적 요구사항을 충족하기 위해, 다루는 데이터 자체가 복잡하기 때문 등 다양한 이유로 복잡해지기 마련입니다. 복잡한 프로덕트를 디자인 하면서 놓칠 수 있는 10가지 휴리스틱을 소개합니다.
 
 1. **시스템 상태에 대한 가시성 (Visibility of System Status)**  

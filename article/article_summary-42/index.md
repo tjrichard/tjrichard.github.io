@@ -16,10 +16,6 @@ order: 42
  🔗 이 글은 쿠팡 디자인이 <a href='https://brunch.co.kr/@coupangdesign/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@coupangdesign/73' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### A/B 테스트에서 솔루션의 성과가 기대와 다를 경우, 어떻게 해야 할까요?
-
 문제를 명확하게 가정했고, 이를 검증하기 위한 가설과 솔루션을 마련했다면, 개선을 위한 솔루션이 제대로 가정했던 문제를 해결하는지를 확인하기 위해 테스트를 진행합니다. 테스트 결과는 미리 설정해 둔 주요 지표가 어떤 값으로 변화했는지에 따라 테스트의 성공 여부를 판단하게 됩니다. 만약 테스트 결과가 예상과 다를 경우 기존에 정의한 문제와 가설, 솔루션이 제대로 되었는지 면밀하게 분석해야 합니다.
 
 실패한 테스트를 그저 지나가는 결과로 바라보지 않고 새로운 인사이트를 얻기 위해서 활용한다면 몇 번의 이터레이션을 거쳐 성공적인 결과로 이끌어낼 수 있습니다. 쿠팡은 '`패션 상품을 구매를 시도했으나 구매하지 않은 고객`'을 대상으로 사용자 조사를 거쳐 문제를 정의하고 그 문제를 해결할 것이라고 생각한 솔루션을 개발해 테스트 해보았습니다.

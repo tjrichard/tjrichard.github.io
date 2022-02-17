@@ -16,8 +16,6 @@ order: 48
  🔗 이 글은 Stephan Walter님이 <a href='https://stephaniewalter.design/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://stephaniewalter.design/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://stephaniewalter.design/blog/essential-resources-design-complex-data-tables/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>리소스 소개 글</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 B2B SaaS 프로덕트에서 가장 많이 사용되는 컴포넌트 중 하나는 테이블입니다. 제공하는 내용과 기능이 복잡한 데이터 테이블을 디자인 하기 위해서는 고려해야 할 점이 많습니다.
 
 복잡한 데이터 테이블을 디자인 하기 위한 디자인 리소스 모음 페이지입니다.

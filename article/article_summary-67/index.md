@@ -16,10 +16,6 @@ order: 67
  🔗 이 글은 Product Mindset님이 <a href='https://productmindset.substack.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://productmindset.substack.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Substack</a>에 올린 <a href='https://productmindset.substack.com/p/bezos-decision-making-framework' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 🔦 Jeff Bezos가 의사결정 하는 방법
-
 Bezos는 의사결정을 두 가지로 구분합니다.
 * **`Type 1`**: **되돌리기 거의 불가능한 결정.** 회사를 매각하거나, 퇴사하거나, 절벽에서 떨어지는 행위 등. 행동하기 전에 반드시 충분히 생각해야 하며 가능한 여러 시나리오를 고려해 올바른 결정을 내려야 합니다.
 * **`Type 2`**: **되돌리기 쉬운 결정.** 사이드 프로젝트를 시작하거나, 새로운 서비스를 만들거나, 새로운 가격 정책을 선보이는 행위 등. Type 2 의사결정은 중요하게 느껴질 순 있지만, 약간의 시간과 노력만 있다면 되돌릴 수 있는 의사결정입니다. 정보가 모자라더라도 의사결정을 빨리 하고 잘못된 결과가 나올 수 있음을 감안해야 합니다.

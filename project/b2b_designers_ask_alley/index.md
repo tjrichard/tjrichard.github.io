@@ -28,7 +28,7 @@ order: 1
 
 다양한 디자이너, 개발자분들과 교류하는 것을 좋아해서 사이드 동아리도 자주 참여하는데 가장 대표적으로는 '디프만'이라는 동아리에서 '가슴속 3천원'이란 서비스를 제작한 경험이 있습니다. B2B 디자이너 단톡에서도 다양한 교류를 나누고 싶어서 첫 질문 세션에 참여하게 되었습니다!
 
-![](https://miro.medium.com/max/1400/1*4teEAvTZj-6C-wI2GC5_Sw.png)
+![](https://miro.medium.com/max/1400/1*4teEAvTZj-6C-wI2GC5_Sw.png){:class="lazyload"}
 
 <figcaption><a href='https://medium.com/depromeet/%EA%B0%80%EC%8A%B4%EC%86%8D-3%EC%B2%9C%EC%9B%90-%EB%B6%95%EC%96%B4%EB%B9%B5%EC%97%90-%EB%88%84%EA%B5%AC%EB%B3%B4%EB%8B%A4-%EC%A7%84%EC%8B%AC%EC%9D%B4%EC%97%88%EB%8D%98-%EB%8C%80%ED%95%9C%EB%AF%BC%EA%B5%AD%EC%9D%B8%EC%9D%98-%EC%82%AC%EC%9D%B4%EB%93%9C-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-2a3f714026b3' target='blank' ref='nofollow' id='outlink3' onclick='clickedOutlink(outlink3)'>Alley님이 제작한 ‘가슴속 3천원’ 앱이 궁금하시다면? >></a></figcaption>
 
@@ -42,15 +42,15 @@ order: 1
 
 테스트를 진행하고자 하는 서비스에 연동해둔 SDK가 자동으로 진입한 사용자들을 판별해 테스트 그룹에 배정하고, 각 테스트 그룹에서 제공할 시안이나 기능을 자동으로 노출합니다. 이후 사용자의 행동 데이터를 수집해 설정한 목표 데이터로 계산합니다. 해당 데이터는 매시간 업데이트되어 테스트의 진행 현황을 빠르게 확인하실 수 있습니다.
 
-![](https://miro.medium.com/max/1400/1*fQ19pbItqsY0NBtzHXN4Zw.png)
+![](https://miro.medium.com/max/1400/1*fQ19pbItqsY0NBtzHXN4Zw.png){:class="lazyload"}
 
 <figcaption>CTA에 사용할 후크 레이블에 대한 테스트 그룹 설정 예시<br>출처: 핵클 대시보드</figcaption>
 
-![](https://miro.medium.com/max/1400/1*gvb6sp5LW4CTvghCSrviLQ.png)
+![](https://miro.medium.com/max/1400/1*gvb6sp5LW4CTvghCSrviLQ.png){:class="lazyload"}
 
 <figcaption>서비스를 사용하는 트래픽을 각 그룹에 할당하는 설정 예시<br>출처: 핵클 대시보드</figcaption>
 
-![](https://miro.medium.com/max/1400/1*fsa_BxdAiu9ku_eed29i3Q.png)
+![](https://miro.medium.com/max/1400/1*fsa_BxdAiu9ku_eed29i3Q.png){:class="lazyload"}
 
 <figcaption>테스트 결과 리포트 예시<br>출처: 핵클 이용 가이드</figcaption>
 
@@ -70,11 +70,11 @@ order: 1
 
 **Alley:** 핵클의 고객사 중 '스파르타 코딩클럽'에서 진행한 A/B 테스트 케이스를 소개해드릴 수 있을 것 같아요. 서비스 홈페이지에서 사용자 리뷰 영역 디자인을 변경하는 A/B 테스트를 진행하였어요. 그룹 A는 기존 디자인을 그대로 제공하는 대조군으로, 그룹 B는 가독성을 높인 개선된 디자인을 제공하는 실험군으로 설정하고, 목표 데이터는 구매 이벤트로 설정하였습니다. 테스트를 설계하신 분은 가독성이 더 높은 리뷰 디자인이 구매에 긍정적인 영향을 줄 것으로 가설을 세우고 기대를 한 것이죠.
 
-![](https://miro.medium.com/max/1400/1*R0AKliqr97_moHtYgyHxIQ.png)
+![](https://miro.medium.com/max/1400/1*R0AKliqr97_moHtYgyHxIQ.png){:class="lazyload"}
 
 <figcaption>스파르타 코딩클럽 기존 시안 예시. 실제 테스트에 적용된 이미지와 다를 수 있습니다.<br>출처: 스파르타 코딩클럽</figcaption>
 
-![](https://miro.medium.com/max/1400/1*ywfDzszUdirHBZ0qvju2qg.png)
+![](https://miro.medium.com/max/1400/1*ywfDzszUdirHBZ0qvju2qg.png){:class="lazyload"}
 
 <figcaption>스파르타 코딩클럽 실험 시안 예시. 실제 테스트에 적용된 이미지와 다를 수 있습니다.<br>출처: 스파르타 코딩클럽</figcaption>
 
@@ -90,7 +90,7 @@ order: 1
 
 테스트 결과를 해석할 때는 목표로 설정한 핵심 이벤트 지표를 종합적으로 고려해야 올바른 결정을 내릴 수 있습니다.
 
-![](https://miro.medium.com/max/1400/1*9Hr-3mRcNNcmNCAw4Q2nzA.png)
+![](https://miro.medium.com/max/1400/1*9Hr-3mRcNNcmNCAw4Q2nzA.png){:class="lazyload"}
 
 <figcaption>배송비를 각기 다르게 제공했을 때 구매 전환율, 평균 구매 금액, 구매 횟수는 어떻게 변할지에 대한 테스트 예시</figcaption>
 

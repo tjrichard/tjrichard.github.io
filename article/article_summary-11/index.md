@@ -16,8 +16,6 @@ order: 11
  🔗 이 글은 Anne Siing Blond님이 <a href='https://medium.com/agileinsider/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://medium.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://medium.com/agileinsider/the-ultimate-guide-to-b2b-customer-research-d0ee599ea986' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > B2B 프로덕트는 B2C 프로덕트보다 사용자와 만나 리서치를 진행하기 더 어렵기 때문에 셜록 홈즈와 같이 상세하게 리서치 해야 PMF를 달성할 수 있는 가능성이 높아질 수 있습니다.
 
 * 먼저 프로덕트가 풀고자 하는 문제를 명확하게 정의할 수 있어야 합니다. 블로그에서는 엘레베이터 피치에서 사용하는 템플릿으로 Product Statement를 만드는 예시를 들었습니다.

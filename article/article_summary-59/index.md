@@ -16,8 +16,6 @@ order: 59
  🔗 이 글은 Kyle Poyar님이 <a href='https://openviewpartners.com/blog/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://openviewpartners.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Openview</a>에 올린 <a href='https://openviewpartners.com/blog/usage-based-pricing-trends/#.YZTXRL1Bz0o' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 최근 SaaS 가격 모델링 방식 중 사용량 기반 가격 정책이 뜨고 있습니다. OpenView 조사 결과 지난 해 `34%`에서 올해 `45%`의 SaaS 회사가 사용량 기반 가격 정책을 어느정도 가지고 있다고 조사되었습니다. 이렇게 사용량 기반 가격 정책이 뜨고 있는 이유는 무엇일까요?
 
 1. **소프트웨어 구매에서 최종 사용자(end user)의 시대에 살고 있기 때문**  

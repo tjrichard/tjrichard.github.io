@@ -23,7 +23,7 @@ B2B 프로덕트를 디자인할 때 신경 써야 할 것을 알아보기 전�
 
 B2B 프로덕트는 **`기업 근로자의 업무를 더 잘 할 수 있도록 도와주기`** 위해 존재합니다. B2B 프로덕트는 <span style="color: #4139EF;">**사용자의 업무상 발생하는 문제**</span>를 해결해주기 위해 존재합니다. 친구들과 간 여행지에서 찍은 셀카를 자연스럽게 보정해준다든지, 전 세계 플레이어들과 경쟁해 높은 순위를 쟁취하는 등 개인적인 일상에서 재미를 주기 위한 것이 아닙니다. 이 특징은 B2B 프로덕트의 가장 기본적인 특징이며 이후 B2B 프로덕트이기 때문에 가지는 특징과 이를 디자인하기 위해 염두에 둬야 할 점들을 모두 관통한다고 할 수 있습니다.
 
-![업무중인 사용자가 즐거울리가 없습니다..](../8-things-keep-in-mind-as-b2b-product-designer/img/get_up_and_make_money.jpeg)
+![업무중인 사용자가 즐거울리가 없습니다..](../8-things-keep-in-mind-as-b2b-product-designer/img/get_up_and_make_money.jpeg){:class="lazyload"}
 
 <figcaption>업무중인 사용자가 즐거울리가 없습니다..<br>원작: 우라사와 나오키 [플루토]</figcaption>
 
@@ -50,7 +50,7 @@ B2B 프로덕트는 수도 없이 많습니다. 평소 우리가 잘 알지 못�
    > - 프로덕트를 만들기 위해 시스템에 도입되거나 여러 시스템 간 연동작업을 통해 데이터를 주고받으며 가치를 생산해내는 프로덕트
    > - 다른 프로덕트나 시스템과 연계성이 없어도 프로덕트 그 자체의 가치가 떨어지지 않는 프로덕트
 
-![B2B 프로덕트의 구분 1](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_category_1.png)
+![B2B 프로덕트의 구분 1](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_category_1.png){:class="lazyload"}
 
 <figcaption>B2B 프로덕트의 구분 1</figcaption>
 
@@ -58,7 +58,7 @@ B2B 프로덕트는 수도 없이 많습니다. 평소 우리가 잘 알지 못�
 
 이 구분에 포함되어있는 다른 프로덕트의 예시로는 커뮤니케이션 API 공급업자인 Twilio, 결제 시스템 제공업자인 Stripe, 웹사이트 방문자 분석 솔루션인 Google Analytics, 사용자 행동 분석 툴인 Amplitude, 개발자들을 위한 성지 Github 등이 있습니다.
 
-![B2B 프로덕트의 구분 2](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_category_2.png)
+![B2B 프로덕트의 구분 2](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_category_2.png){:class="lazyload"}
 
 <figcaption>B2B 프로덕트의 구분 2</figcaption>
 
@@ -85,7 +85,7 @@ B2B 프로덕트는 수도 없이 많습니다. 평소 우리가 잘 알지 못�
 
 B2B 프로덕트의 특징을 다음 3 가지 관점으로 구분해 바라볼 수 있습니다.
 
-![B2B 프로덕트의 특징 3가지](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_character.png)
+![B2B 프로덕트의 특징 3가지](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_character.png){:class="lazyload"}
 
 <figcaption>B2B 프로덕트의 특징 3가지</figcaption>
 
@@ -117,7 +117,7 @@ B2C 프로덕트에 종사하는 사람 중 많은 사람이 이후 어떤 방�
 
 일반적으로 사용자는 현재 워크플로우에 개인별로 최적화된 방법을 스스로 만들어 본인의 워크플로우에 적용해서 가진 리소스를 최대한 효율적으로 사용하고 있을 가능성이 높습니다. <span style="color: #4139EF;">**사용자들이 기존 워크플로우에 너무 익숙해 있는 경우 오히려 문제를 문제라고 인식하고 있지 못하는 경우**</span>도 발생해 사용자로부터 문제를 끌어내는 것이 더 어려운 경우도 있습니다.
 
-![디자이너와 사용자 간 거리](../8-things-keep-in-mind-as-b2b-product-designer/img/distance_between_designer_and_user.png)
+![디자이너와 사용자 간 거리](../8-things-keep-in-mind-as-b2b-product-designer/img/distance_between_designer_and_user.png){:class="lazyload"}
 
 <figcaption>디자이너와 사용자 간 거리</figcaption>
 
@@ -131,7 +131,7 @@ B2B 프로덕트를 실제로 사용하는 <span style="color: #4139EF;">**사�
 
 ## 2. 프로덕트 관점
 
-![B2B 프로덕트의 특징 3가지 - 프로덕트 관점](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_character_2.png)
+![B2B 프로덕트의 특징 3가지 - 프로덕트 관점](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_character_2.png){:class="lazyload"}
 
 <figcaption>B2B 프로덕트의 특징 3가지 - 프로덕트 관점</figcaption>
 
@@ -157,13 +157,13 @@ B2B 프로덕트는 사용자의 복잡한 워크플로우에서 발생하는 �
 
 또한, 프로덕트가 발전해감에 따라 전체 워크플로우에서 점점 더 많은 부분을 담당하는 방향으로 변화하게 됩니다. 이런 자연스러운 <span style="color: #4139EF;">**발전 과정에서 프로덕트가 해결하고자 하는 문제가 많아지면서 프로덕트의 복잡성도 높아지게**</span> 됩니다.
 
-![2002년 Jira 스크린샷](../8-things-keep-in-mind-as-b2b-product-designer/img/2002-jira.png)
+![2002년 Jira 스크린샷](../8-things-keep-in-mind-as-b2b-product-designer/img/2002-jira.png){:class="lazyload"}
 
 <figcaption>2002년 Jira 스크린샷. Jira는 설치형 이슈 트래커로 시작했지만 지금은 수많은 기능을 가진 프로젝트 관리 플랫폼이 되었다.<br>출처: <a href='https://community.atlassian.com/t5/Feedback-Forum-articles/Happy-Anniversary-to-the-Atlassian-Community/ba-p/762647' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://community.atlassian.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>아틀라시안 커뮤니티</a></figcaption>
 
 ## 3. 외부 환경 관점
 
-![B2B 프로덕트의 특징 3가지 - 외부 환경 관점](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_character_3.png)
+![B2B 프로덕트의 특징 3가지 - 외부 환경 관점](../8-things-keep-in-mind-as-b2b-product-designer/img/b2b_product_character_3.png){:class="lazyload"}
 
 <figcaption>B2B 프로덕트의 특징 3가지 - 외부 환경 관점</figcaption>
 

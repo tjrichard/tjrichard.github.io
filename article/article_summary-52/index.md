@@ -16,10 +16,6 @@ order: 52
  🔗 이 글은 Product Mindset님이 <a href='https://productmindset.substack.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://productmindset.substack.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Substack</a>에 올린 <a href='https://productmindset.substack.com/p/star-interview-framework' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 포트폴리오 작성에 가장 도움이 되는 STAR 프레임워크
-
 STAR 프레임워크는 내가 내린 의사결정의 배경과 이후 학습한 결과를 자연스럽게 보여줄 수 있는 프레임워크입니다. 일반적인 경우 How에 해당하는 내가 생각한 아이디어, 실행한 방법만 집중적으로 묘사하게되는 경우가 많은데, STAR 프레임워크를 사용한다면 내 포트폴리오를 읽게 될 면접관들에게 **문제의 배경, 목표, 행동과 결과**를 빠짐없이, 이해하기 쉬운 순서로 전달할 수 있게 됩니다.
 
 ### ⭐️  STAR 프레임워크란?

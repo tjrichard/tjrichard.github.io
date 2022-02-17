@@ -16,8 +16,6 @@ order: 25
  🔗 이 글은 김자유(김강령)님이 <a href='https://brunch.co.kr/@thinkaboutlove/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://brunch.co.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>브런치</a>에 올린 <a href='https://brunch.co.kr/@thinkaboutlove/396' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 지난 토스의 Simplicity 21 컨퍼런스에서 발표된 적 있는 토스 보이스톤 메이커를 만들게된 과정에 대한 글입니다.
 
 팀이 작을때는 내가 주로 작성하는 어투만 프로덕트에 반영되기 때문에 프로덕트의 보이스톤을 일관되게 유지하기가 더 쉽습니다. 하지만 팀이 커지고 많은 사람들이 프로덕트에 사용되는 레이블을 작성하기 시작하면서 보이스톤을 일관되게 유지하기 어려워지기 시작합니다.

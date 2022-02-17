@@ -16,10 +16,6 @@ order: 54
  🔗 이 글은 Richard Yang님이 <a href='https://uxdesign.cc/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://uxdesign.cc/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://uxdesign.cc/removing-features-without-pissing-off-your-users-and-why-you-should-19b4ee595e33' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
-### 사용자를 화나지 않게 하면서 기능 제거하기
-
 기능이 너무 많은 프로덕트는 대부분의 경우 UX를 저해합니다. 모두가 이를 알고 있지만 대부분의 프로덕트, 특히 B2B 프로덕트는 기능 비대 상태가 되어버리곤 합니다. 최 상위 가치를 가진 기업 고객들을 잃지는 않겠지만(보통 그들이 그 기능들을 요구했기 때문에), 일반적인 사용자 대부분에게 거리감을 두게 됩니다. 이런 경우 비싸고 비대해진 프로덕트가 커버하지 못하는 작은 핵심 영역을 '언번들링'한 경쟁 프로덕트가 나타나곤 합니다.
 
 ### 기능이 비대해지면 새로운 사용자가 첫 '아하' 모먼트를 경험하게 되기 어려워 집니다.

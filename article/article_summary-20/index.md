@@ -16,8 +16,6 @@ order: 20
  🔗 이 글은 김민우님이 <a href='https://www.minwookim.kr/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://www.minwookim.kr/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>블로그</a>에 올린 <a href='https://www.minwookim.kr/experiment-hypothesis-for-startups/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 > 최근 데이터 기반 의사결정, 사용자 행동 분석 등 데이터 분석을 활용하는 곳이 많아졌습니다. 주변에서 많이 이야기 하는 '실험'과 '가설'에 대한 개념을 얼마나 정확하게 알고 있나요?
 
 1. `실험`은 몰랐던 것을 알아내기 위해 (=지식을 얻기 위해) 하는 활동입니다. 만약 실험으로 뭔가를 알아내지 못했다면 잘못된 실험입니다.

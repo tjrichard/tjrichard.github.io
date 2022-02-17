@@ -49,7 +49,7 @@ order: 1
 
 이 때 조사를 위한 실험 방법을 선택하는 것은 데이터를 통계적으로 분석하는 방법에 영향을 준다.
 
-![Within-subjects and Between-subjects Design image](https://media.nngroup.com/media/editor/2018/03/15/between-within-watermark.jpg)
+![Within-subjects and Between-subjects Design image](https://media.nngroup.com/media/editor/2018/03/15/between-within-watermark.jpg){:class="lazyload"}
 
 <figcaption>독립 집단 설계와 반복 측정 설계 방법에 대한 설명</figcaption>
 

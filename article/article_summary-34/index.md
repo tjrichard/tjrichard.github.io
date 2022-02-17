@@ -16,8 +16,6 @@ order: 34
  🔗 이 글은 Michelle Yick님이 <a href='https://productcoalition.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://productcoalition.com/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄</a>에 올린 <a href='https://productcoalition.com/how-to-spot-a-product-led-company-cf159e6f38a3' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
-
 최근 성공적으로 성장한 SaaS 프로덕트를 이야기할 때 빠질 수 없는 개념이 '**`Product-led`**' 입니다. Product-led를 간단히 설명하자면 프로덕트의 매력을 중심으로 프로덕트와 비즈니스를 성장시키는 프레임워크입니다. 하지만 모든 SaaS 비즈니스가 Product-led는 아닙니다. Product-led 가 아닌 다른 성장 방식으로는 어떤 것들이 있을까요?
 
 ### 💰 Sales-led

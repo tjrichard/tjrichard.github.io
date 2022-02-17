@@ -16,7 +16,6 @@ order: 6
 🔗 이 글은 Claudia Delago가 본인의 <a href='https://claudiatd.medium.com/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://miro.medium.com/fit/c/120/120/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>미디엄 블로그</a>에 올린 <a href='https://abit.ly/article_43' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-## ⚡️ 요약
 > 프로덕트 관리를 위해 프로덕트 선행 지표는 반드시 필요합니다. 이 때 프로덕트 지표는 모든 것을 측정하려 해서는 안되고, 프로덕트를 더 나은 방향으로 만들기 위한 의사결정이나 액션을 할 수 있는 지표 중에서 선택해야 합니다.
 > 
 > **AARRR**, **HEART**, **북극성 지표** 세 종류를 적절히 혼합해 프로덕트 지표의 예시를 만들고 이에 대해 설명 합니다. 아래는 사용자의 각 단계 별 성공을 측정하기 위해 만든 프로덕트 지표의 예시입니다.
@@ -57,7 +56,7 @@ order: 6
 ## Intro
 
 '지표'가 들어오고 나서부터 프로덕트 관리는 근본적으로 바뀌어버렸다.
-![Product Management after Product Metrics](https://miro.medium.com/max/1648/1*G4srRM5VkRgGyCDLQmeNkQ.png)
+![Product Management after Product Metrics](https://miro.medium.com/max/1648/1*G4srRM5VkRgGyCDLQmeNkQ.png){:class="lazyload"}
 
 <figcaption>Product Management after Product Metrics</figcaption>
 
@@ -75,7 +74,7 @@ order: 6
 
 이제 우리는 이벤트(우리 프로덕트에서 수행한 행동)를 트래킹 하고 프로퍼티(이벤트나 사용자에 관한 추가적인 정보)를 수집함으로써 우리의 사용자가 어떤 행동을 하는지 너무나도 쉽게 알 수 있게 되었다. 이 상황에서 드는 첫 번째 생각은 모든 것을 측정하자! 일 것이다. 이를 위해 아마 대시보드도 만들 것이고, 대시보드에는 숫자가 반짝이고 있을 것이다. 우리는 해냈고, 이정도로 밀도 있는 데이터를 다루고 있는 것에 나는 굉장히 중요한 일을 하고 있다고 생각하게 될 것이다.
 
-![Don't measure everything](https://miro.medium.com/max/2400/1*ElzBBKD90of7LAC9-eWCtA.png)
+![Don't measure everything](https://miro.medium.com/max/2400/1*ElzBBKD90of7LAC9-eWCtA.png){:class="lazyload"}
 
 <figcaption>Don't measure everything</figcaption>
 
@@ -87,19 +86,19 @@ order: 6
 
 **[☠️ 해적 지표](https://www.youtube.com/watch?v=irjgfW0BIrw)** 혹은 해적 언어로는 **AARRR**. 이 프레임워크는 제품 단계를 각 사용자 라이프사이클에 따라 측정하는 방식을 제안한다.
 
-![AARRR Framework](https://miro.medium.com/max/2400/1*9DlKcu8diC38xNR35oPmYA.png)
+![AARRR Framework](https://miro.medium.com/max/2400/1*9DlKcu8diC38xNR35oPmYA.png){:class="lazyload"}
 
 <figcaption>AARRR Framework</figcaption>
 
 **[❤️ HEART](https://library.gv.com/how-to-choose-the-right-ux-metrics-for-your-product-5f46359ab5be)**. 이 프레임워크는 사용자가 프로덕트와 어떻게 상호작용 하고 얼마나 만족하는지를 알아보기 위해 만들어졌다.
 
-![HEART Framework](https://miro.medium.com/max/2400/1*y-ONePPGFZ1E0Sy-DP-mAQ.png)
+![HEART Framework](https://miro.medium.com/max/2400/1*y-ONePPGFZ1E0Sy-DP-mAQ.png){:class="lazyload"}
 
 <figcaption>HEART Framework</figcaption>
 
 **[⭐️ 북극성 지표](https://blog.growthhackers.com/what-is-a-north-star-metric-b31a8512923f)**. 이 프레임워크는 좀 더 급진적이고, 모든 프로덕트 노이즈를 가장 중요한 지표를 위해 제거해야 한다고 본다. 이 때 가장 중요한 지표는 장기적인 비즈니스 결과와 사용자에게 제공되는 핵심 가치의 관계를 가장 잘 나타내는 선행 지표를 말한다. 하지만 이 프레임워크도 북극성 지표에 가장 직접적인 영향을 주는 3에서 5개 보완적 지표를 포함하고 있다.
 
-![North Star Framework](https://miro.medium.com/max/2400/1*OO76SNnTgQIQkWAgqMQ-3A.png)
+![North Star Framework](https://miro.medium.com/max/2400/1*OO76SNnTgQIQkWAgqMQ-3A.png){:class="lazyload"}
 
 <figcaption>North Star Framework</figcaption>
 
@@ -109,7 +108,7 @@ order: 6
 
 더 자세히 보기 위해, 나는 일반적인 프로덕트가 가질법 한 표준 지표를 몇 가지 작성해보았다. ☠️ 해적 지표와 ❤️ HEART 지표가 말하는 영역을 늘어놓고, 여기서 주요한 항목들을 ⭐️ 북극성과 같이 트리 구조에 배치해보았다. 여기서 어떤 지표들은 다른 지표들보다 더 잘 발견될 수 있는데, 좋은 현상이다. 분석 대시보드는 가장 임팩트가 큰 것부터 집중하되, 필요할 때는 더 심층적으로 들어갈 수 있다.
 
-![Tree-shaped Product Metric Structure](https://miro.medium.com/max/3848/1*WbcS7-VIH7OITvu5x4vcpQ.png)
+![Tree-shaped Product Metric Structure](https://miro.medium.com/max/3848/1*WbcS7-VIH7OITvu5x4vcpQ.png){:class="lazyload"}
 
 <figcaption>Tree-shaped Product Metric Structure</figcaption>
 
@@ -119,7 +118,7 @@ order: 6
 
 획득 단계가 성공적인지 트래킹하기 위해 우리는 새로운 사용자들이 누구인지와 그들이 어떻게 프로덕트를 발견했는지에 대한 지표가 필요하다. 프로덕트 관리 관점에서 획득 지표는 우리가 마케팅 팀과 얼마나 잘 커뮤니케이션 하는지와 우리의 프로덕트가 타겟 사용자들에게 설득력 있는지를 알려준다.
 
-![Acquisition](https://miro.medium.com/max/2400/1*JykEdoELxEE7-gEwovWprA.png)
+![Acquisition](https://miro.medium.com/max/2400/1*JykEdoELxEE7-gEwovWprA.png){:class="lazyload"}
 
 <figcaption>Acqusition</figcaption>
 
@@ -132,7 +131,7 @@ order: 6
 
 이러한 지표들은 우리가 만든 것이 성공할 수 있을지를 파악하는데 많은 도움이 된다. 사람들이 처음 시도해보는 어떤 것을 빠르게 시도해 본다는 것은 그것이 해결하려고 하는 문제에 대해 신경쓰고 있다는 의미인 것이다.
 
-![Activation / Adoption](https://miro.medium.com/max/2400/1*D4MiHQamtSYrnDgem0Q_HQ.png)
+![Activation / Adoption](https://miro.medium.com/max/2400/1*D4MiHQamtSYrnDgem0Q_HQ.png){:class="lazyload"}
 
 <figcaption>Activation / Adoption</figcaption>
 
@@ -150,7 +149,7 @@ order: 6
 
 ⭐ 사용자가 핵심 행동에 참여하는것은 비즈니스적으로 매우 중요하기 때문에 대부분의 프로덕트 관리 팀에서 북극성 지표와 연관관계를 찾는다. 사용자가 프로덕트와 더 많이 상호작용 할 수록, 그들이 리텐션될 확률이 높고, 이는 곧 수익을 낼 확률이 더 높은 것으로 이어진다. 모든 게임에서 선행 지표이다. 사용자들이 행동하지 않으면 모든 것이 무너지기 마련이다.
 
-![Engagement](https://miro.medium.com/max/2400/1*nBEsztZCHWXSulgrkBJdWw.png)
+![Engagement](https://miro.medium.com/max/2400/1*nBEsztZCHWXSulgrkBJdWw.png){:class="lazyload"}
 
 <figcaption>Engagement</figcaption>
 
@@ -164,7 +163,7 @@ order: 6
 
 작업 혹은 행동이 성공적인지 트래킹 하기 위해, 우리는 사용자가 해당 행동을 하기가 얼마나 용이한지를 알 수 있는 지표가 필요하다. 바로 사용성이다.
 
-![Task Success](https://miro.medium.com/max/2400/1*nZx5_xkUGZpBIe8dITRlUg.png)
+![Task Success](https://miro.medium.com/max/2400/1*nZx5_xkUGZpBIe8dITRlUg.png){:class="lazyload"}
 
 <figcaption>Task Success</figcaption>
 
@@ -179,7 +178,7 @@ order: 6
 
 이런 지표들은 측정하기 흥미로우면서도 까다로운 지표이다. 이 지표들은 사용자가 스스로 알릴 수 밖에 없으며, 감정과 편견이 끼어들 수 있다. 하지만 행동 지표와 결합한다면 유의미한 인사이트를 제공할 수 있다.
 
-![Happiness](https://miro.medium.com/max/2400/1*oaz5dRoGflCN7JxIOy1EVg.png)
+![Happiness](https://miro.medium.com/max/2400/1*oaz5dRoGflCN7JxIOy1EVg.png){:class="lazyload"}
 
 <figcaption>Happines</figcaption>
 
@@ -194,7 +193,7 @@ order: 6
 
 리텐션 단계의 성공을 측정하기 위해, 프로덕트나 특정 기능을 사용자가 얼마나 오래 사용하는지에 대한 지표가 필요하다. 이 지표로 우리는 사용자들이 어떤 것을 중시하는지, 왜 사용자들이 떠나는지를 파악할 수 있다. 사용자의 리텐션은 매우 중요하다. 새로운 사용자를 유치하는 것 보다 기존 사용자를 유지시키는 것이 훨씬 더 쉽기 때문이다.
 
-![Retention](https://miro.medium.com/max/2400/1*hmOu2TykzPX1b7FpiRAAoA.png)
+![Retention](https://miro.medium.com/max/2400/1*hmOu2TykzPX1b7FpiRAAoA.png){:class="lazyload"}
 
 <figcaption>Retention</figcaption>
 
@@ -209,7 +208,7 @@ order: 6
 
 수익은 사용자가 얼마나 지불하고 있는지, 혹은 우리 프로덕트로 얼마나 돈을 벌고 있는지를 나타낸다. 따라서 비즈니스가 지속 가능하고 건전한 상태를 유지하면서 기존 고객으로부터 수익을 증대시킬 수 있는 다양한 가격 전략을 테스트 해보는 것이 중요하다.
 
-![Revenue](https://miro.medium.com/max/2400/1*Zwy6eztwuIme5jDQoyhx-w.png)
+![Revenue](https://miro.medium.com/max/2400/1*Zwy6eztwuIme5jDQoyhx-w.png){:class="lazyload"}
 
 <figcaption>Revenue</figcaption>
 
@@ -223,7 +222,7 @@ order: 6
 
 프로덕트 관리는 프로덕트 지표가 들어오면서 영원히 바뀌어버렸고, 다시 돌아갈 방법은 없다.
 
-![Product Management ♥️ Product Metrics](https://miro.medium.com/max/1648/1*yGcKezcxzPa4j7b4xb6rgA.png)
+![Product Management ♥️ Product Metrics](https://miro.medium.com/max/1648/1*yGcKezcxzPa4j7b4xb6rgA.png){:class="lazyload"}
 
 <figcaption>Product Management ♥️ Product Metrics</figcaption>
 
