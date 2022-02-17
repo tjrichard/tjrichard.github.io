@@ -10,6 +10,7 @@
   z-index: 100;
   top: 0;
   height: 61px;
+  overflow-x: auto;
 
   &__inner {
     padding: $base-spacing-unit 0 0;
