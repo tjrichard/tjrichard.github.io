@@ -163,7 +163,7 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
     grid-column-gap: 40px;
-    grid-row-gap: 20px;
+    grid-row-gap: 40px;
     &__item {
         min-width: 320px;
         max-width: 520px;
@@ -171,38 +171,18 @@
     @media screen and (min-width: 1920px) {
         margin-bottom: 80px;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-column-gap: 40px;
-        grid-row-gap: 20px;
-        &__item {
-            min-width: 320px;
-            max-width: 520px;
-        }
     }
     @media screen and (max-width: 1440px) {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-column-gap: 40px;
-        grid-row-gap: 20px;
-        &__item {
-            width: clamp(320px, calc((100vw - 160px)/3), 520px);
-        }
     }
     @media screen and (max-width: 1100px) {
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto;
-        grid-column-gap: 10px;
-        grid-row-gap: 40px;
-        &__item {
-            width: clamp(320px, calc((100vw - 90px)/2), 520px);
-        }
+        grid-column-gap: 20px;
     }
     @media screen and (max-width: 680px) {
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        grid-row-gap: 20px;
         &__item {
-            width: clamp(320px, calc(100vw - 80px), 520px);
+            width: 100%;
         }
     }
     &__body {
