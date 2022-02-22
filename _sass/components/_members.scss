@@ -193,3 +193,128 @@
         transform: translate(8px, -32px);
     }
 }
+
+
+/* Form */
+
+.f-page-wrapper {
+    padding: 0 0 80px 0;
+    display: flex;
+    flex-direction: row;
+}
+.f-grid {
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 800px;
+}
+.f-header {
+    margin: 40px 0;
+    width: 100%;
+    & h1 {
+
+    }
+    & div {
+        color: $color-text;
+    }
+}
+.f-wrapper {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+}
+.f-input-wrapper {
+
+}
+.f-title {
+    font-size: $font-size-header;
+    font-weight: $font-weight-medium;
+}
+.f-description {
+    font-size: $font-size-medium;
+    color: $color-gray;
+}
+.input {
+
+}
+.file_button {
+
+}
+.button {
+
+}
+.preview-wrapper {
+    width: 360px;
+    min-height: 400px;
+    height: fit-content;
+    padding: 20px;
+    border: 1px dashed $color-gray;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: sticky;
+    top: 40px;
+}
+.preview-profile-image {
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-gray;
+    background: url(/b2b-designers/members/profile/placeholder_black.png);
+    background-size: cover;
+    background-position: center;
+    border: 1px dashed $color-gray;
+    background-color: $bg-color-code;
+    margin-bottom: 20px;
+}
+.preview-text {
+    &__name {
+
+    }
+    &__role {
+        display: inline-block;
+        font-size: $font-size-small;
+        font-weight: $font-weight-bold;
+        line-height: 20px;
+        padding: 0px 4px;
+        border: 2px solid $bg-color-dark;
+        border-radius: 3px;
+        background-color: rgba(255,255,255,0.88);
+        backdrop-filter: blur(4px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(30px, 284px);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .preview-wrapper {
+        min-width: 280px;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 630px) {
+    .f-page-wrapper {
+        flex-direction: column;
+    }
+    .preview-wrapper {
+        position: relative;
+        width: calc(100vw - 40px);
+    }
+    .preview-profile-image {
+        height: 270px;    
+    }
+    .preview-text__role {
+        transform: translate(30px, 256px);
+    }
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px 8px
+}
