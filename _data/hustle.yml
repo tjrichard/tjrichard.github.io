@@ -4,18 +4,24 @@ first:
     name: B2B 디자이너들의 모임 →
     description: 커뮤니티 관리 운영, 컨텐츠 제작, 데일리 아티클 공유
     date: Jun 2021 ~ Present 🚀
+# second:
+#   - img: https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/logo.svg
+#     link: https://mixpanel.com/p/Qwn5iySDsyDRqAZpHZXyB6
+#     name: Mixpanel 대시보드 활용 →
+#     description: Segment, Mixpanel을 활용하여 이벤트 설계 및 블로그 방문자 분석 실습
+#     date: Aug 2021 ~ Present 🚀
 second:
-  - img: https://px6vg4ekvl21gtxs836x5jyx-wpengine.netdna-ssl.com/wp-content/uploads/2021/02/logo.svg
-    link: https://mixpanel.com/p/Qwn5iySDsyDRqAZpHZXyB6
-    name: Mixpanel 대시보드 활용 →
-    description: Segment, Mixpanel을 활용하여 이벤트 설계 및 블로그 방문자 분석 실습
-    date: Aug 2021 ~ Present 🚀
+  - img: images/icons/toolbox.png
+    link: /side-hustle/case-list-generator
+    name: 케이스 리스트 제너레이터
+    description: QA 리스트, 디자인 시스템 토큰과 같은 반복되는 규칙 쌍 생성기
+    date: Feb 2022
 third:
   - img: images/icons/pomodoro.png
     link: /side-hustle/pomodoro
     name: Pomodoro Timer →
     description: 포모도로 타이머, Vanilla JS, Local Storage 활용
-    date: Apr 2021 ~ Present 🚀
+    date: Apr 2021 ~ June 2021
 fourth:
   - img: images/icons/api.png
     link: /side-hustle/api-practice
@@ -26,7 +32,7 @@ fifth:
   - img: images/icons/calculator.png
     link: /side-hustle/js-calculator
     name: Javascript 계산기 →
-    description: Vanilla JS로 사칙연산 게산기 구현
+    description: Vanilla JS로 사칙연산 계산기 구현
     date: Sep 2021
 sixth:
   - img: images/icons/custom.png

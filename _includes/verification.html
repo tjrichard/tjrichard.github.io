@@ -142,13 +142,13 @@ return binb2hex(core_sha256(str2binb(s), s.length * chrsz));
 
 /*                               */ 
 
-function createModal() {
+function createModal(url) {
     // var modalBackground = document.createElement("div");
     // modalBackground.setAttribute("id", "modalBackground");
     // modalBackground.setAttribute("class", "modal__background");
     // modalBackground.setAttribute("onclick", "closeModal()");
     // document.body.appendChild(modalBackground);
-
+    console.log(url);
     var modalCloseButton = document.createElement("div");
     modalCloseButton.setAttribute("id", "modalCloseButton");
     modalCloseButton.setAttribute("class", "modal__closeButton");
@@ -161,7 +161,7 @@ function createModal() {
     document.body.appendChild(modalContainer);
     
     var modal = document.createElement("iframe");
-    modal.setAttribute("src", "https://datastudio.google.com/embed/reporting/d841c401-2c43-4fa4-80d9-9203489d6d88/page/kazdC");
+    modal.setAttribute("src", url);
     modal.setAttribute("class", "modal__content");
     
     document.getElementById("modalContainer").appendChild(modal);
@@ -176,16 +176,17 @@ function closeModal() {
     mcb.remove();
 }
 
-function verification() {
+function verification(url) {
     var input = document.getElementById('passwordInput').value;
     var encodedPassword = SHA256(input);
-    // console.log(encodedPassword);
+    console.log(encodedPassword);
     var pass1 = '58c63d3625b948b10a897371f0e656455a78e235db5690e2d1bbf23a1883d4ec';
     var pass2 = '41dd0a5e6f3e15a19eb1dcf9f985cf342557ed34d3c0bf19dd07eeff766a8a5d';
     var pass3 = '7634aeb9648248f6e3d8a2f7166a872f884a6cbce346d52bfcbff5357ee01c29';
+    var pass4 = '1f56e977ebd0f48a1035c6474d713ba2b87294a779a37b7dff946a3c4a666eab';
 
-    if (encodedPassword && (encodedPassword == pass1 || encodedPassword == pass2 || encodedPassword == pass3)) {
-        createModal();
+    if (encodedPassword && (encodedPassword == pass1 || encodedPassword == pass2 || encodedPassword == pass3 || encodedPassword == pass4)) {
+        createModal(url);
     }
     else {
         // var input = document.getElementById('passwordInput');
@@ -204,12 +205,13 @@ function verification() {
 function handler(event) {
     var keyStroke = event.key;
     if (keyStroke == 'Enter') {
-        verification();
+        var url = document.getElementById("passwordSubmit").getAttribute("onclick").split("'")[1]
+        verification(url);
     }
 }
 // survey 화면에서만 동작
 window.addEventListener('DOMContentLoaded', (event) => {
-    if (document.location.pathname == '/b2b-designers-survey/'){
+    if (document.location.pathname.indexOf('survey')>=1){
         document.getElementById('passwordInput').addEventListener('keydown', handler);
     }
     else {};

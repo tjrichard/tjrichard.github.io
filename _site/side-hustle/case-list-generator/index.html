@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>케이스 리스트 생성기</title>
+    <script src="https://tjrichard.github.io/js/evil-icons.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <a href="https://tjrichard.github.io">
+        <div class='back--button'>
+            <span class='icon--button' data-icon='ei-chevron-left' data-size='s'></span>
+            <p>돌아가기</p>
+        </div>
+    </a>
+    <div id="headerArea">
+        <h1>케이스 리스트 생성기</h1>
+        <p>QA 시트, 디자인 시스템 토큰 등 카테고리 규칙의 쌍을 만들 수 있습니다</p>
+    </div>
+    <div id="catList" class="catList">
+        <div id="cat1" class="cat">
+            <div class="catContainer">
+                <input type="input" placeholder="A 칼럼 카테고리 타이틀" class="catTitle">
+                <textarea type="input" placeholder="카테고리 케이스. 콤마로 구분합니다. 필요시 큰/작은 따옴표로 그룹핑 가능합니다 e.g. '안드로이드', 'iOS', '웹'" class="catValue" rows="4"></textarea>
+            </div>
+            <div class="delete--button" onclick="deleteCat(this)">
+                <p>🗑</p>
+            </div>
+        </div>
+        <input id="addCat" type="button" value="카테고리 추가" onclick="addCat()">
+        
+    </div>
+    <div id="index">
+        <p>⬇️</p>
+    </div>
+    <div id="resultArea">
+        <p id="result">생성된 결과를 csv로 다운로드 받으세요</p>
+        <div id="buttonArea" class="buttonArea">
+            <input id="generateList" type="button" value="리스트 생성" onclick="generateList()">
+            <a id="download" download="generated-list.csv" style="display: none;">CSV 다운로드</a>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+</html>
