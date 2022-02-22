@@ -49,14 +49,17 @@
                 var listUl = document.getElementById("member-list");
                 var listLi = document.createElement("li");
                     listUl.appendChild(listLi);
-                var memberProfileDiv = document.createElement("div");
-                    memberProfileDiv.setAttribute("class", "m-profile-container");
-                    memberProfileDiv.style.backgroundImage = "url(" + profile_pic_url + ")";
-                    listLi.appendChild(memberProfileDiv);
+                var memberProfileContainer = document.createElement("div");
+                    memberProfileContainer.setAttribute("class", "m-profile-container");
+                    listLi.appendChild(memberProfileContainer);
+                var memberProfileImg = document.createElement("div");
+                    memberProfileImg.setAttribute("class", "m-profile-image");
+                    memberProfileImg.style.backgroundImage = "url(" + profile_pic_url + ")";
+                    memberProfileContainer.appendChild(memberProfileImg);
                 var memberRole = document.createElement("div");
                     memberRole.setAttribute("class", "m-role")
                     memberRole.innerHTML = role;
-                    memberProfileDiv.appendChild(memberRole);
+                    memberProfileContainer.appendChild(memberRole);
                 var memberDescDiv = document.createElement("div");
                     memberDescDiv.setAttribute("class", "m-desc");
                     listLi.appendChild(memberDescDiv);
