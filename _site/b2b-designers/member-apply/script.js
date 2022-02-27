@@ -264,7 +264,7 @@ function submitApplication() {
         method: "POST",
         body: record,
         headers: {
-            "Authorization": "Bearer f88d444d62cda2e54effac73a2bfee742cf9b23a"
+            "Authorization": ""
         }
     }).catch(console.error);
 };
