@@ -215,8 +215,9 @@ function handleFiles(files) {
 function submitApplication() {
     const inputName = document.getElementById("input-1").value;
     const inputImage = document.getElementById("input-2").files[0];
-    const profileImg = new FormData();
-          profileImg.append("profileImg", inputImage);
+    const imageUrl = window.URL.createObjectURL(inputImage);
+    // const profileImg = new FormData();
+    //       profileImg.append("profileImg", inputImage);
     const inputCompany = document.getElementById("input-3").value;
     const inputProduct = document.getElementById("input-4").value;
     const inputRole = document.getElementById("input-5").value;
@@ -240,7 +241,7 @@ function submitApplication() {
             {
                 "fields": {
                     "Name": inputName,
-                    "Profile_Picture": profileImg,
+                    "Profile_Picture": imageUrl,
                     "Company": inputCompany,
                     "Product": inputProduct,
                     "Role": inputRole,
@@ -259,14 +260,4 @@ function submitApplication() {
             }
         ]
     };
-
-    let key = "c7ac97bf4421f1a8b5c" + "be49f3871b54634deb0c0";
-
-    fetch("https://docs.getgrist.com/api/docs/up54iqQ5ZaV4A9VKiFavSf/tables/UserBaseMaster/records", {
-        method: "POST",
-        body: record,
-        headers: {
-            "Authorization": "Bearer " + key
-        }
-    }).catch(console.error);
 };
