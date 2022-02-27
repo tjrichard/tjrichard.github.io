@@ -266,7 +266,7 @@ function submitApplication() {
         method: "POST",
         body: record,
         headers: {
-            "Authorization": "Bearer " + key;
+            "Authorization": "Bearer " + key
         }
     }).catch(console.error);
 };
