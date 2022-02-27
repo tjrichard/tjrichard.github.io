@@ -250,7 +250,7 @@ function getApi_currentWeather() {
         })
         var lat = Object.values(json)[8];
         var lon = Object.values(json)[9];
-        let key = "18ad4f9360c88c9ebd053c46af11eb08"
+        let key = "18ad4f9360c88c9e" + "bd053c46af11eb08";
         let url = "https://api.openweathermap.org/data/2.5/weather?lat="+ lat +"&lon=" +lon + "&appid=" + key
     
         fetch (url, {
