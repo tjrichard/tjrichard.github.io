@@ -260,11 +260,13 @@ function submitApplication() {
         ]
     };
 
+    let key = "c7ac97bf4421f1a8b5c" + "be49f3871b54634deb0c0";
+
     fetch("https://docs.getgrist.com/api/docs/up54iqQ5ZaV4A9VKiFavSf/tables/UserBaseMaster/records", {
         method: "POST",
         body: record,
         headers: {
-            "Authorization": ""
+            "Authorization": "Bearer " + key;
         }
     }).catch(console.error);
 };
