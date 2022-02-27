@@ -146,6 +146,8 @@
         fetch(url, requestOptions)
             .then(response => response.json())
             .then(json => {
+                console.log(json);
+                console.log(JSON.stringify(json));
                 listMembers(json);
             });
     };
