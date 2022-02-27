@@ -208,6 +208,13 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 800px;
+    & a {
+        color: $color-key;
+        transition: all ease 0.2s;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
 }
 .f-header {
     margin: 40px 0;
@@ -222,7 +229,9 @@
 .f-wrapper {
     display: block;
     width: 100%;
+    height: auto;
     margin-bottom: 40px;
+    transition: all ease 0.2s;
 }
 .f-input-wrapper {
 
@@ -242,7 +251,22 @@
 
 }
 .button {
-
+    padding: 4px 12px;
+    line-height: 28px;
+    background-color: $color-key;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    min-width: 180px;
+    &:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+}
+.disabled {
+    cursor: not-allowed !important;
+    background-color: $color-gray-100 !important;
+    color: $color-gray !important;
 }
 .preview-wrapper {
     width: 360px;
@@ -317,4 +341,18 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 12px 8px
+}
+.radio-wrapper {
+    display: inline-flex;
+    flex-direction: column;
+}
+
+label {
+    &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+    }
+    & >input {
+        margin-right: 4px;
+    }
 }

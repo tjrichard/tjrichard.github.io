@@ -44,7 +44,7 @@ header-img: "b2b_graphic_cover_600x300.png"
                 <div class="f-description">
                     멤버 베이스에 소개를 위한 이미지입니다
                 </div>
-                <input type="file" id="input-2" class="file_button" accept="image/*">
+                <input type="file" id="input-2" class="file_button" name="profileImg" accept="image/*" onchange="handleFiles(this.files)">
             </div>
         </div>
         <div class="f-wrapper">
@@ -144,7 +144,21 @@ header-img: "b2b_graphic_cover_600x300.png"
                     운영진은 커뮤니티 운영 방향을 결정하고 관리합니다. 커뮤니티 활동에 참여할 수 있는 우선권이 있으며, 다양한 경험을 통해 본인 뿐만 아니라 다른 B2B 디자이너들의 커리어 성장에도
                     도움을 줄 수 있습니다.
                 </div>
-                <input type="text" id="input-11" class="input" placeholder="라디오로 바꿔야함">
+                <div class="radio-wrapper">
+                    <label><input type="radio" name="manager" value="yes" id="input-11-yes" checked>예</label>
+                    <label><input type="radio" name="manager" value="no" id="input-11-no">아니오</label>
+                </div>
+            </div>
+        </div>
+        <div class="f-wrapper" id="application">
+            <div class="f-input-wrapper">
+                <div class="f-title">
+                    커뮤니티 운영진에 참여하시고 싶은 동기를 간단히 알려주세요
+                </div>
+                <div class="f-description">
+                    커뮤니티 성장과 개인의 성장을 동시에 추구하고 있습니다
+                </div>
+                <textarea id="input-11-1" class="input" rows="5" placeholder="운영진 참여 동기"></textarea>
             </div>
         </div>
         <div class="f-wrapper">
@@ -163,7 +177,10 @@ header-img: "b2b_graphic_cover_600x300.png"
                 <div class="f-description">
                     '아니오'를 선택한 경우 등록된 정보는 외부에 공개되지 않습니다
                 </div>
-                <input type="text" id="input-13" class="input" placeholder="라디오로 바꿔야함">
+                <div class="radio-wrapper">
+                    <label><input type="radio" name="public" value="yes" id="input-13-yes" checked>예</label>
+                    <label><input type="radio" name="public" value="no" id="input-13-no">아니오</label>
+                </div>
             </div>
         </div>
         <div class="f-wrapper">
@@ -175,10 +192,13 @@ header-img: "b2b_graphic_cover_600x300.png"
                     B2B 디자이너들의 모임 커뮤니티 운영, 활동 진행과 교류를 위해 기재해주신 개인정보를 수집하고 이용합니다. 수집된 정보는 커뮤니티 멤버들 간 교류 외 다른 목적으로 이용되지
                     않으며, 탈퇴 혹은 삭제 요청시 즉시 파기됩니다. (<a href="https://open.kakao.com/me/Nam_D">멤버 탈퇴 및 삭제 요청: 남디</a>)
                 </div>
-                <input type="text" id="input-14" class="input" placeholder="라디오로 바꿔야함">
+                <div class="radio-wrapper">
+                    <label><input type="radio" name="privacy" value="yes" id="input-14-yes" checked>예</label>
+                    <label><input type="radio" name="privacy" value="no" id="input-14-no">아니오 (등록할 수 없습니다)</label>
+                </div>
             </div>
         </div>
-        <input type="button" id="submitApplication" class="button" value="제출하기" onclick="submitApplication()">
+        <input type="button" id="submitApplication" class="button" value="멤버로 등록하기" onclick="submitApplication()">
     </div>
     <div class="f-grid">
         <div class="preview-wrapper">
