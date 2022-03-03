@@ -139,6 +139,7 @@
 .a-grid {
     max-width: 1800px;
     padding: 0 40px;
+    margin: auto;
     @media screen and (min-width: 1920px) {
         max-width: 2400px;
         padding: 0 40px;
@@ -174,12 +175,13 @@
     flex-wrap: wrap;
     margin-bottom: 80px;
     gap: 20px;
+    justify-content: center;
     &__item {
-        flex-shrink: 1;
+        flex: 1
         list-style: none;
         margin: 0;
         height: fit-content;
-        width: clamp(320px, calc(100vw - 80px), 560px);
+        min-width: 400px;
     }
     &__body {
         max-height: 200px;
