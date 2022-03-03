@@ -172,10 +172,10 @@
 
 .a-list {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 80px;
     gap: 20px;
+    justify-content: center;
     &__item {
         flex: 1
         list-style: none;
