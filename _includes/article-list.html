@@ -23,10 +23,11 @@
         <div class="a-list__body">
             {{ page.content }}
         </div>
-        <div class="a-more__wrapper" onclick="expandArticle(this)">
-        <p class="a-more">
-            …전체보기
-        </p>
+        <div class="a-article-button__wrapper">
+            <p class="a-more" onclick="expandArticle(this)">
+                …펼쳐보기
+            </p>
+            <a href="{{ page.url }}" class="a-open" target="_balnk">크게보기</a>
         </div>
         <time class='c-list__date' datetime='{{ page.date | date_to_xmlschema }}' itemprop='datePublished'>{{ page.date | date: '%d %b %Y' }}</time>
     {% endif %}

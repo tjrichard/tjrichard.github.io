@@ -13,7 +13,7 @@ order: 76
 ---
 
 <p class="text-gray">
- 🔗 이 글은 Relate가 <a href='https://blog.relate.kr/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://blog.relate.kr/shape-up-relate/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Rekate 블로그</a>에 올린 <a href='https://blog.relate.kr/shape-up-relate/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
+ 🔗 이 글은 Relate가 <a href='https://blog.relate.kr/' target='blank' rel='nofollow' id='outlink1' onclick='clickedOutlink(outlink1)'><img src='https://www.google.com/s2/favicons?sz=64&domain=https://blog.relate.kr/shape-up-relate/' style='display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;'>Relate 블로그</a>에 올린 <a href='https://blog.relate.kr/shape-up-relate/' target='blank' rel='nofollow' id='outlink2' onclick='clickedOutlink(outlink2)'>아티클</a>을 번역, 요약한 글입니다.
 </p>
 
 Relate 팀이 업무 문화에서 많이 참고하고 있는 Basecamp의 제품 개발 프로세스를 소개합니다.

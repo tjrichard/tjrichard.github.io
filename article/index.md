@@ -9,19 +9,19 @@ header-img: '../images/daily-article.png'
 
     function expandArticle(element) {
         // Atricle height 100%
-        var parent = element.parentElement;
+        var parent = element.parentElement.parentElement;
         parent.getElementsByClassName("a-list__body")[0].style.maxHeight = '100%';
 
         // 버튼 funtion 변경
         element.setAttribute("onclick","collapseArticle(this)");
 
         // innerText 변경
-        var child = element.firstElementChild;
-        child.innerText = '…접기'
+        // var child = element.firstElementChild;
+        element.innerText = '…접기'
     }
     function collapseArticle(element) {
         // Article height 200px;
-        var parent = element.parentElement;
+        var parent = element.parentElement.parentElement;
         parent.getElementsByClassName("a-list__body")[0].style.maxHeight = '200px';
 
         // 스크롤 다시 위로 올리기
@@ -32,8 +32,8 @@ header-img: '../images/daily-article.png'
         element.setAttribute("onclick","expandArticle(this)");
 
         // innerText 변경
-        var child = element.firstElementChild;
-        child.innerText = '…전체보기'
+        // var child = element.firstElementChild;
+        element.innerText = '…펼처보기'
     }
 </script>
 <div class='o-grid'>

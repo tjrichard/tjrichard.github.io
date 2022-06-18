@@ -20,7 +20,7 @@ order: 71
 
 저도 B2B SaaS 프로덕트를 만들 때는 고객의 요구사항에 의해 짧은 기간에 해결해야 할 로드맵이 구성되기 쉽고, UX 개선이나 내부적으로 의미있는 기능들은 뒷단으로 밀리는것을 경험하고 있습니다. 백로그를 아이디어의 무덤이 되지 않게 활용할 수 있도록 소개하는 방법을 시도해보세요!
 
-![Backlog Grooming protocol](…/../img/backlog_grooming_protocol.png)
+![Backlog Grooming protocol](../../article/article_summary-71/img/backlog_grooming_protocol.png)
 
 1. 들어오는 업무를 기록하기 쉽게 하기  
 - 새로 들어오는 업무 요청사항들은 여러 이해 관계자로부터 발생할 수 있습니다. 백로그는 앞으로 해야 할 업무가 쌓이기 시작하는 Source of Truth로 활용될 수 있어야 합니다. 이 Source of Truth에 쌓인 업무들으로 우선순위를 파악하는 작업이 이어집니다.
