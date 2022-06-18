@@ -125,6 +125,749 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             
                 <li class="a-list__item c-list__info">
     
+        <img src="https://media.nngroup.com/media/editor/2022/01/31/finviz-screenerview-evenmorefilters-gazeplotzoomed.png" class="c-list__img" loading="lazy" alt="데이터 테이블: 4가지 핵심 사용자 태스크" />
+        <p class="c-list__type">
+        DESIGN
+    </p>
+    <h1 class="c-list__title">
+        데이터 테이블: 4가지 핵심 사용자 태스크
+    </h1>
+    <p class="c-list__sub">
+        번역 &amp; 요약 👉 Data Tables: Four Major User Tasks
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 Nielson Norman 그룹이 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.nngroup.com/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://www.nngroup.com/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />NN Group 사이트</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.nngroup.com/articles/data-tables/" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>B2B 프로덕트는 많은 양의 데이터를 한 번에 보여주기 위해 테이블을 사용하는 경우가 많습니다. 테이블을 사용할 때 어떤 점을 고려해서 디자인 해야할까요?</p>
+
+<h3 id="-테이블의-특징과-장점-특히-카드-ui와-비교했을-때">📎 테이블의 특징과 장점 (특히 카드 UI와 비교했을 때)</h3>
+
+<ol>
+  <li>확장성
+    <ul>
+      <li>데이터가 변경되었을 때 행 방향, 열 방향으로 쉽게 확장할 수 있습니다</li>
+    </ul>
+  </li>
+  <li>비교 용이성
+    <ul>
+      <li>두 인접한 데이터들을 눈을 많이 움직이거나 머릿속에 정보를 기억해둘 필요가 없이 편리하게 비교할 수 있습니다</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="-테이블에서-수행되는-4가지-핵심-사용자-태스크">📌 테이블에서 수행되는 4가지 핵심 사용자 태스크</h3>
+<ol>
+  <li>특정 레코드 검색</li>
+  <li>데이터 비교</li>
+  <li>한 행의 데이터를 확인하고, 편집하고, 추가하기</li>
+  <li>레코드 관리 작업</li>
+</ol>
+
+<h3 id="1-특정-레코드-검색">1) 특정 레코드 검색</h3>
+<p>사용자의 검색 행동은 이미 알고있는 특정 항목을 찾거나, 어떤 기준을 충족하는 여러 항목을 찾는 행동입니다.<br />
+이를 위해 필터링, 정렬, 검색, 눈으로 스캔할 수 있습니다. 하지만 어떤 방식을 취할지 예측하기 어렵고, 사용자가 생각하는 가장 쉬운 방법에 대한 기대를 바탕으로 결정하게 됩니다.</p>
+
+<p><strong>🔑  Key Point</strong></p>
+<ul>
+  <li>첫 번째 열은 읽을 수 있는 식별자를 제공해야 합니다</li>
+  <li>각 열은 데이터의 중요성과 각 열 간의 관련성에 따라 배치해야 합니다</li>
+  <li>필터는 발견하기 쉽고 빠르게 사용할 수 있어야 합니다. 또한 데이터를 확인할 때 필터링된 데이터를 보고있다는 것을 쉽게 인지할 수 있어야 합니다.</li>
+</ul>
+
+<h3 id="2-데이터-비교">2) 데이터 비교</h3>
+<p>복잡하고 큰 테이블에서 비교 작업할 때 아래 문제들을 경험할 수 있습니다.</p>
+<ul>
+  <li>많은 양의 데이터 중 각 셀이 무엇을 나타내며, 어떤 레코드에 속하는지 알기 어렵습니다</li>
+  <li>비교하려는 열 혹은 행이 서로 멀리 떨어진 경우 비교하기 쉽지 않습니다</li>
+</ul>
+
+<p>이를 해결하기 위해 아래 방법을 사용할 수 있습니다.</p>
+
+<p><strong>2-1) 찾는 정보를 쉽게 확인할 수 있게 하기</strong></p>
+<ul>
+  <li>화면보다 큰 테이블일 경우 헤더 행과 헤더 열을 고정하기</li>
+  <li>행과 열 사이로 움직일 때 위치를 유지할 수 있도록 보더, 지브라 스타일, 호버 스타일을 제공하기</li>
+</ul>
+
+<p><strong>2-2) 비교할 정보를 가까이 위치할 수 있게 하기</strong></p>
+<ul>
+  <li>행, 열을 숨기거나 행, 열 순서를 변경할 수 있도록 하기 (숨긴 경우 숨겨져있는 표시가 있어야 합니다!)</li>
+</ul>
+
+<h3 id="3-한-행의-데이터를-확인하고-편집하고-추가하기">3) 한 행의 데이터를 확인하고, 편집하고, 추가하기</h3>
+<p>한 레코드에 대한 위 세가지 액션을 하기에는 테이블 형식이 적절하지 않을 수 있습니다</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">테이블에서 직접 수정</code> : 좁은 테이블에서 가능한 방식입니다. 읽기 모드와 수정 모드는 시각적으로 구분해 실수로 편집되는 경우를 방지해야 합니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">모달 팝업</code> : 하나의 레코드만 확인할 수 있기 때문에 인접하거나 유사한 레코드의 데이터를 참조하거나 복사할 수 없는 단점이 있습니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">비모달 팝업, 개별 윈도우</code> : 테이블의 일부에 접근할 수 있도록 하는 옵션입니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">아코디언으로 행 확장</code> : 편집 중인 경우 인접 레코드를 참조하는데 어려울 수 있고, 시각적으로 어수선하게 될 수 있습니다.</li>
+</ul>
+
+<h3 id="4-레코드-관리-작업">4) 레코드 관리 작업</h3>
+<p>레코드 내용을 편집하는것 외에도 하나 혹은 그 이상의 레코드에 대한 관리 작업이 있을 수 있습니다.</p>
+
+<p><strong>4-1) 단일 액션</strong><br />
+액션이 1개, 2개인 경우 행 내 인라인으로 배치할 수 있습니다. 그 이상인 경우엔 보통</p>
+<ul>
+  <li>공간이 없어 레이블을 생략하게 되면서 버튼을 식별하고 클릭하기 어렵게 됩니다</li>
+  <li>액션 버튼이 호버 혹은 Action 메뉴 아래에 숨겨져 발견하기 어렵게됩니다.</li>
+</ul>
+
+<p><strong>4-2) 배치 액션</strong><br />
+여러 레코드에 대한 동시 액션을 위해서는 보통 레코드를 선택하는 과정이나 메뉴가 포함됩니다. 공간 효율적으로 옵션을 배치할 수 있습니다.</p>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-06-15T23:30:00+09:00" itemprop="datePublished">15 Jun 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="https://cdn.getmidnight.com/785EE201DC63DAAE3AECB2C7CBAE60D3/2022/04/shape-up-relate.png" class="c-list__img" loading="lazy" alt="[Relate] Shape Up: Relate 팀의 제품 개발 프로세스" />
+        <p class="c-list__type">
+        PRODUCT
+    </p>
+    <h1 class="c-list__title">
+        [Relate] Shape Up: Relate 팀의 제품 개발 프로세스
+    </h1>
+    <p class="c-list__sub">
+        요약 👉 Shape Up: B2B SaaS 스타트업 Relate 팀의 제품 개발 프로세스
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 Relate가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.relate.kr/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://blog.relate.kr/shape-up-relate/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />Rekate 블로그</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.relate.kr/shape-up-relate/" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>Relate 팀이 업무 문화에서 많이 참고하고 있는 Basecamp의 제품 개발 프로세스를 소개합니다.</p>
+
+<h3 id="️-요약">✍️ 요약</h3>
+
+<ul>
+  <li>Shape Up 프로세스는 자율성을 기반으로한 프로젝트 개발에 대한 가이드라인이라고 할 수 있습니다.</li>
+  <li>제품 팀에게 프로젝트의 목표를 전달하되, 프로젝트를 성공적으로 개발하기 위한 의사결정과 진행은 제품 팀이 결정합니다.</li>
+  <li>고객에게 유의미한 프로젝트를 전달하기 위해 더 긴 기간의 개발 주기를 가지고, 매 개발 주기마다 할 일에 다한 의사결정을 새로 합니다.</li>
+  <li>개별 제품 개발 관계자들은 높은 자율성으로 일해야 하기 때문에 모두가 고객과 문제에 대해 잘 이해하고 있어야 하고, 실력이 뛰어나거나 빠르게 학습할 수 있어야 합니다.</li>
+</ul>
+
+<h3 id="--shape-up-프로세스의-특징">📌  Shape Up 프로세스의 특징</h3>
+
+<p><strong>1️⃣  6주 개발 + 2주 쿨다운 사이클</strong><br />
+• 스크럼에 비해 더 긴 프로젝트 주기로, 유의미한 기능을 만들만큼 긴 기간과 관리할 수 있을만큼 짧은 기간 사이</p>
+
+<p><strong>2️⃣  명세가 아닌 형태를 전달</strong><br />
+• 제품 팀에게 구체적인 명세가 아닌 적절히 추상화된 Shape을 전달</p>
+
+<p><strong>3️⃣  제품 팀이 책임지게 함</strong><br />
+• 제품 팀에게 Shape이 배정되고 나면, 해당 Shape에 대한 실행과 커뮤니케이션은 제품 팀이 책임을 가져감</p>
+
+<h3 id="-shape-up-딘계">⏭ Shape Up 딘계</h3>
+
+<ol>
+  <li>Shaping → 2. Betting → 3. Building</li>
+</ol>
+
+<h3 id="-1-shaping">🔵 1. Shaping</h3>
+
+<p>제품 팀에게 프로젝트의 큰 틀과 완성 기준을 제시하되, 디테일은 제시하지 않습니다.</p>
+
+<p>좋은 Shape은 충분히 추상적이지만(<code class="language-plaintext highlighter-rouge">Rough</code>), 문제를 해결할 수 있어야 하고(<code class="language-plaintext highlighter-rouge">Solved</code>), 프로젝트가 달성하거나 달성하지 않아야 할 목표가 확실해야 합니다(<code class="language-plaintext highlighter-rouge">Bounded</code>)</p>
+
+<h3 id="-2-betting">💬 2. Betting</h3>
+
+<p>주요 의사결정자들이 올라온 Shape 들의 우선순위를 평가하여, 어떤 프로젝트에 리소스를 투자할 지 결정합니다.</p>
+
+<p>Basecamp는 개발 6주, 쿨다운 2주의 8주 주기를 구성하지만, Relate은 초기 스타트업이기 때문에 개발 3주, 쿨다운 1주로 4주 주기를 적용하고 있습니다.</p>
+
+<p>Relate은 100% 리모트 팀이기에 2주보다 더 긴 주기로 개발을 진행하는 것이 더 유리합니다. 불확실성이 높은 초기에 실시간 커뮤니케이션을 몰아서 하고 나면 해야 할 일이 명확해지기 때문에 비동기 커뮤니케이션으로도 충분하기 때문입니다.</p>
+
+<h3 id="-3-building">🏗 3. Building</h3>
+
+<p>제품 팀은 Shape의 범위 안에서 실행을 위한 구체적인 Task 정의부터, 개발을 완료하고 테스트 하여 실제 제품에 반영시키는 지점까지의 모든 과정을 직접 결정하고 책임집니다.</p>
+
+<p>그 과정에서 디자이너, 프론트, 백엔드 개발자들은 핵심 과제를 먼저 이해하고 확인할 수 있도록 노력해야 합니다.</p>
+
+<p><img src="https://cdn.getmidnight.com/785EE201DC63DAAE3AECB2C7CBAE60D3/2022/04/hill_concept-a0a77c0ebb209b61899b8b4cdb1a315f2807e3fdc2e1d2373e2f19060725f042.png" alt="프로젝트 task 현황 Hill cahrt" /></p>
+
+<p>개발을 진행하면서 관계있는 Task끼리 Scope으로 묶고, 더 불확실성이 높은 Scope의 우선순위를 높이면서 진행하는 방식으로 일합니다. 아직 알지 못하는 것들을 인정하고 계획을 세우면서 진행하기 때문에 개발 상황을 더 정확하게 예측할 수 있습니다.</p>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-05-31T23:30:00+09:00" itemprop="datePublished">31 May 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="https://wp-blog.toss.im/wp-content/uploads/2022/04/220428_PM_1.jpg" class="c-list__img" loading="lazy" alt="[토스] 토스의 프로덕트 매니저가 하는 일" />
+        <p class="c-list__type">
+        PM/PO
+    </p>
+    <h1 class="c-list__title">
+        [토스] 토스의 프로덕트 매니저가 하는 일
+    </h1>
+    <p class="c-list__sub">
+        요약 👉 토스, 넥스트 애자일을 고민하다
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 토스가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.toss.im/article" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://blog.toss.im/article" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />toss 블로그</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.toss.im/article/next-agile-with-pm" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>국내에서는 서비스 기획자, PO와 PM 직무가 많이 혼용되어 사용되고 있습니다. 도그냥님이 브런치에서 역사적으로 각 직무가 왜 생기게 되었는지, 어떻게 발전하고 있는지를 고찰한 K-Product ownder의 탄생론이란 글도 있습니다.</p>
+
+<p>쿠팡에 이어 대한민국 스타트업계를 리딩하고 있는 또 하나의 기업인 토스에서 프로덕트 매니저(PM)이 어떤 직무를 하고 있는지에 대한 글을 소개합니다.</p>
+
+<h3 id="️-요약">✍️ 요약</h3>
+
+<blockquote>
+  <p>PO가 개울을 건너기 위해 바윗돌을 빠르게 놓아 가설을 검증한 다음,<br />
+PM은 그 돌다리같은 제품을 넓고 튼튼한 다리로 만드는 역할을 합니다.</p>
+</blockquote>
+
+<h3 id="-토스가-정의하는-po와-pm">🔍 토스가 정의하는 PO와 PM</h3>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">PO</code>는 혁신을 탄생시키는 것이 목표,<br />
+<code class="language-plaintext highlighter-rouge">PM</code>은 그 혁신이 더 많은 이들에게 닿을 수 있도록 하는 것을 목표로 합니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">PO</code>는 잠재적 고객,<br />
+<code class="language-plaintext highlighter-rouge">PM</code>은 현재 고객에 집중합니다</li>
+  <li><code class="language-plaintext highlighter-rouge">PO</code>는 제품을 확장시키는 역할,<br />
+<code class="language-plaintext highlighter-rouge">PM</code>은 현재 고객의 문제를 해결하는 역할을 합니다</li>
+  <li><code class="language-plaintext highlighter-rouge">PO</code>는 전략적 관점에서 가설을 세우고 실험을 설계하고,<br />
+<code class="language-plaintext highlighter-rouge">PM</code>은 쌓아온 데이터를 분석해 가설을 설계합니다.</li>
+  <li><code class="language-plaintext highlighter-rouge">PO</code>는 제품이 일정 단계에 이르르면 다른 제품으로 이동,<br />
+<code class="language-plaintext highlighter-rouge">PM</code>은 하나의 제품을 장기적인 관점으로 계속해서 관리, 개선해나갑니다.</li>
+</ul>
+
+<h3 id="-pm에게-필요한-스킬셋">💪 PM에게 필요한 스킬셋</h3>
+
+<p>PM은 하나의 제품을 더 활성화 할 수 있도록 지속적으로 관리, 개선하는 업무를 담당하기 때문에 전체를 바라보는 눈이 중요합니다. 이는 즉 하나의 사안에서 발생할 수 있는 모든 케이스들을 상상하고 고려할 수 있는 역량입니다. 이 역량을 가졌다면 제품을 운영하는 과정에서 맞닥뜨리는 여러 리스크들을 미리 감지하고 관리할 수 있습니다.</p>
+
+<p>다른 분들의 예상과 다르게, 금융 도메인 지식보다는 제품 고도화를 위한 데이터를 기반으로 의사결정 내릴 수 있는 역량, 제품 개선점을 발견하고 정의해 자동화, 효율화 할 수 있는 역량, 여러 내외부 이해관계자들과 원할한 의사소통 역량이 더 중요하다고 합니다.</p>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-05-18T23:30:00+09:00" itemprop="datePublished">18 May 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="https://miro.medium.com/max/1400/0*H78EINo5mwsZr2kQ" class="c-list__img" loading="lazy" alt="PM겸 디자이너가 전략에 더 많은 영향력을 만드는 방법" />
+        <p class="c-list__type">
+        DESINGER
+    </p>
+    <h1 class="c-list__title">
+        PM겸 디자이너가 전략에 더 많은 영향력을 만드는 방법
+    </h1>
+    <p class="c-list__sub">
+        번역 &amp; 요약 👉 How to Expand Your Strategic Impact as a Designer
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 Caitlin Brisson님이 Tally의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://medium.com/meettally" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://medium.com/meettally" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />미디엄</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://medium.com/meettally/how-to-expand-your-strategic-impact-as-a-designer-7b05566f6eb5" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>이 글은 프로덕트 디자이너인 저자가 Tally의 그로쓰 팀 PM으로 250일 동안 업무하면서 얻은 4가지 레슨 런에 대한 글입니다. 저도 현재 회사에서 프로덕트 디자이너와 PM 역할을 동시에 수행하고 있어 공감하며 읽을 수 있었습니다.</p>
+
+<h3 id="1-목표를-우선순위화-하고-결과물을-최적화-하는데-사용하기">1. 목표를 우선순위화 하고, 결과물을 최적화 하는데 사용하기</h3>
+
+<p>프로덕트 디자이너와 PM으로서 함께 일할 때, 두 역할을 동시에 해야하는 날들이 많았고, 업무를 분배하는데 고민인 생겼습니다. <strong>SMART</strong><sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup> 방법으로 목표를 설정하고, 내 시간을 투자할 방법으로 사용했습니다.</p>
+
+<p>어떤 목표에 시간을 더 많이 사용할 지는 다음과 같이 결정합니다.</p>
+<ul>
+  <li>주 별, 분기 별 목표를 설정하자</li>
+  <li>목표 간 상충 관계를 파악하고 덜 중요한 요청엔 잘 거절하자</li>
+  <li>도중에 문제가 생겼을 때 어떤 것이 더 임팩트가 큰 지를 파악하자</li>
+</ul>
+
+<h3 id="2-변화가-있을-때혹은-문제가-있을-때-적절한-태도를-취하기">2. 변화가 있을 때(혹은 문제가 있을 때) 적절한 태도를 취하기</h3>
+
+<p>지난 가을, 그로쓰 로드맵을 마무리 하고 새로운 업무를 시작하려 할 때 앱의 크리티컬 패쓰의 경험에 문제가 있는걸 발견했습니다. 이런 복잡한 상황에서 사람들은 무엇을 해야하는지에 대한 답을 찾으려고 하는게 아니라, 안정되고 긍정적인 환경을 원했습니다. 디자이너로서도 여러 사람들과 문제를 facilitating 하게 됩니다. 팀이 더 일을 잘 하도록 도우면서 리더십 스킬을 성장시키고 더 탄탄한 솔루션을 만들 수 있게 됩니다.</p>
+
+<ul>
+  <li>인간적인 모습을 취하고, 변화의 중심에 있는 사람들의 이야기를 듣자</li>
+  <li>솔직한 모습을 취하지만 도움이 되지 않는 피드백이나 문제로부터 팀을 보호하자</li>
+  <li>답을 모르는건 괜찮다. 함께 일을 굴릴 사람들을 불러들이자.</li>
+</ul>
+
+<h3 id="3-데이터를-문제-발견-우선순위화-평가하는데-사용하기">3. 데이터를 문제 발견, 우선순위화, 평가하는데 사용하기</h3>
+
+<p>PM으로서 다른 사람들이 성과 지표, 상태, 사용자 행동에 대해 물어보는 일이 많았는데, 데이터 분석 코스를 수강하고 이런 질문들에 스스로 답변할 수 있게 되었습니다. 또, 내 디자인 결과에 이벤트를 추가하고 이벤트 간 비주얼 맵을 그려 여러 팀이 목표를 얼라인하고 이해하는데 도움이 되었습니다.</p>
+
+<ul>
+  <li>프로덕트 분석과 분석 툴을 공부하는데 시간을 쓰자</li>
+  <li>데이터를 확인할 때 기준선(베이스라인)을 지정해, 어디에 시간을 더 써야 하는지 확인하자</li>
+  <li>디자인 결과물에 수집될/되는 이벤트를 명시해 디자인 의사결정에 참고하고, 엔지니어들과 더 원할하게 대화할 수 있다</li>
+</ul>
+
+<h3 id="4-나-혼자-뿐-만-아니라-다른-모든-사람들이-장기-계획을-바라보고-있도록-하기">4. 나 혼자 뿐 만 아니라 다른 모든 사람들이 장기 계획을 바라보고 있도록 하기</h3>
+
+<p>현재 진행중인 일에만 집중하면, 한 Phase가 끝나고 다음 Phase로 넘어갈 때 팀원들이 예상치 못한 목표를 발견하고 놀라는 일이 생기게 됩니다.</p>
+
+<ul>
+  <li>눈 앞만 바라보지 말고 장기적 관점을 생각하는데 시간을 쓰자</li>
+  <li>계속해서 팀이 나아가야 할 방향을 리마인드 하고 목표를 이해시키자</li>
+  <li>파트너와 이해관계자들에게 장기 계획을 이해하고 참여할 수 있도록 내 계획을 지도 삼아 이야기하자</li>
+</ul>
+
+<p>디자이너로서 만드는 결과물들은 목표 얼라인, 협업, 영감에 도움을 줄 수 있습니다. 무언가를 만들 때 청중들이 어떻게 사용하게될 지를 고려해 만들어야 합니다.</p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>SMART - Specific, Measureable, Actionable, Relavant, Time-bound <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-05-04T23:30:00+09:00" itemprop="datePublished">04 May 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="https://blog.kakaocdn.net/dn/blakYJ/btryyfKWKU8/vKVudhcH7arJkHkw3nUHi1/img.png" class="c-list__img" loading="lazy" alt="JTBD 프레임워크 제대로 이해하기" />
+        <p class="c-list__type">
+        PM/PO
+    </p>
+    <h1 class="c-list__title">
+        JTBD 프레임워크 제대로 이해하기
+    </h1>
+    <p class="c-list__sub">
+        요약 👉 고객 핵심과업(JTBD) 프레임워크 플레이북 - 1) 고객 핵심과업(Core Functional Job) 이해하기
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 린스프린트님이 본인의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://acquiredentrepreneur.tistory.com/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://acquiredentrepreneur.tistory.com/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />티스토리</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://acquiredentrepreneur.tistory.com/105" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>사용자의 업무상 발생하는 워크플로우 내 문제를 해결하기 위해 존재하는 것이 B2B SaaS의 존재 의의입니다. 과업을 수행하기 위해 제품이나 서비스를 구매한다는 JTBD(Jobs to be Done) 프레임워크는 B2B 프로덕트를 만들고 있는 사람들이 필수적인 프레임워크입니다. 고객이 수행하고자 하는 과업을 명확하게 정의하지 않고 제품 개발에만 몰두하는 것은 방향 없이 속력만 내는 것입니다.</p>
+
+<p>원문에서는 JTBD 프레임워크의 9가지 원칙에 대해 상세한 설명과 함께 소개하지만, 일부만 옮기겠습니다. 궁금하신 분들은 원문 링크를 참조하세요. 🔮</p>
+
+<h3 id="1-고객의-과업jtbd는-오랜-시간에-걸쳐-안정적이게-되었다">1. 고객의 과업(JTBD)는 오랜 시간에 걸쳐 안정적이게 되었다</h3>
+<ul>
+  <li>‘부모가 자녀에게 삶의 교훈 물려주기’ 과업은 인류만큼 오래된 과업입니다</li>
+  <li>‘출근길의 무료함 달래기’는 지역과 관계 없이 동일하게 적용되는 과업입니다</li>
+  <li>Amazon은 ‘고객에게 가장 좋은 것을, 가장 저렴하게, 가장 편리하게 제공하는 것’을 과업으로 정의했기 때문에 이커머스 플랫폼 뿐 만 아니라 다양하게 비즈니스를 운영할 수 있습니다</li>
+</ul>
+
+<h3 id="4-고객의-과업은-솔루션이나-기술과-무관하다">4. 고객의 과업은 솔루션이나 기술과 무관하다</h3>
+
+<ul>
+  <li>자신의 제품이 최적의 솔루션이 될 수 있도록 고객의 불편함과 니즈를 입맛대로 정의하고 싶은 욕구에 매몰되어서는 안됩니다</li>
+  <li>킥보드 대여 서비스가 해결하고자 하는 과업은 킥보드를 더 쉽게 빌리는 것이 아니라, 도심 속 이동을 더 편리하게 하는 것입니다</li>
+  <li>이미 고객은 현존하는 기술이나 자신만의 솔루션으로 해당 과업을 수행하고 있다는 것을 잊어서는 안됩니다</li>
+</ul>
+
+<h3 id="5-제품의-성공은-제품이나-고객에-대한-분석이-아닌-고객-과업의-단위-분석unit-analysis에서-창출된다">5. 제품의 성공은 제품이나 고객에 대한 분석이 아닌 고객 과업의 단위 분석(Unit Analysis)에서 창출된다</h3>
+
+<ul>
+  <li>고객은 자신의 과업에 대해서는 알고 있지만, 그 과업의 최적 솔루션에 대해서는 모르기 때문입니다</li>
+  <li>헨리 포드가 ‘고객에게 무엇이 필요한지 묻는다면, 그들은 더 빠르고 지치지 않는 말이 필요하다고 답할 뿐이다’고 한 말과 일맥 상통합니다</li>
+  <li>고객의 과업은 시작과 끝이 존재하는 프로세스 형태로, 대여섯 가지에서 많게는 20~30개의 단위 과업으로 이루어져 있습니다</li>
+  <li>각 단위 과업 중 어떤 부분이 병목이며, 예측이 불가능 하고 비효율이 발생하는지에 대해 학습 해야합니다</li>
+</ul>
+
+<h3 id="7-과업을-정의함으로서-니즈-해결의-성공을-측정할-수-있는-측정-지표로-활용-가능하다">7. 과업을 정의함으로서 니즈 해결의 성공을 측정할 수 있는 측정 지표로 활용 가능하다</h3>
+
+<p>1) 고객이 과업 수행에서 진정으로 원하는 Desired Outcome을 정의합니다<br />
+ 2) 이를 달성하기 위한 측정 지표와 기준값을 정의합니다<br />
+ 3) 이 기준값을 달성할 수 있도록 제품을 개발하고 마케팅을 수행합니다</p>
+<ul>
+  <li>Desired Outcome: ‘중고 아이폰을 제 값에 빠르게 판매하기’</li>
+  <li>측정 지표와 기준값: 제 값 = 60만원+, 빠르게 = 7일-</li>
+  <li>달성 방법: 물건을 먼저 수령해 위탁 판매하고, 판매 고객에게는 최소 가격을 보증한다</li>
+</ul>
+
+<h3 id="8-사람들은-과업을-더-잘-수행하거나-더-저렴하게-수행할-수-있는-제품이나-서비스를-원한다">8. 사람들은 과업을 더 잘 수행하거나, 더 저렴하게 수행할 수 있는 제품이나 서비스를 원한다</h3>
+
+<p><img src="https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&amp;fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FBxouF%2Fbtryz08d62J%2FrtVfRI4bu1wH86EF9yNFLK%2Fimg.png" alt="과업 수행과 가격 2x2 매트릭스" /></p>
+<ul>
+  <li>↕️ 과업을 더 잘 / 덜 잘 수행한다, ↔️ 가격을 더 많이 / 더 저렴하게 제공한다 두 축으로 2x2 매트릭스를 그릴 수 있습니다</li>
+  <li>고객이 과업을 해결하기 위해 사용중인 솔루션의 기능이 과다하다면 덜 제공하는 것도 하나의 방법이될 수 있습니다</li>
+</ul>
+
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-04-22T23:30:00+09:00" itemprop="datePublished">22 Apr 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="http://t1.daumcdn.net/brunch/service/user/btQc/image/pFn9oUwUnHf4OFj_Ak-Nf7uHaoA.jpg" class="c-list__img" loading="lazy" alt="야근하지 않는 디자이너 - 스마트하게 일하기" />
+        <p class="c-list__type">
+        DESIGNER
+    </p>
+    <h1 class="c-list__title">
+        야근하지 않는 디자이너 - 스마트하게 일하기
+    </h1>
+    <p class="c-list__sub">
+        요약 👉 야근하지 않는 디자이너, 디자인 기반 PO의 첫걸음
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 서혜림님이 본인의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://brunch.co.kr/@sunshl0203" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://brunch.co.kr/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />브런치</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://brunch.co.kr/@sunshl0203/12" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>디자이너에게 요구되는 직무적 역할이 늘어나고 있는 요즘, 나를 포함한 많은 디자이너들은 처리해야 할 업무들에 둘러쌓여 있는 상태다. 나의 일을 효율적으로 처리하기 위해서는 똑똑하게 일하는 방법을 알아야 한다.</p>
+
+<p>내가 야근을 했다는 것은 내가 효율적으로 일을 처리하고 있지 못하다는 뜻이다. 구조적으로 업무량에 비해 디자이너 리소스가 부족한 경우를 제외하고, 내가 가진 리소스로 내가 맡은 업무를 처리할 수 있다면 내가 야근하게 되는 이유는 아래와 같은 이유들로 발생하게 된다(이외에도 여러 이유가 있을 수 있지만 원 글의 내용을 기반으로 합니다).</p>
+
+<ul>
+  <li><a href="#1-내가-가진-업무에-대해-제대로-파악하지-못했다">1. 내가 가진 업무에 대해 제대로 파악하지 못했다</a></li>
+  <li><a href="#2-일의-우선순위를-제대로-세우지-못했다">2. 일의 우선순위를 제대로 세우지 못했다</a></li>
+  <li><a href="#3-작업-방향을-잘못-잡았거나-완성도에-집착하다-마감-기한을-놓친다">3. 작업 방향을 잘못 잡았거나 완성도에 집착하다 마감 기한을 놓친다</a></li>
+  <li><a href="#4-물리적인-업무-시간-중-이미-시간을-배정해둔-협업-시간들을-유의미하게-보내지-못했다">4. 물리적인 업무 시간 중 이미 시간을 배정해둔 협업 시간들을 유의미하게 보내지 못했다</a></li>
+</ul>
+
+<p>이 중 1, 2, 3은 업무 효율성을 높이기 위한 순서이자 방법이다.</p>
+
+<h3 id="1-내가-가진-업무에-대해-제대로-파악하지-못했다">1. 내가 가진 업무에 대해 제대로 파악하지 못했다</h3>
+<p>나의 시간을 효율적으로 배분하고 어떤 일을 먼저 집중해서 처리해야 하는지 아는 것은 내가 가진 업무가 무엇인지, 왜 그 일을 해야하는지를 파악하는 것으로부터 시작한다. 업무를 완료하면 어떤것이 더 나아지는가? 누구를 위한 작업인가? 작업을 완료하기 위해서는 어떤 리소스가 필요한가? 작업을 완료하기 위해서는 어떤 일들을 해야 하는가?</p>
+
+<h3 id="2-일의-우선순위를-제대로-세우지-못했다">2. 일의 우선순위를 제대로 세우지 못했다</h3>
+<p>각 업무를 왜 해야하는지를 알면 우선순위를 세울 수 있다. 다른 팀 지원 업무, 쉽게 끝낼 수 있는 일이지만 중요하진 않은 업무, 내부 회의에서만 쓰고 실제 프로덕트로 개발되지 않을 장표들의 경우 우선순위를 낮게 가져갸야 한다. 내 업무시간은 나의 팀의 목표에 맞고, 고객에게 더 중요한 일이며, 시간이 많이 필요하더라도 꼭 달성해야하는 어떤 것이다.</p>
+
+<h3 id="3-작업-방향을-잘못-잡았거나-완성도에-집착하다-마감-기한을-놓친다">3. 작업 방향을 잘못 잡았거나 완성도에 집착하다 마감 기한을 놓친다</h3>
+<p>주로 주니어에게서 많이 발견되기도 하는 이 문제는 시간이 오래 걸리는 일이거나 아직 익숙하지 않은 일 일수록 쉽게 발생할 수 있는 문제이다. 내 상관이 원하는 방향은 이미 있는데 그것을 제대로 파악하지 못하고 잘못된 방향으로 일하고 있다거나, 중요하지 않은 디테일을 먼저 신경써서는 안된다. 전체적인 얼개를 그려 드래프트를 자주 공유해 방향을 자주 점검하고, 큰 줄기에서 작은 줄기, 마지막 디테일 순으로 작업해야 진짜 중요한 작업을 놓치지 않을 수 있다.</p>
+
+<h3 id="4-물리적인-업무-시간-중-이미-시간을-배정해둔-협업-시간들을-유의미하게-보내지-못했다">4. 물리적인 업무 시간 중 이미 시간을 배정해둔 협업 시간들을 유의미하게 보내지 못했다</h3>
+<p>스크럼, 회고, 의사결정을 위한 회의 등 다른 사람들과 협업하기 위한 시간은 고정되어있고, 여러 사람의 시간을 동시에 사용하기 때문에 더욱 귀중하게 쓰여야 한다. 회의 어젠다는 참석자에게 전달하고 수렴하고 싶은 내용이 확실하게 정해져야 한다. 이를 위해 주도적으로 회의를 준비해보는 것도 도움이 되겠다.</p>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-04-12T23:30:00+09:00" itemprop="datePublished">12 Apr 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="https://miro.medium.com/max/1400/1*LvsmC0jhpF1KSQilvJ5d9g.png" class="c-list__img" loading="lazy" alt="팀이 사랑하게 될 백로그 만들기" />
+        <p class="c-list__type">
+        DESIGNER
+    </p>
+    <h1 class="c-list__title">
+        팀이 사랑하게 될 백로그 만들기
+    </h1>
+    <p class="c-list__sub">
+        번역 및 요약 👉 Building a backlog your team will love
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 Amy Ly님이 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blurbsbyamy.medium.com/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://blurbsbyamy.medium.com/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />미디엄</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://medium.com/agileinsider/building-a-backlog-your-team-will-love-ba159c1b6ad7" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>스타트업 씬에서 빠르게 프로덕트를 개발하다보면 백로그에 남아있는 이슈들이 점점 많아지게 되는 경험을 많이 해보셨을 것 같아요. 백로그에 등록된 이슈들은 우선순위를 관리해주지 않으면 이슈가 쌓이기만 하고, 스프린트로 올라와서 해결되는 이슈는 점점 적어지고, 그 크기나 중요도와 관계 없이 아이디어들만 중구난방으로 흩어져있는 창고가 되기 쉽습니다.</p>
+
+<p>저도 B2B SaaS 프로덕트를 만들 때는 고객의 요구사항에 의해 짧은 기간에 해결해야 할 로드맵이 구성되기 쉽고, UX 개선이나 내부적으로 의미있는 기능들은 뒷단으로 밀리는것을 경험하고 있습니다. 백로그를 아이디어의 무덤이 되지 않게 활용할 수 있도록 소개하는 방법을 시도해보세요!</p>
+
+<p><img src="…/../img/backlog_grooming_protocol.png" alt="Backlog Grooming protocol" /></p>
+
+<ol>
+  <li>들어오는 업무를 기록하기 쉽게 하기
+    <ul>
+      <li>새로 들어오는 업무 요청사항들은 여러 이해 관계자로부터 발생할 수 있습니다. 백로그는 앞으로 해야 할 업무가 쌓이기 시작하는 Source of Truth로 활용될 수 있어야 합니다. 이 Source of Truth에 쌓인 업무들으로 우선순위를 파악하는 작업이 이어집니다.
+        <blockquote>
+          <p>📝 기록되어야 할 것: 모든 새로운 할 일</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>그루밍이 필요한 할 일이 무엇인지 알기 쉽게 하기
+    <ul>
+      <li>백로그에 등록된 이슈들 모두가 업무할 수 있도록 정리될 필요는 없습니다. 한 백로그에서 장기, 중기, 단기 할일들이 쌓이게 될 것입니다. 백로그 그루밍을 시간 효율적으로 하려면 단기 할일들을 우선해서 그루밍 할 수 있도록 해야합니다.
+        <blockquote>
+          <p>📝 기록되어야 할 것: 일이 처리되어야 하는 due</p>
+        </blockquote>
+      </li>
+      <li>고객사 임팩트가 적거나, 실행 가능하지 않은 아이디어들에는 그루밍을 할 필요가 없습니다. 그런 이슈들은 Not Doing 로 태깅하고 다음 이슈로 넘어갈 수 있어야 합니다.
+        <blockquote>
+          <p>📝 기록되어야 할 것: Status - Not Doing</p>
+        </blockquote>
+      </li>
+      <li>장기적으로 미래 로드맵에서 가져가면 좋은 이슈들은 지금 내용을 정리할 필요는 없지만, 나중에 다시 와서 쉽게 확인할 수 있어야 합니다.
+        <blockquote>
+          <p>📝 기록되어야 할 것: Status - Future Nice to Have</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+  <li>우선순위가 높은 할 일을 찾기 쉽도록 하기
+    <ul>
+      <li>우선순위를 결정하는 것은 어려운 일입니다. 실행 하기로 결정되어 그루밍 된 이슈들 중 우선순위가 낮거나 아직 우선순위가 판단되지 않은 이슈와, 우선순위가 높은 이슈들을 구분해서 더 중요한 일을 쉽게 확인하도록 할 수 있습니다.
+        <blockquote>
+          <p>📝 기록되어야 할 것: Status - 우선순위 낮거나 지정되지 않음<br />
+📝 기록되어야 할 것: Status - 우선순위 높음</p>
+        </blockquote>
+      </li>
+      <li>다음 스프린트에 할 일 / 이전 스프린트에서 못 한 일
+        <ul>
+          <li>백로그에 처음 등록된 할 일은 최종적으로 ‘다음 스프린트에 할 일’으로 이동하게 됩니다. 그리고 이번 스프린트 할 일은 새로 등록된 할 일과 지난 스프린트에서 끝내지 못한 일을 하게 됩니다.
+            <blockquote>
+              <p>📝 기록되어야 할 것: Status - 이번 스프린트에서 할 일<br />
+📝 기록되어야 할 것: Status - 지난 스프린트에서 못 한 일</p>
+            </blockquote>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>불필요한 일은 숨기기
+    <ul>
+      <li>보통 진행하지 않기로 한 업무는 히스토리 관리를 위해 삭제하지는 않습니다. 진행하지 않기로 한 업무들을 Archive하여 보이지 않도록 정리할 필요가 있습니다.
+        <blockquote>
+          <p>📝 기록되어야 할 것: Status - Archive</p>
+        </blockquote>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-03-30T23:30:00+09:00" itemprop="datePublished">30 Mar 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="https://measuringu.com/wp-content/uploads/2022/03/030921-H.jpg" class="c-list__img" loading="lazy" alt="8가지 통계 법칙" />
+        <p class="c-list__type">
+        STATISTICS
+    </p>
+    <h1 class="c-list__title">
+        8가지 통계 법칙
+    </h1>
+    <p class="c-list__sub">
+        번역 및 요약 👉 Eight Laws of Statistics
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 Jim Lewis가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://measuringu.com/abelsons-laws/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://measuringu.com/abelsons-laws/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />Measuring U</a>에 올린 아티클을 번역, 요약한 글입니다.
+</p>
+
+<p>통계 연구 결과는 어떤 내러티브로 전달하는지가 아주 중요합니다. 통계학 졸업반 학생들을 대상으로 하는 Statistics as Principled Argument 라는 책의 저자인 Abelson의 법칙 8가지를 소개합니다. 전달을 위해 의역을 많이 했으니 원문이 궁금하신 분들은 원문을 확인해주세요.</p>
+
+<ol>
+  <li>확률은 생각만큼 매끄럽게 발생하지 않는다
+    <ul>
+      <li>동전 던지기가 50% 확률이라고 해서 앞면 다음에 반드시 뒷면이 나오진 않습니다</li>
+      <li>실제 랜덤 함수의 결과는 결과들이 생각보다 뭉쳐있습니다</li>
+    </ul>
+  </li>
+  <li>사람들은 표본 간 차이를 무시하려는 경향이 있다
+    <ul>
+      <li>표본마다 측정치는 다를 수 있는데, 이를 무시하고 잘못된 확신을 가지려 하는 경우가 많습니다</li>
+      <li>특히 표본 크기가 작을 때 추정된 값을 중심으로 신뢰 구간을 계산하는 것이 중요합니다</li>
+    </ul>
+  </li>
+  <li>통계적 관행은 한 번만 다시 생각하라
+    <ul>
+      <li>오랜 시간동안 유의성 실험에 p &lt; 0.05를 사용하는건 관행이었습니다</li>
+      <li>하지만 현대 UX 분석에서 p &lt; 0.10이라는 덜 엄격한 기준을 적용했을 때 더 높은 통계적 힘을 낼 수 있었습니다</li>
+      <li>마음에 드는 결과를 찾기 위해 p &lt; 0.05와 p &lt; 0.10 사이를 왔다갔다 하면 안됩니다</li>
+    </ul>
+  </li>
+  <li>복잡한 분석 방식으로 뭘 분석해야할 지 모름을 덮으려 하지 마라
+    <ul>
+      <li>다변량 분석 방식은 유의미할 수 있는 종속 변수를 결합할 수 있는 어떤 방법이 있음을 나타낼 뿐, 그 조합이 어떤 실제적 의미를 갖는지는 고려되지 않았습니다</li>
+      <li>각각 단일 분석 결과는 상관 관계가 있지만 UX 관점에서 다르게 해석되는 경우가 있습니다. 이런 분석 결과를 맹목적으로 조합 해 그 조합을 이해하려는 노력보다는 각각을 별도로 분석하는것이 더 옳습니다 (예: 성공률, 용이성 등급, 완료 시간)</li>
+    </ul>
+  </li>
+  <li>아무 할 말이 없을 땐 아무 말도 하지 마라
+    <ul>
+      <li>종종 분석 결과가 어떤 유의성도 보이지 않는 경우가 있을 수 있습니다</li>
+      <li>여기서 어떤 의미를 뽑아내기 위해 데이터를 이리 저리 쥐어짜기 보다는 다음 연구로 넘어가는게 맞습니다</li>
+      <li>거짓으로 결과를 뽑아내는것 보다는 아무 말도 하지 않는 것이 낫습니다</li>
+    </ul>
+  </li>
+  <li>공짜 점심은 없다
+    <ul>
+      <li>단일 실험 결과는 실험 맥락을 벗어나는 일반적인 경우까지 일반화되어 적용될 순 없습니다</li>
+    </ul>
+  </li>
+  <li>소파를 움직이지 않으면 먼지를 볼 수 없다
+    <ul>
+      <li>한 분석 결과가 컨텍스트가 다른 상황에 적용 가능할 지 확인하는 방법은 그 컨텍스트를 변수화 하는 것입니다</li>
+    </ul>
+  </li>
+  <li>비판은 방법론의 어머니다
+    <ul>
+      <li>모든 답을 내려주는 한 가지 실험은 있을 수 없고, 한 실험은 어떤 종류든 비판에 노출될 것입니다</li>
+      <li>적절한 비판을 받았다면 연구자들은 그러한 비판을 극복할 수 있는 추가적인 연구를 수행하게 될 것입니다</li>
+      <li>이런 결과로 기존 일반론이 지지되거나, 수정되거나, 파기되기도 하며, 새로운 일반론이 등장하기도 합니다</li>
+    </ul>
+  </li>
+</ol>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-03-17T23:30:00+09:00" itemprop="datePublished">17 Mar 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
+        <img src="https://image.yes24.com/goods/77182814/XL" class="c-list__img" loading="lazy" alt="조직과 프로젝트를 성공적으로 매니징하기 위한 필독서 [The Goal]" />
+        <p class="c-list__type">
+        PRODUCT OWNER
+    </p>
+    <h1 class="c-list__title">
+        조직과 프로젝트를 성공적으로 매니징하기 위한 필독서 [The Goal]
+    </h1>
+    <p class="c-list__sub">
+        책 요약 👉 The Goal
+    </p>
+    
+        <div class="a-list__body">
+            <p class="text-gray">
+ 🔗 이 글은 엘리 골드렛의 경영 필독서 [The Goal] 을 요약한 글입니다.
+</p>
+
+<p>앨리 골드렛의 The Goal은 TOC(Theory of Constraints, 제약 이론)을 이해하기 쉽게 설명한 경제경영서 베스트셀러 중 하나입니다. 비록 제조업을 기반으로 이야기가 흘러가지만 그 안에 담긴 전체 최적화 프레임워크와 발전적 사고 프레임워크는 많은 곳에 적용 가능한 범용적인 방법론이 될 수 있습니다. 아래는 The Goal 책 내용과 재구조화 해 정리한 내용입니다.</p>
+
+<h3 id="-회사의-목표는-돈을-버는-것">🏢 회사의 목표는 ‘돈을 버는 것’</h3>
+<p>회사가 돈을 벌기 위해서는 무언가를 판매해야 하고, 무언가를 판매하기 위해서는 무언가를 생산해야 합니다.</p>
+<ul>
+  <li>생산하기 위해 드는 비용이 ‘운영 비용’</li>
+  <li>생산되었지만 판매되지는 않은 것들이 ‘재고’</li>
+  <li>판매를 통해 돈을 창출하는 비율이 ‘현금 창출률’입니다.<br />
+👆 회사가 돈을 벌려면 재고와 운영 비용을 낮추면서 현금 창출률을 높여야 합니다.</li>
+</ul>
+
+<p>생산 과정에서는 필요한 만큼 충분히 생산하지 못하는 병목이 있기 마련이고, 그 병목의 생산 효율성이 전체 생산 효율성을 결정합니다. (쇠사슬의 강도는 가장 약한 고리가 결정함)<br />
+병목 자원(=제약 자원)의 생산 효율성을 높이는 것이 전체 생산 효율성을 높이는데 가장 중요합니다.</p>
+
+<h3 id="-제약-자원의-생산-효율성을-높이기-위해서는">🎯 제약 자원의 생산 효율성을 높이기 위해서는</h3>
+<ol>
+  <li>제약 자원이 현 상태에서 가장 효율적으로 일할 수 있도록 개선합니다.
+    <ul>
+      <li>끊임없이 일할 수 있도록 함</li>
+    </ul>
+  </li>
+  <li>해당 제약 자원을 기준으로 다른 공정의 생산 일정이 종속되도록 시스템을 조정합니다.
+    <ul>
+      <li>제약 자원에게 공급할 부품 생산을 역산하고, 제약 자원의 생산량으로 이후 생산 일정을 역산함</li>
+    </ul>
+  </li>
+  <li>제약 자원의 생산 효율성을 높입니다.
+    <ul>
+      <li>Input을 개선</li>
+    </ul>
+    <ul>
+      <li>제약 자원이 필요로 하는 일을 먼저 하기</li>
+      <li>제약 자원이 하지 않아도 되는 일을 줄이기</li>
+      <li>1회 목표 생산량을 줄이기 (1회 목표 생산량을 줄이면 생산 속도가 빨라지고, 변동성에 대한 유연성이 높아짐)
+    - 제약 자원 자체를 개선</li>
+      <li>덜 효율적이더라도 같은 역할을 할 수 있는 자원을 추가 사용</li>
+      <li>한 번에 처리할 수 있는 업무는 동시에 처리하기
+    - Output을 개선</li>
+      <li>병목 자원이 생산한 부품을 먼저 판매할 수 있도록 우선 가공</li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="️--공정-뿐-만-아니라-일반적인-경우에도-통할-수-있는-발전적-사고-프레임워크로-치환할-수-있습니다">⛹️  공정 뿐 만 아니라, 일반적인 경우에도 통할 수 있는 발전적 사고 프레임워크로 치환할 수 있습니다.</h3>
+<ol>
+  <li><code class="language-plaintext highlighter-rouge">문제 정의</code> :: 무엇을 변화시켜야 할지 발견하기</li>
+  <li><code class="language-plaintext highlighter-rouge">목표 설정</code> :: 어떤 방향으로 변화시켜야 하는지 결정하기</li>
+  <li><code class="language-plaintext highlighter-rouge">실행 방법, Operation</code> :: 어떻게 변화시킬지 결정하기</li>
+  <li>수행한 변화가 더 이상 성과에 영향을 미치지 않게 되면 다시 1단계로 돌아가기</li>
+</ol>
+
+<h3 id="--제약-자원의-생산-효율성-개선과-발전적-사고-프레임워크의-적용-예시">👀  제약 자원의 생산 효율성 개선과 발전적 사고 프레임워크의 적용 예시</h3>
+<ul>
+  <li>전략 보고서의 흐름을 <code class="language-plaintext highlighter-rouge">문제 정의</code> → <code class="language-plaintext highlighter-rouge">목표 설정</code> → <code class="language-plaintext highlighter-rouge">실행 방법</code> 순으로 전달</li>
+  <li>업무를 보고했을 때 상사가 원했던 퀄리티나 내용이 아니게 되는 문제<br />
+→ 전체 업무를 한 번에 완성시켜 전달하기 때문에 개선할 시간이 없는것이 문제<br />
+→ 1회 목표 생산량을 줄여 전체 드래프트를 자주 공유하고 디벨롭 시켜 나가기</li>
+  <li>시장의 수요가 생산력보다 넘친다면 ‘생산력’이 문제<br />
+→ 생산력을 개선하는 목표 설정<br />
+→ 설비를 더 들여오거나, 인력을 더 채용하는 결정</li>
+  <li>시장 수요보다 생산력이 넘친다면 ‘시장’이 문제<br />
+→ 시장을 개선하는 목표 설정 
+→ 마케팅을 강화하거나, 새로운 시장을 발굴하는 결정</li>
+</ul>
+
+        </div>
+        <div class="a-more__wrapper" onclick="expandArticle(this)">
+        <p class="a-more">
+            …전체보기
+        </p>
+        </div>
+        <time class="c-list__date" datetime="2022-02-14T23:30:00+09:00" itemprop="datePublished">14 Feb 2022</time>
+    
+</li>
+            
+        
+            
+                <li class="a-list__item c-list__info">
+    
         <img src="https://img-cdn.inc.com/image/upload/w_1920,h_1080,c_fill/images/panoramic/cognitivebias_490871_xhjmoq.jpg" class="c-list__img" loading="lazy" alt="일론 머스크가 소개하는 아이들이 반드시 알아야 할 인지 편향 50가지" />
         <p class="c-list__type">
         DESIGNER
@@ -2566,47 +3309,70 @@ XYZ 회사는 2월 마지막 주에 많은 사용자가 들어왔고, 역시 각
  🔗 이 글은 Lenny님이 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.lennysnewsletter.com/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://www.lennysnewsletter.com/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />Substack</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://www.lennysnewsletter.com/p/negotiating-comp" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-&gt; 연봉협상은 언제나 어려운 일입니다. 내가 협상을 하는건지, 통보를 받는것인지.. 이직할 때 더 나은 연봉협상을 위한 10계명입니다.
+<blockquote>
+  <p>연봉협상은 언제나 어려운 일입니다. 내가 협상을 하는건지, 통보를 받는것인지.. 이직할 때 더 나은 연봉협상을 위한 10계명입니다.</p>
+</blockquote>
 
-**1. 협상은 생각보다 일찍 시작한다**
-* 첫 만남에서 원하는 금액을 물어보는 경우가 있는데, 절대 숫자를 얘기해선 안됩니다.
-* 오히려 역으로 예산이 어느정도인지 물어보고 내 예상과 일치하는지 확인하세요.
-  
-**2. 인터뷰에서 정보를 더 얻기**
-* 인터뷰할 땐 답변만 하는것이 아니라 정보도 얻어야 합니다.
-* 지금 팀이 가장 주요하게 생각하는것은 무엇인가요? 왜 이 포지션이 필요한가요?
-  
-**3. 압박에 굴하지 않기**
-* 포지션에 오퍼를 받은 다음엔 리크루터의 목표는 평가에서 클로징(계약 완료)로 옮겨갑니다
-* 이 때 다시금 원하는 금액을 물어보는데 이 때도 숫자를 말해서는 안됩니다.
-* 금액을 말씀하시면 거기에 맞춰드릴게요 = 비슷하지만 더 낮은 금액으로 계약합시다
-  
-**4. 대기업에서는 리쿠르터의 발언권이 없습니다**
-* 대기업일수록 연봉 테이블이 단단하게 형성되어 있습니다.
-* 리쿠르터는 '급여 위원회'로 부터 숫자를 받고, 협상을 원할 땐 리쿠르터가 위원회로 가 재평가를 받아야 합니다. 따라서 리크루터는 위원회와 면접자를 여러 번 다녀가지 않기 위해 금액을 먼저 받고싶어 합니다.
-* 기존 연봉 테이블의 범위에 들어가버리게 되었다면 다른 곳에서 받은 오퍼 등으로 다시 협상의 기회를 열어야 합니다.
-  
-**5. 제안의 문맥 읽기**
-* 제안 금액이 낮은 경우: 협상하기 전 인터뷰어에게 다른 사람들이 생각한 자신의 가치에 대해 피드백을 요청해 내가 생각하는 나의 가치와 상대가 받아들인 가치의 갭을 줄여야 합니다.
-* 제안 금액이 중간인 경우: 가장 일반적인 경우입니다. 인터뷰 과정에서 강한 옹호자를 만들지 못했다는 의미입니다. 매니저가 당신을 위해 금액을 배팅하기 위해 마음먹기 전에 협상하지 않아야 합니다.
-* 제안 금액이 테이블 꼭대기 일 경우: 더 높은 밴드 금액을 제시할 논의가 있었을 가능성이 있습니다. 이런 경우 밴드를 넘어선 금액을 제시할 수 있습니다.
-  
-**6. 스타트업에선 다른 방식이 필요함**
-* 현재 회사의 재무적 상황, 포지션에 대한 계획, 엑싯했을 때 지분가치를 이해하고 협상해야 합니다.
-  
-**7. 마음을 얻어야 함**
-* 의사결정권자와 팔로업 미팅을 요청해 그들의 마음을 얻어야 연봉이 나의 가치를 반영할 수 있습니다
-  
-**8. 데이터를 얻기**
-* 다른 오퍼와 비교해 경쟁력 있는가? 이야기 나눈 내용은 어떻게 실현되고, 모두 사실인가? 등 데이터를 얻어야 합니다.
-  
-**9. 오퍼 비교하기**
-* 오퍼는 회사별로 다양한 방식으로 구성되어 있습니다. 선금을 많이 책정할 수도, 스톡이나 보너스 등으로 나눠져 있을 수도 있습니다.
-* 어떤 회사가 더 유망한지, 승진은 어떻게 되는지, 매니저의 영향력은 어떠한지 등을 비교해야 합니다.
-  
-**10. 미신을 딛고 제대로 요구하기**
-* 실제로 다른 곳에서 받은 오퍼가 있어야 한다, 리크루터에게 내가 얼마나 적합한지 이야기하는게 가장 확실한 방법이다, 오퍼와 기대가 맞지 않으면 포기할 수 있다고 강력하게 이야기 해야 한다 등은 모두 미신이고 잘못된 방법입니다.
-* 큰 액수로 금액을 성공적으로 올리기 위해서는 올바른 방법이 필요합니다.
+<p><strong>1. 협상은 생각보다 일찍 시작한다</strong></p>
+<ul>
+  <li>첫 만남에서 원하는 금액을 물어보는 경우가 있는데, 절대 숫자를 얘기해선 안됩니다.</li>
+  <li>오히려 역으로 예산이 어느정도인지 물어보고 내 예상과 일치하는지 확인하세요.</li>
+</ul>
+
+<p><strong>2. 인터뷰에서 정보를 더 얻기</strong></p>
+<ul>
+  <li>인터뷰할 땐 답변만 하는것이 아니라 정보도 얻어야 합니다.</li>
+  <li>지금 팀이 가장 주요하게 생각하는것은 무엇인가요? 왜 이 포지션이 필요한가요?</li>
+</ul>
+
+<p><strong>3. 압박에 굴하지 않기</strong></p>
+<ul>
+  <li>포지션에 오퍼를 받은 다음엔 리크루터의 목표는 평가에서 클로징(계약 완료)로 옮겨갑니다</li>
+  <li>이 때 다시금 원하는 금액을 물어보는데 이 때도 숫자를 말해서는 안됩니다.</li>
+  <li>금액을 말씀하시면 거기에 맞춰드릴게요 = 비슷하지만 더 낮은 금액으로 계약합시다</li>
+</ul>
+
+<p><strong>4. 대기업에서는 리쿠르터의 발언권이 없습니다</strong></p>
+<ul>
+  <li>대기업일수록 연봉 테이블이 단단하게 형성되어 있습니다.</li>
+  <li>리쿠르터는 ‘급여 위원회’로 부터 숫자를 받고, 협상을 원할 땐 리쿠르터가 위원회로 가 재평가를 받아야 합니다. 따라서 리크루터는 위원회와 면접자를 여러 번 다녀가지 않기 위해 금액을 먼저 받고싶어 합니다.</li>
+  <li>기존 연봉 테이블의 범위에 들어가버리게 되었다면 다른 곳에서 받은 오퍼 등으로 다시 협상의 기회를 열어야 합니다.</li>
+</ul>
+
+<p><strong>5. 제안의 문맥 읽기</strong></p>
+<ul>
+  <li>제안 금액이 낮은 경우: 협상하기 전 인터뷰어에게 다른 사람들이 생각한 자신의 가치에 대해 피드백을 요청해 내가 생각하는 나의 가치와 상대가 받아들인 가치의 갭을 줄여야 합니다.</li>
+  <li>제안 금액이 중간인 경우: 가장 일반적인 경우입니다. 인터뷰 과정에서 강한 옹호자를 만들지 못했다는 의미입니다. 매니저가 당신을 위해 금액을 배팅하기 위해 마음먹기 전에 협상하지 않아야 합니다.</li>
+  <li>제안 금액이 테이블 꼭대기 일 경우: 더 높은 밴드 금액을 제시할 논의가 있었을 가능성이 있습니다. 이런 경우 밴드를 넘어선 금액을 제시할 수 있습니다.</li>
+</ul>
+
+<p><strong>6. 스타트업에선 다른 방식이 필요함</strong></p>
+<ul>
+  <li>현재 회사의 재무적 상황, 포지션에 대한 계획, 엑싯했을 때 지분가치를 이해하고 협상해야 합니다.</li>
+</ul>
+
+<p><strong>7. 마음을 얻어야 함</strong></p>
+<ul>
+  <li>의사결정권자와 팔로업 미팅을 요청해 그들의 마음을 얻어야 연봉이 나의 가치를 반영할 수 있습니다</li>
+</ul>
+
+<p><strong>8. 데이터를 얻기</strong></p>
+<ul>
+  <li>다른 오퍼와 비교해 경쟁력 있는가? 이야기 나눈 내용은 어떻게 실현되고, 모두 사실인가? 등 데이터를 얻어야 합니다.</li>
+</ul>
+
+<p><strong>9. 오퍼 비교하기</strong></p>
+<ul>
+  <li>오퍼는 회사별로 다양한 방식으로 구성되어 있습니다. 선금을 많이 책정할 수도, 스톡이나 보너스 등으로 나눠져 있을 수도 있습니다.</li>
+  <li>어떤 회사가 더 유망한지, 승진은 어떻게 되는지, 매니저의 영향력은 어떠한지 등을 비교해야 합니다.</li>
+</ul>
+
+<p><strong>10. 미신을 딛고 제대로 요구하기</strong></p>
+<ul>
+  <li>실제로 다른 곳에서 받은 오퍼가 있어야 한다, 리크루터에게 내가 얼마나 적합한지 이야기하는게 가장 확실한 방법이다, 오퍼와 기대가 맞지 않으면 포기할 수 있다고 강력하게 이야기 해야 한다 등은 모두 미신이고 잘못된 방법입니다.</li>
+  <li>큰 액수로 금액을 성공적으로 올리기 위해서는 올바른 방법이 필요합니다.</li>
+</ul>
+
         </div>
         <div class="a-more__wrapper" onclick="expandArticle(this)">
         <p class="a-more">
@@ -3536,8 +4302,6 @@ XYZ 회사는 2월 마지막 주에 많은 사용자가 들어왔고, 역시 각
             
         
             
-        
-            
                 <li class="a-list__item c-list__info">
     
         <img src="https://miro.medium.com/max/5000/1*7-FdPudfKwZrah_V5g1ZOQ.png" class="c-list__img" loading="lazy" alt="B2B 사용자 리서치 필수 가이드" />
@@ -3581,6 +4345,8 @@ XYZ 회사는 2월 마지막 주에 많은 사용자가 들어왔고, 역시 각
         <time class="c-list__date" datetime="2021-08-26T23:30:00+09:00" itemprop="datePublished">26 Aug 2021</time>
     
 </li>
+            
+        
             
         
             
@@ -4317,117 +5083,86 @@ Enterprise UX Industry Report 2017–2018</a></figcaption>
 🔗 이 글은 Robert Turner가 본인의 <a rel="nofollow noopener noreferrer" target="_blank" href="https://trtphd.medium.com/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://miro.medium.com/fit/c/120/120/1*sHhtYhaCe2Uc3IU0IgKwIQ.png" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />미디엄 블로그</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://abit.ly/article_36" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
 </p>
 
-<h2 id="️-요약">⚡️ 요약</h2>
+## ⚡️ 요약
 
-<blockquote>
-  <p>사용성을 정량적으로 평가하려고 하면 큰 결함이나 딜 브레이커가 되는 핵심 이유를 알려주긴 하지만, 정성적인 조사 방법으로는 제품 사용성에 대한 정성적인 지표로서 역할은 하지만 개선에 대한 방향은 알기 어렵다. 제품 개발자들에게 사용성에 대한 유의미한 인사이트를 위해서는 추가적인 컨텍스트가 필요하다.</p>
-</blockquote>
+&gt; 사용성을 정량적으로 평가하려고 하면 큰 결함이나 딜 브레이커가 되는 핵심 이유를 알려주긴 하지만, 정성적인 조사 방법으로는 제품 사용성에 대한 정성적인 지표로서 역할은 하지만 개선에 대한 방향은 알기 어렵다. 제품 개발자들에게 사용성에 대한 유의미한 인사이트를 위해서는 추가적인 컨텍스트가 필요하다.
 
-<blockquote>
-  <p>사용성을 구성하는 5가지 차원은 다음과 같다.<br />
-    - <strong>학습 용이성</strong><br />
-    - <strong>효율성</strong><br />
-    - <strong>기억 용이성</strong><br />
-    - <strong>오류 대처</strong><br />
-    - <strong>만족도</strong></p>
-</blockquote>
+&gt; 사용성을 구성하는 5가지 차원은 다음과 같다.  
+    - **학습 용이성**  
+    - **효율성**  
+    - **기억 용이성**  
+    - **오류 대처**  
+    - **만족도**
 
-<blockquote>
-  <p>디자인 휴리스틱(직관적 발견법)으로는 유명한 닐슨의 10가지 기준이 있다.
-    1. <strong>시스템 상태의 가시성</strong><br />
-    2. <strong>시스템과 실제 세계의 일치</strong><br />
-    3. <strong>사용자 통제감과 자유도</strong><br />
-    4. <strong>일관성과 표준화</strong><br />
-    5. <strong>오류 방지</strong><br />
-    6. <strong>회상보다는 인지</strong><br />
-    7. <strong>사용 유연성과 효율성</strong><br />
-    8. <strong>미적이며 미니멀한 디자인</strong><br />
-    9. <strong>사용자가 오류를 인지하고, 진단하고, 복구할 수 있도록 지원</strong><br />
-    10. <strong>도움말과 문서화</strong></p>
-</blockquote>
+&gt; 디자인 휴리스틱(직관적 발견법)으로는 유명한 닐슨의 10가지 기준이 있다.
+    1. **시스템 상태의 가시성**  
+    2. **시스템과 실제 세계의 일치**  
+    3. **사용자 통제감과 자유도**  
+    4. **일관성과 표준화**  
+    5. **오류 방지**  
+    6. **회상보다는 인지**  
+    7. **사용 유연성과 효율성**  
+    8. **미적이며 미니멀한 디자인**  
+    9. **사용자가 오류를 인지하고, 진단하고, 복구할 수 있도록 지원**  
+    10. **도움말과 문서화**
 
-<blockquote>
-  <p>제품 사용성을 위해서는 ‘사용성을 구성하는 5가지 각 차원에 대해 10가지 디자인 휴리스틱이 잘 지켜지는지’를 제품 개발 초기 디자인부터 신경 쓰고, 자주 평가해야 한다.<br />
-평가는 정량적, 정성적인 방법을 모두 사용해 각 방법의 장단점을 취합해야 한다.<br />
-연구 결과에 대해서는 핵심 내용과 제안사항, 액션 아이템을 정리하는 것을 프로세스 화 하여 리서치 결과가 유의미하게 남을 수 있도록 해야 한다.</p>
-</blockquote>
+&gt; 제품 사용성을 위해서는 '사용성을 구성하는 5가지 각 차원에 대해 10가지 디자인 휴리스틱이 잘 지켜지는지'를 제품 개발 초기 디자인부터 신경 쓰고, 자주 평가해야 한다.  
+평가는 정량적, 정성적인 방법을 모두 사용해 각 방법의 장단점을 취합해야 한다.  
+연구 결과에 대해서는 핵심 내용과 제안사항, 액션 아이템을 정리하는 것을 프로세스 화 하여 리서치 결과가 유의미하게 남을 수 있도록 해야 한다.
 
-<hr />
+---
 
-<h2 id="intro">Intro</h2>
+## Intro
 
-<p>우리는 소비자로서 우리가 구매하려는 제품(예를 들어 자동차, 가전제품, 모바일 디바이스, 앱 등)이 궁극적으로 우리를 위해 어떻게 동작할지에 대한 기본적인 기대를 빠르고 명확하게 형성합니다. 보통 브랜드 평판, 고객 리뷰, 제품 데모 등 “유사 상호작용”을 통해 얻은 데이터를 기반으로 하는 기대는 우리의 쇼핑 행태부터 최종적인 구매 결정에까지 모든 것에 영향을 줍니다. 이러한 기대 중 가장 중요한 것은 그 제품이 어떤 것인지 충분히 알기 쉽고, 사용하기에 번거롭지 않다는 것입니다.</p>
+우리는 소비자로서 우리가 구매하려는 제품(예를 들어 자동차, 가전제품, 모바일 디바이스, 앱 등)이 궁극적으로 우리를 위해 어떻게 동작할지에 대한 기본적인 기대를 빠르고 명확하게 형성합니다. 보통 브랜드 평판, 고객 리뷰, 제품 데모 등 "유사 상호작용"을 통해 얻은 데이터를 기반으로 하는 기대는 우리의 쇼핑 행태부터 최종적인 구매 결정에까지 모든 것에 영향을 줍니다. 이러한 기대 중 가장 중요한 것은 그 제품이 어떤 것인지 충분히 알기 쉽고, 사용하기에 번거롭지 않다는 것입니다.
 
-<p>우리가 새로운 제품 사용을 시작하면, 그 디자인에 내재한 어떤 특징이 우리가 제품과 제조업체 모두에 대한 태도를 형성할 뿐만 아니라 제품을 계속 사용하는 정도나 방식을 결정합니다. 우리는 모두 직관적이지 않거나 반 직관적인 제품을 경험해봤고 이에 대해 비난한 적이 있을 것입니다. 하지만 제품을 사용하고 실제로 사용자 친화적으로 만드는 근본적인 특성에 대한 피드백(제품 개발자들에게는 필수적인 정보)을 표현하는 것은 조금 더 복잡합니다. 사용성 피드백과 제품 평가는 종종 ‘딜 브레이커’의 핵심 이유나 사용성의 큰 결함에 대한 개별 증상을 밝혀준다. 반대로, 전체적인 사용성 평가(예를 들어, ‘이 제품의 사용성에 대해 전반적으로 얼마나 만족하셨습니까?’와 같은 질문)는 제품의 전반적인 사용성에 대한 훌륭한 정성적인 지표를 제공하지만 섬세하게 진단하기엔 정보를 거의 제공하지 않습니다. 그 말인즉슨, 어떤 사람은 제품이 사용자 친화적이지 않다고 생각은 하지만, 그 이유나 어떻게 개선할 수 있는지는 전혀 모른다는 의미입니다. 검증되고 표준화된 평가 도구일지라도 개발자들에게 사용성에 대한 유의미한 인사이트를 제공하기 위해서는 추가적인 컨텍스트가 필요합니다.</p>
+우리가 새로운 제품 사용을 시작하면, 그 디자인에 내재한 어떤 특징이 우리가 제품과 제조업체 모두에 대한 태도를 형성할 뿐만 아니라 제품을 계속 사용하는 정도나 방식을 결정합니다. 우리는 모두 직관적이지 않거나 반 직관적인 제품을 경험해봤고 이에 대해 비난한 적이 있을 것입니다. 하지만 제품을 사용하고 실제로 사용자 친화적으로 만드는 근본적인 특성에 대한 피드백(제품 개발자들에게는 필수적인 정보)을 표현하는 것은 조금 더 복잡합니다. 사용성 피드백과 제품 평가는 종종 '딜 브레이커'의 핵심 이유나 사용성의 큰 결함에 대한 개별 증상을 밝혀준다. 반대로, 전체적인 사용성 평가(예를 들어, '이 제품의 사용성에 대해 전반적으로 얼마나 만족하셨습니까?'와 같은 질문)는 제품의 전반적인 사용성에 대한 훌륭한 정성적인 지표를 제공하지만 섬세하게 진단하기엔 정보를 거의 제공하지 않습니다. 그 말인즉슨, 어떤 사람은 제품이 사용자 친화적이지 않다고 생각은 하지만, 그 이유나 어떻게 개선할 수 있는지는 전혀 모른다는 의미입니다. 검증되고 표준화된 평가 도구일지라도 개발자들에게 사용성에 대한 유의미한 인사이트를 제공하기 위해서는 추가적인 컨텍스트가 필요합니다.
 
-<h2 id="다차원-구조인-사용성">다차원 구조인 사용성</h2>
+## 다차원 구조인 사용성
 
-<p>우리는 일반적으로 제품의 사용성이 절대적인 지표라고 생각하지 않습니다. 어떤 제품도 100% 친화적이거나 100% 친화적이지 않습니다. 오히려 대부분의 제품은 사용성 스펙트럼에서 대체로 중-저 구간인 “meh” 정도에 위치한다. 이것은 사용성이 정량적으로 평가가 가능하고 측정가능하지만 1차원적인 구조가 아니기 때문입니다. 따라서 우리는 사용성을 하나로 취급하거나 측정해서는 안 됩니다. 연구진들은 사용성이 서로 다르지만 연관된 5가지 요소로 구성되어있다고 결론 내렸습니다.</p>
+우리는 일반적으로 제품의 사용성이 절대적인 지표라고 생각하지 않습니다. 어떤 제품도 100% 친화적이거나 100% 친화적이지 않습니다. 오히려 대부분의 제품은 사용성 스펙트럼에서 대체로 중-저 구간인 "meh" 정도에 위치한다. 이것은 사용성이 정량적으로 평가가 가능하고 측정가능하지만 1차원적인 구조가 아니기 때문입니다. 따라서 우리는 사용성을 하나로 취급하거나 측정해서는 안 됩니다. 연구진들은 사용성이 서로 다르지만 연관된 5가지 요소로 구성되어있다고 결론 내렸습니다.
 
-<ul>
-  <li><strong>학습 용이성</strong>: 사용자가 처음 제품을 사용할 때 기본적인 태스크(예: 보안 설정 변경하기)를 얼마나 쉽게 성공적으로 수행할 수 있는가?</li>
-  <li><strong>효율성</strong>: 사용자가 제품이 어떻게 동작하는지 학습한 다음, 일상적인 작업을 얼마나 빠르게 수행할 수 있는가?</li>
-  <li><strong>기억 용이성</strong>: 사용자가 제품을 사용하지 않다가 다시 돌아왔을 때 이전에 멈췄던 부분으로 쉽게 돌아올 수 있는가? 중단이나 일시적인 방해로 사용자가 처음부터 다시 시작해야 하는가?</li>
-  <li><strong>오류 대처</strong>: 사용자가 얼마나 자주 실수를 하고, 그 실수는 얼마나 심각하고, 사용자가 얼마나 쉽게 그 실수를 정정하거나 복구할 수 있는가?</li>
-  <li><strong>만족도</strong>: 사용자에게 제품이 전반적으로 얼마나 매력적이고 즐거움을 주는가?</li>
-</ul>
+- **학습 용이성**: 사용자가 처음 제품을 사용할 때 기본적인 태스크(예: 보안 설정 변경하기)를 얼마나 쉽게 성공적으로 수행할 수 있는가?
+- **효율성**: 사용자가 제품이 어떻게 동작하는지 학습한 다음, 일상적인 작업을 얼마나 빠르게 수행할 수 있는가?
+- **기억 용이성**: 사용자가 제품을 사용하지 않다가 다시 돌아왔을 때 이전에 멈췄던 부분으로 쉽게 돌아올 수 있는가? 중단이나 일시적인 방해로 사용자가 처음부터 다시 시작해야 하는가?
+- **오류 대처**: 사용자가 얼마나 자주 실수를 하고, 그 실수는 얼마나 심각하고, 사용자가 얼마나 쉽게 그 실수를 정정하거나 복구할 수 있는가?
+- **만족도**: 사용자에게 제품이 전반적으로 얼마나 매력적이고 즐거움을 주는가?
 
-<p>이러한 요소들은 초기에 그리고 자주 고려되어야 하며, 과학적 자료와 표준에 맞게 제품에 의도적으로 디자인 되어야 하고, 효과를 보장하기 위해 제품 개발 전반에 걸쳐 엄격하게 테스트 되어야 합니다. 즉, 이러한 중요한 요인 중 하나를 무시하면 부적절한 제품 사용성이 초래됩니다. 만약 여러 요소를 무시한다면 제품 사용성은 더욱 악화할 것입니다. 반복적인 디자인 접근 방법으로 테스트를 일상적으로 수행하는 것이 최종 디자인에 들어가 결정돼버리기 전에 사용성 결함을 식별하고 수정할 수 있는 핵심 방법입니다.</p>
+이러한 요소들은 초기에 그리고 자주 고려되어야 하며, 과학적 자료와 표준에 맞게 제품에 의도적으로 디자인 되어야 하고, 효과를 보장하기 위해 제품 개발 전반에 걸쳐 엄격하게 테스트 되어야 합니다. 즉, 이러한 중요한 요인 중 하나를 무시하면 부적절한 제품 사용성이 초래됩니다. 만약 여러 요소를 무시한다면 제품 사용성은 더욱 악화할 것입니다. 반복적인 디자인 접근 방법으로 테스트를 일상적으로 수행하는 것이 최종 디자인에 들어가 결정돼버리기 전에 사용성 결함을 식별하고 수정할 수 있는 핵심 방법입니다.
 
-<h2 id="디자인-휴리스틱-직관적-발견법">디자인 휴리스틱 (직관적 발견법)</h2>
+## 디자인 휴리스틱 (직관적 발견법)
 
-<p>만약 인간과 시스템의 상호 작용에 대한 역학관계를 특정하는 과학적인 자료가 사람과 시스템의 인터페이스를 설계하고 검증하기 위한 진정한 “사용자 매뉴얼”을 구성한다면, Jakob Nielsen이 1994년에 발표한 디자인 휴리스틱은 시행착오를 거친 믿을만한 “퀵 가이드”를 대표합니다. 닐슨의 연구는 제품 개발자가 유저 인터페이스를 디자인할 때 고려해야 할 10가지 중요한 규칙으로 요약됩니다.</p>
+만약 인간과 시스템의 상호 작용에 대한 역학관계를 특정하는 과학적인 자료가 사람과 시스템의 인터페이스를 설계하고 검증하기 위한 진정한 "사용자 매뉴얼"을 구성한다면, Jakob Nielsen이 1994년에 발표한 디자인 휴리스틱은 시행착오를 거친 믿을만한 "퀵 가이드"를 대표합니다. 닐슨의 연구는 제품 개발자가 유저 인터페이스를 디자인할 때 고려해야 할 10가지 중요한 규칙으로 요약됩니다.
 
-<ol>
-  <li>
-    <p><strong>시스템 상태의 가시성</strong>: 시스템은 사용자와 의사소통 하여 현재 시스템이 어떤 모드, 상황, 상태인지 계속해서 알려주어야 합니다. 눈에 띄는 지연이나 버벅임 없이 사용자의 인풋과 명령을 확인하고 이에 응답해야 합니다.</p>
-  </li>
-  <li>
-    <p><strong>시스템과 실제 세계의 일치</strong>: 시스템은 사용자가 친숙하게 생각하는 단어, 표현, 개념으로 대화해야 합니다. 실재하는 규칙을 적용하고, 실제 세계에서 나타나는 대로 일관된 방식으로 디지털 정보와 표현을 표시해야 합니다.</p>
-  </li>
-  <li>
-    <p><strong>사용자 통제감과 자유도</strong>: 사용자는 종종 의도하지 않은 기능이나 옵션을 선택하곤 하며, 이런 원하지 않는 시스템 상태에서 긴 다이얼로그나 프로세스 없이 즉각 “비상 탈출”할 수 있는 명확한 표시가 필요합니다. 되돌리기와 다시 실행을 지원해야 합니다.</p>
-  </li>
-  <li>
-    <p><strong>일관성과 표준화</strong>: 사용자는 인터페이스에 나타나는 다른 단어, 코드, 상황이나 액션이 동일한 의미인지 궁금해할 필요가 없어야 합니다. 적절한 네이밍 규칙을 정하고 준수해야 합니다.</p>
-  </li>
-  <li>
-    <p><strong>오류 방지</strong>: 어떤 좋은 에러 경고나 메세지보다도 에러가 나지 않도록 하는 디자인이 더 사려 깊은 디자인입니다. 에러를 발생시키기 쉬운 조건을 제거하거나 사용자가 액션을 수행하기 전에 직접 확인할 수 있는 옵션을 제공해야 합니다.</p>
-  </li>
-  <li>
-    <p><strong>회상보다는 인지</strong>: 오브젝트, 액션, 워크플로우를 잘 보이게 표시하여 사용자가 기억에 의존할 필요 없이도 다음 단계가 무엇인지 인지할 수 있도록 해야 합니다. 사용자들은 인터페이스의 한 부분에서 다른 부분으로 이동할 때나, 트레이닝이나 문서에서 뭔가를 기억할 필요가 없습니다. 핵심적인 정보(지침, 주의, 경고와 알림을 포함)는 확인될 때까지 표시되어야 하며 적절할 때마다 쉽게 찾을 수 있어야 합니다.</p>
-  </li>
-  <li>
-    <p><strong>사용 유연성과 효율성</strong>: 초보 사용자가 확인할 수 없는 단축키와 같은 가속 장치를 통해 숙련된 사용자의 인터랙션 속도를 높일 수 있어 시스템이 숙련 사용자와 비숙련 사용자 모두를 만족시킬 수 있습니다. 하지만, 이런 가속 장치가 모든 사용자에게 항시적으로 제공되는 경우 인터페이스를 복잡하게 하고 성능이 저하될 수 있습니다.</p>
-  </li>
-  <li>
-    <p><strong>미적이며 미니멀한 디자인</strong>: 인터페이스에는 연관 없거나 거의 불필요한 정보는 포함되어서는 안 됩니다. 모든 부차적인 정보들은 유의미한 정보와 경쟁하게 되어 가시성을 저해합니다.</p>
-  </li>
-  <li>
-    <p><strong>사용자가 오류를 인지하고, 진단하고, 복구할 수 있도록 지원</strong>: 오류 메세지는 일반적인 언어로 표현되어야 합니다 (코드나 사용자에게 익숙하지 않은 용어를 사용하지 않고).  문제의 성격을 명확하게 설명하고 건설적인 해결책에 관해 설명해야 합니다.</p>
-  </li>
-  <li>
-    <p><strong>도움말과 문서화</strong>: 이런 것들 없이도 시스템을 사용할 수 있는 것이 더 바람직하지만, 온보딩 지원이나 문서를 제공할 필요가 있을 수 있습니다. 이런 정보들은 찾기 쉽고 이동하기 쉬워야 하며, 사용자의 작업에 초점을 맞춰 수행할 단계들을 명확하게 제시해야 하며, 지나치게 방대해서는 안 됩니다.</p>
-  </li>
-</ol>
+1. **시스템 상태의 가시성**: 시스템은 사용자와 의사소통 하여 현재 시스템이 어떤 모드, 상황, 상태인지 계속해서 알려주어야 합니다. 눈에 띄는 지연이나 버벅임 없이 사용자의 인풋과 명령을 확인하고 이에 응답해야 합니다.
 
-<h2 id="그래서-제품을-사용자-친화적으로-만드는-것은-요약">그래서… 제품을 사용자 친화적으로 만드는 것은 (요약)</h2>
+2. **시스템과 실제 세계의 일치**: 시스템은 사용자가 친숙하게 생각하는 단어, 표현, 개념으로 대화해야 합니다. 실재하는 규칙을 적용하고, 실제 세계에서 나타나는 대로 일관된 방식으로 디지털 정보와 표현을 표시해야 합니다.
 
-<ol>
-  <li>
-    <p><strong>사용성을 염두에 두고 디자인하라.</strong> 사용성은 이분법적이지 않고 다차원적이고 역동적인 구조로 되어 있다는 것을 인지해야 합니다. 전략적인 관점에서, 핵심 사용성 차원(학습 용이성, 효율성, 기억 용이성, 오류 대처, 만족도)에 주의를 기울여 제품 디자인의 처음부터 신중하게 통합되도록 해야 합니다. 전술적으로는 앞서 설명했던 각 차원에 대해 사용성 휴리스틱(오류 방지, 회상보단 인지 등)을 끌어올려 점진적으로 그리고 장기적으로 성공할 수 있도록 하세요. 자주 평가하고 필요에 따라 조정하세요.</p>
-  </li>
-  <li>
-    <p><strong>사용성을 염두에 두고 평가하라.</strong> ”사용성 측면에서 이 제품에 전반적으로 얼마나 만족하셨나요?”나 이와 같은 질문만으로 제품의 사용성을 판단하면 안 됩니다. 각 핵심 차원에서 제품이 얼마나 잘하고 있는지를 평가해 만약 부족한 부분이 발견된다면 해당 문제에 날카롭게 다듬을 수 있도록 하세요. 수많은 표준화되고 검증된 평가 방법(예: 시스템 사용성 척도 System Usability Scale, 사용자 인터페이스 만족도 설문 Questionnaire for User Interface Satisfaction, IBM 사후 시나리오 및 연구 후 시스템 사용성 질문 IBM After-Scenario and Post-Study System Usability Questionnaires 등)이 있습니다. 내가 뭘, 그리고 왜 하고 있는지 정확히 알지 못한다면 바퀴를 재발명하고 있을 필요가 없습니다.</p>
-  </li>
-  <li>
-    <p><strong>표준화된 사용성 질문을 넘어서라.</strong> 위에서 언급된 표준화된 기법들은 제품 사용성 전반 평가에 상당한 개선 진단을 제공할 수 있지만, 디자이너나 개발자가 실행 가능한 컨텍스트를 제공하는 데는 여전히 부족합니다. 만약 이런 기법들이 디지털로 이루어진다면, 낮게 평가된 부분의 원인에 대해 더 잘 이해하기 위해 하나 이상의 개방형 후속 질문(예: 설문 조사 플랫폼의 질문 로직 기능을 이용하는 등)을 활용하세요. 만약 기법을 직접 수행한다면, 참가자들의 답변을 함께 검토하거나 연구 내용을 알려주는 동안 낮은 평가를 받은 항목에 대해 임시 인터뷰를 빠르게 진행할 수 있도록 계획하세요.</p>
-  </li>
-  <li>
-    <p><strong>피드백을 디자이너나 개발자가 사용할 수 있도록 정제하라.</strong> 데이터 분석은 부담스럽고, 압도되고, 시간이 많이 소요될 수 있습니다. 의도한 대상에게 전달할 땐 항상 로우 데이터에서 핵심 정보, 피드백, 테마, 트렌드, 포인트와 제안사항을 뽑아 관리 가능한 수의 명확한 작업 아이템으로 간결하게 패키지화하세요. 이를 통해 중요한 리서치 결과가 무시되거나 사라질 가능성을 크게 줄일 수 있지만, 이 규칙은 사용성 엔지니어링 작업에서 가장 간과되고 지켜지지 않는 요소 중 하나입니다.</p>
-  </li>
-</ol>
+3. **사용자 통제감과 자유도**: 사용자는 종종 의도하지 않은 기능이나 옵션을 선택하곤 하며, 이런 원하지 않는 시스템 상태에서 긴 다이얼로그나 프로세스 없이 즉각 "비상 탈출"할 수 있는 명확한 표시가 필요합니다. 되돌리기와 다시 실행을 지원해야 합니다.
 
+4. **일관성과 표준화**: 사용자는 인터페이스에 나타나는 다른 단어, 코드, 상황이나 액션이 동일한 의미인지 궁금해할 필요가 없어야 합니다. 적절한 네이밍 규칙을 정하고 준수해야 합니다.
+
+5. **오류 방지**: 어떤 좋은 에러 경고나 메세지보다도 에러가 나지 않도록 하는 디자인이 더 사려 깊은 디자인입니다. 에러를 발생시키기 쉬운 조건을 제거하거나 사용자가 액션을 수행하기 전에 직접 확인할 수 있는 옵션을 제공해야 합니다.
+
+6. **회상보다는 인지**: 오브젝트, 액션, 워크플로우를 잘 보이게 표시하여 사용자가 기억에 의존할 필요 없이도 다음 단계가 무엇인지 인지할 수 있도록 해야 합니다. 사용자들은 인터페이스의 한 부분에서 다른 부분으로 이동할 때나, 트레이닝이나 문서에서 뭔가를 기억할 필요가 없습니다. 핵심적인 정보(지침, 주의, 경고와 알림을 포함)는 확인될 때까지 표시되어야 하며 적절할 때마다 쉽게 찾을 수 있어야 합니다.
+
+7. **사용 유연성과 효율성**: 초보 사용자가 확인할 수 없는 단축키와 같은 가속 장치를 통해 숙련된 사용자의 인터랙션 속도를 높일 수 있어 시스템이 숙련 사용자와 비숙련 사용자 모두를 만족시킬 수 있습니다. 하지만, 이런 가속 장치가 모든 사용자에게 항시적으로 제공되는 경우 인터페이스를 복잡하게 하고 성능이 저하될 수 있습니다.
+
+8. **미적이며 미니멀한 디자인**: 인터페이스에는 연관 없거나 거의 불필요한 정보는 포함되어서는 안 됩니다. 모든 부차적인 정보들은 유의미한 정보와 경쟁하게 되어 가시성을 저해합니다.
+
+9.  **사용자가 오류를 인지하고, 진단하고, 복구할 수 있도록 지원**: 오류 메세지는 일반적인 언어로 표현되어야 합니다 (코드나 사용자에게 익숙하지 않은 용어를 사용하지 않고).  문제의 성격을 명확하게 설명하고 건설적인 해결책에 관해 설명해야 합니다.
+
+10. **도움말과 문서화**: 이런 것들 없이도 시스템을 사용할 수 있는 것이 더 바람직하지만, 온보딩 지원이나 문서를 제공할 필요가 있을 수 있습니다. 이런 정보들은 찾기 쉽고 이동하기 쉬워야 하며, 사용자의 작업에 초점을 맞춰 수행할 단계들을 명확하게 제시해야 하며, 지나치게 방대해서는 안 됩니다.
+
+## 그래서... 제품을 사용자 친화적으로 만드는 것은 (요약)
+
+1. **사용성을 염두에 두고 디자인하라.** 사용성은 이분법적이지 않고 다차원적이고 역동적인 구조로 되어 있다는 것을 인지해야 합니다. 전략적인 관점에서, 핵심 사용성 차원(학습 용이성, 효율성, 기억 용이성, 오류 대처, 만족도)에 주의를 기울여 제품 디자인의 처음부터 신중하게 통합되도록 해야 합니다. 전술적으로는 앞서 설명했던 각 차원에 대해 사용성 휴리스틱(오류 방지, 회상보단 인지 등)을 끌어올려 점진적으로 그리고 장기적으로 성공할 수 있도록 하세요. 자주 평가하고 필요에 따라 조정하세요.
+
+2. **사용성을 염두에 두고 평가하라.** "사용성 측면에서 이 제품에 전반적으로 얼마나 만족하셨나요?"나 이와 같은 질문만으로 제품의 사용성을 판단하면 안 됩니다. 각 핵심 차원에서 제품이 얼마나 잘하고 있는지를 평가해 만약 부족한 부분이 발견된다면 해당 문제에 날카롭게 다듬을 수 있도록 하세요. 수많은 표준화되고 검증된 평가 방법(예: 시스템 사용성 척도 System Usability Scale, 사용자 인터페이스 만족도 설문 Questionnaire for User Interface Satisfaction, IBM 사후 시나리오 및 연구 후 시스템 사용성 질문 IBM After-Scenario and Post-Study System Usability Questionnaires 등)이 있습니다. 내가 뭘, 그리고 왜 하고 있는지 정확히 알지 못한다면 바퀴를 재발명하고 있을 필요가 없습니다.
+
+3. **표준화된 사용성 질문을 넘어서라.** 위에서 언급된 표준화된 기법들은 제품 사용성 전반 평가에 상당한 개선 진단을 제공할 수 있지만, 디자이너나 개발자가 실행 가능한 컨텍스트를 제공하는 데는 여전히 부족합니다. 만약 이런 기법들이 디지털로 이루어진다면, 낮게 평가된 부분의 원인에 대해 더 잘 이해하기 위해 하나 이상의 개방형 후속 질문(예: 설문 조사 플랫폼의 질문 로직 기능을 이용하는 등)을 활용하세요. 만약 기법을 직접 수행한다면, 참가자들의 답변을 함께 검토하거나 연구 내용을 알려주는 동안 낮은 평가를 받은 항목에 대해 임시 인터뷰를 빠르게 진행할 수 있도록 계획하세요.
+
+4. **피드백을 디자이너나 개발자가 사용할 수 있도록 정제하라.** 데이터 분석은 부담스럽고, 압도되고, 시간이 많이 소요될 수 있습니다. 의도한 대상에게 전달할 땐 항상 로우 데이터에서 핵심 정보, 피드백, 테마, 트렌드, 포인트와 제안사항을 뽑아 관리 가능한 수의 명확한 작업 아이템으로 간결하게 패키지화하세요. 이를 통해 중요한 리서치 결과가 무시되거나 사라질 가능성을 크게 줄일 수 있지만, 이 규칙은 사용성 엔지니어링 작업에서 가장 간과되고 지켜지지 않는 요소 중 하나입니다.
         </div>
         <div class="a-more__wrapper" onclick="expandArticle(this)">
         <p class="a-more">
@@ -4865,8 +5600,6 @@ Enterprise UX Industry Report 2017–2018</a></figcaption>
             
         
             
-        
-            
                 <li class="a-list__item c-list__info">
     
         <img src="article_summary-2/img/error_message_example.png" class="c-list__img" loading="lazy" alt="오류 메세지 문장 작성법 간단히 살펴보기" />
@@ -4966,6 +5699,8 @@ Enterprise UX Industry Report 2017–2018</a></figcaption>
         <time class="c-list__date" datetime="2020-09-09T07:37:45+09:00" itemprop="datePublished">08 Sep 2020</time>
     
 </li>
+            
+        
             
         
             

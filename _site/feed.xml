@@ -5,8 +5,8 @@
     <description>AB180의 UX 디자이너 장승환의 블로그입니다.</description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Thu, 03 Mar 2022 14:56:09 +0900</pubDate>
-    <lastBuildDate>Thu, 03 Mar 2022 14:56:09 +0900</lastBuildDate>
+    <pubDate>Sat, 18 Jun 2022 16:53:53 +0900</pubDate>
+    <lastBuildDate>Sat, 18 Jun 2022 16:53:53 +0900</lastBuildDate>
     <generator>Jekyll v3.9.1</generator>
 
     <item>
@@ -43,6 +43,69 @@
           <pubDate>Tue, 07 Jul 2020 23:40:45 +0900</pubDate>
           <link>http://localhost:4000/blog/github-pages-series-1/</link>
           <guid isPermaLink="true">http://localhost:4000/blog/github-pages-series-1/</guid>
+        </item>
+        <item>
+          <title>데이터 테이블: 4가지 핵심 사용자 태스크</title>
+          <description> 🔗 이 글은 Nielson Norman 그룹이 NN Group 사이트에 올린 아티클을 번역, 요약한 글입니다.B2B 프로덕트는 많은 양의 데이터를 한 번에 보여주기 위해 테이블을 사용하는 경우가 많습니다. 테이블을 사용할 때 어떤 점을 고려해서 디자인 해야할까요?📎 테이블의 특징...</description>
+          <pubDate>Wed, 15 Jun 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-77/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-77/</guid>
+        </item>
+        <item>
+          <title>[Relate] Shape Up: Relate 팀의 제품 개발 프로세스</title>
+          <description> 🔗 이 글은 Relate가 Rekate 블로그에 올린 아티클을 번역, 요약한 글입니다.Relate 팀이 업무 문화에서 많이 참고하고 있는 Basecamp의 제품 개발 프로세스를 소개합니다.✍️ 요약  Shape Up 프로세스는 자율성을 기반으로한 프로젝트 개발에 대한 가이드라인이...</description>
+          <pubDate>Tue, 31 May 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-76/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-76/</guid>
+        </item>
+        <item>
+          <title>[토스] 토스의 프로덕트 매니저가 하는 일</title>
+          <description> 🔗 이 글은 토스가 toss 블로그에 올린 아티클을 번역, 요약한 글입니다.국내에서는 서비스 기획자, PO와 PM 직무가 많이 혼용되어 사용되고 있습니다. 도그냥님이 브런치에서 역사적으로 각 직무가 왜 생기게 되었는지, 어떻게 발전하고 있는지를 고찰한 K-Product ownde...</description>
+          <pubDate>Wed, 18 May 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-75/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-75/</guid>
+        </item>
+        <item>
+          <title>PM겸 디자이너가 전략에 더 많은 영향력을 만드는 방법</title>
+          <description> 🔗 이 글은 Caitlin Brisson님이 Tally의 미디엄에 올린 아티클을 번역, 요약한 글입니다.이 글은 프로덕트 디자이너인 저자가 Tally의 그로쓰 팀 PM으로 250일 동안 업무하면서 얻은 4가지 레슨 런에 대한 글입니다. 저도 현재 회사에서 프로덕트 디자이너와 PM...</description>
+          <pubDate>Wed, 04 May 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-74/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-74/</guid>
+        </item>
+        <item>
+          <title>JTBD 프레임워크 제대로 이해하기</title>
+          <description> 🔗 이 글은 린스프린트님이 본인의 티스토리에 올린 아티클을 번역, 요약한 글입니다.사용자의 업무상 발생하는 워크플로우 내 문제를 해결하기 위해 존재하는 것이 B2B SaaS의 존재 의의입니다. 과업을 수행하기 위해 제품이나 서비스를 구매한다는 JTBD(Jobs to be Done...</description>
+          <pubDate>Fri, 22 Apr 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-73/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-73/</guid>
+        </item>
+        <item>
+          <title>야근하지 않는 디자이너 - 스마트하게 일하기</title>
+          <description> 🔗 이 글은 서혜림님이 본인의 브런치에 올린 아티클을 번역, 요약한 글입니다.디자이너에게 요구되는 직무적 역할이 늘어나고 있는 요즘, 나를 포함한 많은 디자이너들은 처리해야 할 업무들에 둘러쌓여 있는 상태다. 나의 일을 효율적으로 처리하기 위해서는 똑똑하게 일하는 방법을 알아야 ...</description>
+          <pubDate>Tue, 12 Apr 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-72/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-72/</guid>
+        </item>
+        <item>
+          <title>팀이 사랑하게 될 백로그 만들기</title>
+          <description> 🔗 이 글은 Amy Ly님이 미디엄에 올린 아티클을 번역, 요약한 글입니다.스타트업 씬에서 빠르게 프로덕트를 개발하다보면 백로그에 남아있는 이슈들이 점점 많아지게 되는 경험을 많이 해보셨을 것 같아요. 백로그에 등록된 이슈들은 우선순위를 관리해주지 않으면 이슈가 쌓이기만 하고, ...</description>
+          <pubDate>Wed, 30 Mar 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-71/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-71/</guid>
+        </item>
+        <item>
+          <title>8가지 통계 법칙</title>
+          <description> 🔗 이 글은 Jim Lewis가 Measuring U에 올린 아티클을 번역, 요약한 글입니다.통계 연구 결과는 어떤 내러티브로 전달하는지가 아주 중요합니다. 통계학 졸업반 학생들을 대상으로 하는 Statistics as Principled Argument 라는 책의 저자인 Abe...</description>
+          <pubDate>Thu, 17 Mar 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-70/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-70/</guid>
+        </item>
+        <item>
+          <title>조직과 프로젝트를 성공적으로 매니징하기 위한 필독서 [The Goal]</title>
+          <description> 🔗 이 글은 엘리 골드렛의 경영 필독서 [The Goal] 을 요약한 글입니다.앨리 골드렛의 The Goal은 TOC(Theory of Constraints, 제약 이론)을 이해하기 쉽게 설명한 경제경영서 베스트셀러 중 하나입니다. 비록 제조업을 기반으로 이야기가 흘러가지만 그 ...</description>
+          <pubDate>Mon, 14 Feb 2022 23:30:00 +0900</pubDate>
+          <link>http://localhost:4000/article/article_summary-69/</link>
+          <guid isPermaLink="true">http://localhost:4000/article/article_summary-69/</guid>
         </item>
         <item>
           <title>일론 머스크가 소개하는 아이들이 반드시 알아야 할 인지 편향 50가지</title>

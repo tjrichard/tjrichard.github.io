@@ -10,21 +10,22 @@
   <!--Google Search Console Verification-->
   <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
   
-  <title>Things have been thinking</title>
-  <meta name="description" content="AB180의 UX 디자이너 장승환의 블로그입니다.">
+  <title>[Relate] Shape Up: Relate 팀의 제품 개발 프로세스</title>
+  <meta name="description" content="요약 👉 Shape Up: B2B SaaS 스타트업 Relate 팀의 제품 개발 프로세스">
   <!-- Open Graph -->
 <meta property="og:locale" content="">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Things have been thinking">
+<meta property="og:title" content="[Relate] Shape Up: Relate 팀의 제품 개발 프로세스">
+<meta property="og:image" content="https://cdn.getmidnight.com/785EE201DC63DAAE3AECB2C7CBAE60D3/2022/04/shape-up-relate.png">
+                <!-- <script>console.log('http://localhost:4000/blog/https://cdn.getmidnight.com/785EE201DC63DAAE3AECB2C7CBAE60D3/2022/04/shape-up-relate.png')</script> -->
 
 
 
 
-
-<meta property="og:description" content="AB180의 UX 디자이너 장승환의 블로그입니다.">
-<meta property="og:url" content="http://localhost:4000/blog/">
+<meta property="og:description" content="요약 👉 Shape Up: B2B SaaS 스타트업 Relate 팀의 제품 개발 프로세스">
+<meta property="og:url" content="http://localhost:4000/article/article_summary-76/">
 <meta property="og:site_name" content="Seunghwan">
-  <link rel='canonical' href="http://localhost:4000/blog/">
+  <link rel='canonical' href="http://localhost:4000/article/article_summary-76/">
   <link rel='alternate' type='application/rss+xml' title='Seunghwan' href="http://localhost:4000/feed.xml">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;600;700;900&family=Inter:wght@200;300;400;500;600;700;800;900" rel="stylesheet">
@@ -58,10 +59,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href='/project'  class="c-nav__link normal">Project</a>
   </li>
   <li role='presentation'>
-    <a href='/blog'  class="c-nav__link active" class="c-nav__link normal">Blog</a>
+    <a href='/blog'  class="c-nav__link normal">Blog</a>
   </li>
   <li role='presentation'>
-    <a href='/article'  class="c-nav__link normal">Article Summary</a>
+    <a href='/article'  class="c-nav__link active" class="c-nav__link normal">Article Summary</a>
   </li>
   <li role='presentation'>
     <a href='/about'  class="c-nav__link normal">About</a>
@@ -74,310 +75,210 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>  
   
+  <div class='progress-container'>
+    <div class='progress-bar' id='progress-bar'></div>
+  </div>
+  
 </header>
 
-    <div class="o-grid">
-    <div class="o-grid__col o-grid__col--full">
-        <div class="o-grid__head o-grid__head--full">
-            <hr style="visibility:hidden" />
-            <h1 class="c-page__title">Things have been thinking</h1>
-            <p class="c-page__subtitle">관심 분야에 대한 생각과 노트</p>
-            <hr style="visibility:hidden" />
+    
+<script>
+function createModal(imgsrc) {
+  var styleTop0Pixel = "top: " + scrollTop + "px";
+  var styleTop50Percent = "top: calc(50% + " + scrollTop + "px)";
+  var styleTop10Pixel = scrollTop + 80;
+  styleTop10Pixel = "top: " + styleTop10Pixel + "px";
+
+  var modalBackground = document.createElement("div");
+  modalBackground.setAttribute("id", "modalBackground");
+  modalBackground.setAttribute("class", "modal__background");
+  modalBackground.setAttribute("onclick", "closeModal()");
+  modalBackground.setAttribute("style", styleTop0Pixel)
+  document.body.appendChild(modalBackground);
+
+  var modalCloseButton = document.createElement("div");
+  modalCloseButton.setAttribute("id", "modalCloseButton");
+  modalCloseButton.setAttribute("class", "modal__closeButton");
+  modalCloseButton.setAttribute("onclick", "closeModal()");
+  modalCloseButton.setAttribute("style", styleTop10Pixel)
+  document.body.appendChild(modalCloseButton);
+  
+  var modal = document.createElement("img");
+  modal.setAttribute("id", "modalImage");
+  modal.setAttribute("src", imgsrc);
+  modal.setAttribute("class", "modal__content__img");
+  modal.setAttribute("onclick", "closeModal()");
+  modal.setAttribute("style", styleTop50Percent)
+  document.body.appendChild(modal);
+
+  // body overflow: hidden
+  document.body.classList.add('modal-open')
+}
+
+function closeModal() {
+    var mbg = document.getElementById("modalBackground");
+    var m = document.getElementById("modalImage");
+    var mcb = document.getElementById("modalCloseButton");
+    mbg.remove();
+    m.remove();
+    mcb.remove();
+
+    // body overflow: auto
+    document.body.classList.remove('modal-open')
+}
+
+document.querySelectorAll('img').forEach(item => {
+  item.addEventListener('click', event => {
+    var imgSrc = item.currentSrc;
+    createModal(imgSrc);
+    clickedImage(imgSrc);
+  })
+})
+</script>
+
+
+
+
+<div class='o-wrapper'>
+  
+  <div class='o-grid'>
+    <div class='o-grid__col'>
+      <article class='c-post' itemscope itemtype='https://schema.org/BlogPosting'>
+        <p class="c-post__type">PRODUCT</p>
+
+        <h1 class='c-post__title u-text-left'>[Relate] Shape Up: Relate 팀의 제품 개발 프로세스</h1>    
+        
+        <p class='c-post__subtitle u-text-left'>요약 👉 Shape Up: B2B SaaS 스타트업 Relate 팀의 제품 개발 프로세스</p>
+        
+        <time class='c-post__date' datetime='2022-05-31T23:30:00+09:00' itemprop='datePublished'>31 May 2022</time>
+        
+        <hr>
+
+        <div class='c-content' itemprop='articleBody'>
+          
+
+          <p class="text-gray">
+ 🔗 이 글은 Relate가 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.relate.kr/" target="blank" rel="nofollow" id="outlink1" onclick="clickedOutlink(outlink1)"><img src="https://www.google.com/s2/favicons?sz=64&amp;domain=https://blog.relate.kr/shape-up-relate/" style="display:inline; height: 1em; position: relative; bottom: -2px; margin-right: 2px;" />Rekate 블로그</a>에 올린 <a rel="nofollow noopener noreferrer" target="_blank" href="https://blog.relate.kr/shape-up-relate/" target="blank" rel="nofollow" id="outlink2" onclick="clickedOutlink(outlink2)">아티클</a>을 번역, 요약한 글입니다.
+</p>
+
+<p>Relate 팀이 업무 문화에서 많이 참고하고 있는 Basecamp의 제품 개발 프로세스를 소개합니다.</p>
+
+<h3 id="️-요약">✍️ 요약</h3>
+
+<ul>
+  <li>Shape Up 프로세스는 자율성을 기반으로한 프로젝트 개발에 대한 가이드라인이라고 할 수 있습니다.</li>
+  <li>제품 팀에게 프로젝트의 목표를 전달하되, 프로젝트를 성공적으로 개발하기 위한 의사결정과 진행은 제품 팀이 결정합니다.</li>
+  <li>고객에게 유의미한 프로젝트를 전달하기 위해 더 긴 기간의 개발 주기를 가지고, 매 개발 주기마다 할 일에 다한 의사결정을 새로 합니다.</li>
+  <li>개별 제품 개발 관계자들은 높은 자율성으로 일해야 하기 때문에 모두가 고객과 문제에 대해 잘 이해하고 있어야 하고, 실력이 뛰어나거나 빠르게 학습할 수 있어야 합니다.</li>
+</ul>
+
+<h3 id="--shape-up-프로세스의-특징">📌  Shape Up 프로세스의 특징</h3>
+
+<p><strong>1️⃣  6주 개발 + 2주 쿨다운 사이클</strong><br />
+• 스크럼에 비해 더 긴 프로젝트 주기로, 유의미한 기능을 만들만큼 긴 기간과 관리할 수 있을만큼 짧은 기간 사이</p>
+
+<p><strong>2️⃣  명세가 아닌 형태를 전달</strong><br />
+• 제품 팀에게 구체적인 명세가 아닌 적절히 추상화된 Shape을 전달</p>
+
+<p><strong>3️⃣  제품 팀이 책임지게 함</strong><br />
+• 제품 팀에게 Shape이 배정되고 나면, 해당 Shape에 대한 실행과 커뮤니케이션은 제품 팀이 책임을 가져감</p>
+
+<h3 id="-shape-up-딘계">⏭ Shape Up 딘계</h3>
+
+<ol>
+  <li>Shaping → 2. Betting → 3. Building</li>
+</ol>
+
+<h3 id="-1-shaping">🔵 1. Shaping</h3>
+
+<p>제품 팀에게 프로젝트의 큰 틀과 완성 기준을 제시하되, 디테일은 제시하지 않습니다.</p>
+
+<p>좋은 Shape은 충분히 추상적이지만(<code class="language-plaintext highlighter-rouge">Rough</code>), 문제를 해결할 수 있어야 하고(<code class="language-plaintext highlighter-rouge">Solved</code>), 프로젝트가 달성하거나 달성하지 않아야 할 목표가 확실해야 합니다(<code class="language-plaintext highlighter-rouge">Bounded</code>)</p>
+
+<h3 id="-2-betting">💬 2. Betting</h3>
+
+<p>주요 의사결정자들이 올라온 Shape 들의 우선순위를 평가하여, 어떤 프로젝트에 리소스를 투자할 지 결정합니다.</p>
+
+<p>Basecamp는 개발 6주, 쿨다운 2주의 8주 주기를 구성하지만, Relate은 초기 스타트업이기 때문에 개발 3주, 쿨다운 1주로 4주 주기를 적용하고 있습니다.</p>
+
+<p>Relate은 100% 리모트 팀이기에 2주보다 더 긴 주기로 개발을 진행하는 것이 더 유리합니다. 불확실성이 높은 초기에 실시간 커뮤니케이션을 몰아서 하고 나면 해야 할 일이 명확해지기 때문에 비동기 커뮤니케이션으로도 충분하기 때문입니다.</p>
+
+<h3 id="-3-building">🏗 3. Building</h3>
+
+<p>제품 팀은 Shape의 범위 안에서 실행을 위한 구체적인 Task 정의부터, 개발을 완료하고 테스트 하여 실제 제품에 반영시키는 지점까지의 모든 과정을 직접 결정하고 책임집니다.</p>
+
+<p>그 과정에서 디자이너, 프론트, 백엔드 개발자들은 핵심 과제를 먼저 이해하고 확인할 수 있도록 노력해야 합니다.</p>
+
+<p><img src="https://cdn.getmidnight.com/785EE201DC63DAAE3AECB2C7CBAE60D3/2022/04/hill_concept-a0a77c0ebb209b61899b8b4cdb1a315f2807e3fdc2e1d2373e2f19060725f042.png" alt="프로젝트 task 현황 Hill cahrt" /></p>
+
+<p>개발을 진행하면서 관계있는 Task끼리 Scope으로 묶고, 더 불확실성이 높은 Scope의 우선순위를 높이면서 진행하는 방식으로 일합니다. 아직 알지 못하는 것들을 인정하고 계획을 세우면서 진행하기 때문에 개발 상황을 더 정확하게 예측할 수 있습니다.</p>
+
+
         </div>
-        <ul class="c-list">
-            
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/8-things-keep-in-mind-as-b2b-product-designer_2/">
-        <div class="c-list__info">
-            
-                
-                    <img src="8-things-keep-in-mind-as-b2b-product-designer_2/img/header_img.png" class="c-list__img" loading="lazy" alt="B2B 프로덕트 디자이너가 신경써야 할 8가지 #2 - 디자이너가 고려해야 하는 점" />
-                
-            <p class="c-list__type">
-                B2B DESIGN
-            </p>
-            <h1 class="c-list__title">
-                B2B 프로덕트 디자이너가 신경써야 할 8가지 #2 - 디자이너가 고려해야 하는 점
-            </h1>
-            <p class="c-list__sub">
-                그래서, B2B 프로덕트 디자이너는 어떻게 일해야 할까?
-            </p>
-            
-                <p class="c-list__body">
-                    이전 글(B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징)과 이어집니다. 이전 글에서는 B2B 프로덕트가 가지는 특징을 알아보았습니다. 이번 글에서는 B2B 프로덕트의 특징을 고려해 B2B 프로덕트 디자이너가 어떤 점을 더 신경 써야 하는지 그 요소와 마인드 셋에 대해 알아보겠습니다. 👀 빠르게 훑어보기 1. 사용자를 명확히 알아야 한다 (1) 더 나은 사용자 리서치를 할 수 있도록 환경을 준비해야 한다 (2) 내가 제공할 가치가 사용자에게 정말로 필요한 것인지 확신할 수...
-                </p>
-                <time class="c-list__date" datetime="2021-09-01T19:59:45+09:00" itemprop="datePublished">01 Sep 2021</time>
-            
+
+        <div class='c-tags'>
+          
+            <a href='#'>일하는 방법</a>
+            <!--<a href='/tag/일하는 방법'>일하는 방법</a>-->
+          
+            <a href='#'>실사례</a>
+            <!--<a href='/tag/실사례'>실사례</a>-->
+          
+            <a href='#'>프레임워크</a>
+            <!--<a href='/tag/프레임워크'>프레임워크</a>-->
+          
+            <a href='#'>프로덕트 전략</a>
+            <!--<a href='/tag/프로덕트 전략'>프로덕트 전략</a>-->
+          
+            <a href='#'>경험 공유</a>
+            <!--<a href='/tag/경험 공유'>경험 공유</a>-->
+          
         </div>
-    </a>
-</li>
-                
+        
+        <!--previous and next posts 구 버전-->
+        <hr style="visibility:hidden;">
+          <ul class="pager">
             
-                
             
-                
-                    <li class="c-list__item">
-    <a href="/blog/8-things-keep-in-mind-as-b2b-product-designer/">
-        <div class="c-list__info">
-            
-                
-                    <img src="8-things-keep-in-mind-as-b2b-product-designer/img/header_img.png" class="c-list__img" loading="lazy" alt="B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징" />
-                
-            <p class="c-list__type">
-                B2B DESIGN
-            </p>
-            <h1 class="c-list__title">
-                B2B 프로덕트 디자이너가 신경써야 할 8가지 #1 - B2B 프로덕트의 특징
-            </h1>
-            <p class="c-list__sub">
-                B2B 프로덕트는 B2C 프로덕트와 어떻게 다를까?
-            </p>
-            
-                <p class="c-list__body">
-                    저는 Airbridge라는 B2B 프로덕트를 디자인하고 있습니다. 에어브릿지는 광고•마케팅 데이터를 매체와 서비스로부터 수집하여 분석한 데이터를 대시보드를 통해 제공하여 퍼포먼스 마케터의 업무를 돕는 역할을 합니다. 디자인하기 위해서는 사용자에게 깊은 이해가 필수적인데, 퍼포먼스 마케터의 실제 업무와 페인포인트를 공감하기 어려웠습니다. 프로덕트는 도메인 종사자가 아니면 이해하기도 어렵고, 디자인하기도 어렵고, 심지어는 사용자를 만나기도 어렵습니다. 아마 다른 B2B SaaS 솔루션을 디자인하는 프로덕트 디자이너들도 똑같은 고민을 하고 있을 거라고 생각합니다. 도데체 B2B 프로덕트는 왜 이렇게 디자인하기 어려울까요? B2B...
-                </p>
-                <time class="c-list__date" datetime="2021-08-25T20:54:45+09:00" itemprop="datePublished">25 Aug 2021</time>
-            
-        </div>
-    </a>
-</li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/github-pages-series-2/">
-        <div class="c-list__info">
-            
-            <p class="c-list__type">
-                블로그 만들기
-            </p>
-            <h1 class="c-list__title">
-                Jekyll 테마 찾고 설치하는 법
-            </h1>
-            <p class="c-list__sub">
-                Github.io로 나만의 블로그 만들기 시리즈 2
-            </p>
-            
-                <p class="c-list__body">
-                    이전 글 → Github.io로 나만의 블로그 만들기 (1): 가입 및 초기 세팅 지난 글과 다른 점 지난 글에서는 Github.io로 블로그 페이지를 만들 수 있는 틀을 구축했다면, 이번 글에서는 이미 잘 만들어진 블로그 테마를 찾고, 나의 블로그에 적용하는 과정을 다룬다. Jekyll 테마를 찾기 전 이 글을 읽는 우리의 1차 목표는 내 입맛에 맞는 디자인으로 Github 블로그를 만들어 보는 것이고, 2차 목표는 그렇게 만든 블로그로 실제 블로그를 운영하는 것이다. Github.io로 나만의 블로그...
-                </p>
-                <time class="c-list__date" datetime="2020-07-20T23:40:45+09:00" itemprop="datePublished">20 Jul 2020</time>
-            
-        </div>
-    </a>
-</li>
-                
-            
-                
-            
-                
-            
-                
-                    <li class="c-list__item">
-    <a href="/blog/github-pages-series-1/">
-        <div class="c-list__info">
-            
-                
-            <p class="c-list__type">
-                블로그 만들기
-            </p>
-            <h1 class="c-list__title">
-                Github Pages 가입 및 초기 세팅
-            </h1>
-            <p class="c-list__sub">
-                Github.io로 나만의 블로그 만들기 시리즈 1
-            </p>
-            
-                <p class="c-list__body">
-                    Github.io, 혹은 Github Pages란 간략하게 설명하자면 Github.io, Github Pages는 Github에서 제공하는 블로그 서비스이다. Github.io는 본인 Github 계정의 저장소를 바탕으로 정적(static) 호스팅을 제공해주는 Github Pages라는 서비스이다. 따로 웹 서버를 구축하거나 호스팅 서비스를 이용하지 않고서도 간단하게 웹페이지를 만들어 제공할 수 있다는 말이다. 티스토리 블로그도 글을 올리면서 Github Pages로 블로그를 따로 만들고 있는 이유는 코드레벨에서 블로그를 운영할 수 있고, 이후 내가 원하는대로 커스터마이징을 할 수 있다는 장점이 있기 때문이다. 티스토리, 브런치, 네이버 블로그와...
-                </p>
-                <time class="c-list__date" datetime="2020-07-07T23:40:45+09:00" itemprop="datePublished">07 Jul 2020</time>
-            
-        </div>
-    </a>
-</li>
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
-                
-            
+          </ul>
+
+        <!--previous and next posts 신 버전-->
+        <hr style="visibility:hidden;">
+        <ul class="pager">         
+          
+          
+          
+          
+          
+          
+          
         </ul>
+        
+        <!--disqus-->
+        
+        <hr>
+          <section class='disqus'>
+  <div id='disqus_thread'></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = 'http://localhost:4000/article/article_summary-76/';
+    };
+
+    (function() {
+      var d = document, s = d.createElement('script');
+      // Change `aspirethemes-demos` with your Disqus shortcode
+      s.src = '//tjrichard-github-io.disqus.com/embed.js';
+
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
+<noscript>Please enable JavaScript to view the <a href='https://disqus.com/?ref_noscript' rel='nofollow'>comments powered by Disqus.</a></noscript>
+</section>
+        
+      </article>
     </div>
+  </div>
 </div>
 
 
@@ -473,6 +374,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var userAgent;
     userAgent = navigator.userAgent.toLowerCase();
     
+      var interests = [];
+      
+        interests.push(" 일하는 방법 ");
+        interests.push(" 실사례 ");
+        interests.push(" 프레임워크 ");
+        interests.push(" 프로덕트 전략 ");
+        interests.push(" 경험 공유 ");
+    
   
     var path = document.location.pathname;
     var proj = '/project/'
@@ -496,9 +405,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var resume = document.getElementById("resume");
     var date = resume.href.substring(resume.length - 8, resume.length - 4)
     analytics.track("Download Resume", {
-      url: "/blog/",
+      url: "/article/article_summary-76/",
       target: href,
-      title: "Things have been thinking"
+      title: "[Relate] Shape Up: Relate 팀의 제품 개발 프로세스"
     })
     analytics.identify({
       "contact": true,
@@ -511,9 +420,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function openResume(target) {
     var href = target.href;
     analytics.track("Open Resume", {
-      url: "/blog/",
+      url: "/article/article_summary-76/",
       target: href,
-      title: "Things have been thinking"
+      title: "[Relate] Shape Up: Relate 팀의 제품 개발 프로세스"
     })
     analytics.identify({
       "contact": true,
@@ -529,9 +438,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var len = document.getElementsByTagName('p').length;
     var date = document.getElementsByTagName('p')[len - 3].innerText.substring(14, 19);
     analytics.track("Download Portfolio", {
-      url: "/blog/",
+      url: "/article/article_summary-76/",
       target: href,
-      title: "Things have been thinking"
+      title: "[Relate] Shape Up: Relate 팀의 제품 개발 프로세스"
     })
     analytics.identify({
       "contact": true,
@@ -544,30 +453,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function socialLink(target) {
     var href = target.href;
     analytics.track("Click Social Link", {
-      url: "/blog/",
+      url: "/article/article_summary-76/",
       target: href,
-      title: "Things have been thinking"
+      title: "[Relate] Shape Up: Relate 팀의 제품 개발 프로세스"
     })
   }
   function clickedOutlink(target) {
     var href = target.href;
     analytics.track("Click Outlink", {
-      url: "/blog/",
+      url: "/article/article_summary-76/",
       target: href,
-      title: "Things have been thinking"
+      title: "[Relate] Shape Up: Relate 팀의 제품 개발 프로세스"
     })
   }
   function scrollComplete() {
     analytics.track("Scroll Complete", {
-      url: "/blog/",
-      title: "Things have been thinking"
+      url: "/article/article_summary-76/",
+      title: "[Relate] Shape Up: Relate 팀의 제품 개발 프로세스"
     })
   };
   function clickedImage(imgSrc) {
     analytics.track("Click Image", {
-      url: "/blog/",
+      url: "/article/article_summary-76/",
       target: imgSrc,
-      title: "Things have been thinking"
+      title: "[Relate] Shape Up: Relate 팀의 제품 개발 프로세스"
     })
   }
 </script>
@@ -615,6 +524,60 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     }
   });
+</script>
+  
+    <script>
+function createModal(imgsrc) {
+  var styleTop0Pixel = "top: " + scrollTop + "px";
+  var styleTop50Percent = "top: calc(50% + " + scrollTop + "px)";
+  var styleTop10Pixel = scrollTop + 80;
+  styleTop10Pixel = "top: " + styleTop10Pixel + "px";
+
+  var modalBackground = document.createElement("div");
+  modalBackground.setAttribute("id", "modalBackground");
+  modalBackground.setAttribute("class", "modal__background");
+  modalBackground.setAttribute("onclick", "closeModal()");
+  modalBackground.setAttribute("style", styleTop0Pixel)
+  document.body.appendChild(modalBackground);
+
+  var modalCloseButton = document.createElement("div");
+  modalCloseButton.setAttribute("id", "modalCloseButton");
+  modalCloseButton.setAttribute("class", "modal__closeButton");
+  modalCloseButton.setAttribute("onclick", "closeModal()");
+  modalCloseButton.setAttribute("style", styleTop10Pixel)
+  document.body.appendChild(modalCloseButton);
+  
+  var modal = document.createElement("img");
+  modal.setAttribute("id", "modalImage");
+  modal.setAttribute("src", imgsrc);
+  modal.setAttribute("class", "modal__content__img");
+  modal.setAttribute("onclick", "closeModal()");
+  modal.setAttribute("style", styleTop50Percent)
+  document.body.appendChild(modal);
+
+  // body overflow: hidden
+  document.body.classList.add('modal-open')
+}
+
+function closeModal() {
+    var mbg = document.getElementById("modalBackground");
+    var m = document.getElementById("modalImage");
+    var mcb = document.getElementById("modalCloseButton");
+    mbg.remove();
+    m.remove();
+    mcb.remove();
+
+    // body overflow: auto
+    document.body.classList.remove('modal-open')
+}
+
+document.querySelectorAll('img').forEach(item => {
+  item.addEventListener('click', event => {
+    var imgSrc = item.currentSrc;
+    createModal(imgSrc);
+    clickedImage(imgSrc);
+  })
+})
 </script>
   
 </body>

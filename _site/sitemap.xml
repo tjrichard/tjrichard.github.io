@@ -19,6 +19,33 @@
 
     
         <url>
+            <loc>http://localhost:4000/article/article_summary-77/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-76/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-75/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-74/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-73/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-72/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-71/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-70/</loc>
+        </url>
+        <url>
+            <loc>http://localhost:4000/article/article_summary-69/</loc>
+        </url>
+        <url>
             <loc>http://localhost:4000/article/article_summary-68/</loc>
         </url>
         <url>
