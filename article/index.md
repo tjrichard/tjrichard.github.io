@@ -33,7 +33,7 @@ header-img: '../images/daily-article.png'
 
         // innerText 변경
         // var child = element.firstElementChild;
-        element.innerText = '…펼처보기'
+        element.innerText = '…펼쳐보기'
     }
 </script>
 <div class='o-grid'>

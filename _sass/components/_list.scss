@@ -201,13 +201,12 @@
 
 .a-more {
     color: $color-gray;
-    border: 1px solid $color-border;
     border-radius: 4px;
     margin: 0;
     padding: 4px 12px;
     &:hover {
         cursor: pointer;
-        background-color: $bg-color-code;
+        background-color: $color-border;
         transition: 0.2s all ease;
         color: $color-text;
     }
@@ -223,8 +222,9 @@
         cursor: pointer;
         background-color: $bg-color-code;
         transition: 0.2s all ease;
-        color: $color-brand;
+        color: $color-white !important;
         opacity: 1 !important;
+        background: $color-brand;
         background-image: none !important;
     }
 }
