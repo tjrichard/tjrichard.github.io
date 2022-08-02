@@ -14,7 +14,7 @@
     <p class='company'><img src='{{ second.fav }}' class='c-page__favicon'>{{ second.name }}</p>
     <div class='brief'>
     <p class='c-page__role'>{{ second.role }}</p>
-        <p class='c-page__keyword'>{{ second.keyword }}</p>
+        <p class='c-page__keyword c-content'>{{ second.keyword }}</p>
         <p class='date'>{{ second.date }}</p>
     </div>
     </li>
@@ -24,8 +24,18 @@
     <p class='company'><img src='{{ third.fav }}' class='c-page__favicon'>{{ third.name }}</p>
     <div class='brief'>
     <p class='c-page__role'>{{ third.role }}</p>
-        <p class='c-page__keyword'>{{ third.keyword }}</p>
+        <p class='c-page__keyword c-content'>{{ third.keyword }}</p>
         <p class='date'>{{ third.date }}</p>
+    </div>
+    </li>
+    {% endfor %}
+    {% for fourth in site.data.careers.third %}
+    <li class='c-table__tbody'>
+    <p class='company'><img src='{{ fourth.fav }}' class='c-page__favicon'>{{ fourth.name }}</p>
+    <div class='brief'>
+    <p class='c-page__role'>{{ fourth.role }}</p>
+        <p class='c-page__keyword c-content'>{{ fourth.keyword }}</p>
+        <p class='date'>{{ fourth.date }}</p>
     </div>
     </li>
     {% endfor %}

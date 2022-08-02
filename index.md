@@ -8,7 +8,7 @@ layout: default
       <div class='c-page__header'>
         <div class='c-page__header__text'>
           <h1 class='c-page__title'>안녕하세요,</h1>
-          <h1 class='c-page__title'><a href='https://channel.io/ko' target='blank' ref='nofollow'>채널코퍼레이션</a>의 Product Designer 장승환입니다.</h1>
+          <h1 class='c-page__title'><a href='https://channel.io/ko' target='blank' ref='nofollow'>채널 코퍼레이션</a>의 Product Designer 장승환입니다.</h1>
         </div>
         <div class='c-page__header__image'>
           <img src='/images/memoji.PNG'>
