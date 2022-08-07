@@ -21,4 +21,4 @@ header-img: "b2b_graphic_cover_600x300.png"
         </div>
     </div>
 </div>
-<div id="snackbar">비밀번호가 일치하지 않습니다</div>
+<div id="snackbar-bottom">비밀번호가 일치하지 않습니다</div>

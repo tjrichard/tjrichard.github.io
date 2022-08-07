@@ -18,7 +18,7 @@ var referrer;
 var referrerHost
 var userAgent;
 var browser;
-/*
+/*side-hustle/pomodoro/script.js
 받은 referrer url에서 www에서 / 까지를 host로 리턴합니다
 www.가 포함된 경우와 아닌 경우를 고려해 splitUrl을 리턴합니다.
 User Agent의 값에서 값을 분리해 

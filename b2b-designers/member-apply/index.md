@@ -218,4 +218,4 @@ header-img: "b2b_graphic_cover_600x300.png"
         </div>
     </div>
 </div>
-<div id="snackbar">필수 입력 필드를 채워주세요</div>
+<div id="snackbar-bottom">필수 입력 필드를 채워주세요</div>

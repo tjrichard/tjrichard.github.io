@@ -1,0 +1,191 @@
+<!-- Channel Plugin Scripts -->
+<script>
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+      }
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        s.charset = 'UTF-8';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else if (window.attachEvent) {
+        window.attachEvent('onload', l);
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "8ae9b09a-9887-4957-96aa-b7f1ccba06b5"
+    });
+
+
+// 폼 관리
+function getEventType(channelEventType) {
+  var value = channelEventType.value;  
+
+  if(value == "custom") {
+    var parent = channelEventType.parentElement;
+    var channelEventTrackName = document.createElement("input");
+        channelEventTrackName.setAttribute("type", "text");
+        channelEventTrackName.setAttribute("id", "channelEventTrackName");
+        channelEventTrackName.setAttribute("maxlength", "30");
+        channelEventTrackName.setAttribute("placeholder","이벤트 이름. 30자 이하여야 함");
+    var channelEventTrackProperty = document.createElement("textarea");
+        channelEventTrackProperty.setAttribute("id","channelEventTrackProperty");
+        channelEventTrackProperty.setAttribute("rows","6");
+        channelEventTrackProperty.setAttribute("placeholder","{key: value}로 구성된 object. key와 value는 쌍따옴표로 묶여야 함");
+        var defaultText = {"page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트"};
+        channelEventTrackProperty.value = JSON.stringify(defaultText);
+    parent.appendChild(channelEventTrackName);
+    parent.appendChild(channelEventTrackProperty);
+  }
+  else if(value == "addTags" || value == "removeTags") {
+    var parent = channelEventType.parentElement;
+    var channelEventTrackProperty = document.createElement("textarea");
+        channelEventTrackProperty.setAttribute("id","channelEventTrackProperty");
+        channelEventTrackProperty.setAttribute("rows","6");
+        channelEventTrackProperty.setAttribute("placeholder","추가 혹은 제거할 태그의 [Array]. 비어있으면 안됨. 각 태그는 쌍따옴표로 감싸야 함");
+    parent.appendChild(channelEventTrackProperty);
+  }
+  else {
+    var parent = channelEventType.parentElement;
+    var channelEventTrackName = document.getElementById("channelEventTrackName");
+    var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
+
+    if(channelEventTrackName && channelEventTrackProperty){
+        parent.removeChild(channelEventTrackName);
+        parent.removeChild(channelEventTrackProperty);
+    }else{}
+  }
+}
+
+
+// 이벤트 발생
+function trackChannelEvent() {
+    var value = document.getElementById("channelEventType").value;
+
+    if(value == "custom") {
+        var eventName = document.getElementById("channelEventTrackName").value;
+        var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+        ChannelIO("track", eventName, eventProperty);
+        // 스낵바 피드백
+        var snackbar = document.getElementById("snackbar-top");
+        snackbar.innerText = eventName + ' 이벤트가 발생되었습니다';
+        snackbar.className = "show";
+        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+    }
+    else if(value == "addTags") {
+        var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+        ChannelIO("addTags", eventProperty, function onAddTags(error, user) {
+            if (error) {
+                console.error(error)
+            } else {
+                console.log("addTags success", user)
+            }
+        });
+        // 스낵바 피드백
+        var snackbar = document.getElementById("snackbar-top");
+        snackbar.innerText = value + ' 이벤트가 발생되었습니다';
+        snackbar.className = "show";
+        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+    }
+    else if(value == "removeTags") {
+        var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+        ChannelIO("removeTags", eventProperty, function onRemoveTags(error, user) {
+            if (error) {
+                console.error(error)
+            } else {
+                console.log("removeTags success", user)
+            }
+        });
+        // 스낵바 피드백
+        var snackbar = document.getElementById("snackbar-top");
+        snackbar.innerText = value + ' 이벤트가 발생되었습니다';
+        snackbar.className = "show";
+        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+    }
+    else{
+        ChannelIO(value);
+        // 스낵바 피드백
+        var snackbar = document.getElementById("snackbar-top");
+        snackbar.innerText = value + ' 이벤트가 발생되었습니다';
+        snackbar.className = "show";
+        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+    }
+}
+
+
+//프로퍼티 발생
+
+// 참고 레퍼런스
+// function submitApplication() {
+//     const inputName = document.getElementById("event-1").value;
+    // const inputImage = document.getElementById("event-2").files[0];
+    // const imageUrl = window.URL.createObjectURL(inputImage);
+    // const profileImg = new FormData();
+    //       profileImg.append("profileImg", inputImage);
+    // const inputCompany = document.getElementById("event-3").value;
+    // const inputProduct = document.getElementById("event-4").value;
+    // const inputRole = document.getElementById("event-5").value;
+    // const inputIntro = document.getElementById("event-6").value;
+    // const inputLink1 = document.getElementById("event-7").value;
+    // const inputLink2 = document.getElementById("event-8").value;
+    // const inputLink3 = document.getElementById("event-9").value;
+    // const inputContact = document.getElementById("event-10").value;
+    // const applyForManager = document.getElementById("event-11-yes").checked;
+    // const inputApplication = document.getElementById("event-11-1").value;
+    // const inputComment = document.getElementById("event-12").value;
+    // const isPublic = document.getElementById("event-13-yes").checked;
+    // const personalInformation = document.getElementById("event-14-yes").checked;
+    // const dateTime = new Date();
+    // let fullDate = dateTime.toISOString().slice(0,10);
+    // let fullTime = dateTime.toISOString().slice(11,19);
+    // const currentDatetime = fullDate + " " + fullTime;
+
+    // var record = {
+    //     "records": [
+    //         {
+    //             "fields": {
+    //                 "Name": inputName,
+    //                 "Profile_Picture": imageUrl,
+    //                 "Company": inputCompany,
+    //                 "Product": inputProduct,
+    //                 "Role": inputRole,
+    //                 "Intro": inputIntro,
+    //                 "Link1": inputLink1,
+    //                 "Link2": inputLink2,
+    //                 "Link3": inputLink3,
+    //                 "Contact": inputContact,
+    //                 "Apply_for_Manager": applyForManager,
+    //                 "Reason_for_Application": inputApplication,
+    //                 "Comments": inputComment,
+    //                 "Public": isPublic,
+    //                 "Personal_Information": personalInformation,
+    //                 "Enrolled_Date": currentDatetime
+    //             }
+    //         }
+    //     ]
+    // };
+// };
+  </script>

@@ -68,6 +68,17 @@
   }
 }
 
+.m-wrapper {
+  &__row {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    transform: translate(0, -50%);
+    gap: 20px;
+  }
+}
+
 .m-center {
   display: flex;
   flex-direction: column;
@@ -78,6 +89,21 @@
   left: 50%;
   transform: translate(-50%,-65%);
   width: 300px;
+}
+
+.m-left {
+  display: flex;
+  flex-direction: column;
+  gap:14px;
+  padding: 20px;
+  background: $color-white;
+  box-shadow: 0 16px 32px rgba(0,0,0,0.08);
+  border-radius: 12px;
+  width: 300px;
+  
+  .button {
+    margin: auto auto 0 auto;
+  }
 }
 
 #passwordInput {
@@ -118,26 +144,54 @@
 }
 
 #snackbar {
-  visibility: hidden;
-  position: fixed;
-  min-width: 200px;
-  min-height: 40px;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 40px;
-  padding: 0 12px;
-  background-color: rgba(0, 0, 0, 0.65);
-  color: $color-white;
-  text-align: center;
-  border-radius: 6px;
-  z-index: 1;
-  bottom: 10%;
-  left: 50%;
-  transform: translate(-50%, 0);
-  &.show {
+  &-bottom {
+    visibility: hidden;
+    position: fixed;
+    min-width: 200px;
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 0 12px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: $color-white;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    bottom: 10%;
+    
+    &.show {
       visibility: visible;
       -webkit-animation: fadein 0.3s, fadeout 0.3s 1.5s !important;
       animation: fadein 0.3s, fadeout 0.3s 1.5s !important;
+    }
+  }
+
+  &-top {
+    visibility: hidden;
+    position: fixed;
+    min-width: 200px;
+    min-height: 40px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 40px;
+    padding: 0 12px;
+    background-color: rgba(0, 0, 0, 0.65);
+    color: $color-white;
+    text-align: center;
+    border-radius: 6px;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%, 0);
+    top: 10%;
+
+    &.show {
+        visibility: visible;
+        -webkit-animation: fadein-top 0.3s, fadeout-top 0.3s 2s !important;
+        animation: fadein-top 0.3s, fadeout-top 0.3s 2s !important;
+    }
   }
 }
 
@@ -154,6 +208,23 @@
   to {top: 0; opacity: 0;}
 }
 @keyframes fadeout {
+  from {top: 10%; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@-webkit-keyframes fadein-top {
+  from {top: 0; opacity: 0;}
+  to {top: 10%; opacity: 1;}
+}
+@keyframes fadein-top {
+  from {top: 0; opacity: 0;}
+  to {top: 10%; opacity: 1;}
+}
+@-webkit-keyframes fadeout-top {
+  from {top: 10%; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+@keyframes fadeout-top {
   from {top: 10%; opacity: 1;}
   to {top: 0; opacity: 0;}
 }
