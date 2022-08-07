@@ -22,19 +22,19 @@ third:
     name: Pomodoro Timer →
     description: 포모도로 타이머, Vanilla JS, Local Storage 활용
     date: Apr 2021 ~ June 2021
+# fourth:
+#   - img: images/icons/api.png
+#     link: /side-hustle/api-practice
+#     name: API Practice →
+#     description: 퍼블릭 API로 API Request & Response 실습 (Ip Info, Open Weather)
+#     date: May 2021
 fourth:
-  - img: images/icons/api.png
-    link: /side-hustle/api-practice
-    name: API Practice →
-    description: 퍼블릭 API로 API Request & Response 실습 (Ip Info, Open Weather)
-    date: May 2021
-fifth:
   - img: images/icons/calculator.png
     link: /side-hustle/js-calculator
     name: Javascript 계산기 →
     description: Vanilla JS로 사칙연산 계산기 구현
     date: Sep 2021
-sixth:
+fifth:
   - img: images/icons/custom.png
     link: /side-hustle/timer
     name: Custom Timer →
