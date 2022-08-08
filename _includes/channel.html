@@ -82,6 +82,7 @@ function getEventType(channelEventType) {
 
 // 스낵바 피드백
 function snackbarValue() {
+  var value = channelEventType.value;  
   var snackbar = document.getElementById("snackbar-top");
       snackbar.innerText = value + ' 이벤트가 발생되었습니다';
       snackbar.className = "show";
@@ -89,6 +90,7 @@ function snackbarValue() {
 }
 
 function snackbarEventName() {
+  var eventName = document.getElementById("channelEventTrackName").value;
   var snackbar = document.getElementById("snackbar-top");
       snackbar.innerText = eventName + ' 이벤트가 발생되었습니다';
       snackbar.className = "show";
