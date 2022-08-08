@@ -80,6 +80,20 @@ function getEventType(channelEventType) {
   }
 }
 
+// 스낵바 피드백
+function snackbarValue() {
+  var snackbar = document.getElementById("snackbar-top");
+      snackbar.innerText = value + ' 이벤트가 발생되었습니다';
+      snackbar.className = "show";
+      setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+}
+
+function snackbarEventName() {
+  var snackbar = document.getElementById("snackbar-top");
+      snackbar.innerText = eventName + ' 이벤트가 발생되었습니다';
+      snackbar.className = "show";
+      setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+}
 
 // 이벤트 발생
 function trackChannelEvent() {
@@ -90,10 +104,7 @@ function trackChannelEvent() {
         var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
         ChannelIO("track", eventName, eventProperty);
         // 스낵바 피드백
-        var snackbar = document.getElementById("snackbar-top");
-        snackbar.innerText = eventName + ' 이벤트가 발생되었습니다';
-        snackbar.className = "show";
-        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+        snackbarEventName();
     }
     else if(value == "addTags") {
         var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
@@ -105,10 +116,7 @@ function trackChannelEvent() {
             }
         });
         // 스낵바 피드백
-        var snackbar = document.getElementById("snackbar-top");
-        snackbar.innerText = value + ' 이벤트가 발생되었습니다';
-        snackbar.className = "show";
-        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+        snackbarValue();
     }
     else if(value == "removeTags") {
         var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
@@ -120,18 +128,12 @@ function trackChannelEvent() {
             }
         });
         // 스낵바 피드백
-        var snackbar = document.getElementById("snackbar-top");
-        snackbar.innerText = value + ' 이벤트가 발생되었습니다';
-        snackbar.className = "show";
-        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+        snackbarValue();
     }
     else{
         ChannelIO(value);
         // 스낵바 피드백
-        var snackbar = document.getElementById("snackbar-top");
-        snackbar.innerText = value + ' 이벤트가 발생되었습니다';
-        snackbar.className = "show";
-        setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
+        snackbarValue();
     }
 }
 
