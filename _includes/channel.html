@@ -1,143 +1,153 @@
 <!-- Channel Plugin Scripts -->
 <script>
-    (function() {
-      var w = window;
-      if (w.ChannelIO) {
-        return (window.console.error || window.console.log || function(){})('ChannelIO script included twice.');
+  // 기본 변수 Declare
+  var channelUser = "";
+
+  (function () {
+    var w = window;
+    if (w.ChannelIO) {
+      return (window.console.error || window.console.log || function () { })('ChannelIO script included twice.');
+    }
+    var ch = function () {
+      ch.c(arguments);
+    };
+    ch.q = [];
+    ch.c = function (args) {
+      ch.q.push(args);
+    };
+    w.ChannelIO = ch;
+    function l() {
+      if (w.ChannelIOInitialized) {
+        return;
       }
-      var ch = function() {
-        ch.c(arguments);
-      };
-      ch.q = [];
-      ch.c = function(args) {
-        ch.q.push(args);
-      };
-      w.ChannelIO = ch;
-      function l() {
-        if (w.ChannelIOInitialized) {
-          return;
-        }
-        w.ChannelIOInitialized = true;
-        var s = document.createElement('script');
-        s.type = 'text/javascript';
-        s.async = true;
-        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
-        s.charset = 'UTF-8';
-        var x = document.getElementsByTagName('script')[0];
-        x.parentNode.insertBefore(s, x);
-      }
-      if (document.readyState === 'complete') {
-        l();
-      } else if (window.attachEvent) {
-        window.attachEvent('onload', l);
-      } else {
-        window.addEventListener('DOMContentLoaded', l, false);
-        window.addEventListener('load', l, false);
-      }
-    })();
-    ChannelIO('boot', {
-      "pluginKey": "8ae9b09a-9887-4957-96aa-b7f1ccba06b5"
-    });
+      w.ChannelIOInitialized = true;
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      s.charset = 'UTF-8';
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+    if (document.readyState === 'complete') {
+      l();
+    } else if (window.attachEvent) {
+      window.attachEvent('onload', l);
+    } else {
+      window.addEventListener('DOMContentLoaded', l, false);
+      window.addEventListener('load', l, false);
+    }
+  })();
+  ChannelIO('boot', {
+    "pluginKey": "8ae9b09a-9887-4957-96aa-b7f1ccba06b5"
+  }, function onBoot(error, user) {
+    if (error) {
+      console.error(error);
+    } else {
+      // console.log('boot success', user)
+      channelUser = user;
+    }
+  });
 
 
-// 폼 관리
-function getEventType(channelEventType) {
-  var value = channelEventType.value;  
+  // 폼 관리
+  function getEventType(channelEventType) {
+    var value = channelEventType.value;
 
-  if(value == "custom") {
-    var parent = channelEventType.parentElement;
-    var channelEventTrackName = document.createElement("input");
-        channelEventTrackName.setAttribute("type", "text");
-        channelEventTrackName.setAttribute("id", "channelEventTrackName");
-        channelEventTrackName.setAttribute("maxlength", "30");
-        channelEventTrackName.setAttribute("placeholder","이벤트 이름. 30자 이하여야 함");
-    var channelEventTrackProperty = document.createElement("textarea");
-        channelEventTrackProperty.setAttribute("id","channelEventTrackProperty");
-        channelEventTrackProperty.setAttribute("rows","6");
-        channelEventTrackProperty.setAttribute("placeholder","{key: value}로 구성된 object. key와 value는 쌍따옴표로 묶여야 함");
-        var defaultText = {"page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트"};
-        channelEventTrackProperty.value = JSON.stringify(defaultText);
-    parent.appendChild(channelEventTrackName);
-    parent.appendChild(channelEventTrackProperty);
-  }
-  else if(value == "addTags" || value == "removeTags") {
-    var parent = channelEventType.parentElement;
-    var channelEventTrackProperty = document.createElement("textarea");
-        channelEventTrackProperty.setAttribute("id","channelEventTrackProperty");
-        channelEventTrackProperty.setAttribute("rows","6");
-        channelEventTrackProperty.setAttribute("placeholder","추가 혹은 제거할 태그의 [Array]. 비어있으면 안됨. 각 태그는 쌍따옴표로 감싸야 함");
-    parent.appendChild(channelEventTrackProperty);
-  }
-  else {
-    var parent = channelEventType.parentElement;
-    var channelEventTrackName = document.getElementById("channelEventTrackName");
-    var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
+    if (value == "custom") {
+      var parent = channelEventType.parentElement;
+      var channelEventTrackName = document.createElement("input");
+      channelEventTrackName.setAttribute("type", "text");
+      channelEventTrackName.setAttribute("id", "channelEventTrackName");
+      channelEventTrackName.setAttribute("maxlength", "30");
+      channelEventTrackName.setAttribute("placeholder", "이벤트 이름. 30자 이하여야 함");
+      var channelEventTrackProperty = document.createElement("textarea");
+      channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
+      channelEventTrackProperty.setAttribute("rows", "6");
+      channelEventTrackProperty.setAttribute("placeholder", "{key: value}로 구성된 object. key와 value는 쌍따옴표로 묶여야 함");
+      var defaultText = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트" };
+      channelEventTrackProperty.value = JSON.stringify(defaultText);
+      parent.appendChild(channelEventTrackName);
+      parent.appendChild(channelEventTrackProperty);
+    }
+    else if (value == "addTags" || value == "removeTags") {
+      var parent = channelEventType.parentElement;
+      var channelEventTrackProperty = document.createElement("textarea");
+      channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
+      channelEventTrackProperty.setAttribute("rows", "6");
+      channelEventTrackProperty.setAttribute("placeholder", "추가 혹은 제거할 태그의 [Array]. 비어있으면 안됨. 각 태그는 쌍따옴표로 감싸야 함");
+      parent.appendChild(channelEventTrackProperty);
+    }
+    else {
+      var parent = channelEventType.parentElement;
+      var channelEventTrackName = document.getElementById("channelEventTrackName");
+      var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
 
-    if(channelEventTrackName && channelEventTrackProperty){
+      if (channelEventTrackName && channelEventTrackProperty) {
         parent.removeChild(channelEventTrackName);
         parent.removeChild(channelEventTrackProperty);
-    }else{}
+      } else { }
+    }
   }
-}
 
-// 스낵바 피드백
-function snackbarValue() {
-  var value = channelEventType.value;  
-  var snackbar = document.getElementById("snackbar-top");
-      snackbar.innerText = value + ' 이벤트가 발생되었습니다';
-      snackbar.className = "show";
-      setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
-}
+  // 스낵바 피드백
+  function snackbarValue() {
+    var value = channelEventType.value;
+    var snackbar = document.getElementById("snackbar-top");
+    snackbar.innerText = value + ' 이벤트가 발생되었습니다';
+    snackbar.className = "show";
+    setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
+  }
 
-function snackbarEventName() {
-  var eventName = document.getElementById("channelEventTrackName").value;
-  var snackbar = document.getElementById("snackbar-top");
-      snackbar.innerText = eventName + ' 이벤트가 발생되었습니다';
-      snackbar.className = "show";
-      setTimeout(function(){snackbar.className = snackbar.className.replace("show", "")}, 2200);
-}
+  function snackbarEventName() {
+    var eventName = document.getElementById("channelEventTrackName").value;
+    var snackbar = document.getElementById("snackbar-top");
+    snackbar.innerText = eventName + ' 이벤트가 발생되었습니다';
+    snackbar.className = "show";
+    setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
+  }
 
-// 이벤트 발생
-function trackChannelEvent() {
+  // 이벤트 발생
+  function trackChannelEvent() {
     var value = document.getElementById("channelEventType").value;
 
-    if(value == "custom") {
-        var eventName = document.getElementById("channelEventTrackName").value;
-        var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
-        ChannelIO("track", eventName, eventProperty);
-        // 스낵바 피드백
-        snackbarEventName();
+    if (value == "custom") {
+      var eventName = document.getElementById("channelEventTrackName").value;
+      var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+      ChannelIO("track", eventName, eventProperty);
+      // 스낵바 피드백
+      snackbarEventName();
     }
-    else if(value == "addTags") {
-        var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
-        ChannelIO("addTags", eventProperty, function onAddTags(error, user) {
-            if (error) {
-                console.error(error)
-            } else {
-                console.log("addTags success", user)
-            }
-        });
-        // 스낵바 피드백
-        snackbarValue();
+    else if (value == "addTags") {
+      var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+      ChannelIO("addTags", eventProperty, function onAddTags(error, user) {
+        if (error) {
+          console.error(error)
+        } else {
+          console.log("addTags success", user)
+        }
+      });
+      // 스낵바 피드백
+      snackbarValue();
     }
-    else if(value == "removeTags") {
-        var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
-        ChannelIO("removeTags", eventProperty, function onRemoveTags(error, user) {
-            if (error) {
-                console.error(error)
-            } else {
-                console.log("removeTags success", user)
-            }
-        });
-        // 스낵바 피드백
-        snackbarValue();
+    else if (value == "removeTags") {
+      var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+      ChannelIO("removeTags", eventProperty, function onRemoveTags(error, user) {
+        if (error) {
+          console.error(error)
+        } else {
+          console.log("removeTags success", user)
+        }
+      });
+      // 스낵바 피드백
+      snackbarValue();
     }
-    else{
-        ChannelIO(value);
-        // 스낵바 피드백
-        snackbarValue();
+    else {
+      ChannelIO(value);
+      // 스낵바 피드백
+      snackbarValue();
     }
-}
+  }
 
 
 //프로퍼티 발생
@@ -192,4 +202,4 @@ function trackChannelEvent() {
     //     ]
     // };
 // };
-  </script>
+</script>
