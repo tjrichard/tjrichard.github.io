@@ -56,6 +56,15 @@
 
     if (value == "custom") {
       var parent = channelEventType.parentElement;
+
+      // 기존 input 삭제
+      if (channelEventTrackName) {
+        parent.removeChild(channelEventTrackName);
+      } else { }
+      if (channelEventTrackProperty) {
+        parent.removeChild(channelEventTrackProperty);
+      } else { }
+
       var channelEventTrackName = document.createElement("input");
       channelEventTrackName.setAttribute("type", "text");
       channelEventTrackName.setAttribute("id", "channelEventTrackName");
@@ -77,14 +86,24 @@
       channelEventTrackProperty.setAttribute("rows", "6");
       channelEventTrackProperty.setAttribute("placeholder", "추가 혹은 제거할 태그의 [Array]. 비어있으면 안됨. 각 태그는 쌍따옴표로 감싸야 함");
       parent.appendChild(channelEventTrackProperty);
+      
+      // 기존 input 삭제
+      if (channelEventTrackName) {
+        parent.removeChild(channelEventTrackName);
+      } else { }
+      if (channelEventTrackProperty) {
+        parent.removeChild(channelEventTrackProperty);
+      } else { }
     }
     else {
       var parent = channelEventType.parentElement;
       var channelEventTrackName = document.getElementById("channelEventTrackName");
       var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
-
-      if (channelEventTrackName && channelEventTrackProperty) {
+      // 기존 input 삭제
+      if (channelEventTrackName) {
         parent.removeChild(channelEventTrackName);
+      } else { }
+      if (channelEventTrackProperty) {
         parent.removeChild(channelEventTrackProperty);
       } else { }
     }
@@ -111,6 +130,7 @@
   function trackChannelEvent() {
     var value = document.getElementById("channelEventType").value;
 
+    // custom 이벤트
     if (value == "custom") {
       var eventName = document.getElementById("channelEventTrackName").value;
       var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
@@ -118,6 +138,8 @@
       // 스낵바 피드백
       snackbarEventName();
     }
+
+    // addTags 이벤트
     else if (value == "addTags") {
       var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
       ChannelIO("addTags", eventProperty, function onAddTags(error, user) {
@@ -130,6 +152,8 @@
       // 스낵바 피드백
       snackbarValue();
     }
+
+    // removeTags 이벤트
     else if (value == "removeTags") {
       var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
       ChannelIO("removeTags", eventProperty, function onRemoveTags(error, user) {
@@ -142,6 +166,8 @@
       // 스낵바 피드백
       snackbarValue();
     }
+
+    // 이외 전체 이벤트
     else {
       ChannelIO(value);
       // 스낵바 피드백
