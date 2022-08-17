@@ -81,24 +81,23 @@
     }
     else if (value == "addTags" || value == "removeTags") {
       var parent = channelEventType.parentElement;
+      // 기존 input 삭제
+      if (channelEventTrackName) {
+        parent.removeChild(channelEventTrackName);
+      } else { }
+      if (channelEventTrackProperty) {
+        parent.removeChild(channelEventTrackProperty);
+      } else { }
+
       var channelEventTrackProperty = document.createElement("textarea");
       channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
       channelEventTrackProperty.setAttribute("rows", "6");
       channelEventTrackProperty.setAttribute("placeholder", "추가 혹은 제거할 태그의 [Array]. 비어있으면 안됨. 각 태그는 쌍따옴표로 감싸야 함");
       parent.appendChild(channelEventTrackProperty);
       
-      // 기존 input 삭제
-      if (channelEventTrackName) {
-        parent.removeChild(channelEventTrackName);
-      } else { }
-      if (channelEventTrackProperty) {
-        parent.removeChild(channelEventTrackProperty);
-      } else { }
     }
     else {
       var parent = channelEventType.parentElement;
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
-      var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
       // 기존 input 삭제
       if (channelEventTrackName) {
         parent.removeChild(channelEventTrackName);
@@ -106,6 +105,9 @@
       if (channelEventTrackProperty) {
         parent.removeChild(channelEventTrackProperty);
       } else { }
+      
+      var channelEventTrackName = document.getElementById("channelEventTrackName");
+      var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
     }
   }
 
