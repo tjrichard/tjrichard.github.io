@@ -1,7 +1,8 @@
 <!-- Channel Plugin Scripts -->
 <script>
-  // 기본 변수 Declare
+  /* 기본 변수 Declare */
   var channelUser = "";
+  var defaultText = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트" };
 
   (function () {
     var w = window;
@@ -48,22 +49,42 @@
       channelUser = user;
     }
   });
-
-
-  // 폼 관리
+  
+  /* 이벤트 발생기 > 이벤트 종류 변경시 */
   function getEventType(channelEventType) {
     var value = channelEventType.value;
-
+    var parent = channelEventType.parentElement;
+    var children = parent.children;
+    var channelEventTrackName = document.getElementById("channelEventTrackName");
+    var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
+    
     if (value == "custom") {
-      var parent = channelEventType.parentElement;
-
+      
       // 기존 input 삭제
-      if (channelEventTrackName) {
-        parent.removeChild(channelEventTrackName);
-      } else { }
-      if (channelEventTrackProperty) {
-        parent.removeChild(channelEventTrackProperty);
-      } else { }
+      if(channelEventTrackName || channelEventTrackProperty){
+        for(i = 2; i <= parent.childElementCount; i++){
+          children[2].remove();
+        }
+      } else {}
+      
+      // 이벤트 발생기 > 커스텀 이벤트 템플릿 제공
+      var channelCustomEventTemplate = document.createElement("select");
+          channelCustomEventTemplate.setAttribute("name","channelCustomEventTemplate");
+          channelCustomEventTemplate.setAttribute("id","channelCustomEventTemplate");
+          channelCustomEventTemplate.setAttribute("onChange","getCustomEventType(this)");
+      var channelCustomEventTemplateOption1 = document.createElement("option");
+          channelCustomEventTemplateOption1.setAttribute("value","placeholder");
+          channelCustomEventTemplateOption1.innerText = "직접 입력"
+      var channelCustomEventTemplateOption2 = document.createElement("option");
+          channelCustomEventTemplateOption2.setAttribute("value","AchieveOperationGoal");
+          channelCustomEventTemplateOption2.innerText = "오퍼레이션 목표 달성"
+      var channelCustomEventTemplateOption3 = document.createElement("option");
+          channelCustomEventTemplateOption3.setAttribute("value","AcieveMarketingGoal");
+          channelCustomEventTemplateOption3.innerText = "마케팅 목표 달성"
+      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption1);
+      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption2);
+      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption3);
+      parent.appendChild(channelCustomEventTemplate);
 
       var channelEventTrackName = document.createElement("input");
       channelEventTrackName.setAttribute("type", "text");
@@ -74,20 +95,18 @@
       channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
       channelEventTrackProperty.setAttribute("rows", "6");
       channelEventTrackProperty.setAttribute("placeholder", "{key: value}로 구성된 object. key와 value는 쌍따옴표로 묶여야 함");
-      var defaultText = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트" };
       channelEventTrackProperty.value = JSON.stringify(defaultText);
       parent.appendChild(channelEventTrackName);
       parent.appendChild(channelEventTrackProperty);
     }
     else if (value == "addTags" || value == "removeTags") {
-      var parent = channelEventType.parentElement;
+
       // 기존 input 삭제
-      if (channelEventTrackName) {
-        parent.removeChild(channelEventTrackName);
-      } else { }
-      if (channelEventTrackProperty) {
-        parent.removeChild(channelEventTrackProperty);
-      } else { }
+      if(channelEventTrackName || channelEventTrackProperty){
+        for(i = 2; i <= parent.childElementCount; i++){
+          children[2].remove();
+        }
+      } else {}
 
       var channelEventTrackProperty = document.createElement("textarea");
       channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
@@ -97,21 +116,44 @@
       
     }
     else {
-      var parent = channelEventType.parentElement;
       // 기존 input 삭제
-      if (channelEventTrackName) {
-        parent.removeChild(channelEventTrackName);
-      } else { }
-      if (channelEventTrackProperty) {
-        parent.removeChild(channelEventTrackProperty);
-      } else { }
-      
+      if(channelEventTrackName || channelEventTrackProperty){
+        for(i = 2; i <= parent.childElementCount; i++){
+          children[2].remove();
+        }
+      } else {}
+
       var channelEventTrackName = document.getElementById("channelEventTrackName");
       var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
     }
   }
 
-  // 스낵바 피드백
+  /* 커스텀 이벤트 템플릿 변경 */
+  function getCustomEventType(channelCustomEventType) {
+    var value = channelCustomEventType.value;
+
+    if (value == "placeholder") {
+      var channelEventTrackName = document.getElementById("channelEventTrackName");
+      channelEventTrackName.value = ""
+      var eventProperty = document.getElementById("channelEventTrackProperty");
+      eventProperty.value = JSON.stringify(defaultText);
+    }else if (value == "AchieveOperationGoal"){
+      var channelEventTrackName = document.getElementById("channelEventTrackName");
+      channelEventTrackName.value = "AchieveOperationGoal"
+      var eventProperty = document.getElementById("channelEventTrackProperty");
+      var propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "goal_value": "StartTrial" };
+      eventProperty.value = JSON.stringify(propertyToApply);
+    }else if (value == "AcieveMarketingGoal"){
+      var channelEventTrackName = document.getElementById("channelEventTrackName");
+      channelEventTrackName.value = "AcieveMarketingGoal"
+      var eventProperty = document.getElementById("channelEventTrackProperty");
+      var propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "goal_value": "CompleteCheckOut" };
+      eventProperty.value = JSON.stringify(propertyToApply);
+    }else{}
+
+  }
+
+  /* 스낵바 피드백 */
   function snackbarValue() {
     var value = channelEventType.value;
     var snackbar = document.getElementById("snackbar-top");
@@ -128,7 +170,7 @@
     setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
   }
 
-  // 이벤트 발생
+  /* 이벤트 발생기 */
   function trackChannelEvent() {
     var value = document.getElementById("channelEventType").value;
 

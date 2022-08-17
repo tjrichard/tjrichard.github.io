@@ -234,7 +234,13 @@
     transition: all ease 0.2s;
 }
 .f-input-wrapper {
-
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    
+    & textarea {
+        max-width: 100%;
+    }
 }
 .f-title {
     font-size: $font-size-header;
