@@ -1,3 +1,4 @@
+{% include encoding.html %}
 <!-- Channel Plugin Scripts -->
 <script>
   /* 기본 변수 Declare */
@@ -214,7 +215,7 @@
       var eventName = document.getElementById("channelEventTrackName").value;
       var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
       if (channelEventTrackName.value == "AcieveMarketingGoal") {
-        var date = new Date();
+        date = new Date();
         ChannelIO("track", eventName, eventProperty);
         ChannelIO("updateUser", {
           profile: {
