@@ -218,7 +218,7 @@ function getApi_ipInfo() {
             "Accept": "application/json"
         }
     })
-    .then(response => response.json())
+    .then(response => response.json().data)
     .then(json => {
         var currentUrl = window.location.href;
         analytics.track("Get IP Info",{
