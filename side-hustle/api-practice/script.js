@@ -219,18 +219,18 @@ function getApi_ipInfo() {
         }
     })
     .then(response => response.json())
-    .then(json.data => {
+    .then(json => {
         var currentUrl = window.location.href;
         analytics.track("Get IP Info",{
             "url": currentUrl,
-            "target": json,
+            "target": json.data,
             title: "API Practice"
             })
-        console.log(json);
+        console.log(json.data);
         getCurrentTime();
         // appendList(json);
-        CreateTableFromJSON(json);
-        responseToAnalytics(json);
+        CreateTableFromJSON(json.data);
+        responseToAnalytics(json.data);
     })
 }
 
