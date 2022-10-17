@@ -206,8 +206,10 @@ function responseToAnalytics(json) {
 =================== API Fetch functoins ===================
 */
 
+
+
 function getApi_ipInfo() {
-    let url = "https://freegeoip.app/json/"
+    let url = "https://api.ipbase.com/v2/info?apikey=v31MNOw18cmOtwxL3uLe29A5o6PM6G1BFgE2Goev"
 
     fetch(url, {
         mode: "cors",
