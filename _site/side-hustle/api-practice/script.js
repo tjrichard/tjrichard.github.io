@@ -206,8 +206,10 @@ function responseToAnalytics(json) {
 =================== API Fetch functoins ===================
 */
 
+
+
 function getApi_ipInfo() {
-    let url = "https://freegeoip.app/json/"
+    let url = "https://api.ipbase.com/v2/info?apikey=v31MNOw18cmOtwxL3uLe29A5o6PM6G1BFgE2Goev"
 
     fetch(url, {
         mode: "cors",
@@ -221,14 +223,14 @@ function getApi_ipInfo() {
         var currentUrl = window.location.href;
         analytics.track("Get IP Info",{
             "url": currentUrl,
-            "target": json,
+            "target": json.data,
             title: "API Practice"
             })
-        console.log(json);
+        console.log(json.data);
         getCurrentTime();
         // appendList(json);
-        CreateTableFromJSON(json);
-        responseToAnalytics(json);
+        CreateTableFromJSON(json.data);
+        responseToAnalytics(json.data);
     })
 }
 
