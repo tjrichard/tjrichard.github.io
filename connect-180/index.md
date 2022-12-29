@@ -2,6 +2,10 @@
 layout: default
 ---
 <script>
+  window.onload = function() {
+    var header = document.getElementsByTagName('header')[0];
+    header.style.display = "none";
+  }
     openTab('evt', 'surfit');
     function openTab(evt, tabName) {
         var i, tabContent, tabLinks;
@@ -29,6 +33,9 @@ layout: default
           <li role='presentation'>
             <a class="c-nav__link tabLinks normal" onclick="openTab(event, 'oneoneone')">OneOneOne</a>
           </li>
+          <li role='presentation'>
+            <a class="c-nav__link tabLinks normal" onclick="openTab(event, 'mixday')">MixDay</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -38,4 +45,7 @@ layout: default
 </div>
 <div id="oneoneone" class="tabContent" style="display: none">
     <iframe src="https://oneoneone.kr/" class="iframe-content"></iframe>
+</div>
+<div id="mixday" class="tabContent" style="display: none">
+    <iframe src="https://mix.day/" class="iframe-content"></iframe>
 </div>
