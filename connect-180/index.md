@@ -1,6 +1,9 @@
 ---
 layout: default
 ---
+<!-- Mailchimp -->
+<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5b6603b2131042d4016f6d41b/7e2f79a9fc047ccfb5d69b1c4.js");</script>
+
 <script>
   window.onload = function() {
     var header = document.getElementsByTagName('header')[0];
