@@ -6,10 +6,7 @@
   <meta name="theme-color" content="#ffffff">
   <!--Google Search Console Verification-->
   <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
-  {% if page.url == "/channel-test" %}
-    <!-- Mailchimp -->
-    <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/5b6603b2131042d4016f6d41b/7e2f79a9fc047ccfb5d69b1c4.js");</script>
-  {% endif %}
+
   <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{%- if page.subtitle == nil or page.subtitle == '장승환' -%}{{ site.description }}{% else %}{{ page.subtitle }}{%- endif -%}">
   {% include open-graph.html %}
