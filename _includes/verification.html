@@ -9,7 +9,7 @@ function createModal(url) {
     // modalBackground.setAttribute("class", "modal__background");
     // modalBackground.setAttribute("onclick", "closeModal()");
     // document.body.appendChild(modalBackground);
-    console.log(url);
+    // console.log(url);
     var modalCloseButton = document.createElement("div");
     modalCloseButton.setAttribute("id", "modalCloseButton");
     modalCloseButton.setAttribute("class", "modal__closeButton");
@@ -38,15 +38,21 @@ function closeModal() {
 }
 
 function verification(url) {
+    var pathName = document.location.pathname;
     var input = document.getElementById('passwordInput').value;
     var encodedPassword = SHA256(input);
     console.log(encodedPassword);
-    var pass1 = '58c63d3625b948b10a897371f0e656455a78e235db5690e2d1bbf23a1883d4ec';
-    var pass2 = '41dd0a5e6f3e15a19eb1dcf9f985cf342557ed34d3c0bf19dd07eeff766a8a5d';
-    var pass3 = '7634aeb9648248f6e3d8a2f7166a872f884a6cbce346d52bfcbff5357ee01c29';
-    var pass4 = '1f56e977ebd0f48a1035c6474d713ba2b87294a779a37b7dff946a3c4a666eab';
+    var pass1 = '41dd0a5e6f3e15a19eb1dcf9f985cf342557ed34d3c0bf19dd07eeff766a8a5d'; // master
+    var pass2 = '7634aeb9648248f6e3d8a2f7166a872f884a6cbce346d52bfcbff5357ee01c29';
+    var pass3 = '1f56e977ebd0f48a1035c6474d713ba2b87294a779a37b7dff946a3c4a666eab';
+    var pass4 = '8d2e298c56050233da3013ddb6c750e71c0588931bd7b7779e630745c6828db4';
 
-    if (encodedPassword && (encodedPassword == pass1 || encodedPassword == pass2 || encodedPassword == pass3 || encodedPassword == pass4)) {
+    if (encodedPassword && (
+        (encodedPassword == pass1) || 
+        (encodedPassword == pass2 && pathName == '/b2b-designers/kakao-survey-2021/') || 
+        (encodedPassword == pass3 &&  pathName == '/b2b-designers/salary-survey-2022/') || 
+        (encodedPassword == pass4 &&  pathName == '/b2b-designers/salary-survey-202301/'))
+        ) {
         createModal(url);
     }
     else {
