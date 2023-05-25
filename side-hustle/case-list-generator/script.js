@@ -134,7 +134,7 @@ function generateList() {
         if(!document.getElementById(catId)){}else{
             title = document.getElementById(catId).firstElementChild.firstElementChild.value;
             // 입력한 value의 앞 뒤, ' 혹은 " 앞에 공백 제거
-            value = document.getElementById(catId).firstElementChild.children[2].value.replace(/^\s+|(?<=,)\s+|\s+(?='|")|\s+$/gm,'');
+            value = document.getElementById(catId).firstElementChild.children[1].value.replace(/^\s+|(?<=,)\s+|\s+(?='|")|\s+$/gm,'');
             value = value.split(",");
             // 입력한 value가 ' 혹은 "로 감싸진 경우 ', " 제거
             if(value[0].slice(0,1) == "'" | value[0].slice(0,1) == "\""){
