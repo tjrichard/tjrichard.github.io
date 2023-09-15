@@ -36,6 +36,12 @@ layout: default
           <li role='presentation'>
             <a class="c-nav__link tabLinks normal" onclick="openTab(event, 'mixday')">MixDay</a>
           </li>
+          <li role='presentation'>
+            <a class="c-nav__link tabLinks normal" onclick="openTab(event, 'yozm')">요즘IT</a>
+          </li>
+          <li role='presentation'>
+            <a class="c-nav__link tabLinks normal" onclick="openTab(event, 'savee')">SAVEE</a>
+          </li>
         </ul>
       </div>
     </div>
@@ -48,4 +54,10 @@ layout: default
 </div>
 <div id="mixday" class="tabContent" style="display: none">
     <iframe src="https://mix.day/" class="iframe-content"></iframe>
+</div>
+<div id="yozm" class="tabContent" style="display: none">
+    <iframe src="https://yozm.wishket.com/magazine/list/design/" class="iframe-content"></iframe>
+</div>
+<div id="savee" class="tabContent" style="display: none">
+    <iframe src="https://savee.it/" class="iframe-content"></iframe>
 </div>
