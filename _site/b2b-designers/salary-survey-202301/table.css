@@ -51,7 +51,7 @@ h1 {
 
 p {
     color: #1B2528;
-    font-size: clamp(13px, 1.8vw, 16px);
+    font-size: clamp(11px, 1.8vw, 16px);
 }
 
 input {
@@ -68,7 +68,7 @@ input {
 
 @media screen and (max-width:900px){
     h1 {
-        font-size: 4vw;
+        font-size: 3.5vw;
     }
     input {
         width: 35vw;
@@ -89,8 +89,7 @@ img {
 table {
     border-spacing: 0px;
     color: #1B2528;
-    width: 100%;
-    font-size: clamp(13px, 1.8vw, 16px);
+    width:100%
 }
 
 .shadow {
