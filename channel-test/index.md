@@ -10,6 +10,7 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
         document.getElementById('c-footer').remove();
     });
 </script>
+<!-- 카카오 채널 추가 -->
 <script>
   window.kakaoAsyncInit = function() {
     Kakao.Channel.createAddChannelButton({
@@ -27,6 +28,47 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
     fjs.parentNode.insertBefore(js, fjs);
   })(document, 'script', 'kakao-js-sdk');
 </script>
+<!-- 카카오 로그인 -->
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js"
+  integrity="sha384-kYPsUbBPlktXsY6/oNHSUDZoTX6+YI51f63jCPEIPFP09ttByAdxd2mEjKuhdqn4" crossorigin="anonymous"></script>
+<script>
+  Kakao.init('389a7ddbc92ba6a6cda26695c6492357'); // 사용하려는 앱의 JavaScript 키 입력
+</script>
+
+<script>
+  function loginWithKakao() {
+    Kakao.Auth.authorize({
+      redirectUri: 'https://developers.kakao.com/tool/demo/oauth',
+    });
+  }
+
+  // 아래는 데모를 위한 UI 코드입니다.
+  displayToken()
+  function displayToken() {
+    var token = getCookie('authorize-access-token');
+
+    if(token) {
+      Kakao.Auth.setAccessToken(token);
+      Kakao.Auth.getStatusInfo()
+        .then(function(res) {
+          if (res.status === 'connected') {
+            document.getElementById('token-result').innerText
+              = 'login success, token: ' + Kakao.Auth.getAccessToken();
+          }
+        })
+        .catch(function(err) {
+          Kakao.Auth.setAccessToken(null);
+        });
+    }
+  }
+
+  function getCookie(name) {
+    var parts = document.cookie.split(name + '=');
+    if (parts.length === 2) { return parts[1].split(';')[0]; }
+  }
+</script>
+<!-- 카카오 로그인 끝 -->
+
 <div class="o-wrapper">
     <div class="o-grid">
         <div class="m-wrapper__row">
@@ -64,6 +106,10 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
             <div class="m-left">
                 <p class="survey-title">카카오 테스트</p>
                 <div class="button" id="kakao-talk-channel-add-button" data-channel-public-id="_IATxiK" data-size="large" data-support-multiple-densities="true"></div>
+                <a id="kakao-login-btn" href="javascript:loginWithKakao()">
+                    <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222" alt="카카오 로그인 버튼" />
+                </a>
+                <p id="token-result"></p>
             </div>
         </div>
     </div>
