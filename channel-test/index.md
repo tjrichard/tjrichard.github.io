@@ -10,6 +10,23 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
         document.getElementById('c-footer').remove();
     });
 </script>
+<script>
+  window.kakaoAsyncInit = function() {
+    Kakao.Channel.createAddChannelButton({
+      container: '#kakao-talk-channel-add-button',
+    });
+  };
+
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.channel.min.js';
+    js.integrity = 'sha384-j5TN6EqladB+HIfGV8dVYRIzoJf9Fb4lvrkPmo9KlnDWpN1CZz8yC4rCH1ChRbbh';
+    js.crossOrigin = 'anonymous';
+    fjs.parentNode.insertBefore(js, fjs);
+  })(document, 'script', 'kakao-js-sdk');
+</script>
 <div class="o-wrapper">
     <div class="o-grid">
         <div class="m-wrapper__row">
@@ -43,6 +60,10 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                     </div>
                 </div>
                 <input type="button" id="trackChannelProperty" class="button" value="프로퍼티 발생시키기" onclick="trackChannelProperty()">
+            </div>
+            <div class="m-left">
+                <p class="survey-title">카카오 테스트</p>
+                <div class="button" id="kakao-talk-channel-add-button" data-channel-public-id="_IATxiK" data-size="large" data-support-multiple-densities="true"></div>
             </div>
         </div>
     </div>
