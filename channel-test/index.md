@@ -28,6 +28,7 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
     fjs.parentNode.insertBefore(js, fjs);
   })(document, 'script', 'kakao-js-sdk');
 </script>
+<!-- 카카오 채널 추가 끝 -->
 <!-- 카카오 로그인 -->
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js"
   integrity="sha384-kYPsUbBPlktXsY6/oNHSUDZoTX6+YI51f63jCPEIPFP09ttByAdxd2mEjKuhdqn4" crossorigin="anonymous"></script>
@@ -38,7 +39,7 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
 <script>
   function loginWithKakao() {
     Kakao.Auth.authorize({
-      redirectUri: 'https://developers.kakao.com/tool/demo/oauth',
+      redirectUri: 'https://zoyi.cafe24.com/Api/Member/Oauth2ClientCallback/kakao/', // 사용하려는 앱의 Redirect Uri 입력
     });
   }
 
@@ -105,7 +106,7 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
             </div>
             <div class="m-left">
                 <p class="survey-title">카카오 테스트</p>
-                <div class="button" id="kakao-talk-channel-add-button" data-channel-public-id="_IATxiK" data-size="large" data-support-multiple-densities="true"></div>
+                <div id="kakao-talk-channel-add-button" data-channel-public-id="_IATxiK" data-size="large" data-support-multiple-densities="true"></div>
                 <a id="kakao-login-btn" href="javascript:loginWithKakao()">
                     <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222" alt="카카오 로그인 버튼" />
                 </a>
