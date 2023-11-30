@@ -124,7 +124,7 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                     var naver_id_login = new naver_id_login("Lte2TWpAKNCsQNoHJTSR", "https://dwmm.site/channel-test");
                     var state = naver_id_login.getUniqState();
                     naver_id_login.setButton("white", 2,40);
-                    naver_id_login.setDomain("YOUR_SERVICE_URL");
+                    naver_id_login.setDomain("https://dwmm.site");
                     naver_id_login.setState(state);
                     naver_id_login.setPopup();
                     naver_id_login.init_naver_id_login();
