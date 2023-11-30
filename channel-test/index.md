@@ -29,13 +29,13 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
   })(document, 'script', 'kakao-js-sdk');
 </script>
 <!-- 카카오 채널 추가 끝 -->
+
 <!-- 카카오 로그인 -->
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js"
   integrity="sha384-kYPsUbBPlktXsY6/oNHSUDZoTX6+YI51f63jCPEIPFP09ttByAdxd2mEjKuhdqn4" crossorigin="anonymous"></script>
 <script>
   Kakao.init('389a7ddbc92ba6a6cda26695c6492357'); // 사용하려는 앱의 JavaScript 키 입력
 </script>
-
 <script>
   function loginWithKakao() {
     Kakao.Auth.authorize({
@@ -69,6 +69,20 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
   }
 </script>
 <!-- 카카오 로그인 끝 -->
+
+<!-- 네이버 로그인 -->
+<script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript">
+    var naver_id_login = new naver_id_login("Lte2TWpAKNCsQNoHJTSR", "https://dwmm.site/channel-test");
+    var state = naver_id_login.getUniqState();
+    naver_id_login.setButton("white", 2,40);
+    naver_id_login.setDomain("YOUR_SERVICE_URL");
+    naver_id_login.setState(state);
+    naver_id_login.setPopup();
+    naver_id_login.init_naver_id_login();
+</script>
+<!-- 네이버 로그인 끝 -->
 
 <div class="o-wrapper">
     <div class="o-grid">
@@ -111,6 +125,10 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                     <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222" alt="카카오 로그인 버튼" />
                 </a>
                 <p id="token-result"></p>
+            </div>
+            <div class="m-left">
+                <p class="survey-title">네이버 테스트</p>
+                <div id="naver_id_login"></div>
             </div>
         </div>
     </div>
