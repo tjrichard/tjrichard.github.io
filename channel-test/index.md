@@ -130,10 +130,26 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                     naver_id_login.setPopup();
                     naver_id_login.init_naver_id_login();
                 </script>
-                <!-- Talk Talk Alarm Button Script start -->
+                <!-- Talk Talk Alarm Button Script start
                 <script type="text/javascript" src="https://ua.talk.naver.com/dist/sdk.js"></script>
                 <div class="navertalk-friend-button" data-talk-id="w5tukq" data-size-width="188" data-size-height="44" data-device-type="MOBILE" data-type="BASIC" data-channel-no="3004718" ></div>
-                <!-- Talk Talk Alarm Button Script end -->
+                Talk Talk Alarm Button Script end -->
+                // 시작하기
+                <script type="text/javascript" src="https://ua.talk.naver.com/dist/sdk.js"></script>
+                <script>
+                NaverTalkSDK.init({
+                    talkId: 'w5tukq',
+                    channelNo: '3004718'
+                })
+                </script>
+                // 커스텀 알림 받기 동작 구현
+                <button onclick="onClickFriend()">톡톡 알림받기</button>
+                <script>
+                    // 네이버톡톡 알림받기 페이지로 이동합니다.
+                    function onClickFriend() {
+                        NaverTalkSDK.Friend.addFriend()
+                    }
+                </script>
             </div>
         </div>
     </div>
