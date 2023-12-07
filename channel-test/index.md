@@ -130,6 +130,11 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                     naver_id_login.setPopup();
                     naver_id_login.init_naver_id_login();
                 </script>
+                <!-- Talk Talk Alarm Button Script start -->
+                <script type="text/javascript" src="https://ua.talk.naver.com/dist/sdk.js"></script>
+                <div class="navertalk-friend-button" data-talk-id="w5tukq" data-size-width="224" data-size-height="60"
+                    data-device-type="PC" data-type="LONG" data-channel-no="3004718" ></div>
+                <!-- Talk Talk Alarm Button Script end -->
             </div>
         </div>
     </div>
