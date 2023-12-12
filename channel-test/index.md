@@ -100,12 +100,6 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                 <div class="f-wrapper">
                     <div class="f-input-wrapper" id="propertyForm">
                         <input type="button" id="getUserPropertyKeys" class="button" value="프로퍼티 불러오기" onclick="getUserPropertyKeys()">
-                        <!-- <select name="channelUserKeys" id="channelUserKeys" onChange="getUserKey(this)">
-                        </select>
-                        <input type="text" id="channelUserKeyValue" placeholder="값을 입력하세요">
-                        <select name="channelUserProfileKeys" id="channelUserProfileKeys" onChange="getUserProfileKey(this)">
-                        </select>
-                        <input type="text" id="channelUserProfileKeyValue" placeholder="값을 입력하세요"> -->
                       </div>
                 </div>
                 <input type="button" id="trackChannelProperty" class="button" value="프로퍼티 발생시키기" onclick="updateChannelProperty()">
