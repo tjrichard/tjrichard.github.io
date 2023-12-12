@@ -2,8 +2,8 @@
 <!-- Channel Plugin Scripts -->
 <script>
   /* 기본 변수 Declare */
-  let channelUser = "";
-  let defaultText = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트" };
+  const channelUser = "";
+  const defaultText = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트" };
   let date = new Date();
   let currentMonth = (function () {
     if (date.getMonth() + 1 < 10) {
@@ -215,7 +215,7 @@
 
   /* 이벤트 발생기 */
   function trackChannelEvent() {
-    let value = document.getElementById("channelEventType").value;
+    const value = document.getElementById("channelEventType").value;
 
     // custom 이벤트
     if (value == "custom") {
@@ -275,10 +275,6 @@
 
 
 /* 프로퍼티 발생 */
-// 프로퍼티 리스트 제공
-let userKeys = Object.keys(channelUser);
-let userProfileKeys = Object.keys(channelUser.profile);
-let userProfileFormParent = document.getElementById("propertyForm");
 
 // user 키 추가
 function getChannelUserKeys() {
