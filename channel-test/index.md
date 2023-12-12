@@ -100,7 +100,7 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                 <div class="f-wrapper">
                     <div class="f-input-wrapper" id="propertyForm">
                         <select name="channelUserKeys" id="channelUserKeys" onChange="getUserKey(this)">
-                        <input type="text" id="channelUserKeyValue" placeholder="값을 입력하세요"">
+                        <input type="text" id="channelUserKeyValue" placeholder="값을 입력하세요">
                         <select name="channelUserProfileKeys" id="channelUserProfileKeys" onChange="getUserProfileKey(this)">
                         <input type="text" id="channelUserProfileKeyValue" placeholder="값을 입력하세요">
                     </div>
