@@ -338,29 +338,29 @@ function getUserProfileKey(channelUserProfileKey) {
 
 
 // 유저 업데이트
-const userObject = {};
-function updateChannelProperty() {
-  let userKey = document.getElementById("channelUserKeys").value;
-  let userKeyValue = document.getElementById("channelUserKeyValue").value;
-  let userProfileKey = document.getElementById("channelUserProfileKeys").value;
-  let userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
+// const userObject = {};
+// function updateChannelProperty() {
+//   let userKey = document.getElementById("channelUserKeys").value;
+//   let userKeyValue = document.getElementById("channelUserKeyValue").value;
+//   let userProfileKey = document.getElementById("channelUserProfileKeys").value;
+//   let userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
   
-  userObject = {
-    userKey = userKeyValue;
-    userProfileKey = userProfileKeyValue;
-  }
+//   userObject = {
+//     userKey = userKeyValue;
+//     userProfileKey = userProfileKeyValue;
+//   }
 
-  ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
-    if (error) {
-      console.error(error);
-    } else {
-      console.log('updateUser success', user);
-    }
-  });
+//   ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
+//     if (error) {
+//       console.error(error);
+//     } else {
+//       console.log('updateUser success', user);
+//     }
+//   });
   
-  // 스낵바 피드백
-  snackbarPropertyUpdate();
-}
+//   // 스낵바 피드백
+//   snackbarPropertyUpdate();
+// }
 
 
 // 참고 레퍼런스

@@ -105,7 +105,7 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                         <input type="text" id="channelUserProfileKeyValue" placeholder="값을 입력하세요">
                     </div>
                 </div>
-                <input type="button" id="trackChannelProperty" class="button" value="프로퍼티 발생시키기" onclick="trackChannelProperty()">
+                <input type="button" id="trackChannelProperty" class="button" value="프로퍼티 발생시키기" onclick="updateChannelProperty()">
             </div>
             <div class="m-left">
                 <p class="survey-title">카카오 테스트</p>
