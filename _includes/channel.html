@@ -326,6 +326,12 @@ function getChannelUserProfileKeys() {
   userProfileFormParent.appendChild(channelUserProfileKeyValue);
 }
 
+// 최초 프로퍼티 불러오기
+function getUserPropertyKeys() {
+  getChannelUserKeys();
+  getChannelUserProfileKeys();
+}
+
 // 프로퍼티 리스트 onChange()시
 function getUserKey(channelUserKey) {
   let value = channelUserKey.value;
