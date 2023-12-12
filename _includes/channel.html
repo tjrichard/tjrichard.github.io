@@ -86,29 +86,29 @@
 
       // 이벤트 발생기 > 커스텀 이벤트 템플릿 제공
       var channelCustomEventTemplate = document.createElement("select");
-      channelCustomEventTemplate.setAttribute("name", "channelCustomEventTemplate");
-      channelCustomEventTemplate.setAttribute("id", "channelCustomEventTemplate");
-      channelCustomEventTemplate.setAttribute("onChange", "getCustomEventType(this)");
+          channelCustomEventTemplate.setAttribute("name", "channelCustomEventTemplate");
+          channelCustomEventTemplate.setAttribute("id", "channelCustomEventTemplate");
+          channelCustomEventTemplate.setAttribute("onChange", "getCustomEventType(this)");
       var channelCustomEventTemplateOption1 = document.createElement("option");
-      channelCustomEventTemplateOption1.setAttribute("value", "placeholder");
-      channelCustomEventTemplateOption1.innerText = "직접 입력"
+          channelCustomEventTemplateOption1.setAttribute("value", "placeholder");
+          channelCustomEventTemplateOption1.innerText = "직접 입력"
       var channelCustomEventTemplateOption2 = document.createElement("option");
-      channelCustomEventTemplateOption2.setAttribute("value", "AchieveOperationGoal");
-      channelCustomEventTemplateOption2.innerText = "오퍼레이션 목표 달성"
+          channelCustomEventTemplateOption2.setAttribute("value", "AchieveOperationGoal");
+          channelCustomEventTemplateOption2.innerText = "오퍼레이션 목표 달성"
       var channelCustomEventTemplateOption3 = document.createElement("option");
-      channelCustomEventTemplateOption3.setAttribute("value", "AcieveMarketingGoal");
-      channelCustomEventTemplateOption3.innerText = "마케팅 목표 달성"
+          channelCustomEventTemplateOption3.setAttribute("value", "AcieveMarketingGoal");
+          channelCustomEventTemplateOption3.innerText = "마케팅 목표 달성"
       var channelCustomEventTemplateOption4 = document.createElement("option");
-      channelCustomEventTemplateOption4.setAttribute("value", "CheckoutComplete");
-      channelCustomEventTemplateOption4.innerText = "체크아웃 완료"
+          channelCustomEventTemplateOption4.setAttribute("value", "CheckoutComplete");
+          channelCustomEventTemplateOption4.innerText = "체크아웃 완료"
       var channelCustomEventTemplateOption5 = document.createElement("option");
-      channelCustomEventTemplateOption5.setAttribute("value", "Purchase");
-      channelCustomEventTemplateOption5.innerText = "구매"
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption1);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption2);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption3);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption4);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption5);
+          channelCustomEventTemplateOption5.setAttribute("value", "Purchase");
+          channelCustomEventTemplateOption5.innerText = "구매"
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption1);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption2);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption3);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption4);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption5);
       parent.appendChild(channelCustomEventTemplate);
 
       var channelEventTrackName = document.createElement("input");
@@ -205,6 +205,14 @@
     setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
   }
 
+  function snackbarPropertyUpdate() {
+    var propertyName = document.getElementById("channelUserProfileKeys").value;
+    var snackbar = document.getElementById("snackbar-top");
+    snackbar.innerText = propertyName + ' 프로퍼티가 업데이트되었습니다';
+    snackbar.className = "show";
+    setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
+  }
+
   /* 이벤트 발생기 */
   function trackChannelEvent() {
     var value = document.getElementById("channelEventType").value;
@@ -266,7 +274,94 @@
   }
 
 
-//프로퍼티 발생
+/* 프로퍼티 발생 */
+// 프로퍼티 리스트 제공
+const userKeys = Object.keys(channelUser);
+const userProfileKeys = Object.keys(channelUser);
+const userProfileFormParent = document.getElementById("propertyForm");
+
+// user 키 추가
+function getChannelUserKeys() {
+  let channelUserKeys = document.createElement("select");
+      channelUserKeys.setAttribute("name", "channelUserKeys");
+      channelUserKeys.setAttribute("id", "channelUserKeys");
+      channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+  function appendUserKeys() {
+      for (i = 0; i < userKeys.length; i++) {
+        let channelUserKeyOption = document.createElement("option");
+            channelUserKeyOption.setAttribute("value", userKeys[i]);
+            channelUserKeyOption.innerText = userKeys[i];
+        channelUserKeys.appendChild(channelUserKeyOption);
+      }
+    }
+  userProfileFormParent.appendChild(channelUserKeys);
+  // 값 input 추가
+  let channelUserKeyValue = document.createElement("input");
+      channelUserKeyValue.setAttribute("type", "text");
+      channelUserKeyValue.setAttribute("id", "channelUserKeyValue");
+      channelUserKeyValue.setAttribute("placeholder", "값을 입력하세요");
+  userProfileFormParent.appendChild(channelUserKeyValue);
+}
+
+// user.profile 키 추가
+function getChannelUserProfileKeys() {
+  let channelUserProfileKeys = document.createElement("select");
+      channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
+      channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
+      channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
+  function appendUserProfileKeys() {
+      for (i = 0; i < userProfileKeys.length; i++) {
+        let channelUserProfileKeyOption = document.createElement("option");
+            channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
+            channelUserProfileKeyOption.innerText = userProfileKeys[i];
+        channelUserProfileKeys.appendChild(channelUserKeyOption);
+      }
+    }
+  userProfileFormParent.appendChild(channelUserProfileKeys);
+  // 값 input 추가
+  let channelUserProfileKeyValue = document.createElement("input");
+      channelUserProfileKeyValue.setAttribute("type", "text");
+      channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeyValue");
+      channelUserProfileKeyValue.setAttribute("placeholder", "값을 입력하세요");
+  userProfileFormParent.appendChild(channelUserProfileKeyValue);
+}
+
+// 프로퍼티 리스트 onChange()시
+function getUserKey(channelUserKey) {
+  let value = channelUserKey.value;
+  // 클리어 조건
+}
+function getUserProfileKey(channelUserProfileKey) {
+  let value = channelUserProfileKey.value;
+  // 클리어 조건
+}
+
+
+// 유저 업데이트
+const userObject = {};
+function updateChannelProperty() {
+  let userKey = document.getElementById("channelUserKeys").value;
+  let userKeyValue = document.getElementById("channelUserKeyValue").value;
+  let userProfileKey = document.getElementById("channelUserProfileKeys").value;
+  let userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
+  
+  userObject = {
+    userKey = userKeyValue;
+    userProfileKey = userProfileKeyValue;
+  }
+
+  ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
+    if (error) {
+      console.error(error);
+    } else {
+      console.log('updateUser success', user);
+    }
+  });
+  
+  // 스낵바 피드백
+  snackbarPropertyUpdate();
+}
+
 
 // 참고 레퍼런스
 // function submitApplication() {
