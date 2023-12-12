@@ -286,6 +286,7 @@ function getChannelUserKeys() {
       channelUserKeys.setAttribute("name", "channelUserKeys");
       channelUserKeys.setAttribute("id", "channelUserKeys");
       channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+  userProfileFormParent.appendChild(channelUserKeys);
   function appendUserKeys() {
       for (i = 0; i < userKeys.length; i++) {
         let channelUserKeyOption = document.createElement("option");
@@ -294,7 +295,6 @@ function getChannelUserKeys() {
         channelUserKeys.appendChild(channelUserKeyOption);
       }
     }
-  userProfileFormParent.appendChild(channelUserKeys);
   // 값 input 추가
   let channelUserKeyValue = document.createElement("input");
       channelUserKeyValue.setAttribute("type", "text");
@@ -309,6 +309,7 @@ function getChannelUserProfileKeys() {
       channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
       channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
       channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
+  userProfileFormParent.appendChild(channelUserProfileKeys);
   function appendUserProfileKeys() {
       for (i = 0; i < userProfileKeys.length; i++) {
         let channelUserProfileKeyOption = document.createElement("option");
@@ -317,7 +318,6 @@ function getChannelUserProfileKeys() {
         channelUserProfileKeys.appendChild(channelUserKeyOption);
       }
     }
-  userProfileFormParent.appendChild(channelUserProfileKeys);
   // 값 input 추가
   let channelUserProfileKeyValue = document.createElement("input");
       channelUserProfileKeyValue.setAttribute("type", "text");
@@ -330,6 +330,7 @@ function getChannelUserProfileKeys() {
 function getUserPropertyKeys() {
   getChannelUserKeys();
   getChannelUserProfileKeys();
+  document.getElementById("getUserPropertyKeys").remove()
 }
 
 // 프로퍼티 리스트 onChange()시
