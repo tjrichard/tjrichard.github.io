@@ -276,12 +276,15 @@
 
 /* 프로퍼티 발생 */
 // 프로퍼티 리스트 제공
-const userKeys = Object.keys(channelUser);
-const userProfileKeys = Object.keys(channelUser.profile);
-const userProfileFormParent = document.getElementById("propertyForm");
+let userKeys = Object.keys(channelUser);
+let userProfileKeys = Object.keys(channelUser.profile);
+let userProfileFormParent = document.getElementById("propertyForm");
 
 // user 키 추가
 function getChannelUserKeys() {
+  let userKeys = Object.keys(channelUser);
+  let userProfileKeys = Object.keys(channelUser.profile);
+  let userProfileFormParent = document.getElementById("propertyForm");
   let channelUserKeys = document.createElement("select");
       channelUserKeys.setAttribute("name", "channelUserKeys");
       channelUserKeys.setAttribute("id", "channelUserKeys");
@@ -305,6 +308,9 @@ function getChannelUserKeys() {
 
 // user.profile 키 추가
 function getChannelUserProfileKeys() {
+  let userKeys = Object.keys(channelUser);
+  let userProfileKeys = Object.keys(channelUser.profile);
+  let userProfileFormParent = document.getElementById("propertyForm");
   let channelUserProfileKeys = document.createElement("select");
       channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
       channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
