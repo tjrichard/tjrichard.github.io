@@ -5,7 +5,7 @@
   const channelUser = "";
   const defaultText = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트" };
   const date = new Date();
-  const currentMonth = (function () {
+  var currentMonth = (function () {
     if (date.getMonth() + 1 < 10) {
       currentMonth = 0 + String(date.getMonth() + 1)
     } else {
@@ -13,7 +13,7 @@
     }
     return currentMonth;
   })()
-  let dateTime = String(date.getFullYear()) + currentMonth + String(date.getDate());
+  var dateTime = String(date.getFullYear()) + currentMonth + String(date.getDate());
 
   (function () {
     var w = window;
