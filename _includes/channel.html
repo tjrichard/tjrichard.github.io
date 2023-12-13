@@ -4,8 +4,8 @@
   /* 기본 변수 Declare */
   const channelUser = "";
   const defaultText = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트" };
-  let date = new Date();
-  let currentMonth = (function () {
+  const date = new Date();
+  const currentMonth = (function () {
     if (date.getMonth() + 1 < 10) {
       currentMonth = 0 + String(date.getMonth() + 1)
     } else {
