@@ -288,7 +288,7 @@
     let channelUserKeys = document.createElement("select");
     channelUserKeys.setAttribute("name", "channelUserKeys");
     channelUserKeys.setAttribute("id", "channelUserKeys");
-    channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+    // channelUserKeys.setAttribute("onChange", "getUserKey(this)");
     for (let i = 0; i < userKeys.length; i++) {
       let channelUserKeyOption = document.createElement("option");
       channelUserKeyOption.setAttribute("value", userKeys[i]);
@@ -314,7 +314,7 @@
       let channelUserProfileKeys = document.createElement("select");
       channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
       channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
-      channelUserProfileKeys.setAttribute("onChange", "getUserProfileKey(this)");
+      // channelUserProfileKeys.setAttribute("onChange", "getUserProfileKey(this)");
       for (let i = 0; i < userProfileKeys.length; i++) {
         let channelUserProfileKeyOption = document.createElement("option");
         channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
@@ -345,7 +345,7 @@
     document.getElementById("getUserPropertyKeys").remove();
   }
 
-  // 프로퍼티 리스트 onChange()시
+  /* 프로퍼티 리스트 onChange()시
   function getUserKey(channelUserKey) {
     let value = channelUserKey.value;
     // 클리어 조건
@@ -354,9 +354,9 @@
     let value = channelUserProfileKey.value;
     // 클리어 조건
   }
+  */
 
-
-  /* 유저 업데이트
+  /* 유저 업데이트 */
   const userObject = {};
   function updateChannelProperty() {
     let userKey = document.getElementById("channelUserKeys").value;
@@ -364,12 +364,13 @@
     let userProfileKey = document.getElementById("channelUserProfileKeys").value;
     let userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
     
-    userObject = {
-      userKey = userKeyValue,
-      "profile": {
-        userProfileKey = userProfileKeyValue;
-      }
-    };
+    if (!userKeyValue) {
+      userObject[userKey] = userKeyValue;
+    } else {}
+    if (!userProfileKey && !userProfileKeyValue) {
+      userObject.profile[userProfilekKey] = userProfileKeyValue;
+    } else{}
+  };
 
     ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
       if (error) {
@@ -382,7 +383,7 @@
     // 스낵바 피드백
     snackbarPropertyUpdate();
   }
-  */
+  
 
   /* 참고 레퍼런스
   function submitApplication() {
