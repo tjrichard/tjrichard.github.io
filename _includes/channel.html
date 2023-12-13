@@ -413,7 +413,7 @@
     }
     if (!userProfileKey && !userProfileKeyValue) {
     } else {
-      userObject.profile[userProfilekKey] = userProfileKeyValue;
+      userObject.profile[userProfileKey] = userProfileKeyValue;
     }
 
     ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
