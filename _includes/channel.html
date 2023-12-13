@@ -358,18 +358,24 @@
 
   /* 유저 업데이트 */
   const userObject = {};
+  const userKey = "";
+  const userKeyValue = "";
+  const userProfileKey = "";
+  const userProfileKeyValue = "";
   function updateChannelProperty() {
-    const userKey = document.getElementById("channelUserKeys").value;
-    const userKeyValue = document.getElementById("channelUserKeyValue").value;
-    const userProfileKey = document.getElementById("channelUserProfileKeys").value;
-    const userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
+    userKey = document.getElementById("channelUserKeys").value;
+    userKeyValue = document.getElementById("channelUserKeyValue").value;
+    userProfileKey = document.getElementById("channelUserProfileKeys").value;
+    userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
     
     if (!userKeyValue) {
+    } else {
       userObject[userKey] = userKeyValue;
-    } else {}
+    }
     if (!userProfileKey && !userProfileKeyValue) {
+    } else {
       userObject.profile[userProfilekKey] = userProfileKeyValue;
-    } else{}
+    }
 
     ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
       if (error) {
