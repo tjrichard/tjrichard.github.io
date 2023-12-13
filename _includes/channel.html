@@ -288,13 +288,19 @@
     let channelUserKeys = document.createElement("select");
     channelUserKeys.setAttribute("name", "channelUserKeys");
     channelUserKeys.setAttribute("id", "channelUserKeys");
-    // channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+    channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+    let channelUserKeyOption = document.createElement("option");
     for (let i = 0; i < userKeys.length; i++) {
-      let channelUserKeyOption = document.createElement("option");
       channelUserKeyOption.setAttribute("value", userKeys[i]);
       channelUserKeyOption.innerText = userKeys[i];
       channelUserKeys.appendChild(channelUserKeyOption);
     }
+    // 커스텀 user.key 필드 추가
+    channelUserKeyOption = document.createElement("option");
+    channelUserKeyOption.setAttribute("value", "직접 입력");
+    channelUserKeyOption.innerText = "직접 입력";
+    channelUserKeys.appendChild(channelUserKeyOption);
+
     userProfileFormParent.append(channelUserKeys);
     // 값 input 추가
     let channelUserKeyValue = document.createElement("input");
@@ -306,29 +312,41 @@
 
   // user.profile 키 추가
   function getChannelUserProfileKeys() {
-    var userKeys = Object.keys(channelUser);
-    var userProfileFormParent = document.getElementById("propertyForm");
+    let userKeys = Object.keys(channelUser);
+    let userProfileFormParent = document.getElementById("propertyForm");
     if (channelUser.profile != null) {
       var userProfileKeys = Object.keys(channelUser.profile);
       // select 및 option 추가
       let channelUserProfileKeys = document.createElement("select");
       channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
       channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
-      // channelUserProfileKeys.setAttribute("onChange", "getUserProfileKey(this)");
+      channelUserProfileKeys.setAttribute("onChange", "getUserProfileKey(this)");
+      let channelUserProfileKeyOption = document.createElement("option");
       for (let i = 0; i < userProfileKeys.length; i++) {
-        let channelUserProfileKeyOption = document.createElement("option");
         channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
         channelUserProfileKeyOption.innerText = userProfileKeys[i];
         channelUserProfileKeys.appendChild(channelUserProfileKeyOption);
       }
+       // 커스텀 user.key 필드 추가
+      channelUserProfileKeyOption = document.createElement("option");
+      channelUserProfileKeyOption.setAttribute("value", "직접 입력");
+      channelUserProfileKeyOption.innerText = "직접 입력";
+      channelUserProfileKeys.appendChild(channelUserProfileKeyOption);
+      
       userProfileFormParent.append(channelUserProfileKeys);
     } else {
       var userProfileKeys = [];
-      let channelUserProfileKeys = document.createElement("input");
-      channelUserProfileKeys.setAttribute("type", "text");
-      channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
-      channelUserProfileKeys.setAttribute("placeholder", "profile.key를 입력하세요");
-      userProfileFormParent.append(channelUserProfileKeys);
+      // user.profile.key 직접 입력 옵션 추가
+      let channelUserProfileKeyOption = document.createElement("option");
+          channelUserProfileKeyOption.setAttribute("value", "직접 입력");
+          channelUserProfileKeyOption.innerText = "직접 입력";
+          channelUserProfileKeys.appendChild(channelUserProfileKeyOption);
+      // 직접 입력에 따른 user.profile.key 직접 입력 input 추가
+      let channelUserProfileKeyCustom = document.createElement("input");
+      channelUserProfileKeyCustom.setAttribute("type", "text");
+      channelUserProfileKeyCustom.setAttribute("id", "channelUserProfileKeyCustom");
+      channelUserProfileKeyCustom.setAttribute("placeholder", "profile.key를 입력하세요");
+      channelUserProfileKeys.append(channelUserProfileKeyCustom);
     }
     // 값 input 추가
     let channelUserProfileKeyValue = document.createElement("input");
@@ -345,16 +363,37 @@
     document.getElementById("getUserPropertyKeys").remove();
   }
 
-  /* 프로퍼티 리스트 onChange()시
+  /* 프로퍼티 리스트 onChange()시 */
   function getUserKey(channelUserKey) {
     let value = channelUserKey.value;
-    // 클리어 조건
+    if (value == "직접 입력") {
+      // 직접 입력일 경우 input 추가
+      let channelUserKeys = document.getElementById("channelUserKeys");
+      let channelUserKeyCustom = document.createElement("input");
+          channelUserKeyCustom.setAttribute("type", "text");
+          channelUserKeyCustom.setAttribute("id", "channelUserKeyCustom");
+          channelUserKeyCustom.setAttribute("placeholder", "key를 입력하세요");
+          channelUserKeys.append(channelUserKeyCustom);
+    } else {
+      // 직접 입력이 아닐 경우 직접 입력 input 제거
+      document.getElementById("channelUserKeyCustom").remove();
+    }
   }
   function getUserProfileKey(channelUserProfileKey) {
     let value = channelUserProfileKey.value;
-    // 클리어 조건
+    if (value == "직접 입력") {
+      // 직접 입력일 경우 input 추가
+      let channelUserProfileKeys = document.getElementById("channelUserProfileKeys");
+      let channelUserProfileKeyCustom = document.createElement("input");
+      channelUserProfileKeyCustom.setAttribute("type", "text");
+      channelUserProfileKeyCustom.setAttribute("id", "channelUserProfileKeyCustom");
+      channelUserProfileKeyCustom.setAttribute("placeholder", "profile.key를 입력하세요");
+      channelUserProfileKeys.append(channelUserProfileKeyCustom);
+    } else {
+      // 직접 입력이 아닐 경우 직접 입력 input 제거
+      document.getElementById("channelUserProfileKeyCustom").remove();
+    }
   }
-  */
 
   /* 유저 업데이트 */
   let userObject = {};
