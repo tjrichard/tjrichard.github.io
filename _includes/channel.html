@@ -277,13 +277,13 @@
 
   // user 키 추가
   function getChannelUserKeys() {
-    let userKeys = Object.keys(channelUser);
+    var userKeys = Object.keys(channelUser);
+    var userProfileFormParent = document.getElementById("propertyForm");
     if (channelUser.profile != null) {
       var userProfileKeys = Object.keys(channelUser.profile);
     } else {
       var userProfileKeys = [];
     }
-    let userProfileFormParent = document.getElementById("propertyForm");
     let channelUserKeys = document.createElement("select");
         channelUserKeys.setAttribute("name", "channelUserKeys");
         channelUserKeys.setAttribute("id", "channelUserKeys");
@@ -307,13 +307,14 @@
 
   // user.profile 키 추가
   function getChannelUserProfileKeys() {
+    var userKeys = Object.keys(channelUser);
+    var userProfileFormParent = document.getElementById("propertyForm");
     let userKeys = Object.keys(channelUser);
     if (channelUser.profile != null) {
       var userProfileKeys = Object.keys(channelUser.profile);
     } else {
       var userProfileKeys = [];
     }
-    let userProfileFormParent = document.getElementById("propertyForm");
     let channelUserProfileKeys = document.createElement("select");
         channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
         channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
