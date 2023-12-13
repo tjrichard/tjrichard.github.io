@@ -286,10 +286,10 @@
     }
     // select 및 option 추가
     let channelUserKeys = document.createElement("select");
-        channelUserKeys.setAttribute("name", "channelUserKeys");
-        channelUserKeys.setAttribute("id", "channelUserKeys");
-        channelUserKeys.setAttribute("onChange", "getUserKey(this)");
-    for (i = 0; i < userKeys.length; i++) {
+    channelUserKeys.setAttribute("name", "channelUserKeys");
+    channelUserKeys.setAttribute("id", "channelUserKeys");
+    channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+    for (let i = 0; i < userKeys.length; i++) {
       let channelUserKeyOption = document.createElement("option");
       channelUserKeyOption.setAttribute("value", userKeys[i]);
       channelUserKeyOption.innerText = userKeys[i];
@@ -298,9 +298,9 @@
     userProfileFormParent.append(channelUserKeys);
     // 값 input 추가
     let channelUserKeyValue = document.createElement("input");
-        channelUserKeyValue.setAttribute("type", "text");
-        channelUserKeyValue.setAttribute("id", "channelUserKeyValue");
-        channelUserKeyValue.setAttribute("placeholder", "값을 입력하세요");
+    channelUserKeyValue.setAttribute("type", "text");
+    channelUserKeyValue.setAttribute("id", "channelUserKeyValue");
+    channelUserKeyValue.setAttribute("placeholder", "값을 입력하세요");
     userProfileFormParent.append(channelUserKeyValue);
   }
 
@@ -312,29 +312,29 @@
       var userProfileKeys = Object.keys(channelUser.profile);
       // select 및 option 추가
       let channelUserProfileKeys = document.createElement("select");
-          channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
-          channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
-          channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
-      for (i = 0; i < userProfileKeys.length; i++) {
+      channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
+      channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
+      channelUserProfileKeys.setAttribute("onChange", "getUserProfileKey(this)");
+      for (let i = 0; i < userProfileKeys.length; i++) {
         let channelUserProfileKeyOption = document.createElement("option");
         channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
         channelUserProfileKeyOption.innerText = userProfileKeys[i];
-        channelUserProfileKeys.appendChild(channelUserKeyOption);
+        channelUserProfileKeys.appendChild(channelUserProfileKeyOption);
       }
       userProfileFormParent.append(channelUserProfileKeys);
     } else {
       var userProfileKeys = [];
-      let channelUserProfileKeyValue = document.createElement("input");
-          channelUserProfileKeyValue.setAttribute("type", "text");
-          channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeys");
-          channelUserProfileKeyValue.setAttribute("placeholder", "profile.key를 입력하세요");
+      let channelUserProfileKeys = document.createElement("input");
+      channelUserProfileKeys.setAttribute("type", "text");
+      channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
+      channelUserProfileKeys.setAttribute("placeholder", "profile.key를 입력하세요");
       userProfileFormParent.append(channelUserProfileKeys);
     }
     // 값 input 추가
     let channelUserProfileKeyValue = document.createElement("input");
-        channelUserProfileKeyValue.setAttribute("type", "text");
-        channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeyValue");
-        channelUserProfileKeyValue.setAttribute("placeholder", "값을 입력하세요");
+    channelUserProfileKeyValue.setAttribute("type", "text");
+    channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeyValue");
+    channelUserProfileKeyValue.setAttribute("placeholder", "값을 입력하세요");
     userProfileFormParent.append(channelUserProfileKeyValue);
   }
 
@@ -342,7 +342,7 @@
   function getUserPropertyKeys() {
     getChannelUserKeys();
     getChannelUserProfileKeys();
-    document.getElementById("getUserPropertyKeys").remove()
+    document.getElementById("getUserPropertyKeys").remove();
   }
 
   // 프로퍼티 리스트 onChange()시
