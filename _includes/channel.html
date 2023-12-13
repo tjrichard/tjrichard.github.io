@@ -409,14 +409,13 @@
     userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
     
     if (!userKeyValue) {
+    // user key 의 값이 비어있을 때 사용하지 않음
     } else {
       userObject[userKey] = userKeyValue;
     }
-    if (!userProfileKey && !userProfileKeyValue) {
+    if (!userProfileKeyValue) {
+    // user profile 값이 비어있을 때 사용하지 않음
     } else {
-      if (!userObject.profile) {
-        userObject.profile = {};
-      }
       userObject.profile[userProfileKey] = userProfileKeyValue;
     }
 
