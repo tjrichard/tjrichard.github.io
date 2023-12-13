@@ -370,7 +370,6 @@
     if (!userProfileKey && !userProfileKeyValue) {
       userObject.profile[userProfilekKey] = userProfileKeyValue;
     } else{}
-  };
 
     ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
       if (error) {
@@ -382,7 +381,7 @@
     
     // 스낵바 피드백
     snackbarPropertyUpdate();
-  }
+  };
   
 
   /* 참고 레퍼런스
