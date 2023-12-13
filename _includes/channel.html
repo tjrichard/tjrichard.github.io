@@ -288,15 +288,13 @@
         channelUserKeys.setAttribute("name", "channelUserKeys");
         channelUserKeys.setAttribute("id", "channelUserKeys");
         channelUserKeys.setAttribute("onChange", "getUserKey(this)");
-    userProfileFormParent.append(channelUserKeys);
-    function appendUserKeys() {
         for (i = 0; i < userKeys.length; i++) {
           let channelUserKeyOption = document.createElement("option");
-              channelUserKeyOption.setAttribute("value", userKeys[i]);
-              channelUserKeyOption.innerText = userKeys[i];
+          channelUserKeyOption.setAttribute("value", userKeys[i]);
+          channelUserKeyOption.innerText = userKeys[i];
           channelUserKeys.appendChild(channelUserKeyOption);
         }
-      }
+        userProfileFormParent.append(channelUserKeys);
     // 값 input 추가
     let channelUserKeyValue = document.createElement("input");
         channelUserKeyValue.setAttribute("type", "text");
@@ -319,15 +317,13 @@
         channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
         channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
         channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
+    for (i = 0; i < userProfileKeys.length; i++) {
+      let channelUserProfileKeyOption = document.createElement("option");
+      channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
+      channelUserProfileKeyOption.innerText = userProfileKeys[i];
+      channelUserProfileKeys.appendChild(channelUserKeyOption);
+    }
     userProfileFormParent.append(channelUserProfileKeys);
-    function appendUserProfileKeys() {
-        for (i = 0; i < userProfileKeys.length; i++) {
-          let channelUserProfileKeyOption = document.createElement("option");
-              channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
-              channelUserProfileKeyOption.innerText = userProfileKeys[i];
-          channelUserProfileKeys.appendChild(channelUserKeyOption);
-        }
-      }
     // 값 input 추가
     let channelUserProfileKeyValue = document.createElement("input");
         channelUserProfileKeyValue.setAttribute("type", "text");
