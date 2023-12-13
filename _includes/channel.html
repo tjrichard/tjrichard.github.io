@@ -284,17 +284,18 @@
     } else {
       var userProfileKeys = [];
     }
+    // select 및 option 추가
     let channelUserKeys = document.createElement("select");
         channelUserKeys.setAttribute("name", "channelUserKeys");
         channelUserKeys.setAttribute("id", "channelUserKeys");
         channelUserKeys.setAttribute("onChange", "getUserKey(this)");
-        for (i = 0; i < userKeys.length; i++) {
-          let channelUserKeyOption = document.createElement("option");
-          channelUserKeyOption.setAttribute("value", userKeys[i]);
-          channelUserKeyOption.innerText = userKeys[i];
-          channelUserKeys.appendChild(channelUserKeyOption);
-        }
-        userProfileFormParent.append(channelUserKeys);
+    for (i = 0; i < userKeys.length; i++) {
+      let channelUserKeyOption = document.createElement("option");
+      channelUserKeyOption.setAttribute("value", userKeys[i]);
+      channelUserKeyOption.innerText = userKeys[i];
+      channelUserKeys.appendChild(channelUserKeyOption);
+    }
+    userProfileFormParent.append(channelUserKeys);
     // 값 input 추가
     let channelUserKeyValue = document.createElement("input");
         channelUserKeyValue.setAttribute("type", "text");
@@ -307,23 +308,28 @@
   function getChannelUserProfileKeys() {
     var userKeys = Object.keys(channelUser);
     var userProfileFormParent = document.getElementById("propertyForm");
-    let userKeys = Object.keys(channelUser);
     if (channelUser.profile != null) {
       var userProfileKeys = Object.keys(channelUser.profile);
+      // select 및 option 추가
+      let channelUserProfileKeys = document.createElement("select");
+          channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
+          channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
+          channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
+      for (i = 0; i < userProfileKeys.length; i++) {
+        let channelUserProfileKeyOption = document.createElement("option");
+        channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
+        channelUserProfileKeyOption.innerText = userProfileKeys[i];
+        channelUserProfileKeys.appendChild(channelUserKeyOption);
+      }
+      userProfileFormParent.append(channelUserProfileKeys);
     } else {
       var userProfileKeys = [];
+      let channelUserProfileKeyValue = document.createElement("input");
+          channelUserProfileKeyValue.setAttribute("type", "text");
+          channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeys");
+          channelUserProfileKeyValue.setAttribute("placeholder", "profile.key를 입력하세요");
+      userProfileFormParent.append(channelUserProfileKeys);
     }
-    let channelUserProfileKeys = document.createElement("select");
-        channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
-        channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
-        channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
-    for (i = 0; i < userProfileKeys.length; i++) {
-      let channelUserProfileKeyOption = document.createElement("option");
-      channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
-      channelUserProfileKeyOption.innerText = userProfileKeys[i];
-      channelUserProfileKeys.appendChild(channelUserKeyOption);
-    }
-    userProfileFormParent.append(channelUserProfileKeys);
     // 값 input 추가
     let channelUserProfileKeyValue = document.createElement("input");
         channelUserProfileKeyValue.setAttribute("type", "text");
