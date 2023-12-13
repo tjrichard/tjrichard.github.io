@@ -359,10 +359,10 @@
   /* 유저 업데이트 */
   const userObject = {};
   function updateChannelProperty() {
-    let userKey = document.getElementById("channelUserKeys").value;
-    let userKeyValue = document.getElementById("channelUserKeyValue").value;
-    let userProfileKey = document.getElementById("channelUserProfileKeys").value;
-    let userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
+    const userKey = document.getElementById("channelUserKeys").value;
+    const userKeyValue = document.getElementById("channelUserKeyValue").value;
+    const userProfileKey = document.getElementById("channelUserProfileKeys").value;
+    const userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
     
     if (!userKeyValue) {
       userObject[userKey] = userKeyValue;
