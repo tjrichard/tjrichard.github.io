@@ -274,161 +274,162 @@
   }
 
 
-/* 프로퍼티 발생 */
+  /* 프로퍼티 발생 */
 
-// user 키 추가
-function getChannelUserKeys() {
-  let userKeys = Object.keys(channelUser);
-  if (channelUser.profile != null) {
-    var userProfileKeys = Object.keys(channelUser.profile);
-  } else {
-    var userProfileKeys = []]
+  // user 키 추가
+  function getChannelUserKeys() {
+    let userKeys = Object.keys(channelUser);
+    if (channelUser.profile != null) {
+      var userProfileKeys = Object.keys(channelUser.profile);
+    } else {
+      var userProfileKeys = []]
+    }
+    let userProfileFormParent = document.getElementById("propertyForm");
+    let channelUserKeys = document.createElement("select");
+        channelUserKeys.setAttribute("name", "channelUserKeys");
+        channelUserKeys.setAttribute("id", "channelUserKeys");
+        channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+    userProfileFormParent.append(channelUserKeys);
+    function appendUserKeys() {
+        for (i = 0; i < userKeys.length; i++) {
+          let channelUserKeyOption = document.createElement("option");
+              channelUserKeyOption.setAttribute("value", userKeys[i]);
+              channelUserKeyOption.innerText = userKeys[i];
+          channelUserKeys.appendChild(channelUserKeyOption);
+        }
+      }
+    // 값 input 추가
+    let channelUserKeyValue = document.createElement("input");
+        channelUserKeyValue.setAttribute("type", "text");
+        channelUserKeyValue.setAttribute("id", "channelUserKeyValue");
+        channelUserKeyValue.setAttribute("placeholder", "값을 입력하세요");
+    userProfileFormParent.append(channelUserKeyValue);
   }
-  let userProfileFormParent = document.getElementById("propertyForm");
-  let channelUserKeys = document.createElement("select");
-      channelUserKeys.setAttribute("name", "channelUserKeys");
-      channelUserKeys.setAttribute("id", "channelUserKeys");
-      channelUserKeys.setAttribute("onChange", "getUserKey(this)");
-  userProfileFormParent.append(channelUserKeys);
-  function appendUserKeys() {
-      for (i = 0; i < userKeys.length; i++) {
-        let channelUserKeyOption = document.createElement("option");
-            channelUserKeyOption.setAttribute("value", userKeys[i]);
-            channelUserKeyOption.innerText = userKeys[i];
-        channelUserKeys.appendChild(channelUserKeyOption);
+
+  // user.profile 키 추가
+  function getChannelUserProfileKeys() {
+    let userKeys = Object.keys(channelUser);
+    if (channelUser.profile != null) {
+      var userProfileKeys = Object.keys(channelUser.profile);
+    } else {
+      var userProfileKeys = []]
+    }  let userProfileFormParent = document.getElementById("propertyForm");
+    let channelUserProfileKeys = document.createElement("select");
+        channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
+        channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
+        channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
+    userProfileFormParent.append(channelUserProfileKeys);
+    function appendUserProfileKeys() {
+        for (i = 0; i < userProfileKeys.length; i++) {
+          let channelUserProfileKeyOption = document.createElement("option");
+              channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
+              channelUserProfileKeyOption.innerText = userProfileKeys[i];
+          channelUserProfileKeys.appendChild(channelUserKeyOption);
+        }
       }
-    }
-  // 값 input 추가
-  let channelUserKeyValue = document.createElement("input");
-      channelUserKeyValue.setAttribute("type", "text");
-      channelUserKeyValue.setAttribute("id", "channelUserKeyValue");
-      channelUserKeyValue.setAttribute("placeholder", "값을 입력하세요");
-  userProfileFormParent.append(channelUserKeyValue);
-}
+    // 값 input 추가
+    let channelUserProfileKeyValue = document.createElement("input");
+        channelUserProfileKeyValue.setAttribute("type", "text");
+        channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeyValue");
+        channelUserProfileKeyValue.setAttribute("placeholder", "값을 입력하세요");
+    userProfileFormParent.append(channelUserProfileKeyValue);
+  }
 
-// user.profile 키 추가
-function getChannelUserProfileKeys() {
-  let userKeys = Object.keys(channelUser);
-  if (channelUser.profile != null) {
-    var userProfileKeys = Object.keys(channelUser.profile);
-  } else {
-    var userProfileKeys = []]
-  }  let userProfileFormParent = document.getElementById("propertyForm");
-  let channelUserProfileKeys = document.createElement("select");
-      channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
-      channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
-      channelUserProfileKeys.setAttribute("onChange", "getUserPropertyKey(this)");
-  userProfileFormParent.append(channelUserProfileKeys);
-  function appendUserProfileKeys() {
-      for (i = 0; i < userProfileKeys.length; i++) {
-        let channelUserProfileKeyOption = document.createElement("option");
-            channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
-            channelUserProfileKeyOption.innerText = userProfileKeys[i];
-        channelUserProfileKeys.appendChild(channelUserKeyOption);
+  // 최초 프로퍼티 불러오기
+  function getUserPropertyKeys() {
+    getChannelUserKeys();
+    getChannelUserProfileKeys();
+    document.getElementById("getUserPropertyKeys").remove()
+  }
+
+  // 프로퍼티 리스트 onChange()시
+  function getUserKey(channelUserKey) {
+    let value = channelUserKey.value;
+    // 클리어 조건
+  }
+  function getUserProfileKey(channelUserProfileKey) {
+    let value = channelUserProfileKey.value;
+    // 클리어 조건
+  }
+
+
+  /* 유저 업데이트
+  const userObject = {};
+  function updateChannelProperty() {
+    let userKey = document.getElementById("channelUserKeys").value;
+    let userKeyValue = document.getElementById("channelUserKeyValue").value;
+    let userProfileKey = document.getElementById("channelUserProfileKeys").value;
+    let userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
+    
+    userObject = {
+      userKey = userKeyValue,
+      "profile": {
+        userProfileKey = userProfileKeyValue;
       }
-    }
-  // 값 input 추가
-  let channelUserProfileKeyValue = document.createElement("input");
-      channelUserProfileKeyValue.setAttribute("type", "text");
-      channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeyValue");
-      channelUserProfileKeyValue.setAttribute("placeholder", "값을 입력하세요");
-  userProfileFormParent.append(channelUserProfileKeyValue);
-}
+    };
 
-// 최초 프로퍼티 불러오기
-function getUserPropertyKeys() {
-  getChannelUserKeys();
-  getChannelUserProfileKeys();
-  document.getElementById("getUserPropertyKeys").remove()
-}
+    ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
+      if (error) {
+        console.error(error);
+      } else {
+        console.log('updateUser success', user);
+      }
+    });
+    
+    // 스낵바 피드백
+    snackbarPropertyUpdate();
+  }
+  */
 
-// 프로퍼티 리스트 onChange()시
-function getUserKey(channelUserKey) {
-  let value = channelUserKey.value;
-  // 클리어 조건
-}
-function getUserProfileKey(channelUserProfileKey) {
-  let value = channelUserProfileKey.value;
-  // 클리어 조건
-}
+  /* 참고 레퍼런스
+  function submitApplication() {
+      const inputName = document.getElementById("event-1").value;
+      const inputImage = document.getElementById("event-2").files[0];
+      const imageUrl = window.URL.createObjectURL(inputImage);
+      const profileImg = new FormData();
+            profileImg.append("profileImg", inputImage);
+      const inputCompany = document.getElementById("event-3").value;
+      const inputProduct = document.getElementById("event-4").value;
+      const inputRole = document.getElementById("event-5").value;
+      const inputIntro = document.getElementById("event-6").value;
+      const inputLink1 = document.getElementById("event-7").value;
+      const inputLink2 = document.getElementById("event-8").value;
+      const inputLink3 = document.getElementById("event-9").value;
+      const inputContact = document.getElementById("event-10").value;
+      const applyForManager = document.getElementById("event-11-yes").checked;
+      const inputApplication = document.getElementById("event-11-1").value;
+      const inputComment = document.getElementById("event-12").value;
+      const isPublic = document.getElementById("event-13-yes").checked;
+      const personalInformation = document.getElementById("event-14-yes").checked;
+      const dateTime = new Date();
+      let fullDate = dateTime.toISOString().slice(0,10);
+      let fullTime = dateTime.toISOString().slice(11,19);
+      const currentDatetime = fullDate + " " + fullTime;
 
-
-// 유저 업데이트
-// const userObject = {};
-// function updateChannelProperty() {
-//   let userKey = document.getElementById("channelUserKeys").value;
-//   let userKeyValue = document.getElementById("channelUserKeyValue").value;
-//   let userProfileKey = document.getElementById("channelUserProfileKeys").value;
-//   let userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
-  
-//   userObject = {
-//     userKey = userKeyValue,
-//     "profile": {
-//        userProfileKey = userProfileKeyValue;
-//     }
-//   };
-
-//   ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
-//     if (error) {
-//       console.error(error);
-//     } else {
-//       console.log('updateUser success', user);
-//     }
-//   });
-  
-//   // 스낵바 피드백
-//   snackbarPropertyUpdate();
-// }
-
-
-// 참고 레퍼런스
-// function submitApplication() {
-//     const inputName = document.getElementById("event-1").value;
-    // const inputImage = document.getElementById("event-2").files[0];
-    // const imageUrl = window.URL.createObjectURL(inputImage);
-    // const profileImg = new FormData();
-    //       profileImg.append("profileImg", inputImage);
-    // const inputCompany = document.getElementById("event-3").value;
-    // const inputProduct = document.getElementById("event-4").value;
-    // const inputRole = document.getElementById("event-5").value;
-    // const inputIntro = document.getElementById("event-6").value;
-    // const inputLink1 = document.getElementById("event-7").value;
-    // const inputLink2 = document.getElementById("event-8").value;
-    // const inputLink3 = document.getElementById("event-9").value;
-    // const inputContact = document.getElementById("event-10").value;
-    // const applyForManager = document.getElementById("event-11-yes").checked;
-    // const inputApplication = document.getElementById("event-11-1").value;
-    // const inputComment = document.getElementById("event-12").value;
-    // const isPublic = document.getElementById("event-13-yes").checked;
-    // const personalInformation = document.getElementById("event-14-yes").checked;
-    // const dateTime = new Date();
-    // let fullDate = dateTime.toISOString().slice(0,10);
-    // let fullTime = dateTime.toISOString().slice(11,19);
-    // const currentDatetime = fullDate + " " + fullTime;
-
-    // var record = {
-    //     "records": [
-    //         {
-    //             "fields": {
-    //                 "Name": inputName,
-    //                 "Profile_Picture": imageUrl,
-    //                 "Company": inputCompany,
-    //                 "Product": inputProduct,
-    //                 "Role": inputRole,
-    //                 "Intro": inputIntro,
-    //                 "Link1": inputLink1,
-    //                 "Link2": inputLink2,
-    //                 "Link3": inputLink3,
-    //                 "Contact": inputContact,
-    //                 "Apply_for_Manager": applyForManager,
-    //                 "Reason_for_Application": inputApplication,
-    //                 "Comments": inputComment,
-    //                 "Public": isPublic,
-    //                 "Personal_Information": personalInformation,
-    //                 "Enrolled_Date": currentDatetime
-    //             }
-    //         }
-    //     ]
-    // };
-// };
+      var record = {
+          "records": [
+              {
+                  "fields": {
+                      "Name": inputName,
+                      "Profile_Picture": imageUrl,
+                      "Company": inputCompany,
+                      "Product": inputProduct,
+                      "Role": inputRole,
+                      "Intro": inputIntro,
+                      "Link1": inputLink1,
+                      "Link2": inputLink2,
+                      "Link3": inputLink3,
+                      "Contact": inputContact,
+                      "Apply_for_Manager": applyForManager,
+                      "Reason_for_Application": inputApplication,
+                      "Comments": inputComment,
+                      "Public": isPublic,
+                      "Personal_Information": personalInformation,
+                      "Enrolled_Date": currentDatetime
+                  }
+              }
+          ]
+      };
+    };
+  */
 </script>
