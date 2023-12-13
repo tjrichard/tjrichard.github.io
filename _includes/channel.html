@@ -402,6 +402,7 @@
   let userProfileKey = "";
   let userProfileKeyValue = "";
   function updateChannelProperty() {
+    userObject = {}; // userObject 초기화
     userKey = document.getElementById("channelUserKeys").value;
     userKeyValue = document.getElementById("channelUserKeyValue").value;
     userProfileKey = document.getElementById("channelUserProfileKeys").value;
@@ -413,6 +414,9 @@
     }
     if (!userProfileKey && !userProfileKeyValue) {
     } else {
+      if (!userObject.profile) {
+        userObject.profile = {};
+      }
       userObject.profile[userProfileKey] = userProfileKeyValue;
     }
 
