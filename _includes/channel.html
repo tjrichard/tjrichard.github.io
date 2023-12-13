@@ -273,7 +273,6 @@
     }
   }
 
-
   /* 프로퍼티 발생 */
 
   // user 키 추가
@@ -282,7 +281,7 @@
     if (channelUser.profile != null) {
       var userProfileKeys = Object.keys(channelUser.profile);
     } else {
-      var userProfileKeys = []]
+      var userProfileKeys = [];
     }
     let userProfileFormParent = document.getElementById("propertyForm");
     let channelUserKeys = document.createElement("select");
@@ -312,8 +311,9 @@
     if (channelUser.profile != null) {
       var userProfileKeys = Object.keys(channelUser.profile);
     } else {
-      var userProfileKeys = []]
-    }  let userProfileFormParent = document.getElementById("propertyForm");
+      var userProfileKeys = [];
+    }
+    let userProfileFormParent = document.getElementById("propertyForm");
     let channelUserProfileKeys = document.createElement("select");
         channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
         channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
