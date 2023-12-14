@@ -277,10 +277,10 @@
 
   // user 키 추가
   function getChannelUserKeys() {
-    var userKeys = Object.keys(channelUser);
+    var userKeys = Object.keys(channelUser).sort();
     var userProfileFormParent = document.getElementById("propertyForm");
     if (channelUser.profile != null) {
-      var userProfileKeys = Object.keys(channelUser.profile);
+      var userProfileKeys = Object.keys(channelUser.profile).sort();
     } else {
       var userProfileKeys = [];
     }
@@ -321,10 +321,10 @@
 
   // user.profile 키 추가
   function getChannelUserProfileKeys() {
-    let userKeys = Object.keys(channelUser);
+    let userKeys = Object.keys(channelUser).sort();
     let userProfileFormParent = document.getElementById("propertyForm");
     if (channelUser.profile != null) {
-      var userProfileKeys = Object.keys(channelUser.profile);
+      var userProfileKeys = Object.keys(channelUser.profile).sort();
       // select 및 option 추가
       let channelUserProfileKeys = document.createElement("select");
       channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
