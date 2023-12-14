@@ -205,10 +205,15 @@
     setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
   }
 
-  function snackbarPropertyUpdate() {
-    let propertyName = document.getElementById("channelUserProfileKeys").value;
+  function snackbarPropertyUpdate(snackbar_x, snackbar_y) {
+    let updatedProperties = "";
+    if (snackbar_x && snackbar_y) {
+      updatedProperties = snackbar_x + ", " + snackbar_y;
+    } else {
+      updatedProperties = snackbar_x || snackbar_y;
+    }
     let snackbar = document.getElementById("snackbar-top");
-    snackbar.innerText = propertyName + ' 프로퍼티가 업데이트되었습니다';
+    snackbar.innerText = updatedProperties + ' 프로퍼티가 업데이트되었습니다';
     snackbar.className = "show";
     setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
   }
@@ -410,37 +415,44 @@
   /* 유저 업데이트 */
   let userObject = {};
   let userKey = "";
+  let userKeyCustom = "";
   let userKeyValue = "";
   let userProfileKey = "";
+  let userProfileKeyCustom = "";
   let userProfileKeyValue = "";
+
   function updateChannelProperty() {
     userObject = {}; // userObject 초기화
     userKey = document.getElementById("channelUserKeys").value;
+    userKeyCustom = document.getElementById("channelUserKeyCustom").value;
     userKeyValue = document.getElementById("channelUserKeyValue").value;
     userProfileKey = document.getElementById("channelUserProfileKeys").value;
     userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
+    userProfileKeyCustom = document.getElementById("channelUserProfileKeyCustom").value;
     
     if (!userKeyValue) {
       // user key 의 값이 비어있을 때 사용하지 않음
     } else {
       if (userKey == "직접 입력"){
-        userKey = document.getElementById("channelUserKeyCustom").value;
-        userObject[userKey] = userKeyValue;
+        userObject[userKeyCustom] = userKeyValue;
+        let snackbar_x = userKeyCustom;
       } else {
         userObject[userKey] = userKeyValue;
+        let snackbar_x = userKey;
       }
     }
-    if (!userProfileKeyValue) {
-    // user profile 값이 비어있을 때 사용하지 않음
+    if (!userProfileKeyCustom || !userProfileKeyValue) {
+    // user profile key 값 혹은 value가 비어있을 때 사용하지 않음
     } else {
       if (!userObject.profile) {
         userObject.profile = {};
       }
       if (userProfileKey == "직접 입력"){
-        userProfileKeyCustom = document.getElementById("channelUserProfileKeyCustom").value;
         userObject.profile[userProfileKeyCustom] = userProfileKeyValue;
+        let snackbar_y = userProfileKeyCustom;
       } else {
       userObject.profile[userProfileKey] = userProfileKeyValue;
+      let snackbar_y = userProfileKey;
       }
     }
     ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
@@ -452,7 +464,7 @@
     });
     
     // 스낵바 피드백
-    snackbarPropertyUpdate();
+    snackbarPropertyUpdate(snackbar_x, snackbar_y);
   };
   
 
