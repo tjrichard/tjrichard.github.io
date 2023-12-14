@@ -434,6 +434,7 @@
     
     if (!userKeyValue) {
       // user key 의 값이 비어있을 때 사용하지 않음
+      snackbar_x = "";
     } else {
       if (userKey == "직접 입력"){
         userObject[userKeyCustom] = userKeyValue;
@@ -445,6 +446,7 @@
     }
     if (!userProfileKeyCustom || !userProfileKeyValue) {
     // user profile key 값 혹은 value가 비어있을 때 사용하지 않음
+    snackbar_y = "";
     } else {
       if (!userObject.profile) {
         userObject.profile = {};
