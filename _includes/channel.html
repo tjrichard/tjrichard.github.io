@@ -429,9 +429,12 @@
     if (!userProfileKeyValue) {
     // user profile 값이 비어있을 때 사용하지 않음
     } else {
+      if (!userObject.profile) {
+        userObject.profile = {};
+      }
       if (userProfileKey == "직접 입력"){
-        userProfileKey = document.getElementById("channelUserProfileKeyCustom").value;
-        userObject.profile[userProfileKey] = userProfileKeyValue;
+        userProfileKeyCustom = document.getElementById("channelUserProfileKeyCustom").value;
+        userObject.profile[userProfileKeyCustom] = userProfileKeyValue;
       } else {
       userObject.profile[userProfileKey] = userProfileKeyValue;
       }
