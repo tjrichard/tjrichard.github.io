@@ -205,12 +205,12 @@
     setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
   }
 
-  function snackbarPropertyUpdate(snackbar_x, snackbar_y) {
+  function snackbarPropertyUpdate(x, y) {
     let updatedProperties = "";
-    if (snackbar_x && snackbar_y) {
-      updatedProperties = snackbar_x + ", " + snackbar_y;
+    if (x && y) {
+      updatedProperties = x + ", " + y;
     } else {
-      updatedProperties = snackbar_x || snackbar_y;
+      updatedProperties = x || y;
     }
     let snackbar = document.getElementById("snackbar-top");
     snackbar.innerText = updatedProperties + ' 프로퍼티가 업데이트되었습니다';
@@ -420,6 +420,8 @@
   let userProfileKey = "";
   let userProfileKeyCustom = "";
   let userProfileKeyValue = "";
+  let snackbar_x = "";
+  let snackbar_y = "";
 
   function updateChannelProperty() {
     userObject = {}; // userObject 초기화
@@ -435,10 +437,10 @@
     } else {
       if (userKey == "직접 입력"){
         userObject[userKeyCustom] = userKeyValue;
-        let snackbar_x = userKeyCustom;
+        snackbar_x = userKeyCustom;
       } else {
         userObject[userKey] = userKeyValue;
-        let snackbar_x = userKey;
+        snackbar_x = userKey;
       }
     }
     if (!userProfileKeyCustom || !userProfileKeyValue) {
@@ -449,10 +451,10 @@
       }
       if (userProfileKey == "직접 입력"){
         userObject.profile[userProfileKeyCustom] = userProfileKeyValue;
-        let snackbar_y = userProfileKeyCustom;
+        snackbar_y = userProfileKeyCustom;
       } else {
       userObject.profile[userProfileKey] = userProfileKeyValue;
-      let snackbar_y = userProfileKey;
+      snackbar_y = userProfileKey;
       }
     }
     ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
