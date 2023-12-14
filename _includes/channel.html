@@ -309,14 +309,18 @@
         directInputField.setAttribute("id", "channelUserKeyCustom");
         directInputField.setAttribute("placeholder", "key를 입력하세요");
         directInputField.style.display = "none"
-        userProfileFormParent.append(directInputField);
+      userProfileFormParent.append(directInputField);
 
     // 값 input 추가
     let channelUserKeyValue = document.createElement("input");
         channelUserKeyValue.setAttribute("type", "text");
         channelUserKeyValue.setAttribute("id", "channelUserKeyValue");
         channelUserKeyValue.setAttribute("placeholder", "값을 입력하세요");
-        userProfileFormParent.append(channelUserKeyValue);
+      userProfileFormParent.append(channelUserKeyValue);
+    // 하단에 구분자 추가
+    let border = document.createElement("hr");
+        border.style.margin = "6px 0";
+    userProfileFormParent.append(border);
   }
 
   // user.profile 키 추가
