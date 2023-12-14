@@ -434,8 +434,8 @@
         userObject.profile[userProfileKey] = userProfileKeyValue;
       } else {
       userObject.profile[userProfileKey] = userProfileKeyValue;
+      }
     }
-
     ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
       if (error) {
         console.error(error);
