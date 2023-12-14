@@ -417,13 +417,22 @@
     userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
     
     if (!userKeyValue) {
-    // user key 의 값이 비어있을 때 사용하지 않음
+      // user key 의 값이 비어있을 때 사용하지 않음
     } else {
-      userObject[userKey] = userKeyValue;
+      if (userKey == "직접 입력"){
+        userKey = document.getElementById("channelUserKeyCustom").value;
+        userObject[userKey] = userKeyValue;
+      } else {
+        userObject[userKey] = userKeyValue;
+      }
     }
     if (!userProfileKeyValue) {
     // user profile 값이 비어있을 때 사용하지 않음
     } else {
+      if (userProfileKey == "직접 입력"){
+        userProfileKey = document.getElementById("channelUserProfileKeyCustom").value;
+        userObject.profile[userProfileKey] = userProfileKeyValue;
+      } else {
       userObject.profile[userProfileKey] = userProfileKeyValue;
     }
 
