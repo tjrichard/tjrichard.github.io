@@ -15,12 +15,12 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
 <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js"
   integrity="sha384-kYPsUbBPlktXsY6/oNHSUDZoTX6+YI51f63jCPEIPFP09ttByAdxd2mEjKuhdqn4" crossorigin="anonymous"></script>
 <script>
-  Kakao.init('389a7ddbc92ba6a6cda26695c6492357'); // 사용하려는 앱의 JavaScript 키 입력
+  Kakao.init('3025ced29db6d500d677d1c8afa22558'); // 사용하려는 앱의 JavaScript 키 입력
 </script>
 <script>
   function loginWithKakao() {
     Kakao.Auth.authorize({
-      redirectUri: 'https://zoyi.cafe24.com/Api/Member/Oauth2ClientCallback/kakao/', // 사용하려는 앱의 Redirect Uri 입력
+      redirectUri: 'https://www.dwmm.site/channel-test', // 사용하려는 앱의 Redirect Uri 입력
     });
   }
 
