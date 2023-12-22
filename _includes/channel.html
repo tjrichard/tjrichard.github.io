@@ -113,17 +113,17 @@
           channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption5);
       parent.appendChild(channelCustomEventTemplate);
 
-      let channelEventTrackName = document.createElement("input");
-          channelEventTrackName.setAttribute("type", "text");
-          channelEventTrackName.setAttribute("id", "channelEventTrackName");
-          channelEventTrackName.setAttribute("maxlength", "30");
-          channelEventTrackName.setAttribute("placeholder", "이벤트 이름. 30자 이하여야 함");
-      let channelEventTrackProperty = document.createElement("textarea");
-          channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
-          channelEventTrackProperty.setAttribute("rows", "10");
-          channelEventTrackProperty.setAttribute("style", "resize: vertical");
-          channelEventTrackProperty.setAttribute("placeholder", "{key: value}로 구성된 object. key와 value는 쌍따옴표로 묶여야 함");
-          channelEventTrackProperty.value = JSON.stringify(defaultText);
+      channelEventTrackName = document.createElement("input");
+      channelEventTrackName.setAttribute("type", "text");
+      channelEventTrackName.setAttribute("id", "channelEventTrackName");
+      channelEventTrackName.setAttribute("maxlength", "30");
+      channelEventTrackName.setAttribute("placeholder", "이벤트 이름. 30자 이하여야 함");
+      channelEventTrackProperty = document.createElement("textarea");
+      channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
+      channelEventTrackProperty.setAttribute("rows", "10");
+      channelEventTrackProperty.setAttribute("style", "resize: vertical");
+      channelEventTrackProperty.setAttribute("placeholder", "{key: value}로 구성된 object. key와 value는 쌍따옴표로 묶여야 함");
+      channelEventTrackProperty.value = JSON.stringify(defaultText);
       parent.appendChild(channelEventTrackName);
       parent.appendChild(channelEventTrackProperty);
     }
@@ -134,11 +134,11 @@
         removeChildren()
       } else { }
 
-      let channelEventTrackProperty = document.createElement("textarea");
-          channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
-          channelEventTrackProperty.setAttribute("rows", "6");
-          channelEventTrackProperty.setAttribute("style", "resize: vertical");
-          channelEventTrackProperty.setAttribute("placeholder", "추가 혹은 제거할 태그의 [Array]. 비어있으면 안됨. 각 태그는 쌍따옴표로 감싸야 함");
+      channelEventTrackProperty = document.createElement("textarea");
+      channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
+      channelEventTrackProperty.setAttribute("rows", "6");
+      channelEventTrackProperty.setAttribute("style", "resize: vertical");
+      channelEventTrackProperty.setAttribute("placeholder", "추가 혹은 제거할 태그의 [Array]. 비어있으면 안됨. 각 태그는 쌍따옴표로 감싸야 함");
       parent.appendChild(channelEventTrackProperty);
 
     }
@@ -148,8 +148,8 @@
         removeChildren()
       } else { }
 
-      let channelEventTrackName = document.getElementById("channelEventTrackName");
-      let channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
+      channelEventTrackName = document.getElementById("channelEventTrackName");
+      channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
     }
   }
 
