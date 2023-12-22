@@ -62,13 +62,15 @@
   });
 
   /* 이벤트 발생기 > 이벤트 종류 변경시 */
+  let value, parent, children, childrenCount, channelEventTrackName, channelEventTrackProperty;
+  
   function getEventType(channelEventType) {
-    let value = channelEventType.value;
-    let parent = channelEventType.parentElement;
-    let children = parent.children;
-    let childrenCount = parent.childElementCount;
-    let channelEventTrackName = document.getElementById("channelEventTrackName");
-    let channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
+    value = channelEventType.value;
+    parent = channelEventType.parentElement;
+    children = parent.children;
+    childrenCount = parent.childElementCount;
+    channelEventTrackName = document.getElementById("channelEventTrackName");
+    channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
 
     // 기존 input 삭제 트리거
     function removeChildren() {
