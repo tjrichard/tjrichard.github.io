@@ -482,7 +482,7 @@ function TrackGeneratedTasks() {
 		let taskXValue, taskArray = [];
 		for (let x = 1; x <= TaskCount; x++) {
 			taskXValue = "task" + x + "p1";
-			taskArray.push(localStorage[taskXValue]);
+			taskArray.push(JSON.parse(localStorage[taskXValue]));
 		}
 		return taskArray;
 	}
