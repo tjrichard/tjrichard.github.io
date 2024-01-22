@@ -488,8 +488,8 @@ function TrackGeneratedTasks() {
 	}
 	let taskArray = getGeneratedTask();
 	analytics.track("Generated Taks", {
-		url: "{{ page.url }}",
-		title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+		url: "https://dwmm.site/side-hustle/pomodoro/",
+		title: "Pomodoro Timer",
 		ongoingTasks: Object(taskArray)
 	})
 }
