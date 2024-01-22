@@ -523,7 +523,6 @@ function startCountdown() {
 			}
 			localStorage.setObj(x, a);
 			localStorage.setObj(y, b);
-
 		}
 		else {
 			// 이어하지 않고 계속 task를 추가하는 경우
@@ -568,6 +567,7 @@ function startCountdown() {
 	};
 
 	// Track Segment Event
+	TrackGeneratedTasks();
 	analytics.track('Start Countdown', {
 		'Task': taskValue,
 		'Timer Info': {
