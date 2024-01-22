@@ -322,4 +322,19 @@ function generateList() {
         'Category Count': catList.childElementCount - 1,
         title: "Case List Generator"
     })
+    function getGeneratedCase() {
+        let TaskCount = localStorage.taskCount;
+        let taskXValue, taskArray = [];
+        for (let x = 1; x <= TaskCount; x++) {
+            taskXValue = "task" + x + "p1";
+            taskArray.push(localStorage[taskXValue]);
+        }
+        return taskArray;
+    }
+    let taskArray = getGeneratedCase();
+    analytics.track("Generated Case", {
+        url: "{{ page.url }}",
+        title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+        ongoingTasks: Object(taskArray)
+    })
 }
