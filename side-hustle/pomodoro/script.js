@@ -476,6 +476,23 @@ function AddContinueButton() {
 /*
 =================== Button Actions ===================
 */
+function TrackGeneratedTasks() {
+	function getGeneratedTask() {
+		let TaskCount = localStorage.taskCount;
+		let taskXValue, taskArray = [];
+		for (let x = 1; x <= TaskCount; x++) {
+			taskXValue = "task" + x + "p1";
+			taskArray.push(localStorage[taskXValue]);
+		}
+		return taskArray;
+	}
+	let taskArray = getGeneratedTask();
+	analytics.track("Generated Taks", {
+		url: "{{ page.url }}",
+		title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}",
+		ongoingTasks: Object(taskArray)
+	})
+}
 
 function startCountdown() {
 	// check if taskCount is null, then start taskCount from 1
