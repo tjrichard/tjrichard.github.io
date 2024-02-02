@@ -28,18 +28,17 @@ def calculate_ratio(width, height):
     ratio_height = height // gcd
     return ratio_width, ratio_height
 
-try:
-    # 입력 받기
+def show_result():
     input_str = sys.argv[1]
-    width, height = map(int, input_str.split(':'))
+    try:
+        width, height = map(int, input_str.split(':'))
+        ratio_width, ratio_height = calculate_ratio(width, height)
+        result_str = f"{ratio_width}:{ratio_height}"
+        print(result_str)
+    except ValueError:
+        print("입력한 값을 다시 확인해주세요")
+    except Exception as e:
+        print(f"에러 발생: {e}")
 
-    # 비율 계산
-    ratio_width, ratio_height = calculate_ratio(width, height)
-
-    # 결과 출력
-    print(f"{ratio_width}:{ratio_height}")
-
-except ValueError:
-    print("입력한 값을 다시 확인해주세요")
-except Exception as e:
-    print(f"에러 발생: {e}")
+# 스크립트 실행
+show_result()
