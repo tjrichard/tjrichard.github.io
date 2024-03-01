@@ -476,6 +476,23 @@ function AddContinueButton() {
 /*
 =================== Button Actions ===================
 */
+function TrackGeneratedTasks() {
+	function getGeneratedTask() {
+		let TaskCount = localStorage.taskCount;
+		let taskXValue, taskArray = [];
+		for (let x = 1; x <= TaskCount; x++) {
+			taskXValue = "task" + x + "p1";
+			taskArray.push(JSON.parse(localStorage[taskXValue]));
+		}
+		return taskArray;
+	}
+	let taskArray = getGeneratedTask();
+	analytics.track("Generated Taks", {
+		url: "https://dwmm.site/side-hustle/pomodoro/",
+		title: "Pomodoro Timer",
+		ongoingTasks: Object(taskArray)
+	})
+}
 
 function startCountdown() {
 	// check if taskCount is null, then start taskCount from 1
@@ -506,7 +523,6 @@ function startCountdown() {
 			}
 			localStorage.setObj(x, a);
 			localStorage.setObj(y, b);
-
 		}
 		else {
 			// 이어하지 않고 계속 task를 추가하는 경우
@@ -551,6 +567,7 @@ function startCountdown() {
 	};
 
 	// Track Segment Event
+	TrackGeneratedTasks();
 	analytics.track('Start Countdown', {
 		'Task': taskValue,
 		'Timer Info': {

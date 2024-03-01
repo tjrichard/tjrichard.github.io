@@ -9,7 +9,7 @@
   <meta name="theme-color" content="#ffffff">
   <!--Google Search Console Verification-->
   <meta name="google-site-verification" content="G5Gsg7cCrW_GkCi4XrpKnQlPHH08LTF6iQo3Jzd3LS4" />
-  
+
   <title>채널 프론트 데스크 테스트</title>
   <meta name="description" content="라이언의 채널톡 테스트 환경입니다">
   <!-- Open Graph -->
@@ -282,13 +282,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   });
 
   /* 이벤트 발생기 > 이벤트 종류 변경시 */
+  let value, parent, children, childrenCount, channelEventTrackName, channelEventTrackProperty;
+  
   function getEventType(channelEventType) {
-    var value = channelEventType.value;
-    var parent = channelEventType.parentElement;
-    var children = parent.children;
-    var childrenCount = parent.childElementCount;
-    var channelEventTrackName = document.getElementById("channelEventTrackName");
-    var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
+    value = channelEventType.value;
+    parent = channelEventType.parentElement;
+    children = parent.children;
+    childrenCount = parent.childElementCount;
+    channelEventTrackName = document.getElementById("channelEventTrackName");
+    channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
 
     // 기존 input 삭제 트리거
     function removeChildren() {
@@ -305,38 +307,38 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       } else { }
 
       // 이벤트 발생기 > 커스텀 이벤트 템플릿 제공
-      var channelCustomEventTemplate = document.createElement("select");
-      channelCustomEventTemplate.setAttribute("name", "channelCustomEventTemplate");
-      channelCustomEventTemplate.setAttribute("id", "channelCustomEventTemplate");
-      channelCustomEventTemplate.setAttribute("onChange", "getCustomEventType(this)");
-      var channelCustomEventTemplateOption1 = document.createElement("option");
-      channelCustomEventTemplateOption1.setAttribute("value", "placeholder");
-      channelCustomEventTemplateOption1.innerText = "직접 입력"
-      var channelCustomEventTemplateOption2 = document.createElement("option");
-      channelCustomEventTemplateOption2.setAttribute("value", "AchieveOperationGoal");
-      channelCustomEventTemplateOption2.innerText = "오퍼레이션 목표 달성"
-      var channelCustomEventTemplateOption3 = document.createElement("option");
-      channelCustomEventTemplateOption3.setAttribute("value", "AcieveMarketingGoal");
-      channelCustomEventTemplateOption3.innerText = "마케팅 목표 달성"
-      var channelCustomEventTemplateOption4 = document.createElement("option");
-      channelCustomEventTemplateOption4.setAttribute("value", "CheckoutComplete");
-      channelCustomEventTemplateOption4.innerText = "체크아웃 완료"
-      var channelCustomEventTemplateOption5 = document.createElement("option");
-      channelCustomEventTemplateOption5.setAttribute("value", "Purchase");
-      channelCustomEventTemplateOption5.innerText = "구매"
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption1);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption2);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption3);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption4);
-      channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption5);
+      let channelCustomEventTemplate = document.createElement("select");
+          channelCustomEventTemplate.setAttribute("name", "channelCustomEventTemplate");
+          channelCustomEventTemplate.setAttribute("id", "channelCustomEventTemplate");
+          channelCustomEventTemplate.setAttribute("onChange", "getCustomEventType(this)");
+      let channelCustomEventTemplateOption1 = document.createElement("option");
+          channelCustomEventTemplateOption1.setAttribute("value", "placeholder");
+          channelCustomEventTemplateOption1.innerText = "직접 입력"
+      let channelCustomEventTemplateOption2 = document.createElement("option");
+          channelCustomEventTemplateOption2.setAttribute("value", "AchieveOperationGoal");
+          channelCustomEventTemplateOption2.innerText = "오퍼레이션 목표 달성"
+      let channelCustomEventTemplateOption3 = document.createElement("option");
+          channelCustomEventTemplateOption3.setAttribute("value", "AcieveMarketingGoal");
+          channelCustomEventTemplateOption3.innerText = "마케팅 목표 달성"
+      let channelCustomEventTemplateOption4 = document.createElement("option");
+          channelCustomEventTemplateOption4.setAttribute("value", "CheckoutComplete");
+          channelCustomEventTemplateOption4.innerText = "체크아웃 완료"
+      let channelCustomEventTemplateOption5 = document.createElement("option");
+          channelCustomEventTemplateOption5.setAttribute("value", "Purchase");
+          channelCustomEventTemplateOption5.innerText = "구매"
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption1);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption2);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption3);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption4);
+          channelCustomEventTemplate.appendChild(channelCustomEventTemplateOption5);
       parent.appendChild(channelCustomEventTemplate);
 
-      var channelEventTrackName = document.createElement("input");
+      channelEventTrackName = document.createElement("input");
       channelEventTrackName.setAttribute("type", "text");
       channelEventTrackName.setAttribute("id", "channelEventTrackName");
       channelEventTrackName.setAttribute("maxlength", "30");
       channelEventTrackName.setAttribute("placeholder", "이벤트 이름. 30자 이하여야 함");
-      var channelEventTrackProperty = document.createElement("textarea");
+      channelEventTrackProperty = document.createElement("textarea");
       channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
       channelEventTrackProperty.setAttribute("rows", "10");
       channelEventTrackProperty.setAttribute("style", "resize: vertical");
@@ -352,7 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         removeChildren()
       } else { }
 
-      var channelEventTrackProperty = document.createElement("textarea");
+      channelEventTrackProperty = document.createElement("textarea");
       channelEventTrackProperty.setAttribute("id", "channelEventTrackProperty");
       channelEventTrackProperty.setAttribute("rows", "6");
       channelEventTrackProperty.setAttribute("style", "resize: vertical");
@@ -366,44 +368,44 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         removeChildren()
       } else { }
 
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
-      var channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
+      channelEventTrackName = document.getElementById("channelEventTrackName");
+      channelEventTrackProperty = document.getElementById("channelEventTrackProperty");
     }
   }
 
   /* 커스텀 이벤트 템플릿 변경 */
   function getCustomEventType(channelCustomEventType) {
-    var value = channelCustomEventType.value;
+    let value = channelCustomEventType.value;
 
     if (value == "placeholder") {
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
+      let channelEventTrackName = document.getElementById("channelEventTrackName");
       channelEventTrackName.value = ""
-      var eventProperty = document.getElementById("channelEventTrackProperty");
-      eventProperty.value = JSON.stringify(defaultText);
+      let eventProperty = document.getElementById("channelEventTrackProperty");
+          eventProperty.value = JSON.stringify(defaultText);
     } else if (value == "AchieveOperationGoal") {
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
-      channelEventTrackName.value = "AchieveOperationGoal"
-      var eventProperty = document.getElementById("channelEventTrackProperty");
-      var propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "goal_value": "StartTrial" };
-      eventProperty.value = JSON.stringify(propertyToApply);
+      let channelEventTrackName = document.getElementById("channelEventTrackName");
+          channelEventTrackName.value = "AchieveOperationGoal"
+      let eventProperty = document.getElementById("channelEventTrackProperty");
+      let propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "goal_value": "StartTrial" };
+          eventProperty.value = JSON.stringify(propertyToApply);
     } else if (value == "AcieveMarketingGoal") {
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
-      channelEventTrackName.value = "AcieveMarketingGoal"
-      var eventProperty = document.getElementById("channelEventTrackProperty");
-      var propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "goal_value": "CompleteCheckOut" };
+      let channelEventTrackName = document.getElementById("channelEventTrackName");
+          channelEventTrackName.value = "AcieveMarketingGoal"
+      let eventProperty = document.getElementById("channelEventTrackProperty");
+      let propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "goal_value": "CompleteCheckOut" };
       eventProperty.value = JSON.stringify(propertyToApply);
     } else if (value == "CheckoutComplete") {
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
-      channelEventTrackName.value = "CheckoutComplete"
-      var eventProperty = document.getElementById("channelEventTrackProperty");
-      var propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "id": dateTime + "-001", "totalAmount": 20000, "shippingAmount": 2500, "products": [{ "id": "001", "name": "2021 연봉설문", "quantity": 1, "amount": 10000 }, { "id": "002", "name": "2022 연봉설문", "quantity": 1, "amount": 10000 }] };
-      eventProperty.value = JSON.stringify(propertyToApply);
+      let channelEventTrackName = document.getElementById("channelEventTrackName");
+          channelEventTrackName.value = "CheckoutComplete"
+      let eventProperty = document.getElementById("channelEventTrackProperty");
+      let propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "id": dateTime + "-001", "totalAmount": 20000, "shippingAmount": 2500, "products": [{ "id": "001", "name": "2021 연봉설문", "quantity": 1, "amount": 10000 }, { "id": "002", "name": "2022 연봉설문", "quantity": 1, "amount": 10000 }] };
+          eventProperty.value = JSON.stringify(propertyToApply);
     } else if (value == "Purchase") {
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
-      channelEventTrackName.value = "Purchase"
-      var eventProperty = document.getElementById("channelEventTrackProperty");
-      var propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "id": dateTime + "-001", "totalAmount": 20000, "shippingAmount": 2500, "products": [{ "id": "001", "name": "2021 연봉설문", "quantity": 1, "amount": 10000 }, { "id": "002", "name": "2022 연봉설문", "quantity": 1, "amount": 10000 }] };
-      eventProperty.value = JSON.stringify(propertyToApply);
+      let channelEventTrackName = document.getElementById("channelEventTrackName");
+          channelEventTrackName.value = "Purchase"
+      let eventProperty = document.getElementById("channelEventTrackProperty");
+      let propertyToApply = { "page": "http://dwmm.site/channel-test/", "url": "https://dwmm.site/channel-test/", "title": "채널 이벤트 테스트", "id": dateTime + "-001", "totalAmount": 20000, "shippingAmount": 2500, "products": [{ "id": "001", "name": "2021 연봉설문", "quantity": 1, "amount": 10000 }, { "id": "002", "name": "2022 연봉설문", "quantity": 1, "amount": 10000 }] };
+          eventProperty.value = JSON.stringify(propertyToApply);
     } else { }
 
   }
@@ -425,15 +427,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
   }
 
+  function snackbarPropertyUpdate(x, y) {
+    let updatedProperties = "";
+    if (x && y) {
+      updatedProperties = x + ", " + y;
+    } else {
+      updatedProperties = x || y;
+    }
+    let snackbar = document.getElementById("snackbar-top");
+    snackbar.innerText = updatedProperties + ' 프로퍼티가 업데이트되었습니다';
+    snackbar.className = "show";
+    setTimeout(function () { snackbar.className = snackbar.className.replace("show", "") }, 2200);
+  }
+
   /* 이벤트 발생기 */
   function trackChannelEvent() {
-    var value = document.getElementById("channelEventType").value;
+    const value = document.getElementById("channelEventType").value;
 
     // custom 이벤트
     if (value == "custom") {
-      var channelEventTrackName = document.getElementById("channelEventTrackName");
-      var eventName = document.getElementById("channelEventTrackName").value;
-      var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+      let channelEventTrackName = document.getElementById("channelEventTrackName");
+      let eventName = document.getElementById("channelEventTrackName").value;
+      let eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
       if (channelEventTrackName.value == "AcieveMarketingGoal") {
         date = new Date();
         ChannelIO("track", eventName, eventProperty);
@@ -451,7 +466,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     // addTags 이벤트
     else if (value == "addTags") {
-      var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+      let eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
       ChannelIO("addTags", eventProperty, function onAddTags(error, user) {
         if (error) {
           console.error(error)
@@ -465,7 +480,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     // removeTags 이벤트
     else if (value == "removeTags") {
-      var eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
+      let eventProperty = JSON.parse(document.getElementById("channelEventTrackProperty").value);
       ChannelIO("removeTags", eventProperty, function onRemoveTags(error, user) {
         if (error) {
           console.error(error)
@@ -485,59 +500,251 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
   }
 
+  /* 프로퍼티 발생 */
 
-//프로퍼티 발생
+  // user 키 추가
+  function getChannelUserKeys() {
+    var userKeys = Object.keys(channelUser).sort();
+    var userProfileFormParent = document.getElementById("propertyForm");
+    if (channelUser.profile != null) {
+      var userProfileKeys = Object.keys(channelUser.profile).sort();
+    } else {
+      var userProfileKeys = [];
+    }
+    // select 및 option 추가
+    let channelUserKeys = document.createElement("select");
+    channelUserKeys.setAttribute("name", "channelUserKeys");
+    channelUserKeys.setAttribute("id", "channelUserKeys");
+    channelUserKeys.setAttribute("onChange", "getUserKey(this)");
+    for (let i = 0; i < userKeys.length; i++) {
+      let channelUserKeyOption = document.createElement("option");
+          channelUserKeyOption.setAttribute("value", userKeys[i]);
+          channelUserKeyOption.innerText = userKeys[i];
+          channelUserKeys.appendChild(channelUserKeyOption);
+    }
+    // 직접 입력 user.key 옵션 추가
+    channelUserKeyOptionCustom = document.createElement("option");
+    channelUserKeyOptionCustom.setAttribute("value", "직접 입력");
+    channelUserKeyOptionCustom.innerText = "직접 입력";
+    channelUserKeys.appendChild(channelUserKeyOptionCustom);
 
-// 참고 레퍼런스
-// function submitApplication() {
-//     const inputName = document.getElementById("event-1").value;
-    // const inputImage = document.getElementById("event-2").files[0];
-    // const imageUrl = window.URL.createObjectURL(inputImage);
-    // const profileImg = new FormData();
-    //       profileImg.append("profileImg", inputImage);
-    // const inputCompany = document.getElementById("event-3").value;
-    // const inputProduct = document.getElementById("event-4").value;
-    // const inputRole = document.getElementById("event-5").value;
-    // const inputIntro = document.getElementById("event-6").value;
-    // const inputLink1 = document.getElementById("event-7").value;
-    // const inputLink2 = document.getElementById("event-8").value;
-    // const inputLink3 = document.getElementById("event-9").value;
-    // const inputContact = document.getElementById("event-10").value;
-    // const applyForManager = document.getElementById("event-11-yes").checked;
-    // const inputApplication = document.getElementById("event-11-1").value;
-    // const inputComment = document.getElementById("event-12").value;
-    // const isPublic = document.getElementById("event-13-yes").checked;
-    // const personalInformation = document.getElementById("event-14-yes").checked;
-    // const dateTime = new Date();
-    // let fullDate = dateTime.toISOString().slice(0,10);
-    // let fullTime = dateTime.toISOString().slice(11,19);
-    // const currentDatetime = fullDate + " " + fullTime;
+    userProfileFormParent.append(channelUserKeys);
+    
+    // user.key 직접 입력용 input 추가
+    let directInputField = document.createElement("input");
+        directInputField.setAttribute("type", "text");
+        directInputField.setAttribute("id", "channelUserKeyCustom");
+        directInputField.setAttribute("placeholder", "key를 입력하세요");
+        directInputField.style.display = "none"
+      userProfileFormParent.append(directInputField);
 
-    // var record = {
-    //     "records": [
-    //         {
-    //             "fields": {
-    //                 "Name": inputName,
-    //                 "Profile_Picture": imageUrl,
-    //                 "Company": inputCompany,
-    //                 "Product": inputProduct,
-    //                 "Role": inputRole,
-    //                 "Intro": inputIntro,
-    //                 "Link1": inputLink1,
-    //                 "Link2": inputLink2,
-    //                 "Link3": inputLink3,
-    //                 "Contact": inputContact,
-    //                 "Apply_for_Manager": applyForManager,
-    //                 "Reason_for_Application": inputApplication,
-    //                 "Comments": inputComment,
-    //                 "Public": isPublic,
-    //                 "Personal_Information": personalInformation,
-    //                 "Enrolled_Date": currentDatetime
-    //             }
-    //         }
-    //     ]
-    // };
-// };
+    // 값 input 추가
+    let channelUserKeyValue = document.createElement("input");
+        channelUserKeyValue.setAttribute("type", "text");
+        channelUserKeyValue.setAttribute("id", "channelUserKeyValue");
+        channelUserKeyValue.setAttribute("placeholder", "값을 입력하세요");
+      userProfileFormParent.append(channelUserKeyValue);
+    // 하단에 구분자 추가
+    let border = document.createElement("hr");
+        border.style.margin = "6px 0";
+    userProfileFormParent.append(border);
+  }
+
+  // user.profile 키 추가
+  function getChannelUserProfileKeys() {
+    let userKeys = Object.keys(channelUser).sort();
+    let userProfileFormParent = document.getElementById("propertyForm");
+    if (channelUser.profile != null) {
+      var userProfileKeys = Object.keys(channelUser.profile).sort();
+      // select 및 option 추가
+      let channelUserProfileKeys = document.createElement("select");
+      channelUserProfileKeys.setAttribute("name", "channelUserProfileKeys");
+      channelUserProfileKeys.setAttribute("id", "channelUserProfileKeys");
+      channelUserProfileKeys.setAttribute("onChange", "getUserProfileKey(this)");
+      for (let i = 0; i < userProfileKeys.length; i++) {
+        let channelUserProfileKeyOption = document.createElement("option");
+        channelUserProfileKeyOption.setAttribute("value", userProfileKeys[i]);
+        channelUserProfileKeyOption.innerText = userProfileKeys[i];
+        channelUserProfileKeys.appendChild(channelUserProfileKeyOption);
+      }
+       // 커스텀 user.key 필드 추가
+      channelUserProfileKeyOptionCustom = document.createElement("option");
+      channelUserProfileKeyOptionCustom.setAttribute("value", "직접 입력");
+      channelUserProfileKeyOptionCustom.innerText = "직접 입력";
+      channelUserProfileKeys.appendChild(channelUserProfileKeyOptionCustom);
+      
+      userProfileFormParent.append(channelUserProfileKeys);
+
+      // user.profile.key 직접 입력용 input 추가
+      let directInputField = document.createElement("input");
+          directInputField.setAttribute("type", "text");
+          directInputField.setAttribute("id", "channelUserProfileKeyCustom");
+          directInputField.setAttribute("placeholder", "profile.key를 입력하세요");
+          directInputField.style.display = "none"
+          userProfileFormParent.append(directInputField);
+    } else {
+      var userProfileKeys = [];
+      // user.profile.key 직접 입력 옵션 추가
+      let channelUserProfileKeyOptionCustom = document.createElement("option");
+          channelUserProfileKeyOptionCustom.setAttribute("value", "직접 입력");
+          channelUserProfileKeyOptionCustom.innerText = "직접 입력";
+          channelUserProfileKeys.appendChild(channelUserProfileKeyOptionCustom);
+      // user.profile.key 직접 입력용 input 추가
+      let directInputField = document.createElement("input");
+          directInputField.setAttribute("type", "text");
+          directInputField.setAttribute("id", "channelUserProfileKeyCustom");
+          directInputField.setAttribute("placeholder", "profile.key를 입력하세요");
+          directInputField.style.display = "none"
+          userProfileFormParent.append(directInputField);
+    }
+    // 값 input 추가
+    let channelUserProfileKeyValue = document.createElement("input");
+    channelUserProfileKeyValue.setAttribute("type", "text");
+    channelUserProfileKeyValue.setAttribute("id", "channelUserProfileKeyValue");
+    channelUserProfileKeyValue.setAttribute("placeholder", "값을 입력하세요");
+    userProfileFormParent.append(channelUserProfileKeyValue);
+  }
+
+  // 최초 프로퍼티 불러오기
+  function getUserPropertyKeys() {
+    getChannelUserKeys();
+    getChannelUserProfileKeys();
+    document.getElementById("getUserPropertyKeys").remove();
+  }
+
+  /* 프로퍼티 리스트 onChange()시 */
+  function getUserKey(channelUserKey) {
+    let value = channelUserKey.value;
+    if (value == "직접 입력") {
+      // 직접 입력일 경우 직접 입력용 input 표시
+      document.getElementById("channelUserKeyCustom").style.display = "block";
+    } else {
+      // 직접 입력이 아닐 경우 직접 입력 input 제거
+      document.getElementById("channelUserKeyCustom").style.display = "none";
+    }
+  }
+  function getUserProfileKey(channelUserProfileKey) {
+    let value = channelUserProfileKey.value;
+    if (value == "직접 입력") {
+      // 직접 입력일 경우 직접 입력용 input 표시
+      document.getElementById("channelUserProfileKeyCustom").style.display = "block";
+    } else {
+      // 직접 입력이 아닐 경우 직접 입력 input 제거
+      document.getElementById("channelUserProfileKeyCustom").style.display = "none";
+    }
+  }
+
+  /* 유저 업데이트 */
+  let userObject = {};
+  let userKey = "";
+  let userKeyCustom = "";
+  let userKeyValue = "";
+  let userProfileKey = "";
+  let userProfileKeyCustom = "";
+  let userProfileKeyValue = "";
+  let snackbar_x = "";
+  let snackbar_y = "";
+
+  function updateChannelProperty() {
+    userObject = {}; // userObject 초기화
+    userKey = document.getElementById("channelUserKeys").value;
+    userKeyCustom = document.getElementById("channelUserKeyCustom").value;
+    userKeyValue = document.getElementById("channelUserKeyValue").value;
+    userProfileKey = document.getElementById("channelUserProfileKeys").value;
+    userProfileKeyValue = document.getElementById("channelUserProfileKeyValue").value;
+    userProfileKeyCustom = document.getElementById("channelUserProfileKeyCustom").value;
+    
+    if (!userKeyValue) {
+      // user key 의 값이 비어있을 때 사용하지 않음
+      snackbar_x = "";
+    } else {
+      if (userKey == "직접 입력"){
+        userObject[userKeyCustom] = userKeyValue;
+        snackbar_x = userKeyCustom;
+      } else {
+        userObject[userKey] = userKeyValue;
+        snackbar_x = userKey;
+      }
+    }
+    if (!userProfileKeyCustom || !userProfileKeyValue) {
+    // user profile key 값 혹은 value가 비어있을 때 사용하지 않음
+    snackbar_y = "";
+    } else {
+      if (!userObject.profile) {
+        userObject.profile = {};
+      }
+      if (userProfileKey == "직접 입력"){
+        userObject.profile[userProfileKeyCustom] = userProfileKeyValue;
+        snackbar_y = userProfileKeyCustom;
+      } else {
+      userObject.profile[userProfileKey] = userProfileKeyValue;
+      snackbar_y = userProfileKey;
+      }
+    }
+    ChannelIO('updateUser', userObject, function onUpdateUser(error, user) {
+      if (error) {
+        console.error(error);
+      } else {
+        console.log('updateUser success', user);
+      }
+    });
+    
+    // 스낵바 피드백
+    snackbarPropertyUpdate(snackbar_x, snackbar_y);
+  };
+  
+
+  /* 참고 레퍼런스
+  function submitApplication() {
+      const inputName = document.getElementById("event-1").value;
+      const inputImage = document.getElementById("event-2").files[0];
+      const imageUrl = window.URL.createObjectURL(inputImage);
+      const profileImg = new FormData();
+            profileImg.append("profileImg", inputImage);
+      const inputCompany = document.getElementById("event-3").value;
+      const inputProduct = document.getElementById("event-4").value;
+      const inputRole = document.getElementById("event-5").value;
+      const inputIntro = document.getElementById("event-6").value;
+      const inputLink1 = document.getElementById("event-7").value;
+      const inputLink2 = document.getElementById("event-8").value;
+      const inputLink3 = document.getElementById("event-9").value;
+      const inputContact = document.getElementById("event-10").value;
+      const applyForManager = document.getElementById("event-11-yes").checked;
+      const inputApplication = document.getElementById("event-11-1").value;
+      const inputComment = document.getElementById("event-12").value;
+      const isPublic = document.getElementById("event-13-yes").checked;
+      const personalInformation = document.getElementById("event-14-yes").checked;
+      const dateTime = new Date();
+      let fullDate = dateTime.toISOString().slice(0,10);
+      let fullTime = dateTime.toISOString().slice(11,19);
+      const currentDatetime = fullDate + " " + fullTime;
+
+      var record = {
+          "records": [
+              {
+                  "fields": {
+                      "Name": inputName,
+                      "Profile_Picture": imageUrl,
+                      "Company": inputCompany,
+                      "Product": inputProduct,
+                      "Role": inputRole,
+                      "Intro": inputIntro,
+                      "Link1": inputLink1,
+                      "Link2": inputLink2,
+                      "Link3": inputLink3,
+                      "Contact": inputContact,
+                      "Apply_for_Manager": applyForManager,
+                      "Reason_for_Application": inputApplication,
+                      "Comments": inputComment,
+                      "Public": isPublic,
+                      "Personal_Information": personalInformation,
+                      "Enrolled_Date": currentDatetime
+                  }
+              }
+          ]
+      };
+    };
+  */
 </script>
 
 <script>
@@ -546,6 +753,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         document.getElementById('c-footer').remove();
     });
 </script>
+
+<!-- 카카오 로그인 -->
+<script src="https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.min.js" integrity="sha384-kYPsUbBPlktXsY6/oNHSUDZoTX6+YI51f63jCPEIPFP09ttByAdxd2mEjKuhdqn4" crossorigin="anonymous"></script>
+
+<script>
+  Kakao.init('389a7ddbc92ba6a6cda26695c6492357'); // 사용하려는 앱의 JavaScript 키 입력
+</script>
+
+<script>
+  function loginWithKakao() {
+    Kakao.Auth.authorize({
+      redirectUri: 'https://zoyi.cafe24.com/Api/Member/Oauth2ClientCallback/kakao/', // 사용하려는 앱의 Redirect Uri 입력
+    });
+  }
+
+  // 아래는 데모를 위한 UI 코드입니다.
+  displayToken()
+  function displayToken() {
+    var token = getCookie('authorize-access-token');
+
+    if(token) {
+      Kakao.Auth.setAccessToken(token);
+      Kakao.Auth.getStatusInfo()
+        .then(function(res) {
+          if (res.status === 'connected') {
+            document.getElementById('token-result').innerText
+              = 'login success, token: ' + Kakao.Auth.getAccessToken();
+          }
+        })
+        .catch(function(err) {
+          Kakao.Auth.setAccessToken(null);
+        });
+    }
+  }
+
+  function getCookie(name) {
+    var parts = document.cookie.split(name + '=');
+    if (parts.length === 2) { return parts[1].split(';')[0]; }
+  }
+</script>
+
+<!-- 카카오 로그인 끝 -->
+
+<!-- 네이버 로그인 -->
+<script type="text/javascript" src="https://static.nid.naver.com/js/naverLogin_implicit-1.0.3.js" charset="utf-8"></script>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<!-- 네이버 로그인 끝 -->
 
 <div class="o-wrapper">
     <div class="o-grid">
@@ -569,17 +825,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="m-left">
                 <p class="survey-title">프로퍼티 입력기</p>
                 <div class="f-wrapper">
-                    <div class="f-input-wrapper">
-                        <div class="f-title">
-                        프로퍼티 타이틀
-                        </div>
-                        <div class="f-description">
-                        프로퍼티 설명
-                        </div>
-                        <input type="text" id="property-1" class="input" placeholder="프로퍼티 플레이스 홀더" />
-                    </div>
+                    <div class="f-input-wrapper" id="propertyForm">
+                        <input type="button" id="getUserPropertyKeys" class="button" value="프로퍼티 불러오기" onclick="getUserPropertyKeys()" />
+                      </div>
                 </div>
-                <input type="button" id="trackChannelProperty" class="button" value="프로퍼티 발생시키기" onclick="trackChannelProperty()" />
+                <input type="button" id="trackChannelProperty" class="button" value="프로퍼티 발생시키기" onclick="updateChannelProperty()" />
+            </div>
+            <div class="m-left">
+                <p class="survey-title">카카오 테스트</p>
+                <div id="kakao-talk-channel-add-button" data-channel-public-id="_IATxiK" data-size="large" data-support-multiple-densities="true"></div>
+                <!-- 카카오 채널 추가 -->
+                <script>
+                  window.kakaoAsyncInit = function() {
+                    Kakao.Channel.createAddChannelButton({
+                      container: '#kakao-talk-channel-add-button',
+                    });
+                  };
+                  (function(d, s, id) {
+                    var js, fjs = d.getElementsByTagName(s)[0];
+                    if (d.getElementById(id)) return;
+                    js = d.createElement(s); js.id = id;
+                    js.src = 'https://t1.kakaocdn.net/kakao_js_sdk/2.5.0/kakao.channel.min.js';
+                    js.integrity = 'sha384-j5TN6EqladB+HIfGV8dVYRIzoJf9Fb4lvrkPmo9KlnDWpN1CZz8yC4rCH1ChRbbh';
+                    js.crossOrigin = 'anonymous';
+                    fjs.parentNode.insertBefore(js, fjs);
+                  })(document, 'script', 'kakao-js-sdk');
+                </script>
+                <!-- 카카오 채널 추가 끝 -->
+                <a id="kakao-login-btn" href="javascript:loginWithKakao()">
+                    <img src="https://k.kakaocdn.net/14/dn/btroDszwNrM/I6efHub1SN5KCJqLm1Ovx1/o.jpg" width="222" alt="카카오 로그인 버튼" />
+                </a>
+                <p id="token-result"></p>
+            </div>
+            <div class="m-left">
+                <p class="survey-title">네이버 테스트</p>
+                <div id="naver_id_login"></div>
+                <script type="text/javascript">
+                    var naver_id_login = new naver_id_login("Lte2TWpAKNCsQNoHJTSR", "https://dwmm.site/channel-test");
+                    var state = naver_id_login.getUniqState();
+                    naver_id_login.setButton("white", 2,40);
+                    naver_id_login.setDomain("https://dwmm.site");
+                    naver_id_login.setState(state);
+                    naver_id_login.setPopup();
+                    naver_id_login.init_naver_id_login();
+                </script>
+                <script type="text/javascript" src="https://ua.talk.naver.com/dist/sdk.js"></script>
+                <div class="navertalk-friend-button" data-talk-id="w5tukq" data-size-width="188" data-size-height="44" data-device-type="MOBILE" data-type="BASIC" data-channel-no="3004718"></div>
             </div>
         </div>
     </div>
@@ -636,13 +927,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
   
   <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-172119466-2"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BKPKC825TZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-172119466-2');
+  gtag('config', 'G-BKPKC825TZ');
 </script>
 
 <!-- Google Tag Manager -->
