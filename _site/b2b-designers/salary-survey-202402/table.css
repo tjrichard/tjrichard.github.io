@@ -141,7 +141,7 @@ td:last-child {
 
 /* Header 정렬 기준열 표시 */
 #salary-list th:nth-child(5),
-#table2 th:nth-child(6),
+#table2 th:nth-child(2),
 #table3 th:nth-child(3),
 #table4 th:nth-child(6),
 #table5 th:last-child,
