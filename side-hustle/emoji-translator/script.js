@@ -11,13 +11,14 @@ if (!supabaseUrl || !supabaseKey) {
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 const emojiShortName = async () => {
-    let emoji = document.getElementById("submittedEmoji").value;
-    console.log("입력된 이모지: ", emoji);
+    let input = document.getElementById("submittedEmoji").value;
+    let LikeInput = "%"+input+"%";
+    console.log("입력된 값: ", input);
     
     const { data, error } = await supabase
       .from("emojis")
       .select("emoji, shortname")
-      .eq("emoji", emoji)
+      .or("emoji.eq.input,name.eq.LikeInput,shortname.qu.LikeInput")
   
     if (error) {
       console.error("Supabase 에러: ", error);
