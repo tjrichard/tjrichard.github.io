@@ -183,6 +183,7 @@ body {
   font-size: 14px;
   margin-top: 1px;
   width: 18px;
+  text-align: -webkit-center;
 }
 
 #catList {
