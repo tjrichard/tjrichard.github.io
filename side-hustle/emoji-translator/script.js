@@ -18,7 +18,7 @@ const emojiShortName = async () => {
     const { data, error } = await supabase
       .from("emojis")
       .select("emoji, shortname")
-      .or("emoji.eq.input,name.eq.LikeInput,shortname.qu.LikeInput")
+      .or("emoji.eq.input,name.eq.LikeInput,shortname.qu.LikeInput" )
   
     if (error) {
       console.error("Supabase 에러: ", error);
