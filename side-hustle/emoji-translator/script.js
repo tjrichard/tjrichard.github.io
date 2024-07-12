@@ -1,4 +1,4 @@
-import { createClient } from '@supabase/supabase-js';
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js';
 
 // 환경 변수가 제대로 설정되었는지 확인
 const supabaseUrl = process.env.SUPABASEURL;
