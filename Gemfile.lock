@@ -58,7 +58,7 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
-    webrick (1.7.0)
+    webrick (1.8.2)
 
 PLATFORMS
   universal-darwin-20
@@ -72,7 +72,7 @@ DEPENDENCIES
   jekyll-paginate
   jekyll-tagging
   kramdown-parser-gfm
-  webrick (~> 1.7)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.3.20
