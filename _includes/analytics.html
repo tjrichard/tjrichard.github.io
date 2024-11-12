@@ -47,9 +47,9 @@
     {% if page.tags %}
     var interests = [];
     {% for tag in page.tags -%}
-    {% - capture tag_name %} { { tag } } {% endcapture %}
-    interests.push("{{ tag_name }}");
-    {% - endfor %}
+      {% capture tag_name %}{{ tag }}{% endcapture %}
+      interests.push("{{ tag_name }}");
+    {% endfor %}
     {% endif %}
 
     var path = document.location.pathname;
