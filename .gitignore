@@ -4,3 +4,5 @@
 # API Key
 /.github
 .env
+.DS_Store
+.DS_Store
