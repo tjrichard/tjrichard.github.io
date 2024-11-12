@@ -2,18 +2,21 @@
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-BKPKC825TZ"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
+  function gtag() { dataLayer.push(arguments); }
   gtag('js', new Date());
 
   gtag('config', 'G-BKPKC825TZ');
 </script>
 
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PR9V822');</script>
+<script>(function (w, d, s, l, i) {
+    w[l] = w[l] || []; w[l].push({
+      'gtm.start':
+        new Date().getTime(), event: 'gtm.js'
+    }); var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+  })(window, document, 'script', 'dataLayer', 'GTM-PR9V822');</script>
 <!-- End Google Tag Manager -->
 
 <!-- Naver Search Console -->
@@ -42,13 +45,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     var userAgent;
     userAgent = navigator.userAgent.toLowerCase();
     {% if page.tags %}
-      var interests = [];
-      {% for tag in page.tags -%}
-        {%- capture tag_name %} {{ tag }} {% endcapture %}
-        interests.push("{{ tag_name }}");
-      {%- endfor %}
+    var interests = [];
+    {% for tag in page.tags -%}
+    {% - capture tag_name %} { { tag } } {% endcapture %}
+    interests.push("{{ tag_name }}");
+    {% - endfor %}
     {% endif %}
-  
+
     var path = document.location.pathname;
     var proj = '/project/'
     var blog = '/blog/'
@@ -145,4 +148,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       title: "{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"
     })
   }
+</script>
+
+<!-- 코드앤버터 -->
+<script>
+  (function (co, de, n, but, t, e, r) {
+    !n[co] && (n[co] = function () {
+      (n[co].q = n[co].q || []).push(arguments);
+    }); e = t.createElement(but);
+    e.async = true; e.src = de; r = t.getElementsByTagName(but)[0];
+    r.parentNode.insertBefore(e, r);
+  })("CodenButter", "https://buttr.dev/butter.js", window, "script", document);
+  window.CodenButter("boot", { siteId: "euuatrfdvv", auto: true });
 </script>

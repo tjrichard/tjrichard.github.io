@@ -239,6 +239,10 @@
         });
       } else {
         ChannelIO("track", eventName, eventProperty);
+        // amount에 구매금액을 넣어주세요
+        CodenButter("event", {
+          name: "goal|purchase", revenue: { amount: eventProperty.totalAmount }
+        });
       }
       // 스낵바 피드백
       snackbarEventName();
