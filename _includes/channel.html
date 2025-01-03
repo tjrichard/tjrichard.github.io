@@ -47,7 +47,8 @@
       var s = document.createElement('script');
       s.type = 'text/javascript';
       s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+      // s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js'; // prod
+      s.src = 'https://cdn.exp.channel.io/plugin/ch-plugin-web.js'; // exp
       s.charset = 'UTF-8';
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
