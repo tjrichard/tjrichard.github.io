@@ -47,8 +47,8 @@
       var s = document.createElement('script');
       s.type = 'text/javascript';
       s.async = true;
-      s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js'; // prod
-      // s.src = 'https://cdn.exp.channel.io/plugin/ch-plugin-web-exp.js'; // exp
+      // s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js'; // prod
+      s.src = 'https://cdn.exp.channel.io/plugin/ch-plugin-web-exp.js'; // exp
       s.charset = 'UTF-8';
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
@@ -63,8 +63,9 @@
     }
   })();
   ChannelIO('boot', {
-    "pluginKey": "8ae9b09a-9887-4957-96aa-b7f1ccba06b5" // prod b2b-designers (99498)
+    // "pluginKey": "8ae9b09a-9887-4957-96aa-b7f1ccba06b5" // prod b2b-designers (99498)
     // "pluginKey": "58027b63-a130-492c-a9b9-55b89b3a3f08" // exp 라이언 신규 채널 22 (1252)
+    "pluginKey": "f9220aa5-0f52-4adb-8dc1-351fbf57d310" // exp 라이언 신규 채널 10 (6951)
   }, function onBoot(error, user) {
     if (error) {
       console.error(error);
