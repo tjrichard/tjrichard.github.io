@@ -123,7 +123,6 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
             <div class="m-left">
                 <p class="survey-title">네이버 테스트</p>
                 <div id="naver_id_login"></div>
-                <button onclick="loginWithNaver()">네이버 로그인</button>
                 <script type="text/javascript">
                     var naver_id_login = new naver_id_login("Lte2TWpAKNCsQNoHJTSR", "https://dwmm.site/channel-test");
                     var state = naver_id_login.getUniqState();
@@ -132,6 +131,15 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                     naver_id_login.setState(state);
                     naver_id_login.setPopup();
                     naver_id_login.init_naver_id_login();
+                    // 네이버 공식 버튼 클릭 시 loginWithNaver() 실행
+                    document.addEventListener('DOMContentLoaded', function() {
+                      var naverBtn = document.getElementById('naver_id_login');
+                      if (naverBtn) {
+                        naverBtn.addEventListener('click', function() {
+                          loginWithNaver();
+                        });
+                      }
+                    });
                 </script>
                 <script type="text/javascript" src="https://ua.talk.naver.com/dist/sdk.js"></script>
                 <div class="navertalk-friend-button" data-talk-id="w5tukq" data-size-width="188" data-size-height="44" data-device-type="MOBILE" data-type="BASIC" data-channel-no="3004718" ></div>
