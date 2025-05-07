@@ -15,6 +15,26 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
     window.socialLoginAndBootChannelIO = socialLoginAndBootChannelIO;
     // 페이지 진입 시 소셜 로그인 체크
     socialLoginAndBootChannelIO();
+    // 회원 id로 부트하기 함수
+    window.bootWithManualMemberId = function() {
+      var memberId = document.getElementById('manual-member-id').value;
+      if (!memberId) {
+        alert('회원 id를 입력하세요.');
+        return;
+      }
+      ChannelIO('boot', {
+        pluginKey: '8ae9b09a-9887-4957-96aa-b7f1ccba06b5',
+        memberId: memberId
+      }, function onBoot(error, user) {
+        if (error) {
+          alert('ChannelIO boot 실패: ' + error);
+          console.error('ChannelIO boot 실패:', error);
+        } else {
+          alert('ChannelIO boot 성공!');
+          channelUser = user;
+        }
+      });
+    }
 </script>
 
 <!-- Start of HubSpot Embed Code -->
@@ -93,6 +113,15 @@ subtitle: "라이언의 채널톡 테스트 환경입니다"
                       </div>
                 </div>
                 <input type="button" id="trackChannelProperty" class="button" value="프로퍼티 발생시키기" onclick="updateChannelProperty()">
+            </div>
+            <div class="m-left">
+                <p class="survey-title">회원가입 테스트</p>
+                <div class="f-wrapper">
+                    <div class="f-input-wrapper">
+                        <input type="text" id="manual-member-id" class="input" placeholder="회원 id 입력" />
+                        <input type="button" class="button" value="회원으로 부트하기" onclick="bootWithManualMemberId()" />
+                    </div>
+                </div>
             </div>
             <div class="m-left">
                 <p class="survey-title">카카오 테스트</p>
