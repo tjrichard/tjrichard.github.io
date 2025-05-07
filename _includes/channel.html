@@ -532,4 +532,99 @@
       };
     };
   */
+
+  // 1. 소셜 로그인 버튼 클릭 시 provider 저장 예시 (실제 버튼에 연결 필요)
+  function loginWithNaver() {
+    localStorage.setItem('social_provider', 'naver');
+    // 네이버 로그인 로직 실행
+  }
+  function loginWithKakao() {
+    localStorage.setItem('social_provider', 'kakao');
+    // 카카오 로그인 로직 실행
+  }
+
+  // 2. 리다이렉트 시점: URL 파라미터 파싱 및 provider 구분
+  function getUrlParams() {
+    const params = {};
+    const queryString = window.location.hash ? window.location.hash.substring(1) : window.location.search.substring(1);
+    queryString.split('&').forEach(function (param) {
+      const [key, value] = param.split('=');
+      if (key) params[key] = decodeURIComponent(value);
+    });
+    return params;
+  }
+
+  async function fetchNaverUserId(accessToken) {
+    try {
+      const res = await fetch('https://openapi.naver.com/v1/nid/me', {
+        headers: { 'Authorization': 'Bearer ' + accessToken }
+      });
+      if (!res.ok) throw new Error('네이버 API 오류: ' + res.status);
+      const data = await res.json();
+      if (data && data.response && data.response.id) {
+        return data.response.id;
+      } else {
+        throw new Error('네이버 사용자 정보 없음');
+      }
+    } catch (e) {
+      throw e;
+    }
+  }
+
+  async function fetchKakaoUserId(accessToken) {
+    try {
+      const res = await fetch('https://kapi.kakao.com/v2/user/me', {
+        headers: { 'Authorization': 'Bearer ' + accessToken }
+      });
+      if (!res.ok) throw new Error('카카오 API 오류: ' + res.status);
+      const data = await res.json();
+      if (data && data.id) {
+        return String(data.id);
+      } else {
+        throw new Error('카카오 사용자 정보 없음');
+      }
+    } catch (e) {
+      throw e;
+    }
+  }
+
+  async function socialLoginAndBootChannelIO() {
+    const provider = localStorage.getItem('social_provider');
+    if (!provider) return; // provider 정보 없으면 종료
+    const params = getUrlParams();
+    let accessToken = params['access_token'];
+    if (!accessToken) return; // 토큰 없으면 종료
+
+    let memberId = null;
+    try {
+      if (provider === 'naver') {
+        memberId = await fetchNaverUserId(accessToken);
+      } else if (provider === 'kakao') {
+        memberId = await fetchKakaoUserId(accessToken);
+      } else {
+        throw new Error('지원하지 않는 provider');
+      }
+      // 4. 채널톡 boot
+      ChannelIO('boot', {
+        pluginKey: '8ae9b09a-9887-4957-96aa-b7f1ccba06b5',
+        memberId: memberId
+      }, function onBoot(error, user) {
+        if (error) {
+          console.error('ChannelIO boot 실패:', error);
+        } else {
+          channelUser = user;
+        }
+      });
+    } catch (e) {
+      // 5. 에러 대응
+      alert('소셜 로그인 실패: ' + e.message);
+      console.error(e);
+    } finally {
+      // 6. provider 값 clear
+      localStorage.removeItem('social_provider');
+    }
+  }
+
+  // 페이지 진입 시 자동 실행 (필요시 조건 추가)
+  socialLoginAndBootChannelIO();
 </script>
